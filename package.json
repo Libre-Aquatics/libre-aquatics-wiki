@@ -10,7 +10,7 @@
     "check:copying": "node scripts/check-copying.mjs"
   },
   "dependencies": {
-    "@astrojs/react": "^4.2.0",
+    "@astrojs/react": "^6.0.1",
     "@astrojs/sitemap": "^3.2.0",
     "astro": "^5.5.0",
     "astro-og-canvas": "^0.13.0",
