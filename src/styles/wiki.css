@@ -1,0 +1,1000 @@
+/* =========================================================================
+   Libre Aquatics Wiki: a Wikipedia-style skin, ported from the MkDocs-era
+   docs/stylesheets/extra.css onto Astro-owned markup.
+
+   Selector contract (agreed in the migration plan):
+     .md-typeset                     -> .wiki-article (article body content)
+     [data-md-color-scheme="slate"]  -> [data-theme="dark"]
+     .md-nav* (left sidebar)         -> .site-nav, depth classes .nav-l1..4,
+                                        native <details>/<summary> groups
+     secondary-sidebar TOC           -> .toc-box
+     .md-source-file                 -> .wiki-source-file
+   .infobox, .hatnote, .wiki-footer*, .wiki-pagenav*, .mp-*, .wiki-404,
+   .wiki-external, and the tag chips (.wiki-tags) keep their names.
+
+   Sizing note: the old theme had a 20px root font, so its rem values are
+   converted here for a 16px root (multiply by 1.25) to keep the same
+   rendered sizes.
+   ========================================================================= */
+
+/* ---- Font + color tokens ----------------------------------------------- */
+:root {
+  --wiki-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --wiki-serif: "Linux Libertine", Georgia, "Times New Roman", serif;
+  --wiki-mono: ui-monospace, SFMono-Regular, "Consolas", "Liberation Mono", monospace;
+
+  --wiki-border: #a2a9b1;
+  --wiki-panel: #f8f9fa;
+  --wiki-titlebar: #eaf3ff;
+  --wiki-muted: #595959;
+  --wiki-fg: #202122;
+  --wiki-bg: #ffffff;
+  --wiki-link: #3366cc;
+  --wiki-visited: #795cb2;
+  --wiki-accent: #3366cc;
+  /* Sidebar hierarchy ramp: darker/heavier at the top, lighter at each nested
+     level. All four steps stay >=4.5:1 against the white sidebar (WCAG 2.1 AA). */
+  --wiki-nav-1: #202122;
+  --wiki-nav-2: #393e44;
+  --wiki-nav-3: #52565b;
+  --wiki-nav-4: #6b6f73;
+  /* Leaf article links in the sidebar: quiet by default, link-blue on hover. */
+  --wiki-nav-leaf: #3a3e44;
+  /* Sidebar row backgrounds: hover must read against the page, and the
+     current-page row must differ from hover so hovering it gives feedback. */
+  --wiki-nav-hover: var(--wiki-divider);
+  --wiki-nav-selected: var(--wiki-panel);
+  /* Desktop column widths (264px floor / 352px cap on the nav). */
+  --wiki-sidebar-w: clamp(16.5rem, 16vw, 22rem);
+  --wiki-rail-w: 20rem;
+  /* Sticky offset for the left nav: the topbar's real height (about 3.3rem
+     with the 2.25rem search input) plus a small gap. */
+  --wiki-topbar-offset: 4rem;
+  /* Subtle row-divider tone for facts tables (decorative, not text). */
+  --wiki-divider: #e4e7eb;
+  color-scheme: light;
+}
+
+/* Dark palette. Applied when the user picked dark with the toggle, and (below)
+   when the system prefers dark and the user has not picked light, so no-JS
+   visitors still get system dark mode. Keep the two blocks identical. */
+[data-theme="dark"] {
+  --wiki-border: #3a3f44;
+  --wiki-panel: #26282e;
+  --wiki-titlebar: rgba(51, 102, 204, 0.18);
+  --wiki-divider: #33373c;
+  --wiki-muted: #b0b0b0;
+  --wiki-fg: #e8e8e8;
+  --wiki-bg: #1b1c1d;
+  --wiki-link: #6699ff;
+  --wiki-visited: #a48be0;
+  --wiki-accent: #6699ff;
+  --wiki-nav-1: #f2f3f5;
+  --wiki-nav-2: #d4d8dd;
+  --wiki-nav-3: #b6bbc2;
+  --wiki-nav-4: #9aa0a8;
+  --wiki-nav-leaf: #b8bcc2;
+  /* The panel tone is too close to the dark page background for row
+     highlights, so hover and selection get their own lighter steps. */
+  --wiki-nav-hover: #40454c;
+  --wiki-nav-selected: #33373c;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --wiki-border: #3a3f44;
+    --wiki-panel: #26282e;
+    --wiki-titlebar: rgba(51, 102, 204, 0.18);
+    --wiki-divider: #33373c;
+    --wiki-muted: #b0b0b0;
+    --wiki-fg: #e8e8e8;
+    --wiki-bg: #1b1c1d;
+    --wiki-link: #6699ff;
+    --wiki-visited: #a48be0;
+    --wiki-accent: #6699ff;
+    --wiki-nav-1: #f2f3f5;
+    --wiki-nav-2: #d4d8dd;
+    --wiki-nav-3: #b6bbc2;
+    --wiki-nav-4: #9aa0a8;
+    --wiki-nav-leaf: #b8bcc2;
+    --wiki-nav-hover: #40454c;
+    --wiki-nav-selected: #33373c;
+    color-scheme: dark;
+  }
+}
+
+/* ---- Base --------------------------------------------------------------- */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--wiki-sans);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--wiki-fg);
+  background: var(--wiki-bg);
+  /* Column flex plus `margin-top: auto` on the footer pins it to the bottom of
+     the viewport on short pages (the 404 and the thinner stubs), instead of
+     leaving it floating mid-screen above blank space. The skip link and the
+     back-to-top button are positioned out of flow, so only the topbar, the
+     page content, and the footer are flex items. */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Smooth in-page scrolling for TOC/citation jumps; the reduced-motion block
+   below resets it for users who prefer no animation. */
+html { scroll-behavior: smooth; }
+::selection { background: rgba(51, 102, 204, 0.22); }
+[data-theme="dark"] ::selection { background: rgba(102, 153, 255, 0.3); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) ::selection { background: rgba(102, 153, 255, 0.3); }
+}
+
+/* Skip-to-content link (WCAG 2.4.1): visually hidden until focused. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: var(--wiki-bg);
+  color: var(--wiki-link);
+  border: 1px solid var(--wiki-border);
+}
+.skip-link:focus { left: 0.5rem; top: 0.5rem; }
+
+/* ---- Top bar: light, flat, wordmark left, bordered search --------------- */
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.5rem clamp(0.75rem, 1.25vw, 1.5rem);
+  border-bottom: 1px solid var(--wiki-border);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--wiki-bg);
+}
+.topbar__brand {
+  font-family: var(--wiki-serif);
+  font-weight: 700;
+  font-size: 1.4375rem;
+  line-height: 1.2;
+  color: var(--wiki-fg);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  white-space: nowrap;
+}
+.topbar__brand img { height: 1.6rem; width: auto; display: block; }
+
+/* Search: Pagefind UI themed to the wiki palette (shared by the topbar
+   drawer and the /search/ page); the topbar drawer floats below the input
+   instead of expanding in flow. */
+.search, .search-page {
+  --pagefind-ui-scale: 0.85;
+  --pagefind-ui-font: var(--wiki-sans);
+  --pagefind-ui-text: var(--wiki-fg);
+  --pagefind-ui-background: var(--wiki-bg);
+  --pagefind-ui-primary: var(--wiki-link);
+  --pagefind-ui-border: var(--wiki-border);
+  --pagefind-ui-tag: var(--wiki-panel);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 2px;
+}
+.search {
+  margin-left: auto;
+  width: min(24rem, 44vw);
+  position: relative;
+}
+.search .pagefind-ui__form { position: relative; }
+/* Overrides of properties pagefind-ui.css sets itself carry an extra element
+   qualifier: Pagefind's own selectors are class + Svelte scope class, so a
+   plain two-class override only ties, and pagefind-ui.css loads after this
+   sheet and wins the tie. */
+/* Compact the input to match the topbar neighbours; Pagefind sizes it at
+   54px with bold 18px text. The padding leaves room for the magnifier icon
+   on the left and the clear button on the right. */
+.search input.pagefind-ui__search-input,
+.search-page input.pagefind-ui__search-input {
+  height: 2.25rem;
+  padding: 0 2.5rem 0 2rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+/* Re-centre the magnifier icon for the 2.25rem input. */
+.search form.pagefind-ui__form::before,
+.search-page form.pagefind-ui__form::before {
+  width: 0.9rem;
+  height: 0.9rem;
+  top: 0.675rem;
+  left: 0.6rem;
+}
+/* The clear button sits inside the input's border. */
+.search button.pagefind-ui__search-clear,
+.search-page button.pagefind-ui__search-clear {
+  top: 1px;
+  right: 1px;
+  height: calc(2.25rem - 2px);
+  padding: 0 0.6rem;
+  font-size: 0.8125rem;
+}
+/* Query matches: a soft accent tint instead of the browser's yellow mark
+   (Pagefind declares none of these properties, so no qualifier is needed). */
+.search .pagefind-ui__drawer mark,
+.search-page .pagefind-ui__drawer mark {
+  background: var(--wiki-titlebar);
+  color: inherit;
+  font-weight: 600;
+  border-radius: 2px;
+  padding: 0 0.08em;
+}
+/* The /search/ page: a centred results column with a readable measure. */
+.search-page {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1.5rem clamp(0.75rem, 1.25vw, 1.5rem) 4rem;
+}
+.search-page .pagefind-ui__results li.pagefind-ui__result { border-top: 1px solid var(--wiki-divider); }
+.search-page .pagefind-ui__result-title { font-family: var(--wiki-serif); }
+.search div.pagefind-ui__drawer {
+  /* Pagefind lays the drawer out as a wrapping flex row with a 51px gap for
+     its filter panels; this drawer has none, so plain flow is right. */
+  display: block;
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  width: min(30rem, 92vw);
+  max-height: min(70vh, 34rem);
+  overflow-y: auto;
+  padding: 0.6rem 0.85rem 0.85rem;
+  background: var(--wiki-bg);
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+/* Compact dropdown rows: Pagefind's result padding and title size are meant
+   for a full results page, not a floating drawer. */
+.search .pagefind-ui__drawer .pagefind-ui__message {
+  height: auto;
+  padding: 0.35em 0 0.2em;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.search .pagefind-ui__drawer li.pagefind-ui__result {
+  padding: 0.6em 0 0.75em;
+  border-top: 1px solid var(--wiki-divider);
+}
+.search .pagefind-ui__drawer li.pagefind-ui__result:last-of-type { border-bottom: 0; }
+.search .pagefind-ui__drawer p.pagefind-ui__result-title { font-size: 0.9375rem; }
+.search .pagefind-ui__result-title { font-family: var(--wiki-serif); }
+
+/* ---- Layout: nav | article | rail --------------------------------------- */
+/* Full-bleed: the grid spans the whole viewport, so wide monitors are used.
+   The article keeps a readable measure centered in its elastic middle column
+   (the 2022 Wikipedia model) while the nav and rail hug the screen edges. */
+.layout {
+  display: grid;
+  grid-template-columns: var(--wiki-sidebar-w) minmax(0, 1fr) var(--wiki-rail-w);
+  grid-template-areas: "nav main rail";
+  gap: clamp(1.25rem, 2vw, 2.5rem);
+  align-items: start;
+  padding: 1.5rem clamp(0.75rem, 1.25vw, 1.5rem) 4rem;
+}
+/* The nav column scrolls on its own under the sticky topbar, so a fully
+   expanded tree never stretches the page. */
+.rail-left {
+  grid-area: nav;
+  position: sticky;
+  top: var(--wiki-topbar-offset);
+  max-height: calc(100vh - var(--wiki-topbar-offset));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--wiki-border) transparent;
+  /* The left padding keeps row backgrounds (which reach 0.4em left of the
+     text) from being clipped by this scroll container. */
+  padding: 0 0.25rem 2rem 0.4rem;
+}
+.article { grid-area: main; width: 100%; max-width: 72rem; margin: 0 auto; min-width: 0; }
+.rail-right { grid-area: rail; min-width: 0; }
+.nav-drawer { display: none; grid-area: drawer; }
+
+/* Extra-wide screens: widen the rail and the reading measure a little so the
+   space is used without hurting legibility. */
+@media (min-width: 1600px) {
+  :root { --wiki-rail-w: 22rem; }
+  .article { max-width: 78rem; }
+}
+
+/* ---- Left nav: Wikipedia-like, depth-colored, no-JS disclosure ---------- */
+/* Expected markup (SiteNav.astro):
+     <nav class="site-nav">
+       <ul>
+         <li><a href aria-current?>Main Page</a></li>
+         <li>
+           <details class="nav-l1" open?>
+             <summary><a href>Equipment</a></summary>   (or a bare <span>)
+             <ul> ... nested items; nested groups carry .nav-l2 etc ... </ul>
+           </details>
+         </li>
+       </ul>
+     </nav> */
+.site-nav { font-size: 0.875rem; line-height: 1.4; }
+.site-nav ul { list-style: none; margin: 0; padding: 0; }
+.site-nav li { margin: 0.18em 0; }
+/* Rows are block-level so hover and current-page backgrounds fill the rail.
+   The 0.8em left padding reserves the same space the chevron occupies on
+   group rows, so leaf text and group-title text align at each tier. */
+.site-nav a {
+  display: block;
+  color: var(--wiki-nav-leaf);
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 0.15em 0.4em 0.15em 0.8em;
+  transition: background-color 0.12s, color 0.12s;
+}
+.site-nav a:hover {
+  color: var(--wiki-link);
+  background: var(--wiki-nav-hover);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.site-nav a:focus-visible { outline: 2px solid var(--wiki-accent); outline-offset: 1px; }
+/* Top-level leaves (Main Page, Categories) match section weight. */
+.site-nav > ul > li > a.nav-l1 { color: var(--wiki-nav-1); font-weight: 700; }
+/* The current page sits on a quiet panel background with heavier text (the
+   Wikipedia self-link convention). */
+.site-nav a[aria-current="page"] {
+  color: var(--wiki-fg);
+  font-weight: 600;
+  background: var(--wiki-nav-selected);
+}
+/* This rule follows the :hover rule at equal specificity, so hover on the
+   current row needs its own declaration to give any feedback. */
+.site-nav a[aria-current="page"]:hover { background: var(--wiki-nav-hover); }
+.site-nav summary {
+  cursor: pointer;
+  padding: 0.15em 0;
+  list-style: none;
+}
+.site-nav summary::-webkit-details-marker { display: none; }
+.site-nav summary > a { display: inline; padding: 0.15em 0.3em 0.15em 0.15em; }
+.site-nav summary > span { padding-left: 0.15em; }
+/* Solid triangle disclosure marker: points right when closed, rotates to
+   point down when open. The transition is neutralised by the reduced-motion
+   block below. */
+.site-nav summary::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-right: 0.3em;
+  border-left: 0.34em solid var(--wiki-muted);
+  border-top: 0.28em solid transparent;
+  border-bottom: 0.28em solid transparent;
+  transition: transform 0.15s ease;
+}
+.site-nav details[open] > summary::before { transform: translateY(0.1em) rotate(90deg); }
+/* Thin rails mark each nesting level so depth is easy to track; a small
+   bottom inset keeps the line from running past the last row. */
+.site-nav details > ul {
+  background: linear-gradient(var(--wiki-divider), var(--wiki-divider)) left 0 top 0 / 1px calc(100% - 0.25em) no-repeat;
+  padding-left: 0.5em;
+}
+/* Section/group rows are coloured by nesting depth to signal hierarchy;
+   leaf article links use the quieter leaf tone above. */
+.nav-l1 > summary, .nav-l1 > summary > a { color: var(--wiki-nav-1); font-weight: 700; }
+.nav-l2 > summary, .nav-l2 > summary > a { color: var(--wiki-nav-2); font-weight: 600; }
+.nav-l3 > summary, .nav-l3 > summary > a { color: var(--wiki-nav-3); font-weight: 500; }
+.nav-l4 > summary, .nav-l4 > summary > a { color: var(--wiki-nav-4); font-weight: 500; }
+/* A section that is also the current page keeps its hierarchy colour. */
+.site-nav summary > a[aria-current="page"] { color: inherit; }
+/* Soft dividers between the top-level sections. */
+.site-nav > ul > li { margin-bottom: 0.4em; }
+.site-nav > ul > li + li { border-top: 1px solid var(--wiki-divider); padding-top: 0.4em; }
+
+/* Mobile nav drawer (shown under 1000px in place of the left column). */
+.nav-drawer {
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+  background: var(--wiki-panel);
+}
+.nav-drawer > summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.45em 0.8em;
+}
+.nav-drawer > .site-nav { padding: 0.2em 0.9em 0.7em; }
+
+/* ---- Article header: title, tagline, meta row --------------------------- */
+.article > h1,
+.mp-main > h1,
+.search-page > h1 {
+  font-family: var(--wiki-serif);
+  font-weight: 400;
+  font-size: 2.0625rem;
+  letter-spacing: 0;
+  margin: 0;
+  line-height: 1.25;
+}
+.search-page > h1 { margin-bottom: 0.8rem; }
+/* Wikipedia "From ..." tagline + title underline, under the page H1. */
+.wiki-tagline {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--wiki-muted);
+  margin: 0.15em 0 0;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--wiki-border);
+}
+.wiki-pagemeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3em 1em;
+  margin: 0.4em 0 0.2em;
+}
+.wiki-pagemeta .page-actions { margin-left: auto; }
+
+/* ---- Article body typography -------------------------------------------- */
+.wiki-article { font-size: 0.9375rem; line-height: 1.6; }
+.wiki-article h2, .wiki-article h3, .wiki-article h4,
+.wiki-article h5, .wiki-article h6 {
+  font-family: var(--wiki-serif);
+  color: var(--wiki-fg);
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.wiki-article h2 {
+  font-weight: 400;
+  font-size: 1.5625rem;
+  border-bottom: 1px solid var(--wiki-border);
+  padding-bottom: 0.2em;
+  margin: 1.3em 0 0.6em;
+}
+/* Subheads step down from h2 in both size and spacing; without explicit
+   margins the UA's 1em default would give h3 a larger top gap than h2. */
+.wiki-article h3 { font-size: 1.3125rem; margin: 1.1em 0 0.45em; }
+.wiki-article h4 { font-size: 1.0625rem; margin: 1em 0 0.4em; }
+.wiki-article h5 { font-size: 1rem; margin: 1em 0 0.35em; }
+.wiki-article h6 { font-size: 0.9375rem; margin: 1em 0 0.3em; }
+.wiki-article img { max-width: 100%; height: auto; }
+/* Lists: a tighter indent than the UA's 40px, aligned with the 0.7-0.9em
+   insets the panels use. */
+.wiki-article ul, .wiki-article ol { margin: 0.4em 0 0.8em; padding-left: 1.6em; }
+.wiki-article li { margin: 0.15em 0; }
+.wiki-article li > ul, .wiki-article li > ol { margin: 0.15em 0; }
+
+/* Underline inline content links so they are not distinguished by colour
+   alone (WCAG 1.4.1). Nav and TOC links are styled separately. */
+.wiki-article a { color: var(--wiki-link); text-decoration: underline; text-underline-offset: 0.15em; }
+.wiki-article a:visited { color: var(--wiki-visited); }
+
+/* Heading permalink anchors (rehype-autolink-headings): hidden until the
+   heading is hovered or the anchor is focused. */
+.wiki-article .headerlink {
+  text-decoration: none;
+  color: var(--wiki-muted);
+  margin-left: 0.35em;
+  opacity: 0;
+  font-family: var(--wiki-sans);
+  font-size: 0.8em;
+}
+.wiki-article h2:hover .headerlink, .wiki-article h3:hover .headerlink,
+.wiki-article h4:hover .headerlink, .wiki-article h5:hover .headerlink,
+.wiki-article h6:hover .headerlink, .wiki-article .headerlink:focus-visible { opacity: 1; }
+
+/* ---- Wikipedia-style content tables -------------------------------------- */
+.wiki-article table {
+  border-collapse: collapse;
+  border: 1px solid var(--wiki-border);
+  font-size: 0.82em;
+  margin: 0.8em 0;
+}
+.wiki-article th {
+  background: var(--wiki-panel);
+  font-weight: 700;
+  border: 1px solid var(--wiki-border);
+  padding: 0.35em 0.7em;
+  text-align: left;
+  vertical-align: top;
+}
+.wiki-article td {
+  border: 1px solid var(--wiki-border);
+  padding: 0.35em 0.7em;
+  text-align: left;
+  vertical-align: top;
+}
+/* Headerless tables (Markdown "| | |" spec tables) emit an empty header row.
+   Hide it only when every header cell is empty, so real headers stay. */
+.wiki-article thead:not(:has(th:not(:empty))) { display: none; }
+/* Row hover on content tables, so wide spec tables are easier to track. */
+.wiki-article tbody tr:hover { background: var(--wiki-panel); }
+
+/* ---- Inline code, code blocks, quotes, rules ------------------------------ */
+.wiki-article :not(pre) > code {
+  font-family: var(--wiki-mono);
+  font-size: 0.85em;
+  background: var(--wiki-panel);
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+  padding: 0.08em 0.3em;
+}
+.wiki-article pre {
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+  background: var(--wiki-panel);
+  padding: 0.7em 0.9em;
+  overflow-x: auto;
+}
+.wiki-article pre > code { font-family: var(--wiki-mono); font-size: 0.85em; }
+.wiki-article blockquote {
+  border-left: 0.2rem solid var(--wiki-border);
+  color: var(--wiki-muted);
+  margin: 0.8em 0;
+  padding-left: 0.8em;
+}
+.wiki-article hr { border: 0; border-bottom: 1px solid var(--wiki-border); }
+
+/* ---- Infobox -------------------------------------------------------------- */
+/* A bordered panel with a titlebar band and a padded facts table; the box
+   itself carries no padding so the band and the row dividers run edge to
+   edge. Lives in the right rail on desktop and flows above the article on
+   narrow viewports; never floated (the template places it). */
+.infobox {
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+  background: var(--wiki-panel);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0 0 0.8em;
+  overflow: hidden;
+}
+.infobox img { display: block; margin: 0.7em auto; max-width: calc(100% - 1.4em); }
+.infobox__title {
+  margin: 0;
+  background: var(--wiki-titlebar);
+  border-bottom: 1px solid var(--wiki-border);
+  padding: 0.5em 0.7em;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1875rem;
+  line-height: 1.3;
+}
+.infobox table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+  margin: 0;
+  font-size: 1em;
+}
+/* No text-transform anywhere in the box: labels and values are authored in
+   their correct casing (capitalize used to mangle "cULus" and "5.0 kg"). */
+.infobox th, .infobox td {
+  border: 0;
+  background: transparent;
+  vertical-align: top;
+  text-align: left;
+}
+.infobox th {
+  width: 35%;
+  padding: 0.32em 0.6em 0.32em 0.7em;
+  color: var(--wiki-muted);
+  font-weight: 600;
+}
+.infobox td { padding: 0.32em 0.7em 0.32em 0; }
+/* Subtle divider between fact rows. */
+.infobox tr + tr th, .infobox tr + tr td { border-top: 1px solid var(--wiki-divider); }
+.infobox a { color: var(--wiki-link); text-decoration: underline; text-underline-offset: 0.15em; }
+.infobox a:visited { color: var(--wiki-visited); }
+.infobox code {
+  font-family: var(--wiki-mono);
+  font-size: 0.85em;
+  background: var(--wiki-bg);
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+  padding: 0.08em 0.3em;
+}
+
+/* ---- Contents box (TOC) --------------------------------------------------- */
+/* Matches the infobox idiom: a bordered panel with a titlebar band, section
+   entries numbered like a classic Wikipedia table of contents. */
+.toc-box {
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+  background: var(--wiki-panel);
+  overflow: hidden;
+}
+.toc-box__title {
+  margin: 0;
+  background: var(--wiki-titlebar);
+  border-bottom: 1px solid var(--wiki-border);
+  padding: 0.45em 0.8em;
+  font-family: var(--wiki-serif);
+  font-weight: 700;
+  font-size: 1.025rem;
+  color: var(--wiki-fg);
+}
+.toc-box > ol { padding: 0.45em 0.9em 0.6em; }
+/* Classic Wikipedia section numbering (1, 1.1, 2, ...) via CSS counters:
+   each nested list opens a new counter scope, so counters() concatenates. */
+.toc-box ol {
+  list-style: none;
+  margin: 0;
+  counter-reset: wiki-toc;
+}
+.toc-box ol ol { padding: 0 0 0 1em; }
+.toc-box li { counter-increment: wiki-toc; margin: 0.3em 0; line-height: 1.4; }
+.toc-box a {
+  color: var(--wiki-link);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.toc-box a:hover { text-decoration: underline; text-underline-offset: 0.15em; }
+.toc-box a::before {
+  content: counters(wiki-toc, ".");
+  color: var(--wiki-muted);
+  font-variant-numeric: tabular-nums;
+  margin-right: 0.45em;
+}
+
+/* ---- References (GFM footnotes) ------------------------------------------- */
+.wiki-article .footnotes { font-size: 0.875rem; }
+/* GFM emits its own visually-hidden "Footnotes" heading; articles carry a
+   real "## References" heading, so the generated one is dropped. */
+.wiki-article .footnotes > #footnote-label { display: none; }
+.wiki-article .footnotes li { overflow-wrap: anywhere; }
+/* Wikipedia-style bracketed citation marks. */
+.wiki-article a[data-footnote-ref] { text-decoration: none; }
+.wiki-article a[data-footnote-ref]::before { content: "["; }
+.wiki-article a[data-footnote-ref]::after { content: "]"; }
+.wiki-article a[data-footnote-backref] { text-decoration: none; }
+/* Following a citation mark highlights the targeted reference in the list. */
+.wiki-article .footnotes li:target { background: var(--wiki-titlebar); }
+
+/* ---- Citation hovercard (React island) ------------------------------------ */
+.cite-hovercard {
+  position: fixed;
+  z-index: 50;
+  max-width: 320px;
+  background: var(--wiki-bg);
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  padding: 0.55rem 0.7rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+.cite-hovercard a { color: var(--wiki-link); }
+
+/* ---- Hatnote + centered figures -------------------------------------------- */
+.wiki-article .hatnote {
+  font-style: italic;
+  color: var(--wiki-muted);
+  padding-left: 1.6em;
+  margin: 0.2em 0 1em 0;
+}
+.wiki-article img.center { display: block; margin-left: auto; margin-right: auto; }
+.wiki-article figure.wiki-figure {
+  float: right;
+  clear: right;
+  width: 300px;
+  max-width: 45%;
+  margin: 0.3em 0 1em 1.2em;
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+  background: var(--wiki-panel);
+  padding: 3px;
+}
+.wiki-article figure.wiki-figure img { display: block; width: 100%; height: auto; }
+.wiki-article figure.wiki-figure figcaption {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--wiki-muted);
+  padding: 0.4em 0.3em 0.2em;
+  text-align: left;
+}
+
+/* ---- Notes (the old flattened admonitions) --------------------------------- */
+.wiki-article .wiki-note, .wiki-note {
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+  background: var(--wiki-panel);
+  font-size: 0.9rem;
+  padding: 0.55em 0.9em;
+  margin: 0.8em 0;
+}
+.wiki-note__title { font-weight: 700; margin: 0 0 0.2em; }
+.wiki-note p { margin: 0.2em 0; }
+
+/* ---- External links: small "leaves the wiki" arrow -------------------------- */
+/* rehype-external-links adds .wiki-external to cross-origin links at build
+   time (the old runtime external-links.js is gone). */
+/* A text glyph (north-east arrow, text presentation) instead of a masked
+   SVG: font rendering keeps it crisp at any size. inline-block stops the
+   link underline from running beneath it. */
+a.wiki-external::after {
+  content: "\2197\FE0E";
+  display: inline-block;
+  margin-left: 0.15em;
+  font-size: 1em;
+  line-height: 1;
+  text-decoration: none;
+}
+
+/* ---- Category tags as flat chips --------------------------------------------- */
+.wiki-tags { margin: 0; }
+.wiki-tags a {
+  display: inline-block;
+  background: var(--wiki-panel);
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+  color: var(--wiki-link);
+  font-size: 0.725rem;
+  font-weight: 400;
+  padding: 0.05em 0.5em;
+  margin-right: 0.3em;
+  text-decoration: none;
+}
+.wiki-tags a:hover { text-decoration: underline; text-underline-offset: 0.15em; }
+
+/* ---- Page actions (edit / view source) ---------------------------------------- */
+.page-actions { font-size: 0.775rem; }
+.page-actions a { color: var(--wiki-muted); text-decoration: none; margin-left: 0.9em; }
+.page-actions a:hover { text-decoration: underline; text-underline-offset: 0.15em; color: var(--wiki-link); }
+
+/* ---- "Last updated" line: a Wikipedia-style "last edited" note ----------------- */
+.wiki-source-file {
+  margin: 1.1em 0 0;
+  padding-top: 0.5em;
+  border-top: 1px solid var(--wiki-border);
+  color: var(--wiki-muted);
+  font-size: 0.85rem;
+}
+
+/* ---- Prev/next page links, at the end of the article column --------------------- */
+/* Nav controls, not content links: no underline until hover, no visited colour. */
+.wiki-pagenav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5em 2em;
+  margin: 1em 0 0;
+  padding-top: 0.7em;
+  border-top: 1px solid var(--wiki-border);
+}
+.wiki-pagenav a { text-decoration: none; display: flex; flex-direction: column; }
+.wiki-pagenav a:hover .wiki-pagenav__title { text-decoration: underline; text-underline-offset: 0.15em; }
+.wiki-pagenav__link--next { margin-left: auto; text-align: right; }
+.wiki-pagenav__direction { font-size: 0.8125rem; color: var(--wiki-muted); }
+.wiki-pagenav__title { color: var(--wiki-link); }
+
+/* ---- Footer: Wikipedia-style link row -------------------------------------------- */
+.wiki-footer {
+  display: block;
+  /* Takes up the slack left by short pages; see the body flex rule above. */
+  margin-top: auto;
+  background: var(--wiki-panel);
+  border-top: 1px solid var(--wiki-border);
+  color: var(--wiki-fg);
+  /* Same horizontal gutter as .layout, so the footer shares the page edge. */
+  padding: 1.2em clamp(0.75rem, 1.25vw, 1.5rem);
+  text-align: center;
+}
+.wiki-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35em 1.1em;
+  margin-bottom: 0.9em;
+}
+.wiki-footer a { color: var(--wiki-link); }
+.wiki-footer__links a { font-size: 0.9rem; text-decoration: none; }
+.wiki-footer__links a:hover { text-decoration: underline; text-underline-offset: 0.15em; }
+.wiki-footer__fine { font-size: 0.85rem; color: var(--wiki-muted); line-height: 1.5; }
+.wiki-footer__fine p { margin: 0.25em auto; max-width: 62em; }
+.wiki-footer__repo { margin-top: 0.55em !important; }
+.wiki-footer__repo span { color: var(--wiki-border); margin: 0 0.35em; }
+
+/* ---- Theme toggle ------------------------------------------------------------------ */
+button.theme-toggle {
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--wiki-fg);
+  background: var(--wiki-bg);
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+  padding: 0.2em 0.55em;
+  cursor: pointer;
+  line-height: 1.4;
+}
+button.theme-toggle:hover { background: var(--wiki-panel); }
+/* Crescent in light mode ("switch to dark"), sun in dark mode. */
+.theme-toggle__icon::before { content: "\263E"; }
+[data-theme="dark"] .theme-toggle__icon::before { content: "\2600\FE0E"; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle__icon::before { content: "\2600\FE0E"; }
+}
+
+/* ---- Back-to-top button: flat, bordered --------------------------------------------- */
+.back-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 30;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--wiki-fg);
+  background-color: var(--wiki-bg);
+  border: 1px solid var(--wiki-border);
+  border-radius: 2rem;
+  padding: 0.35em 0.9em;
+  cursor: pointer;
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.15);
+}
+.back-top:hover, .back-top:focus-visible { background-color: var(--wiki-panel); }
+.back-top[hidden] { display: none; }
+
+/* ---- Keyboard focus rings (WCAG 2.4.7) ----------------------------------- */
+/* The same ring the nav links use, on every other interactive control that
+   would otherwise fall back to the UA default. */
+.site-nav summary:focus-visible,
+.nav-drawer > summary:focus-visible,
+button.theme-toggle:focus-visible,
+.back-top:focus-visible,
+.toc-box a:focus-visible,
+.wiki-footer a:focus-visible {
+  outline: 2px solid var(--wiki-accent);
+  outline-offset: 1px;
+}
+
+/* ---- Main Page: Wikipedia-style panels ------------------------------------------------ */
+/* The Main Page uses BaseLayout directly (no nav column or rail), so it
+   carries its own centered container. */
+.mp-main {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 1.5rem clamp(0.75rem, 1.25vw, 1.5rem) 3rem;
+  /* Landing page reads larger than article body text. */
+  font-size: 1.0625rem;
+}
+.mp-banner {
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+  background: var(--wiki-panel);
+  text-align: center;
+  padding: 1.1em 1.2em;
+  margin: 0.4em 0 1.2em;
+}
+.mp-banner h1, .mp-banner h3 {
+  font-family: var(--wiki-serif);
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 0 0 0.2em;
+  border: 0;
+}
+/* Big search box on the main page: a launcher that focuses the topbar
+   search. Styled like an input, as on the old Main Page. */
+.mp-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  width: 100%;
+  max-width: 34rem;
+  margin: 0.9em auto 0.1em;
+  padding: 0.6em 0.9em;
+  cursor: text;
+  font: inherit;
+  font-size: 1.1875rem;
+  text-align: left;
+  color: var(--wiki-muted);
+  background: var(--wiki-bg);
+  border: 1px solid var(--wiki-border);
+  border-radius: 3px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.mp-search:hover { border-color: var(--wiki-accent); }
+.mp-search:focus {
+  outline: none;
+  border-color: var(--wiki-accent);
+  box-shadow: 0 0 0 1px var(--wiki-accent);
+}
+.mp-search__icon { width: 1.2em; height: 1.2em; flex: none; }
+.mp-search__label { flex: 1; }
+.mp-search__kbd {
+  flex: none;
+  font-size: 0.9em;
+  color: var(--wiki-muted);
+  background: var(--wiki-panel);
+  border: 1px solid var(--wiki-border);
+  border-radius: 3px;
+  padding: 0.05em 0.5em;
+  vertical-align: middle;
+}
+@media (hover: none) {
+  .mp-search__kbd { display: none; }
+}
+.mp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1em; }
+.mp-box { border: 1px solid var(--wiki-border); border-radius: 2px; overflow: hidden; }
+.mp-box > h2 {
+  font-family: var(--wiki-serif);
+  font-weight: 600;
+  background: var(--wiki-titlebar);
+  margin: 0;
+  padding: 0.4em 0.7em;
+  font-size: 1.4375rem;
+  border: 0;
+  border-bottom: 1px solid var(--wiki-border);
+}
+.mp-box-body { padding: 0.7em 0.9em; }
+.mp-box-body > :first-child { margin-top: 0; }
+.mp-box-body > :last-child { margin-bottom: 0; }
+
+/* ---- 404 page ---------------------------------------------------------------------------- */
+/* The page uses BaseLayout directly (no grid), so it carries its own
+   centred container. */
+.wiki-404 {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1em clamp(0.75rem, 1.25vw, 1.5rem) 2em;
+}
+.wiki-404 h1 { margin-bottom: 0.3em; }
+
+/* ---- Respect the reduced-motion preference (WCAG 2.3.3) ----------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---- Print --------------------------------------------------------------------------------- */
+@media print {
+  .topbar, .rail-left, .nav-drawer, .rail-right, .wiki-footer,
+  .wiki-pagenav, .back-top, .page-actions, .search, .theme-toggle { display: none !important; }
+  .layout { display: block; padding: 0; }
+  .article { max-width: none; }
+}
+
+/* ---- Responsive ------------------------------------------------------------------------------ */
+/* Below the desktop breakpoint the page becomes one column: a collapsed
+   Navigation drawer, then the rail content (infobox + contents), then the
+   article. Pure CSS; no JS handoff. */
+@media (max-width: 1000px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas: "drawer" "rail" "main";
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .rail-left { display: none; }
+  .nav-drawer { display: block; }
+  .article { max-width: none; }
+  .rail-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .rail-right .infobox { max-width: 22rem; margin: 0; }
+  .rail-right .toc-box { max-width: 22rem; }
+}
+@media (max-width: 960px) {
+  .mp-grid { grid-template-columns: 1fr; }
+}
+/* Phones: stack the search full-width under the brand; wide tables scroll. */
+@media (max-width: 600px) {
+  .topbar { flex-wrap: wrap; padding: 0.5rem 1rem; }
+  .search { width: 100%; margin-left: 0; }
+  .search div.pagefind-ui__drawer { right: auto; left: 0; }
+  .wiki-article table { display: block; overflow-x: auto; }
+  .wiki-article figure.wiki-figure { float: none; width: auto; max-width: 100%; margin: 0 0 1em 0; }
+  .rail-right .infobox, .rail-right .toc-box { max-width: 100%; width: 100%; }
+}

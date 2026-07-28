@@ -1,0 +1,99 @@
+---
+// Static infobox rendered from front-matter rows; the layout decides where it
+// goes (the right rail on desktop). Row hrefs may be docs-relative source
+// paths ('vendors/colorado-time-systems.md', with optional #anchor), site
+// paths ('/vendors/colorado-time-systems/'), or external URLs.
+//
+// A row is one of three simple shapes ({value}, {value, href}, {value,
+// code: true}), or a value carrying a micro-subset of inline Markdown (code
+// spans and links mixed with text, e.g. "`PB-6` (also listed as
+// `CYC-35-8574`)"), which is tokenized here so part-number and succession
+// rows keep their formatting.
+import { docPathToRoute, withBase } from '../lib/routes';
+
+interface Row {
+  label: string;
+  value: string;
+  href?: string;
+  code?: boolean;
+}
+interface Props {
+  title?: string;
+  rows: Row[];
+}
+const { title, rows } = Astro.props;
+
+function resolveHref(href: string): { url: string; external: boolean } {
+  if (/^[a-z][a-z0-9+.-]*:/i.test(href)) return { url: href, external: true };
+  if (href.startsWith('/')) return { url: withBase(href), external: false };
+  const [path, anchor = ''] = href.split('#');
+  if (/\.md$/i.test(path)) {
+    return { url: docPathToRoute(path) + (anchor ? `#${anchor}` : ''), external: false };
+  }
+  return { url: withBase(`/${href}`), external: false };
+}
+
+type Part =
+  | { kind: 'text'; text: string }
+  | { kind: 'code'; text: string }
+  | { kind: 'link'; text: string; url: string; external: boolean };
+
+function tokenize(value: string): Part[] {
+  const parts: Part[] = [];
+  const pattern = /`([^`]+)`|\[([^\]]+)\]\(([^)\s]+(?:\([^)]*\)[^)\s]*)?)\)/g;
+  let cursor = 0;
+  for (const m of value.matchAll(pattern)) {
+    if (m.index > cursor) parts.push({ kind: 'text', text: value.slice(cursor, m.index) });
+    if (m[1] !== undefined) parts.push({ kind: 'code', text: m[1] });
+    else parts.push({ kind: 'link', text: m[2], ...resolveHref(m[3]) });
+    cursor = m.index + m[0].length;
+  }
+  if (cursor < value.length) parts.push({ kind: 'text', text: value.slice(cursor) });
+  return parts;
+}
+
+const rendered = rows.map((row) => {
+  if (row.href) {
+    const link = resolveHref(row.href);
+    return {
+      label: row.label,
+      parts: [{ kind: 'link', text: row.value, ...link } as Part],
+    };
+  }
+  if (row.code) {
+    return { label: row.label, parts: [{ kind: 'code', text: row.value } as Part] };
+  }
+  if (/`[^`]+`|\[[^\]]+\]\(/.test(row.value)) {
+    return { label: row.label, parts: tokenize(row.value) };
+  }
+  return { label: row.label, parts: [{ kind: 'text', text: row.value } as Part] };
+});
+---
+
+<aside class="infobox" aria-label={title ? `${title} infobox` : 'Infobox'}>
+  {title && <p class="infobox__title">{title}</p>}
+  <table>
+    <tbody>
+      {
+        rendered.map((row) => (
+          <tr>
+            <th scope="row">{row.label}</th>
+            <td>
+              {row.parts.map((part) =>
+                part.kind === 'code' ? (
+                  <code>{part.text}</code>
+                ) : part.kind === 'link' ? (
+                  <a href={part.url} class={part.external ? 'wiki-external' : undefined}>
+                    {part.text}
+                  </a>
+                ) : (
+                  part.text
+                ),
+              )}
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</aside>

@@ -1,0 +1,47 @@
+---
+// The "Contents" box in the right rail, built from the rendered article's
+// headings (depth 2 and 3). Section numbering (1, 1.1, 2) comes from CSS
+// counters in wiki.css; nested h3 entries open a new counter scope.
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+interface Props {
+  headings: Heading[];
+}
+const { headings } = Astro.props;
+
+// Group consecutive depth-3 headings under the preceding depth-2 heading.
+type TocItem = { heading: Heading; children: Heading[] };
+const items: TocItem[] = [];
+for (const heading of headings) {
+  if (heading.depth === 2 || items.length === 0) {
+    items.push({ heading, children: [] });
+  } else {
+    items[items.length - 1].children.push(heading);
+  }
+}
+---
+
+<nav class="toc-box" aria-label="Contents">
+  <p class="toc-box__title">Contents</p>
+  <ol>
+    {
+      items.map((item) => (
+        <li>
+          <a href={`#${item.heading.slug}`}>{item.heading.text}</a>
+          {item.children.length > 0 && (
+            <ol>
+              {item.children.map((child) => (
+                <li>
+                  <a href={`#${child.slug}`}>{child.text}</a>
+                </li>
+              ))}
+            </ol>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>

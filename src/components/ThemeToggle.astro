@@ -1,0 +1,34 @@
+---
+// Light/dark toggle. The blocking script in BaseLayout sets the initial
+// data-theme before paint; this button flips and persists it. Hidden until
+// JS enables it, so no-JS users simply follow prefers-color-scheme.
+---
+
+<button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme" hidden>
+  <span class="theme-toggle__icon" aria-hidden="true"></span>
+</button>
+
+<script>
+  const button = document.querySelector<HTMLButtonElement>('.theme-toggle');
+  if (button) {
+    const root = document.documentElement;
+    const apply = () => {
+      const dark =
+        root.dataset.theme === 'dark' ||
+        (!root.dataset.theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      button.setAttribute('aria-pressed', String(dark));
+      button.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+    };
+    button.hidden = false;
+    apply();
+    button.addEventListener('click', () => {
+      const dark =
+        root.dataset.theme === 'dark' ||
+        (!root.dataset.theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      const next = dark ? 'light' : 'dark';
+      root.dataset.theme = next;
+      localStorage.setItem('wiki-theme', next);
+      apply();
+    });
+  }
+</script>

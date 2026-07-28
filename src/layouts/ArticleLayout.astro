@@ -1,0 +1,111 @@
+---
+// Article page shell: a 3-column grid (site nav | article | rail). The
+// infobox and Contents box are placed in the right rail by this template;
+// under 1000px the CSS reflows everything into one column with a collapsed
+// Navigation drawer on top. No client-side relocation anywhere.
+import BaseLayout from './BaseLayout.astro';
+import SiteNav from '../components/SiteNav.astro';
+import Infobox from '../components/Infobox.astro';
+import TocBox from '../components/TocBox.astro';
+import Tags from '../components/Tags.astro';
+import PageActions from '../components/PageActions.astro';
+import PrevNext from '../components/PrevNext.astro';
+import CitationHovercards from '../components/CitationHovercards.tsx';
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+interface Row {
+  label: string;
+  value: string;
+  href?: string;
+  code?: boolean;
+}
+interface Props {
+  title: string;
+  description?: string;
+  /** Route key for the page's Open Graph card; forwarded to BaseLayout. */
+  ogKey?: string;
+  tags?: string[];
+  infoboxTitle?: string;
+  infobox?: Row[];
+  headings?: Heading[];
+  entryId: string;
+  filePath?: string;
+  lastUpdated?: string;
+  /** ISO date of the last change; forwarded to BaseLayout for metadata. */
+  modifiedTime?: string;
+  /** Ancestor sections for BreadcrumbList markup; forwarded to BaseLayout. */
+  breadcrumbs?: { title: string; route: string }[];
+}
+const {
+  title,
+  description,
+  ogKey,
+  tags = [],
+  infoboxTitle,
+  infobox = [],
+  headings = [],
+  entryId,
+  filePath,
+  lastUpdated,
+  modifiedTime,
+  breadcrumbs,
+} = Astro.props;
+const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  ogKey={ogKey}
+  ogType="article"
+  modifiedTime={modifiedTime}
+  breadcrumbs={breadcrumbs}
+>
+  <div class="layout">
+    <div class="rail-left">
+      <SiteNav currentId={entryId} />
+    </div>
+
+    <details class="nav-drawer">
+      <summary>Navigation</summary>
+      <SiteNav currentId={entryId} />
+    </details>
+
+    <main id="content" class="article" data-pagefind-body>
+      <h1>{title}</h1>
+      <p class="wiki-tagline" data-pagefind-ignore>
+        From Libre Aquatics Wiki, the free aquatics reference
+      </p>
+      <div class="wiki-pagemeta" data-pagefind-ignore>
+        <Tags tags={tags} />
+        {filePath && <PageActions filePath={filePath} />}
+      </div>
+
+      <div class="wiki-article">
+        <slot />
+      </div>
+
+      {
+        lastUpdated && (
+          <p class="wiki-source-file" data-pagefind-ignore>
+            Last updated {lastUpdated}.
+          </p>
+        )
+      }
+      <PrevNext currentId={entryId} />
+    </main>
+
+    <aside class="rail-right" data-pagefind-ignore>
+      {infobox.length > 0 && <Infobox title={infoboxTitle ?? title} rows={infobox} />}
+      {tocHeadings.length > 0 && <TocBox headings={tocHeadings} />}
+    </aside>
+  </div>
+
+  {/* Footnote hovercards: enhances the [n] citation marks; the plain
+      click-to-jump behavior still works without JS. */}
+  <CitationHovercards client:idle />
+</BaseLayout>

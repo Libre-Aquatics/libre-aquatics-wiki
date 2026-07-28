@@ -1,0 +1,64 @@
+---
+// Recursive site navigation from src/data/nav.ts. Groups render as
+// <details>/<summary> (no JavaScript), opened along the trail to the current
+// page; a group with an index page links its title to that overview page.
+// currentId is the collection entry id of the open page ('index' for the
+// Main Page, 'categories' for the tag index).
+import { nav, isGroup, type NavNode } from '../data/nav';
+import { pageToId, isOnTrail } from '../lib/navigation';
+import { docPathToRoute } from '../lib/routes';
+
+interface Props {
+  currentId: string;
+  nodes?: NavNode[];
+  depth?: number;
+  root?: boolean;
+}
+const { currentId, nodes = nav, depth = 1, root = true } = Astro.props;
+const level = Math.min(depth, 4);
+---
+
+{
+  root ? (
+    <nav class="site-nav" aria-label="Site">
+      <Astro.self currentId={currentId} nodes={nodes} depth={1} root={false} />
+    </nav>
+  ) : (
+    <ul class="site-nav__list">
+      {nodes.map((node) => (
+        <li class="site-nav__item">
+          {isGroup(node) ? (
+            <details class={`site-nav__group nav-l${level}`} open={isOnTrail(node, currentId)}>
+              <summary class="site-nav__summary">
+                {node.index ? (
+                  <a
+                    href={docPathToRoute(node.index)}
+                    aria-current={pageToId(node.index) === currentId ? 'page' : undefined}
+                  >
+                    {node.title}
+                  </a>
+                ) : (
+                  <span>{node.title}</span>
+                )}
+              </summary>
+              <Astro.self
+                currentId={currentId}
+                nodes={node.children}
+                depth={depth + 1}
+                root={false}
+              />
+            </details>
+          ) : (
+            <a
+              class={`site-nav__link nav-l${level}`}
+              href={docPathToRoute(node.page)}
+              aria-current={pageToId(node.page) === currentId ? 'page' : undefined}
+            >
+              {node.title}
+            </a>
+          )}
+        </li>
+      ))}
+    </ul>
+  )
+}

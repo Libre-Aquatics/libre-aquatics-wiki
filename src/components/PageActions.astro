@@ -1,0 +1,16 @@
+---
+// Per-page "Edit" and "View source" links, replacing Material's
+// content.action.edit / content.action.view (edit_uri edit/main/docs/).
+// filePath is the repo-relative source path ('docs/a/index.md'); the entry id
+// cannot be used because the loader drops '/index' from index-page ids.
+interface Props {
+  filePath: string;
+}
+const { filePath } = Astro.props;
+const repo = 'https://github.com/Libre-Aquatics/libre-aquatics-wiki';
+---
+
+<p class="page-actions" data-pagefind-ignore>
+  <a href={`${repo}/edit/main/${filePath}`} class="wiki-external" rel="nofollow">Edit</a>
+  <a href={`${repo}/blob/main/${filePath}`} class="wiki-external" rel="nofollow">View source</a>
+</p>

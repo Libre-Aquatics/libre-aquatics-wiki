@@ -1,0 +1,44 @@
+---
+// Pagefind search (astro-pagefind serves the index in dev from the last
+// build). Results render as a floating dropdown; Pagefind UI variables are
+// mapped to the wiki palette in wiki.css. The "/" hotkey focuses the input.
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<div class="search" data-pagefind-ignore>
+  <link rel="stylesheet" href={`${base}/pagefind/pagefind-ui.css`} />
+  <div id="search"></div>
+  <script is:inline src={`${base}/pagefind/pagefind-ui.js`}></script>
+  <script is:inline define:vars={{ base }}>
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.PagefindUI) {
+        new window.PagefindUI({
+          element: '#search',
+          bundlePath: base + '/pagefind/',
+          showSubResults: true,
+          showImages: false,
+        });
+      }
+      // Enter opens the full search page with the current query.
+      document.querySelector('.search')?.addEventListener('keydown', (event) => {
+        if (event.key !== 'Enter') return;
+        const input = event.target;
+        if (!(input instanceof HTMLInputElement)) return;
+        const q = input.value.trim();
+        if (!q) return;
+        event.preventDefault();
+        window.location.href = base + '/search/?q=' + encodeURIComponent(q);
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key !== '/' || event.defaultPrevented) return;
+        const target = event.target;
+        if (target instanceof HTMLElement && target.closest('input, textarea, select, [contenteditable]')) return;
+        const input = document.querySelector('.search input');
+        if (input) {
+          event.preventDefault();
+          input.focus();
+        }
+      });
+    });
+  </script>
+</div>

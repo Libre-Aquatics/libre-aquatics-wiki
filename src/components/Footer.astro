@@ -1,0 +1,42 @@
+---
+// Wikipedia-style footer: link row plus fine print. Ported from
+// overrides/partials/footer.html.
+import { withBase } from '../lib/routes';
+---
+
+<footer class="wiki-footer">
+  <nav class="wiki-footer__links" aria-label="Footer">
+    <a href={withBase('/about/')}>About</a>
+    <a href={withBase('/about/sources/')}>Sources &amp; Citations</a>
+    <a href={withBase('/about/credits/')}>Image Credits</a>
+    <a href={withBase('/about/accessibility/')}>Accessibility</a>
+    <a href={withBase('/categories/')}>Categories</a>
+  </nav>
+  <div class="wiki-footer__fine">
+    <p>
+      Text is available under the
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="wiki-external">Creative Commons
+      Attribution-ShareAlike 4.0 International License</a>; additional terms may apply to
+      images, which are credited individually on
+      <a href={withBase('/about/credits/')}>Image credits</a>. The site code is
+      available under the MIT License.
+    </p>
+    <p>
+      Libre Aquatics Wiki is part of the
+      <a href="https://github.com/Libre-Aquatics" class="wiki-external">Libre Aquatics</a> project,
+      an open, facility-neutral reference for competitive-aquatics operations.
+      Product and company names are used nominatively, for identification only.
+    </p>
+    <p>
+      Corrections and photographs are welcome. If you would rather not use GitHub,
+      email <a href="mailto:info@libreaquatics.org">info@libreaquatics.org</a>: a photo
+      of equipment you own or took yourself is genuinely useful, and you will be
+      credited.
+    </p>
+    <p class="wiki-footer__repo">
+      <a href="https://github.com/Libre-Aquatics/libre-aquatics-wiki" class="wiki-external">Source on GitHub</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://github.com/Libre-Aquatics" class="wiki-external">Libre Aquatics on GitHub</a>
+    </p>
+  </div>
+</footer>
