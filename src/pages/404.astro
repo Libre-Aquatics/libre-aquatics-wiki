@@ -1,0 +1,26 @@
+---
+// Branded "page not found", ported from overrides/404.html. GitHub Pages
+// serves 404.html for unknown paths under the project site.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../lib/routes';
+import { PAGE_META } from '../lib/seo';
+---
+
+<BaseLayout
+  title={PAGE_META.notFound.title}
+  description={PAGE_META.notFound.description}
+  noindex
+>
+  <main id="content" class="wiki-article wiki-404">
+    <h1>Page not found</h1>
+    <p>
+      There is no article at this address. It may have been moved or renamed,
+      or the link that brought you here may be out of date.
+    </p>
+    <ul>
+      <li>Return to the <a href={withBase('/')}>Main Page</a>.</li>
+      <li>Use the search box at the top of the page to find an article.</li>
+      <li>Browse everything from the <a href={withBase('/categories/')}>Categories</a> index.</li>
+    </ul>
+  </main>
+</BaseLayout>

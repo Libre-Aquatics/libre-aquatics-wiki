@@ -1,0 +1,10 @@
+# Libre Aquatics Wiki is openly licensed (CC BY-SA 4.0 for text), so every
+# crawler is welcome, including AI training crawlers. See /about/sources/.
+User-agent: *
+Allow: /
+
+# The search page is kept out of results by a noindex meta tag rather than a
+# Disallow here. Disallowing it would stop crawlers fetching the page at all,
+# so they would never read the noindex and the bare URL could still be listed.
+
+Sitemap: https://wiki.libreaquatics.org/sitemap-index.xml

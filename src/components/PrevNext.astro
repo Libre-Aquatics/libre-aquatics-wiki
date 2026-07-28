@@ -1,0 +1,31 @@
+---
+// Previous/Next page links in nav reading order, rendered at the end of the
+// article column (ported from overrides/main.html). Renders nothing on the
+// Main Page or on pages outside the nav tree.
+import { prevNext } from '../lib/navigation';
+
+interface Props {
+  currentId: string;
+}
+const { currentId } = Astro.props;
+const { prev, next } = currentId === 'index' ? {} : prevNext(currentId);
+---
+
+{
+  (prev || next) && (
+    <nav class="wiki-pagenav" aria-label="Page navigation" data-pagefind-ignore>
+      {prev && (
+        <a href={prev.route} rel="prev" class="wiki-pagenav__link wiki-pagenav__link--prev">
+          <span class="wiki-pagenav__direction">Previous</span>
+          <span class="wiki-pagenav__title">{prev.title}</span>
+        </a>
+      )}
+      {next && (
+        <a href={next.route} rel="next" class="wiki-pagenav__link wiki-pagenav__link--next">
+          <span class="wiki-pagenav__direction">Next</span>
+          <span class="wiki-pagenav__title">{next.title}</span>
+        </a>
+      )}
+    </nav>
+  )
+}

@@ -1,0 +1,44 @@
+---
+// Full-page search results. The topbar search navigates here on Enter with
+// ?q=<query>; this page runs its own Pagefind UI instance inline (the
+// pagefind-ui.js script is already loaded by the topbar Search component)
+// and triggers the search from the query string.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { PAGE_META } from '../lib/seo';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<BaseLayout
+  title={PAGE_META.search.title}
+  description={PAGE_META.search.description}
+  noindex
+>
+  <main id="content" class="search-page">
+    <h1>Search</h1>
+    <div id="search-page-ui"></div>
+  </main>
+
+  <script is:inline define:vars={{ base }}>
+    window.addEventListener('DOMContentLoaded', () => {
+      if (!window.PagefindUI) return;
+      const ui = new window.PagefindUI({
+        element: '#search-page-ui',
+        bundlePath: base + '/pagefind/',
+        showSubResults: true,
+        showImages: false,
+      });
+      const q = new URLSearchParams(window.location.search).get('q');
+      if (q) ui.triggerSearch(q);
+      // Keep ?q= in sync while typing so the results URL can be shared.
+      const container = document.getElementById('search-page-ui');
+      container.addEventListener('input', (event) => {
+        const input = event.target;
+        if (!(input instanceof HTMLInputElement)) return;
+        const url = new URL(window.location.href);
+        if (input.value) url.searchParams.set('q', input.value);
+        else url.searchParams.delete('q');
+        history.replaceState(null, '', url);
+      });
+    });
+  </script>
+</BaseLayout>

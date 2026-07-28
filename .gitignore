@@ -1,0 +1,18 @@
+# Build output
+/dist/
+/.astro/
+
+# Node
+node_modules/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+
+# Local-only working files (not published)
+/CLAUDE.md
+/STYLE.md
+/.claude/
+
+# Vendor manuals: research references only, never published
+/manuals/

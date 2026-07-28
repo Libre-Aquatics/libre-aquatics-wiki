@@ -1,0 +1,58 @@
+---
+// Tag index, replacing docs/categories.md and the Material tags plugin. The
+// intro prose is carried over from that file; the listing is generated from
+// the collection's front-matter tags.
+import { getCollection } from 'astro:content';
+import ArticleLayout from '../layouts/ArticleLayout.astro';
+import { docPathToRoute } from '../lib/routes';
+import { tagSlug } from '../lib/tags';
+import { PAGE_META } from '../lib/seo';
+
+const articles = await getCollection('articles');
+const byTag = new Map<string, { title: string; route: string }[]>();
+for (const article of articles) {
+  for (const tag of article.data.tags) {
+    const list = byTag.get(tag) ?? [];
+    list.push({ title: article.data.title, route: docPathToRoute(`${article.id}.md`) });
+    byTag.set(tag, list);
+  }
+}
+const tags = [...byTag.keys()].sort((a, b) => a.localeCompare(b));
+for (const tag of tags) {
+  byTag.get(tag)!.sort((a, b) => a.title.localeCompare(b.title));
+}
+const headings = tags.map((tag) => ({ depth: 2, slug: tagSlug(tag), text: tag }));
+---
+
+<ArticleLayout
+  title={PAGE_META.categories.title}
+  description={PAGE_META.categories.description}
+  ogKey="categories"
+  headings={headings}
+  entryId="categories"
+>
+  <p>
+    Every article in Libre Aquatics Wiki is tagged by its discipline (swimming, diving, water
+    polo, artistic swimming, open water), any program (masters, para-aquatics,
+    youth), and its topic (rules, officiating, timing, scoring, equipment, meet
+    management, team management, software, facilities).
+  </p>
+  <p>
+    Browse by tag below to see everything on a subject, for example, everything about
+    water polo, or everything about officiating across all sports.
+  </p>
+  {
+    tags.map((tag) => (
+      <section>
+        <h2 id={tagSlug(tag)}>{tag}</h2>
+        <ul>
+          {byTag.get(tag)!.map((article) => (
+            <li>
+              <a href={article.route}>{article.title}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</ArticleLayout>

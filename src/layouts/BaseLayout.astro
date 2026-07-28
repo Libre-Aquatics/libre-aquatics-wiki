@@ -1,0 +1,187 @@
+---
+// Site chrome shared by every page: head, theme bootstrapping, topbar with
+// search and theme toggle, footer, and the back-to-top button.
+import '../styles/wiki.css';
+import Search from '../components/Search.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
+import Footer from '../components/Footer.astro';
+import { withBase } from '../lib/routes';
+import { SITE_NAME, SITE_DESCRIPTION, ogImagePath } from '../lib/seo';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** Route key for this page's Open Graph card; '' is the Main Page. */
+  ogKey?: string;
+  /** Keep the page out of search results. It still passes links on. */
+  noindex?: boolean;
+  /** 'article' on content pages; anything else stays 'website'. */
+  ogType?: 'website' | 'article';
+  /** ISO date of the page's last change; article pages only. */
+  modifiedTime?: string;
+  /** Ancestor sections, outermost first, for BreadcrumbList markup. */
+  breadcrumbs?: { title: string; route: string }[];
+}
+const {
+  title,
+  description = SITE_DESCRIPTION,
+  ogKey = '',
+  noindex = false,
+  ogType = 'website',
+  modifiedTime,
+  breadcrumbs = [],
+} = Astro.props;
+
+// The site name is already the title suffix, so the Main Page must not repeat it.
+const isHome = title === SITE_NAME;
+const pageTitle = isHome ? SITE_NAME : `${title} - ${SITE_NAME}`;
+const ogImageAlt = isHome ? SITE_NAME : `${title} on ${SITE_NAME}`;
+// trailingSlash is 'always', so Astro.url.pathname already carries the slash.
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL(withBase(ogImagePath(ogKey)), Astro.site).href;
+const siteUrl = new URL(withBase('/'), Astro.site).href;
+
+// Structured data: the Main Page identifies the site and its search box;
+// article pages describe themselves as a TechArticle and carry their
+// section trail as a BreadcrumbList. Other pages get none.
+const jsonLdBlocks: object[] = [];
+if (isHome) {
+  jsonLdBlocks.push({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE_NAME,
+    url: siteUrl,
+    description: SITE_DESCRIPTION,
+    inLanguage: 'en',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${siteUrl}search/?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  });
+} else if (ogType === 'article') {
+  jsonLdBlocks.push({
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: title,
+    description,
+    url: canonical,
+    mainEntityOfPage: canonical,
+    image: ogImage,
+    inLanguage: 'en',
+    ...(modifiedTime ? { dateModified: modifiedTime } : {}),
+    isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: siteUrl },
+  });
+}
+if (breadcrumbs.length > 0) {
+  jsonLdBlocks.push({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      ...breadcrumbs.map((crumb, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: crumb.title,
+        item: new URL(crumb.route, Astro.site).href,
+      })),
+      // The page itself closes the trail; the item URL is optional here.
+      { '@type': 'ListItem', position: breadcrumbs.length + 1, name: title },
+    ],
+  });
+}
+// '<' must not appear raw inside a script element.
+const jsonLdTexts = jsonLdBlocks.map((block) =>
+  JSON.stringify(block).replace(/</g, '\\u003c'),
+);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    {/* The .ico answers the bare /favicon.ico browsers request on their own and
+        covers those that will not take an SVG; modern ones prefer the SVG. iOS
+        uses the flattened 180px PNG for a home-screen tile. */}
+    <link rel="icon" href={withBase('/favicon.ico')} sizes="32x32" />
+    <link rel="icon" href={withBase('/assets/logo.svg')} type="image/svg+xml" />
+    <link rel="apple-touch-icon" href={withBase('/apple-touch-icon.png')} />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1b1c1d" media="(prefers-color-scheme: dark)" />
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={ogImageAlt} />
+    {ogType === 'article' && modifiedTime && (
+      <meta property="article:modified_time" content={modifiedTime} />
+    )}
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    {jsonLdTexts.map((text) => (
+      <script type="application/ld+json" set:html={text} />
+    ))}
+    <script is:inline>
+      // Apply the saved theme before first paint so there is no flash. With
+      // no saved choice, CSS follows prefers-color-scheme on its own.
+      (function () {
+        try {
+          var theme = localStorage.getItem('wiki-theme');
+          if (theme === 'light' || theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', theme);
+          }
+        } catch (e) {
+          /* localStorage unavailable: fall through to the system preference */
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="topbar">
+      <a class="topbar__brand" href={withBase('/')}>
+        <img src={withBase('/assets/logo.svg')} alt="" />
+        Libre Aquatics Wiki
+      </a>
+      <Search />
+      <ThemeToggle />
+    </header>
+
+    <slot />
+
+    <Footer />
+
+    <button class="back-top" type="button" hidden>Back to top</button>
+    <script>
+      // Back-to-top: appears after scrolling down a couple of screens.
+      // Progressive enhancement; the button stays hidden without JS.
+      const backTop = document.querySelector<HTMLButtonElement>('.back-top');
+      if (backTop) {
+        const update = () => {
+          backTop.hidden = window.scrollY < window.innerHeight * 1.5;
+        };
+        window.addEventListener('scroll', update, { passive: true });
+        update();
+        backTop.addEventListener('click', () => {
+          window.scrollTo({ top: 0 });
+          document.querySelector<HTMLElement>('h1')?.focus?.();
+        });
+      }
+    </script>
+  </body>
+</html>

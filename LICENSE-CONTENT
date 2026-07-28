@@ -1,0 +1,50 @@
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+Copyright (c) 2026 Ethan Herstedt and Libre Aquatics Wiki contributors
+
+The wiki content in this repository, meaning the articles under `docs/` and the
+navigation and category data that describes them, is licensed under the Creative
+Commons Attribution-ShareAlike 4.0 International License.
+
+  Summary:     https://creativecommons.org/licenses/by-sa/4.0/
+  Legal code:  https://creativecommons.org/licenses/by-sa/4.0/legalcode
+  Identifier:  CC-BY-SA-4.0
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided that you:
+
+  - Attribution: give appropriate credit, link to the license, and indicate
+    whether changes were made.
+  - ShareAlike: distribute any adapted material under CC BY-SA 4.0, the same
+    license as the original.
+
+No additional restrictions may be applied: you may not add legal terms or
+technological measures that legally restrict others from doing anything the
+license permits.
+
+A suggested attribution line:
+
+  "<article title>" from Libre Aquatics Wiki (https://wiki.libreaquatics.org),
+  by Libre Aquatics Wiki contributors, licensed CC BY-SA 4.0.
+
+WHAT THIS LICENSE DOES NOT COVER
+
+  - The site code (everything under `src/`, `scripts/`, `public/`, and the
+    build configuration) is licensed separately under the MIT License. See the
+    LICENSE file.
+
+  - Third-party material cited by an article remains under its own copyright.
+    Vendor manuals, rulebooks, datasheets, and specifications are cited and
+    linked at the publisher, never reproduced or hosted here. Quoting a fact
+    from such a document does not place that document under this license.
+
+  - Product names, company names, and logos are the trademarks of their
+    owners. They are used nominatively, for identification only, and no
+    trademark rights are granted by this license. Libre Aquatics Wiki is not
+    affiliated with or endorsed by any manufacturer or governing body.
+
+  - Images are licensed individually and each one is listed, with its author
+    and license, at https://wiki.libreaquatics.org/about/credits/.
+
+If you believe material here infringes your rights, contact
+info@libreaquatics.org and it will be reviewed and removed if warranted.
