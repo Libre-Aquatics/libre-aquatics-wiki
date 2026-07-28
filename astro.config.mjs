@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import pagefind from 'astro-pagefind';
 import sitemap from '@astrojs/sitemap';
-import { rehypeHeadingIds } from '@astrojs/markdown-remark';
+import { rehypeHeadingIds, unified } from '@astrojs/markdown-remark';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeExternalLinks from 'rehype-external-links';
 import remarkWikiLinks from './src/plugins/remark-wiki-links.mjs';
@@ -59,25 +59,30 @@ export default defineConfig({
       },
     }),
   ],
+  // Astro 7 renders Markdown with its own Sätteri pipeline by default, which
+  // does not run remark/rehype plugins. `unified()` switches back to the
+  // remark/rehype processor, which every plugin below is written against.
   markdown: {
-    remarkPlugins: [
-      // Resolves relative .md links to routes and fails the build on broken
-      // ones; the replacement for `mkdocs build --strict`.
-      [remarkWikiLinks, { docsDir: './docs', base: '/' }],
-    ],
-    rehypePlugins: [
-      rehypeHeadingIds,
-      [
-        rehypeAutolinkHeadings,
-        {
-          behavior: 'append',
-          properties: { className: ['headerlink'], ariaLabel: 'Permanent link' },
-          content: { type: 'text', value: '¶' },
-        },
+    processor: unified({
+      remarkPlugins: [
+        // Resolves relative .md links to routes and fails the build on broken
+        // ones; the replacement for `mkdocs build --strict`.
+        [remarkWikiLinks, { docsDir: './docs', base: '/' }],
       ],
-      // Marks cross-origin links so CSS can draw the "leaves the wiki" arrow;
-      // replaces docs/javascripts/external-links.js at build time.
-      [rehypeExternalLinks, { properties: { className: ['wiki-external'] } }],
-    ],
+      rehypePlugins: [
+        rehypeHeadingIds,
+        [
+          rehypeAutolinkHeadings,
+          {
+            behavior: 'append',
+            properties: { className: ['headerlink'], ariaLabel: 'Permanent link' },
+            content: { type: 'text', value: '¶' },
+          },
+        ],
+        // Marks cross-origin links so CSS can draw the "leaves the wiki" arrow;
+        // replaces docs/javascripts/external-links.js at build time.
+        [rehypeExternalLinks, { properties: { className: ['wiki-external'] } }],
+      ],
+    }),
   },
 });
