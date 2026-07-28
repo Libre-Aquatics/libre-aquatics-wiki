@@ -1,0 +1,33 @@
+name: Dependabot auto-merge
+
+# Dependabot pull requests that are patch or minor updates merge themselves once
+# the CI build passes; major updates always wait for a human. pull_request_target
+# is required because a pull_request run on a Dependabot branch gets a read-only
+# GITHUB_TOKEN. Nothing from the pull request head is checked out or executed
+# here, which is what makes that trigger safe in this workflow.
+
+on: pull_request_target
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch update metadata
+        id: meta
+        uses: dependabot/fetch-metadata@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      # For a grouped pull request, update-type reports the highest bump in the
+      # group, so a group containing one major waits for review as a whole.
+      - name: Enable auto-merge for patch and minor updates
+        if: steps.meta.outputs.update-type == 'version-update:semver-patch' || steps.meta.outputs.update-type == 'version-update:semver-minor'
+        run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

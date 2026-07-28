@@ -1,7 +1,50 @@
 version: 2
+
+# Interdependent packages are grouped so they move in a single pull request.
+# Bumping them separately breaks "npm ci" on peer ranges: raising astro without
+# astro-pagefind, or react without react-dom, produces an ERESOLVE conflict that
+# fails CI before the build ever runs. Each group is declared twice, because
+# groups apply to version updates only unless a group sets
+# "applies-to: security-updates".
+
 updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "monday"
     open-pull-requests-limit: 5
+    versioning-strategy: "increase"
+    labels: ["dependencies"]
+    groups:
+      # astro-* covers astro-pagefind and astro-og-canvas; pagefind is listed
+      # separately because it carries no prefix. A dependency joins the first
+      # group it matches, so @types/react* lands in "react", not "remark-rehype".
+      astro:
+        patterns: ["astro", "@astrojs/*", "astro-*", "pagefind"]
+      react:
+        patterns: ["react", "react-dom", "@types/react", "@types/react-dom"]
+      remark-rehype:
+        patterns: ["rehype-*", "remark-*", "unist-*"]
+      astro-security:
+        applies-to: security-updates
+        patterns: ["astro", "@astrojs/*", "astro-*", "pagefind"]
+      react-security:
+        applies-to: security-updates
+        patterns: ["react", "react-dom", "@types/react", "@types/react-dom"]
+      # Catch-all so an advisory on a transitive package (sharp, esbuild) rides
+      # along with whatever pulls it in.
+      transitive-security:
+        applies-to: security-updates
+        patterns: ["*"]
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 3
+    labels: ["dependencies", "github-actions"]
+    groups:
+      actions:
+        patterns: ["*"]
