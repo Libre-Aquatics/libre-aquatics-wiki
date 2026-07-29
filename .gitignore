@@ -16,3 +16,4 @@ Thumbs.db
 
 # Vendor manuals: research references only, never published
 /manuals/
+/manuals-backup-*/

@@ -5,8 +5,14 @@
 //   node scripts/check-copying.mjs [threshold] [paths...] [--include-comments]
 //
 // Local-only: manuals/ is gitignored, so CI has no corpus and the script exits 0
-// with a notice. Sources are matched from manuals/*.txt; extract new ones with
-//   for f in manuals/*.pdf; do t="${f%.pdf}.txt"; [ -f "$t" ] || pdftotext -q "$f" "$t"; done
+// with a notice. Sources are every .txt under manuals/ except the staging and
+// periodicals subtrees (see SKIP_DIRS below).
+//
+// Extractions are irreplaceable: some were produced with PyMuPDF and a few were
+// OCR'd by hand because pdftotext mangled them (see manuals/notes/
+// starter-audit-sources.md). Extract a MISSING one, never regenerate an existing
+// one in bulk:
+//   node manuals/_tools/extract-text.mjs
 //
 // The corpus (~1.5M words) dwarfs the articles (~15k), so the index is built over
 // the ARTICLES and the corpus is streamed one file at a time. Matches are extended
@@ -50,12 +56,36 @@ if (!existsSync(SOURCE_DIR)) {
   console.log(`check-copying: no ${SOURCE_DIR}/ directory, skipping (local-only check).`);
   process.exit(0);
 }
-const sourceFiles = readdirSync(SOURCE_DIR)
-  .filter((f) => f.endsWith('.txt'))
-  .map((f) => join(SOURCE_DIR, f));
+// Subtrees of manuals/ that are not part of the vetted corpus. periodicals/ is
+// bulk-scraped magazine OCR (the swimnews-txt source alone is ~350 files) that
+// would swamp the index and manufacture false positives; the underscore dirs are
+// staging, quarantine, or duplicate storage rather than sources.
+const SKIP_DIRS = new Set(['_tools', '_dump', '_duplicates', '_unsorted', 'periodicals']);
+
+function walkTxt(dir, out = []) {
+  for (const e of readdirSync(dir, { withFileTypes: true })) {
+    if (e.isDirectory()) {
+      if (!SKIP_DIRS.has(e.name)) walkTxt(join(dir, e.name), out);
+    } else if (e.name.endsWith('.txt')) {
+      out.push(join(dir, e.name));
+    }
+  }
+  return out;
+}
+
+const sourceFiles = walkTxt(SOURCE_DIR);
 if (sourceFiles.length === 0) {
   console.log(`check-copying: no .txt sources in ${SOURCE_DIR}/, skipping.`);
   process.exit(0);
+}
+// This check reports rather than fails, so a corpus that quietly vanished would
+// look exactly like a clean pass. Say so loudly instead.
+const EXPECTED_MIN_SOURCES = 260; // 272 as of 2026-07-28
+if (sourceFiles.length < EXPECTED_MIN_SOURCES) {
+  console.error(
+    `check-copying: *** only ${sourceFiles.length} sources found, expected at least ` +
+      `${EXPECTED_MIN_SOURCES}. The corpus may have moved. Results are not trustworthy. ***`,
+  );
 }
 
 const pages = targets.flatMap((t) => walk(t));
@@ -83,6 +113,11 @@ const runs = new Map(); // page -> Map(startIndex -> {len, srcFile})
 let corpusWords = 0;
 for (const sf of sourceFiles) {
   const sw = normalize(readFileSync(sf, 'utf8'), false).split(' ').filter(Boolean);
+  // A PDF with no text layer extracts to nothing and then silently contributes
+  // nothing, which reads the same as "no copying found".
+  if (sw.length < 50) {
+    console.error(`check-copying: near-empty source ${sf} (${sw.length} words) - extraction likely failed`);
+  }
   corpusWords += sw.length;
   for (let i = 0; i + N <= sw.length; i++) {
     const g = sw.slice(i, i + N).join(' ');
