@@ -10,6 +10,36 @@ tags:
   - Artistic swimming
 ---
 
+<!-- Research notes (do not publish):
+  Local sources, under manuals/vendors/colorado-time-systems/software/:
+  displaylink-plus-help/01..22 (the DL+ help file, printed one PDF per topic from the
+  Standalone Template Editor install; chapter order is the help contents order).
+  Numbers cited below are chapter numbers in that folder. Also cts-displaylink-3.7-...
+  -f888.pdf (F888 Rev. 0404, 2004), cts-displaylink-aqualink-1.6-and-1.7-...-f854.pdf
+  (F854 Rev. 0404), cts-displaylink-template-editor-1.5-...-f855.pdf (F855 Rev. 0404),
+  cts-displaylink-video-to-broadcast-software-instructions-f1062-2.pdf (Rev. 202104).
+  Gen7 claims come from timers-consoles/cts-serial-timer-user-guide-f1034.pdf.
+
+  Checked against those files 2026-07-28:
+  - Multi-layer really did arrive in v4.2.7 (20 Nov 2013) as a paid add-on, and v4.2.10
+    (14 Feb 2014) shipped Two Layer Display to everyone disabled by default (ch. 21).
+    Easy to misread: the v4.2.10 entry directly above it is the CTS MultiSport module,
+    a different thing entirely.
+  - Dynamic team logos are a v4.6.0 (3 Aug 2023) item, in the same block as Athlete Info
+    over Gen7 Enhanced RS-485 (ch. 21).
+  - The lane-to-module mapping (1-9 -> 01-09, 10 -> 0A, 11 -> 17, 12 -> 18) is stated in
+    ch. 22, not in the Swimming topic where one would look for it.
+  - v4.7.0 is 16 December 2025; team scores and event results over Gen7 Enhanced RS-485
+    are a v4.7.0 item (ch. 21).
+  - Social Media was removed as broken with a promise to return; nothing later records it
+    returning, while the overview and toolbar topics still document it as working.
+  - Help text lags in places: the two-layer topic still gives Vista as the minimum OS,
+    which the release notes overtook in 2015.
+
+  Still open: whether GameLink shipped as its own SKU; what the Lite build omits beyond
+  the video-board requirement; whether AquaLink 1.6/1.7 ran on anything but 3.6/3.7.
+-->
+
 DisplayLink Plus is a Windows program from [Colorado Time Systems](../vendors/colorado-time-systems.md) (CTS)
 that drives the company's matrix and LED video displays. It composes what appears on the
 board from three kinds of content: templates, which lay out live timing and scoring data in
@@ -59,17 +89,18 @@ has also used DVI to DVI and DisplayPort.[^f1062]
 
 ## Program structure
 
-The main window is divided into four panes whose positions are fixed, though most can be
-resized or undocked. The Toolbar in the upper left is the entry point to every function.
-The Library in the lower left holds the templates, images, videos and sequences the operator
-has saved; its default location is the Windows Documents folder. The Active Display in the
-upper center mirrors exactly what the board is currently showing. The Main Work Area in the
-lower center holds a tab for each toolbar function the operator has opened, with a Preview
-tab that is always present and cannot be closed.[^help]
+Four panes make up the main window. Their positions are fixed, though most can be resized,
+and the Active Display can also be undocked or pinned out of the way. Every function is
+reached from the Toolbar, which occupies the upper left. Saved templates, images, videos and
+sequences live in the Library below it, whose default location is the Windows Documents
+folder. Across the center of the window, the Active Display mirrors the board exactly, and
+beneath it the Main Work Area carries one tab per function the operator has opened. A
+Preview tab sits there permanently and has no close button.[^help]
 
-Live data does not render in the Preview tab. Timing and scoring values, quick messages and
-time of day appear only in the Active Display and on the board itself, so a template that
-looks empty in Preview may still be correct.[^help]
+Preview is not a reliable guide to a finished frame, because live values never render there.
+Timing and scoring figures, quick messages and the time of day reach the Active Display and
+the board itself but not the preview, so a template that looks blank there may still be
+correct.[^help]
 
 Content reaches the board by double-clicking an item in the Library, dragging it to the
 Active Display, or selecting it and pressing Enter. Right-clicking the Active Display offers
@@ -80,8 +111,8 @@ prepares the next one, and Clear Display, which blanks the board.[^help]
 
 A template is a file, with the extension `.tpl`, that names which data items to show, where
 on the board each one sits, and how each is formatted. Templates are built in Template
-Editor, which is the one toolbar function that opens in its own window rather than as a tab
-in the Main Work Area.[^help]
+Editor, the one toolbar function that opens in a window of its own instead of docking into
+the Main Work Area the way the others do.[^help]
 
 Items are dragged onto the board surface from an Available Items list. The Core Items tab
 holds the sport-neutral elements: static text, a quick-message placeholder, rectangle, round
@@ -110,7 +141,7 @@ Templates written in DisplayLink 3.x are not supported and cannot be opened.[^he
 
 Since version 4.6.0 a template can also carry dynamic team logos, image items that are
 replaced at display time with a file whose name matches the incoming team abbreviation.
-Logo files live in a folder named `TemplateLogos` at the top level of the Library, and PNG
+Logo files live in a folder named `TemplateLogos` at the Library's top level, and PNG
 should be used where a transparent background is wanted. In swimming the logo item's module
 number must match the lane's: lanes 1 to 9 use modules `01` to `09`, lane 10 uses `0A`,
 lane 11 uses `17` and lane 12 uses `18`.[^help][^relnotes]
@@ -123,14 +154,15 @@ contributes beyond the template itself.
 
 The Swimming module carries the most settings. Its Name Data tab holds event information and
 records, which can be typed in, imported from `.scb` files on disk or removable media, or
-requested live from a connected meet-management computer. An Options tab selects whether
+requested as the meet runs, where a meet-management computer is connected. An Options tab selects whether
 event and heat numbers follow the timer automatically or are advanced manually, chooses the
 meet-management data source, and sets swimmers' name format (first, last or full) and
 capitalization. An Edit Record Tags control declares which categories of record the board may
 show, pool and championship records among them.[^help]
 
-Diving builds dive orders with diver name and team affiliation, entered by hand or imported
-from a text or XML file produced by most diving meet-management programs. Several events can
+The Diving manager holds an order of dives, each row pairing a diver with the team they
+represent. Rows are typed in or pulled from a text or XML file, which most diving
+meet-management programs can write. Several events can
 be prepared in advance and assigned to different connected timers, so one timer runs the
 1-meter event while another runs the 3-meter simultaneously. A diving leader board can be
 produced three ways:
@@ -188,31 +220,31 @@ the later WA-2 and WA-3.[^help][^f1034]
 
 CTS also instructs that the scoreboard definitions on the timing console be left at their
 default values when the console feeds a video board through DisplayLink Plus. Its
-troubleshooting notes name those definitions as the first thing to check when data appears
-in the wrong field on the board.[^help][^f1034]
+troubleshooting notes make those definitions the first thing to check when a value lands in
+the wrong field, or fails to reach the board at all.[^help][^f1034]
 
 The meet-management link is a serial one. For Hy-Tek Meet Manager, CTS specifies the
 scoreboard interface set to its Generic Serial option, a port configured for 9600 baud, 8
 data bits, no parity and 1 stop bit, and a null modem in the cable between the two
-computers; a USB-to-serial adapter may stand in where a machine has no COM port. The
+computers; on a machine with no COM port, a USB-to-serial adapter can stand in. The
 scoreboard interface is a separately licensed Hy-Tek feature, sometimes labeled the Alpha
 scoreboard interface.[^help][^support] Once configured, DisplayLink Plus can either accept a
-bulk transfer or request fresh heat and event data each time the event or heat changes.[^help]
+bulk transfer or ask for updated heat and event data whenever either one changes.[^help]
 
 The Gen7 consoles changed this arrangement. Gen7 Swimming can take swimmers' names itself,
 either pre-loaded from `.scb` files on a USB drive or sent live over a UDP network link from
 the meet-management program, and pass them on to DisplayLink Plus inside the scoreboard
-data. That removes the need for a second, direct connection between the meet-management
-computer and the DisplayLink computer. CTS records this as requiring DisplayLink Plus v4.6.0
-or later and an RS-485 rather than RS-232 link to the display computer. Team scores and
-complete event results followed over the same path, added in Gen7 Swimming v2026 with
+data. That removes the need for a second cable running directly from the meet-management
+computer to the DisplayLink computer. CTS records this as requiring DisplayLink Plus v4.6.0
+or later and an RS-485 rather than RS-232 link to the display computer. Team scoring and
+full event results followed over the same path, added in Gen7 Swimming v2026 with
 DisplayLink Plus v4.7.0.[^f1034][^relnotes]
 
 ## Sequences, video and scheduling
 
 A sequence is a preset series of graphics and templates played in order, built in Sequence
-Editor. Each entry carries a duration, an incoming transition (none, fade, slide, cover or
-uncover) and a transition time, and the editor keeps a running total of the sequence's
+Editor. Each entry carries a duration, a transition time, and an incoming transition chosen
+from none, fade, slide, cover or uncover; the editor keeps a running total of the sequence's
 length as entries are added.[^help]
 
 Graphics and video can also be sent straight to the board without a template, in JPG, GIF,
@@ -240,8 +272,8 @@ background layer of a two-layer display.[^help]
 On boards that support it, DisplayLink Plus composes the output from a background layer and
 an overlay layer, giving two Active Display panes instead of one. The background may be a
 template, live video, an animation or a graphic; the overlay may only be a template. The
-feature needs a board with cropped VGA output, a second monitor attached to the DisplayLink
-computer, and the option enabled in Settings.[^help]
+feature needs a board with cropped VGA output, a second monitor on the DisplayLink computer,
+and the option enabled in Settings.[^help]
 
 An overlay template is made transparent through the Options menu in Template Editor, after
 which the editing surface shows a checkerboard where the background will show through. CTS

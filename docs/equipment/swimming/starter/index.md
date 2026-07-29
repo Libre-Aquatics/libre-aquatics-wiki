@@ -18,13 +18,15 @@ athletes who are deaf or hard of hearing.
 ## History and the acoustic problem
 
 Races were once started by a single poolside signal: a whistle, a gun, or a horn. A
-single sound source reaches the far lanes later than the near ones. Sound travels
-about 343 m/s in air, so across a 25 m or 50 m pool the delay between the nearest
-and farthest lane is on the order of a tenth of a second, enough to matter in a race
-decided in hundredths. The solution, credited to the Swiss timekeeper Omega and
-later adopted across the sport, was to place a loudspeaker behind each starting block
-and drive them together, so every athlete hears the command and the signal at the
-same instant.[^swisstiming][^omegahist] Modern start systems build this principle
+single sound source reaches the far lanes later than the near ones. The relevant
+distance is the width of the course, across which the blocks are ranged, rather than
+its length: ten lanes at 2.5 m set the outermost blocks about 22.5 m apart. Sound
+travels about 343 m/s in air, so several hundredths of a second separate the nearest
+lane from the farthest, and races are decided in hundredths. The solution, credited
+to the Swiss timekeeper Omega and later adopted across the sport, was to place a
+loudspeaker behind each starting block and drive them together, so every athlete
+hears the command and the signal at the same instant.[^swisstiming][^omegahist]
+Modern start systems build this principle
 into one unit: the start tone, the strobe, and, on deck-wired systems, a light at
 each block all fire together with the electronic start pulse to the timer.
 
@@ -42,30 +44,29 @@ each platform.
 ## Governing-body requirements
 
 World Aquatics, the international federation for the sport, sets the equipment
-standard the design follows. Its swimming rules give the starter a microphone for the oral
-commands, and a transducer where a pistol is fired. Both feed a loudspeaker at every
-block, the point being that no athlete hears a command or the signal sooner or louder
-than any other. False-start detection equipment must also be installed, and at the
-Olympic Games and the World Aquatics Championships a loudspeaker at or beside each
-starting platform carries the commands and the signal.[^wacr] Going before the signal
-exposes an athlete to disqualification under the one-start rule.[^wacr]
+standard start systems are built to meet. Its swimming rules give the starter a
+microphone for the oral commands, and a transducer where a pistol is fired. Both feed
+a loudspeaker at every block, so that no athlete hears a command or the signal sooner
+or louder than any other. False-start detection equipment must also be installed,
+and at the Olympic Games and the World Aquatics Championships a loudspeaker at or
+beside each starting platform carries the commands and the signal.[^wacr] Going
+before the signal exposes an athlete to disqualification under the one-start
+rule.[^wacr]
 
-For athletes who are deaf or hard of hearing, a visual starting signal is provided
-for by rule, though not by the World Aquatics swimming regulations, which do not
-address it. USA Swimming requires a visual signal, a strobe light or the starter's
-arm signals, positioned where the swimmer can see it, and allows lane reassignment
-so it can be seen.[^usas105] World Para Swimming requires a strobe or starting light
-for athletes with a hearing impairment, and allows a team leader to request
-additional arm signals from the starter.[^wps] Independent equipment patents have
-described the same
-combination for decades: a 1992 Seiko patent for a swimming-race timing system
-covers start-signal detection together with a visual display for deaf
-swimmers.[^seiko]
+Visual starting signals for athletes who are deaf or hard of hearing come from other
+rulebooks; the World Aquatics swimming regulations do not address them. USA Swimming
+requires a visual signal, a strobe light or the starter's arm signals, positioned
+where the swimmer can see it, and allows lane reassignment so it can be
+seen.[^usas105] World Para Swimming requires a strobe or starting light for athletes
+with a hearing impairment, and allows a team leader to request additional arm signals
+from the starter.[^wps] The pairing also appears in equipment patents: a 1992 Seiko
+patent for a swimming-race timing system covers start-signal detection together with
+a visual display for deaf swimmers.[^seiko]
 
 ## False starts and reaction time
 
-The one-start rule is the reason the start pulse and the detection equipment are
-engineered as they are. The start pulse marks time zero for the race, and the timing
+The one-start rule shapes both the start pulse and the false-start detection
+equipment. The start pulse marks time zero for the race, and the timing
 system measures each swimmer's result from it; false-start detection equipment at the
 blocks lets officials confirm a start given before the signal.[^wacr] Deck-wired
 start systems extend the same instant to the relay-judging platforms, whose
@@ -107,8 +108,8 @@ Championship line runs through three generations, the legacy
 [CHAMP-SSM](champ-ssm.md), the current-era
 [Championship](championship-start-system.md) (`SS`), and today's
 [Championship Elite](championship-elite-start-system.md) (`SSE`). Each article covers
-one model in full, its specifications, connections, and part-number variants, and how
-it differs from its near-namesake; this page is the shared overview they refer back
+one model in full: its specifications, connections, part-number variants, and how it
+differs from its near-namesake. This page is the shared overview they refer back
 to. Separate from these acoustic start systems, CTS also makes the
 [Dolphin Starter Unit](dolphin-starter-unit.md) (`R-1004-0507`), a wireless
 start-trigger that starts the
@@ -116,7 +117,7 @@ start-trigger that starts the
 or strobe starter.
 
 Daktronics makes one start system, the portable
-[HS-200 Horn Start](hs-200.md), sold as the starting companion to its OmniSport 2000
+[HS-200 Horn Start](hs-200.md), sold as the start system for its OmniSport 2000
 timing console; its start outputs also connect to other manufacturers' timers.
 
 | Product | Part number | Family / tier | Status |
@@ -125,7 +126,7 @@ timing console; its start outputs also connect to other manufacturers' timers.
 
 International Sports Timing (IST) makes the portable
 [SWIMSTART](swimstart.md), which connects to IST, CTS, Daktronics, or Omega
-timers and sold an under-block speaker system as an accessory.
+timers. IST also sold an under-block speaker system as an accessory.
 
 | Product | Part number | Family / tier | Status |
 |---|---|---|---|
@@ -140,12 +141,12 @@ directly and through SwimNerd, with lane speakers and harnesses as accessories.
 
 Swiss Timing, whose equipment appears under the Omega brand at international
 meets, makes electronic starting devices for swimming, athletics, and speed
-skating, driving in-block lane speakers or mobile loudspeaker sets. The
+skating. They drive in-block lane speakers or mobile loudspeaker sets. The
 [StartTime II](starttime-ii.md) and [StartTime III](starttime-iii.md) are the
-earlier acoustic units, given from a microphone unit and configured by DIP switch
-(the II) or a setup menu (the III); the [StartTime IV](starttime-iv.md) that
-succeeded them introduced the company's electronic e-gun, first used at the 2010
-Vancouver Winter Olympics, and the [StartTime V](starttime-v.md) succeeded the IV
+earlier acoustic units, operated from a microphone unit and configured by DIP switch
+(the II) or a setup menu (the III). The [StartTime IV](starttime-iv.md) succeeded
+them and introduced the company's electronic e-gun, first used at the 2010
+Vancouver Winter Olympics. The [StartTime V](starttime-v.md) succeeded the IV
 in 2015; the IV and V are not cross-compatible.
 
 | Product | Article number | Family / tier | Status |
@@ -156,7 +157,7 @@ in 2015; the IV and V are not cross-compatible.
 | [StartTime V](starttime-v.md) | 3481.930 (microphone unit), 3481.931 (e-gun) | Electronic starting device | Current |
 
 Seiko makes two separate lines of electronic starter, and only one of them is swimming
-equipment. The deck generators are certified for the sport: Seiko lists them as
+equipment. The deck generators are the swimming line: Seiko lists them as
 conforming to World Aquatics rules and as Japan Swimming Federation Class AA and Class
 A, and their start signal goes to the Seiko printing timer on a wire.[^seikocat] The
 current model is the [PS-1400](seiko-ps-1400.md), which replaced the

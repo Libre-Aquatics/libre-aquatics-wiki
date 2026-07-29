@@ -12,16 +12,20 @@ tags:
 ---
 
 <!-- Research notes (do not publish):
-  Local sources in manuals/: Dolphin_extended_instructions_F912.pdf (user guide,
-  Rev 202412, Dolphin software v5+; FCC module IDs TFB-FreeStar / X8WBT840F;
-  methods 1/2/3; result files to C:\CTSDolphin in Text/CSV/XML/DO3/DO4; firmware
-  v1.51/1.31 old hardware vs v2.00+ new hardware, not cross-loadable),
-  Dolphin_F911_Rev201905.pdf + Dolphin.pdf (F911 Rev 0707 setup sheet; part
-  numbers R-1004-0505 base / -0506 watch / -0507 starter), Dolphin-2.pdf
-  (Spanish F911), El Dolphin como sistema...pdf (F922 software sheet),
-  Wireless Stopwatch Timing System...pdf (brochure Rev 08/12),
-  Download pdf - Colorado Time Systems.pdf (brochure Rev 03/14),
-  dolphin (1).pdf (flyer Rev 09/22), Dolphin_Datasheet_Rev1020.pdf (Rev 10/20).
+  Local sources, under manuals/vendors/colorado-time-systems/ (t-c =
+  timers-consoles/, sw = software/):
+  t-c/cts-dolphin-user-guide-f912.pdf (user guide, Rev 202412, Dolphin software
+  v5+; FCC module IDs TFB-FreeStar / X8WBT840F; methods 1/2/3; result files to
+  C:\CTSDolphin in Text/CSV/XML/DO3/DO4; firmware v1.51/1.31 old hardware vs
+  v2.00+ new hardware, not cross-loadable),
+  t-c/cts-dolphin-wireless-stopwatch-setup-f911.pdf plus its -f911-rev-201905 and
+  -f911-alt siblings (F911 Rev 0707 setup sheet; part numbers R-1004-0505 base /
+  -0506 watch / -0507 starter), sw/cts-sistema-dolphin.es.pdf (Spanish F911),
+  t-c/cts-el-dolphin.es.pdf (F922 software sheet),
+  sw/cts-wireless-stopwatch-timing-system-dolphin.pdf (brochure Rev 08/12),
+  sw/cts-dolphin-wireless-stopwatch-system-dolphin.pdf (brochure Rev 03/14),
+  t-c/cts-dolphin-wireless-stopwatch-system-dolphin.pdf (flyer Rev 09/22),
+  t-c/cts-dolphin-wireless-stopwatch-system-dolphin-2.pdf (datasheet Rev 10/20).
   Key system facts: up to 10 lanes x 3 watches (A/B/C); 2.4 GHz, 16 channels,
   spread spectrum; 9 V, ~40 h; watch 6.06 x 2.69 x 1.06 in, 6.9 oz; patents US
   7,821,876 and 8,085,623; introduced 2006 (CTS blog "great-news-for-dolphin-users");

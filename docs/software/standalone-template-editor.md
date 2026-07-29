@@ -16,7 +16,8 @@ tags:
   part number R-470-121, USD 49.95 (checked July 2026). Installs under
   C:\Program Files\Colorado Time Systems\Standalone Template Editor\ and carries
   the full DL+ help file (that install path is where the local help-topic PDFs in
-  manuals/DIsplayLink/ were printed from).
+  manuals/vendors/colorado-time-systems/software/displaylink-plus-help/ were
+  printed from; they are numbered 01- to 22- in help-chapter order).
   Function is the same editor described in the DisplayLink Plus article: Available
   Items list (Core Items plus per-sport tabs), Properties palette, Multiple Modules
   dialog, alignment toolbars, background images, transparency for overlay

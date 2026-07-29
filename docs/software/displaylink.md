@@ -10,11 +10,15 @@ tags:
 ---
 
 <!-- Research notes (do not publish):
-  Local sources in manuals/: Dlink3.7-manual.pdf (DisplayLink 3.7 Users Guide,
-  F888 Rev. 0404, (c)2004); Dlink3.6-manual.pdf (3.6); TemplateEditor-1.5-manual.pdf
-  (Template Editor v1.5 Users Guide, F855 Rev. 0404); "DISPLAYLINK AquaLink 1.6 &
-  1.7 - Colorado Time Systems.pdf" (AquaLink v1.6 & 1.7 Users Guide, F854 Rev.
-  0404); "DISPLAYLINK 3.6 - Colorado Time Systems.pdf".
+  Local sources, all under manuals/vendors/colorado-time-systems/software/:
+  cts-displaylink-3.7-for-matrix-display-systems-software-user-guide-f888.pdf
+  (DisplayLink 3.7 Users Guide, F888 Rev. 0404, (c)2004);
+  cts-displaylink-3.6-for-myriad-and-mercury-matrix-display-systems-f837.pdf (3.6,
+  with a second copy of the same guide suffixed -f837-2.pdf);
+  cts-displaylink-template-editor-1.5-for-matrix-and-video-display-f855.pdf
+  (Template Editor v1.5 Users Guide, F855 Rev. 0404);
+  cts-displaylink-aqualink-1.6-and-1.7-displaying-aquatic-sports-on-f854.pdf
+  (AquaLink v1.6 & 1.7 Users Guide, F854 Rev. 0404).
   Established facts: 3.x runs on Windows NT 4.0 SP3 or Windows 2000. Main window
   is a toolbar of Designer, Library, Swimming, Diving, Basketball, Football,
   Hockey, Soccer, Volleyball, Wrestling, About, Help, Exit. Menus: File, Settings,
