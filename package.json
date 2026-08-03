@@ -14,10 +14,10 @@
     "manuals:undo": "node manuals/_tools/undo.mjs"
   },
   "dependencies": {
-    "@astrojs/markdown-remark": "^7.2.1",
-    "@astrojs/react": "^6.0.1",
+    "@astrojs/markdown-remark": "^7.2.2",
+    "@astrojs/react": "^6.0.2",
     "@astrojs/sitemap": "^3.2.0",
-    "astro": "^7.1.4",
+    "astro": "^7.1.6",
     "astro-og-canvas": "^0.13.0",
     "astro-pagefind": "^2.0.1",
     "pagefind": "^1.5.0",
