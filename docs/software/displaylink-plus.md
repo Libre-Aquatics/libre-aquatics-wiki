@@ -11,7 +11,7 @@ tags:
 ---
 
 <!-- Research notes (do not publish):
-  Local sources, under manuals/vendors/colorado-time-systems/software/:
+  Local sources, under sources/vendors/colorado-time-systems/software/:
   displaylink-plus-help/01..22 (the DL+ help file, printed one PDF per topic from the
   Standalone Template Editor install; chapter order is the help contents order).
   Numbers cited below are chapter numbers in that folder. Also cts-displaylink-3.7-...

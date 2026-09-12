@@ -10,7 +10,7 @@ tags:
 ---
 
 <!-- Research notes (do not publish):
-  Local sources, all under manuals/vendors/colorado-time-systems/software/:
+  Local sources, all under sources/vendors/colorado-time-systems/software/:
   cts-displaylink-3.7-for-matrix-display-systems-software-user-guide-f888.pdf
   (DisplayLink 3.7 Users Guide, F888 Rev. 0404, (c)2004);
   cts-displaylink-3.6-for-myriad-and-mercury-matrix-display-systems-f837.pdf (3.6,

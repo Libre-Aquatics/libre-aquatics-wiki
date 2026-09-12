@@ -14,6 +14,6 @@ Thumbs.db
 /STYLE.md
 /.claude/
 
-# Vendor manuals: research references only, never published
-/manuals/
-/manuals-backup-*/
+# Research corpus: vendor manuals, periodicals, rulebooks. References only, never published
+/sources/
+/sources-backup-*/

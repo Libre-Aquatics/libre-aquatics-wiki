@@ -12,7 +12,7 @@ tags:
 ---
 
 <!-- Research notes (do not publish):
-  Local sources, under manuals/vendors/colorado-time-systems/ (t-c =
+  Local sources, under sources/vendors/colorado-time-systems/ (t-c =
   timers-consoles/, sw = software/):
   t-c/cts-dolphin-user-guide-f912.pdf (user guide, Rev 202412, Dolphin software
   v5+; FCC module IDs TFB-FreeStar / X8WBT840F; methods 1/2/3; result files to
