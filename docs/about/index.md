@@ -29,15 +29,6 @@ The wiki covers the equipment and procedures used to stage a competition:
 Pages describe how equipment and procedures work in general, not how any one pool
 or organization has chosen to set them up.
 
-## The Libre Aquatics project
-
-Libre Aquatics Wiki is one part of Libre Aquatics, a family of open-source tools for
-aquatic sports:
-
-- [Libre Aquatics Meet](../software/libre-aquatics-meet.md): meet-management software.
-- [Libre Aquatics Team](../software/libre-aquatics-team.md): team- and roster-management software.
-- Libre Aquatics Wiki, this reference, documenting the systems the software works with.
-
 *Libre* means free, as in free and open, the sense used in "free/libre software".
 
 ## How the wiki is organized
@@ -49,8 +40,8 @@ The wiki is organized around the equipment and operations of running a competiti
   [common equipment](../equipment/common/index.md) section for gear shared across sports.
 - [Meet management](../meet-management/index.md) and
   [team management](../team-management/index.md), the operations of planning, seeding,
-  scoring, and publishing an event, and the [Libre Aquatics software](../software/index.md)
-  built for them.
+  scoring, and publishing an event, and the [software](../software/index.md) built for
+  them.
 - The [vendors](../vendors/index.md) that make the equipment.
 
 Every article is tagged by its sport(s) and topic(s), so a page is reachable from

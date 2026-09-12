@@ -6,7 +6,6 @@ tags:
 
 Team management is the club/program side of competition: keeping athletes,
 rosters, and best times in order, and getting entries in and out of meets cleanly.
-This is where [Libre Aquatics Team](../software/libre-aquatics-team.md) is aimed.
 
 ## What lives here
 

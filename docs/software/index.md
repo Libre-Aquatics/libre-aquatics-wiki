@@ -29,13 +29,6 @@ display.
   as a separate application.
 - [CTS AquaSync](cts-aquasync.md): live-streaming graphics overlay.
 
-## The Libre Aquatics tools
-
-Libre Aquatics Wiki is the reference companion to two open-source tools:
-
-- [Libre Aquatics Meet](libre-aquatics-meet.md): meet management.
-- [Libre Aquatics Team](libre-aquatics-team.md): team management.
-
 ## See also
 
 - [Meet management](../meet-management/index.md): the competition workflow the meet

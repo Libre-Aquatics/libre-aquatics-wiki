@@ -6,7 +6,6 @@ tags:
 
 Meet management is the work of planning and running a competition end to end,
 turning a list of entries into a scheduled, seeded, scored, and published event.
-This is where [Libre Aquatics Meet](../software/libre-aquatics-meet.md) is aimed.
 
 ## What lives here
 

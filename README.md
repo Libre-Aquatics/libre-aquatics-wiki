@@ -1,9 +1,7 @@
 # Libre Aquatics Wiki
 
 A free, community-maintained **aquatics reference**: the hardware, software, and
-procedures used to time and score swimming, diving, and water polo. It is the
-open-reference member of the **Libre Aquatics** family of open-source aquatics tools
-(Libre Aquatics Meet for meet management; Libre Aquatics Team for team management).
+procedures used to time and score swimming, diving, and water polo.
 
 Read it at **https://wiki.libreaquatics.org**.
 
@@ -124,7 +122,6 @@ Contact: info@libreaquatics.org.
 
 ---
 
-## About the Libre Aquatics project
+## About Libre Aquatics Wiki
 
-*Libre* means free, as in free and open. Libre Aquatics Wiki documents the
-systems that the Libre Aquatics software works with. See `docs/about/index.md`.
+*Libre* means free, as in free and open. See `docs/about/index.md`.

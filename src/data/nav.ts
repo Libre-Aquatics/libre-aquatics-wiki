@@ -224,17 +224,13 @@ export const nav: NavNode[] = [
         title: 'Meet Management',
         index: 'meet-management/index.md',
         indexTitle: 'Meet Management Overview',
-        children: [
-          { title: 'Libre Aquatics Meet', page: 'software/libre-aquatics-meet.md' },
-        ],
+        children: [],
       },
       {
         title: 'Team Management',
         index: 'team-management/index.md',
         indexTitle: 'Team Management Overview',
-        children: [
-          { title: 'Libre Aquatics Team', page: 'software/libre-aquatics-team.md' },
-        ],
+        children: [],
       },
       {
         title: 'Display',
