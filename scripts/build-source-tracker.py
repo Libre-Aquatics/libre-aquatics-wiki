@@ -5,6 +5,16 @@ Build sources/_tracking/source-tracker.xlsx: one row per research document.
   python scripts/build-source-tracker.py                # dry run, reports only
   python scripts/build-source-tracker.py --apply        # write the workbook
 
+Recording one document, which is how the sheet gets filled in (see SCANNING.md):
+
+  python scripts/build-source-tracker.py --set vendors/seiko/timers/foo.pdf \\
+      --title "Swimming Timer ST-100" --pages 44 --extraction clean \\
+      --scanned --scanned-by "Opus 5" \\
+      --products "ST-100 (timing console); SP-200 (printer)" \\
+      --notes "filename says ST-110; page one says ST-100"
+
+--set fills in one row and writes the workbook, leaving every other row untouched.
+
 Nine columns. The path is taken off disk; every other column starts blank and is
 filled in by hand while working through a document. Nothing is populated automatically.
 
@@ -279,15 +289,89 @@ def write_workbook(path, rows):
 # ----------------------------------------------------------------------------- run
 
 
+def apply_set(edits, args, on_disk):
+    """Fill in one row from the command line, leaving every other row alone.
+
+    This is how a row gets recorded one document at a time: the alternative,
+    --import-csv, replaces the whole edit set, so a CSV holding the single row just
+    scanned would blank the other fourteen hundred.
+    """
+    source = args.set.replace("\\", "/").strip().lstrip("./")
+    if source not in on_disk:
+        near = [p for p in sorted(on_disk) if Path(source).name.lower() in p.lower()]
+        hint = "".join(f"\n  did you mean: {p}" for p in near[:5])
+        sys.exit(f"no document at {source} (paths are relative to sources/){hint}")
+
+    row = dict(edits.get(source, {}))
+    fields = {
+        COL_TITLE: args.title,
+        COL_PAGES: args.pages,
+        COL_EXTRACTION: args.extraction,
+        COL_SCANNED_BY: args.scanned_by,
+        COL_PRODUCTS: args.products,
+        COL_NOTES: args.notes,
+    }
+    for column, value in fields.items():
+        if value is not None:
+            row[column] = value
+    if args.scanned_on is not None:
+        row[COL_SCANNED_ON] = normalize_date(args.scanned_on)
+    if args.scanned:
+        row[COL_SCANNED] = True
+        # A row is only ever marked scanned on the day someone read it, so the date
+        # follows from the flag unless it was given outright.
+        row.setdefault(COL_SCANNED_ON, "")
+        if not str(row[COL_SCANNED_ON]).strip():
+            row[COL_SCANNED_ON] = datetime.now().strftime("%Y-%m-%d")
+    elif args.not_scanned:
+        row[COL_SCANNED] = False
+
+    edits[source] = row
+    changed = [c for c, v in fields.items() if v is not None]
+    if args.scanned or args.not_scanned:
+        changed.append(COL_SCANNED)
+    print(f"set {source}\n  {', '.join(changed) if changed else 'nothing'}")
+    return edits
+
+
 def main():
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--apply", action="store_true", help="write the workbook")
     ap.add_argument("--import-csv", metavar="PATH",
-                    help="harvest scanned/products from a CSV export instead of the workbook")
+                    help="replace every edit with a full CSV export of the sheet")
     ap.add_argument("--reset-edits", action="store_true",
                     help="discard every scanned flag and product list, start clean")
+
+    one = ap.add_argument_group(
+        "recording one document",
+        "Fill in a single row and write the workbook; every other row is left as it is.")
+    one.add_argument("--set", metavar="SOURCE",
+                     help="the document's path, relative to sources/")
+    one.add_argument("--title", help="what page one calls the document")
+    one.add_argument("--pages", help="how long the document is")
+    one.add_argument("--extraction", help="state of the .txt extraction beside it")
+    one.add_argument("--scanned", action="store_true", help="mark it read end to end")
+    one.add_argument("--not-scanned", action="store_true", help="clear that flag again")
+    one.add_argument("--scanned-by", metavar="WHO", help="the model or person who read it")
+    one.add_argument("--scanned-on", metavar="YYYY-MM-DD",
+                     help="the date it was read (defaults to today with --scanned)")
+    one.add_argument("--products", metavar="LIST",
+                     help="products it covers, 'Name (category)' where the name alone "
+                          "is not descriptive, separated by semicolons")
+    one.add_argument("--notes", help="anything else worth recording")
     args = ap.parse_args()
+
+    row_fields = (args.title, args.pages, args.extraction, args.scanned_by,
+                  args.scanned_on, args.products, args.notes)
+    if args.set is None and (any(f is not None for f in row_fields)
+                             or args.scanned or args.not_scanned):
+        ap.error("--set SOURCE says which row the other flags belong to")
+    if args.set and (args.import_csv or args.reset_edits):
+        ap.error("--set edits one row of the existing sheet; it cannot be combined "
+                 "with --import-csv or --reset-edits")
+    if args.scanned and args.not_scanned:
+        ap.error("--scanned and --not-scanned are opposites")
 
     if not CORPUS.exists():
         sys.exit(f"no {CORPUS.relative_to(REPO)}/ directory")
@@ -306,11 +390,13 @@ def main():
             print(f"read {len(edits)} rows from "
                   f"{'CSV' if args.import_csv else WORKBOOK.name} ({carried} with edits)")
 
+    on_disk = {p.relative_to(CORPUS).as_posix() for p in documents}
+    if args.set:
+        edits = apply_set(edits, args, on_disk)
+
     rows = []
-    on_disk = set()
     for path in documents:
         rel = path.relative_to(CORPUS).as_posix()
-        on_disk.add(rel)
         edit = edits.get(rel, {})
         record = {COL_SOURCE: rel,
                   COL_SCANNED: "TRUE" if edit.get(COL_SCANNED) else "FALSE"}
@@ -334,7 +420,7 @@ def main():
           f"· {titled} with a title "
           f"· {noted} with notes")
 
-    if not args.apply:
+    if not (args.apply or args.set):
         print("dry run, nothing written. Pass --apply to write.")
         return
 
