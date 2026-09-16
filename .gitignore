@@ -5,6 +5,9 @@
 # Node
 node_modules/
 
+# Python bytecode from scripts/
+__pycache__/
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db
@@ -17,3 +20,6 @@ Thumbs.db
 # Research corpus: vendor manuals, periodicals, rulebooks. References only, never published
 /sources/
 /sources-backup-*/
+
+# Raw camera media and its processed output. Finals are copied into public/assets/ by hand
+/dump/
