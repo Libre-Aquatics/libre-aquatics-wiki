@@ -462,7 +462,9 @@ html { scroll-behavior: smooth; }
 .wiki-article h4 { font-size: 1.0625rem; margin: 1em 0 0.4em; }
 .wiki-article h5 { font-size: 1rem; margin: 1em 0 0.35em; }
 .wiki-article h6 { font-size: 0.9375rem; margin: 1em 0 0.3em; }
-.wiki-article img { max-width: 100%; height: auto; }
+/* Every picture in an article opens in the lightbox, so all of them get the
+   zoom affordance, not just the ones wrapped in a link. */
+.wiki-article img { max-width: 100%; height: auto; cursor: zoom-in; }
 /* Lists: a tighter indent than the UA's 40px, aligned with the 0.7-0.9em
    insets the panels use. */
 .wiki-article ul, .wiki-article ol { margin: 0.4em 0 0.8em; padding-left: 1.6em; }
@@ -683,7 +685,7 @@ html { scroll-behavior: smooth; }
 .wiki-article figure.wiki-figure {
   float: right;
   clear: right;
-  width: 300px;
+  width: 400px;
   max-width: 45%;
   margin: 0.3em 0 1em 1.2em;
   border: 1px solid var(--wiki-border);
@@ -692,6 +694,71 @@ html { scroll-behavior: smooth; }
   padding: 3px;
 }
 .wiki-article figure.wiki-figure img { display: block; width: 100%; height: auto; }
+/* A figure whose image links to the full-size asset: without this the article link
+   rule draws an underline stub and leaves an inline baseline gap under the image. */
+.wiki-article figure.wiki-figure a { display: block; text-decoration: none; }
+
+/* ---- Lightbox -------------------------------------------------------------- */
+/* Enlarges a figure in place. The figure's link still works without JS, so this
+   styles an enhancement rather than the only way to see the full-size file. */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 4vw, 3rem);
+  background: rgba(0, 0, 0, 0.82);
+  cursor: zoom-out;
+}
+.lightbox[hidden] { display: none; }
+body.lightbox-open { overflow: hidden; }
+.lightbox__figure {
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  cursor: default;
+}
+.lightbox__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  /* Leave room for the caption under the picture. */
+  max-height: calc(100vh - 9rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  background: var(--wiki-panel);
+  border-radius: 2px;
+}
+.lightbox__caption {
+  color: #f2f2f2;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  text-align: center;
+  max-width: 60ch;
+  margin: 0 auto;
+}
+.lightbox__close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.9rem;
+  line-height: 1;
+  color: #f2f2f2;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.lightbox__close:hover { background: rgba(0, 0, 0, 0.75); }
+.lightbox__close:focus-visible { outline: 2px solid #9cf; outline-offset: 2px; }
 .wiki-article figure.wiki-figure figcaption {
   font-size: 0.95rem;
   line-height: 1.4;

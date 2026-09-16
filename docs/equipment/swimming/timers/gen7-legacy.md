@@ -32,6 +32,13 @@ infobox:
       https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Gen7/Gen7LegacyTimerUserGuide_F1058.pdf
 ---
 
+<figure class="wiki-figure">
+  <a href="/assets/gen7-serial-timer.webp">
+    <img src="/assets/gen7-serial-timer.webp" fetchpriority="high" width="1200" height="870" alt="A light grey Gen7 timing console seen from the front left: a low wedge-shaped case with a curved top, a narrow slot along the top edge, and a front face carrying a circular vent, two rows of small status lights, the GEN7 TIMER logo and a round power button." />
+  </a>
+  <figcaption>A Gen7 Serial Timer. The Legacy console is built in the same case, to the same dimensions and weight, and is indistinguishable from this angle; the two differ in how they cable to the deck.</figcaption>
+</figure>
+
 The Gen7 Legacy Timer (part number `GEN7-TMR-L`) is a swimming timing console made by
 [Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS). It
 is one of the two consoles in the company's Gen7 swim-timing platform: it collects the

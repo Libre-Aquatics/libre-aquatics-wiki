@@ -28,6 +28,13 @@ infobox:
       https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Gen7/Gen7SerialTimerUserGuide_F1034.pdf
 ---
 
+<figure class="wiki-figure">
+  <a href="/assets/gen7-serial-timer.webp">
+    <img src="/assets/gen7-serial-timer.webp" fetchpriority="high" width="1200" height="870" alt="A light grey Gen7 timing console seen from the front left: a low wedge-shaped case with a curved top, a narrow slot along the top edge, and a front face carrying a circular vent, two rows of small status lights, the GEN7 TIMER logo and a round power button." />
+  </a>
+  <figcaption>A Gen7 Serial Timer, seen from the front left. Both Gen7 consoles are built in this case, to the same dimensions and weight.</figcaption>
+</figure>
+
 The Gen7 Serial Timer (part number `GEN7-TMR`) is a swimming timing console
 made by [Colorado Time Systems](../../../vendors/colorado-time-systems.md)
 (CTS). It is the central unit of the company's Gen7 swim-timing platform: it
@@ -86,6 +93,13 @@ Ethernet, the start system and its speaker, an in-deck connection, separate on-d
 near-end and far-end connections, and power.[^f1034]
 
 ## Connectivity
+
+<figure class="wiki-figure">
+  <a href="/assets/gen7-serial-timer-rear-panel.webp">
+    <img src="/assets/gen7-serial-timer-rear-panel.webp" loading="lazy" decoding="async" width="1200" height="392" alt="The rear panel of a Gen7 Serial Timer: three round multi-pin sockets and two start jacks along the left, two USB-B sockets, a USB-A socket and an Ethernet socket across the top, a pair of yellow speaker jacks and a harness socket in a box marked IN DECK, two further harness sockets in a box marked ON DECK with NEAR END and FAR END, and a 12 VDC 7 A power inlet at the right." />
+  </a>
+  <figcaption>The rear panel, with its connectors grouped and labelled on the case: START at the left, the IN DECK block around the speaker jacks, the ON DECK block divided into NEAR END and FAR END, and the 12 VDC inlet at the right.</figcaption>
+</figure>
 
 The Serial timer uses CTS's connect-hub cabling. Connect hubs for
 the timer, start system, scoreboard, and bulkhead are uniquely keyed and
@@ -223,6 +237,13 @@ aquatic-equipment dealers.[^dealer]
 | Patents | US 10,137,353; US 11,192,016 (system); US 8,602,815 (deckplate) |
 
 ## Installation and safety
+
+<figure class="wiki-figure">
+  <a href="/assets/gen7-serial-timer-underside.webp">
+    <img src="/assets/gen7-serial-timer-underside.webp" loading="lazy" decoding="async" width="1200" height="1027" alt="The underside of a Gen7 Serial Timer: a plain grey panel with a rubber foot at each corner, a sticker reading No serviceable parts inside at the top left, a sticker reading Warranty void if removed at the bottom right, and a central rating label giving the model GEN7-TMR, a 12 VDC 7 A rating, and FCC, UL and CE marks. The serial number and MAC address fields are blank." />
+  </a>
+  <figcaption>The underside, with the rating label and the two warranty stickers. The serial number and MAC addresses have been removed from the photograph.</figcaption>
+</figure>
 
 The Gen7 timer is made for indoor or outdoor pools and must be installed to the
 electrical code for its location (in the United States, the National Electrical

@@ -21,6 +21,8 @@ interface Props {
   modifiedTime?: string;
   /** Ancestor sections, outermost first, for BreadcrumbList markup. */
   breadcrumbs?: { title: string; route: string }[];
+  /** Site-absolute path of the article's first photograph, if it has one. */
+  leadImage?: string | null;
 }
 const {
   title,
@@ -30,6 +32,7 @@ const {
   ogType = 'website',
   modifiedTime,
   breadcrumbs = [],
+  leadImage = null,
 } = Astro.props;
 
 // The site name is already the title suffix, so the Main Page must not repeat it.
@@ -40,6 +43,13 @@ const ogImageAlt = isHome ? SITE_NAME : `${title} on ${SITE_NAME}`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL(withBase(ogImagePath(ogKey)), Astro.site).href;
 const siteUrl = new URL(withBase('/'), Astro.site).href;
+// Structured data lists the article's own photograph ahead of the generated
+// card, because the card is a title and a description rendered as a picture and
+// is no use in image results. The card stays as a fallback for pages with no
+// photograph of their own. og:image is left alone: there the card is the point.
+const articleImages = leadImage
+  ? [new URL(withBase(leadImage), Astro.site).href, ogImage]
+  : ogImage;
 
 // Structured data: the Main Page identifies the site and its search box;
 // article pages describe themselves as a TechArticle and carry their
@@ -70,7 +80,7 @@ if (isHome) {
     description,
     url: canonical,
     mainEntityOfPage: canonical,
-    image: ogImage,
+    image: articleImages,
     inLanguage: 'en',
     ...(modifiedTime ? { dateModified: modifiedTime } : {}),
     isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: siteUrl },

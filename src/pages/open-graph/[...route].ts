@@ -40,8 +40,8 @@ interface Card {
 // padding above and below, a photograph taller than this would push the text
 // off the card. Narrowing a tall image is the only lever, because passing both
 // dimensions to astro-og-canvas scales the axes independently and distorts it.
-const INSET_MAX_WIDTH = 190;
-const INSET_MAX_HEIGHT = 240;
+const INSET_MAX_WIDTH = 360;
+const INSET_MAX_HEIGHT = 260;
 
 /** Widest the inset may be drawn without its height exceeding the budget. */
 function insetWidth(sitePath: string): number {

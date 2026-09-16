@@ -11,6 +11,7 @@ import Tags from '../components/Tags.astro';
 import PageActions from '../components/PageActions.astro';
 import PrevNext from '../components/PrevNext.astro';
 import CitationHovercards from '../components/CitationHovercards.tsx';
+import Lightbox from '../components/Lightbox.astro';
 
 interface Heading {
   depth: number;
@@ -39,6 +40,8 @@ interface Props {
   modifiedTime?: string;
   /** Ancestor sections for BreadcrumbList markup; forwarded to BaseLayout. */
   breadcrumbs?: { title: string; route: string }[];
+  /** The article's first photograph; forwarded to BaseLayout for metadata. */
+  leadImage?: string | null;
 }
 const {
   title,
@@ -53,6 +56,7 @@ const {
   lastUpdated,
   modifiedTime,
   breadcrumbs,
+  leadImage,
 } = Astro.props;
 const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
 ---
@@ -64,6 +68,7 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
   ogType="article"
   modifiedTime={modifiedTime}
   breadcrumbs={breadcrumbs}
+  leadImage={leadImage}
 >
   <div class="layout">
     <div class="rail-left">
@@ -108,4 +113,7 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
   {/* Footnote hovercards: enhances the [n] citation marks; the plain
       click-to-jump behavior still works without JS. */}
   <CitationHovercards client:idle />
+
+  {/* Enlarges a figure in place; without JS its link opens the asset. */}
+  <Lightbox />
 </BaseLayout>
