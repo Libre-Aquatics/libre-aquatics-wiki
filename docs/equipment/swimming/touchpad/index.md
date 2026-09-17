@@ -90,6 +90,7 @@ of its plates but no sensing principle.[^datasheet][^watiming][^seikojp]
 |---|---|---|---|---|
 | [AquaGrip touchpad](aquagrip.md) | `TP-…G` (gutter) / `TP-…GF` (flat-wall) | Patented AquaGrip non-slip texture | 10 ft cable, dual banana plug | Current |
 | [Standard touchpad](standard.md) | `TP-…` / `TP-…F` | Textured non-skid surface | 10 ft cable, dual banana plug | Discontinued |
+| [Multizone pads](multizone.md) | None published | Not published | Not published | Announced 2008; no evidence of production |
 | [T-7000 series touchpad](t-7000.md) | Daktronics `T-7060`–`T-7096`, `FT-7150`–`FT-7240T` | Non-slip textured stainless steel; three conductive plates | Dual banana plug; OmniSport 2000 | Documented; also listed under Daktronics' discontinued-product resources |
 | [Seiko AQUA touch plate](seiko-aqua-touch-plate.md) | None published in Japanese; `TP-3000` on Seiko's older English pages | High-impact resin panel, 2,400 mm wide | Lane box per lane, then the `PT-9000` printing timer | Current |
 | [Seiko full-frame touch plate](seiko-full-frame-touch-plate.md) | None published in Japanese; `TP-3019` on Seiko's older English pages | High-impact resin panel, 1,900 mm wide | Lane box per lane, then the `PT-9000` printing timer | Current |
@@ -97,7 +98,9 @@ of its plates but no sensing principle.[^datasheet][^watiming][^seikojp]
 CTS has built touchpads on the same all-plastic, air-filled design since 1972; its
 current line is the AquaGrip touchpad, which adds a patented non-slip surface texture
 over the [Standard touchpad](standard.md) it has replaced, and a single user guide
-(F147) covers both.[^aquagrip][^standard][^f147] Seiko sells two plates of the same resin
+(F147) covers both.[^aquagrip][^standard][^f147] The [Multizone pads](multizone.md) row
+is blank in most columns because CTS named that product in a 2008 catalogue without ever
+describing it, and no evidence has been found that it was built.[^mtc2008] Seiko sells two plates of the same resin
 construction in different widths, and certifies only the wider one to World Aquatics
 rules; the narrower plate is listed for Japanese domestic competition
 alone.[^seikojp][^seikoff]
@@ -126,6 +129,7 @@ Seiko plates; this page is the shared overview they refer back to.
 [^datasheet]: [Colorado Time Systems, AquaGrip Touchpads datasheet](https://coloradotime.com/products/aquagrip-touchpads).
 [^aquagrip]: [Colorado Time Systems, AquaGrip Touchpads](https://coloradotime.com/products/aquagrip-touchpads).
 [^standard]: [Colorado Time Systems, Standard Touchpads](https://coloradotime.com/products/standard-touchpads).
+[^mtc2008]: Colorado Time Systems, Making Time Count: High Impact Visual Display Systems (2008 catalogue), Training Tools section.
 [^waomega]: [World Aquatics, How Omega keeps advancing timekeeping in swimming](https://www.worldaquatics.com/news/3251540/how-omega-keeps-advancing-timekeeping-in-swimming-a-partnership-celebrating-50-years) (on the Rome 1960 finish dispute and the move to touchpad timing).
 [^watiming]: [Wikipedia, Aquatic timing system](https://en.wikipedia.org/wiki/Aquatic_timing_system).
 [^rome60]: [Rome Organising Committee, Official Report of the 1960 Olympic Games, v.1](https://digital.la84.org/digital/collection/p17103coll8/id/19376/) (LA84 Foundation; thirty timekeepers, three buttons per lane, hand timing alongside).

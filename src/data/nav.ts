@@ -127,6 +127,7 @@ export const nav: NavNode[] = [
                 children: [
                   { title: 'AquaGrip Touchpad', page: 'equipment/swimming/touchpad/aquagrip.md' },
                   { title: 'Standard Touchpad', page: 'equipment/swimming/touchpad/standard.md' },
+                  { title: 'Multizone Pads', page: 'equipment/swimming/touchpad/multizone.md' },
                 ],
               },
               {

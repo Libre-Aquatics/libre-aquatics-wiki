@@ -200,6 +200,8 @@ scheme.
 
 - [Colorado Time Systems Standard Touchpad](standard.md): the discontinued pad it
   replaced, built on the same body
+- [Colorado Time Systems Multizone Pads](multizone.md): a training panel CTS announced
+  in 2008 and apparently never built
 - [Touchpads](index.md): the touchpad overview and the AquaGrip/Standard comparison
 - [T-7000 series touchpad](t-7000.md) and
   [Seiko AQUA Touch Plate](seiko-aqua-touch-plate.md): the conductive-plate and Seiko

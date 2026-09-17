@@ -203,6 +203,8 @@ AquaGrip version of the same size, with the `G` added, wherever one exists.[^dat
 - [Colorado Time Systems AquaGrip Touchpad](aquagrip.md): the current pad that replaced
   it, and the fuller treatment of the shared design
 - [Touchpads](index.md): the touchpad overview
+- [Colorado Time Systems Multizone Pads](multizone.md): the third CTS pad name, a
+  training panel announced in 2008 and apparently never built
 - [T-7000 series touchpad](t-7000.md) and
   [Seiko AQUA Touch Plate](seiko-aqua-touch-plate.md): the conductive-plate and Seiko
   panels from other manufacturers

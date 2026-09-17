@@ -78,6 +78,8 @@ sense each lane's finish and turn:
   (`TP-…G` / `TP-…GF`) with a patented non-slip surface.
 - [Standard Touchpad](swimming/touchpad/standard.md): the discontinued pad it replaced
   (`TP-…` / `TP-…F`), the same body with a plain non-skid surface.
+- [Multizone Pads](swimming/touchpad/multizone.md): a training pad CTS named in a 2008
+  catalogue and never described, with no evidence that it was built.
 
 [Semi-automatic timing](swimming/semi-automatic/index.md), the timing systems that
 start with the start signal and are stopped by human timers at the finish:
