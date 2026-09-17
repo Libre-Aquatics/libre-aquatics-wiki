@@ -2,6 +2,9 @@
 title: Meet management
 tags:
   - Meet management
+# Section placeholder: an outline of a section with no articles beneath
+# it yet. Remove once this section has pages of its own.
+noindex: true
 ---
 
 Meet management is the work of planning and running a competition end to end,

@@ -2,6 +2,9 @@
 title: Common equipment
 tags:
   - Equipment
+# Section placeholder: no articles beneath it yet. Remove once this
+# section has pages of its own.
+noindex: true
 ---
 
 The hardware that is not specific to one sport but supports competitions across

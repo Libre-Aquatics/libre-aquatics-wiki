@@ -2,6 +2,9 @@
 title: Image credits
 tags:
   - Reference
+# An attribution register rather than a reference article: it is linked
+# from the footer of every page and is meant to be read from there.
+noindex: true
 ---
 
 Every image on Libre Aquatics Wiki is listed here with its author, licence, and source,

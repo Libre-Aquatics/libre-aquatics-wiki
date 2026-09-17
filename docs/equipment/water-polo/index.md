@@ -5,6 +5,9 @@ tags:
   - Water polo
   - Timing
   - Scoring
+# Section placeholder: no articles beneath it yet. Remove once this
+# section has pages of its own.
+noindex: true
 ---
 
 The hardware used to run a water polo match, the goals that define the field of

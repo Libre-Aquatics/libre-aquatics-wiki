@@ -4,6 +4,9 @@ tags:
   - Equipment
   - Diving
   - Scoring
+# Section placeholder: no articles beneath it yet. Remove once this
+# section has pages of its own.
+noindex: true
 ---
 
 The hardware used to run a diving competition, the judging and scoring gear that

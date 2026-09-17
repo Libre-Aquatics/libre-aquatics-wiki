@@ -2,6 +2,9 @@
 title: Team management
 tags:
   - Team management
+# Section placeholder: an outline of a section with no articles beneath
+# it yet. Remove once this section has pages of its own.
+noindex: true
 ---
 
 Team management is the club/program side of competition: keeping athletes,

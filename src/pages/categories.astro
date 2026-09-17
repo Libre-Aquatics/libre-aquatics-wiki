@@ -30,6 +30,11 @@ const headings = tags.map((tag) => ({ depth: 2, slug: tagSlug(tag), text: tag })
   ogKey="categories"
   headings={headings}
   entryId="categories"
+  {/* A generated listing of links, not an article: it duplicates the nav tree
+      rather than saying anything of its own, so it is kept out of results
+      while still passing links on to every page it lists. */}
+  ogType="website"
+  noindex
 >
   <p>
     Every article in Libre Aquatics Wiki is tagged by its discipline (swimming, diving, water
