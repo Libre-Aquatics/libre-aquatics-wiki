@@ -126,6 +126,7 @@ export const nav: NavNode[] = [
                 title: 'Colorado Time Systems',
                 children: [
                   { title: 'AquaGrip Touchpad', page: 'equipment/swimming/touchpad/aquagrip.md' },
+                  { title: 'Standard Touchpad', page: 'equipment/swimming/touchpad/standard.md' },
                 ],
               },
               {

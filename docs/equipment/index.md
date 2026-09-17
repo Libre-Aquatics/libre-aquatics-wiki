@@ -75,8 +75,9 @@ lane speakers, and each start system's article covers its other speakers:
 sense each lane's finish and turn:
 
 - [AquaGrip Touchpad](swimming/touchpad/aquagrip.md): the current air-filled panel
-  (`TP-…G` / `TP-…GF`) with a patented non-slip surface, which replaced the
-  discontinued Standard touchpad.
+  (`TP-…G` / `TP-…GF`) with a patented non-slip surface.
+- [Standard Touchpad](swimming/touchpad/standard.md): the discontinued pad it replaced
+  (`TP-…` / `TP-…F`), the same body with a plain non-skid surface.
 
 [Semi-automatic timing](swimming/semi-automatic/index.md), the timing systems that
 start with the start signal and are stopped by human timers at the finish:

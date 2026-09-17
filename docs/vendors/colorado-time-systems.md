@@ -87,7 +87,8 @@ which replaced the earlier deck-wired
 [CHAMP-SSM](../equipment/swimming/starter/champ-ssm.md) and the 1990s loudspeaker
 [SS2](../equipment/swimming/starter/ss2.md) starts, and the
 [AquaGrip touchpads](../equipment/swimming/touchpad/aquagrip.md) that sense
-each lane's finish, the
+each lane's finish and the discontinued
+[Standard touchpads](../equipment/swimming/touchpad/standard.md) they replaced, the
 [backup pushbutton](../equipment/swimming/semi-automatic/pushbutton/cts.md) that backs it up, the
 [RJP relay judging platforms](../equipment/swimming/relay-judging/cts.md) that
 judge relay exchanges from the blocks, the

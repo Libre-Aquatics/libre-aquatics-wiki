@@ -20,6 +20,8 @@ infobox:
     value: 60–96 in (188.5–240 cm) wide; 22–24 in (90 cm) high
   - label: Weight
     value: '28–66 lb (12.7–30 kg), by model'
+  - label: Predecessor
+    value: '[Standard touchpad](equipment/swimming/touchpad/standard.md)'
   - label: Manual
     value: CTS F147
     href: >-
@@ -33,7 +35,7 @@ touch closes an internal switch and sends the timing signal that stops that lane
 clock on the [timing console](../timers/index.md). AquaGrip is CTS's current
 touchpad line, distinguished by a patented non-slip surface texture; it uses the
 same all-plastic, air-filled body CTS has built since 1972 and replaces the earlier
-Standard touchpad. A single user guide (F147) covers both.[^aquagrip][^datasheet][^f147]
+[Standard touchpad](standard.md). A single user guide (F147) covers both.[^aquagrip][^datasheet][^f147]
 
 ## Role in the timing system
 
@@ -62,9 +64,9 @@ texture for wet skin contact surfaces," describes a texture of particles under a
 100 microns applied to a water-resistant sheet, which the inventors found gives
 unexpected grip on wet skin while still feeling relatively smooth.[^patent799] The
 patent, filed in 1995 and granted in 1997, was assigned to CTS and is now held by its
-parent, Everlast Climbing Industries.[^patent799] The Standard touchpad uses CTS's
-older textured non-skid surface without this treatment; otherwise the two share the
-same body and manual.[^standard][^f147]
+parent, Everlast Climbing Industries.[^patent799] The
+[Standard touchpad](standard.md) uses CTS's older textured non-skid surface without
+this treatment; otherwise the two share the same body and manual.[^standard][^f147]
 
 ## Pneumatic operation and sensitivity
 
@@ -158,7 +160,8 @@ use; CTS sells caddies that each hold up to ten pads for storage and transport.[
 
 ## Compared with the Standard touchpad
 
-The AquaGrip and Standard touchpads are the same panel with different surfaces. Both
+The AquaGrip and [Standard](standard.md) touchpads are the same panel with different
+surfaces. Both
 use the all-plastic body, quarter-inch backbone, internally sealed full-face and
 top-edge switches, 10-foot cable and dual banana plug, and the same pneumatic
 operation and F147 manual.[^f147][^standard] AquaGrip adds the patented non-slip
@@ -195,6 +198,8 @@ scheme.
 
 ## See also
 
+- [Colorado Time Systems Standard Touchpad](standard.md): the discontinued pad it
+  replaced, built on the same body
 - [Touchpads](index.md): the touchpad overview and the AquaGrip/Standard comparison
 - [T-7000 series touchpad](t-7000.md) and
   [Seiko AQUA Touch Plate](seiko-aqua-touch-plate.md): the conductive-plate and Seiko
