@@ -39,10 +39,11 @@ infobox:
   <figcaption>A Gen7 Serial Timer. The Legacy console is built in the same case, to the same dimensions and weight, and is indistinguishable from this angle; the two differ in how they cable to the deck.</figcaption>
 </figure>
 
-<!-- TODO: needs source: a photograph of an actual Gen7 Legacy Timer. This page
-     currently reuses the Serial timer's picture, which the caption explains. A shot of
-     the Legacy rear panel would be the useful one, since the deck cabling is the only
-     visible difference between the two consoles. -->
+<!-- TODO: needs source: a photograph of a Gen7 Legacy Timer rear panel. The front
+     panel is common to both consoles and is now photographed, lit and unlit, on the
+     Gen7 Serial Timer page; the rear multi-pin lane connectors are the only externally
+     visible difference, and no picture of them is held. This page reuses the Serial
+     timer's front view meanwhile, which the caption explains. -->
 
 The Gen7 Legacy Timer (part number `GEN7-TMR-L`) is a swimming timing console made by
 [Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS). It

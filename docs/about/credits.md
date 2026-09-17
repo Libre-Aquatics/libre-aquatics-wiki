@@ -29,6 +29,8 @@ description page before use.
 | Gen7 Serial Timer seen from the front left | [Gen7 Serial Timer](../equipment/swimming/timers/gen7-serial.md), [Gen7 Legacy Timer](../equipment/swimming/timers/gen7-legacy.md) | Ethan Herstedt (original photograph) | CC BY-SA 4.0 |
 | Gen7 Serial Timer rear connector panel | [Gen7 Serial Timer](../equipment/swimming/timers/gen7-serial.md) | Ethan Herstedt (original photograph) | CC BY-SA 4.0 |
 | Gen7 Serial Timer underside and rating label | [Gen7 Serial Timer](../equipment/swimming/timers/gen7-serial.md) | Ethan Herstedt (original photograph) | CC BY-SA 4.0 |
+| Gen7 Serial Timer front panel, indicators dark | [Gen7 Serial Timer](../equipment/swimming/timers/gen7-serial.md) | Ethan Herstedt (original photograph) | CC BY-SA 4.0 |
+| Gen7 Serial Timer front panel, charging indicator lit | [Gen7 Serial Timer](../equipment/swimming/timers/gen7-serial.md) | Ethan Herstedt (original photograph) | CC BY-SA 4.0 |
 
 No non-original images are currently in use. When one is added, it will be listed
 here with its author, licence, and source URL.

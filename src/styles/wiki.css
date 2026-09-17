@@ -694,6 +694,32 @@ html { scroll-behavior: smooth; }
   padding: 3px;
 }
 .wiki-article figure.wiki-figure img { display: block; width: 100%; height: auto; }
+/* Two related figures side by side, each keeping its own caption. A pair of
+   panoramas stacked full width eats most of a screen; in a row they stay legible
+   and cost one band instead of two. Wraps to stacked when the column is narrow. */
+.wiki-article .wiki-figure-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  clear: both;
+  margin: 1.2em 0;
+}
+.wiki-article .wiki-figure-row > figure.wiki-figure {
+  float: none;
+  clear: none;
+  width: auto;
+  max-width: none;
+  flex: 1 1 280px;
+  margin: 0;
+}
+
+/* A panorama (a connector panel) is unreadable squeezed into the 400px float, but
+   at full column width it costs a whole band of its own. A wider float splits the
+   difference: the labels stay legible and the section's text runs alongside. */
+.wiki-article figure.wiki-figure--panorama {
+  width: 520px;
+  max-width: 55%;
+}
 /* A figure whose image links to the full-size asset: without this the article link
    rule draws an underline stub and leaves an inline baseline gap under the image. */
 .wiki-article figure.wiki-figure a { display: block; text-decoration: none; }

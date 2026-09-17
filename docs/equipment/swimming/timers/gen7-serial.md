@@ -84,6 +84,21 @@ blue while the battery charges and is dark when charging is complete or the unit
 unplugged; the charging circuit lights the indicator red if it detects a battery
 fault.[^f1034]
 
+<div class="wiki-figure-row">
+<figure class="wiki-figure">
+  <a href="/assets/gen7-serial-timer-front-panel.webp">
+    <img src="/assets/gen7-serial-timer-front-panel.webp" loading="lazy" decoding="async" width="1200" height="404" alt="The front panel of a Gen7 Serial Timer with its indicators dark: a wide, shallow, curved grey face with a circular vent left of center, two rows of five small indicator lights labelled with a lightning bolt, circle, square, diamond and W above and network, display, Wi-Fi, B and T below, the GEN7 TIMER logo at the right, and a round metal power button." />
+  </a>
+  <figcaption>The front panel with its indicators dark, showing the ten indicator lights and the symbols that label them.</figcaption>
+</figure>
+<figure class="wiki-figure">
+  <a href="/assets/gen7-serial-timer-front-panel-lit.webp">
+    <img src="/assets/gen7-serial-timer-front-panel-lit.webp" loading="lazy" decoding="async" width="1200" height="432" alt="The same front panel with a single indicator lit: the leftmost light of the top row, under a lightning-bolt symbol, glows bright blue, while the other nine lenses stay dark and the power button is unlit." />
+  </a>
+  <figcaption>The same panel with the timer switched off and its power supply connected. The one lit indicator is the charging light, under the lightning-bolt symbol, which glows blue while the battery is charging correctly.</figcaption>
+</figure>
+</div>
+
 The timer runs from a 12 VDC supply or an internal 7.2 V, 10,000 mAh
 nickel-metal-hydride battery. CTS rates that battery for up to about six hours of
 normal use on a small (roughly ten-node) in-deck system or cable harnesses, dropping
@@ -94,7 +109,7 @@ near-end and far-end connections, and power.[^f1034]
 
 ## Connectivity
 
-<figure class="wiki-figure">
+<figure class="wiki-figure wiki-figure--panorama">
   <a href="/assets/gen7-serial-timer-rear-panel.webp">
     <img src="/assets/gen7-serial-timer-rear-panel.webp" loading="lazy" decoding="async" width="1200" height="392" alt="The rear panel of a Gen7 Serial Timer: three round multi-pin sockets and two start jacks along the left, two USB-B sockets, a USB-A socket and an Ethernet socket across the top, a pair of yellow speaker jacks and a harness socket in a box marked IN DECK, two further harness sockets in a box marked ON DECK with NEAR END and FAR END, and a 12 VDC 7 A power inlet at the right." />
   </a>
