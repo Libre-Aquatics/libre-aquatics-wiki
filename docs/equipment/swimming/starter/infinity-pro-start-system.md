@@ -1,10 +1,10 @@
 ---
-title: Infinity Pro Start System
+title: Colorado Time Systems Infinity Pro Start System
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: Infinity Pro Start System
+infoboxTitle: Colorado Time Systems Infinity Pro Start System
 infobox:
   - label: Manufacturer
     value: Colorado Time Systems
@@ -115,6 +115,10 @@ tripod, or on a flagpole with the `START-FPM-2` mount.[^datasheet]
 | Auto shut-off | After 60 minutes idle |
 | Warranty / safety | Two-year limited; UL listed |
 
+<!-- TODO: needs source: operating temperature and humidity range (recorded for the
+     other CTS systems but not for this one), and the actual external-speaker part
+     numbers behind the `R-INF-SPxxx` wildcard. Both should be in CTS F1063. -->
+
 ## Part numbers and accessories
 
 - `INF-PRO`, Infinity Pro Start System, 115 V charger; `INF-PRO-F`, 230 V-charger
@@ -138,6 +142,7 @@ tripod, or on a flagpole with the `START-FPM-2` mount.[^datasheet]
   deck-wired CTS start family
 - [Gen7 Serial Timer](../timers/gen7-serial.md): the timing console the start
   system triggers
+- [Timers](../timers/index.md): the timing-console overview
 - [Colorado Time Systems](../../../vendors/colorado-time-systems.md): the
   manufacturer
 

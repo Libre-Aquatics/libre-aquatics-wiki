@@ -1,10 +1,10 @@
 ---
-title: OmniSport 6000
+title: Daktronics OmniSport 6000
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: OmniSport 6000
+infoboxTitle: Daktronics OmniSport 6000
 infobox:
   - label: Manufacturer
     value: Daktronics
@@ -91,6 +91,11 @@ number of lanes and the deck inputs it accepted, are therefore not publicly
 recorded; the details above are those preserved by Hy-Tek's documentation and by
 the OmniSport 2000's own manual and revision history.[^hytek6000][^manual2000][^revhist]
 
+<!-- TODO: needs source: lane count, the deck inputs the console accepted, physical
+     dimensions, weight, and power. Daktronics publishes nothing for this console, so
+     these need an owner's manual, a period catalog, or a photograph of a unit and its
+     rating label. Do not infer them from the OmniSport 2000. -->
+
 ## See also
 
 - [Timers](index.md): the timing-console overview
@@ -99,6 +104,10 @@ the OmniSport 2000's own manual and revision history.[^hytek6000][^manual2000][^
 - [OmniSport 1000](omnisport-1000.md): the earlier console in the line
 - [System 5](system-5.md): the Colorado Time Systems console the 6000 competed
   against in its day
+- [Daktronics T-7000 Series Touchpad](../touchpad/t-7000.md): the lane finish input
+  used with Daktronics consoles
+- [Daktronics RTOP](../relay-judging/daktronics.md): the relay take-off platform from
+  the same maker
 - [Daktronics](../../../vendors/daktronics.md): the manufacturer
 - [Equipment](../../index.md): the equipment reference
 

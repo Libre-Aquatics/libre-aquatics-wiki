@@ -1,10 +1,10 @@
 ---
-title: Gen7 Legacy Timer
+title: Colorado Time Systems Gen7 Legacy Timer
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: Gen7 Legacy Timer
+infoboxTitle: Colorado Time Systems Gen7 Legacy Timer
 infobox:
   - label: Manufacturer
     value: Colorado Time Systems
@@ -38,6 +38,11 @@ infobox:
   </a>
   <figcaption>A Gen7 Serial Timer. The Legacy console is built in the same case, to the same dimensions and weight, and is indistinguishable from this angle; the two differ in how they cable to the deck.</figcaption>
 </figure>
+
+<!-- TODO: needs source: a photograph of an actual Gen7 Legacy Timer. This page
+     currently reuses the Serial timer's picture, which the caption explains. A shot of
+     the Legacy rear panel would be the useful one, since the deck cabling is the only
+     visible difference between the two consoles. -->
 
 The Gen7 Legacy Timer (part number `GEN7-TMR-L`) is a swimming timing console made by
 [Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS). It
@@ -134,13 +139,11 @@ entered IP address); when several timers share a network, each timer's coloured 
 lights" help tell them apart. The operator then creates or opens a meet and session,
 choosing a governing body and the course configuration.[^f1058]
 
-The timer and its computer must share one network. The Gen7 software finds the timer by
-Zeroconf auto-discovery (UDP port 5353) and controls it over an encrypted, authenticated
-channel (TCP port 7105), with a separate SSH channel (TCP 22) used for diagnostics; a
-timer with a static IP address can instead be entered manually, and if no DHCP server is
-present the timer self-assigns an address in the 169.254.x.x range so a laptop can be
-cabled straight to it. The SSH login permits no remote root access, and each timer's
-login password is assigned randomly at the factory and shared with no other unit.[^f1058]
+The timer and its computer must share one network. Discovery, the encrypted control
+channel, the diagnostic SSH login, and the self-assigned address used when no DHCP
+server is present all work as they do on the
+[Serial timer](gen7-serial.md#software-and-operation), which lists the ports
+involved.[^f1058]
 
 During a session the main screen shows the timer's state, *Ready for Start*, the
 running time, and *Finished*, with a toolbar for printing, race data, diagnostics, and
@@ -161,49 +164,25 @@ required as it was with a System 6 console.[^f1058][^blog]
 
 ## Meet-management software
 
-Third-party meet-management programs supply start lists to the timer and record the
-results it returns. The console does the timing itself. The meet-management
-computer can connect to the Gen7 in four ways:
+Meet-management software supplies start lists to the timer and records the results it
+returns; the console does the timing itself. The Legacy timer offers the same four
+connections as the
+[Gen7 Serial Timer](gen7-serial.md#meet-management-software), where they are described
+in full: USB straight to a port on the timer, USB to the interface laptop through CTS's
+`USB2USB` coupler, a shared Windows folder over the network, and a UDP link that carries
+the swimmers' names to the console for the operator's screen and the scoreboard, along
+with team scores and full event results. The first three are interchangeable in what they exchange, so the
+choice among them comes down to what the meet-management computer can reach.[^f1058]
+Hy-Tek Meet Manager opens the timer as a USB serial port through its Colorado Time
+Systems interface, and it is the only program CTS records as supporting the UDP
+data.[^f1058][^hytek] SwimTopia's Meet Maestro detects the timer on its own and imports
+each race's touchpad, pushbutton, reaction, and split times, support SwimTopia lists as a
+beta feature.[^swimtopia]
 
-- By USB directly to a port on the timer, where the computer sees it as a virtual serial
-  (COM) port.
-- By USB to the Gen7 interface laptop, through CTS's USB-Connect coupler (part `USB2USB`),
-  which simulates a null-modem serial link over USB.
-- Over the network by file sharing, in which the meet-management computer and the Gen7
-  laptop read and write a shared Windows folder, enabled as the meet-management
-  file-export option in the software settings.
-- Over the network by a UDP link, which sends swimmers' names, team scores, and event
-  results from the meet-management software to the Gen7 for the scoreboard, and is
-  described below.
-
-The first three connections carry the event sequence into the timer and the race results
-back out, and they exchange the same data, so the choice among them is practical. The two USB options depend
-on whether the meet-management computer is within cable reach of the timer or of the
-laptop; file sharing serves a computer that is on the network but beyond USB reach of
-both. Over any of the three the meet-management software downloads the event sequence to
-the timer, so the console matches the meet program, and reads back each race's
-results.[^f1058] With Hy-Tek Meet Manager the timer appears as a USB serial port; Meet
-Manager is then set to its Colorado Time Systems interface to open it.[^hytek] SwimTopia's
-Meet Maestro detects the timer automatically and imports each race's touchpad, pushbutton,
-reaction, and split times. SwimTopia lists its Gen7 support as a beta feature.[^swimtopia]
-
-The fourth connection, the UDP link, feeds display data the other way, to the Gen7 for the
-operator's screen and the scoreboard. Since Gen7 Swimming v2023 the console can take
-swimmers' names from the meet-management program and show them on screen and on an LED
-video board. This removes the need for a direct link between the meet-management computer
-and the computer running [DisplayLink Plus](../../../software/displaylink-plus.md) (DL+),
-and requires DL+ v4.6.0 or
-later. The names can be pre-loaded from SCB files on a USB drive or sent live over the UDP
-connection. The live feed also carries team scores and complete event results, added in
-Gen7 Swimming v2026 with DL+ v4.7.0. The UDP
-link runs between the meet-management computer and whichever of the Gen7 timer or the Gen7
-computer shares its subnet; it cannot cross subnets. Once the operator sends an initial
-start list, the link becomes bidirectional, and the Gen7 requests a fresh start list
-whenever the event or heat changes. Of the meet-management programs, CTS notes that only
-Hy-Tek Meet Manager supports this UDP data, over UDP Ethernet on port 60287, and that it
-needs Hy-Tek's Alpha Scoreboard licence. On the Legacy timer the RS-485 link to the DL+
-controller must use one of its RS-485 scoreboard outputs, not the RS-232 legacy output,
-which name integration does not support.[^f1058]
+One requirement is particular to this console. Name integration reaches
+[DisplayLink Plus](../../../software/displaylink-plus.md) over RS-485, so on the Legacy
+timer it must run through one of the RS-485 scoreboard outputs rather than the RS-232
+legacy output, which does not support it.[^f1058]
 
 ## Compared with System 6 and the Serial timer
 

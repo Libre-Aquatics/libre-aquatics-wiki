@@ -1,10 +1,10 @@
 ---
-title: Gen7 Serial Timer
+title: Colorado Time Systems Gen7 Serial Timer
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: Gen7 Serial Timer
+infoboxTitle: Colorado Time Systems Gen7 Serial Timer
 infobox:
   - label: Manufacturer
     value: Colorado Time Systems
@@ -174,9 +174,9 @@ computer can connect to the Gen7 in four ways:
 - Over the network by file sharing, in which the meet-management computer and the Gen7
   laptop read and write a shared Windows folder, enabled as the meet-management
   file-export option in the software settings.
-- Over the network by a UDP link, which sends swimmers' names, team scores, and event
-  results from the meet-management software to the Gen7 for the scoreboard, and is
-  described below.
+- Over the network by a UDP link, which carries the swimmers' names from the
+  meet-management software to the Gen7 for the scoreboard, along with team scores and
+  full event results, and is described below.
 
 The first three connections carry the event sequence into the timer and the race results
 back out, and they exchange the same data, so the choice among them is practical. The two USB options depend

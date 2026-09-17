@@ -51,6 +51,11 @@ counts.[^pricing][^snspeaker] This distinguishes the line from the
 [Colorado Time Systems](cts.md) and [Daktronics](daktronics.md) equivalents,
 whose Fourjay OEM horn has a published datasheet.
 
+<!-- TODO: needs source: power rating, impedance, frequency range, sound-pressure
+     level, and the OEM behind the SST Lane Speaker, plus the harness part numbers and
+     cable lengths. Neither SST nor SwimNerd publishes any of it, so this needs an
+     installation sheet, a dealer spec, or a photograph of a unit's label. -->
+
 ## Part numbers and accessories
 
 - SST Lane Speaker, under-block lane speaker.[^pricing][^snspeaker]

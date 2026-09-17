@@ -1,10 +1,10 @@
 ---
-title: Championship Start System
+title: Colorado Time Systems Championship Start System
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: Championship Start System
+infoboxTitle: Colorado Time Systems Championship Start System
 infobox:
   - label: Manufacturer
     value: Colorado Time Systems

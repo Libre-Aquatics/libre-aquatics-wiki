@@ -1,10 +1,10 @@
 ---
-title: StartTime IV
+title: Swiss Timing StartTime IV
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: StartTime IV
+infoboxTitle: Swiss Timing StartTime IV
 infobox:
   - label: Manufacturer
     value: Swiss Timing
@@ -116,6 +116,10 @@ simultaneously as possible.[^datasheet] In swimming, those outputs drive Swiss T
 [in-block and mobile lane speakers](../external-speaker/swiss-timing.md), positioned so
 that all swimmers hear the start at the same instant.[^datasheet]
 
+<!-- TODO: needs source: this page has no Operation section, unlike StartTime III and
+     StartTime V. Needs the starting sequence as the unit performs it (the commands,
+     the recall, and the e-gun trigger) from Swiss Timing manual 3481.0511-01. -->
+
 ## Connections
 
 A cable on winder (article 1865.050) links the StartTime IV to the timing device over a
@@ -183,8 +187,11 @@ E-gun:
 ## See also
 
 - [StartTime V](starttime-v.md): the successor electronic starting device
+- [StartTime III](starttime-iii.md): the model it replaced
 - [Start systems](index.md): the start-system overview and governing-body
   requirements
+- [Omega OBL2 Pro Backstroke Ledge](../backstroke-start/swiss-timing.md): the Swiss
+  Timing backstroke start device used alongside it
 - [Swiss Timing lane speakers](../external-speaker/swiss-timing.md): the
   in-block and mobile loudspeakers this device drives
 - [Swiss Timing](../../../vendors/swiss-timing.md): the manufacturer
