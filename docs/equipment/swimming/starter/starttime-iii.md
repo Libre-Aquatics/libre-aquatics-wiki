@@ -1,10 +1,10 @@
 ---
-title: StartTime III
+title: Swiss Timing StartTime III
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: StartTime III
+infoboxTitle: Swiss Timing StartTime III
 infobox:
   - label: Manufacturer
     value: Swiss Timing

@@ -1,10 +1,10 @@
 ---
-title: AquaGrip Touchpad
+title: Colorado Time Systems AquaGrip Touchpad
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: AquaGrip Touchpad
+infoboxTitle: Colorado Time Systems AquaGrip Touchpad
 infobox:
   - label: Manufacturer
     value: Colorado Time Systems

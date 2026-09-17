@@ -1,0 +1,33 @@
+---
+// A page's own photograph at text size, trailing its title in the generated
+// listings (the Main Page's "Recently updated" list and the tag index). Most
+// articles have no photograph, so the icon marks the ones that do rather than
+// indenting every row for the few that qualify.
+//
+// The path comes from leadImage() in src/lib/seo.ts, the same first-photograph
+// lookup the Open Graph card and the article metadata use.
+import { withBase } from '../lib/routes';
+
+interface Props {
+  /** Site-absolute asset path, or null for an article with no photograph. */
+  src?: string | null;
+}
+const { src = null } = Astro.props;
+---
+
+{
+  /* Decorative: the link it follows already names the page, so alt is empty
+     rather than repeating the title to a screen reader. The width and height
+     match the CSS box so the row reserves its space before the file loads. */
+  src && (
+    <img
+      class="lead-icon"
+      src={withBase(src)}
+      alt=""
+      loading="lazy"
+      decoding="async"
+      width="20"
+      height="20"
+    />
+  )
+}

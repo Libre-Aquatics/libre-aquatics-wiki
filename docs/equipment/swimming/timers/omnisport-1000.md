@@ -1,10 +1,10 @@
 ---
-title: OmniSport 1000
+title: Daktronics OmniSport 1000
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: OmniSport 1000
+infoboxTitle: Daktronics OmniSport 1000
 infobox:
   - label: Manufacturer
     value: Daktronics

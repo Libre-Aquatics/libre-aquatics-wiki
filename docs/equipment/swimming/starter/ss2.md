@@ -1,10 +1,10 @@
 ---
-title: SS2 Electronic Start System
+title: Colorado Time Systems SS2 Electronic Start System
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: SS2 Electronic Start System
+infoboxTitle: Colorado Time Systems SS2 Electronic Start System
 infobox:
   - label: Manufacturer
     value: Colorado Time Systems

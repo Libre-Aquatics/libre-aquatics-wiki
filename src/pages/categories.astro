@@ -4,16 +4,23 @@
 // the collection's front-matter tags.
 import { getCollection } from 'astro:content';
 import ArticleLayout from '../layouts/ArticleLayout.astro';
+import LeadIcon from '../components/LeadIcon.astro';
 import { docPathToRoute } from '../lib/routes';
 import { tagSlug } from '../lib/tags';
-import { PAGE_META } from '../lib/seo';
+import { PAGE_META, leadImage } from '../lib/seo';
 
 const articles = await getCollection('articles');
-const byTag = new Map<string, { title: string; route: string }[]>();
+const byTag = new Map<string, { title: string; route: string; image: string | null }[]>();
 for (const article of articles) {
+  // Computed once per article rather than once per tag it carries.
+  const image = leadImage(article.body);
   for (const tag of article.data.tags) {
     const list = byTag.get(tag) ?? [];
-    list.push({ title: article.data.title, route: docPathToRoute(`${article.id}.md`) });
+    list.push({
+      title: article.data.title,
+      route: docPathToRoute(`${article.id}.md`),
+      image,
+    });
     byTag.set(tag, list);
   }
 }
@@ -54,6 +61,7 @@ const headings = tags.map((tag) => ({ depth: 2, slug: tagSlug(tag), text: tag })
           {byTag.get(tag)!.map((article) => (
             <li>
               <a href={article.route}>{article.title}</a>
+              <LeadIcon src={article.image} />
             </li>
           ))}
         </ul>

@@ -1,10 +1,10 @@
 ---
-title: StartTime V
+title: Swiss Timing StartTime V
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: StartTime V
+infoboxTitle: Swiss Timing StartTime V
 infobox:
   - label: Manufacturer
     value: Swiss Timing

@@ -127,7 +127,28 @@ function toPlainText(markdown: string): string {
   );
 }
 
-/** Cut to length on a sentence boundary where possible, else a word boundary. */
+/**
+ * Drop trailing function words and punctuation, so that an ellipsis never
+ * follows "a", "by" or "and" and leave the reader mid-phrase.
+ */
+function trimDangling(text: string): string {
+  return text
+    .replace(
+      /(?:\s+(?:a|an|the|of|and|or|in|on|at|to|as|by|for|from|with|its|that|which|made))+$/i,
+      '',
+    )
+    .replace(/[,;:]$/, '');
+}
+
+/**
+ * Cut to length on a sentence boundary, else a clause boundary, else a word.
+ *
+ * Leads here are typically a single sentence well past the budget (a product,
+ * its maker, that maker's home town and the model's place in the line, all in
+ * one breath), so a sentence boundary is usually not available at all and the
+ * clause fallback is what actually runs. Ending on a comma reads as a finished
+ * statement; ending on a word lands mid-phrase.
+ */
 function truncate(text: string, max: number): string {
   if (text.length <= max) return text;
 
@@ -139,9 +160,17 @@ function truncate(text: string, max: number): string {
   );
   if (sentenceEnd >= max * 0.6) return window.slice(0, sentenceEnd + 1);
 
+  // Trailing punctuation is dropped so the ellipsis does not follow a comma.
+  const clauseEnd = Math.max(
+    window.lastIndexOf(', '),
+    window.lastIndexOf('; '),
+    window.lastIndexOf(': '),
+  );
+  if (clauseEnd >= max * 0.5) return `${trimDangling(window.slice(0, clauseEnd))}…`;
+
+  // Last resort: a word boundary.
   const wordEnd = window.lastIndexOf(' ');
-  const cut = window.slice(0, wordEnd > 0 ? wordEnd : max);
-  return `${cut.replace(/[,;:]$/, '')}…`;
+  return `${trimDangling(window.slice(0, wordEnd > 0 ? wordEnd : max))}…`;
 }
 
 /**

@@ -1,5 +1,5 @@
 ---
-title: Dolphin Starter Unit
+title: Colorado Time Systems Dolphin Starter Unit
 description: >-
   The Colorado Time Systems Dolphin Starter Unit is a wireless start trigger
   that starts all of a Dolphin timing system's stopwatches together, by hand
@@ -8,7 +8,7 @@ tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: Dolphin Starter Unit
+infoboxTitle: Colorado Time Systems Dolphin Starter Unit
 infobox:
   - label: Manufacturer
     value: Colorado Time Systems

@@ -1,10 +1,10 @@
 ---
-title: SWIMSTART Electronic Start
+title: International Sports Timing SWIMSTART Electronic Start
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: SWIMSTART Electronic Start
+infoboxTitle: International Sports Timing SWIMSTART Electronic Start
 infobox:
   - label: Manufacturer
     value: International Sports Timing (IST)

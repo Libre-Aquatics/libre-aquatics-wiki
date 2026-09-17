@@ -50,7 +50,12 @@
     // focusable and still opens the asset without JS, but a bare <img> is
     // handled too so a future figure does not silently miss out.
     document.addEventListener('click', (event) => {
-      const picture = (event.target as Element | null)?.closest<HTMLImageElement>('.wiki-article img');
+      // .lead-icon is excluded: it is a decorative thumbnail in a listing, with
+      // empty alt and outside the row's link, so no keyboard user can reach it.
+      // Opening it on click would make it mouse-only behaviour (WCAG 2.1.1).
+      const picture = (event.target as Element | null)?.closest<HTMLImageElement>(
+        '.wiki-article img:not(.lead-icon)',
+      );
       if (!picture) return;
       // Leave modified clicks alone so "open in new tab" still works.
       if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;

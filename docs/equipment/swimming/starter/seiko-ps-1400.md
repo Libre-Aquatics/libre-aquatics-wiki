@@ -1,10 +1,10 @@
 ---
-title: PS-1400 Electronic Start Sound Generator
+title: Seiko PS-1400 Electronic Start Sound Generator
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: PS-1400 Electronic Start Sound Generator
+infoboxTitle: Seiko PS-1400 Electronic Start Sound Generator
 infobox:
   - label: Manufacturer
     value: Seiko

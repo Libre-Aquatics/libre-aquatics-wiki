@@ -1,10 +1,10 @@
 ---
-title: Infinity Start System
+title: Colorado Time Systems Infinity Start System
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: Infinity Start System
+infoboxTitle: Colorado Time Systems Infinity Start System
 infobox:
   - label: Manufacturer
     value: Colorado Time Systems

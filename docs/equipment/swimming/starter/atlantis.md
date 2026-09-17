@@ -1,10 +1,10 @@
 ---
-title: Atlantis Swimming Starter System
+title: Superior Swim Timing Atlantis Swimming Starter System
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: Atlantis Swimming Starter System
+infoboxTitle: Superior Swim Timing Atlantis Swimming Starter System
 infobox:
   - label: Manufacturer
     value: Superior Swim Timing (SST)

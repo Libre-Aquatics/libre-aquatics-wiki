@@ -1,10 +1,10 @@
 ---
-title: Championship Start System (CHAMP-SSM)
+title: Colorado Time Systems Championship Start System (CHAMP-SSM)
 tags:
   - Equipment
   - Timing
   - Swimming
-infoboxTitle: Championship Start System (CHAMP-SSM)
+infoboxTitle: Colorado Time Systems Championship Start System (CHAMP-SSM)
 infobox:
   - label: Manufacturer
     value: Colorado Time Systems

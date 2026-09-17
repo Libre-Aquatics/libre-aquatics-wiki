@@ -5,9 +5,10 @@
 // stays, as it did on the old site.
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import LeadIcon from '../components/LeadIcon.astro';
 import { withBase, docPathToRoute } from '../lib/routes';
 import { lastUpdated, lastUpdatedISO } from '../lib/gitDates';
-import { PAGE_META } from '../lib/seo';
+import { PAGE_META, leadImage } from '../lib/seo';
 
 // Recently updated: the same git-derived dates the article footer and the
 // sitemap use, so the list cannot drift from what the pages themselves say.
@@ -23,6 +24,7 @@ const recent = articles
     route: docPathToRoute(`${article.id}.md`),
     iso: lastUpdatedISO(article.filePath),
     shown: lastUpdated(article.filePath),
+    image: leadImage(article.body),
   }))
   .filter((entry) => entry.iso)
   .sort((a, b) => b.iso.localeCompare(a.iso))
@@ -167,6 +169,7 @@ const recent = articles
           {recent.map((entry) => (
             <li>
               <a href={entry.route}>{entry.title}</a>, {entry.shown}
+              <LeadIcon src={entry.image} />
             </li>
           ))}
         </ul>

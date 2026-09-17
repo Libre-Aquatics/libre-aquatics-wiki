@@ -1,5 +1,5 @@
 ---
-title: OmniSport 2000
+title: Daktronics OmniSport 2000
 tags:
   - Equipment
   - Timing
