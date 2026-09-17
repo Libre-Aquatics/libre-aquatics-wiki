@@ -42,6 +42,10 @@ interface Props {
   breadcrumbs?: { title: string; route: string }[];
   /** The article's first photograph; forwarded to BaseLayout for metadata. */
   leadImage?: string | null;
+  /** Keep the page out of search results; forwarded to BaseLayout. */
+  noindex?: boolean;
+  /** Generated index pages are not articles, so they can opt out of 'article'. */
+  ogType?: 'website' | 'article';
 }
 const {
   title,
@@ -57,6 +61,8 @@ const {
   modifiedTime,
   breadcrumbs,
   leadImage,
+  noindex = false,
+  ogType = 'article',
 } = Astro.props;
 const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
 ---
@@ -65,7 +71,8 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
   title={title}
   description={description}
   ogKey={ogKey}
-  ogType="article"
+  ogType={ogType}
+  noindex={noindex}
   modifiedTime={modifiedTime}
   breadcrumbs={breadcrumbs}
   leadImage={leadImage}

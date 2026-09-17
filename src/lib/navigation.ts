@@ -73,6 +73,9 @@ export interface Breadcrumb {
  * BreadcrumbList structured data. Only groups with an index page appear
  * (a crumb needs a URL); grouping-only labels like vendor names are skipped.
  * The current page itself is not included.
+ *
+ * The trail is rooted at the Main Page so search engines see a path back to
+ * the site root rather than one that begins part-way down the tree.
  */
 export function breadcrumbTrail(currentId: string): Breadcrumb[] {
   let trail: Breadcrumb[] = [];
@@ -95,7 +98,7 @@ export function breadcrumbTrail(currentId: string): Breadcrumb[] {
       return false;
     });
   walk(nav, []);
-  return trail;
+  return [{ title: 'Main Page', route: docPathToRoute('index.md') }, ...trail];
 }
 
 /** True when the node is, or contains, the page with the given entry id. */

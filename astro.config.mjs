@@ -1,5 +1,6 @@
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import matter from 'gray-matter';
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import pagefind from 'astro-pagefind';
@@ -9,26 +10,50 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeExternalLinks from 'rehype-external-links';
 import remarkWikiLinks from './src/plugins/remark-wiki-links.mjs';
 
+// The Markdown file behind a published URL, or undefined for the routes that
+// are Astro pages rather than articles (Main Page, categories, search).
+function docFile(url) {
+  const route = new URL(url).pathname.replace(/^\/+|\/+$/g, '');
+  if (!route) return undefined;
+  return [`docs/${route}.md`, `docs/${route}/index.md`].find((file) => existsSync(file));
+}
+
 // Sitemap <lastmod> from git, mirroring src/lib/gitDates.ts (which cannot be
 // imported here because the config is evaluated before Astro's TS pipeline).
 // Only routes backed by a docs/ Markdown file get a date; the virtual pages
 // (Main Page, categories) are left without one. CI must check out with
 // fetch-depth: 0 or git reports no date and the entry is skipped.
 function docLastmod(url) {
-  const route = new URL(url).pathname.replace(/^\/+|\/+$/g, '');
-  if (!route) return undefined;
-  for (const file of [`docs/${route}.md`, `docs/${route}/index.md`]) {
-    if (!existsSync(file)) continue;
-    try {
-      const iso = execFileSync('git', ['log', '-1', '--format=%cI', '--', file], {
-        encoding: 'utf8',
-      }).trim();
-      if (iso) return iso;
-    } catch {
-      // git unavailable: leave the entry without lastmod.
-    }
+  const file = docFile(url);
+  if (!file) return undefined;
+  try {
+    return execFileSync('git', ['log', '-1', '--format=%cI', '--', file], {
+      encoding: 'utf8',
+    }).trim() || undefined;
+  } catch {
+    // git unavailable: leave the entry without lastmod.
+    return undefined;
   }
-  return undefined;
+}
+
+// Routes carrying `noindex` that are Astro pages, so they have no front matter
+// for isNoindex() to read. Keep in step with the `noindex` props in
+// src/pages/: /search/ is already dropped by the filter's own pattern match.
+const NOINDEX_ROUTES = new Set(['/categories/']);
+
+// A page told not to be indexed must not be advertised in the sitemap either,
+// or the sitemap invites a crawl the page then refuses. The front matter is
+// read straight off disk because the content collection is not available to
+// this file; src/content.config.ts declares the same key.
+function isNoindex(url) {
+  if (NOINDEX_ROUTES.has(new URL(url).pathname)) return true;
+  const file = docFile(url);
+  if (!file) return false;
+  try {
+    return matter(readFileSync(file, 'utf8')).data.noindex === true;
+  } catch {
+    return false;
+  }
 }
 
 // Served from GitHub Pages at the custom domain in public/CNAME, so the site
@@ -51,8 +76,11 @@ export default defineConfig({
     pagefind(),
     // The search page is an empty Pagefind shell and the Open Graph routes are
     // images, so neither belongs in the sitemap. Astro drops 404/500 itself.
+    // Pages marked noindex are dropped too, so the sitemap lists only URLs
+    // that are meant to be indexed.
     sitemap({
-      filter: (page) => !page.includes('/search/') && !page.includes('/open-graph/'),
+      filter: (page) =>
+        !page.includes('/search/') && !page.includes('/open-graph/') && !isNoindex(page),
       serialize: (item) => {
         const lastmod = docLastmod(item.url);
         return lastmod ? { ...item, lastmod } : item;

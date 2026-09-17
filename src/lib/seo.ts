@@ -10,6 +10,20 @@ export const SITE_DESCRIPTION =
   'A free reference for the equipment, timing hardware, and meet operations behind ' +
   'competitive aquatics: swimming, diving, water polo, and open water.';
 
+// Article text is CC BY-SA 4.0, the licence named in the footer
+// (src/components/Footer.astro). Kept here so the structured data in
+// BaseLayout.astro and the footer cannot drift apart.
+export const SITE_LICENSE = 'https://creativecommons.org/licenses/by-sa/4.0/';
+
+// The publishing organization behind the wiki, reused by the TechArticle
+// `publisher` and by the Organization block on the Main Page.
+export const PUBLISHER = {
+  '@type': 'Organization',
+  name: 'Libre Aquatics',
+  url: 'https://wiki.libreaquatics.org/',
+  logo: 'https://wiki.libreaquatics.org/assets/logo.svg',
+} as const;
+
 // Meta descriptions for the four pages that are not Markdown articles. The
 // Main Page and tag index are Astro pages (src/pages/index.astro,
 // categories.astro), so there is no front matter to derive these from.

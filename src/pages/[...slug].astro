@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 
 const { article } = Astro.props;
 const { Content, headings } = await render(article);
-const { title, description, tags, infoboxTitle, infobox } = article.data;
+const { title, description, tags, infoboxTitle, infobox, noindex } = article.data;
 ---
 
 <ArticleLayout
@@ -33,6 +33,7 @@ const { title, description, tags, infoboxTitle, infobox } = article.data;
   modifiedTime={lastUpdatedISO(article.filePath) || undefined}
   breadcrumbs={breadcrumbTrail(article.id)}
   leadImage={leadImage(article.body)}
+  noindex={noindex}
 >
   <Content />
 </ArticleLayout>

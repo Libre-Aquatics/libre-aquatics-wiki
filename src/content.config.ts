@@ -12,6 +12,11 @@ const articles = defineCollection({
     // one from the article's lead paragraph; set it only when that reads badly.
     description: z.string().optional(),
     tags: z.array(z.string()).default([]),
+    // Keeps the page out of search results while still passing links on.
+    // The sitemap filter in astro.config.mjs reads this same key straight
+    // from the file's front matter, so a noindex page is also dropped from
+    // sitemap-0.xml; set both or neither, never one alone.
+    noindex: z.boolean().default(false),
     infoboxTitle: z.string().optional(),
     infobox: z
       .array(
