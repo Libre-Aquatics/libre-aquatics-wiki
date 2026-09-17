@@ -8,6 +8,7 @@
     "build": "node scripts/check-links.mjs && astro build",
     "preview": "astro preview",
     "check:copying": "node scripts/check-copying.mjs",
+    "check:copying:all": "node scripts/check-copying.mjs 6 --include-periodicals --include-comments",
     "sources:tracker": "python scripts/build-source-tracker.py"
   },
   "dependencies": {

@@ -3,10 +3,16 @@
 // staged in sources/. See CLAUDE.md, "No verbatim copying".
 //
 //   node scripts/check-copying.mjs [threshold] [paths...] [--include-comments]
+//                                  [--include-periodicals]
 //
 // Local-only: sources/ is gitignored, so CI has no corpus and the script exits 0
 // with a notice. Sources are every .txt under sources/ except the periodicals
 // subtree (see SKIP_DIRS below).
+//
+// --include-periodicals folds the magazine OCR back in. Anything written from the
+// magazines MUST use it: without it the periodicals are skipped, so such a page
+// reports a clean pass no matter what it contains. Expect false positives, because
+// that subtree is bulk OCR; pipe the report through triage-copying.mjs.
 //
 // Extractions are irreplaceable: some were produced with PyMuPDF and a few were
 // OCR'd by hand because pdftotext mangled them. Every PDF currently has one. The
@@ -24,6 +30,7 @@ import { join, extname } from 'node:path';
 
 const args = process.argv.slice(2);
 const includeComments = args.includes('--include-comments');
+const includePeriodicals = args.includes('--include-periodicals');
 const rest = args.filter((a) => !a.startsWith('--'));
 const N = Number.parseInt(rest[0], 10) > 0 ? Number.parseInt(rest[0], 10) : 6;
 const targets = rest.slice(1).length ? rest.slice(1) : ['docs'];
@@ -58,7 +65,7 @@ if (!existsSync(SOURCE_DIR)) {
 // Subtrees of sources/ that are not part of the vetted corpus. periodicals/ is
 // bulk-scraped magazine OCR (~1360 .txt) that would swamp the index and manufacture
 // false positives; _tracking/ holds the generated tracking workbook, not sources.
-const SKIP_DIRS = new Set(['_tracking', 'periodicals']);
+const SKIP_DIRS = new Set(includePeriodicals ? ['_tracking'] : ['_tracking', 'periodicals']);
 
 function walkTxt(dir, out = []) {
   for (const e of readdirSync(dir, { withFileTypes: true })) {
@@ -78,7 +85,10 @@ if (sourceFiles.length === 0) {
 }
 // This check reports rather than fails, so a corpus that quietly vanished would
 // look exactly like a clean pass. Say so loudly instead.
-const EXPECTED_MIN_SOURCES = 260; // 272 as of 2026-07-28
+// 295 vendor/rules/reference + 1360 periodical extractions as of 2026-09-17.
+// With --include-periodicals the floor has to rise too, or a vanished magazine
+// subtree would pass this guard on the strength of the vendor corpus alone.
+const EXPECTED_MIN_SOURCES = includePeriodicals ? 1500 : 260;
 if (sourceFiles.length < EXPECTED_MIN_SOURCES) {
   console.error(
     `check-copying: *** only ${sourceFiles.length} sources found, expected at least ` +
@@ -155,7 +165,8 @@ report.sort((a, b) => b.longest - a.longest || b.runs.length - a.runs.length);
 
 console.log(
   `check-copying: ${sourceFiles.length} sources (${corpusWords.toLocaleString()} words) ` +
-    `vs ${pages.length} pages, threshold ${N}${includeComments ? ', including comments' : ''}`,
+    `vs ${pages.length} pages, threshold ${N}${includeComments ? ', including comments' : ''}` +
+    `${includePeriodicals ? ', including periodicals' : ''}`,
 );
 console.log(`${report.length} of ${pages.length} pages share a run of ${N}+ words`);
 console.log(`longest shared run: ${report.length ? report[0].longest : 0} words\n`);
