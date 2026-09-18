@@ -82,8 +82,12 @@ The hardware between the computer and the board has changed over the years. For 
 installations, CTS's troubleshooting notes name the CVC, CDC and VPU video processors, and
 specify that a CVC must be set to PC mode for the computer's output to appear on the
 board.[^help] A 2021 CTS document lists five display controllers it has shipped that can
-produce a video output suitable for streaming: the MCTRL-300, MCTRL-600 and MIC-VPU-01,
-which need a pass-through capture device, and the VX4 and MCTRL-660, which do not. The link
+produce a video output suitable for streaming: the
+[MCTRL-300](../equipment/common/scoreboard-control/mctrl-300.md),
+[MCTRL-600](../equipment/common/scoreboard-control/mctrl-600.md) and
+[MIC-VPU-01](../equipment/common/scoreboard-control/mic-vpu-01.md), which need a pass-through
+capture device, and the [VX4](../equipment/common/scoreboard-control/vx4.md) and
+[MCTRL-660](../equipment/common/scoreboard-control/mctrl-660.md), which do not. The link
 from the computer to the controller is a video cable, most commonly HDMI to DVI, though CTS
 has also used DVI to DVI and DisplayPort.[^f1062]
 
@@ -286,7 +290,8 @@ February 2014.[^relnotes]
 
 ## Predecessors
 
-DisplayLink Plus replaced DisplayLink 3.x, a different program with the same purpose. The
+DisplayLink Plus replaced [DisplayLink](displaylink.md) 3.x, a different program with the
+same purpose, which has its own article; this section is the short version. The
 3.x software ran under Windows NT 4.0 Service Pack 3 or later, or Windows 2000, and drove
 matrix displays. It split its work across separate components: a Designer window for
 graphics, animations and slide shows, and a separate Template Editor application. Its menu
@@ -334,6 +339,7 @@ build, DisplayLink Plus Lite, bundled with the AquaSync installer.[^aquasync][^a
 ## See also
 
 - [DisplayLink](displaylink.md): the 3.x software this program replaced
+- [Scoreboards](../equipment/common/scoreboard/index.md): the boards and controllers it drives
 - [Standalone Template Editor](standalone-template-editor.md): the template designer sold as a separate application
 - [CTS AquaSync](cts-aquasync.md): the live-streaming overlay that depends on it
 - [Gen7 Serial Timer](../equipment/swimming/timers/gen7-serial.md) and [System 6](../equipment/swimming/timers/system-6.md): timing consoles that feed it

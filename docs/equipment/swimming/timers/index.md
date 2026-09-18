@@ -22,7 +22,9 @@ CTS first announced Gen7 in April 2017, beginning with the Serial in-deck system
 launched it more broadly later that year.[^launch2][^launch] Where those consoles were self-contained
 units operated from a built-in keypad, the Gen7 timers move the operator interface
 to a Windows laptop or tablet connected over Ethernet and keep all timing data on
-the console itself, so a race finishes even if the interface drops.[^f1058]
+the console itself, so a race finishes even if the interface drops.[^f1058] An older
+console, the [Swim IV](swim-iv.md), sits behind the System 5 in the same line, named in
+CTS display-software manuals but not yet documented here.[^dl37]
 
 Daktronics' current console, the [OmniSport 2000](omnisport-2000.md), succeeded the
 company's [OmniSport 1000](omnisport-1000.md) and [OmniSport 6000](omnisport-6000.md)
@@ -95,3 +97,4 @@ overview they refer back to.
 [^launch2]: [Aquatics International, Colorado Time System Introduces Gen7 Swim Timing and Scoring](https://www.aquaticsintl.com/products/colorado-time-system-introduces-gen7-swim-timing-and-scoring_o) (April 2017; Serial in-deck system, up to 20 lanes).
 [^f1058]: [Colorado Time Systems, Gen7 Legacy Timer User Guide (F1058)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Gen7/Gen7LegacyTimerUserGuide_F1058.pdf).
 [^blog]: [Colorado Time Systems, Serial or Legacy, Which Gen7 Timer is Right for You?](https://coloradotime.com/blog/serial-or-legacy-which-gen7-timer-is-right-for-you).
+[^dl37]: Colorado Time Systems, DisplayLink 3.7 Users Guide (F888 Rev. 0404), template data sources (System 6, System 5 and Swim IV sports timers).
