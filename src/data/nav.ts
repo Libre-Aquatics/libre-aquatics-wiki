@@ -159,7 +159,8 @@ export const nav: NavNode[] = [
                   { title: 'Daktronics Pushbutton', page: 'equipment/swimming/semi-automatic/pushbutton/daktronics.md' },
                 ],
               },
-              { title: 'Dolphin Wireless Stopwatch Timing System', page: 'equipment/swimming/semi-automatic/dolphin.md' },
+              { title: 'Colorado Time Systems Dolphin Wireless Stopwatch Timing System', page: 'equipment/swimming/semi-automatic/dolphin.md' },
+              { title: 'Colorado Time Systems Dolphin Scoreboard Adapter', page: 'equipment/swimming/semi-automatic/dolphin-scoreboard-adapter.md' },
             ],
           },
           {
@@ -183,6 +184,8 @@ export const nav: NavNode[] = [
                   { title: 'Gen7 Legacy Timer', page: 'equipment/swimming/timers/gen7-legacy.md' },
                   { title: 'System 6', page: 'equipment/swimming/timers/system-6.md' },
                   { title: 'System 5', page: 'equipment/swimming/timers/system-5.md' },
+                  { title: 'Swim IV', page: 'equipment/swimming/timers/swim-iv.md' },
+                  { title: 'System 4000', page: 'equipment/swimming/timers/system-4000.md' },
                 ],
               },
               {
@@ -213,7 +216,56 @@ export const nav: NavNode[] = [
         title: 'Common',
         index: 'equipment/common/index.md',
         indexTitle: 'Common Equipment Overview',
-        children: [],
+        children: [
+          {
+            title: 'Scoreboards',
+            index: 'equipment/common/scoreboard/index.md',
+            indexTitle: 'Scoreboards Overview',
+            children: [
+              { title: 'Otter Scoreboards', page: 'equipment/common/scoreboard/otter.md' },
+              { title: 'Mini LED Scoreboard', page: 'equipment/common/scoreboard/mini-scoreboard.md' },
+              { title: 'LED-R Numeric Scoreboard', page: 'equipment/common/scoreboard/led-r.md' },
+              { title: 'LED-REX Retrofit', page: 'equipment/common/scoreboard/led-rex.md' },
+              { title: 'Mini Scoreboard Caddy', page: 'equipment/common/scoreboard/cad-mini.md' },
+              { title: 'Myriad', page: 'equipment/common/scoreboard/myriad.md' },
+              { title: 'Mercury16', page: 'equipment/common/scoreboard/mercury16.md' },
+            ],
+          },
+          {
+            title: 'Scoreboard Control',
+            index: 'equipment/common/scoreboard-control/index.md',
+            indexTitle: 'Scoreboard Control Overview',
+            children: [
+              {
+                title: 'Wireless Adapters',
+                children: [
+                  { title: 'Sky-Fi WA-1', page: 'equipment/common/scoreboard-control/wa-1.md' },
+                  { title: 'WA-2', page: 'equipment/common/scoreboard-control/wa-2.md' },
+                  { title: 'WA-3', page: 'equipment/common/scoreboard-control/wa-3.md' },
+                ],
+              },
+              {
+                title: 'Controllers',
+                children: [
+                  { title: 'WTTC-1 Tabletop Controller', page: 'equipment/common/scoreboard-control/wttc-1.md' },
+                  { title: 'WHC-1 Handheld Controller', page: 'equipment/common/scoreboard-control/whc-1.md' },
+                  { title: 'Pace Clock Controller', page: 'equipment/common/scoreboard-control/upc-c.md' },
+                  { title: 'GameLink Console', page: 'equipment/common/scoreboard-control/gamelink-console.md' },
+                ],
+              },
+              {
+                title: 'Video Board Controllers',
+                children: [
+                  { title: 'MCTRL-300', page: 'equipment/common/scoreboard-control/mctrl-300.md' },
+                  { title: 'MCTRL-600', page: 'equipment/common/scoreboard-control/mctrl-600.md' },
+                  { title: 'MCTRL-660', page: 'equipment/common/scoreboard-control/mctrl-660.md' },
+                  { title: 'VX4', page: 'equipment/common/scoreboard-control/vx4.md' },
+                  { title: 'MIC-VPU-01', page: 'equipment/common/scoreboard-control/mic-vpu-01.md' },
+                ],
+              },
+            ],
+          },
+        ],
       },
     ],
   },
@@ -226,7 +278,11 @@ export const nav: NavNode[] = [
         title: 'Meet Management',
         index: 'meet-management/index.md',
         indexTitle: 'Meet Management Overview',
-        children: [],
+        children: [
+          { title: 'Hy-Tek Meet Manager', page: 'software/hy-tek-meet-manager.md' },
+          { title: 'SwimTopia Meet Maestro', page: 'software/meet-maestro.md' },
+          { title: 'Splash Meet Manager', page: 'software/splash-meet-manager.md' },
+        ],
       },
       {
         title: 'Team Management',
@@ -244,6 +300,7 @@ export const nav: NavNode[] = [
               { title: 'DisplayLink', page: 'software/displaylink.md' },
               { title: 'Standalone Template Editor', page: 'software/standalone-template-editor.md' },
               { title: 'CTS AquaSync', page: 'software/cts-aquasync.md' },
+              { title: 'CTStream', page: 'software/ctstream.md' },
             ],
           },
         ],
@@ -259,6 +316,7 @@ export const nav: NavNode[] = [
       { title: 'Daktronics', page: 'vendors/daktronics.md' },
       { title: 'FINIS', page: 'vendors/finis.md' },
       { title: 'International Sports Timing', page: 'vendors/international-sports-timing.md' },
+      { title: 'NovaStar', page: 'vendors/novastar.md' },
       { title: 'Seiko', page: 'vendors/seiko.md' },
       { title: 'Superior Swim Timing', page: 'vendors/superior-swim-timing.md' },
       { title: 'Swiss Timing', page: 'vendors/swiss-timing.md' },

@@ -30,7 +30,8 @@ their own sections:
 - [Water polo equipment](water-polo/index.md): goals, game and shot-clock consoles,
   and deck displays.
 - [Common equipment](common/index.md): scoreboards, cabling, consoles, audio, and
-  data hardware used across every discipline.
+  data hardware used across every discipline, including the
+  [scoreboards](common/scoreboard/index.md) section.
 
 ## Articles
 

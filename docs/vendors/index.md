@@ -24,6 +24,8 @@ systems. International Sports Timing and Superior Swim Timing are smaller United
 States makers offering lower-cost alternatives to a full console. FINIS is not a
 timing company; it appears here because it makes the Backstroke Start Wedge, covered
 under [backstroke start devices](../equipment/swimming/backstroke-start/index.md).
+NovaStar is not an aquatics company either; it makes the LED display controllers CTS
+ships with its video boards, covered under [scoreboards](../equipment/common/scoreboard/index.md).
 
 | Vendor | Headquarters | Equipment documented here |
 |---|---|---|
@@ -34,6 +36,7 @@ under [backstroke start devices](../equipment/swimming/backstroke-start/index.md
 | [International Sports Timing (IST)](international-sports-timing.md) | Grand Rapids, Michigan, United States | The SWIMSTART start system and an under-block speaker system |
 | [Superior Swim Timing (SST)](superior-swim-timing.md) | United States | Laptop-based timing software, the Atlantis start system, and lane speakers and harnesses |
 | [FINIS](finis.md) | Livermore, California, United States | The Backstroke Start Wedge |
+| [NovaStar](novastar.md) | Xi'an, China | The MCTRL and VX4 LED display controllers CTS ships with its video boards |
 
 Colorado Time Systems was founded in 1972 and Daktronics in 1968. Swiss Timing is
 part of the Swatch Group, Seiko traces its origins to 1881, IST has supplied aquatics

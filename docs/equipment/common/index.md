@@ -2,9 +2,6 @@
 title: Common equipment
 tags:
   - Equipment
-# Section placeholder: no articles beneath it yet. Remove once this
-# section has pages of its own.
-noindex: true
 ---
 
 The hardware that is not specific to one sport but supports competitions across
@@ -33,8 +30,30 @@ Common equipment is grouped by role:
 
 ## Articles
 
-This section of the catalog is still to be written. The shared hardware is made by
-the timing vendors listed on the [Vendors](../../vendors/index.md) page.
+[Scoreboards](scoreboard/index.md), the boards that show times, scores and event
+information, covering the numeric, matrix and LED video generations, and
+[scoreboard control](scoreboard-control/index.md), the adapters and controllers that feed
+them:
+
+- [Otter](scoreboard/otter.md), the [mini LED scoreboard](scoreboard/mini-scoreboard.md)
+  and the [LED-R](scoreboard/led-r.md) module: the current Colorado Time Systems numeric
+  boards, with the [LED-REX](scoreboard/led-rex.md) retrofit, the
+  [caddy](scoreboard/cad-mini.md) that carries the smaller ones and the
+  [pace clock controller](scoreboard-control/upc-c.md) that can drive them.
+- [Sky-Fi WA-1](scoreboard-control/wa-1.md), [WA-2](scoreboard-control/wa-2.md) and
+  [WA-3](scoreboard-control/wa-3.md): the wireless adapters that carry scoreboard data to a board
+  without a cable, and the [WTTC-1](scoreboard-control/wttc-1.md) and
+  [WHC-1](scoreboard-control/whc-1.md) controllers that drive a board on their own.
+- [Myriad](scoreboard/myriad.md) and [Mercury16](scoreboard/mercury16.md): the Colorado
+  Time Systems matrix displays of the 1990s and 2000s.
+- [MCTRL-300](scoreboard-control/mctrl-300.md), [MCTRL-600](scoreboard-control/mctrl-600.md),
+  [MCTRL-660](scoreboard-control/mctrl-660.md), [VX4](scoreboard-control/vx4.md) and
+  [MIC-VPU-01](scoreboard-control/mic-vpu-01.md): the video board controllers CTS ships.
+- [GameLink console](scoreboard-control/gamelink-console.md): the keyboard console that fed a
+  display with team-sport data.
+
+The rest of this section of the catalog is still to be written. The shared hardware is
+made by the timing vendors listed on the [Vendors](../../vendors/index.md) page.
 
 ## See also
 
