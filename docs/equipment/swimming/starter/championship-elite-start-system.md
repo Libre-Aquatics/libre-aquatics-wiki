@@ -65,7 +65,7 @@ front. The panel has a backlit LCD, a power button, a status-indicator LED,
 four-way navigation controls, and the connectors: charging port, microphone,
 VSS, wallplate, start, lane-speaker, and external-visual-indicator/speedlight.
 Two microphone rests flank the panel, and either can be swapped for a VSS
-controller holder or a Dolphin adapter.[^f1064]
+controller holder or a [Dolphin](../semi-automatic/dolphin.md) adapter.[^f1064]
 
 The built-in speaker is a 40-watt, 8-ohm moisture- and corrosion-resistant
 reflex speaker with its own volume setting in the audio menu; the manual does

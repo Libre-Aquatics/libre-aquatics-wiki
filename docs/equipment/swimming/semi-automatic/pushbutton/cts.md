@@ -69,7 +69,7 @@ with the Championship and Infinity start systems; it can also be used on its own
 a cable harness where no touchpads are installed.[^ctsshop][^poolweb] The signal it
 carries is the low-voltage lane input the timer reads and isolates, the same electrical
 path used by the pad.[^tdp] CTS also offers a wireless alternative to wired buttons, the
-[Dolphin system](../dolphin.md), in which each lane's timer holds a wireless
+[Dolphin Wireless Stopwatch Timing System](../dolphin.md), in which each lane's timer holds a wireless
 stopwatch rather than a plugged-in button.[^dolphin]
 
 ## Care and maintenance

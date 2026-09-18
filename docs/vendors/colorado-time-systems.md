@@ -48,6 +48,12 @@ CTS was later acquired by PlayCore, a Chattanooga, Tennessee recreation company,
 and became part of its EverActive Brands group. Sources give slightly different
 dates: several industry and trade reports place the deal in 2012 (reported that
 July, and effective around October), while Wikipedia dates it to July 2011.[^wiki-cts][^aquaticsintl][^pehub]
+
+Colorado Time Systems is a trading name rather than the manufacturing entity. Current CTS
+manuals give the manufacturer as Everlast Climbing Industries, Inc., doing business as
+Colorado Time Systems, at the Loveland address, and that line appears on documents from at
+least 2021 through 2026. Everlast Climbing, which makes indoor climbing walls, is another
+PlayCore brand, so the two sit under the same owner.[^f970][^f1004][^everlast]
 Manufacturing remained at the Colorado facility and general manager Anita Sayed
 continued to run day-to-day operations; PlayCore was itself owned at the time by the
 private-equity firm Irving Place Capital.[^aquaticsintl][^pehub]
@@ -90,6 +96,10 @@ which replaced the earlier deck-wired
 each lane's finish and the discontinued
 [Standard touchpads](../equipment/swimming/touchpad/standard.md) they replaced, the
 [backup pushbutton](../equipment/swimming/semi-automatic/pushbutton/cts.md) that backs it up, the
+[Dolphin Wireless Stopwatch Timing System](../equipment/swimming/semi-automatic/dolphin.md)
+that replaces that button with a wireless stopwatch and its
+[Dolphin Starter Unit](../equipment/swimming/starter/dolphin-starter-unit.md) and
+[scoreboard adapter](../equipment/swimming/semi-automatic/dolphin-scoreboard-adapter.md), the
 [RJP relay judging platforms](../equipment/swimming/relay-judging/cts.md) that
 judge relay exchanges from the blocks, the
 [backstroke start device](../equipment/swimming/backstroke-start/cts.md) that gives
@@ -143,5 +153,8 @@ Smithsonian.[^wiki-cts][^blog]
 [^aquaticsintl]: [Aquatics International, PlayCore acquires Colorado Time Systems](https://www.aquaticsintl.com/facilities/playcore-acquires-colorado-time-systems_o).
 [^pehub]: [PE Hub, PlayCore acquires Colorado Time Systems (2012)](https://www.pehub.com/irving-place-capitals-playcore-acquires-colorado-time-systems/).
 [^cms]: [Wikipedia, Colorado Memory Systems](https://en.wikipedia.org/wiki/Colorado_Memory_Systems).
+[^f970]: Colorado Time Systems, Wireless Handheld All Scoreboards Controller User Guide (F970 Rev. 202103), title page.
+[^f1004]: Colorado Time Systems, Scoreboard for Swimming & Track With 2.4 GHz Integrated Wireless, Installation and User Guide (F1004 Rev. 202605), title page.
+[^everlast]: [PlayCore, Everlast Climbing](https://www.playcore.com/our-brands/everlast-climbing) (listed among PlayCore's brands).
 [^wiki-timing]: [Wikipedia, Aquatic timing system](https://en.wikipedia.org/wiki/Aquatic_timing_system).
 [^tokyo64]: [Tokyo Organising Committee, Official Report of the 1964 Olympic Games, v.1](https://digital.la84.org/digital/collection/p17103coll8/id/27446/), p. 177 (LA84 Foundation; touch board adopted as the official timer).

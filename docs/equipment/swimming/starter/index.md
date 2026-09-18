@@ -113,7 +113,7 @@ differs from its near-namesake. This page is the shared overview they refer back
 to. Separate from these acoustic start systems, CTS also makes the
 [Dolphin Starter Unit](dolphin-starter-unit.md) (`R-1004-0507`), a wireless
 start-trigger that starts the
-[Dolphin stopwatch timing system](../semi-automatic/dolphin.md) rather than a horn
+[Dolphin Wireless Stopwatch Timing System](../semi-automatic/dolphin.md) rather than a horn
 or strobe starter.
 
 Daktronics makes one start system, the portable

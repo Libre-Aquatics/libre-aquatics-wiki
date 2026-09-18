@@ -122,7 +122,8 @@ between flashes to recharge.[^f875]
 ## Connections
 
 The timer-start output emits a normally-open (N.O.) pulse and nothing else, which suits
-every CTS timer, [System 5](../timers/system-5.md), System 6 and Dolphin among them. A
+every CTS timer, [System 5](../timers/system-5.md), System 6 and the
+[Dolphin](../semi-automatic/dolphin.md) among them. A
 timer expecting a normally-closed pulse means sending the unit back for factory
 modification.[^f875] The Championship interfaces to a CTS timer through a start
 jumper cable, models `SJ-50` through `SJ-200` (the number is the cable
