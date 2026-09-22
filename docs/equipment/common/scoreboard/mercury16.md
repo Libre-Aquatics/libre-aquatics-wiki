@@ -54,10 +54,23 @@ so Mercury and DisplayLink appear to have been introduced together, but this is 
 from advertising and not a documented introduction date. The advertised name is "Mercury";
 the manuals write "Mercury16".
 
-Still to research before building this out: pixel dimensions and physical sizes, part
-numbers, what the 16 in the name refers to (16 pixels? 16 colors? not stated anywhere
-held), the relationship between the outdoor and Sun Series names, and when CTS withdrew
-the line. LSA meet management software is named in the 1996 advertising and is not covered
+Answered on the Myriad research pass, from CTS's own archived product page at
+web.archive.org/web/20030219123738/http://www.coloradotime.com/aquaticproducts/mercury16/.
+The 16 in the name is a shade count. CTS said the indoor Mercury 16 pixel is four diodes of
+a single color, red or green, giving 16 shades, and that the Outdoor Sun Series pixel is
+five red diodes, also 16 shades. The same page confirms the module arithmetic shared with
+the Myriad: an 8 x 8 pixel board roughly a foot square, four of them to a 32 x 8 module of
+about 4 ft by 1 ft, assembled to whatever rectangle a facility needs and quoted in pixels
+across by pixels high. The page also settles the marketing hierarchy: aquaticproducts/ and
+arenaproducts/ carried Mercury 16, while the outdoor board had its own page under
+stadiumproducts/outdoor_mercury16/, which is evidence for, though not proof of, Outdoor
+Mercury16 and the Sun Series being the same product sold to a different market. A customer
+list exists at that page's customers.asp and has not been read; read it before building
+this out.
+
+Still to research before building this out: physical sizes and installed configurations,
+part numbers, whether the outdoor and Sun Series names are formally the same product, and
+when CTS withdrew the line. LSA meet management software is named in the 1996 advertising and is not covered
 anywhere on this wiki; it is a meet-management product and belongs to that section's own
 research pass, along with Hy-Tek Meet Manager.
 -->
@@ -66,5 +79,6 @@ This article is a stub. The Mercury16 is a Colorado Time Systems LED matrix disp
 in indoor, outdoor and Sun Series forms and driven from a computer running
 [DisplayLink](../../../software/displaylink.md) software.
 
-See the [scoreboards overview](index.md) for the shared background that applies to every
-matrix display.
+See the [Myriad](myriad.md) article for the two-color board it shared a manual with, and
+the [scoreboards overview](index.md) for the shared background that applies to every matrix
+display.
