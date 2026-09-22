@@ -85,7 +85,7 @@ enclosure holding two lines of 5 inch digits. CTS aims it at facilities that nee
 they can move, or that have no room for a full-size one, and describes it as carrying what
 two lines of its [LED-R](led-r.md) scoreboard show in a quarter of the
 space.[^ds26][^product] The board displays data from a CTS timing console, from the UPC-C
-[pace clock controller](../scoreboard-control/upc-c.md), or from a
+[pace clock controller](../pace-clock/upc-c.md), or from a
 [Dolphin](../../swimming/semi-automatic/dolphin.md) wireless watch system through the
 [Dolphin Scoreboard Adapter](../../swimming/semi-automatic/dolphin-scoreboard-adapter.md).[^ds26][^f927]
 

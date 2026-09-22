@@ -32,8 +32,9 @@ tags:
   extraction), the mini scoreboard guide F927, and the WA-3 guide F1045. F1078 and F1079,
   the current LED-R guides, are not held at all and are the obvious next request.
 
-  Deliberately out of scope here: pace clocks and shot clocks, which are a class of their
-  own and have their own folder of held sources, and the deck clock (F985).
+  Out of scope here: pace clocks, which now have their own section at
+  equipment/common/pace-clock/, founded in September 2026; shot clocks, which belong with
+  water polo; and the deck clock (F985), which is still uncovered.
 -->
 A scoreboard, or display board, is the board that shows a competition's times, places,
 scores and event information to the athletes and the spectators. It displays what another
@@ -65,12 +66,12 @@ noise on the supply. Data reaches the board over an RS-232 scoreboard port, and 
 permanent data cable is ordered by length, in 100, 150 or 200 foot runs.[^ledsheet][^f218]
 A numeric board is not limited to one sport: the same modules show swimming, diving, water
 polo, artistic swimming and track information, and with the pace clock program on a CTS
-console the board serves as a pace clock or a time-of-day clock.[^ledsheet][^f218]
+console the board becomes a pace clock or a time-of-day clock.[^ledsheet][^f218]
 
 The cable can be replaced by a radio link, through a wireless adapter at each end or, on a
 board with its own receiver, by one adapter at the console. The adapters and the other
 hardware that feeds a board are covered on the
-[scoreboard control overview](../scoreboard-control/index.md).[^wa1][^wa3]
+[scoreboard control overview](../scoreboard-control/index.md).[^wa1][^wa3][^f1045]
 
 Later numeric boards take their data by radio rather than over a cable. CTS launched the
 [Otter](otter.md) line around 2015 in swimming, diving and water polo versions, with 2.4 GHz
@@ -88,7 +89,7 @@ A matrix board replaces fixed digits with a grid of addressable pixels, so the s
 can show text in any arrangement, graphics and animation as well as timing data. CTS built
 this generation as the [Myriad](myriad.md) and [Mercury16](mercury16.md) lines, and drove
 them from a dedicated computer running [DisplayLink](../../../software/displaylink.md),
-which is where a board's content was composed.[^f853][^dl37]
+which is where a board's content was composed.[^f853][^f837][^dl37]
 
 The construction is modular in both power and data. The viewable surface is an array of
 8×8 pixel modules, called 8x8s, held in module boxes; each row of the board has a row
@@ -132,13 +133,14 @@ backstroke start.[^frules]
 CTS's current aquatic scoreboards are the [Otter](otter.md) boards, the
 [mini LED scoreboard](mini-scoreboard.md) and the [LED-R](led-r.md) numeric line, each with
 its own guide on the company's manuals index; the Myriad and Mercury16 matrix displays
-below are out of production, and CTS publishes nothing for them now.[^manuals]
+below are out of production and have no entry on that index, though CTS does still publish
+a troubleshooting page covering the two lines.[^manuals][^tshoot]
 
 This section catalogs the display hardware named in the articles on this wiki. The
 [LED-R](led-r.md) module, the [mini LED scoreboard](mini-scoreboard.md) and the
-[Otter](otter.md) boards have had research passes of their own; the rest are stubs, written
-from what a manual or catalogue says in passing while another article was being
-researched.
+[Otter](otter.md) boards and the [Myriad](myriad.md) have had research passes of their own;
+the rest are stubs, written from what a manual or catalogue says in passing while another
+article was being researched.
 
 | Product | Maker | Type | Status |
 |---|---|---|---|
@@ -147,7 +149,9 @@ researched.
 | [LED-REX](led-rex.md) | Colorado Time Systems | LED retrofit for a light-reflective board | Attested 2011 |
 | [Mini LED scoreboard](mini-scoreboard.md) | Colorado Time Systems | Compact two-line numeric board, portable or fixed | Current; the 2026 datasheet lists portable models only |
 | [Mini scoreboard caddy](cad-mini.md) | Colorado Time Systems | Wheeled frame for four or five modules | Documented |
-| [Myriad](myriad.md) | Colorado Time Systems | Multi-color LED matrix display | Attested 1997; discontinued |
+| [Myriad](myriad.md) | Colorado Time Systems | Two-color LED matrix display, 256 shades | Announced 1997; discontinued |
+| [HWPM 110 and HWPM 220](hwpm.md) | Colorado Time Systems | Optional matrix-display parts, purpose unestablished | Named in the 2000 manual |
+| [Multisport portable scoreboard](multisport-portable-scoreboard.md) | Colorado Time Systems | Wheeled game-time and score board, `MS-` family | Attested 2015 |
 | [Mercury16](mercury16.md) | Colorado Time Systems | Indoor LED matrix display, with outdoor and Sun Series variants | Attested 1996; discontinued |
 
 The adapters, controllers and video processors that feed these boards are listed on the
@@ -174,12 +178,14 @@ See everything tagged [Scoring](../../../categories.md).
 [^f218]: [Colorado Time Systems, Single and Multi-line Scoreboard Display Modules Installation Guide (F218 Rev. 201705)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Scoreboards/Scoreboard_Installation_Guide_F218.pdf).
 [^f853]: Colorado Time Systems, Myriad/Mercury16 Display Manual (F853 Rev. 0100), sections 1 and 2.
 [^dl37]: Colorado Time Systems, DisplayLink 3.7 Users Guide (F888 Rev. 0404).
+[^f837]: Colorado Time Systems, DisplayLink 3.6 Users Guide, for Myriad and Mercury Matrix Display Systems (F837 Rev. 0404).
 [^f1062]: [Colorado Time Systems, DisplayLink Video to Broadcast Software Instructions (F1062)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/LED%20Matrix%20Displays/Software/Displaylink_Video_to_Broadcast_Software_Instructions_F1062.pdf) (Rev. 202104).
 [^blog]: [Colorado Time Systems, A Guide to Live Streaming with DisplayLink+](https://coloradotime.com/blog/a-guide-to-live-streaming-with-displaylink).
 [^cat2015]: Colorado Time Systems, Complete Timing, Scoring, Training and Display Solutions catalogue (2015), Numeric Scoreboards section.
 [^wa1]: Colorado Time Systems, Sky-Fi Wireless Adapter (WA-1) User Instructions.
 [^wa3]: Colorado Time Systems, 2.4 GHz Wireless Scoreboard Adapter datasheet (Rev. 04/19), specifications.
 [^f1045]: Colorado Time Systems, 2.4 GHz Wireless Adapter WA-3 User Guide (F1045).
-[^manuals]: [Colorado Time Systems, Manuals](https://coloradotime.com/support/manuals) (Otter F995 and F1004, Mini Scoreboard F927, LED-R F1078 and F1079; no entry for Myriad, Mercury or the DisplayLink programs).
+[^manuals]: [Colorado Time Systems, Manuals](https://coloradotime.com/support/manuals) (no entry for Myriad, Mercury or the DisplayLink user guides).
+[^tshoot]: [Colorado Time Systems, Mercury & Myriad Troubleshooting Guide](https://coloradotime.com/support/mercury-myriad-troubleshooting-guide).
 [^mini]: Colorado Time Systems, Mini LED Scoreboard datasheet (Rev. 03/14).
 [^frules]: [World Aquatics, Facilities Rules 2021–2025](https://resources.fina.org/fina/document/2022/02/08/77c3058d-b549-4543-8524-ad51a857864e/210805-Facilities-Rules_clean.pdf), FR 2.1.8, FR 2.3.6.2, FR 2.3.7.1 and FR 5.3.6.

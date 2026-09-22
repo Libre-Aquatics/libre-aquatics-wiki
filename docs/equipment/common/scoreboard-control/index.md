@@ -25,9 +25,10 @@ tags:
   the software section. A console or a computer is a data source; this section is about
   what sits between a source and a board.
 
-  The UPC-C is the awkward one. It is a training workout controller that happens to drive
-  scoreboards, so it sits here until this wiki has a pace clocks section, which the held
-  sources would support.
+  The UPC-C used to sit here as the awkward one, a training workout controller that
+  happens to drive scoreboards. The pace clocks section now exists and it has moved to
+  equipment/common/pace-clock/upc-c.md, where it has had a research pass of its own. This
+  section is for what carries competition data to a board.
 -->
 
 Scoreboard control covers the hardware between a data source and the board it lights up.
@@ -67,9 +68,10 @@ one.[^f1045][^f901]
 The [WTTC-1](wttc-1.md) is the tabletop version, worked from a keypad at the officials'
 table, and the [WHC-1](whc-1.md) is the handheld equivalent; both reach a multisport board
 directly, without an adapter of their own.[^f1045] On the Otter boards they can also set the
-time of day and change a board's channel.[^f1004] The [pace clock controller](upc-c.md),
-`UPC-C`, is the training-side member of the family, storing workouts and playing them out
-onto a pace clock or a scoreboard.[^f901] The oldest of the group is the
+time of day and change a board's channel.[^f1004] The
+[pace clock controller](../pace-clock/upc-c.md), `UPC-C`, does the same kind of job on the
+training side, storing workouts and playing them out onto a pace clock or a scoreboard, and
+is covered with the [pace clocks](../pace-clock/index.md).[^f901] The oldest of the group is the
 [GameLink console](gamelink-console.md), a keyboard for team-sport data that could feed a
 matrix display through [DisplayLink](../../../software/displaylink.md) or, with a standalone
 template loaded, drive the display on its own.[^te15]
@@ -101,7 +103,6 @@ than by who made it, so a NovaStar controller and a CTS adapter sit in the same 
 | [WA-3](wa-3.md) | Colorado Time Systems | 2.4 GHz wireless scoreboard adapter | Current |
 | [WTTC-1](wttc-1.md) | Colorado Time Systems | Tabletop controller for multisport boards | Documented |
 | [WHC-1](whc-1.md) | Colorado Time Systems | Handheld controller for multisport boards | Documented |
-| [Pace clock controller](upc-c.md) | Colorado Time Systems | Workout controller that drives a board or pace clock | Documented |
 | [GameLink console](gamelink-console.md) | Colorado Time Systems | Keyboard console for team-sport data entry | Discontinued |
 | [MCTRL-300](mctrl-300.md) | NovaStar | LED video display controller | Shipped by CTS |
 | [MCTRL-600](mctrl-600.md) | NovaStar | LED video display controller | Shipped by CTS |

@@ -36,14 +36,24 @@ day on a leader board, overriding it and every follower, and where its Connectio
 changes the channel and PAN; and in the WA-3 guide F1045, which says a handheld controller
 needs no adapter of its own to reach a multisport scoreboard.
 
-Still to research: the sports it covers, its radio specification, battery and physical form,
-its relationship to the tabletop WTTC-1, part numbers for accessories, and whether it is
-still sold.
+Answered on the handheld segment timer pass, from F970's own conformity pages. The radio is
+the same certified module the WHC-2, the WA-3 and the slim pace clocks carry, FCC ID
+OUR-XBEEPRO or MCQ-XBEE3 with IC 4214-XBEEPRO or 1846A-XBEE3, which are MaxStream's XBee-PRO
+and Digi's XBee 3. The European declaration is issued for model WHC-X, the same wildcard
+F1050 declares for the WHC-2, so CTS treats the two as one platform with different firmware.
+Two AA cells give about eight hours, as on the WHC-2. Note an oddity to resolve before
+building this out: F970's declaration is dated 17 January 2013 but cites directives issued in
+2014, which cannot both be right.
+
+Still to research: the sports it covers, its physical form, its relationship to the tabletop
+WTTC-1, part numbers for accessories, whether it reaches module addresses above 6, and
+whether it is still sold.
 -->
 
 This article is a stub. The WHC-1 is a Colorado Time Systems handheld wireless controller for
 multisport scoreboards, operating the score, period and clock on a board over the air without
 a timing console in the loop.
 
-See the [scoreboard control overview](index.md) for the shared background, and the
-[scoreboards overview](../scoreboard/index.md) for the boards it drives.
+See the [handheld segment timer](../pace-clock/whc-2.md) for the training-side controller
+built on the same platform, the [scoreboard control overview](index.md) for the shared
+background, and the [scoreboards overview](../scoreboard/index.md) for the boards it drives.
