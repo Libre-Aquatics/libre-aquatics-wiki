@@ -42,11 +42,15 @@ each is documented here only as far as that timing interface goes.[^f912]
 
 | Program | Vendor | Notes |
 |---|---|---|
-| [Hy-Tek Meet Manager](hy-tek-meet-manager.md) | Hy-Tek Sports Software, part of The Active Network since 2007 | Reads Dolphin `DO3` and `DO4` result files as either the primary or the backup source, in both cases through a purchased option |
+| [Hy-Tek Meet Manager](hy-tek-meet-manager.md) | [Hy-Tek Sports Software](../vendors/hy-tek.md), part of [The Active Network](../vendors/active-network.md) since 2008 | Advertised since 1986 and the program most American consoles were built to talk to; reads Dolphin `DO3` and `DO4` files as either the primary or the backup source |
 | [SwimTopia Meet Maestro](meet-maestro.md) | SwimTopia | Integrates with the Dolphin directly, and also sends event and heat detail back into the Dolphin software |
 | [Splash Meet Manager](splash-meet-manager.md) | Splash Software, Berne | Used chiefly by European clubs and federations |
 
-All three are stubs.
+Meet Manager has had a research pass of its own; the other two are stubs. The
+[Easy Meet](easy-meet.md), [Championship Meet Management](championship-meet-management.md)
+and [Computerized Swim League](computerized-swim-league.md) pages cover rivals and
+predecessors the swimming press names, and [Meet Mobile](meet-mobile.md) is the
+live-results application that publishes what a meet scores.
 
 ## Display software
 
@@ -88,10 +92,20 @@ Swimmer and event name data is carried in `.scb` files, which DisplayLink Plus c
 import from disk or removable media, and which a Gen7 console can load directly from
 a USB drive.[^help][^f1034]
 
-<!-- TODO: needs source: the entry and results interchange formats used between team
-     software, meet software, and timing systems (the Hy-Tek .hyv/.hy3/.cl2 family
-     and the SDIF/.sd3 standard) are not documented here. Each needs a specification
-     source before anything is written about it. -->
+[SDIF](sdif.md), the Standard Data Interchange Format published by United States Swimming,
+is the open standard for moving entries and results between programs, carried in `.sd3`
+files of fixed 162-byte records. Hy-Tek's own [Commlink](commlink.md) did the same job on a
+diskette and was treated as an alternative to it rather than an implementation of it.
+
+Hy-Tek's own formats sit beside that standard rather than inside it, and they come in
+pairs. Results go out as [CL2](cl2.md) and [HY3](hy3.md) together, event lists as
+[HYV](hyv.md) and [EV3](ev3.md) together, with the older of each pair read by Team Manager
+releases before 4.0G and the newer by 4.0G and later. Hy-Tek has published a specification
+for none of them. Each line of an HY3 ends with a checksum the company never documented,
+which the program enforces on import; swimming volunteers worked it out and published it in
+2010, and it has been reproducible ever since. None of the four extensions appears anywhere
+in the source collection held for this wiki, so those pages rest on external sources and
+say so.
 
 ## See also
 
