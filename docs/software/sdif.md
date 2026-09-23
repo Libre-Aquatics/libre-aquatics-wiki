@@ -489,17 +489,21 @@ replacing the other.
 
 [Lenex](lenex.md) is the European equivalent and answers the same need in a different
 technical idiom.
-It is XML rather than fixed-width, carries the extension `.lxf`, and is created and
-maintained by Christian Kaufmann, not by a federation. Version 1.0 was in use across
-European countries from 1999, version 2.0 arrived in 2004 alongside the launch of European
-Rankings, and version 3.0 followed in late 2008 while staying close to backward compatible
-with its predecessor. It is the recommended format for European Aquatics rankings and is
-described as the primary exchange format of more than twenty federations.[^lenex]
+It is XML rather than fixed-width, is written as a `.lef` file and usually shipped zipped as
+`.lxf`, and is created and maintained by Christian Kaufmann, not by a federation. Version
+1.0 was in use across European countries from 1999, version 2.0 arrived in 2004 alongside
+the launch of European Rankings, and version 3.0 followed in late 2008 while staying close
+to backward compatible with its predecessor. It is the recommended format for European
+Aquatics rankings and is described as the primary exchange format of more than twenty
+federations.[^lenex]
 
 The two differ in date and in approach, though not in ambition. SDIF fixed its record
-geometry in the diskette era and has not moved since 1998; Lenex began a year after SDIF's
-last revision, chose a self-describing format, and has been revised twice. Where SDIF has
-to add a record type to carry a longer identifier, an XML format adds an attribute.
+geometry in the diskette era and has not moved since 1998. Lenex began a year after SDIF's
+last revision and chose a self-describing format. It has had three version numbers, and
+since 2008 its documentation has been extended many times while the version number stayed
+at 3.0. Where SDIF has to add a record type to carry a longer identifier, an XML format adds
+an attribute. SDIF puts a swim on one line; Lenex spreads it across a tree joined by
+numeric identifiers, as the [Lenex](lenex.md) page's worked example shows.
 
 ## Reading and writing
 

@@ -98,7 +98,8 @@ files whose records are 162 bytes, the last two of them a line terminator. Hy-Te
 [Commlink](commlink.md) did the same job on a diskette and was treated as an alternative to
 it rather than an implementation of it. [XSDIF](xsdif.md) is an XML form of the same
 standard accepted beside it, and [Lenex](lenex.md) is the European format that answers the
-same need in XML.
+same need in XML. Germany keeps a plain-text format of its own, the
+[DSV-Standard](dsv-standard.md).
 
 Hy-Tek's own formats sit beside that standard rather than inside it, and they come in
 pairs. Results go out as [CL2](cl2.md) and [HY3](hy3.md) together, event lists as

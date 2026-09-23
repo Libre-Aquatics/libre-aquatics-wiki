@@ -51,11 +51,18 @@ tags:
   it; the Team Manager counterpart; the Lenex file format, which is the European
   interchange standard and is associated with this software family but was not
   investigated here; how it connects to timing systems other than the Dolphin.
+
+  Added from the Lenex pass (September 2026): Lenex now has its own page. The Swimrankings
+  wiki credits Splash Meet and Team Manager to Christian Kaufmann, the Lenex maintainer, and
+  the four Lenex sample files were written by a debug build of SPLASH Meet Manager, giving
+  Splash Software GmbH of Spiegel bei Bern as provider. SwimNews carried Splash
+  advertisements from Oct-Nov 2001 to Nov-Dec 2002 (issues 268-275), sold through
+  splash.swimnews.com. Company detail is on the Splash Software vendor stub.
 -->
 
 This article is a stub. Splash Meet Manager is meet-management software for swimming
-from Splash Software of Berne, Switzerland, used by clubs, organizing committees and
-national federations, chiefly in Europe. Colorado Time Systems lists it among the
+from [Splash Software](../vendors/splash-software.md) of Berne, Switzerland, used by
+clubs, organizing committees and national federations, chiefly in Europe. Colorado Time Systems lists it among the
 programs that can take results from a
 [Dolphin Wireless Stopwatch Timing System](../equipment/swimming/semi-automatic/dolphin.md).
 
