@@ -94,8 +94,11 @@ a USB drive.[^help][^f1034]
 
 [SDIF](sdif.md), the Standard Data Interchange Format published by United States Swimming,
 is the open standard for moving entries and results between programs, carried in `.sd3`
-files of fixed 162-byte records. Hy-Tek's own [Commlink](commlink.md) did the same job on a
-diskette and was treated as an alternative to it rather than an implementation of it.
+files whose records are 162 bytes, the last two of them a line terminator. Hy-Tek's own
+[Commlink](commlink.md) did the same job on a diskette and was treated as an alternative to
+it rather than an implementation of it. [XSDIF](xsdif.md) is an XML form of the same
+standard accepted beside it, and [Lenex](lenex.md) is the European format that answers the
+same need in XML.
 
 Hy-Tek's own formats sit beside that standard rather than inside it, and they come in
 pairs. Results go out as [CL2](cl2.md) and [HY3](hy3.md) together, event lists as

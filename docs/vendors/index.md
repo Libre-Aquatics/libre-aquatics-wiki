@@ -50,6 +50,7 @@ works with.
 | [NovaStar](novastar.md) | Xi'an, China | The MCTRL and VX4 LED display controllers CTS ships with its video boards |
 | [Hy-Tek Sports Software](hy-tek.md) | New Bern, North Carolina, United States | No equipment; the Meet Manager, Team Manager and Workout Manager software the consoles interface with |
 | [The Active Network](active-network.md) | United States | No equipment; owner of the Hy-Tek line and of Meet Mobile since 2008 |
+| [Hy-Point Software](hy-point-software.md) | Northwest Indiana, United States | No equipment; the SwimMeet Manager meet software, advertised around 2000 and unrelated to Hy-Tek |
 | [Kyrotech](kyrotech.md) | Northbrook, Illinois, United States | The Tec-Timer printing meet timer, advertised in the press between 1984 and 1993 |
 | [Incomar](incomar.md) | Utica, Michigan, United States | The Splash I pacing system of 1980, and a console Hy-Tek supported in 1988 |
 | [ALGE-Timing](alge-timing.md) | Not established | The SWIM 2000 and Timy timing consoles, and a semi-automatic swimming package |

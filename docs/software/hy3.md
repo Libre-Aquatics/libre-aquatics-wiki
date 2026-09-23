@@ -288,6 +288,7 @@ conversion from HY3.
 - [CL2](cl2.md): the older Hy-Tek format shipped in the same export
 - [HYV](hyv.md) and [EV3](ev3.md): the event-list exports, shipped as a pair
 - [SDIF](sdif.md): the published standard, and the format Hy-Tek will convert to
+- [swimlib](swimlib.md): a current library that reads and writes this format
 - [Meet Manager](hy-tek-meet-manager.md) and [Team Manager](hy-tek-team-manager.md): the
   programs that write it
 - [Software](index.md): the software reference

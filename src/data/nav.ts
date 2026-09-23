@@ -301,6 +301,8 @@ export const nav: NavNode[] = [
           { title: 'Computerized Swim League', page: 'software/computerized-swim-league.md' },
           { title: 'Meet Mobile', page: 'software/meet-mobile.md' },
           { title: 'ACTIVEWorks Swim Manager', page: 'software/activeworks-swim-manager.md' },
+          { title: 'SwimMeet Manager', page: 'software/swimmeet-manager.md' },
+          { title: 'WinSwim', page: 'software/winswim.md' },
         ],
       },
       {
@@ -321,12 +323,16 @@ export const nav: NavNode[] = [
         title: 'Data Exchange',
         children: [
           { title: 'SDIF', page: 'software/sdif.md' },
+          { title: 'XSDIF', page: 'software/xsdif.md' },
+          { title: 'Lenex', page: 'software/lenex.md' },
           { title: 'HY3', page: 'software/hy3.md' },
           { title: 'CL2', page: 'software/cl2.md' },
           { title: 'HYV', page: 'software/hyv.md' },
           { title: 'EV3', page: 'software/ev3.md' },
           { title: 'Hy-Tek Commlink', page: 'software/commlink.md' },
           { title: 'Hy-Tek The Interface', page: 'software/the-interface.md' },
+          { title: 'swimlib', page: 'software/swimlib.md' },
+          { title: 'SDIFCheck', page: 'software/sdifcheck.md' },
         ],
       },
       {
@@ -358,6 +364,7 @@ export const nav: NavNode[] = [
       { title: 'Colorado Time Systems', page: 'vendors/colorado-time-systems.md' },
       { title: 'Daktronics', page: 'vendors/daktronics.md' },
       { title: 'FINIS', page: 'vendors/finis.md' },
+      { title: 'Hy-Point Software', page: 'vendors/hy-point-software.md' },
       { title: 'Hy-Tek Sports Software', page: 'vendors/hy-tek.md' },
       { title: 'Incomar', page: 'vendors/incomar.md' },
       { title: 'International Sports Timing', page: 'vendors/international-sports-timing.md' },
