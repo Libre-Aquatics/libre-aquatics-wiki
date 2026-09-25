@@ -80,6 +80,22 @@ for (const file of mdFiles(rootDir)) {
   }
 }
 
+// The Main Page's curated picks (src/data/home.ts) name articles by
+// docs-root-relative source path, both as quoted strings and inside the
+// `[text](path.md)` links of the "Did you know" hooks. The page itself holds
+// no article routes, so this is what keeps it free of dead links.
+const homeData = path.resolve('src/data/home.ts');
+const homeText = fs.readFileSync(homeData, 'utf8').replace(/^\s*(\/\/|\*|\/\*).*$/gm, '');
+const homeTargets = new Set();
+for (const m of homeText.matchAll(/'([^'\s]+\.md)'/g)) homeTargets.add(m[1]);
+for (const m of homeText.matchAll(/\]\(([^)\s]+\.md)\)/g)) homeTargets.add(m[1]);
+for (const target of homeTargets) {
+  checked += 1;
+  if (!fs.existsSync(path.join(rootDir, target))) {
+    broken.push(`${path.relative(process.cwd(), homeData)} -> ${target}`);
+  }
+}
+
 if (broken.length > 0) {
   console.error(`Broken internal link${broken.length > 1 ? 's' : ''} (${broken.length}):`);
   for (const b of broken) console.error(`  ${b}`);
