@@ -38,6 +38,18 @@ Not to be confused with the current line. Active now sells Team Registration for
 Team Websites, which cover adjacent ground, and ACTIVEWorks Swim Manager, which produces
 entry files. Whether any of them descends from Team Manager Online is not established.
 
+Found on the Team Manager pass, September 2026. Hy-Tek's What's New page (Wayback capture
+20050101161310) dates the launch to 5 October 2002, with a two-week free trial, which is six
+months before the April 2003 advertising above; Swimming World carries it from November 2002
+(swimming-world/200211.txt:2080). The same page records Version 2.0 on 7 September 2004 and a
+move to a dedicated server in July 2004. The service's old address,
+sports-tek.active.com/TMOnline/index.asp, now serves a team-selection page headed "Hy-Tek's
+Team Stats Online Version 2.0C", and Team Stats Online is the publishing service bundled with
+Team Manager 8.0. The path and the version number together suggest Team Manager Online was
+renamed Team Stats Online. That is inferred, not stated anywhere, and hy-tek-team-manager.md
+presents it as an inference. Team Connect Online, the shared-database service, is a
+different thing (hy-tek-team-connect-online.md).
+
 Still to research: whether the Web Database, Hy-Tek OnLine Entries and Team Manager Online
 were the same service; what it cost; when it was retired or renamed; and its relationship to
 the current Team Registration product.
