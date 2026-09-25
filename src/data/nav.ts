@@ -316,11 +316,16 @@ export const nav: NavNode[] = [
         children: [
           { title: 'Hy-Tek Team Manager', page: 'software/hy-tek-team-manager.md' },
           { title: 'Hy-Tek Team Manager Online', page: 'software/hy-tek-team-manager-online.md' },
+          { title: 'Hy-Tek Team Connect Online', page: 'software/hy-tek-team-connect-online.md' },
+          { title: 'Hy-Tek Pro SWIMMER', page: 'software/hy-tek-pro-swimmer.md' },
           { title: 'Hy-Tek Workout Manager', page: 'software/hy-tek-workout-manager.md' },
           { title: 'Hy-Tek Business Manager', page: 'software/hy-tek-business-manager.md' },
           { title: 'Hy-Tek Personal Swim Manager', page: 'software/hy-tek-personal-swim-manager.md' },
           { title: 'Hy-Tek Team Registration', page: 'software/hy-tek-team-registration.md' },
           { title: 'Hy-Tek Team Websites', page: 'software/hy-tek-team-websites.md' },
+          { title: 'TeamUnify', page: 'software/teamunify.md' },
+          { title: 'SwimTopia', page: 'software/swimtopia.md' },
+          { title: 'Splash Team Manager', page: 'software/splash-team-manager.md' },
         ],
       },
       {

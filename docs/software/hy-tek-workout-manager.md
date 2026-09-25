@@ -60,6 +60,17 @@ Hy-Tek's own Team Manager guide gives the current reach: the export targets CTS 
 CTS 6 consoles and the Daktronics OmniSport 2000, OmniSport 6000 and PC 2000, over a serial
 port, except for the OmniSport 6000 which takes the workout on a floppy disk.
 
+Found on the Team Manager pass, September 2026, and qualifying the resolution above. The TM
+8 packages page (hytek.active.com/User_Guides_HTML/SwTM8/HTML/productoptions.htm) puts three
+Workout Manager options in the Gold package: Basic, Training and Pace Clock, and it is the
+Pace Clock option that it describes as sending workouts to a timing machine. The Daktronics
+manual names the Basic option as the requirement instead. Both may hold if Pace Clock depends
+on Basic; neither source says so, and hy-tek-team-manager.md flags the difference. Gold is
+$570 as of 2026 (hytek.active.com/store/swim/TM8.html). The Windows edition of Workout
+Manager shipped on 29 October 2002 (Hy-Tek What's New, Wayback 20050101161310) and was then
+advertised as "TEAM MANAGER II and Workout Manager" (swimming-world/200211.txt:2080). TM can
+also convert and merge a DOS Workout Manager database (convertdatabase.htm).
+
 Still to research: whether the module is still sold, since Active's current product list
 names neither it nor Team Manager's options; the physiological model behind the anaerobic
 threshold, cruise interval and maxVO2 settings advertised from 1986; whether the Polar

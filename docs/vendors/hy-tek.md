@@ -119,9 +119,11 @@ nothing.
 Products named in the corpus but left without pages, deliberately: the SWIM TRAINING
 packages advertised from August 1986 (swimming-world/198608.txt:19142), which are a category
 and not a named product, described only by their three settings, anaerobic
-threshold, cruise interval and maxVO2; and Personal and Pro SWIMMER for Palm OS
+threshold, cruise interval and maxVO2. Personal and Pro SWIMMER for Palm OS
 (swimming-technique/200204.txt:6584, 200304.txt:5456), which Active's 2008 release refers to
-collectively as PDA products. Both are recorded here so the line is complete. TM II Lite,
+collectively as PDA products, was also left without a page until the Team Manager pass of
+September 2026 found the Team Manager guide documenting its sync, and now has one
+(hy-tek-pro-swimmer.md). TM II Lite,
 the free cut-down edition advertised from 2001, is treated as an edition of Team Manager
 rather than a separate product and is covered on that page.
 

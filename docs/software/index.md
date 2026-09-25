@@ -28,8 +28,8 @@ products from other vendors, and the workflows they support are described under
 [team management](../team-management/index.md) rather than here.
 
 <!-- TODO: needs source: the three meet-management pages are stubs written from a
-     timing-system research pass, not from their own. Team-management applications
-     (Hy-Tek Team Manager) and CTS Synchro Meet Manager have no articles at all.
+     timing-system research pass, not from their own. CTS Synchro Meet Manager has no
+     article at all. Hy-Tek Team Manager was built out in September 2026.
      Each needs its own research pass before a page is written or built out. -->
 
 ## Meet-management software

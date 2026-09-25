@@ -377,11 +377,11 @@ wiki is between the two that survive:
 Daktronics pace clocks accept a session from.[^f901][^dakbro] The pace clock controller
 article covers that export from the clock's side.
 
-Which program actually performs the pace-clock export is not settled by the sources. CTS
-credits Workout Manager, and so does the Daktronics aquatics brochure, but the Daktronics
-PC-2001 manual and a Hy-Tek guide cited elsewhere on this wiki credit Team Manager
-instead.[^f901][^dakbro][^dakpc] The function may have moved between products; nothing held
-says so.
+The sources disagree over which program performs the pace-clock export. CTS and the
+Daktronics aquatics brochure credit Workout Manager, while the Daktronics PC-2001 manual
+credits Team Manager.[^f901][^dakbro][^dakpc] Both are right for their period: Workout
+Manager began as a program of its own and is now sold as a set of options inside Team
+Manager, where Hy-Tek's current guide places the pace-clock export.[^tmpackages]
 
 ## Data exchange
 
@@ -595,6 +595,7 @@ documentation has outlived the hardware vendor's.
 [^sw0701]: Industry item, *Swimming World*, January 2007 (SwimmingWorldMagazine.com partnership; MEET MANAGER 2.0E).
 [^sw9704]: Industry item, *Swimming World*, April 1997 (Swimming World partnership; Meet Manager 8.1; New Bern, North Carolina).
 [^sw9805]: Times submission notice, *Swimming World*, May 1998 (SDIF-compatible format or Hy-Tek's Commlink).
+[^tmpackages]: [HY-TEK, TM product packages](https://hytek.active.com/User_Guides_HTML/SwTM8/HTML/productoptions.htm) (Workout Manager options).
 [^active08]: [The Active Network, Acquisition of HY-TEK Sports Software Businesses](https://info.activenetwork.com/news-and-events/active-press-releases/archive/the-active-network-establishes-leadership-position-in-swimming-and-track-and-field-markets-with-acquisition-of-hy-tek-sports-software-business) (8 July 2008).
 [^hytekabout]: [HY-TEK Sports Software, About Us](https://hytek.active.com/about-us.html) (vendor claims, as of 2026).
 [^meetmobile]: [The Active Network, Meet Mobile swim app](https://www.activenetwork.com/blog/meet-mobile-swim-app-launches).
