@@ -63,6 +63,12 @@ export default defineConfig({
   site: 'https://wiki.libreaquatics.org',
   base: '/',
   trailingSlash: 'always',
+  // Astro 7 defaults to 'jsx', which applies React's whitespace rules to .astro
+  // templates: a line break between text and an element is deleted rather than
+  // collapsed to a space, so prose wrapped across lines around a link rendered
+  // as "on<a>Image credits</a>". `true` compresses without changing what
+  // renders, which is what the templates here are written for.
+  compressHTML: true,
   // The pushbutton pages moved under the semi-automatic category after the
   // site went live; these keep the published URLs working (static
   // meta-refresh pages on GitHub Pages).

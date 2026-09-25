@@ -1,189 +1,217 @@
 ---
-// The Main Page, converted from docs/index.md (a portal page: hero banner
-// with search, then four panels of curated links). Matches the old page's
-// hide: [navigation, toc] by using BaseLayout directly; the footer link row
-// stays, as it did on the old site.
+// The Main Page: a Wikipedia-style portal. Every list on it is derived at
+// build time by src/lib/home.ts from the nav tree, the content collection and
+// git history; the only hand-kept content is the curated picks in
+// src/data/home.ts, whose paths the link check verifies. No article route is
+// typed into this file, so renaming an article cannot leave a dead link here.
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import LeadIcon from '../components/LeadIcon.astro';
-import { withBase, docPathToRoute } from '../lib/routes';
-import { lastUpdated, lastUpdatedISO } from '../lib/gitDates';
-import { PAGE_META, leadImage } from '../lib/seo';
+import { withBase } from '../lib/routes';
+import { PAGE_META } from '../lib/seo';
+import { buildHome } from '../lib/home';
 
-// Recently updated: the same git-derived dates the article footer and the
-// sitemap use, so the list cannot drift from what the pages themselves say.
-// Articles carry no date in front matter, so git is the only source.
-// Pages kept out of search results are kept out of this list too: they are
-// section placeholders, and a freshness list should point at the reference
-// articles a reader came for.
-const articles = await getCollection('articles');
-const recent = articles
-  .filter((article) => !article.data.noindex)
-  .map((article) => ({
-    title: article.data.title,
-    route: docPathToRoute(`${article.id}.md`),
-    iso: lastUpdatedISO(article.filePath),
-    shown: lastUpdated(article.filePath),
-    image: leadImage(article.body),
-  }))
-  .filter((entry) => entry.iso)
-  .sort((a, b) => b.iso.localeCompare(a.iso))
-  .slice(0, 8);
+const home = buildHome(await getCollection('articles'));
+const { scope, tagGroups, featured, hooks, photo, portals, pending, recent, added } = home;
 ---
 
 <BaseLayout title={PAGE_META.home.title} description={PAGE_META.home.description}>
   <main id="content" class="wiki-article mp-main">
-    <h1>Libre Aquatics Wiki</h1>
-
     <div class="mp-banner">
-      <h3>Welcome to Libre Aquatics Wiki</h3>
-      <p>
-        A free, open reference for the equipment, timing hardware, and operations behind
-        competitive aquatics, covering swimming, diving, water polo, artistic swimming, and
-        open water. It is the reference companion to the
-        <a href={withBase('/about/')}>Libre Aquatics project</a>.
+      <h1>Libre Aquatics Wiki</h1>
+      <p class="mp-tagline">
+        A free, open reference for the equipment, timing hardware, software and operations
+        behind competitive aquatics.
       </p>
-      <button class="mp-search" type="button" data-mp-search aria-label="Search the wiki" aria-keyshortcuts="/">
+      <form class="mp-search" action={withBase('/search/')} method="get" role="search">
+        <label class="mp-visually-hidden" for="mp-search-input">Search the wiki</label>
         <svg class="mp-search__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        <span class="mp-search__label">Search the wiki</span>
-        <kbd class="mp-search__kbd" aria-hidden="true">/</kbd>
-      </button>
+        <input
+          id="mp-search-input"
+          class="mp-search__input"
+          type="search"
+          name="q"
+          placeholder="Search the wiki"
+          autocomplete="off"
+          required
+        />
+        <button class="mp-search__button" type="submit">Search</button>
+      </form>
+      <p class="mp-scope">
+        {scope.articles} articles on timing consoles, start systems, lane hardware,
+        scoreboards, software and file formats, from {scope.companies} companies.
+      </p>
     </div>
 
-    <div class="mp-grid">
-      <div class="mp-box">
-        <h2>Equipment</h2>
-        <div class="mp-box-body">
-          <p>The catalog of hardware used to run aquatic competitions.</p>
-          <ul>
-            <li><a href={withBase('/equipment/swimming/timers/')}>Timers</a>: swim timing consoles</li>
-            <li><a href={withBase('/equipment/swimming/starter/')}>Start systems</a>: starters, speakers, and strobes</li>
-            <li><a href={withBase('/equipment/swimming/touchpad/')}>Touchpads</a> and <a href={withBase('/equipment/swimming/semi-automatic/pushbutton/')}>pushbuttons</a>: lane finish hardware</li>
-            <li>By sport: <a href={withBase('/equipment/')}>swimming</a>, <a href={withBase('/equipment/diving/')}>diving</a>, <a href={withBase('/equipment/water-polo/')}>water polo</a>, and <a href={withBase('/equipment/common/')}>common gear</a></li>
-            <li><a href={withBase('/equipment/')}>All equipment</a>: the full catalog</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="mp-box">
-        <h2>Running a competition</h2>
-        <div class="mp-box-body">
-          <p>Planning and operating an event.</p>
-          <ul>
-            <li><a href={withBase('/meet-management/')}>Meet management</a>: entries, seeding, results, and awards</li>
-            <li><a href={withBase('/team-management/')}>Team management</a>: clubs, rosters, and entries</li>
-            <li><a href={withBase('/software/')}>Software</a>: the Libre Aquatics tools</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="mp-box">
-        <h2>Reference</h2>
-        <div class="mp-box-body">
-          <p>Background that supports the rest of the wiki.</p>
-          <ul>
-            <li><a href={withBase('/vendors/')}>Vendors</a>: the companies that make the equipment</li>
-            <li><a href={withBase('/categories/')}>Categories</a>: browse every article by sport and topic</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="mp-box">
-        <h2>About</h2>
-        <div class="mp-box-body">
-          <p>What this wiki is, how it's organized, and how to contribute.</p>
-          <ul>
-            <li><a href={withBase('/about/')}>About Libre Aquatics Wiki</a>: scope, organization, and contributing</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <h2>What this wiki documents</h2>
-    <p>
-      Libre Aquatics Wiki is a reference for the hardware that runs a competitive
-      aquatics meet: the consoles that keep time, the systems that start races, the
-      equipment in each lane that reports a finish, and the software that turns those
-      signals into published results. Articles are written from vendor manuals,
-      patents, governing-body rules, and independent reporting, and each one cites
-      its sources. Discontinued products are covered alongside current ones:
-      facilities keep equipment in service long after it leaves a price list, and for
-      some older models the manufacturer no longer publishes documentation at all.
-    </p>
-    <p>
-      The timing console is the center of an automatic timing system. This wiki
-      documents the Colorado Time Systems
-      <a href={withBase('/equipment/swimming/timers/system-5/')}>System 5</a> and
-      <a href={withBase('/equipment/swimming/timers/system-6/')}>System 6</a>, and the
-      two consoles of the Gen7 platform that replaced them, the
-      <a href={withBase('/equipment/swimming/timers/gen7-serial/')}>Gen7 Serial Timer</a>,
-      which uses CTS connect-hub deck cabling, and the
-      <a href={withBase('/equipment/swimming/timers/gen7-legacy/')}>Gen7 Legacy Timer</a>,
-      which drives a facility's existing multi-pin lane harnesses instead. On the
-      Daktronics side it covers the
-      <a href={withBase('/equipment/swimming/timers/omnisport-1000/')}>OmniSport 1000</a>,
-      <a href={withBase('/equipment/swimming/timers/omnisport-6000/')}>OmniSport 6000</a>,
-      and the multi-sport
-      <a href={withBase('/equipment/swimming/timers/omnisport-2000/')}>OmniSport 2000</a>.
-    </p>
-    <p>
-      Start systems are catalogued by manufacturer and by whether they are portable or
-      wired into the deck: the CTS
-      <a href={withBase('/equipment/swimming/starter/infinity-pro-start-system/')}>Infinity Pro</a>
-      and
-      <a href={withBase('/equipment/swimming/starter/championship-elite-start-system/')}>Championship Elite</a>
-      lines and their predecessors, the Daktronics
-      <a href={withBase('/equipment/swimming/starter/hs-200/')}>HS-200 Horn Start</a>, the
-      Swiss Timing
-      <a href={withBase('/equipment/swimming/starter/starttime-v/')}>StartTime</a> series
-      from the StartTime II to the StartTime V, the
-      <a href={withBase('/equipment/swimming/starter/seiko-ps-1400/')}>Seiko PS-1400</a>
-      and the rest of the Seiko PS starters, and the portable
-      <a href={withBase('/equipment/swimming/starter/swimstart/')}>SWIMSTART</a> and
-      <a href={withBase('/equipment/swimming/starter/atlantis/')}>Atlantis</a> systems.
-    </p>
-    <p>
-      Lane hardware has a section for each class of device, with a shared overview
-      explaining how that class works and what the rules require, and a page for each
-      product:
-      <a href={withBase('/equipment/swimming/touchpad/')}>touchpads</a>, including the
-      CTS <a href={withBase('/equipment/swimming/touchpad/aquagrip/')}>AquaGrip</a> and the
-      Daktronics
-      <a href={withBase('/equipment/swimming/touchpad/t-7000/')}>T-7000 series</a>;
-      <a href={withBase('/equipment/swimming/semi-automatic/pushbutton/')}>backup pushbuttons</a>;
-      <a href={withBase('/equipment/swimming/relay-judging/')}>relay take-off platforms</a>
-      that judge exchanges; the
-      <a href={withBase('/equipment/swimming/external-speaker/')}>lane speakers</a> that
-      carry the starter's commands to every block; and
-      <a href={withBase('/equipment/swimming/backstroke-start/')}>backstroke start devices</a>.
-      The companies behind all of it have their own
-      <a href={withBase('/vendors/')}>vendor pages</a>, and the
-      <a href={withBase('/software/')}>software section</a> covers the programs that put
-      results on a scoreboard.
-    </p>
-
-    {recent.length > 0 && (
-      <>
-        <h2>Recently updated</h2>
-        <ul>
-          {recent.map((entry) => (
-            <li>
-              <a href={entry.route}>{entry.title}</a>, {entry.shown}
-              <LeadIcon src={entry.image} />
-            </li>
-          ))}
-        </ul>
-      </>
+    {tagGroups.length > 0 && (
+      <nav class="mp-tags" aria-labelledby="mp-tags-heading">
+        <h2 id="mp-tags-heading" class="mp-visually-hidden">Browse by category</h2>
+        {tagGroups.map((group) => (
+          <div class="mp-tags__row">
+            <span class="mp-tags__label">{group.label}</span>
+            <ul class="wiki-tags mp-tags__list">
+              {group.tags.map((entry) => (
+                <li>
+                  <a href={entry.href}>{entry.tag} <span class="mp-count">({entry.count})</span></a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </nav>
     )}
-  </main>
 
-  <script>
-    // The hero button focuses the topbar search input, replacing mp-search.js
-    // (which opened Material's search overlay).
-    document.querySelector('[data-mp-search]')?.addEventListener('click', () => {
-      const input = document.querySelector<HTMLInputElement>('.search input');
-      input?.focus();
-      input?.scrollIntoView({ block: 'nearest' });
-    });
-  </script>
+    <div class="mp-columns">
+      <div class="mp-col mp-col--a">
+        <section class="mp-box mp-featured" aria-labelledby="mp-featured-heading">
+          <h2 id="mp-featured-heading">Featured article</h2>
+          <div class="mp-box-body">
+            {featured.image && (
+              <a class="mp-featured__image" href={featured.route} tabindex="-1" aria-hidden="true">
+                <img
+                  src={withBase(featured.image.src)}
+                  alt=""
+                  width={featured.image.width}
+                  height={featured.image.height}
+                  decoding="async"
+                />
+              </a>
+            )}
+            <h3><a href={featured.route}>{featured.title}</a></h3>
+            <p>{featured.summary}</p>
+            <p class="mp-more"><a href={featured.route}>Read the article on {featured.title}</a></p>
+          </div>
+        </section>
+      </div>
+
+      <div class="mp-col mp-col--b">
+        <section class="mp-box mp-dyk" aria-labelledby="mp-dyk-heading">
+          <h2 id="mp-dyk-heading">Did you know</h2>
+          <div class="mp-box-body">
+            <ul>
+              {hooks.map((parts) => (
+                <li>
+                  {'... '}{parts.map((part) => (part.route ? <a href={part.route}>{part.text}</a> : part.text))}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {photo && (
+          <section class="mp-box mp-photo" aria-labelledby="mp-photo-heading">
+            <h2 id="mp-photo-heading">From the photo collection</h2>
+            <div class="mp-box-body">
+              <figure>
+                <a href={photo.route}>
+                  <img
+                    src={withBase(photo.src)}
+                    alt={photo.alt}
+                    width={photo.width}
+                    height={photo.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </a>
+                <figcaption>
+                  {photo.caption || photo.articleTitle}
+                  {' '}From <a href={photo.route}>{photo.articleTitle}</a>.
+                  Original photograph, <a href={withBase('/about/credits/')}>credited</a> under CC BY-SA 4.0.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+        )}
+      </div>
+
+      <div class="mp-col mp-col--c">
+        {recent.length > 0 && (
+          <section class="mp-box mp-recent" aria-labelledby="mp-recent-heading">
+            <h2 id="mp-recent-heading">Recently updated</h2>
+            <div class="mp-box-body">
+              <ul class="mp-dated">
+                {recent.map((entry) => (
+                  <li>
+                    <a href={entry.route}>{entry.title}</a>
+                    <LeadIcon src={entry.image} />
+                    <span class="mp-meta">
+                      {entry.section && <>{entry.section}, </>}
+                      <time datetime={entry.iso}>{entry.shown}</time>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              {added.length > 0 && (
+                <>
+                  <h3>New articles</h3>
+                  <ul class="mp-dated">
+                    {added.map((entry) => (
+                      <li>
+                        <a href={entry.route}>{entry.title}</a>
+                        <LeadIcon src={entry.image} />
+                        <span class="mp-meta">
+                          {entry.section && <>{entry.section}, </>}
+                          <time datetime={entry.iso}>{entry.shown}</time>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+            </div>
+          </section>
+        )}
+      </div>
+    </div>
+
+    <h2>Browse the wiki</h2>
+    <div class="mp-portals">
+      {portals.map((portal) => (
+        <section class="mp-box mp-portal">
+          <h3>
+            <a href={portal.href}>{portal.title}</a>
+            {' '}<span class="mp-count">({portal.count})</span>
+          </h3>
+          <div class="mp-box-body">
+            <p>{portal.blurb}</p>
+            <ul>
+              {portal.links.map((link) => (
+                <li><a href={link.route}>{link.title}</a></li>
+              ))}
+            </ul>
+            {portal.count > portal.links.length && (
+              <p class="mp-more"><a href={portal.href}>All {portal.count} articles</a></p>
+            )}
+          </div>
+        </section>
+      ))}
+    </div>
+    {pending.length > 0 && (
+      <p class="mp-pending">
+        Sections in preparation, with an outline but no articles yet: {pending.join(', ')}.
+      </p>
+    )}
+
+    <section class="mp-about" aria-labelledby="mp-about-heading">
+      <h2 id="mp-about-heading">About this wiki</h2>
+      <div class="mp-about__text">
+        <p>
+          Each article is built from manufacturer manuals and datasheets, patents,
+          governing-body rules and independent reporting, and its claims are cited to those
+          sources. Equipment that is no longer sold is covered next to current models,
+          since pools keep timing gear running long after it leaves a catalog, and some
+          makers have stopped publishing documentation for their older products. How the
+          wiki handles sources and images is set out on
+          <a href={withBase('/about/sources/')}>Sources and citations</a>.
+        </p>
+        <p>
+          The text is released under CC BY-SA 4.0 and kept as Markdown in a
+          <a href="https://github.com/Libre-Aquatics/libre-aquatics-wiki" class="wiki-external">public repository</a>,
+          where anyone can suggest a correction or a new article. Photographs of equipment
+          are welcome too. The <a href={withBase('/about/')}>about page</a> describes
+          the scope and how to contribute.
+        </p>
+      </div>
+    </section>
+  </main>
 </BaseLayout>

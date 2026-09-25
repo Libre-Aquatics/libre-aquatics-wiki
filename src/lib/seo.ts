@@ -30,7 +30,9 @@ export const PUBLISHER = {
 export const PAGE_META = {
   home: {
     title: SITE_NAME,
-    description: SITE_DESCRIPTION,
+    description:
+      'A free, cited reference for competitive-aquatics timing consoles, start systems, ' +
+      'lane hardware, scoreboards, meet software and results file formats.',
   },
   categories: {
     title: 'Categories',
@@ -176,9 +178,14 @@ function truncate(text: string, max: number): string {
 /**
  * Derive a meta description from an article's raw Markdown body. Stays within
  * the lead section: a heading ends the description rather than letting it run
- * into unrelated prose.
+ * into unrelated prose. The Main Page's featured-article panel passes larger
+ * limits to show more of the same lead.
  */
-export function summarize(body: string | undefined): string {
+export function summarize(
+  body: string | undefined,
+  maxLength: number = MAX_LENGTH,
+  minLength: number = MIN_LENGTH,
+): string {
   if (!body) return SITE_DESCRIPTION;
 
   const paragraphs = stripLeadingBlocks(body.replace(/\r\n/g, '\n')).split(/\n\s*\n/);
@@ -191,8 +198,8 @@ export function summarize(body: string | undefined): string {
     if (!plain) continue;
 
     description = description ? `${description} ${plain}` : plain;
-    if (description.length >= MIN_LENGTH) break;
+    if (description.length >= minLength) break;
   }
 
-  return description ? truncate(description, MAX_LENGTH) : SITE_DESCRIPTION;
+  return description ? truncate(description, maxLength) : SITE_DESCRIPTION;
 }
