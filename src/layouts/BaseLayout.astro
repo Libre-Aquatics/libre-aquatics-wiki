@@ -10,6 +10,8 @@ import { SITE_NAME, SITE_DESCRIPTION, SITE_LICENSE, PUBLISHER, ogImagePath } fro
 
 interface Props {
   title: string;
+  /** Fuller title for <title> and og:title when `title` is too generic alone. */
+  seoTitle?: string;
   description?: string;
   /** Route key for this page's Open Graph card; '' is the Main Page. */
   ogKey?: string;
@@ -26,6 +28,7 @@ interface Props {
 }
 const {
   title,
+  seoTitle,
   description = SITE_DESCRIPTION,
   ogKey = '',
   noindex = false,
@@ -37,8 +40,11 @@ const {
 
 // The site name is already the title suffix, so the Main Page must not repeat it.
 const isHome = title === SITE_NAME;
-const pageTitle = isHome ? SITE_NAME : `${title} - ${SITE_NAME}`;
-const ogImageAlt = isHome ? SITE_NAME : `${title} on ${SITE_NAME}`;
+// What a results list or a share preview shows. The on-page heading and the
+// TechArticle headline keep `title`, which matches the h1.
+const listTitle = seoTitle ?? title;
+const pageTitle = isHome ? SITE_NAME : `${listTitle} - ${SITE_NAME}`;
+const ogImageAlt = isHome ? SITE_NAME : `${listTitle} on ${SITE_NAME}`;
 // trailingSlash is 'always', so Astro.url.pathname already carries the slash.
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL(withBase(ogImagePath(ogKey)), Astro.site).href;
@@ -133,7 +139,7 @@ const jsonLdTexts = jsonLdBlocks.map((block) =>
 
     <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={SITE_NAME} />
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={listTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
@@ -145,7 +151,7 @@ const jsonLdTexts = jsonLdBlocks.map((block) =>
     )}
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
+    <meta name="twitter:title" content={listTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
     {jsonLdTexts.map((text) => (

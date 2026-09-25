@@ -1,5 +1,6 @@
 ---
 title: Common equipment
+seoTitle: Common aquatics competition equipment
 tags:
   - Equipment
 ---

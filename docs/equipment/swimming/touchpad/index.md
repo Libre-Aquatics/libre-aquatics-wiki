@@ -1,5 +1,6 @@
 ---
 title: Touchpads
+seoTitle: Swimming touchpads
 tags:
   - Equipment
   - Timing

@@ -4,6 +4,8 @@
 // lead paragraph. An article can override it with `description:` in front
 // matter when the derived text reads badly.
 
+import { STUB_MARKER } from './stub.mjs';
+
 export const SITE_NAME = 'Libre Aquatics Wiki';
 
 export const SITE_DESCRIPTION =
@@ -194,7 +196,9 @@ export function summarize(
   for (const paragraph of paragraphs) {
     if (paragraph.trimStart().startsWith('#')) break;
 
-    const plain = toPlainText(stripLeadingBlocks(paragraph));
+    // A stub's lead opens with the §4.8 marker, which says nothing about the
+    // subject and would otherwise take the first 24 characters of the snippet.
+    const plain = toPlainText(stripLeadingBlocks(paragraph)).replace(STUB_MARKER, '').trim();
     if (!plain) continue;
 
     description = description ? `${description} ${plain}` : plain;

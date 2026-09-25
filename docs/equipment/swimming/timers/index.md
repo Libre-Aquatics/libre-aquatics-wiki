@@ -1,5 +1,6 @@
 ---
 title: Timers
+seoTitle: Swim timing consoles
 tags:
   - Equipment
   - Timing

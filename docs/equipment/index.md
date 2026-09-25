@@ -1,5 +1,6 @@
 ---
 title: Equipment
+seoTitle: Competitive aquatics equipment
 tags:
   - Equipment
 ---

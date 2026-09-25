@@ -1,5 +1,6 @@
 ---
 title: Software
+seoTitle: Aquatics competition software
 tags:
   - Software
 ---

@@ -1,5 +1,6 @@
 ---
 title: Semi-automatic timing
+seoTitle: Semi-automatic swim timing
 tags:
   - Equipment
   - Timing

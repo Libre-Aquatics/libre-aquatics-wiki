@@ -1,5 +1,6 @@
 ---
 title: Scoreboards
+seoTitle: Aquatics scoreboards
 description: >-
   How aquatic scoreboards work, from numeric digit modules to matrix and LED video
   boards, and what the rules require of a results display.

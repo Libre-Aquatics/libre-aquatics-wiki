@@ -1,5 +1,6 @@
 ---
 title: Scoreboard control
+seoTitle: Aquatics scoreboard control hardware
 description: >-
   The hardware between a timing console and the board it feeds: wireless scoreboard
   adapters, tabletop and handheld controllers, and LED video board controllers.

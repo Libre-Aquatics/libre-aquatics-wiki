@@ -1,5 +1,6 @@
 ---
 title: Start systems
+seoTitle: Swimming start systems
 tags:
   - Equipment
   - Timing

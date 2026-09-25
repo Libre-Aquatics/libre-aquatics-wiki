@@ -26,6 +26,8 @@ interface Row {
 }
 interface Props {
   title: string;
+  /** Results-list title override; forwarded to BaseLayout. */
+  seoTitle?: string;
   description?: string;
   /** Route key for the page's Open Graph card; forwarded to BaseLayout. */
   ogKey?: string;
@@ -49,6 +51,7 @@ interface Props {
 }
 const {
   title,
+  seoTitle,
   description,
   ogKey,
   tags = [],
@@ -69,6 +72,7 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
 
 <BaseLayout
   title={title}
+  seoTitle={seoTitle}
   description={description}
   ogKey={ogKey}
   ogType={ogType}

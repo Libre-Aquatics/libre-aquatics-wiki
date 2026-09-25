@@ -9,6 +9,7 @@ import { rehypeHeadingIds, unified } from '@astrojs/markdown-remark';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeExternalLinks from 'rehype-external-links';
 import remarkWikiLinks from './src/plugins/remark-wiki-links.mjs';
+import { resolveNoindex } from './src/lib/stub.mjs';
 
 // The Markdown file behind a published URL, or undefined for the routes that
 // are Astro pages rather than articles (Main Page, categories, search).
@@ -44,13 +45,15 @@ const NOINDEX_ROUTES = new Set(['/categories/']);
 // A page told not to be indexed must not be advertised in the sitemap either,
 // or the sitemap invites a crawl the page then refuses. The front matter is
 // read straight off disk because the content collection is not available to
-// this file; src/content.config.ts declares the same key.
+// this file; src/content.config.ts declares the same key. resolveNoindex() is
+// the same rule the article route applies, so stubs are dropped here too.
 function isNoindex(url) {
   if (NOINDEX_ROUTES.has(new URL(url).pathname)) return true;
   const file = docFile(url);
   if (!file) return false;
   try {
-    return matter(readFileSync(file, 'utf8')).data.noindex === true;
+    const { data, content } = matter(readFileSync(file, 'utf8'));
+    return resolveNoindex(data.noindex, content);
   } catch {
     return false;
   }

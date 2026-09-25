@@ -1,5 +1,6 @@
 ---
 title: SDIF
+seoTitle: SDIF swimming data format
 description: >-
   SDIF is United States Swimming's Standard Data Interchange Format, the published
   fixed-record specification that lets meet results move between programs as .sd3 files.
