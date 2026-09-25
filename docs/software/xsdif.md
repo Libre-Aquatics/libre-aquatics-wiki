@@ -1,5 +1,6 @@
 ---
 title: XSDIF
+schemaType: none
 description: >-
   XSDIF is the XML form of United States Swimming's interchange format, accepted by the
   SWIMS database alongside the fixed-width SDIF and Hy-Tek's CL2.

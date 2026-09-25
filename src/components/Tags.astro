@@ -1,7 +1,7 @@
 ---
-// Category chips under the article title, linking into the Categories index.
+// Category chips under the article title, each linking to its tag page.
 import { withBase } from '../lib/routes';
-import { tagSlug } from '../lib/tags';
+import { tagSlug } from '../lib/tags.mjs';
 
 interface Props {
   tags: string[];
@@ -13,7 +13,7 @@ const { tags } = Astro.props;
   tags.length > 0 && (
     <p class="wiki-tags" data-pagefind-ignore>
       {tags.map((tag) => (
-        <a class="wiki-tag" href={withBase(`/categories/#${tagSlug(tag)}`)}>{tag}</a>
+        <a class="wiki-tag" href={withBase(`/categories/${tagSlug(tag)}/`)}>{tag}</a>
       ))}
     </p>
   )

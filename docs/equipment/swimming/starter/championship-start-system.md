@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems Championship Start System
+seoTitle: CTS Championship Start System
 tags:
   - Equipment
   - Timing

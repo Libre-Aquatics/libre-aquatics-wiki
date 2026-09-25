@@ -1,5 +1,6 @@
 ---
 title: Seiko PS-1300 Electronic Start Sound Generator
+seoTitle: Seiko PS-1300 Start Sound Generator
 tags:
   - Equipment
   - Timing

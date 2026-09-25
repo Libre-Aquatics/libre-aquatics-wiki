@@ -80,19 +80,22 @@ for (const file of mdFiles(rootDir)) {
   }
 }
 
-// The Main Page's curated picks (src/data/home.ts) name articles by
-// docs-root-relative source path, both as quoted strings and inside the
-// `[text](path.md)` links of the "Did you know" hooks. The page itself holds
-// no article routes, so this is what keeps it free of dead links.
-const homeData = path.resolve('src/data/home.ts');
-const homeText = fs.readFileSync(homeData, 'utf8').replace(/^\s*(\/\/|\*|\/\*).*$/gm, '');
-const homeTargets = new Set();
-for (const m of homeText.matchAll(/'([^'\s]+\.md)'/g)) homeTargets.add(m[1]);
-for (const m of homeText.matchAll(/\]\(([^)\s]+\.md)\)/g)) homeTargets.add(m[1]);
-for (const target of homeTargets) {
-  checked += 1;
-  if (!fs.existsSync(path.join(rootDir, target))) {
-    broken.push(`${path.relative(process.cwd(), homeData)} -> ${target}`);
+// Data files that name articles by docs-root-relative source path, both as
+// quoted strings and inside `[text](path.md)` links: the Main Page's curated
+// picks and "Did you know" hooks (src/data/home.ts) and the tag-page intros
+// (src/data/categories.mjs). The pages built from them hold no article routes
+// of their own, so this is what keeps them free of dead links.
+for (const dataFile of ['src/data/home.ts', 'src/data/categories.mjs']) {
+  const data = path.resolve(dataFile);
+  const text = fs.readFileSync(data, 'utf8').replace(/^\s*(\/\/|\*|\/\*).*$/gm, '');
+  const targets = new Set();
+  for (const m of text.matchAll(/'([^'\s]+\.md)'/g)) targets.add(m[1]);
+  for (const m of text.matchAll(/\]\(([^)\s]+\.md)\)/g)) targets.add(m[1]);
+  for (const target of targets) {
+    checked += 1;
+    if (!fs.existsSync(path.join(rootDir, target))) {
+      broken.push(`${path.relative(process.cwd(), data)} -> ${target}`);
+    }
   }
 }
 

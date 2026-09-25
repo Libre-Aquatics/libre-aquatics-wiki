@@ -55,7 +55,8 @@ describes, without implying any endorsement. The wiki does not reproduce vendor 
 or host vendor manuals; it links each source at the publisher instead. Infoboxes are
 text-only, and any image must be original or cleared for reuse, credited, and
 licensed. The full policy is on the [Sources & citations](sources.md)
-page.
+page, and each image in use is listed with its author and licence on
+[Image credits](credits.md).
 
 ## Contributing
 
@@ -71,7 +72,8 @@ follow a consistent shape: a lead paragraph, topical sections, any specification
 details, a "See also" list, and cited references. They are written in a plain,
 neutral tone. Claims are backed by sources: primary documents such as vendor manuals
 and governing-body rules, corroborated by independent reporting, and cited as
-footnotes.
+footnotes. Pages and styling are held to the site's
+[accessibility](accessibility.md) target, WCAG 2.1 level AA.
 
 The full contributor guide, covering sourcing standards, house style, and how to add
 a page, lives in `CONTRIBUTING.md` in the

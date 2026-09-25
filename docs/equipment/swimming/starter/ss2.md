@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems SS2 Electronic Start System
+seoTitle: CTS SS2 Electronic Start System
 tags:
   - Equipment
   - Timing

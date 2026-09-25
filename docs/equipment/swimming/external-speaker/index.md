@@ -1,5 +1,6 @@
 ---
 title: External speakers
+seoTitle: Swimming start system external speakers
 tags:
   - Equipment
   - Timing

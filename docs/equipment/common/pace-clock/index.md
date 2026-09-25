@@ -1,5 +1,6 @@
 ---
 title: Pace clocks
+seoTitle: Swimming pace clocks
 description: >-
   How a pace clock paces interval training, and the ways one is driven: standalone,
   from a workout controller, or from a timing console's pace clock program.

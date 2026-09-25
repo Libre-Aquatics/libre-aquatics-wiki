@@ -28,6 +28,8 @@ import { OGImageRoute } from 'astro-og-canvas';
 import { imageSize } from '../../lib/imageSize';
 import { idToSlug } from '../../lib/routes';
 import { PAGE_META, leadImage, summarize } from '../../lib/seo';
+import { tagSlug } from '../../lib/tags.mjs';
+import { categoryPage } from '../../data/categories.mjs';
 
 interface Card {
   title: string;
@@ -56,7 +58,16 @@ const articles = await getCollection('articles');
 const pages: Record<string, Card> = {
   index: { ...PAGE_META.home },
   categories: { ...PAGE_META.categories },
+  'recent-changes': { ...PAGE_META.recentChanges },
 };
+// Tag pages at /categories/<slug>/ (src/pages/categories/[tag].astro).
+for (const tag of new Set(articles.flatMap((article) => article.data.tags))) {
+  const page = categoryPage(tag);
+  pages[`categories/${tagSlug(tag)}`] = {
+    title: page.seoTitle,
+    description: page.intro ? summarize(page.intro) : `Every article tagged ${tag}.`,
+  };
+}
 for (const article of articles) {
   pages[idToSlug(article.id)] = {
     title: article.data.title,

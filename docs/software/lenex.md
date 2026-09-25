@@ -1,5 +1,7 @@
 ---
 title: Lenex
+seoTitle: Lenex swimming data format
+schemaType: none
 description: >-
   Lenex is the XML data exchange format for swimming maintained by Christian Kaufmann
   since 1999, the recommended format for European Aquatics rankings and the European

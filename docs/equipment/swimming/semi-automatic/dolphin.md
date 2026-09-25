@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems Dolphin Wireless Stopwatch Timing System
+seoTitle: Dolphin Wireless Stopwatch Timing System
 description: >-
   The Colorado Time Systems Dolphin is a 2.4 GHz wireless stopwatch timing
   system used as a semi-automatic or backup timing system in swimming.

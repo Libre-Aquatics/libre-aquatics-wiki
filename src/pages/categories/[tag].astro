@@ -1,0 +1,134 @@
+---
+// One page per tag at /categories/<slug>/: a short intro from
+// src/data/categories.mjs, then every article carrying the tag, grouped under
+// the section it sits in and in nav order. Tags that cut across the section
+// tree are indexable; the rest are noindexed (see the notes in the data file).
+import { getCollection } from 'astro:content';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import LeadIcon from '../../components/LeadIcon.astro';
+import { docPathToRoute, withBase } from '../../lib/routes';
+import { tagSlug } from '../../lib/tags.mjs';
+import { flattenNav, breadcrumbTrail } from '../../lib/navigation';
+import { leadImage, summarize } from '../../lib/seo';
+import { parseHook } from '../../lib/home';
+import { resolveNoindex } from '../../lib/stub.mjs';
+import { categoryPage } from '../../data/categories.mjs';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  const tags = [...new Set(articles.flatMap((article) => article.data.tags))];
+  return tags.map((tag) => ({ params: { tag: tagSlug(tag) }, props: { tag } }));
+}
+
+const { tag } = Astro.props as { tag: string };
+const page = categoryPage(tag);
+const articles = (await getCollection('articles')).filter((article) =>
+  article.data.tags.includes(tag),
+);
+
+const navOrder = new Map(flattenNav().map((entry, i) => [entry.id, i]));
+const orderOf = (id: string) => navOrder.get(id) ?? Number.MAX_SAFE_INTEGER;
+
+// Group under the innermost section each article sits in; a section overview
+// heads its own group rather than landing in its parent's.
+const groups = new Map<string, { title: string; order: number; items: typeof entries }>();
+const entries = articles
+  .map((article) => {
+    const file = (article.filePath ?? '').replace(/\\/g, '/');
+    const trail = breadcrumbTrail(article.id);
+    const isIndex = file.endsWith('/index.md');
+    const section = isIndex
+      ? { title: article.data.title, route: docPathToRoute(`${article.id}.md`) }
+      : (trail[trail.length - 1] ?? { title: 'Main Page', route: withBase('/') });
+    return {
+      id: article.id,
+      title: article.data.title,
+      route: docPathToRoute(`${article.id}.md`),
+      image: leadImage(article.body),
+      live: !resolveNoindex(article.data.noindex, article.body),
+      order: orderOf(article.id),
+      section,
+    };
+  })
+  .sort((a, b) => a.order - b.order);
+for (const entry of entries) {
+  const group = groups.get(entry.section.route) ?? {
+    title: entry.section.title,
+    order: entry.order,
+    items: [],
+  };
+  group.items.push(entry);
+  groups.set(entry.section.route, group);
+}
+const sections = [...groups.values()].sort((a, b) => a.order - b.order);
+
+const introParts = page.intro ? parseHook(page.intro) : [];
+const description = page.intro
+  ? summarize(page.intro)
+  : `Every article on Libre Aquatics Wiki tagged ${tag}.`;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+
+// CollectionPage with the indexable articles as an ItemList; stubs are left
+// out, since they are kept out of results themselves.
+const listed = entries.filter((entry) => entry.live);
+const jsonLd = [
+  {
+    '@type': 'CollectionPage',
+    name: page.seoTitle,
+    description,
+    url: canonical,
+    inLanguage: 'en',
+    isPartOf: { '@id': new URL(withBase('/#website'), Astro.site).href },
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: listed.length,
+      itemListElement: listed.map((entry, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        url: new URL(entry.route, Astro.site).href,
+        name: entry.title,
+      })),
+    },
+  },
+];
+---
+
+<ArticleLayout
+  title={`Category: ${tag}`}
+  seoTitle={page.seoTitle}
+  description={description}
+  ogKey={`categories/${tagSlug(tag)}`}
+  entryId="categories"
+  ogType="website"
+  noindex={!page.index}
+  breadcrumbs={[
+    { title: 'Main Page', route: withBase('/') },
+    { title: 'Categories', route: withBase('/categories/') },
+  ]}
+  jsonLd={jsonLd}
+>
+  {
+    introParts.length > 0 && (
+      <p>{introParts.map((part) => (part.route ? <a href={part.route}>{part.text}</a> : part.text))}</p>
+    )
+  }
+  <p>
+    {entries.length} {entries.length === 1 ? 'article carries' : 'articles carry'} this tag. See
+    <a href={withBase('/categories/')}>Categories</a> for every other tag.
+  </p>
+  {
+    sections.map((section) => (
+      <section>
+        <h2>{section.title}</h2>
+        <ul>
+          {section.items.map((entry) => (
+            <li>
+              <a href={entry.route}>{entry.title}</a>
+              <LeadIcon src={entry.image} />
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</ArticleLayout>

@@ -1,5 +1,7 @@
 ---
 title: Daktronics
+sameAs:
+  - https://en.wikipedia.org/wiki/Daktronics
 tags:
   - Equipment
   - Reference

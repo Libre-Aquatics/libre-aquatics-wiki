@@ -1,5 +1,6 @@
 ---
 title: Software
+seoTitle: Aquatics competition software
 tags:
   - Software
 ---
@@ -21,8 +22,8 @@ between them.
 - File formats, the interchange formats that move entries and results between
   team software, meet software, and timing systems.
 
-The display software is the best covered of these; the meet-management programs have
-stub pages only. The meet-management and team-management programs in common use are commercial
+The display software is the best covered of these, together with Hy-Tek's Meet Manager
+and Team Manager; most of the other programs have stub pages only. The meet-management and team-management programs in common use are commercial
 products from other vendors, and the workflows they support are described under
 [meet management](../meet-management/index.md) and
 [team management](../team-management/index.md) rather than here.
@@ -51,6 +52,37 @@ Meet Manager has had a research pass of its own; the other two are stubs. The
 and [Computerized Swim League](computerized-swim-league.md) pages cover rivals and
 predecessors the swimming press names, and [Meet Mobile](meet-mobile.md) is the
 live-results application that publishes what a meet scores.
+
+Several more meet programs have stub pages. [Swimify](swimify.md), [EasyWk](easywk.md) and
+[CPS-Schwimm](cps-schwimm.md) are European programs that the Swimrankings wiki lists as
+supporting Lenex. [SwimMeet Manager](swimmeet-manager.md) came from Hy-Point Software and was
+advertised in 2000 and 2001, and [Aquabec](aquabec.md) was written in 1984 and spread to
+clubs across Quebec through the provincial federation. The Active Network's web product,
+[ACTIVEWorks Swim Manager](activeworks-swim-manager.md), handles club and meet
+administration and hands a meet host its entries as an HY3 file. Hy-Tek's
+[The Interface](the-interface.md), announced in 1988, was a disk and cable that connected
+Meet Manager to timing consoles.
+
+## Team-management software
+
+Team-management software keeps a club's roster, its swimmers' results and best times,
+and the entries it sends to meets. Hy-Tek Team Manager has a full article; the other
+programs have stub pages.
+
+| Program | Vendor | Notes |
+|---|---|---|
+| [Hy-Tek Team Manager](hy-tek-team-manager.md) | [Hy-Tek Sports Software](../vendors/hy-tek.md) | Windows program for a club's roster, results, best times and meet entries |
+| [Team Manager Online](hy-tek-team-manager-online.md) | Hy-Tek Sports Software | Web-hosted companion with online meet entry, advertised from the early 2000s |
+| [Team Connect Online](hy-tek-team-connect-online.md) | Hy-Tek Sports Software | Subscription service that holds a master copy of a club's Team Manager database on Hy-Tek's server |
+| [Pro SWIMMER](hy-tek-pro-swimmer.md) | Hy-Tek Sports Software | Palm OS program for hand times, splits and stroke rates on deck; no longer sold |
+| [Workout Manager](hy-tek-workout-manager.md) | Hy-Tek Sports Software | Builds interval sessions for a pace clock or console; announced in 1989, now a Team Manager option |
+| [Business Manager](hy-tek-business-manager.md) | Hy-Tek Sports Software | Club accounting, announced in 1989; no longer in the product line |
+| [Personal Swim Manager](hy-tek-personal-swim-manager.md) | Hy-Tek Sports Software | Training diary for an individual swimmer, announced in 1999 |
+| [Team Registration](hy-tek-team-registration.md) | Hy-Tek Sports Software | Club sign-up and registration |
+| [Team Websites](hy-tek-team-websites.md) | Hy-Tek Sports Software | A club website |
+| [TeamUnify](teamunify.md) | TeamUnify | Web-based club management founded in 2007; owned by SportsEngine from 2016 and by PlayMetrics from 2026 |
+| [SwimTopia](swimtopia.md) | Team Topia, Inc. | Web-based team management begun for summer-league teams |
+| [Splash Team Manager](splash-team-manager.md) | [Splash Software](../vendors/splash-software.md) | Club-side counterpart to Splash Meet Manager |
 
 ## Display software
 
@@ -81,8 +113,11 @@ in the DisplayLink Plus release notes.[^help][^relnotes][^shop]
 
 [DisplayLink Plus](displaylink-plus.md) carries the shared background on templates, sports
 modules, and the connections to timing consoles and meet-management computers that the
-other articles refer back to. Of the display pages only CTStream is still a stub, because
-nothing about it has been published beyond those release notes.
+other articles refer back to. [ScheduleLink](schedulelink.md) was an add-on for
+DisplayLink-driven matrix boards that CTS said scheduled advertisements and messages onto
+the display. It and CTStream are the display pages still at stub length, because little
+about either has been published: CTStream appears only in those release notes, and
+ScheduleLink only in archived product pages.
 
 ## File formats
 
@@ -110,6 +145,13 @@ which the program enforces on import; swimming volunteers worked it out and publ
 2010, and it has been reproducible ever since. None of the four extensions appears anywhere
 in the source collection held for this wiki, so those pages rest on external sources and
 say so.
+
+Some tools work on these formats without defining them. [WinSwim](winswim.md) moves
+entries and results between teams and programs as SDIF, and its site distributes
+[SDIFCheck](sdifcheck.md), which checks an SDIF file against the published layout before
+it is imported. [swimlib](swimlib.md) is an open-source TypeScript library that reads and
+writes SDIF, HY3 and EV3. [Swimrankings](swimrankings.md) is the results and rankings
+database that issues the meet, club and athlete identifiers carried in Lenex files.
 
 ## See also
 

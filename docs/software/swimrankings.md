@@ -1,5 +1,6 @@
 ---
 title: Swimrankings
+schemaType: none
 description: >-
   Swimrankings (swimrankings.net) is a swimming results and rankings database run from
   Switzerland that also hosts the Lenex specification and the Splash documentation wiki.

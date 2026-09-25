@@ -9,6 +9,9 @@ import { rehypeHeadingIds, unified } from '@astrojs/markdown-remark';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeExternalLinks from 'rehype-external-links';
 import remarkWikiLinks from './src/plugins/remark-wiki-links.mjs';
+import { resolveNoindex } from './src/lib/stub.mjs';
+import { tagSlug } from './src/lib/tags.mjs';
+import { CATEGORY_PAGES, categoryPage } from './src/data/categories.mjs';
 
 // The Markdown file behind a published URL, or undefined for the routes that
 // are Astro pages rather than articles (Main Page, categories, search).
@@ -39,18 +42,28 @@ function docLastmod(url) {
 // Routes carrying `noindex` that are Astro pages, so they have no front matter
 // for isNoindex() to read. Keep in step with the `noindex` props in
 // src/pages/: /search/ is already dropped by the filter's own pattern match.
-const NOINDEX_ROUTES = new Set(['/categories/']);
+const NOINDEX_ROUTES = new Set(['/categories/', '/recent-changes/']);
 
 // A page told not to be indexed must not be advertised in the sitemap either,
 // or the sitemap invites a crawl the page then refuses. The front matter is
 // read straight off disk because the content collection is not available to
-// this file; src/content.config.ts declares the same key.
+// this file; src/content.config.ts declares the same key. resolveNoindex() is
+// the same rule the article route applies, so stubs are dropped here too.
 function isNoindex(url) {
-  if (NOINDEX_ROUTES.has(new URL(url).pathname)) return true;
+  const pathname = new URL(url).pathname;
+  if (NOINDEX_ROUTES.has(pathname)) return true;
+  // Per-tag pages (src/pages/categories/[tag].astro) follow the `index` flag in
+  // src/data/categories.mjs; a slug that matches no known tag stays out.
+  const tagPage = pathname.match(/^\/categories\/([^/]+)\/$/);
+  if (tagPage) {
+    const tag = Object.keys(CATEGORY_PAGES).find((name) => tagSlug(name) === tagPage[1]);
+    return !tag || !categoryPage(tag).index;
+  }
   const file = docFile(url);
   if (!file) return false;
   try {
-    return matter(readFileSync(file, 'utf8')).data.noindex === true;
+    const { data, content } = matter(readFileSync(file, 'utf8'));
+    return resolveNoindex(data.noindex, content);
   } catch {
     return false;
   }

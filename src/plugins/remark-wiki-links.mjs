@@ -19,6 +19,8 @@
 import path from 'node:path';
 import { existsSync } from 'node:fs';
 import { visit } from 'unist-util-visit';
+import { tagSlug } from '../lib/tags.mjs';
+import { CATEGORY_PAGES } from '../data/categories.mjs';
 
 // The Main Page and tag index are Astro pages (src/pages/index.astro,
 // categories.astro), not Markdown files, but articles still link to them by
@@ -50,6 +52,19 @@ export default function remarkWikiLinks({ docsDir, base }) {
       if (rel.startsWith('..') || (!existsSync(target) && !VIRTUAL_PAGES.has(rel))) {
         broken.push(`${path.relative(process.cwd(), sourcePath)} -> ${url}`);
         return;
+      }
+
+      // "See everything tagged [Scoring](../categories.md)": a link to the tag
+      // index whose text names a tag goes to that tag's own page
+      // (src/pages/categories/[tag].astro) rather than the index as a whole.
+      if (rel === 'categories.md' && !anchor && node.type === 'link') {
+        const text = node.children?.length === 1 && node.children[0].type === 'text'
+          ? node.children[0].value.trim()
+          : '';
+        if (Object.hasOwn(CATEGORY_PAGES, text)) {
+          node.url = `${cleanBase}/categories/${tagSlug(text)}/`;
+          return;
+        }
       }
 
       let route = rel.replace(/\.md$/i, '');

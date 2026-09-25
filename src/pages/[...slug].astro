@@ -3,8 +3,11 @@ import { getCollection, render } from 'astro:content';
 import ArticleLayout from '../layouts/ArticleLayout.astro';
 import { idToSlug } from '../lib/routes';
 import { breadcrumbTrail } from '../lib/navigation';
-import { lastUpdated, lastUpdatedISO } from '../lib/gitDates';
-import { leadImage, summarize } from '../lib/seo';
+import { lastUpdated, lastUpdatedISO, firstCommittedISO } from '../lib/gitDates';
+import { findPhotos, photoObjects, summarize } from '../lib/seo';
+import { aboutEntity } from '../lib/entity';
+import { relatedArticles } from '../lib/related';
+import { resolveNoindex } from '../lib/stub.mjs';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -15,12 +18,17 @@ export async function getStaticPaths() {
 }
 
 const { article } = Astro.props;
+const related = relatedArticles(article, await getCollection('articles'));
 const { Content, headings } = await render(article);
-const { title, description, tags, infoboxTitle, infobox, noindex } = article.data;
+const { title, seoTitle, description, tags, infoboxTitle, infobox } = article.data;
+// Stubs are noindexed unless front matter says otherwise; astro.config.mjs
+// applies the same rule to the sitemap.
+const noindex = resolveNoindex(article.data.noindex, article.body);
 ---
 
 <ArticleLayout
   title={title}
+  seoTitle={seoTitle}
   description={description ?? summarize(article.body)}
   ogKey={idToSlug(article.id)}
   tags={tags}
@@ -31,8 +39,11 @@ const { title, description, tags, infoboxTitle, infobox, noindex } = article.dat
   filePath={article.filePath}
   lastUpdated={lastUpdated(article.filePath)}
   modifiedTime={lastUpdatedISO(article.filePath) || undefined}
+  publishedTime={firstCommittedISO(article.filePath) || undefined}
   breadcrumbs={breadcrumbTrail(article.id)}
-  leadImage={leadImage(article.body)}
+  photos={photoObjects(findPhotos(article.body), Astro.site!)}
+  about={aboutEntity(article, Astro.site!)}
+  related={related}
   noindex={noindex}
 >
   <Content />

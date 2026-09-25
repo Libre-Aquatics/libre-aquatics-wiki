@@ -1,5 +1,6 @@
 ---
 title: HY3 file format
+schemaType: none
 description: >-
   HY3 is Hy-Tek's proprietary fixed-width text format for swimming entries and results,
   never documented by the company but reverse-engineered and published in 2010.

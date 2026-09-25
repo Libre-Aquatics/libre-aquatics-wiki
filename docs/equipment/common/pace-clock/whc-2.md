@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems Handheld Segment Timer
+seoTitle: CTS Handheld Segment Timer (WHC-2)
 description: >-
   The handheld segment timer, WHC-2, is a Colorado Time Systems wireless controller
   that runs interval sets on slim pace clocks, deck clocks and portable scoreboards.

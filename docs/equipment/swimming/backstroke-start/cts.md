@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems Backstroke Start Device
+seoTitle: CTS Backstroke Start Device
 tags:
   - Equipment
   - Timing

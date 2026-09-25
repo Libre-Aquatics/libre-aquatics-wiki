@@ -1,5 +1,6 @@
 ---
 title: Vendors
+seoTitle: Aquatics timing and software vendors
 tags:
   - Reference
 ---

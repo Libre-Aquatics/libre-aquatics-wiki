@@ -26,6 +26,8 @@ interface Row {
 }
 interface Props {
   title: string;
+  /** Results-list title override; forwarded to BaseLayout. */
+  seoTitle?: string;
   description?: string;
   /** Route key for the page's Open Graph card; forwarded to BaseLayout. */
   ogKey?: string;
@@ -40,8 +42,16 @@ interface Props {
   modifiedTime?: string;
   /** Ancestor sections for BreadcrumbList markup; forwarded to BaseLayout. */
   breadcrumbs?: { title: string; route: string }[];
-  /** The article's first photograph; forwarded to BaseLayout for metadata. */
-  leadImage?: string | null;
+  /** ISO date the page was first committed; forwarded to BaseLayout. */
+  publishedTime?: string;
+  /** The article's photographs as ImageObjects; forwarded to BaseLayout. */
+  photos?: object[];
+  /** The entity the article describes; forwarded to BaseLayout. */
+  about?: object;
+  /** Page-built structured-data blocks; forwarded to BaseLayout. */
+  jsonLd?: object[];
+  /** Generated "Related articles" links shown after the article body. */
+  related?: { title: string; route: string }[];
   /** Keep the page out of search results; forwarded to BaseLayout. */
   noindex?: boolean;
   /** Generated index pages are not articles, so they can opt out of 'article'. */
@@ -49,6 +59,7 @@ interface Props {
 }
 const {
   title,
+  seoTitle,
   description,
   ogKey,
   tags = [],
@@ -60,7 +71,11 @@ const {
   lastUpdated,
   modifiedTime,
   breadcrumbs,
-  leadImage,
+  publishedTime,
+  photos,
+  about,
+  jsonLd,
+  related = [],
   noindex = false,
   ogType = 'article',
 } = Astro.props;
@@ -69,13 +84,17 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
 
 <BaseLayout
   title={title}
+  seoTitle={seoTitle}
   description={description}
   ogKey={ogKey}
   ogType={ogType}
   noindex={noindex}
   modifiedTime={modifiedTime}
   breadcrumbs={breadcrumbs}
-  leadImage={leadImage}
+  publishedTime={publishedTime}
+  photos={photos}
+  about={about}
+  jsonLd={jsonLd}
 >
   <div class="layout">
     <div class="rail-left">
@@ -99,6 +118,23 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
 
       <div class="wiki-article">
         <slot />
+        {/* Generated from shared section and tags (src/lib/related.ts), so it
+            is navigation rather than article text: kept out of the search
+            index, and not counted as an inbound link by scripts/check-seo.mjs. */}
+        {
+          related.length > 0 && (
+            <nav class="wiki-related" aria-labelledby="related-articles" data-pagefind-ignore>
+              <h2 id="related-articles">Related articles</h2>
+              <ul>
+                {related.map((link) => (
+                  <li>
+                    <a href={link.route}>{link.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )
+        }
       </div>
 
       {

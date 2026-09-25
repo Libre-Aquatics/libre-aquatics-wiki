@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems Championship Start System (CHAMP-SSM)
+seoTitle: CTS CHAMP-SSM Championship Start System
 tags:
   - Equipment
   - Timing

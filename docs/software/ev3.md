@@ -1,5 +1,6 @@
 ---
 title: EV3 file format
+schemaType: none
 description: >-
   EV3 is the newer of Hy-Tek's two event-list formats, carrying a meet's schedule to
   Team Manager with the sanction, altitude and entry limits HYV could not hold.

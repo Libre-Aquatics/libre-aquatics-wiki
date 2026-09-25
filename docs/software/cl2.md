@@ -1,5 +1,6 @@
 ---
 title: CL2 file format
+schemaType: none
 description: >-
   CL2 is the older of Hy-Tek's two export formats, carrying team rosters, entries and
   results, and the one Meet Manager will convert to the published SDIF standard.

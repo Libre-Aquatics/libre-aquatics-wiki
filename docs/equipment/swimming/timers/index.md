@@ -1,5 +1,6 @@
 ---
 title: Timers
+seoTitle: Swim timing consoles
 tags:
   - Equipment
   - Timing
@@ -24,7 +25,9 @@ units operated from a built-in keypad, the Gen7 timers move the operator interfa
 to a Windows laptop or tablet connected over Ethernet and keep all timing data on
 the console itself, so a race finishes even if the interface drops.[^f1058] An older
 console, the [Swim IV](swim-iv.md), sits behind the System 5 in the same line, named in
-CTS display-software manuals but not yet documented here.[^dl37]
+CTS display-software manuals but not yet documented here.[^dl37] The
+[System 4000](system-4000.md), a CTS sports timer of the late 1980s, was also succeeded by
+the System 5.
 
 Daktronics' current console, the [OmniSport 2000](omnisport-2000.md), succeeded the
 company's [OmniSport 1000](omnisport-1000.md) and [OmniSport 6000](omnisport-6000.md)

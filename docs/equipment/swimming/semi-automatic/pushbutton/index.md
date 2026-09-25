@@ -1,5 +1,6 @@
 ---
 title: Pushbuttons
+seoTitle: Swim timing backup pushbuttons
 tags:
   - Equipment
   - Timing

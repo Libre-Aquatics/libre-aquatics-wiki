@@ -1,5 +1,6 @@
 ---
 title: Relay take-off platforms
+seoTitle: Swimming relay take-off platforms
 tags:
   - Equipment
   - Timing

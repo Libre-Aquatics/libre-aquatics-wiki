@@ -1,5 +1,6 @@
 ---
 title: DSV-Standard
+schemaType: none
 description: >-
   The DSV-Standard is the German Swimming Federation's plain-text format for meet
   definitions, entries and results, developed within the Westdeutscher Schwimmverband.

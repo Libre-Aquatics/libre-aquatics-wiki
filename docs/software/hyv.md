@@ -1,5 +1,6 @@
 ---
 title: HYV file format
+schemaType: none
 description: >-
   HYV is the Hy-Tek event-export file, the sibling of HY3, produced by Meet Manager
   when events rather than a whole merge are exported.

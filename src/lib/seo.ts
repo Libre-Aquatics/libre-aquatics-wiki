@@ -4,6 +4,10 @@
 // lead paragraph. An article can override it with `description:` in front
 // matter when the derived text reads badly.
 
+import { STUB_MARKER } from './stub.mjs';
+import { imageSize } from './imageSize';
+import { IMAGE_CREDITS, CREDITS_PAGE } from '../data/image-credits.mjs';
+
 export const SITE_NAME = 'Libre Aquatics Wiki';
 
 export const SITE_DESCRIPTION =
@@ -16,12 +20,16 @@ export const SITE_DESCRIPTION =
 export const SITE_LICENSE = 'https://creativecommons.org/licenses/by-sa/4.0/';
 
 // The publishing organization behind the wiki, reused by the TechArticle
-// `publisher` and by the Organization block on the Main Page.
+// `publisher` and by the Organization block on the Main Page. The logo is the
+// 180px touch icon rather than logo.svg: Google does not read SVG for an
+// Organization logo and wants a raster image at least 112px square.
 export const PUBLISHER = {
   '@type': 'Organization',
+  '@id': 'https://wiki.libreaquatics.org/#organization',
   name: 'Libre Aquatics',
   url: 'https://wiki.libreaquatics.org/',
-  logo: 'https://wiki.libreaquatics.org/assets/logo.svg',
+  logo: 'https://wiki.libreaquatics.org/apple-touch-icon.png',
+  sameAs: ['https://github.com/Libre-Aquatics'],
 } as const;
 
 // Meta descriptions for the four pages that are not Markdown articles. The
@@ -48,7 +56,14 @@ export const PAGE_META = {
     title: 'Page not found',
     description: `The requested page does not exist on ${SITE_NAME}.`,
   },
+  recentChanges: {
+    title: 'Recent changes',
+    description: `The most recently added and updated articles on ${SITE_NAME}, newest first.`,
+  },
 } as const;
+
+/** Site path of the Atom feed (src/pages/feed.xml.ts), advertised in every page's head. */
+export const FEED_PATH = '/feed.xml';
 
 /** Route key ('vendors/seiko', '' for the Main Page) -> its card image path. */
 export function ogImagePath(key: string): string {
@@ -66,6 +81,75 @@ export function leadImage(body: string | undefined): string | null {
   if (html) return html[1];
   const markdown = body.match(/!\[[^\]]*\]\((\/assets\/[^)\s]+)\)/);
   return markdown ? markdown[1] : null;
+}
+
+export interface Photo {
+  src: string;
+  alt: string;
+  caption: string;
+  width: number;
+  height: number;
+}
+
+/**
+ * Photographs in an article body, in order, with their alt text and caption.
+ * Articles place photographs as `<figure class="wiki-figure">` blocks with an
+ * explicit width and height; images without alt text are skipped, since both
+ * the Main Page and the structured data use them out of context and must be
+ * able to describe them.
+ */
+export function findPhotos(body: string | undefined): Photo[] {
+  const out: Photo[] = [];
+  for (const figure of (body ?? '').matchAll(/<figure[\s\S]*?<\/figure>/gi)) {
+    const html = figure[0];
+    const img = html.match(/<img\b[^>]*>/i)?.[0];
+    if (!img) continue;
+    const src = img.match(/\bsrc="(\/assets\/[^"]+)"/i)?.[1];
+    const alt = img.match(/\balt="([^"]+)"/i)?.[1];
+    if (!src || !alt) continue;
+    let width = Number(img.match(/\bwidth="(\d+)"/i)?.[1]);
+    let height = Number(img.match(/\bheight="(\d+)"/i)?.[1]);
+    if (!width || !height) {
+      const size = imageSize(`public${src}`);
+      if (!size) continue;
+      ({ width, height } = size);
+    }
+    const caption = (html.match(/<figcaption[^>]*>([\s\S]*?)<\/figcaption>/i)?.[1] ?? '')
+      .replace(/<[^>]+>/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+    out.push({ src, alt, caption, width, height });
+  }
+  return out;
+}
+
+/**
+ * schema.org ImageObjects for an article's photographs, carrying the licence
+ * metadata image search reads (creator, license, creditText,
+ * acquireLicensePage) from src/data/image-credits.mjs. `site` is the absolute
+ * origin the relative paths resolve against.
+ */
+export function photoObjects(photos: Photo[], site: URL | string): object[] {
+  return photos.map((photo) => {
+    const credit = (IMAGE_CREDITS as Record<string, { creator: string; license: string }>)[
+      photo.src
+    ];
+    return {
+      '@type': 'ImageObject',
+      contentUrl: new URL(photo.src, site).href,
+      width: photo.width,
+      height: photo.height,
+      caption: photo.caption || photo.alt,
+      ...(credit
+        ? {
+            creator: { '@type': 'Person', name: credit.creator },
+            creditText: credit.creator,
+            license: credit.license,
+            acquireLicensePage: new URL(CREDITS_PAGE, site).href,
+          }
+        : {}),
+    };
+  });
 }
 
 // Descriptions read best around 150 characters; below MIN_LENGTH a lead is
@@ -194,7 +278,9 @@ export function summarize(
   for (const paragraph of paragraphs) {
     if (paragraph.trimStart().startsWith('#')) break;
 
-    const plain = toPlainText(stripLeadingBlocks(paragraph));
+    // A stub's lead opens with the §4.8 marker, which says nothing about the
+    // subject and would otherwise take the first 24 characters of the snippet.
+    const plain = toPlainText(stripLeadingBlocks(paragraph)).replace(STUB_MARKER, '').trim();
     if (!plain) continue;
 
     description = description ? `${description} ${plain}` : plain;

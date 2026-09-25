@@ -5,8 +5,8 @@
 import { getCollection } from 'astro:content';
 import ArticleLayout from '../layouts/ArticleLayout.astro';
 import LeadIcon from '../components/LeadIcon.astro';
-import { docPathToRoute } from '../lib/routes';
-import { tagSlug } from '../lib/tags';
+import { docPathToRoute, withBase } from '../lib/routes';
+import { tagSlug } from '../lib/tags.mjs';
 import { PAGE_META, leadImage } from '../lib/seo';
 
 const articles = await getCollection('articles');
@@ -56,7 +56,11 @@ const headings = tags.map((tag) => ({ depth: 2, slug: tagSlug(tag), text: tag })
   {
     tags.map((tag) => (
       <section>
-        <h2 id={tagSlug(tag)}>{tag}</h2>
+        {/* The id keeps old /categories/#tag links working; the heading
+            links to the tag's own page. */}
+        <h2 id={tagSlug(tag)}>
+          <a href={withBase(`/categories/${tagSlug(tag)}/`)}>{tag}</a>
+        </h2>
         <ul>
           {byTag.get(tag)!.map((article) => (
             <li>

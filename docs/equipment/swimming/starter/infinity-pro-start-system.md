@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems Infinity Pro Start System
+seoTitle: CTS Infinity Pro Start System
 tags:
   - Equipment
   - Timing

@@ -467,6 +467,9 @@ html { scroll-behavior: smooth; }
 /* Lists: a tighter indent than the UA's 40px, aligned with the 0.7-0.9em
    insets the panels use. */
 .wiki-article ul, .wiki-article ol { margin: 0.4em 0 0.8em; padding-left: 1.6em; }
+/* Generated "Related articles" list: two columns where there is room, one on a phone. */
+.wiki-related ul { columns: 2 16em; column-gap: 2em; }
+.wiki-related li { break-inside: avoid; }
 .wiki-article li { margin: 0.15em 0; }
 .wiki-article li > ul, .wiki-article li > ol { margin: 0.15em 0; }
 

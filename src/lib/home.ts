@@ -15,9 +15,8 @@ import {
 import { docPathToRoute, withBase } from './routes';
 import { pageToId, breadcrumbTrail } from './navigation';
 import { lastUpdatedISO, firstCommittedISO, formatDate } from './gitDates';
-import { leadImage, summarize } from './seo';
-import { tagSlug } from './tags';
-import { imageSize } from './imageSize';
+import { leadImage, summarize, findPhotos, type Photo } from './seo';
+import { tagSlug } from './tags.mjs';
 
 type Article = CollectionEntry<'articles'>;
 
@@ -112,7 +111,7 @@ export function buildHome(articles: Article[]) {
       .map((tag) => ({
         tag,
         count: tagCounts.get(tag)!,
-        href: withBase(`/categories/#${tagSlug(tag)}`),
+        href: withBase(`/categories/${tagSlug(tag)}/`),
       })),
   })).filter((group) => group.tags.length > 0);
 
@@ -185,50 +184,17 @@ export function buildHome(articles: Article[]) {
 
 // ---- Helpers -------------------------------------------------------------------
 
-export interface HomeImage {
-  src: string;
-  alt: string;
-  caption: string;
-  width: number;
-  height: number;
-}
+export type HomeImage = Photo;
 
-/**
- * Photographs in an article body, in order, with their alt text and caption.
- * Articles place photographs as `<figure class="wiki-figure">` blocks with an
- * explicit width and height; images without alt text are skipped, since the
- * Main Page shows them out of context and must be able to describe them.
- */
+/** An article's photographs; the parser is shared with the structured data. */
 function findImages(article: Article): HomeImage[] {
-  const body = article.body ?? '';
-  const out: HomeImage[] = [];
-  for (const figure of body.matchAll(/<figure[\s\S]*?<\/figure>/gi)) {
-    const html = figure[0];
-    const img = html.match(/<img\b[^>]*>/i)?.[0];
-    if (!img) continue;
-    const src = img.match(/\bsrc="(\/assets\/[^"]+)"/i)?.[1];
-    const alt = img.match(/\balt="([^"]+)"/i)?.[1];
-    if (!src || !alt) continue;
-    let width = Number(img.match(/\bwidth="(\d+)"/i)?.[1]);
-    let height = Number(img.match(/\bheight="(\d+)"/i)?.[1]);
-    if (!width || !height) {
-      const size = imageSize(`public${src}`);
-      if (!size) continue;
-      ({ width, height } = size);
-    }
-    const caption = (html.match(/<figcaption[^>]*>([\s\S]*?)<\/figcaption>/i)?.[1] ?? '')
-      .replace(/<[^>]+>/g, '')
-      .replace(/\s+/g, ' ')
-      .trim();
-    out.push({ src, alt, caption, width, height });
-  }
-  return out;
+  return findPhotos(article.body);
 }
 
 export type HookPart = { text: string; route?: string };
 
 /** Split a hook's `[text](path.md)` markup into text and link parts. */
-function parseHook(hook: string): HookPart[] {
+export function parseHook(hook: string): HookPart[] {
   const parts: HookPart[] = [];
   let last = 0;
   for (const match of hook.matchAll(/\[([^\]]+)\]\(([^)]+\.md)\)/g)) {

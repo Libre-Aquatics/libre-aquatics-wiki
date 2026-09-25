@@ -1,5 +1,7 @@
 ---
 title: Colorado Time Systems
+sameAs:
+  - https://en.wikipedia.org/wiki/Colorado_Time_Systems
 tags:
   - Equipment
   - Reference

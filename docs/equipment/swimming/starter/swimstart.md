@@ -1,5 +1,6 @@
 ---
 title: International Sports Timing SWIMSTART Electronic Start
+seoTitle: IST SWIMSTART Electronic Start
 tags:
   - Equipment
   - Timing

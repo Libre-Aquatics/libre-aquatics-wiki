@@ -1,0 +1,60 @@
+---
+// Recent changes: the most recently added and updated articles, newest first,
+// grouped by day. Built from the same git-derived list as the Atom feed
+// (src/lib/changes.ts). It is a navigation page, so it is noindexed, like the
+// Categories index; stubs are included here and marked, since a reader
+// following the wiki's growth wants to see them.
+import { getCollection } from 'astro:content';
+import ArticleLayout from '../layouts/ArticleLayout.astro';
+import { recentChanges } from '../lib/changes';
+import { formatDate } from '../lib/gitDates';
+import { FEED_PATH, PAGE_META } from '../lib/seo';
+import { withBase } from '../lib/routes';
+
+const SHOWN = 60;
+const changes = recentChanges(await getCollection('articles'), {
+  limit: SHOWN,
+  includeStubs: true,
+});
+
+const days = new Map<string, typeof changes>();
+for (const change of changes) {
+  const day = change.updated.slice(0, 10);
+  days.set(day, [...(days.get(day) ?? []), change]);
+}
+---
+
+<ArticleLayout
+  title={PAGE_META.recentChanges.title}
+  description={PAGE_META.recentChanges.description}
+  ogKey="recent-changes"
+  entryId="recent-changes"
+  ogType="website"
+  noindex
+>
+  <p>
+    The {SHOWN} most recently changed articles, newest first, dated by their last commit to
+    the wiki's repository. Each entry names its section, and notes whether the article
+    was new that day or is still a stub. The same list, without the stubs, is available as an
+    <a href={withBase(FEED_PATH)}>Atom feed</a>.
+  </p>
+  {
+    [...days].map(([day, items]) => (
+      <section>
+        {/* Noon, so a bare date is not read as UTC midnight and shown as the day before. */}
+        <h2>{formatDate(`${day}T12:00:00`)}</h2>
+        <ul>
+          {items.map((change) => {
+            const notes = [change.section, change.isNew && 'new', change.stub && 'stub'].filter(Boolean);
+            return (
+              <li>
+                <a href={change.route}>{change.title}</a>
+                {notes.length > 0 && ` (${notes.join(', ')})`}
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    ))
+  }
+</ArticleLayout>

@@ -1,5 +1,6 @@
 ---
 title: Superior Swim Timing Atlantis Swimming Starter System
+seoTitle: SST Atlantis Swimming Starter System
 tags:
   - Equipment
   - Timing
