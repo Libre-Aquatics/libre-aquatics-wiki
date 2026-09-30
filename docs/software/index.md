@@ -84,7 +84,7 @@ programs have stub pages.
 | [Team Websites](hy-tek-team-websites.md) | Hy-Tek Sports Software | A club website |
 | [TeamUnify](teamunify.md) | TeamUnify | Web-based club management founded in 2007; owned by SportsEngine from 2016 and by PlayMetrics from 2026 |
 | [SwimTopia](swimtopia.md) | Team Topia, Inc. | Web-based team management begun for summer-league teams |
-| [Splash Team Manager](splash-team-manager.md) | [Splash Software](../vendors/splash-software.md) | Club-side counterpart to Splash Meet Manager |
+| [Splash Team Manager](splash-team-manager.md) | [Splash Software](../vendors/splash-software.md) | Windows club program for members, entries, results and records; compulsory for entering swimmers in Switzerland |
 
 ## Display software
 

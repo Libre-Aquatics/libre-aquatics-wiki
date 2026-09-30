@@ -196,7 +196,8 @@ The earliest numbering on record is a 7.x series, which the 2002 order page ment
 the version whose users could update for free until the end of March 2002.[^sn2002ord] Releases
 from then on were numbered by year, with a build count after the point: 2002.14 in May 2002,
 2004.79 in February 2004 and 2006.138 in July 2006.[^sn2002][^ss2004] Splash announced
-Meet Manager 2007 in August 2007.[^ss2010]
+Meet Manager 2007 in August 2007 as a completely rewritten program, which kept each meet in a
+single file and could exchange data with the 2006 version only through Lenex.[^ss2010][^mm2007]
 
 The 2007 program and Meet Manager 11 appear to be the same product. In April 2010 the Splash
 website listed the current release as 2007.7735, while the release notes of the same period
@@ -382,7 +383,7 @@ The KNZB fines a club 500 euros for passing the licence to anyone outside it.[^k
 ## Adoption
 
 Adoption is broadest in countries whose federation has made Splash part of its own system. Swiss Aquatics requires Meet Manager for every competition held in Switzerland and
-Splash Team Manager for entering swimmers.[^swissaq] The KNZB says many Dutch clubs have used
+[Splash Team Manager](splash-team-manager.md) for entering swimmers.[^swissaq] The KNZB says many Dutch clubs have used
 Splash since 2006, and put the number at over 300 in February 2023.[^knzb] Splash's support page
 lists federation support contacts in thirteen countries, including Belgium, Estonia,
 Iceland, Luxembourg, Portugal, Slovakia, Slovenia and Turkey.[^support]
@@ -432,6 +433,7 @@ the meet programs its equipment supports.[^timedrops]
 [^ss2010]: [Splash Software, Home](https://web.archive.org/web/20100421014046/http://www.splash-software.ch/index.php?nav=,home,A) (archived April 2010; news items from 2006 to 2009).
 [^ssabout]: [Splash Software, About Splash Software and GeoLogix AG](https://web.archive.org/web/20100623045638/http://www.splash-software.ch/index.php?nav=,home,B) (archived June 2010).
 [^ssrel]: [Splash Software, Release notes](https://web.archive.org/web/20100623045701/http://www.splash-software.ch/index.php?nav=,home,C) (archived June 2010).
+[^mm2007]: [GeoLogix AG, Splash Meet Manager 2007](https://web.archive.org/web/20100525012839/http://www.splash-software.ch/files/MM_2007_Release-en.pdf) (release notice, August 2007).
 [^register]: [Moneyhouse, Splash Software GmbH](https://www.moneyhouse.ch/en/company/splash-software-gmbh-4601353321) (commercial register extract).
 [^geologix]: [Moneyhouse, GeoLogix AG](https://www.moneyhouse.ch/en/company/geologix-ag-11727041011) (commercial register extract).
 [^swissaq]: [Swiss Aquatics, Wettkampfbetrieb](https://www.swiss-aquatics.ch/leistungssport/swimming/wettkampfbetrieb/) (competition operations; in German).
