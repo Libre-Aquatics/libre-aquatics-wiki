@@ -62,106 +62,100 @@ const { scope, tagGroups, featured, hooks, photo, portals, pending, recent, adde
     )}
 
     <div class="mp-columns">
-      <div class="mp-col mp-col--a">
-        <section class="mp-box mp-featured" aria-labelledby="mp-featured-heading">
-          <h2 id="mp-featured-heading">Featured article</h2>
+      <section class="mp-box mp-featured" aria-labelledby="mp-featured-heading">
+        <h2 id="mp-featured-heading">Featured article</h2>
+        <div class="mp-box-body">
+          {featured.image && (
+            <a class="mp-featured__image" href={featured.route} tabindex="-1" aria-hidden="true">
+              <img
+                src={withBase(featured.image.src)}
+                alt=""
+                width={featured.image.width}
+                height={featured.image.height}
+                decoding="async"
+              />
+            </a>
+          )}
+          <h3><a href={featured.route}>{featured.title}</a></h3>
+          <p>{featured.summary}</p>
+          <p class="mp-more"><a href={featured.route}>Read the article on {featured.title}</a></p>
+        </div>
+      </section>
+
+      <section class="mp-box mp-dyk" aria-labelledby="mp-dyk-heading">
+        <h2 id="mp-dyk-heading">Did you know</h2>
+        <div class="mp-box-body">
+          <ul>
+            {hooks.map((parts) => (
+              <li>
+                {'... '}{parts.map((part) => (part.route ? <a href={part.route}>{part.text}</a> : part.text))}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {photo && (
+        <section class="mp-box mp-photo" aria-labelledby="mp-photo-heading">
+          <h2 id="mp-photo-heading">From the photo collection</h2>
           <div class="mp-box-body">
-            {featured.image && (
-              <a class="mp-featured__image" href={featured.route} tabindex="-1" aria-hidden="true">
+            <figure>
+              <a href={photo.route}>
                 <img
-                  src={withBase(featured.image.src)}
-                  alt=""
-                  width={featured.image.width}
-                  height={featured.image.height}
+                  src={withBase(photo.src)}
+                  alt={photo.alt}
+                  width={photo.width}
+                  height={photo.height}
+                  loading="lazy"
                   decoding="async"
                 />
               </a>
-            )}
-            <h3><a href={featured.route}>{featured.title}</a></h3>
-            <p>{featured.summary}</p>
-            <p class="mp-more"><a href={featured.route}>Read the article on {featured.title}</a></p>
+              <figcaption>
+                {photo.caption || photo.articleTitle}
+                {' '}From <a href={photo.route}>{photo.articleTitle}</a>.
+                Original photograph, <a href={withBase('/about/credits/')}>credited</a> under CC BY-SA 4.0.
+              </figcaption>
+            </figure>
           </div>
         </section>
-      </div>
+      )}
 
-      <div class="mp-col mp-col--b">
-        <section class="mp-box mp-dyk" aria-labelledby="mp-dyk-heading">
-          <h2 id="mp-dyk-heading">Did you know</h2>
+      {recent.length > 0 && (
+        <section class="mp-box mp-recent" aria-labelledby="mp-recent-heading">
+          <h2 id="mp-recent-heading">Recently updated</h2>
           <div class="mp-box-body">
-            <ul>
-              {hooks.map((parts) => (
+            <ul class="mp-dated">
+              {recent.map((entry) => (
                 <li>
-                  {'... '}{parts.map((part) => (part.route ? <a href={part.route}>{part.text}</a> : part.text))}
+                  <a href={entry.route}>{entry.title}</a>
+                  <LeadIcon src={entry.image} />
+                  <span class="mp-meta">
+                    {entry.section && <>{entry.section}, </>}
+                    <time datetime={entry.iso}>{entry.shown}</time>
+                  </span>
                 </li>
               ))}
             </ul>
+            {added.length > 0 && (
+              <>
+                <h3>New articles</h3>
+                <ul class="mp-dated">
+                  {added.map((entry) => (
+                    <li>
+                      <a href={entry.route}>{entry.title}</a>
+                      <LeadIcon src={entry.image} />
+                      <span class="mp-meta">
+                        {entry.section && <>{entry.section}, </>}
+                        <time datetime={entry.iso}>{entry.shown}</time>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
         </section>
-
-        {photo && (
-          <section class="mp-box mp-photo" aria-labelledby="mp-photo-heading">
-            <h2 id="mp-photo-heading">From the photo collection</h2>
-            <div class="mp-box-body">
-              <figure>
-                <a href={photo.route}>
-                  <img
-                    src={withBase(photo.src)}
-                    alt={photo.alt}
-                    width={photo.width}
-                    height={photo.height}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </a>
-                <figcaption>
-                  {photo.caption || photo.articleTitle}
-                  {' '}From <a href={photo.route}>{photo.articleTitle}</a>.
-                  Original photograph, <a href={withBase('/about/credits/')}>credited</a> under CC BY-SA 4.0.
-                </figcaption>
-              </figure>
-            </div>
-          </section>
-        )}
-      </div>
-
-      <div class="mp-col mp-col--c">
-        {recent.length > 0 && (
-          <section class="mp-box mp-recent" aria-labelledby="mp-recent-heading">
-            <h2 id="mp-recent-heading">Recently updated</h2>
-            <div class="mp-box-body">
-              <ul class="mp-dated">
-                {recent.map((entry) => (
-                  <li>
-                    <a href={entry.route}>{entry.title}</a>
-                    <LeadIcon src={entry.image} />
-                    <span class="mp-meta">
-                      {entry.section && <>{entry.section}, </>}
-                      <time datetime={entry.iso}>{entry.shown}</time>
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              {added.length > 0 && (
-                <>
-                  <h3>New articles</h3>
-                  <ul class="mp-dated">
-                    {added.map((entry) => (
-                      <li>
-                        <a href={entry.route}>{entry.title}</a>
-                        <LeadIcon src={entry.image} />
-                        <span class="mp-meta">
-                          {entry.section && <>{entry.section}, </>}
-                          <time datetime={entry.iso}>{entry.shown}</time>
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              )}
-            </div>
-          </section>
-        )}
-      </div>
+      )}
     </div>
 
     <h2>Browse the wiki</h2>

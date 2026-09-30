@@ -1088,28 +1088,30 @@ button.theme-toggle:focus-visible,
 .mp-main .mp-tags__list a { font-size: 0.85rem; margin: 0; padding: 0.15em 0.6em; }
 .mp-count { color: var(--wiki-muted); font-size: 0.9em; }
 
-/* Body panels in three column groups: (a) featured article, (b) did-you-know
-   and photograph, (c) dated lists. Wide screens set them side by side; medium
-   widths put a over b with c running down the right; phones stack them. The
-   second row takes any spare height so a tall column c never opens a gap
-   under the featured article. */
+/* Body panels, placed by grid area: featured (a), did-you-know (b), the
+   photograph (p) and the dated lists (c). Wide screens set a, b and c side by
+   side with the photograph as a strip under a and b, so a tall picture cannot
+   push one column far below the others; boxes stretch to their row so the
+   columns end level. Medium widths run c down the right of a, b and p;
+   phones stack everything. */
 .mp-columns {
   display: grid;
   grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-  grid-template-rows: auto 1fr;
-  grid-template-areas: "a c" "b c";
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas: "a c" "b c" "p c";
   gap: 1em;
   align-items: start;
 }
-.mp-col { display: grid; gap: 1em; min-width: 0; }
-.mp-col--a { grid-area: a; }
-.mp-col--b { grid-area: b; }
-.mp-col--c { grid-area: c; }
+.mp-featured { grid-area: a; }
+.mp-dyk { grid-area: b; }
+.mp-photo { grid-area: p; }
+.mp-recent { grid-area: c; }
 @media (min-width: 80rem) {
   .mp-columns {
     grid-template-columns: minmax(0, 5fr) minmax(0, 4fr) minmax(0, 4fr);
-    grid-template-rows: auto;
-    grid-template-areas: "a b c";
+    grid-template-rows: auto auto;
+    grid-template-areas: "a b c" "p p c";
+    align-items: stretch;
   }
 }
 .mp-box { border: 1px solid var(--wiki-border); border-radius: 2px; overflow: hidden; }
@@ -1136,8 +1138,7 @@ button.theme-toggle:focus-visible,
   max-width: 14rem;
   margin: 0 0 0.5em 0.9em;
 }
-.mp-featured__image img,
-.mp-photo img {
+.mp-featured__image img {
   display: block;
   width: 100%;
   height: auto;
@@ -1154,9 +1155,27 @@ button.theme-toggle:focus-visible,
 .mp-dated li { margin: 0 0 0.45em; line-height: 1.4; }
 .mp-meta { display: block; font-size: 0.85rem; color: var(--wiki-muted); }
 
-.mp-photo figure { margin: 0; }
+/* The photograph sits beside its caption. Its height is capped and its width
+   follows from the aspect ratio, so a portrait picture becomes a narrow
+   column and a wide panel shot a short strip, and neither dominates. */
+.mp-photo figure {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  margin: 0;
+}
+.mp-photo figure > a { flex: 0 1 auto; max-width: 60%; }
+.mp-photo img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 20rem;
+  border: 1px solid var(--wiki-divider);
+}
 .mp-photo figcaption {
-  margin-top: 0.5em;
+  flex: 1 1 12rem;
+  margin: 0;
   font-size: 0.875rem;
   line-height: 1.45;
   color: var(--wiki-muted);
@@ -1235,13 +1254,15 @@ button.theme-toggle:focus-visible,
   .mp-columns {
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: none;
-    grid-template-areas: "a" "b" "c";
+    grid-template-areas: "a" "b" "p" "c";
   }
   .mp-portals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
   .mp-portals { grid-template-columns: minmax(0, 1fr); }
   .mp-featured__image { float: none; width: 100%; max-width: none; margin: 0 0 0.7em; }
+  .mp-photo figure { flex-direction: column; }
+  .mp-photo figure > a { max-width: 100%; }
 }
 /* Phones: stack the search full-width under the brand; wide tables scroll. */
 @media (max-width: 600px) {
