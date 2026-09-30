@@ -121,6 +121,13 @@ the display. It and CTStream are the display pages still at stub length, because
 about either has been published: CTStream appears only in those release notes, and
 ScheduleLink only in archived product pages.
 
+Two smaller CTS programs serve the 2.4 GHz scoreboard hardware rather than a display. The
+[MultiSport Reprogrammer](multisport-reprogrammer.md) loads firmware into the WA-2 and WA-3
+adapters and the wireless controllers over USB. The
+[Wireless Polo Scoreboard Mapper](wireless-polo-scoreboard-mapper.md) writes the layout an
+LED-R board uses for water polo into one of those adapters. Both are stubs, known so far from
+CTS's 2019 water polo firmware sheet.[^f1026]
+
 ## File formats
 
 Two formats appear across the display software. A template is a `.tpl` file naming
@@ -176,3 +183,4 @@ See everything tagged [Software](../categories.md).
 [^shop]: [Colorado Time Systems, DisplayLink Plus](https://shop.coloradotime.com/collections/displaylink-plus).
 [^f1034]: [Colorado Time Systems, Gen7 Serial Timer User Guide (F1034)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Gen7/Gen7SerialTimerUserGuide_F1034.pdf), Appendix C (athlete name integration).
 [^f912]: [Colorado Time Systems, Dolphin User Guide (F912)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Dolphin/Dolphinextendedinstructions-F912.pdf) (Rev. 202412), which names the three meet-management programs.
+[^f1026]: [Colorado Time Systems, WA-2/WA-3 Water Polo (F1026 Rev. 201907)](https://web.archive.org/web/20220411150907/https://www.coloradotime.com/manuals/WTTC-WA2-WP-Instructions-20190722_F1026.pdf) (archived 2022).

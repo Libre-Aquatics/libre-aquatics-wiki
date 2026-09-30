@@ -55,9 +55,9 @@ Both ends must agree on a channel, and on the later generations a PAN ID as well
 guides give the valid range as channels 0 to 11 and PAN IDs 0 to 15, set on DIP switches
 inside the equipment.[^f1004][^f995] Three generations are documented:
 the [Sky-Fi WA-1](wa-1.md), which switches between transmitting over RS-232 and receiving
-over RS-485; the [WA-2](wa-2.md), which appears only in other products' manuals; and the
+over RS-485; the [WA-2](wa-2.md), CTS's first 2.4 GHz adapter, from 2014; and the
 current [WA-3](wa-3.md), rated at 2.4 GHz over 1000 ft (100 m) with 12 channels of 8
-networks each.[^wa1][^wa3][^f1045]
+networks each.[^wa1][^f987][^wa3][^f1045]
 
 ## Controllers
 
@@ -136,3 +136,4 @@ See everything tagged [Scoring](../../../categories.md).
 [^f1062]: [Colorado Time Systems, DisplayLink Video to Broadcast Software Instructions (F1062)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/LED%20Matrix%20Displays/Software/Displaylink_Video_to_Broadcast_Software_Instructions_F1062.pdf) (Rev. 202104).
 [^blog]: [Colorado Time Systems, A Guide to Live Streaming with DisplayLink+](https://coloradotime.com/blog/a-guide-to-live-streaming-with-displaylink).
 [^dlphelp]: Colorado Time Systems, Display Link Plus Help, troubleshooting topic (CVC, CDC and VPU processors).
+[^f987]: [Colorado Time Systems, 2.4 GHz Wireless Adapter (WA-2) User Guide (F987 Rev. 201605)](https://web.archive.org/web/20230401201250/https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Misc/Wireless%20Adapters/WA-2_F987.pdf) (archived 2023).

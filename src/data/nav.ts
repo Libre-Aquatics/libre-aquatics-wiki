@@ -367,6 +367,8 @@ export const nav: NavNode[] = [
               { title: 'CTS AquaSync', page: 'software/cts-aquasync.md' },
               { title: 'CTStream', page: 'software/ctstream.md' },
               { title: 'ScheduleLink', page: 'software/schedulelink.md' },
+              { title: 'MultiSport Reprogrammer', page: 'software/multisport-reprogrammer.md' },
+              { title: 'Wireless Polo Scoreboard Mapper', page: 'software/wireless-polo-scoreboard-mapper.md' },
             ],
           },
         ],

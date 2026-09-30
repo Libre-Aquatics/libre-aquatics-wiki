@@ -44,10 +44,11 @@ jacks.
 Naming: CTS calls the product line Sky-Fi and the model WA-1. The name Sky-Fi does not
 appear in the WA-3 material, so it may have been dropped.
 
-Open lineage question: a WA-2 exists, attested in the DisplayLink Plus help file
-(troubleshooting and release-notes topics), in the Gen7 Legacy swim timing material and in
-the deck clock guide, but no WA-2 document is held and nothing states how the three
-generations differ.
+Lineage: the WA-2, CTS's 2.4 GHz successor, is now written up on wa-2.md from its own guide
+F987 and its datasheet (Rev 03/14). The CTS Gen7 Legacy datasheet (Rev 05/26) still says a
+System 6 reaches a wireless board through a WA-1 or WA-2. The 2013 Wireless Synchro sheet's
+package of two wireless adapters predates the WA-2's first documents, so it may mean WA-1s;
+unconfirmed.
 
 Added from the WA-3 build-out (September 2026): CTS's product page archived May 2014,
 "900MHz Wireless Scoreboard Adapter", shows the Sky-Fi adapter with a System 6: 8 channels,

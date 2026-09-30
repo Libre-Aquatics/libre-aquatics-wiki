@@ -113,8 +113,13 @@ Gen7: not addressed by F1045. F1004 says consoles older than the Gen7 need a WA-
 reach a wireless board, which implies the Gen7 does not; see gen7-serial.md. Stated as the
 Otter guide's claim.
 
-Still to research: when the WA-3 replaced the WA-2 (between May 2016 and April 2019); what
-the internal changes were beyond the USB connector and radio; CTS's own price.
+Narrowed by the WA-2 build-out (September 2026): CTS's adapter page named the WA-2 in every
+capture up to September 2018 and the WA-3 from July 2020, with the same figures; with the WA-3
+datasheet at Rev 04/19 the change falls between September 2018 and April 2019. Full detail on
+wa-2.md.
+
+Still to research: the exact month of the change; what the internal changes were beyond the
+USB connector and radio; CTS's own price.
 -->
 
 The WA-3 is a 2.4 GHz wireless scoreboard adapter made by
@@ -253,7 +258,9 @@ European directives of that time. The WA-3's cites the 2014 directives and a 201
 the same 2013 date, so it appears to have been carried over from the WA-2 and updated without
 being re-dated.[^f987][^f1045]
 
-The earliest WA-3 documents held date from 2019.[^ds19][^f1026] The WA-2 has not disappeared: in
+The earliest WA-3 documents held date from 2019.[^ds19][^f1026] CTS's product page for the
+2.4 GHz adapter still named the WA-2 in September 2018 and named the WA-3 by July 2020, so the
+change came between September 2018 and April 2019.[^cts18][^cts20][^ds19] The WA-2 has not disappeared: in
 2026 a dealer still sold it under that name, and CTS's firmware packages still carry the WA2
 label.[^kap7][^f1026]
 
@@ -312,3 +319,5 @@ This section lists the adapter's part number, its cables and dealer prices.
 [^cat15]: Colorado Time Systems, Complete Timing, Scoring, Training and Display Solutions catalogue (2015).
 [^f1050]: Colorado Time Systems, Wireless Handheld Segment Timer Controller User Guide (F1050 Rev. 202103, ©2021).
 [^f972]: [Colorado Time Systems, Slim Pace Clock User Guide (F972 Rev. 202509)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Training%20Tools/Pace%20Clocks/Slim_Pace_Clock_User_Guide_F972.pdf).
+[^cts18]: [Colorado Time Systems, 2.4GHz Wireless Electronic Scoreboard Adapter](https://web.archive.org/web/20180906000511/http://www.coloradotime.com/2-4ghz-wireless-scoreboard-adapter/) (WA-2; archived September 2018).
+[^cts20]: [Colorado Time Systems, 2.4GHz Wireless Scoreboard Adapter](https://web.archive.org/web/20200725164405/http://www.coloradotime.com/2-4ghz-wireless-scoreboard-adapter/) (WA-3; archived July 2020).
