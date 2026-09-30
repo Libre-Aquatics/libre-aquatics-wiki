@@ -315,6 +315,7 @@ export const nav: NavNode[] = [
           { title: 'EasyWk', page: 'software/easywk.md' },
           { title: 'CPS-Schwimm', page: 'software/cps-schwimm.md' },
           { title: 'Aquabec', page: 'software/aquabec.md' },
+          { title: 'SynchroMM', page: 'software/synchromm.md' },
         ],
       },
       {

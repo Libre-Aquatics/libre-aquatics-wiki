@@ -48,8 +48,15 @@ channels and 8 networks each and a 1,000 ft range; where WA-2 sits between them,
 it is simply the WA-3 under an older name, is not established. The reprogramming tool's
 labelling is suggestive and nothing more.
 
-Still to research: a WA-2 datasheet or user guide, if one was ever published; its radio
-specification; part numbers; and the dates of all three generations.
+Added from the WA-3 build-out (September 2026): a WA-2 user guide was published and is
+archived on the Wayback Machine, F987 Rev. 201411 (captured November 2014) and Rev. 201605
+(captured 2023). CTS's May 2014 product page for its 2.4 GHz adapter is the WA-2, with the
+figures later printed for the WA-3. Radio: XBee-PRO only (FCC ID OUR-XBEEPRO). Computer cable
+Micro USB-B, R-015-203. Declaration dated 20 December 2013. KAP7 still sold it as WA-2 at
+$725.00 in September 2026. The full comparison is on wa-3.md, under Compared with WA-1 and
+WA-2; this page stays a stub until that material is written up here.
+
+Still to research: the WA-2's introduction date and when the WA-3 replaced it.
 -->
 
 This article is a stub. The WA-2 is a Colorado Time Systems wireless scoreboard adapter, the

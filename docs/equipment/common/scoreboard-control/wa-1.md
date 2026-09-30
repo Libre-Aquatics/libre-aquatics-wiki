@@ -49,7 +49,14 @@ Open lineage question: a WA-2 exists, attested in the DisplayLink Plus help file
 the deck clock guide, but no WA-2 document is held and nothing states how the three
 generations differ.
 
-Still to research: radio band and range, which are not in the instructions held; power;
+Added from the WA-3 build-out (September 2026): CTS's product page archived May 2014,
+"900MHz Wireless Scoreboard Adapter", shows the Sky-Fi adapter with a System 6: 8 channels,
+spread spectrum, 900 MHz; 5.75 x 5.2 x 3.9 in (14.6 x 13.2 x 9.9 cm); compatible with older
+CTS consoles; its data reaches LED boards of one or more lines as well as digital pace and shot clocks.
+F941 (900 MHz wireless judging) reserves channels 1-8 for sites without WA-1 adapters or CTS
+wireless pace clocks, because those use the same channels.
+
+Still to research: range; power;
 dimensions; part numbers; dates; and whether Sky-Fi covered other products besides this
 adapter.
 -->
