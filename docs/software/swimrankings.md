@@ -32,7 +32,11 @@ What is established:
   - Its front page served a browser challenge to scripted requests in September 2026, so
     the site itself was not read.
 
-Relationship to Splash Software and GeoLogix AG: unresolved; see the Splash Software stub.
+Relationship to Splash Software and GeoLogix AG: settled in the Splash Meet Manager pass
+(September 2026). GeoLogix ran Splash development and the swimrankings.net server from
+November 2003 (the 2011 Meet Manager FAQ speaks of GeoLogix not guaranteeing the server's
+availability); Splash Software GmbH dates from December 2015. Who operates swimrankings.net
+now is still not stated anywhere read. See geologix.md.
 
 Sources: wiki.swimrankings.net Lenex page; Lenex 3.0 technical documentation;
 europeanaquatics.org, 2 July 2025.

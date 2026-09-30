@@ -29,7 +29,11 @@ read only through a summary; check the French text before using them.
 
 Context: the Swimrankings wiki lists the Quebec federation (not Swimming Canada) among the
 bodies using Lenex as their primary format, which fits Aquabec having been retired in 2003.
-Whether FNQ moved straight to Splash and Lenex is not established.
+Added from the Splash Meet Manager pass (September 2026): an archived Splash Software news
+item of December 2003 says the FNQ chose Splash Meet Manager and Team Manager for all its
+clubs and meets from the 2003/2004 season, and that the 2003 Canadian Open in Quebec City
+ran on Splash. That fits Aquabec's retirement in 2003 and suggests FNQ moved straight to
+Splash, though no source says Splash replaced Aquabec in so many words.
 
 Dead end: a general web search for "Aquabec swimming software" returns nothing relevant;
 "Aquabec" plus "natation" finds the FNQ item and unrelated businesses.

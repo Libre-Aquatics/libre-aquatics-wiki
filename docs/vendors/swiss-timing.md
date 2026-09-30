@@ -99,8 +99,9 @@ devices that start the race, the
 [in-block and mobile lane speakers](../equipment/swimming/external-speaker/swiss-timing.md)
 it drives under and around each block, and the
 [OBL2 Pro backstroke ledge](../equipment/swimming/backstroke-start/swiss-timing.md)
-that mounts on the OSB blocks. The Quantum console, OCP5 touchpads, and OSB
-starting blocks are added as those pages are written.
+that mounts on the OSB blocks. The
+[Quantum Aquatics](../equipment/swimming/timers/quantum.md) console has a stub page; the OCP5
+touchpads and OSB starting blocks are added as those pages are written.
 
 ## In swim timing
 

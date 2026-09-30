@@ -37,7 +37,9 @@ reverse: no source held for this wiki mentions any of them, and what is recorded
 comes from the documentation of the meet software that drives them. ALGE-Timing is the near
 miss in that group. It is named in the held periodicals, though never in its own right: a
 competitor's advertisement of 2001 to 2003 lists it among the timing systems that software
-works with.
+works with. Stramatel, Time Drops and Macsha are here because
+[Splash Meet Manager](../software/splash-meet-manager.md) has interfaces to their equipment,
+and GeoLogix because it developed that program for about twelve years.
 
 | Vendor | Headquarters | Equipment documented here |
 |---|---|---|
@@ -53,12 +55,16 @@ works with.
 | [The Active Network](active-network.md) | United States | No equipment; owner of the Hy-Tek line and of Meet Mobile since 2008 |
 | [Hy-Point Software](hy-point-software.md) | Northwest Indiana, United States | No equipment; the SwimMeet Manager meet software, advertised around 2000 and unrelated to Hy-Tek |
 | [Splash Software](splash-software.md) | Spiegel bei Bern, Switzerland | No equipment; Splash Meet Manager, whose author also maintains the Lenex exchange format |
+| [GeoLogix](geologix.md) | Berne, Switzerland | No equipment; developed and supported Splash Meet Manager from 2003 to about 2015 |
 | [Kyrotech](kyrotech.md) | Northbrook, Illinois, United States | The Tec-Timer printing meet timer, advertised in the press between 1984 and 1993 |
 | [Incomar](incomar.md) | Utica, Michigan, United States | The Splash I pacing system of 1980, and a console Hy-Tek supported in 1988 |
 | [ALGE-Timing](alge-timing.md) | Not established | The SWIM 2000 and Timy timing consoles, and a semi-automatic swimming package |
 | [Wylas Timing](wylas-timing.md) | Not established | A wireless timing system for six to ten lanes, with its own screen displays |
 | [Take Your Mark](take-your-mark.md) | Not established | A timing console reached by shared file rather than by cable |
 | [BestBet](bestbet.md) | Not established | A timing console documented only by comparison with the Colorado Time Systems 4 |
+| [Stramatel](stramatel.md) | Le Cellier, France | The Aquasport V swim timer, Aquaswim software and Aquatouch touchpads |
+| [Time Drops](time-drops.md) | Walnut Creek, California, United States | A wireless timing system of keyfob buttons and a tablet controller |
+| [Macsha](macsha.md) | Not established | The Macsha Swim touchpad and lane-unit system |
 
 Colorado Time Systems was founded in 1972 and Daktronics in 1968. Swiss Timing is
 part of the Swatch Group, Seiko traces its origins to 1881, IST has supplied aquatics

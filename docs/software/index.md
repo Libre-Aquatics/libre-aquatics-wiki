@@ -45,13 +45,15 @@ each is documented here only as far as that timing interface goes.[^f912]
 |---|---|---|
 | [Hy-Tek Meet Manager](hy-tek-meet-manager.md) | [Hy-Tek Sports Software](../vendors/hy-tek.md), part of [The Active Network](../vendors/active-network.md) since 2008 | Advertised since 1986 and the program most American consoles were built to talk to; reads Dolphin `DO3` and `DO4` files as either the primary or the backup source |
 | [SwimTopia Meet Maestro](meet-maestro.md) | SwimTopia | Integrates with the Dolphin directly, and also sends event and heat detail back into the Dolphin software |
-| [Splash Meet Manager](splash-meet-manager.md) | Splash Software, Berne | Used chiefly by European clubs and federations |
+| [Splash Meet Manager](splash-meet-manager.md) | [Splash Software](../vendors/splash-software.md), Spiegel bei Bern | Compulsory for meets in Switzerland and distributed through federation agreements in Europe and Quebec; reads Dolphin result files |
 
-Meet Manager has had a research pass of its own; the other two are stubs. The
+Hy-Tek Meet Manager and Splash Meet Manager have had research passes of their own; Meet
+Maestro is a stub. The
 [Easy Meet](easy-meet.md), [Championship Meet Management](championship-meet-management.md)
 and [Computerized Swim League](computerized-swim-league.md) pages cover rivals and
-predecessors the swimming press names, and [Meet Mobile](meet-mobile.md) is the
-live-results application that publishes what a meet scores.
+predecessors the swimming press names, [Meet Mobile](meet-mobile.md) is the
+live-results application that publishes what a meet scores, and [SplashMe](splashme.md) does
+the same for meets run on Splash.
 
 Several more meet programs have stub pages. [Swimify](swimify.md), [EasyWk](easywk.md) and
 [CPS-Schwimm](cps-schwimm.md) are European programs that the Swimrankings wiki lists as

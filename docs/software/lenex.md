@@ -162,8 +162,10 @@ statement and is attributed as such on the page.
 The maintainer and Splash. The Swimrankings wiki credits Splash to Kaufmann; the sample
 files' CONSTRUCTOR gives Splash Software GmbH; older Splash documentation names GeoLogix AG
 of Berne, and search results describe swimrankings.net as run by GeoLogix AG. The corporate
-relationship between GeoLogix and Splash Software is still not established (see the Splash
-vendor stub). The page says only that the format's maintainer is also the author of Splash
+relationship between GeoLogix and Splash Software was settled in the Splash Meet Manager pass
+(September 2026): GeoLogix took over Splash development in November 2003 with Kaufmann as a
+shareholder, and Splash Software GmbH was registered in December 2015 with Kaufmann as sole
+manager (see splash-meet-manager.md and geologix.md). The page says only that the format's maintainer is also the author of Splash
 Meet Manager, which the wiki itself states.
 
 SwimNews, the independent print evidence (all in sources/periodicals/swim-news/):

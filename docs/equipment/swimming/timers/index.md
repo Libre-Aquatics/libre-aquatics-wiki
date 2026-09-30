@@ -49,8 +49,8 @@ console of this kind.[^warules]
 
 ## Products
 
-This section catalogs the swim timing consoles made by Colorado Time Systems and
-Daktronics.
+This section catalogs the swim timing consoles made by Colorado Time Systems,
+Daktronics and Swiss Timing.
 
 Gen7 ships in two consoles that share the same enclosure, software, and price-list
 accessories but differ in how they cable to the deck:
@@ -81,6 +81,14 @@ shipped from June 2013 carry an Ethernet jack and are marketed as the OmniSport
 |---|---|---|---|---|
 | [OmniSport 2000](omnisport-2000.md) | `0A-1240-0096` (2000e kit) | On-deck lane modules or in-deck deck plates | Up to 10 | Supported; Pro software interfaces discontinued |
 
+Swiss Timing sells its console under the Omega name as
+[Quantum Aquatics](quantum.md), either as a single timer or as a primary and secondary pair
+with a switch between them. That page is a stub.
+
+| Product | Part number | Deck cabling | Lanes | Status |
+|---|---|---|---|---|
+| [Quantum Aquatics](quantum.md) | `3480.911` (Primary); `3480.912` (Primary & Secondary) | Not yet documented here | Not yet documented here | Current |
+
 Each article covers one console in full (its specifications, connections, and
 part-number variants) and how it differs from the others; this page is the shared
 overview they refer back to.
@@ -89,8 +97,9 @@ overview they refer back to.
 
 - [Start systems](../starter/index.md): the starter's equipment that
   triggers the timer
-- [Colorado Time Systems](../../../vendors/colorado-time-systems.md) and
-  [Daktronics](../../../vendors/daktronics.md): the manufacturers
+- [Colorado Time Systems](../../../vendors/colorado-time-systems.md),
+  [Daktronics](../../../vendors/daktronics.md) and
+  [Swiss Timing](../../../vendors/swiss-timing.md): the manufacturers
 - [Equipment](../../index.md): the equipment reference
 
 ## References

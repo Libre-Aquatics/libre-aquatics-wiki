@@ -43,8 +43,16 @@ What is established:
   - A later "SwimNews Pro-Swim Meet Manager" (pro-swim.swimnews.com, copyright 2009 Archive
     Imaging Services Ltd.) looks like a SwimNews-branded relative, but nothing states that.
 
-Unresolved: whether Splash Software GmbH succeeded GeoLogix AG, or the two coexist; the
-company's founding date; whether the SwimNews arrangement was a distribution deal.
+Resolved in the Splash Meet Manager pass (September 2026), details in that page's comment
+and in geologix.md: Splash began as Kaufmann's own business in Berne; the website moved to
+splash.swimnews.com under a joint venture with SwimNews in January 2002; GeoLogix AG
+(registered March 2002) took over development and support in November 2003 with Kaufmann as
+shareholder; Splash Software GmbH was entered in the commercial register on 7 December 2015
+(UID CHE-207.485.444, Ahornweg 41, Spiegel bei Bern, capital CHF 20,000, Kaufmann sole
+manager and shareholder, per Moneyhouse). GeoLogix AG still exists with Kaufmann on its
+board. The vendor now says it has built the software in Switzerland since 1988.
+
+Still open: the terms of the SwimNews arrangement; whether GeoLogix keeps any Splash role.
 
 Sources: swimrankings.net/files/example-*.lxf (CONSTRUCTOR element); wiki.swimrankings.net
 Lenex page; wiki.swimrankings.net/images/8/83/Meet_Manager_How-to-start.pdf (via search
@@ -57,6 +65,6 @@ counterpart, named as Splash Software GmbH of Spiegel bei Bern in files its prog
 and its software is credited to Christian Kaufmann, who also maintains the
 [Lenex](../software/lenex.md) format.
 
-Older documentation places the product under GeoLogix AG of Berne, and the relationship
-between the two companies is not yet established; see the [vendors index](index.md) for the
-companies this section covers.
+From 2003 until about 2015 the product was developed and supported by
+[GeoLogix](geologix.md) of Berne, with Kaufmann as a shareholder; see the
+[vendors index](index.md) for the companies this section covers.
