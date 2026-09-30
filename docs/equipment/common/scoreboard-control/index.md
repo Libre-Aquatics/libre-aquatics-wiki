@@ -102,7 +102,8 @@ than by who made it, so a NovaStar controller and a CTS adapter sit in the same 
 | [Sky-Fi WA-1](wa-1.md) | Colorado Time Systems | Wireless scoreboard data adapter | Superseded |
 | [WA-2](wa-2.md) | Colorado Time Systems | Wireless scoreboard adapter | Superseded |
 | [WA-3](wa-3.md) | Colorado Time Systems | 2.4 GHz wireless scoreboard adapter | Current |
-| [WTTC-1](wttc-1.md) | Colorado Time Systems | Tabletop controller for multisport boards | Documented |
+| [WTTC-1](wttc-1.md) | Colorado Time Systems | Tabletop controller for multisport boards and water polo | Current |
+| [Run-stop-reset units](rsr.md) | Colorado Time Systems | Hand switches for extra clock operators on the WTTC-1 | Current |
 | [WHC-1](whc-1.md) | Colorado Time Systems | Handheld controller for multisport boards | Documented |
 | [GameLink console](gamelink-console.md) | Colorado Time Systems | Keyboard console for team-sport data entry | Discontinued |
 | [MCTRL-300](mctrl-300.md) | NovaStar | LED video display controller | Shipped by CTS |

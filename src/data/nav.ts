@@ -269,6 +269,7 @@ export const nav: NavNode[] = [
                 title: 'Controllers',
                 children: [
                   { title: 'WTTC-1 Tabletop Controller', page: 'equipment/common/scoreboard-control/wttc-1.md' },
+                  { title: 'Run-Stop-Reset Units', page: 'equipment/common/scoreboard-control/rsr.md' },
                   { title: 'WHC-1 Handheld Controller', page: 'equipment/common/scoreboard-control/whc-1.md' },
                   { title: 'GameLink Console', page: 'equipment/common/scoreboard-control/gamelink-console.md' },
                 ],
