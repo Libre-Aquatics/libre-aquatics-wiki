@@ -110,6 +110,10 @@ case, $1,879.99; CTS shop, refurbished WTTC-2-NB2.S, $1,200.00, marked down from
 Web sources saved to sources/reference/cts-web/ for the copying check: CTS page archived
 August 2020; dealer pages.
 
+Added from the WHC-1 pass: the CTS web shop listed the WTTC-1 at $600 in November 2013
+(Wayback), with a sport selector whose options included lacrosse, hockey, field hockey,
+basketball, baseball and American football.
+
 Still to research: introduction date (before October 2013); what the -2 and NB2 suffixes
 mean; the radio module; the Tabletop Quick Reference Guide; whether any sport besides water
 polo has a full manual like F1071.
@@ -125,7 +129,8 @@ slide-in keyboard inserts.[^ctswttc][^cts2020]
 ## Naming and models
 
 CTS has written the name two ways. Documents from 2013 to 2020 call it the WTTC-1, including
-a 2013 baseball scoreboard datasheet, which is the earliest reference held here.[^bbds][^f980]
+a 2013 baseball scoreboard datasheet, which is the earliest reference held here.[^bbds][^f980] CTS's
+web shop listed the WTTC-1 at $600 in November 2013.[^shop13]
 From 2023 CTS writes WTTC without the suffix.[^ds23][^ds24][^f1071]
 
 Dealers use a longer part number. KAP7 sells `WTTC-2-NB` with a carrying case, Poolweb lists
@@ -351,7 +356,8 @@ larger boards that add a game clock and a pitch count.[^bbds]
 
 This section lists the controller's part numbers and the accessories CTS sells for it.
 
-- `WTTC-1`, the name in CTS documents to 2020, and `WTTC`, the name from 2023.[^f980][^ds24]
+- `WTTC-1`, the name in CTS documents to 2020, and `WTTC`, the name from 2023.[^f980][^ds24] CTS
+  sold the WTTC-1 for $600 on its web shop in November 2013.[^shop13]
 - `WTTC-2-NB`, sold with carrying case `CASE-WTTC`, at $1,879.99 in September 2026.[^kap7]
 - `WTTC-2-NB2`, the current dealer part number.[^poolweb] The CTS shop sold a refurbished unit,
   `WTTC-2-NB2.S`, for $1,200.00, down from $1,600.00, in September 2026.[^ctsshop] ScoreBoards.com
@@ -385,6 +391,7 @@ This section lists the controller's part numbers and the accessories CTS sells f
 [^kap7]: [KAP7 International, Colorado Wireless Table Top Controller with Case](https://www.kap7.com/wireless-table-top-controller/) (September 2026).
 [^poolweb]: [Poolweb, Water Polo Wireless Tabletop Controller (WTTC-2-NB2)](https://www.poolweb.com/products/water-polo-wireless-tabletop-controller) (September 2026).
 [^sbcom]: [ScoreBoards.com, Colorado Time Systems Wireless Tabletop Controller (WTTC-1)](https://scoreboards.com/product/colorado-time-systems-wireless-tabletop-controller-wttc-1/) (September 2026).
+[^shop13]: [Colorado Time Systems, Wireless Tabletop Controller (WTTC-1)](https://web.archive.org/web/20131105080835/http://www.coloradotime.com/shop/wireless-tabletop-controller-wttc-1/) (web shop, archived November 2013).
 [^f1045]: Colorado Time Systems, 2.4 GHz Wireless Adapter WA-3 User Guide (F1045 Rev. 202007), multisport boards.
 [^wa3ds]: Colorado Time Systems, 2.4 GHz Wireless Scoreboard Adapter (WA-3) datasheet.
 [^f1004]: Colorado Time Systems, Scoreboard for Swimming & Track With 2.4 GHz Integrated Wireless, Installation and User Guide (F1004 Rev. 202605).

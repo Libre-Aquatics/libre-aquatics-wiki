@@ -18,6 +18,10 @@ infobox:
     value: Clock-control hand switch
   - label: Connection
     value: Round phone plug into the [WTTC-1](equipment/common/scoreboard-control/wttc-1.md)
+  - label: Dimensions
+    value: 4.5 × 1.9 × 0.38 in (11.4 × 4.7 × 1.0 cm)
+  - label: Weight
+    value: 5.6 oz (158.8 g)
 ---
 
 <!--
@@ -49,6 +53,12 @@ What is established:
     model.
   - The 2020 CTS product page says the units handle game and shot time in lacrosse, hockey,
     basketball and water polo, and football for game and play clock.
+
+  - CTS Wireless Scoreboard Controllers datasheet (Rev 05/19): a handheld unit, 1.9 x 4.5 x
+    0.38 in (W x H x D; 4.7 x 11.4 x 1.0 cm), 5.6 oz (158.8 g); up to two plug into the tabletop
+    controller. Per sport: in basketball and water polo one unit can run both game and shot
+    time and two split them; in hockey one runs game time; in football one runs game time and
+    a second the play clock. The infobox gives the size as H x W x D.
 
 Not established: whether an RSR-2 exists; prices; cable length and plug type beyond "round
 phone plug"; whether the units work with any CTS console other than the WTTC.
