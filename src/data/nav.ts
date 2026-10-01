@@ -263,6 +263,54 @@ export const nav: NavNode[] = [
                   { title: 'SASC9', page: 'equipment/common/pace-clock/sasc9.md' },
                 ],
               },
+              {
+                title: 'Counsilman',
+                children: [
+                  { title: 'Counsilman Pace Clock', page: 'equipment/common/pace-clock/counsilman-pace-clock.md' },
+                ],
+              },
+              {
+                title: 'Daktronics',
+                children: [
+                  { title: 'LED Timer', page: 'equipment/common/pace-clock/daktronics-led-timer.md' },
+                ],
+              },
+              {
+                title: 'Kiefer McNeil',
+                children: [
+                  { title: 'Competitor Pace Clocks', page: 'equipment/common/pace-clock/kiefer-competitor-pace-clock.md' },
+                ],
+              },
+              {
+                title: 'Kyrotech',
+                children: [
+                  { title: 'AutoCoach', page: 'equipment/common/pace-clock/kyrotech-autocoach.md' },
+                ],
+              },
+              {
+                title: 'Maric',
+                children: [
+                  { title: 'Paceclox', page: 'equipment/common/pace-clock/maric-paceclox.md' },
+                ],
+              },
+              {
+                title: 'Recreonics',
+                children: [
+                  { title: 'Recreonics Pace Clock', page: 'equipment/common/pace-clock/recreonics-pace-clock.md' },
+                ],
+              },
+              {
+                title: 'Swim Training Supply',
+                children: [
+                  { title: 'Giant Pace Clock', page: 'equipment/common/pace-clock/sts-giant-pace-clock.md' },
+                ],
+              },
+              {
+                title: 'Taroda Industries',
+                children: [
+                  { title: 'Kyroscope Pace Clock', page: 'equipment/common/pace-clock/kyroscope-pace-clock.md' },
+                ],
+              },
             ],
           },
           {

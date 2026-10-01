@@ -10,7 +10,7 @@ infobox:
   - label: Industry
     value: Athletic meet timing
   - label: Key products
-    value: Tec-Timer printing meet timer, AutoCoach
+    value: '[AutoCoach](equipment/common/pace-clock/kyrotech-autocoach.md) pace clock, Tec-Timer printing meet timer'
   - label: Status
     value: Attested 1982–1997; still a supported timer in Meet Manager
 ---
@@ -64,8 +64,15 @@ years, which says something about how long a meet host keeps a working timer.
 Still to research: whether Kyrotech, Inc. and Kyrotech Industries, Inc. are the same
 registration; what became of the company, which disappears from the buyer's guides after
 the early 1990s even though its timer is still supported; the Tec-Timer's model numbers and
-prices; whether it was ever used at a championship; what AutoCoach was; and what the
+prices; whether it was ever used at a championship; and what the
 Meet Manager topic page for it actually documents, which was not read on this pass.
+
+Added September 2026 (pace clock history pass): AutoCoach was a microprocessor-controlled
+digital pace clock, advertised in Swimming World from September 1982 to July 1986; details on
+equipment/common/pace-clock/kyrotech-autocoach.md. Its ad presents it as the newest of a series
+of programmable digital clocks. A possible predecessor is the Kyroscope programmable pace
+clock of 1974-76, a brand of Taroda Industries of Chicago (kyroscope-pace-clock.md); the
+similar name and location suggest a link but nothing found confirms one.
 -->
 
 This article is a stub. Kyrotech was an American athletic timing company of Northbrook,

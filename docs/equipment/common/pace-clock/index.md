@@ -130,6 +130,64 @@ national technical rule. The World Aquatics, NCAA and
 NFHS documents held for this wiki do not mention pace clocks at all, which fits the
 division of roles above: no result in a competition depends on a pace clock.
 
+## History
+
+This section traces the pace clock from the 1940s to the programmable digital clocks of the
+1980s.
+
+Coaches paced swimmers before there were pace clocks. Writing in 1961, the Grinnell
+coach Irv Simone named Armbruster of the University of Iowa as the inventor of the
+earliest swimming pacer he knew of, a flag tied to a cord that ran the length of a 50 m pool on pulleys.
+Simone also describes a moving spotlight that some Big Ten and Big Eight coaches tried and
+gave up on, and his own pacer of 1959–60, a row of lights and horns along the pool switched
+by timers.[^simone61]
+
+Who built the first pace clock is disputed. Australian sources credit Forbes Carlile, then
+working with his mentor Frank Cotton at the University of Sydney. Swim News placed "the
+world's first pace clock" at the North Sydney pool and named Cotton and Carlile as its
+designers; Carlile's own swim school dates its introduction to 1946 at the Palm Beach rock
+pool, and Swimming World in 2016 gave 1946 and both pools.[^swimnews93][^carlile][^sw1604]
+American accounts credit James "Doc" Counsilman of Indiana University, though they disagree
+on the year: a Swim News obituary in 2004 says he was the first to manufacture pace clocks,
+in 1948, and a Swimming World timeline of 1994 says he invented one in 1949.[^swimnews04][^sw9411]
+Other claims appear in passing, for the Canadian coach Howard Firby and for Counsilman jointly
+with Jim Montrella.[^swimnews91][^swimnews90]
+
+The first detailed description found in print is from 1961. Dick Threlfall, coach of the
+Fremont Hills Swim Club in California, had clocks made by a Sunnyvale firm that stood 3½ ft
+tall, with black figures readable from over 100 ft, a red second hand and a black minute
+hand, both reset by a knob at the back. A pull cord started and stopped them. Threlfall put
+one at each end of a 50 m pool and had swimmers read their own repeat times, and George
+Haines of the Santa Clara Swim Club and Peter Daland of the University of Southern California
+were quoted praising the arrangement.[^threlfall61] By 1964 a column of the American Swimming
+Coaches Association noted that Counsilman, Daland and Haines all trained with a large pacing
+clock.[^asca64]
+
+Commercial clocks followed. Swim Training Supply, a New Jersey company, offered a giant
+clock in 1962 and advertised "Giant Pace Clocks" from 1964, with a pair installed at
+Princeton.[^sts62][^sts64] A 1962 article on pacing equipment already set dial clocks against
+digital ones, which it called easier to read but more costly.[^pacing62] Counsilman sold a
+clock of his own by mail from Bloomington, Indiana. An improved model with a stronger 60 Hz
+motor was advertised in October 1964 at $65.00; by late 1965 the advertisement claimed more
+than 1,000 sold, and by 1967 it gave the face as 3 ft square, alongside a 12 in battery
+"Porta-Pace" model at $40.00. The advertisements ran until 1971.[^couns64][^couns65][^couns67]
+
+Digital clocks reached the swimming press in the 1970s. From 1974 the dealer Thrifty Timing
+sold a Kyroscope digital programmable pace clock at $350, later $395. Kyroscope was the brand
+of Taroda Industries of Chicago, whose 1971 meet timer carried the name, and in 1976 Taroda
+advertised a programmable digital pace clock from $395 with 7 in digits and programmable
+interval sequences.[^kyroscope74][^kyroscope71][^taroda76] Analog clocks carried on beside them: Recreonics advertised
+a clock 40 in square in 1977 with an optional tone that sounded at a preset interval, Maric a range of
+battery quartz clocks in 1978, and Kiefer McNeil its Competitor clocks, electric or battery,
+in 1980. Competitor clocks were still advertised in 1996.[^recreonics77][^maric78][^kiefer80][^kiefer96]
+
+By the early 1980s the clock could hold a workout. Kyrotech's AutoCoach of 1982, a
+microprocessor-controlled digital clock programmed from pushbuttons, stored up to 100 sets of
+1–99 repeats.[^autocoach82] Coaches also built their own: in 1981 an Oregon age-group coach and a
+Penn State chemist described a digital pace clock driven by a programmable pocket calculator, which sounded a
+beep for each send-off.[^huestis81] In 1995 Daktronics announced an LED timer that it said had
+been designed as a swimming pace clock.[^dak95]
+
 ## Products
 
 This section catalogs the pace clock hardware named in the articles on this wiki. The
@@ -147,12 +205,18 @@ passing.
 | [Deck clock](deck-clock.md) | Colorado Time Systems | Portable game, shot and pace clock, `MS-0043`–`MS-0045` | Current |
 | [Pace Clock/Shot Clock](pace-clock-shot-clock.md) | Colorado Time Systems | 10 in LED pace and shot clocks, wired `PC-` and 900 MHz `PCW-`, Standard, Portable and Pro | Current[^f904] |
 | [SASC9](sasc9.md) | Colorado Time Systems | Named as a display the controller drives; nothing further established | Unestablished |
+| [Counsilman Pace Clock](counsilman-pace-clock.md) | James Counsilman | Electric sweep-hand clock sold by mail, and the battery Porta-Pace | Advertised 1964–1971[^couns64] |
+| [STS giant pace clock](sts-giant-pace-clock.md) | Swim Training Supply | Large wall or floor clock | Advertised 1962–1967[^sts64] |
+| [Kyroscope pace clock](kyroscope-pace-clock.md) | Taroda Industries | Programmable digital pace clock | Advertised 1974–1976[^kyroscope74] |
+| [Recreonics pace clock](recreonics-pace-clock.md) | Recreonics | 40 in sweep-hand clock with interval tone | Advertised 1977[^recreonics77] |
+| [Maric Paceclox](maric-paceclox.md) | Maric | Battery and mains sweep-hand clocks | Advertised 1978[^maric78] |
+| [Competitor pace clocks](kiefer-competitor-pace-clock.md) | Kiefer McNeil | Electric and battery sweep-hand clocks | Advertised 1980; brand still sold 1996[^kiefer80][^kiefer96] |
+| [AutoCoach](kyrotech-autocoach.md) | Kyrotech | Microprocessor-programmed digital pace clock | Advertised 1982–1986[^autocoach82] |
+| [Daktronics LED timer](daktronics-led-timer.md) | Daktronics | LED timer designed as a pace clock | Announced 1995[^dak95] |
 
 The [multisport portable scoreboard](../scoreboard/multisport-portable-scoreboard.md) is
-the third display a segment timer drives, and is filed with the scoreboards. CTS's clock line
-beyond all of these, still uncovered, is the pace clocks for training.[^ctspc] The counting
-clock pro is uncovered too, but it is not on that page; it is attested only by its own user
-guide, F925.[^f925]
+the third display a segment timer drives, and is filed with the scoreboards. The counting
+clock pro is not yet covered; it is attested only by its own user guide, F925.[^f925]
 
 ## See also
 
@@ -176,4 +240,30 @@ guide, F925.[^f925]
 [^usas10320]: [USA Swimming, Rulebook](https://www.usaswimming.org/officials/rulebook), 103.20 Pace Clocks (warm-up and warm-down areas).
 [^f509]: Colorado Time Systems, Pace Clock for the System 5 Sports Timer Software User Guide (F509 Rev. 0698).
 [^f925]: Colorado Time Systems, Counting Clock Pro User Guide (F925).
+[^simone61]: Irv Simone, "Pacing Devices", Junior Swimmer–Swimming World, March 1961.
+[^threlfall61]: Dick Threlfall, "Swimming Timer", Junior Swimmer–Swimming World, March 1961.
+[^swimnews93]: Swim News, October 1993, on Sydney's swimming history.
+[^carlile]: [Carlile Swim, How Forbes Carlile became one of sport's most influential and innovative leaders](https://www.carlile.com.au/how-forbes-carlile-became-one-of-sports-most-influential-and-innovative-leaders/) (2019).
+[^sw1604]: Michael J. Stott, "Coaching Lessons with the Legends: Forbes Carlile", Swimming World, April 2016.
+[^swimnews04]: Swim News, February 2004, Counsilman obituary.
+[^sw9411]: Swimming World, November 1994, Counsilman obituary and research timeline.
+[^swimnews91]: Swim News, October 1991, recollection of Howard Firby.
+[^swimnews90]: Swim News, September 1990.
+[^asca64]: Mike Milliman, "Counsilman, Daland & Haines: a study in methods", Swimming World, March 1964.
+[^sts62]: Swim Training Supply, advertisement, Swimming World, September 1962.
+[^sts64]: Swim Training Supply, advertisements, Swimming World, January 1964 to 1967.
+[^pacing62]: Swimming World, November 1962, article on pacing devices (dial and digital pacing clocks).
+[^couns64]: James Counsilman, "The New Counsilman Pace Clock", advertisement, Swimming World, October 1964.
+[^couns65]: James Counsilman, advertisement, Swimming World, November 1965.
+[^couns67]: James Counsilman, advertisement (Counsilman Pace Clock and Porta-Pace Clock), Swimming World, January 1967.
+[^kyroscope74]: Thrifty Timing, advertisement (Kyroscope digital programmable pace clock), Swimming World, October 1974.
+[^kyroscope71]: Taroda Industries, Kyroscope timing system advertisement, Swimming World, February 1971.
+[^taroda76]: Taroda Industries, advertisement (programmable digital pace clock), Swimming World, November 1976.
+[^recreonics77]: Recreonics, new-products advertisement, Swimming World, April 1977.
+[^maric78]: Maric Paceclox, advertisement, Swimming World, September 1978.
+[^kiefer80]: Kiefer McNeil, Competitor Pace Clocks advertisement, Swimming World, January 1980.
+[^kiefer96]: Competitor Pace Clocks advertisement, Swimming Technique, May 1996.
+[^autocoach82]: Kyrotech, AutoCoach advertisement, Swimming World, September 1982.
+[^huestis81]: Doug Huestis and Doug Henry, "A computer-programmed digital pace clock for workouts", Swimming Technique, November 1981–January 1982.
+[^dak95]: Swimming World, February 1995, new products (Daktronics LED timer).
 [^ctsstp]: [Colorado Time Systems, Wireless Handheld Segment Timer](https://coloradotime.com/products/wireless-handheld-segment-timer) (current listing, as of 2026).
