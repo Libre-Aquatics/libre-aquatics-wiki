@@ -144,6 +144,7 @@ passing.
 | [Handheld segment timer](whc-2.md) | Colorado Time Systems | Wireless handheld interval controller, `WHC-2` | Current[^ctsstp] |
 | [Slim pace clock](slim-pace-clock.md) | Colorado Time Systems | Wall-mounted LED clock, four or six digits, `MS-0037`–`MS-0040` | Current |
 | [Deck clock](deck-clock.md) | Colorado Time Systems | Portable game, shot and pace clock, `MS-0043`–`MS-0045` | Current |
+| [Wireless pace clocks](wireless-pace-clock.md) | Colorado Time Systems | 900 MHz pace and shot clocks: Wireless Pro, Portable and Standard | Manual revised 2025[^f904] |
 | [SASC9](sasc9.md) | Colorado Time Systems | Named as a display the controller drives; nothing further established | Unestablished |
 
 The [multisport portable scoreboard](../scoreboard/multisport-portable-scoreboard.md) is

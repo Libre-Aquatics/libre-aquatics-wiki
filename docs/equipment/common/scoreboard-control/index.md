@@ -94,12 +94,12 @@ computer's output to appear on the board. None of the three has a page here.[^dl
 
 ## Products
 
-Every entry below is a stub. The two overviews divide the hardware by what it does rather
+The two overviews divide the hardware by what it does rather
 than by who made it, so a NovaStar controller and a CTS adapter sit in the same table.
 
 | Product | Maker | Type | Status |
 |---|---|---|---|
-| [Sky-Fi WA-1](wa-1.md) | Colorado Time Systems | Wireless scoreboard data adapter | Superseded |
+| [Sky-Fi WA-1](wa-1.md) | Colorado Time Systems | 900 MHz wireless scoreboard adapter | Discontinued |
 | [WA-2](wa-2.md) | Colorado Time Systems | Wireless scoreboard adapter | Superseded |
 | [WA-3](wa-3.md) | Colorado Time Systems | 2.4 GHz wireless scoreboard adapter | Current |
 | [WTTC-1](wttc-1.md) | Colorado Time Systems | Tabletop controller for multisport boards and water polo | Current |

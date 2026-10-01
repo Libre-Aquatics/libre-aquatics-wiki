@@ -4,9 +4,6 @@ tags:
   - Equipment
   - Diving
   - Scoring
-# Section placeholder: no articles beneath it yet. Remove once this
-# section has pages of its own.
-noindex: true
 ---
 
 The hardware used to run a diving competition, the judging and scoring gear that
@@ -33,9 +30,12 @@ equipment, and are out of scope here.
 
 ## Articles
 
-This section of the catalog is still to be written. Diving scoring hardware is made
-by the same timing vendors that supply swimming, listed on the
+Most of this section is still to be written. Diving scoring hardware is made by the
+same timing vendors that supply swimming, listed on the
 [Vendors](../../vendors/index.md) page.
+
+- [900 MHz wireless judging](wireless-judging.md): Colorado Time Systems judges'
+  terminals and console interface for diving and artistic swimming
 
 ## See also
 

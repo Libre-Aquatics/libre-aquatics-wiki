@@ -210,7 +210,9 @@ export const nav: NavNode[] = [
         title: 'Diving',
         index: 'equipment/diving/index.md',
         indexTitle: 'Diving Equipment Overview',
-        children: [],
+        children: [
+          { title: '900 MHz Wireless Judging', page: 'equipment/diving/wireless-judging.md' },
+        ],
       },
       {
         title: 'Water Polo',
@@ -249,6 +251,7 @@ export const nav: NavNode[] = [
               { title: 'Handheld Segment Timer', page: 'equipment/common/pace-clock/whc-2.md' },
               { title: 'Slim Pace Clock', page: 'equipment/common/pace-clock/slim-pace-clock.md' },
               { title: 'Deck Clock', page: 'equipment/common/pace-clock/deck-clock.md' },
+              { title: 'Wireless Pace Clocks', page: 'equipment/common/pace-clock/wireless-pace-clock.md' },
               { title: 'SASC9', page: 'equipment/common/pace-clock/sasc9.md' },
             ],
           },

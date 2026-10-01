@@ -77,7 +77,9 @@ channel" agrees with the switches; the 2015 catalogue's 16 per channel describes
 Lineage:
   - WA-1, Sky-Fi: 900 MHz, 8 channels (CTS page, May 2014: 5.75 x 5.2 x 3.9 in; works with
     older CTS consoles). F941 says 900 MHz judging channels 1-8 are shared with WA-1 adapters
-    and CTS wireless pace clocks.
+    and CTS wireless pace clocks. Corrected September 2026 from the WA-1 datasheet (Rev 03/14):
+    the 5.75 in is the height with the antenna on; without it the case is 1.1 in high, so the
+    WA-1 is smaller and lighter (7.3 oz) than the WA-2/WA-3, not larger as first written.
   - WA-2: CTS's May 2014 page for the 2.4 GHz adapter is the WA-2, with exactly the figures
     later printed for the WA-3 (12 x 8, 1,000 ft (100 m), 4-1/4 x 6-7/16 x 1-3/16 in, 13.4 oz).
     F987's text, set-ups and switch map are the same as F1045's. Differences found: the WA-2
@@ -238,8 +240,10 @@ on each line of an LED-R board.[^f1026]
 
 The WA-3 is the third of CTS's wireless scoreboard adapters.
 
-The [Sky-Fi WA-1](wa-1.md) used the 900 MHz band, with eight spread-spectrum channels, in a
-larger case of 5.75 × 5.2 × 3.9 in. CTS offered it for its older consoles.[^cts900] Its channels
+The [Sky-Fi WA-1](wa-1.md) used the 900 MHz band, with eight spread-spectrum channels. Its case,
+5.2 × 3.9 × 1.1 in without the antenna and 7.3 oz, is smaller and lighter than the WA-3's; the
+5.75 in figure CTS prints for it includes the antenna. CTS offered it for its older
+consoles.[^cts900][^ds900] Its channels
 overlapped with those of CTS's 900 MHz wireless judging system.[^f941]
 
 The WA-2 introduced the 2.4 GHz radio, and the WA-3 is close to a copy of it. CTS's 2014 page for
@@ -315,6 +319,7 @@ This section lists the adapter's part number, its cables and dealer prices.
 [^f970]: [Colorado Time Systems, Wireless Handheld All Scoreboards Controller User Guide (F970 Rev. 202103)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Multisport%20Electronic%20Scoreboards/Multisport%20Controllers/WHC_All_Scoreboards_User_Guide_F970.pdf).
 [^f1071]: [Colorado Time Systems, WTTC Water Polo User Instructions (F1071 Rev 202501)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Multisport%20Electronic%20Scoreboards/Multisport%20Controllers/WTTC%20Water_Polo_F1071.pdf).
 [^f870]: Colorado Time Systems, Swimming 6 for the System 6 Sports Timer Software User Guide (F870 Rev. 20241107), wireless adapter menu.
+[^ds900]: [Colorado Time Systems, Sky-Fi Wireless Adapter datasheet (Rev 03/14)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Datasheets/Sky%20Fi.pdf).
 [^f941]: Colorado Time Systems, Wireless Judging 900 MHz Frequency User Guide (F941 Rev. 20110720).
 [^cat15]: Colorado Time Systems, Complete Timing, Scoring, Training and Display Solutions catalogue (2015).
 [^f1050]: Colorado Time Systems, Wireless Handheld Segment Timer Controller User Guide (F1050 Rev. 202103, ©2021).
