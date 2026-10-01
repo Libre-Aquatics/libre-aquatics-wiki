@@ -230,15 +230,20 @@ export const nav: NavNode[] = [
             index: 'equipment/common/scoreboard/index.md',
             indexTitle: 'Scoreboards Overview',
             children: [
-              { title: 'Otter Scoreboards', page: 'equipment/common/scoreboard/otter.md' },
-              { title: 'Mini LED Scoreboard', page: 'equipment/common/scoreboard/mini-scoreboard.md' },
-              { title: 'LED-R Numeric Scoreboard', page: 'equipment/common/scoreboard/led-r.md' },
-              { title: 'LED-REX Retrofit', page: 'equipment/common/scoreboard/led-rex.md' },
-              { title: 'Mini Scoreboard Caddy', page: 'equipment/common/scoreboard/cad-mini.md' },
-              { title: 'Myriad', page: 'equipment/common/scoreboard/myriad.md' },
-              { title: 'Mercury16', page: 'equipment/common/scoreboard/mercury16.md' },
-              { title: 'HWPM 110 and HWPM 220', page: 'equipment/common/scoreboard/hwpm.md' },
-              { title: 'Multisport Portable Scoreboard', page: 'equipment/common/scoreboard/multisport-portable-scoreboard.md' },
+              {
+                title: 'Colorado Time Systems',
+                children: [
+                  { title: 'Otter Scoreboards', page: 'equipment/common/scoreboard/otter.md' },
+                  { title: 'Mini LED Scoreboard', page: 'equipment/common/scoreboard/mini-scoreboard.md' },
+                  { title: 'LED-R Numeric Scoreboard', page: 'equipment/common/scoreboard/led-r.md' },
+                  { title: 'LED-REX Retrofit', page: 'equipment/common/scoreboard/led-rex.md' },
+                  { title: 'Mini Scoreboard Caddy', page: 'equipment/common/scoreboard/cad-mini.md' },
+                  { title: 'Myriad', page: 'equipment/common/scoreboard/myriad.md' },
+                  { title: 'Mercury16', page: 'equipment/common/scoreboard/mercury16.md' },
+                  { title: 'HWPM 110 and HWPM 220', page: 'equipment/common/scoreboard/hwpm.md' },
+                  { title: 'Multisport Portable Scoreboard', page: 'equipment/common/scoreboard/multisport-portable-scoreboard.md' },
+                ],
+              },
             ],
           },
           {
@@ -246,13 +251,18 @@ export const nav: NavNode[] = [
             index: 'equipment/common/pace-clock/index.md',
             indexTitle: 'Pace Clocks Overview',
             children: [
-              { title: 'Pace Clock Controller', page: 'equipment/common/pace-clock/upc-c.md' },
-              { title: 'Ultimate Pace Clock', page: 'equipment/common/pace-clock/ultimate-pace-clock.md' },
-              { title: 'Handheld Segment Timer', page: 'equipment/common/pace-clock/whc-2.md' },
-              { title: 'Slim Pace Clock', page: 'equipment/common/pace-clock/slim-pace-clock.md' },
-              { title: 'Deck Clock', page: 'equipment/common/pace-clock/deck-clock.md' },
-              { title: 'Pace Clock/Shot Clock', page: 'equipment/common/pace-clock/pace-clock-shot-clock.md' },
-              { title: 'SASC9', page: 'equipment/common/pace-clock/sasc9.md' },
+              {
+                title: 'Colorado Time Systems',
+                children: [
+                  { title: 'Pace Clock Controller', page: 'equipment/common/pace-clock/upc-c.md' },
+                  { title: 'Ultimate Pace Clock', page: 'equipment/common/pace-clock/ultimate-pace-clock.md' },
+                  { title: 'Handheld Segment Timer', page: 'equipment/common/pace-clock/whc-2.md' },
+                  { title: 'Slim Pace Clock', page: 'equipment/common/pace-clock/slim-pace-clock.md' },
+                  { title: 'Deck Clock', page: 'equipment/common/pace-clock/deck-clock.md' },
+                  { title: 'Pace Clock/Shot Clock', page: 'equipment/common/pace-clock/pace-clock-shot-clock.md' },
+                  { title: 'SASC9', page: 'equipment/common/pace-clock/sasc9.md' },
+                ],
+              },
             ],
           },
           {
@@ -263,28 +273,48 @@ export const nav: NavNode[] = [
               {
                 title: 'Wireless Adapters',
                 children: [
-                  { title: 'Sky-Fi WA-1', page: 'equipment/common/scoreboard-control/wa-1.md' },
-                  { title: 'WA-2', page: 'equipment/common/scoreboard-control/wa-2.md' },
-                  { title: 'WA-3', page: 'equipment/common/scoreboard-control/wa-3.md' },
+                  {
+                    title: 'Colorado Time Systems',
+                    children: [
+                      { title: 'Sky-Fi WA-1', page: 'equipment/common/scoreboard-control/wa-1.md' },
+                      { title: 'WA-2', page: 'equipment/common/scoreboard-control/wa-2.md' },
+                      { title: 'WA-3', page: 'equipment/common/scoreboard-control/wa-3.md' },
+                    ],
+                  },
                 ],
               },
               {
                 title: 'Controllers',
                 children: [
-                  { title: 'WTTC-1 Tabletop Controller', page: 'equipment/common/scoreboard-control/wttc-1.md' },
-                  { title: 'Run-Stop-Reset Units', page: 'equipment/common/scoreboard-control/rsr.md' },
-                  { title: 'WHC-1 Handheld Controller', page: 'equipment/common/scoreboard-control/whc-1.md' },
-                  { title: 'GameLink Console', page: 'equipment/common/scoreboard-control/gamelink-console.md' },
+                  {
+                    title: 'Colorado Time Systems',
+                    children: [
+                      { title: 'WTTC-1 Tabletop Controller', page: 'equipment/common/scoreboard-control/wttc-1.md' },
+                      { title: 'WHC-1 Handheld Controller', page: 'equipment/common/scoreboard-control/whc-1.md' },
+                      { title: 'GameLink Console', page: 'equipment/common/scoreboard-control/gamelink-console.md' },
+                      { title: 'Run-Stop-Reset Units (WTTC-1 accessory)', page: 'equipment/common/scoreboard-control/rsr.md' },
+                    ],
+                  },
                 ],
               },
               {
                 title: 'Video Board Controllers',
                 children: [
-                  { title: 'MCTRL-300', page: 'equipment/common/scoreboard-control/mctrl-300.md' },
-                  { title: 'MCTRL-600', page: 'equipment/common/scoreboard-control/mctrl-600.md' },
-                  { title: 'MCTRL-660', page: 'equipment/common/scoreboard-control/mctrl-660.md' },
-                  { title: 'VX4', page: 'equipment/common/scoreboard-control/vx4.md' },
-                  { title: 'MIC-VPU-01', page: 'equipment/common/scoreboard-control/mic-vpu-01.md' },
+                  {
+                    title: 'NovaStar',
+                    children: [
+                      { title: 'MCTRL-300', page: 'equipment/common/scoreboard-control/mctrl-300.md' },
+                      { title: 'MCTRL-600', page: 'equipment/common/scoreboard-control/mctrl-600.md' },
+                      { title: 'MCTRL-660', page: 'equipment/common/scoreboard-control/mctrl-660.md' },
+                      { title: 'VX4', page: 'equipment/common/scoreboard-control/vx4.md' },
+                    ],
+                  },
+                  {
+                    title: 'Maker not established',
+                    children: [
+                      { title: 'MIC-VPU-01', page: 'equipment/common/scoreboard-control/mic-vpu-01.md' },
+                    ],
+                  },
                 ],
               },
             ],
