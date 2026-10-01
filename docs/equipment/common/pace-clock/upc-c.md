@@ -132,7 +132,7 @@ briefcase, and usable on any CTS swim scoreboard including one at another pool.[
 
 The manual calls the product only the pace clock controller and never prints `UPC-C`. That
 designation comes from the datasheet, from CTS's 2008 display catalogue, where it appears
-in a part-number list beside the `PC-` and `PCW-` pace clocks, and from other CTS documents
+in a part-number list beside the `PC-` and `PCW-` [pace clocks](pace-clock-shot-clock.md), and from other CTS documents
 that write the two forms together.[^sheet][^cat08]
 
 The letters are an abbreviation of an earlier product. The

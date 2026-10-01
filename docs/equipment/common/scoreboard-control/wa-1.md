@@ -141,7 +141,7 @@ consoles.[^ds14]
 
 The receiving end depends on the display:[^f929]
 
-- CTS [wireless pace clocks and shot clocks](../pace-clock/wireless-pace-clock.md) have a
+- CTS [wireless pace clocks and shot clocks](../pace-clock/pace-clock-shot-clock.md) have a
   900 MHz radio inside and receive the signal with no second adapter.
 - A numeric LED board, such as an [LED-R](../scoreboard/led-r.md), takes a second WA-1
   cabled to its data input.
@@ -303,7 +303,7 @@ This section lists the adapter's part number, its cables and dealer prices.
 ## See also
 
 - [WA-2](wa-2.md) and [WA-3](wa-3.md): the 2.4 GHz adapters that followed it
-- [Wireless pace clocks](../pace-clock/wireless-pace-clock.md): the 900 MHz clocks it transmits to
+- [Pace Clock/Shot Clock](../pace-clock/pace-clock-shot-clock.md): the line whose 900 MHz `PCW-` models it transmits to
 - [Wireless judging](../../diving/wireless-judging.md): the 900 MHz judging system that shares
   its channels
 - [UPC-C](../pace-clock/upc-c.md) and [SynchroMM](../../../software/synchromm.md): data sources

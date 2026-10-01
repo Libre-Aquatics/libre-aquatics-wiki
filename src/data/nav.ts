@@ -251,7 +251,7 @@ export const nav: NavNode[] = [
               { title: 'Handheld Segment Timer', page: 'equipment/common/pace-clock/whc-2.md' },
               { title: 'Slim Pace Clock', page: 'equipment/common/pace-clock/slim-pace-clock.md' },
               { title: 'Deck Clock', page: 'equipment/common/pace-clock/deck-clock.md' },
-              { title: 'Wireless Pace Clocks', page: 'equipment/common/pace-clock/wireless-pace-clock.md' },
+              { title: 'Pace Clock/Shot Clock', page: 'equipment/common/pace-clock/pace-clock-shot-clock.md' },
               { title: 'SASC9', page: 'equipment/common/pace-clock/sasc9.md' },
             ],
           },

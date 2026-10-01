@@ -133,8 +133,9 @@ division of roles above: no result in a competition depends on a pace clock.
 ## Products
 
 This section catalogs the pace clock hardware named in the articles on this wiki. The
-[pace clock controller](upc-c.md) and the [handheld segment timer](whc-2.md) have had
-research passes of their own; the rest are stubs, written from what a manual says in
+[pace clock controller](upc-c.md), the [handheld segment timer](whc-2.md) and the
+[Pace Clock/Shot Clock](pace-clock-shot-clock.md) line have had research passes of their own;
+the rest are stubs, written from what a manual says in
 passing.
 
 | Product | Maker | Type | Status |
@@ -144,7 +145,7 @@ passing.
 | [Handheld segment timer](whc-2.md) | Colorado Time Systems | Wireless handheld interval controller, `WHC-2` | Current[^ctsstp] |
 | [Slim pace clock](slim-pace-clock.md) | Colorado Time Systems | Wall-mounted LED clock, four or six digits, `MS-0037`–`MS-0040` | Current |
 | [Deck clock](deck-clock.md) | Colorado Time Systems | Portable game, shot and pace clock, `MS-0043`–`MS-0045` | Current |
-| [Wireless pace clocks](wireless-pace-clock.md) | Colorado Time Systems | 900 MHz pace and shot clocks: Wireless Pro, Portable and Standard | Manual revised 2025[^f904] |
+| [Pace Clock/Shot Clock](pace-clock-shot-clock.md) | Colorado Time Systems | 10 in LED pace and shot clocks, wired `PC-` and 900 MHz `PCW-`, Standard, Portable and Pro | Current[^f904] |
 | [SASC9](sasc9.md) | Colorado Time Systems | Named as a display the controller drives; nothing further established | Unestablished |
 
 The [multisport portable scoreboard](../scoreboard/multisport-portable-scoreboard.md) is
