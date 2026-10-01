@@ -3,6 +3,7 @@ title: Colorado Time Systems Sky-Fi WA-1
 description: >-
   The Sky-Fi WA-1 is the Colorado Time Systems 900 MHz wireless scoreboard adapter, the
   first of its three wireless adapters, sold from at least 2008 and succeeded by the WA-2.
+updated: 2026-10-01
 tags:
   - Equipment
   - Scoring
@@ -124,7 +125,8 @@ The Sky-Fi WA-1 is a 900 MHz wireless scoreboard adapter made by
 [Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS). An adapter at the
 data source sends scoreboard data by radio to CTS wireless pace clocks and shot clocks, or to a
 second WA-1 cabled to a numeric scoreboard or a video board computer.[^f929] It was the first
-of CTS's three wireless scoreboard adapters. It appears in a CTS catalogue in 2008, and the
+of CTS's three wireless scoreboard adapters, which sit alongside its
+[scoreboard controllers](index.md) as ways to feed a board without a data cable. It appears in a CTS catalogue in 2008, and the
 2.4 GHz [WA-2](wa-2.md) followed it in 2014.[^mtc2008][^cts14] CTS now lists the WA-1 as
 discontinued.[^cts26]
 

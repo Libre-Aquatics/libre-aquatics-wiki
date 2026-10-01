@@ -4,6 +4,7 @@ description: >-
   The Colorado Time Systems Pace Clock/Shot Clock is a line of portable 10-inch LED clocks,
   wired or 900 MHz wireless, sold in Standard, Portable and Pro versions for training and
   water polo.
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -115,7 +116,7 @@ dropped (after the 2015 catalogue, before the 07/25 sheet; the 08/12 sheets alre
 digit colour options on the current wireless models; PC-FMK details; the "about 70 lb" figure.
 -->
 
-The Colorado Time Systems (CTS) Pace Clock/Shot Clock is a line of portable LED clocks with
+The Colorado Time Systems (CTS) Pace Clock/Shot Clock is a line of portable LED [pace clocks](index.md) with
 four 10 in digits, sold for swim training and as water polo shot clocks. It comes in three
 versions, Standard, Portable and Pro, each made wired (`PC-` part numbers) or with a 900 MHz
 radio (`PCW-`).[^ds25][^mtc2008] The Pro adds fifteen training modes driven by touchpads,

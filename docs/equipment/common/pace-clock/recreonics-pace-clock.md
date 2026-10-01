@@ -31,5 +31,5 @@ Still to research: model numbers, how long it was sold, who built it.
 
 This article is a stub. Recreonics advertised a sweep-hand pace clock 40 in square in 1977, in battery or 115 V versions at $149.00, with an optional tone that sounded at a preset interval of 2.5 to 60 seconds.
 
-See the [pace clocks overview](index.md) for the history and shared background that apply to
+See the overview of [pace clocks](index.md) for the history and shared background that apply to
 every pace clock.

@@ -38,7 +38,7 @@ reflex horn made by [Fourjay Industries](#the-fourjay-306-horn) of Dayton,
 Ohio, and CTS resells it under its own part number.[^fourjay306] The auxiliary,
 far-lane, and underwater speakers CTS sells for the same start systems are
 covered in each start system's article; shared background on lane speakers is
-in the [external-speakers overview](index.md).
+in the overview of [starter speakers](index.md).
 
 ## Use across the CTS start line
 

@@ -1,6 +1,8 @@
 ---
 title: Colorado Time Systems Championship Elite Start System
 seoTitle: CTS Championship Elite Start System
+description: "Colorado Time Systems Championship Elite Start System (SSE): LCD menu, Visual Start Signaling for deaf swimmers, connections, specifications and part numbers."
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -47,7 +49,7 @@ The Elite is the deck-wired member of the CTS start line and the current model
 in the Championship family; the portable
 [Infinity](infinity-pro-start-system.md) family is the smaller alternative. For
 the full lineup and a side-by-side comparison, see the
-[start-systems overview](index.md).
+overview of [swim start systems](index.md).
 
 Compared with the older
 [Championship Start System](championship-start-system.md) (`SS`), the Elite

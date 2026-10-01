@@ -99,7 +99,7 @@ The mini scoreboard is a display and nothing else. The console times the race an
 scoreboard data; the board shows whichever part of that data it has been told to show. It
 has no keypad and no memory, and the only control on it is a power switch.[^f927]
 Shared background on how CTS numeric boards are built, powered and required by the rules
-is on the [scoreboards overview](index.md).
+is on the overview of [aquatic scoreboards](index.md).
 
 What a given board shows is decided by its module code rather than by the console. CTS
 console software manuals list the scoreboard modules available in each sport, and a module

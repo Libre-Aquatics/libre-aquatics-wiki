@@ -1,5 +1,6 @@
 ---
 title: Kyrotech
+updated: 2026-10-01
 tags:
   - Equipment
   - Reference
@@ -77,10 +78,12 @@ similar name and location suggest a link but nothing found confirms one.
 
 This article is a stub. Kyrotech was an American athletic timing company of Northbrook,
 Illinois, whose Tec-Timer was a self-contained printing meet timer for swimming, diving and
-track, holding standard meet schedules in memory and driving its own line of peripherals.
+track, holding standard meet schedules in memory and driving its own line of peripherals. It also advertised the
+[AutoCoach](../equipment/common/pace-clock/kyrotech-autocoach.md), a digital [pace clock](../equipment/common/pace-clock/index.md), from
+1982 to 1986.
 
 It is one of the five console makers Hy-Tek announced Meet Manager would connect to in
 1988 through [The Interface](../software/the-interface.md), and although the company
-fades from the swimming press through the 1990s, its timer is still listed among the consoles
-[Meet Manager](../software/hy-tek-meet-manager.md) supports today; see the
+fades from the swimming press through the 1990s, its timer is still listed among the
+[swim timing consoles](../equipment/swimming/timers/index.md) that [Meet Manager](../software/hy-tek-meet-manager.md) supports today; see the
 [vendors](index.md) register for the companies this wiki covers.

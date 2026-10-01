@@ -1,6 +1,8 @@
 ---
 title: Relay take-off platforms
 seoTitle: Swimming relay take-off platforms
+description: "Relay take-off platforms for swimming, including the CTS RJP and Daktronics RTOP: how exchanges are judged automatically, the rules, and disputed results."
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing

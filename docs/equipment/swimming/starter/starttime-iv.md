@@ -44,7 +44,7 @@ of the [StartTime V](starttime-v.md); the later unit's e-gun and microphone unit
 compatible with the StartTime IV.[^stv] Swiss Timing no longer publishes the datasheet
 for the discontinued device online, so this article cites it by document number rather
 than hosting a copy.[^datasheet] This article covers the StartTime IV specifically; the
-[start-systems overview](index.md) covers the shared background that applies to every
+overview of [swim starting systems](index.md) covers the shared background that applies to every
 starter.
 
 ## Naming and product line

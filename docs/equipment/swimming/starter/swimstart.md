@@ -31,7 +31,7 @@ Inc., of Grand Rapids, Michigan. It packages a public-address system, a start
 tone, a 360 degree strobe, and a false-start recall tone in a battery-powered
 case that sits on the deck or straps to the backstroke
 flagpole.[^manual][^listing][^brochure] This article is a starting point; the
-[start-systems overview](index.md) covers the shared background that applies to
+overview of [starting systems](index.md) covers the shared background that applies to
 every starter.
 
 ## Design and hardware

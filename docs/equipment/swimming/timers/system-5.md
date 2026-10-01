@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems System 5
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -34,8 +35,8 @@ infobox:
 
 The System 5 is a swimming timing and scoring console made by
 [Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS),
-which the company's datasheet presents as the fifth generation of its timing
-consoles.[^datasheet] Like the [System 6](system-6.md) that succeeded it, it is a
+which the company's datasheet presents as the fifth generation of its
+[timing consoles](index.md).[^datasheet] Like the [System 6](system-6.md) that succeeded it, it is a
 self-contained unit with its own LCD screen, softkeys, and keyboard insert, operated
 directly from the console. It collects the finish signals from each lane's
 [touchpad](../touchpad/index.md) and backup [pushbuttons](../semi-automatic/pushbutton/index.md), runs

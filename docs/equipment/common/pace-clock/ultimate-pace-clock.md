@@ -78,5 +78,5 @@ portable display (`UPC-LED`), or the keypad console on its own (`UPC-C`), which 
 drive existing CTS scoreboards.
 
 The console outlived the system and is documented separately as the
-[pace clock controller](upc-c.md); see the [pace clocks overview](index.md) for the shared
+[pace clock controller](upc-c.md); see the overview of [pace clocks](index.md) for the shared
 background.

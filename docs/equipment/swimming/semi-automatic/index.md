@@ -1,6 +1,8 @@
 ---
 title: Semi-automatic timing
 seoTitle: Semi-automatic swim timing
+description: "Semi-automatic swim timing: the move from stopwatches, how an electronic start pairs with a hand-stopped finish, the rules, and buttons and wireless watches."
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing

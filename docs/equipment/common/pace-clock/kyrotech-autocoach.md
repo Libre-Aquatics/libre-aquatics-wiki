@@ -33,5 +33,5 @@ Still to research: display size, price, and any link to the earlier Taroda Kyros
 
 This article is a stub. The Kyrotech AutoCoach, advertised from 1982 to 1986, was a microprocessor-controlled digital pace clock programmed from pushbuttons that could store up to 100 sets of 1 to 99 repeats at intervals up to 99:59.
 
-See the [pace clocks overview](index.md) for the history and shared background that apply to
+See the overview of [pace clocks](index.md) for the history and shared background that apply to
 every pace clock.

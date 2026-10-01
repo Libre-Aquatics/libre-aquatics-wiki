@@ -29,7 +29,7 @@ loudspeaker inside the block, and a mobile installation uses a set of external
 loudspeakers positioned near each block.[^osb11][^stconcept] Both are driven by
 the [StartTime V](../starter/starttime-v.md) electronic starting device. Swiss
 Timing does not disclose who makes the loudspeakers. Shared background on lane
-speakers is in the [external-speakers overview](index.md).
+speakers is in the overview of [starter speakers](index.md).
 
 ## In-block loudspeakers
 

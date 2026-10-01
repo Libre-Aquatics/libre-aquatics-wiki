@@ -1,5 +1,6 @@
 ---
 title: Daktronics
+updated: 2026-10-01
 sameAs:
   - https://en.wikipedia.org/wiki/Daktronics
 tags:
@@ -68,8 +69,8 @@ scoring equipment across many sports, with a dedicated aquatics line.[^about][^a
 - Scoreboards & video displays, fixed-digit scoreboards in multisport, swimming,
   water-polo, and auxiliary configurations, and full-color LED video boards. Aquatic
   models use a silicone coating to protect the LEDs from pool moisture.[^aquatics]
-- Aquatic timing & scoring, the OmniSport timing-console line and its touchpads,
-  start systems, and relay platforms for swimming, diving, water polo, and
+- Aquatic timing & scoring, the OmniSport timing-console line and its [touchpads](../equipment/swimming/touchpad/index.md),
+  [starting systems](../equipment/swimming/starter/index.md), and [relay judging platforms](../equipment/swimming/relay-judging/index.md) for swimming, diving, water polo, and
   synchronized (artistic) swimming, interfacing to meet-management software such as
   Hy-Tek Meet Manager. Daktronics has since discontinued this swim-timing line (see
   [In swim timing](#in-swim-timing)).[^aquatics][^omni][^swimsw]
@@ -79,19 +80,22 @@ scoring equipment across many sports, with a dedicated aquatics line.[^about][^a
 
 Individual Daktronics aquatic products are catalogued in the
 [equipment reference](../equipment/index.md): the
-[OmniSport 2000](../equipment/swimming/timers/omnisport-2000.md) timing console,
-the head end of a Daktronics swim-timing system, and the earlier
+[OmniSport 2000](../equipment/swimming/timers/omnisport-2000.md), the
+[swim timing console](../equipment/swimming/timers/index.md) at the head end of a Daktronics swim-timing system, and the earlier
 [OmniSport 1000](../equipment/swimming/timers/omnisport-1000.md) and
 [OmniSport 6000](../equipment/swimming/timers/omnisport-6000.md) consoles it
 succeeded, together with the
 [T-7000 series touchpads](../equipment/swimming/touchpad/t-7000.md) that sense each
 lane's finish, the
-[backup pushbutton](../equipment/swimming/semi-automatic/pushbutton/daktronics.md) that backs it up,
+[backup pushbutton](../equipment/swimming/semi-automatic/pushbutton/daktronics.md), the
+[semi-automatic timing](../equipment/swimming/semi-automatic/index.md) layer that backs it up,
 the [RTOP relay take-off platforms](../equipment/swimming/relay-judging/daktronics.md)
 that judge relay exchanges from the blocks, the
 [HS-200 Horn Start](../equipment/swimming/starter/hs-200.md) that starts the race,
-and the [lane speakers](../equipment/swimming/external-speaker/daktronics.md) mounted
-under each block. Scoreboard models are added as those pages are written.
+and the [lane speakers](../equipment/swimming/external-speaker/daktronics.md), the
+[starter speakers](../equipment/swimming/external-speaker/index.md) mounted under each block. Daktronics also makes
+[aquatic scoreboards](../equipment/common/scoreboard/index.md) and [pace clocks](../equipment/common/pace-clock/index.md); its scoreboard models are added as
+those pages are written.
 
 ## In swim timing
 

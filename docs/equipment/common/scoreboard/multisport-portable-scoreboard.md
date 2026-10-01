@@ -67,5 +67,5 @@ controller, and one of the three display types a
 [handheld segment timer](../pace-clock/whc-2.md) can run a workout on.
 
 Its part number is not recorded in any source held for this wiki, beyond the `MS-` prefix
-that marks the multisport family; see the [scoreboards overview](index.md) for the shared
+that marks the multisport family; see the overview of [aquatic scoreboards](index.md) for the shared
 background that applies to every CTS display.

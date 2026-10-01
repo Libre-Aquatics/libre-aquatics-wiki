@@ -43,7 +43,7 @@ conforming to World Aquatics rules and as Japan Swimming Federation Class AA and
 A.[^disc] It replaced the larger [PS-1200](seiko-ps-1200.md) and was in turn replaced
 by the [PS-1400](seiko-ps-1400.md), which repeats every specification Seiko published
 for this unit.[^ps1400] This article is a starting point; the
-[start-systems overview](index.md) covers the shared background that applies to every
+overview of [swim start systems](index.md) covers the shared background that applies to every
 starter.
 
 ## Naming and product line

@@ -6,7 +6,8 @@ import Search from '../components/Search.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import Footer from '../components/Footer.astro';
 import { withBase } from '../lib/routes';
-import { SITE_NAME, SITE_DESCRIPTION, SITE_LICENSE, PUBLISHER, FEED_PATH, ogImagePath } from '../lib/seo';
+import StructuredData from '../components/StructuredData.astro';
+import { SITE_NAME, SITE_DESCRIPTION, FEED_PATH, ogImagePath } from '../lib/seo';
 
 interface Props {
   title: string;
@@ -19,7 +20,7 @@ interface Props {
   noindex?: boolean;
   /** 'article' on content pages; anything else stays 'website'. */
   ogType?: 'website' | 'article';
-  /** ISO date of the page's last change; article pages only. */
+  /** ISO date of the page's last content change; article pages only. */
   modifiedTime?: string;
   /** ISO date the page was first committed; article pages only. */
   publishedTime?: string;
@@ -29,6 +30,8 @@ interface Props {
   photos?: object[];
   /** The entity the article describes (entity.ts aboutEntity()), if any. */
   about?: object;
+  /** Organizations the article mentions for its subject (entity.ts subjectMentions()). */
+  mentions?: object[];
   /** Further structured-data blocks a page builds itself, such as a tag page's CollectionPage. */
   jsonLd?: object[];
 }
@@ -44,6 +47,7 @@ const {
   breadcrumbs = [],
   photos = [],
   about,
+  mentions,
   jsonLd = [],
 } = Astro.props;
 
@@ -56,78 +60,9 @@ const pageTitle = isHome ? SITE_NAME : `${listTitle} - ${SITE_NAME}`;
 const ogImageAlt = isHome ? SITE_NAME : `${listTitle} on ${SITE_NAME}`;
 // trailingSlash is 'always', so Astro.url.pathname already carries the slash.
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+// og:image is the generated card; the structured data lists any photographs
+// of the article ahead of it (src/components/StructuredData.astro).
 const ogImage = new URL(withBase(ogImagePath(ogKey)), Astro.site).href;
-const siteUrl = new URL(withBase('/'), Astro.site).href;
-// Structured data lists the article's own photographs ahead of the generated
-// card, because the card is a title and a description rendered as a picture and
-// is no use in image results. Each photograph carries its licence metadata. The
-// card stays as a fallback for pages with no photograph of their own. og:image
-// is left alone: there the card is the point.
-const articleImages = photos.length > 0 ? [...photos, ogImage] : ogImage;
-const websiteId = `${siteUrl}#website`;
-
-// Structured data: the Main Page identifies the site and its publisher;
-// article pages describe themselves as a TechArticle about their subject and
-// carry their section trail as a BreadcrumbList. Other pages get none. The
-// WebSite has no SearchAction: Google retired the sitelinks search box in
-// November 2024 and no longer reads it.
-const jsonLdBlocks: object[] = [];
-if (isHome) {
-  jsonLdBlocks.push({
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    '@id': websiteId,
-    name: SITE_NAME,
-    url: siteUrl,
-    description: SITE_DESCRIPTION,
-    inLanguage: 'en',
-    publisher: { '@id': PUBLISHER['@id'] },
-  });
-  // Named separately from the WebSite so the publisher referenced by every
-  // article's TechArticle resolves to a described entity.
-  jsonLdBlocks.push({ '@context': 'https://schema.org', ...PUBLISHER });
-} else if (ogType === 'article') {
-  jsonLdBlocks.push({
-    '@context': 'https://schema.org',
-    '@type': 'TechArticle',
-    headline: title,
-    description,
-    url: canonical,
-    mainEntityOfPage: canonical,
-    image: articleImages,
-    inLanguage: 'en',
-    ...(publishedTime ? { datePublished: publishedTime } : {}),
-    ...(modifiedTime ? { dateModified: modifiedTime } : {}),
-    ...(about ? { about } : {}),
-    license: SITE_LICENSE,
-    // A wiki has no bylines; the articles are the project's collective work,
-    // so the publishing organization stands as author too.
-    author: PUBLISHER,
-    publisher: PUBLISHER,
-    isPartOf: { '@type': 'WebSite', '@id': websiteId, name: SITE_NAME, url: siteUrl },
-  });
-}
-if (breadcrumbs.length > 0) {
-  jsonLdBlocks.push({
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      ...breadcrumbs.map((crumb, i) => ({
-        '@type': 'ListItem',
-        position: i + 1,
-        name: crumb.title,
-        item: new URL(crumb.route, Astro.site).href,
-      })),
-      // The page itself closes the trail; the item URL is optional here.
-      { '@type': 'ListItem', position: breadcrumbs.length + 1, name: title },
-    ],
-  });
-}
-for (const block of jsonLd) jsonLdBlocks.push({ '@context': 'https://schema.org', ...block });
-// '<' must not appear raw inside a script element.
-const jsonLdTexts = jsonLdBlocks.map((block) =>
-  JSON.stringify(block).replace(/</g, '\\u003c'),
-);
 ---
 
 <!doctype html>
@@ -174,9 +109,21 @@ const jsonLdTexts = jsonLdBlocks.map((block) =>
     <meta name="twitter:title" content={listTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
-    {jsonLdTexts.map((text) => (
-      <script type="application/ld+json" set:html={text} />
-    ))}
+    <StructuredData
+      title={title}
+      description={description}
+      isHome={isHome}
+      ogType={ogType}
+      noindex={noindex}
+      ogImage={ogImage}
+      modifiedTime={modifiedTime}
+      publishedTime={publishedTime}
+      breadcrumbs={breadcrumbs}
+      photos={photos}
+      about={about}
+      mentions={mentions}
+      extra={jsonLd}
+    />
     <script is:inline>
       // Apply the saved theme before first paint so there is no flash. With
       // no saved choice, CSS follows prefers-color-scheme on its own.

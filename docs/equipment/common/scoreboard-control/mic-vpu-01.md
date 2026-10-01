@@ -53,5 +53,5 @@ and an LED video board, one of five controllers CTS lists as able to feed a live
 from its own video output. CTS groups it with the units that need a pass-through video
 capture device.
 
-See the [scoreboard control overview](index.md) for the shared background that applies to
+See the overview of [scoreboard controllers](index.md) for the shared background that applies to
 every video display controller.

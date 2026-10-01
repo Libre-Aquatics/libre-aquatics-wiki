@@ -5,9 +5,16 @@
 // carries (its section, its infobox rows, its lead), so nothing new has to be
 // written per article.
 //
-// The entity stays nested rather than becoming a top-level item on purpose:
-// Google checks top-level Product and SoftwareApplication items for offers and
-// ratings, which a reference page has no business carrying.
+// Products and programs are typed as a Thing with an additionalType of
+// Product or SoftwareApplication, never as Product or SoftwareApplication
+// themselves. Google validates any Product or SoftwareApplication it finds,
+// nested or not, for offers and ratings, and a reference page about mostly
+// discontinued equipment has neither and must not invent them. additionalType
+// keeps the meaning without inviting that validation. Properties a Thing does
+// not take are left out: the maker or author moves to the TechArticle's
+// `mentions` (subjectMentions() below), and brand, mpn, releaseDate and
+// applicationCategory are dropped. scripts/check-seo.mjs fails the build if a
+// Product or SoftwareApplication node reappears.
 //
 // Type by section, unless front matter sets `schemaType:`:
 //   vendors/*          -> Organization
@@ -118,16 +125,19 @@ function defaultType(article: Article): SchemaType {
   return 'none';
 }
 
+function schemaType(article: Article): SchemaType {
+  return article.data.schemaType ?? defaultType(article);
+}
+
 /** The schema.org entity the article describes, or undefined when it has none. */
 export function aboutEntity(article: Article, site: URL | string): object | undefined {
   const siteUrl = new URL(site);
-  const type = article.data.schemaType ?? defaultType(article);
+  const type = schemaType(article);
   if (type === 'none') return undefined;
 
   const { title, infoboxTitle, infobox, sameAs } = article.data;
   const row = (label: string) => infobox.find((r) => r.label === label);
   const base = {
-    '@type': type,
     '@id': subjectId(`${article.id}.md`, siteUrl),
     name: infoboxTitle ?? title,
     ...(sameAs?.length ? { sameAs } : {}),
@@ -139,6 +149,7 @@ export function aboutEntity(article: Article, site: URL | string): object | unde
     const founded = isoDate(row('Founded')?.value);
     const headquarters = row('Headquarters');
     return {
+      '@type': 'Organization',
       ...base,
       ...(website && /^https?:/.test(website) ? { url: website } : {}),
       ...(founded ? { foundingDate: founded } : {}),
@@ -147,33 +158,31 @@ export function aboutEntity(article: Article, site: URL | string): object | unde
     };
   }
 
+  const thing = { '@type': 'Thing', additionalType: `https://schema.org/${type}`, ...base };
   if (type === 'Product') {
-    const maker = row('Manufacturer');
-    const manufacturer = maker ? orgRef(maker, siteUrl) : undefined;
     const kind = row('Type');
-    const released = isoDate(row('Introduced')?.value);
-    // Only a single part number is a usable MPN; ranges and lists are not.
-    const mpn = row('Part number')?.value.match(/^`([^`]+)`$/)?.[1];
-    return {
-      ...base,
-      ...(kind ? { category: plain(kind.value) } : {}),
-      ...(manufacturer
-        ? {
-            manufacturer,
-            brand: { '@type': 'Brand', name: (manufacturer as { name: string }).name },
-          }
-        : {}),
-      ...(mpn ? { mpn } : {}),
-      ...(released ? { releaseDate: released } : {}),
-    };
+    return { ...thing, ...(kind ? { category: plain(kind.value) } : {}) };
   }
+  return thing;
+}
 
-  // SoftwareApplication. SportsApplication is one of the category values
-  // Google recognizes, and every program on the wiki is sports software.
-  const author = leadVendor(article, siteUrl);
-  return {
-    ...base,
-    applicationCategory: 'SportsApplication',
-    ...(author ? { author } : {}),
-  };
+/**
+ * Organizations the TechArticle mentions on the subject's behalf: a product's
+ * manufacturer or a program's author, which a Thing cannot carry itself. Empty
+ * for vendor pages, whose Organization entity is unchanged, and for pages with
+ * no subject.
+ */
+export function subjectMentions(article: Article, site: URL | string): object[] {
+  const siteUrl = new URL(site);
+  const type = schemaType(article);
+  if (type === 'Product') {
+    const maker = article.data.infobox.find((r) => r.label === 'Manufacturer');
+    const manufacturer = maker ? orgRef(maker, siteUrl) : undefined;
+    return manufacturer ? [manufacturer] : [];
+  }
+  if (type === 'SoftwareApplication') {
+    const author = leadVendor(article, siteUrl);
+    return author ? [author] : [];
+  }
+  return [];
 }

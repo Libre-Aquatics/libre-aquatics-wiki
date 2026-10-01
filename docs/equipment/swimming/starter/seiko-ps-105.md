@@ -44,7 +44,7 @@ than swimming-specific. Seiko lists it under multi-timing rather than swimming a
 publishes no governing-body certification for it, where its poolside
 [PS-1200](seiko-ps-1200.md) generator of the same period was listed as conforming to
 FINA rules and certified by the Japan Swimming Federation.[^discidx][^ps1200] This
-article is a starting point; the [start-systems overview](index.md) covers the shared
+article is a starting point; the overview of [starting systems](index.md) covers the shared
 background that applies to every starter.
 
 ## Models and naming

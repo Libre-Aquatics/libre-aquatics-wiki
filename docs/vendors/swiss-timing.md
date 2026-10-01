@@ -1,5 +1,6 @@
 ---
 title: Swiss Timing
+updated: 2026-10-01
 tags:
   - Equipment
   - Reference
@@ -62,28 +63,28 @@ brand at other events.[^omega][^history]
 Swiss Timing develops timing, scoring, and display systems across many sports, with a
 dedicated aquatics line built around its Quantum console.[^history][^quantum]
 
-- Aquatic timing, the Quantum Aquatics timing system, a primary and secondary console
-  arrangement that collects finish signals from in-lane touchpads, receives the start
+- Aquatic timing, the Quantum Aquatics timing system, a primary and secondary
+  [timing console](../equipment/swimming/timers/index.md) arrangement that collects finish signals from in-lane touchpads, receives the start
   pulse, runs the race clock, and drives the scoreboard, supplied with swimming
   software and cabling.[^quantum]
-- Touchpads, the OMEGA OCP5 touchpad, which records a swimmer's finish at the wall; its
+- Touchpads, the OMEGA OCP5 [swimming touchpad](../equipment/swimming/touchpad/index.md), which records a swimmer's finish at the wall; its
   contact strips close under about 2 to 3 kg of localized pressure and the surface is
   built to resist false impulses from waves and wash and to withstand hard water and
   pool chemicals.[^ocp5]
 - Starting blocks, the OSB series of swimming starting blocks (the OSB11 and OSB14
   full blocks and the OSB12 platform), with an adjustable footrest, an anti-slip
-  surface, and optional relay break detection (RBD) that judges relay exchanges from the
-  block, plus the
-  [OBL2 Pro backstroke ledge](../equipment/swimming/backstroke-start/swiss-timing.md)
-  that gives backstrokers a fixed foothold at the start.[^osb11][^ocp5]
+  surface, and optional relay break detection (RBD), which does the work of a
+  [relay judging platform](../equipment/swimming/relay-judging/index.md) by judging relay exchanges from the block, plus the
+  [OBL2 Pro](../equipment/swimming/backstroke-start/swiss-timing.md), a
+  [backstroke ledge](../equipment/swimming/backstroke-start/index.md) that gives backstrokers a fixed foothold at the start.[^osb11][^ocp5]
 - Start systems, the StartTime electronic starting device, across the earlier acoustic
   StartTime II and III and the later StartTime IV and current StartTime V generations,
   whose e-gun (from the StartTime IV on) produces the start light and tone and drives the
   per-lane start audio.[^stconcept]
 - Lane speakers, an in-block loudspeaker fitted inside the OSB blocks for fixed
-  installations and mobile loudspeaker sets for portable cabling, both driven by the
-  start device.[^stconcept]
-- Scoreboards and displays, aquatic and multisport scoreboards and LED displays that
+  installations and mobile loudspeaker sets for portable cabling, both
+  [starter speakers](../equipment/swimming/external-speaker/index.md) driven by the start device.[^stconcept]
+- Scoreboards and displays, [aquatic scoreboards](../equipment/common/scoreboard/index.md), multisport scoreboards, and LED displays that
   show the race clock and results.[^quantum]
 - Other sports, beyond aquatics Swiss Timing supplies timing, scoring, and results
   systems for a wide range of Olympic and international sports under the Omega and
@@ -94,8 +95,8 @@ Individual Swiss Timing aquatic products are catalogued in the
 [StartTime II](../equipment/swimming/starter/starttime-ii.md),
 [StartTime III](../equipment/swimming/starter/starttime-iii.md),
 [StartTime IV](../equipment/swimming/starter/starttime-iv.md), and
-[StartTime V](../equipment/swimming/starter/starttime-v.md) electronic starting
-devices that start the race, the
+[StartTime V](../equipment/swimming/starter/starttime-v.md) [swim start systems](../equipment/swimming/starter/index.md)
+that start the race, the
 [in-block and mobile lane speakers](../equipment/swimming/external-speaker/swiss-timing.md)
 it drives under and around each block, and the
 [OBL2 Pro backstroke ledge](../equipment/swimming/backstroke-start/swiss-timing.md)

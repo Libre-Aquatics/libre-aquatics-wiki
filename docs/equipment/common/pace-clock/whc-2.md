@@ -133,7 +133,7 @@ and no timing console in the loop.[^f1050][^f972]
 ## Role in training
 
 The segment timer holds the workout and the display only shows it. The
-[pace clocks overview](index.md) sets out the alternatives, which are a clock programmed at
+overview of [swim pace clocks](index.md) sets out the alternatives, which are a clock programmed at
 the unit itself, a timing console running a pace clock program, and the wired
 [pace clock controller](upc-c.md) that preceded this one. Two things separate the segment
 timer from that console: its link needs no cable, and it fits in one hand.

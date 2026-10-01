@@ -52,5 +52,5 @@ NovaStar LED display controller that CTS has shipped between a
 CTS groups it with the controllers whose own output can be captured for streaming without
 a pass-through capture device.
 
-See the [scoreboard control overview](index.md) for the shared background that applies to
+See the overview of [scoreboard control equipment](index.md) for the shared background that applies to
 every video display controller.

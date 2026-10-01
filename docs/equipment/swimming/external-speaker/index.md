@@ -1,6 +1,8 @@
 ---
 title: External speakers
 seoTitle: Swimming start system external speakers
+description: "Swimming start system external speakers: under-block, in-block, auxiliary, far-end and underwater types, how they are driven, and models from each manufacturer."
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing

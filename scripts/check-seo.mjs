@@ -8,8 +8,19 @@
  * exactly one <h1>, a canonical that does not point at the page's own URL, a
  * noindex page listed in the sitemap, an <img> with no alt attribute
  * (alt="" is a deliberate decorative image and passes), a photograph with no
- * author and licence in src/data/image-credits.mjs, and a JSON-LD block that
- * is not valid JSON.
+ * author and licence in src/data/image-credits.mjs, a JSON-LD block that
+ * is not valid JSON, a BreadcrumbList item that is not a built page (a
+ * crumb pointing at a 404 or a redirect stub), and a JSON-LD datePublished or
+ * dateModified without a time and a UTC offset (a bare date is invalid there,
+ * though it is valid as a sitemap <lastmod>), and any JSON-LD node typed
+ * Product or SoftwareApplication. Google validates those for offers and
+ * ratings wherever they appear, and a reference page has neither; subjects are
+ * typed Thing with an additionalType instead (src/lib/entity.ts). A photograph
+ * ImageObject is checked against src/data/image-credits.mjs too: one of our
+ * own photographs must carry license, acquireLicensePage, creator, creditText
+ * and copyrightNotice, and a third-party image must carry none of them. Every
+ * ImageObject, the Open Graph card included, must carry a url equal to its
+ * contentUrl.
  *
  * Warnings are printed and never fail: descriptions that fell back to the site
  * description, descriptions shared by two indexable pages, titles long enough
@@ -96,6 +107,54 @@ const errors = [];
 const warnings = [];
 const pages = [];
 
+// ISO 8601 datetime with a time and an offset (Z or ±hh:mm), the form Google's
+// structured-data validator requires for datePublished and dateModified.
+const DATETIME = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2}(\.\d+)?)?(Z|[+-]\d{2}:\d{2})$/;
+
+// Types Google validates for offers and ratings; see the header.
+const MERCHANT_TYPES = new Set(['Product', 'SoftwareApplication']);
+
+// Licence metadata an owned photograph's ImageObject must carry, and a
+// third-party image's must not.
+const PHOTO_LICENSE_FIELDS = ['license', 'acquireLicensePage', 'creator', 'creditText', 'copyrightNotice'];
+
+/** Every ImageObject anywhere in a JSON-LD value. */
+function imageObjects(value, out = []) {
+  if (Array.isArray(value)) value.forEach((v) => imageObjects(v, out));
+  else if (value && typeof value === 'object') {
+    if (value['@type'] === 'ImageObject') out.push(value);
+    Object.values(value).forEach((v) => imageObjects(v, out));
+  }
+  return out;
+}
+
+/** Every @type anywhere in a JSON-LD value, nested nodes included. */
+function nodeTypes(value, out = []) {
+  if (Array.isArray(value)) value.forEach((v) => nodeTypes(v, out));
+  else if (value && typeof value === 'object') {
+    for (const [key, v] of Object.entries(value)) {
+      if (key === '@type') out.push(...[v].flat());
+      else nodeTypes(v, out);
+    }
+  }
+  return out;
+}
+
+/** Every datePublished/dateModified anywhere in a JSON-LD value, as [key, value]. */
+function dateFields(value, out = []) {
+  if (Array.isArray(value)) value.forEach((v) => dateFields(v, out));
+  else if (value && typeof value === 'object') {
+    for (const [key, v] of Object.entries(value)) {
+      if (key === 'datePublished' || key === 'dateModified') out.push([key, v]);
+      else dateFields(v, out);
+    }
+  }
+  return out;
+}
+// [route, item URL] for every BreadcrumbList item, checked once every built
+// page is known.
+const crumbItems = [];
+
 for (const file of htmlFiles(distDir)) {
   const html = fs.readFileSync(file, 'utf8');
   const route = routeOf(file);
@@ -151,7 +210,39 @@ for (const file of htmlFiles(distDir)) {
     /<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi,
   )) {
     try {
-      JSON.parse(script[1]);
+      const data = JSON.parse(script[1]);
+      for (const type of new Set(nodeTypes(data))) {
+        if (MERCHANT_TYPES.has(type)) {
+          errors.push(`${route}: JSON-LD has a ${type} node; use Thing with an additionalType`);
+        }
+      }
+      for (const image of imageObjects(data)) {
+        if (!image.contentUrl || image.url !== image.contentUrl) {
+          errors.push(`${route}: ImageObject ${image.contentUrl ?? '(no contentUrl)'} has url ${image.url ?? '(missing)'}, expected its contentUrl`);
+        }
+        const src = image.contentUrl?.startsWith(SITE) ? image.contentUrl.slice(SITE.length) : null;
+        const credit = src ? IMAGE_CREDITS[src] : undefined;
+        if (!credit) continue;
+        const present = PHOTO_LICENSE_FIELDS.filter((key) => image[key] !== undefined);
+        if (credit.owned && present.length !== PHOTO_LICENSE_FIELDS.length) {
+          const missing = PHOTO_LICENSE_FIELDS.filter((key) => !present.includes(key));
+          errors.push(`${route}: own photograph ${src} lacks ${missing.join(', ')} in JSON-LD`);
+        }
+        if (!credit.owned && present.length > 0) {
+          errors.push(`${route}: third-party image ${src} carries ${present.join(', ')} in JSON-LD`);
+        }
+      }
+      for (const [key, value] of dateFields(data)) {
+        if (typeof value !== 'string' || !DATETIME.test(value)) {
+          errors.push(`${route}: JSON-LD ${key} "${value}" is not a datetime with a time and offset`);
+        }
+      }
+      for (const node of data['@graph'] ?? [data]) {
+        if (node['@type'] !== 'BreadcrumbList') continue;
+        for (const item of node.itemListElement ?? []) {
+          if (item.item) crumbItems.push([route, item.item]);
+        }
+      }
     } catch (error) {
       errors.push(`${route}: JSON-LD block does not parse (${error.message})`);
     }
@@ -166,6 +257,14 @@ for (const file of htmlFiles(distDir)) {
   for (const a of content.matchAll(/<a\b[^>]*>/gi)) {
     const target = internalRoute(attr(a[0], 'href'), route);
     if (target && target !== route) page.links.add(target);
+  }
+}
+
+const builtRoutes = new Set(pages.map((p) => p.route));
+for (const [route, item] of crumbItems) {
+  const target = internalRoute(item, route);
+  if (!target || !builtRoutes.has(target)) {
+    errors.push(`${route}: breadcrumb item ${item} is not a built page`);
   }
 }
 

@@ -3,6 +3,7 @@ title: Colorado Time Systems WA-2
 description: >-
   The WA-2 is the 2014 Colorado Time Systems 2.4 GHz wireless scoreboard adapter, the
   generation between the Sky-Fi WA-1 and the WA-3.
+updated: 2026-10-01
 tags:
   - Equipment
   - Scoring
@@ -109,7 +110,7 @@ The WA-2 is a 2.4 GHz wireless scoreboard adapter made by
 [Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS). It replaces the
 data cable between a scoreboard and its data source. One adapter at the source sends the
 scoreboard output by radio, and a second at the board receives it, unless the board has a
-2.4 GHz radio of its own.[^f987][^ds14] It was the second of CTS's three wireless adapters,
+2.4 GHz radio of its own.[^f987][^ds14] It was the second of CTS's three wireless adapters for [scoreboard control](index.md),
 after the 900 MHz [Sky-Fi WA-1](wa-1.md), and it first appears in CTS documents in 2014. The
 [WA-3](wa-3.md), which keeps its specifications and set-ups, had replaced it by
 2019.[^ds14][^ds19][^cts20]

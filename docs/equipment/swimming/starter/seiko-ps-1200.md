@@ -41,7 +41,7 @@ conforming to FINA rules and as Japan Swimming Federation Class AA and Class
 A.[^wb2009] It is the earliest generation of the company's swimming start sound
 generator that can be documented, and it was replaced by the much smaller
 [PS-1300](seiko-ps-1300.md).[^wb2013][^wb2014] This article is a starting point; the
-[start-systems overview](index.md) covers the shared background that applies to every
+overview of [swim start systems](index.md) covers the shared background that applies to every
 starter.
 
 ## Naming and product line

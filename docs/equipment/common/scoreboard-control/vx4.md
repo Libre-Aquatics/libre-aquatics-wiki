@@ -56,5 +56,5 @@ processing that Colorado Time Systems has shipped between a
 CTS groups it with the controllers whose own output can be captured for streaming without a
 pass-through capture device.
 
-See the [scoreboard control overview](index.md) for the shared background that applies to
+See the overview of [scoreboard controllers](index.md) for the shared background that applies to
 every video display controller.

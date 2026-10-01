@@ -3,6 +3,7 @@ title: NovaStar
 description: >-
   NovaStar is a Chinese manufacturer of LED display control systems, whose controllers
   Colorado Time Systems ships with its video boards.
+updated: 2026-10-01
 tags:
   - Equipment
   - Reference
@@ -46,8 +47,8 @@ which needs more than the CTS connection to be worth writing.
 -->
 
 This article is a stub. NovaStar, legally Xi'an NovaStar Tech Co., Ltd., is a Chinese
-manufacturer of LED display control systems whose controllers
-[Colorado Time Systems](colorado-time-systems.md) ships between a display computer and an
+manufacturer of LED display control systems whose
+[scoreboard controllers](../equipment/common/scoreboard-control/index.md) [Colorado Time Systems](colorado-time-systems.md) ships between a display computer and an
 LED video board.
 
 See the [scoreboards overview](../equipment/common/scoreboard/index.md) for how those

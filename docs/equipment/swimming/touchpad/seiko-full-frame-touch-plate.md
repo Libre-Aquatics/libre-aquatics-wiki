@@ -39,7 +39,7 @@ Aquatics compliance line.[^jp][^catalogue]
 
 ## Role in the timing system
 
-The [touchpads overview](index.md) covers the history of automatic touchpad timing and
+The overview of [touch pads](index.md) covers the history of automatic touchpad timing and
 the World Aquatics requirements that apply to every touch panel. This plate reports to
 a lane box, one per lane, which sorts that lane's signals and passes them to the
 `PT-9000` printing timer at the head of Seiko's competitive swimming

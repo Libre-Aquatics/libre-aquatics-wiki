@@ -1,6 +1,7 @@
 ---
 title: Colorado Time Systems Backstroke Start Device
 seoTitle: CTS Backstroke Start Device
+description: "Colorado Time Systems Backstroke Start Device (143081-C): self-retracting wedge design, mounting, operation, effect on timing, patents, care, and specs."
 tags:
   - Equipment
   - Timing
@@ -26,8 +27,7 @@ infobox:
 ---
 
 The Backstroke Start Device made by
-[Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS) is a
-[backstroke start device](index.md): a mechanical foot wedge that gives a backstroke
+[Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS) is one of several [backstroke ledges](index.md): a mechanical foot wedge that gives a backstroke
 swimmer a fixed, non-slip foothold on the wall at the start of a race. A swimmer in the
 water pulls an angled wedge down the face of the wall or touchpad, locks it in place,
 braces both feet against it, and starts from it. Once the swimmer leaves the wall the

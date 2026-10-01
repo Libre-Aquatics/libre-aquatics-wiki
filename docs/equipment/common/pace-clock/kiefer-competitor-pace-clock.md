@@ -37,5 +37,5 @@ lane-line advertisements.
 
 This article is a stub. Kiefer McNeil of Akron, Ohio advertised its Competitor pace clocks as a new design in 1980, in electric and C-cell battery versions with a polyethylene body, for wall mounting or on roll-away stands, and Competitor clocks were still advertised in 1996.
 
-See the [pace clocks overview](index.md) for the history and shared background that apply to
+See the overview of [pace clocks](index.md) for the history and shared background that apply to
 every pace clock.

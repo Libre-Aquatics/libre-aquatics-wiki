@@ -49,4 +49,4 @@ installed light-reflective scoreboard to LED digits, offered in the company's 20
 with no detail beyond an invitation to ask a sales consultant.
 
 See the [LED-R](led-r.md) article for the LED modules it upgraded boards to, and the
-[scoreboards overview](index.md) for the difference between the two digit technologies.
+overview of [aquatic scoreboards](index.md) for the difference between the two digit technologies.

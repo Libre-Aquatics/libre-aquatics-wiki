@@ -60,7 +60,7 @@ kit at US$2,695.[^support][^prodisc][^dealer]
 
 ## Role in the timing system
 
-The [timers overview](index.md) covers what a swim timing console is and the
+The overview of [swim timing consoles](index.md) covers what a swim timing console is and the
 governing-body requirements that apply to every console. The OmniSport 2000's part
 is the Daktronics implementation. Swimming mode covers a ten-lane pool, timing and judging
 it automatically from a touchpad at either end for near-end and far-end splits, from one

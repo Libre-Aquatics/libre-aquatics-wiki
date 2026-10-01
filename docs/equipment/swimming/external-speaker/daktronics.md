@@ -29,7 +29,7 @@ sealed volume control.[^manual][^specsheet] As with the
 Daktronics: the `306-45` is the reflex horn made by Fourjay Industries of
 Dayton, Ohio. The HS-200's auxiliary and backstroke speakers are covered in the
 [HS-200](../starter/hs-200.md) article; shared background on lane speakers is in
-the [external-speakers overview](index.md).
+the overview of [starter speakers](index.md).
 
 ## Design and construction
 

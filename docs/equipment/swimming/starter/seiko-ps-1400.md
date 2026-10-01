@@ -1,6 +1,8 @@
 ---
 title: Seiko PS-1400 Electronic Start Sound Generator
 seoTitle: Seiko PS-1400 Start Sound Generator
+description: "Seiko PS-1400 start sound generator for swimming: specifications, start and alarm tones, speaker expansion, timer connections, and starts for deaf swimmers."
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -47,7 +49,7 @@ portable [Electronic Starting System](seiko-electronic-starting-system.md), it i
 sold as swimming equipment and is certified for the sport: Seiko states that it
 conforms to World Aquatics rules and is certified Class AA and Class A by the Japan
 Swimming Federation.[^catalogue][^jp] This article is a starting point; the
-[start-systems overview](index.md) covers the shared background that applies to
+overview of [swim start systems](index.md) covers the shared background that applies to
 every starter.
 
 ## Naming and product line

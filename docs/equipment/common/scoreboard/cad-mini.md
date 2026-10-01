@@ -59,4 +59,4 @@ modules, or a multi-line swimming or diving board of equivalent size, so that th
 can be rolled out for a session and away afterwards.
 
 See the [mini LED scoreboard](mini-scoreboard.md) article for the boards they carry, and
-the [scoreboards overview](index.md) for the shared background.
+the overview of [aquatic scoreboards](index.md) for the shared background.

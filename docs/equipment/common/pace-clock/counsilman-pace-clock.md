@@ -44,5 +44,5 @@ Still to research: the pre-1964 models; who manufactured them; when sales ended.
 
 This article is a stub. The Counsilman Pace Clock was a sweep-hand training clock sold by mail by the Indiana University coach James Counsilman, advertised from 1964 at $65.00 with a 3 ft face, together with a 12 in battery model called the Porta-Pace.
 
-See the [pace clocks overview](index.md) for the history and shared background that apply to
+See the overview of [pace clocks](index.md) for the history and shared background that apply to
 every pace clock.

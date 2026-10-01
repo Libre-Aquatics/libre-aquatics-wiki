@@ -1,0 +1,138 @@
+---
+// schema.org JSON-LD for the page head, emitted as one script holding a single
+// @graph. The Main Page describes the site (WebSite) and its publisher
+// (Organization); article pages describe themselves (TechArticle, about their
+// subject) and their section trail (BreadcrumbList). Blocks a page builds
+// itself, such as a tag page's CollectionPage, join the same graph. A noindex
+// page emits nothing: it is kept out of results, so markup for results is moot.
+// The WebSite has no SearchAction: Google retired the sitelinks search box in
+// November 2024 and no longer reads it.
+import { withBase } from '../lib/routes';
+import { SITE_NAME, SITE_DESCRIPTION, SITE_LICENSE, PUBLISHER } from '../lib/seo';
+
+interface Props {
+  /** The page heading; the TechArticle headline and the last breadcrumb. */
+  title: string;
+  description: string;
+  isHome: boolean;
+  /** Only 'article' pages get a TechArticle. */
+  ogType: 'website' | 'article';
+  noindex: boolean;
+  /** Absolute URL of the page's Open Graph card, the image fallback. */
+  ogImage: string;
+  /** ISO date of the last content change (front-matter `updated`, else first commit). */
+  modifiedTime?: string;
+  /** ISO date the page was first committed. */
+  publishedTime?: string;
+  /** Ancestor sections, outermost first; the page itself is appended here. */
+  breadcrumbs: { title: string; route: string }[];
+  /** The article's photographs as ImageObjects (seo.ts photoObjects()). */
+  photos: object[];
+  /** The entity the article describes (entity.ts aboutEntity()), if any. */
+  about?: object;
+  /** Organizations the TechArticle mentions: the subject's maker or author. */
+  mentions?: object[];
+  /** Further nodes a page builds itself, without @context. */
+  extra: object[];
+}
+const {
+  title,
+  description,
+  isHome,
+  ogType,
+  noindex,
+  ogImage,
+  modifiedTime,
+  publishedTime,
+  breadcrumbs,
+  photos,
+  about,
+  mentions = [],
+  extra,
+} = Astro.props;
+
+// trailingSlash is 'always', so Astro.url.pathname already carries the slash.
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const siteUrl = new URL(withBase('/'), Astro.site).href;
+const websiteId = `${siteUrl}#website`;
+// The article's own photographs come ahead of the generated card, because the
+// card is a title and a description rendered as a picture and is no use in
+// image results. The card stays as a fallback for pages with no photograph.
+// It is an ImageObject like the photographs, at the size the og:image tags in
+// BaseLayout.astro declare, with no licence metadata of its own.
+const cardImage = {
+  '@type': 'ImageObject',
+  contentUrl: ogImage,
+  url: ogImage,
+  width: 1200,
+  height: 630,
+};
+const articleImages = photos.length > 0 ? [...photos, cardImage] : [cardImage];
+
+const graph: object[] = [];
+if (!noindex) {
+  if (isHome) {
+    graph.push({
+      '@type': 'WebSite',
+      '@id': websiteId,
+      name: SITE_NAME,
+      alternateName: 'Libre Aquatics',
+      url: siteUrl,
+      description: SITE_DESCRIPTION,
+      inLanguage: 'en-US',
+      publisher: { '@id': PUBLISHER['@id'] },
+    });
+    // Named separately from the WebSite so the publisher referenced by every
+    // article's TechArticle resolves to a described entity.
+    graph.push(PUBLISHER);
+  } else {
+    if (breadcrumbs.length > 0) {
+      graph.push({
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          ...breadcrumbs.map((crumb, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            name: crumb.title,
+            item: new URL(crumb.route, Astro.site).href,
+          })),
+          // The page itself closes the trail and takes no item URL.
+          { '@type': 'ListItem', position: breadcrumbs.length + 1, name: title },
+        ],
+      });
+    }
+    if (ogType === 'article') {
+      graph.push({
+        '@type': 'TechArticle',
+        headline: title,
+        description,
+        url: canonical,
+        mainEntityOfPage: canonical,
+        inLanguage: 'en-US',
+        ...(publishedTime ? { datePublished: publishedTime } : {}),
+        ...(modifiedTime ? { dateModified: modifiedTime } : {}),
+        image: articleImages,
+        ...(about ? { about } : {}),
+        ...(mentions.length > 0 ? { mentions } : {}),
+        license: SITE_LICENSE,
+        // A wiki has no bylines; the articles are the project's collective
+        // work, so the publishing organization stands as author too.
+        author: PUBLISHER,
+        publisher: PUBLISHER,
+        isPartOf: { '@id': websiteId },
+      });
+    }
+  }
+  graph.push(...extra);
+}
+// '<' must not appear raw inside a script element.
+const text =
+  graph.length > 0
+    ? JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(
+        /</g,
+        '\\u003c',
+      )
+    : '';
+---
+
+{text && <script type="application/ld+json" set:html={text} />}

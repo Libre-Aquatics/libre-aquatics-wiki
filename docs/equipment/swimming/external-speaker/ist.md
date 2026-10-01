@@ -28,8 +28,7 @@ company described the system as putting a speaker under each block so that
 every swimmer has the same advantage on the start.[^ubss] IST does not disclose
 who makes the speaker or publish an impedance figure, and as of 2026 the
 under-block products no longer appear in the company's current
-catalog.[^cat40w] Shared background on lane speakers is in the
-[external-speakers overview](index.md).
+catalog.[^cat40w] Shared background is in the overview of [lane speakers](index.md).
 
 ## Design and construction
 

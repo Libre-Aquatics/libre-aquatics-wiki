@@ -238,8 +238,7 @@ was tested against either one.
 
 Out of competition the same unit shows the time of day, and CTS markets it as a pace
 clock.[^ds18][^ctsdc] A [handheld segment timer](whc-2.md) can also drive it through
-interval sets. Deck clocks then show the rep time and the rep number.[^f1050] The shared
-background on pace clocks is in the [pace clocks overview](index.md).
+interval sets. Deck clocks then show the rep time and the rep number.[^f1050] The shared background is in the overview of [pace clocks](index.md).
 
 The earliest dated document for the clock is the first known edition of its user guide, F985
 Rev. 201505, from May 2015.[^f985a] The CTS catalogue of the same year lists it both with the

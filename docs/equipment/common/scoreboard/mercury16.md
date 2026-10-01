@@ -80,5 +80,5 @@ in indoor, outdoor and Sun Series forms and driven from a computer running
 [DisplayLink](../../../software/displaylink.md) software.
 
 See the [Myriad](myriad.md) article for the two-color board it shared a manual with, and
-the [scoreboards overview](index.md) for the shared background that applies to every matrix
+the overview of [aquatic scoreboards](index.md) for the shared background that applies to every matrix
 display.

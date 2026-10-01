@@ -6,7 +6,7 @@
 
 import { STUB_MARKER } from './stub.mjs';
 import { imageSize } from './imageSize';
-import { IMAGE_CREDITS, CREDITS_PAGE } from '../data/image-credits.mjs';
+import { IMAGE_CREDITS, LICENSE_NAMES, CREDITS_PAGE } from '../data/image-credits.mjs';
 
 export const SITE_NAME = 'Libre Aquatics Wiki';
 
@@ -123,29 +123,45 @@ export function findPhotos(body: string | undefined): Photo[] {
   return out;
 }
 
+interface Credit {
+  creator: string;
+  license: string;
+  owned?: boolean;
+  year?: number;
+}
+
 /**
- * schema.org ImageObjects for an article's photographs, carrying the licence
- * metadata image search reads (creator, license, creditText,
- * acquireLicensePage) from src/data/image-credits.mjs. `site` is the absolute
- * origin the relative paths resolve against.
+ * schema.org ImageObjects for an article's photographs. A photograph the
+ * project owns carries the licence metadata image search reads (license,
+ * acquireLicensePage, creator, creditText, copyrightNotice) from
+ * src/data/image-credits.mjs; a third-party image carries none, so the page
+ * makes no licensing claim about it. `site` is the absolute origin the
+ * relative paths resolve against.
  */
 export function photoObjects(photos: Photo[], site: URL | string): object[] {
   return photos.map((photo) => {
-    const credit = (IMAGE_CREDITS as Record<string, { creator: string; license: string }>)[
-      photo.src
-    ];
+    const credit = (IMAGE_CREDITS as Record<string, Credit>)[photo.src];
+    const licenseName = credit
+      ? (LICENSE_NAMES as Record<string, string>)[credit.license]
+      : undefined;
+    const href = new URL(photo.src, site).href;
     return {
       '@type': 'ImageObject',
-      contentUrl: new URL(photo.src, site).href,
+      // Google reads both; url is flagged as missing without it.
+      contentUrl: href,
+      url: href,
       width: photo.width,
       height: photo.height,
       caption: photo.caption || photo.alt,
-      ...(credit
+      ...(credit?.owned && licenseName
         ? {
-            creator: { '@type': 'Person', name: credit.creator },
-            creditText: credit.creator,
             license: credit.license,
             acquireLicensePage: new URL(CREDITS_PAGE, site).href,
+            creator: { '@type': 'Person', name: credit.creator },
+            creditText: `${credit.creator} / Libre Aquatics, ${licenseName}`,
+            ...(credit.year
+              ? { copyrightNotice: `© ${credit.year} ${credit.creator}, licensed ${licenseName}` }
+              : {}),
           }
         : {}),
     };

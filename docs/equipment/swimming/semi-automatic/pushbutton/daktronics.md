@@ -1,5 +1,6 @@
 ---
 title: Daktronics Pushbutton
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -31,7 +32,7 @@ standing behind a lane presses it as the swimmer touches the wall, and the
 a backup time for the lane. The button is the manual check on each lane's
 [T-7000 series touchpad](../../touchpad/t-7000.md).[^omnisport][^ed13584]
 The console reads up to three buttons per lane alongside the pad.[^omnisport][^kbcheck]
-This is the arrangement the rulebooks call semi-automatic timing: World Aquatics
+This is the arrangement the rulebooks call [semi-automatic timing](../index.md): World Aquatics
 defines it as a system the starter initiates and timekeepers stop by hand when
 the swimmer touches, and USA Swimming and the NCAA both build their orders of
 precedence around how many such buttons a lane carries.[^wacr][^usas][^ncaa]

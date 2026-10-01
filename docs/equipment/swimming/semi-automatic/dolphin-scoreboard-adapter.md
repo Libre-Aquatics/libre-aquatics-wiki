@@ -77,4 +77,4 @@ boards.
 
 See the [Dolphin Wireless Stopwatch Timing System](dolphin.md) article for how the
 Dolphin software drives the display, and the
-[semi-automatic timing overview](index.md) for the shared background.
+overview of [semi-automatic timing](index.md) for the shared background.

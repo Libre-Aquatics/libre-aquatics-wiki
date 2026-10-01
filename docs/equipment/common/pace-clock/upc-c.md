@@ -121,7 +121,7 @@ can pace a different lane.[^f901]
 
 The controller is the workout source rather than the display: it sends intervals over a
 data cable to whatever CTS clock or numeric board is connected, and the display counts
-them. The [pace clocks overview](index.md) sets out the alternatives, which are a clock
+them. The overview of [pace clocks](index.md) sets out the alternatives, which are a clock
 programmed at the unit itself, a timing console running a pace clock program, or the later
 wireless handheld.
 

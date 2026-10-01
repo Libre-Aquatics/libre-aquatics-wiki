@@ -48,6 +48,8 @@ interface Props {
   photos?: object[];
   /** The entity the article describes; forwarded to BaseLayout. */
   about?: object;
+  /** Organizations the article mentions for its subject (entity.ts subjectMentions()). */
+  mentions?: object[];
   /** Page-built structured-data blocks; forwarded to BaseLayout. */
   jsonLd?: object[];
   /** Generated "Related articles" links shown after the article body. */
@@ -74,6 +76,7 @@ const {
   publishedTime,
   photos,
   about,
+  mentions,
   jsonLd,
   related = [],
   noindex = false,
@@ -94,6 +97,7 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
   publishedTime={publishedTime}
   photos={photos}
   about={about}
+  mentions={mentions}
   jsonLd={jsonLd}
 >
   <div class="layout">

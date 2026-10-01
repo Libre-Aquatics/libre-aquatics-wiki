@@ -25,10 +25,6 @@ export function lastUpdatedISO(filePath: string | undefined): string {
   return iso;
 }
 
-export function lastUpdated(filePath: string | undefined): string {
-  return formatDate(lastUpdatedISO(filePath));
-}
-
 const firstCache = new Map<string, string>();
 
 /**
@@ -59,8 +55,28 @@ export function firstCommittedISO(filePath: string | undefined): string {
   return iso;
 }
 
+/**
+ * ISO date of the article's last content change, the date every "modified"
+ * signal uses (dateModified, article:modified_time, the visible "Last updated"
+ * line; astro.config.mjs applies the same rule to the sitemap). Front-matter
+ * `updated` wins when set, as UTC midnight of that day in full ISO 8601
+ * (2026-10-01T00:00:00.000Z), because structured data requires a time and an
+ * offset; otherwise it is the date the file was first committed, or '' when
+ * git has none. The latest commit is deliberately not used: a typo fix or a
+ * bulk reformat touches every file without changing what a page says.
+ */
+export function contentModifiedISO(updated: Date | undefined, filePath: string | undefined): string {
+  if (updated) return updated.toISOString();
+  return firstCommittedISO(filePath);
+}
+
 /** An ISO date as the long US form the article footers use; build date if empty. */
 export function formatDate(iso: string): string {
   const date = iso ? new Date(iso) : new Date();
-  return new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(date);
+  // Front-matter dates arrive as UTC midnight (a bare YYYY-MM-DD, or the Z form
+  // contentModifiedISO() returns), which a US time zone would show as the day
+  // before; format those in UTC so the calendar date is kept. Git dates carry
+  // their own offset and are left in local time.
+  const timeZone = /^\d{4}-\d{2}-\d{2}$|Z$/.test(iso) ? 'UTC' : undefined;
+  return new Intl.DateTimeFormat('en-US', { dateStyle: 'long', timeZone }).format(date);
 }

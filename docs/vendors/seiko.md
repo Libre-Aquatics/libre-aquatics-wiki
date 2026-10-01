@@ -1,5 +1,6 @@
 ---
 title: Seiko
+updated: 2026-10-01
 tags:
   - Equipment
   - Reference
@@ -79,9 +80,9 @@ digital signage, large display boards and baseball scoreboards, and provides tim
 support services at sporting events.[^overview]
 
 - Swimming, a system built around the `PS-1400` electronic start sound generator and
-  the `PT-9000` printing timer, with starting blocks carrying relay take-off sensors,
+  the `PT-9000` printing timer, Seiko's [swim timing console](../equipment/swimming/timers/index.md), with starting blocks carrying relay take-off sensors,
   touch plates, per-lane lane boxes, underwater video, a light-stimulus start signal
-  system for swimmers with a hearing impairment, and scoreboards.[^catalogue]
+  system for swimmers with a hearing impairment, and [scoreboards](../equipment/common/scoreboard/index.md).[^catalogue]
 - Athletics, photo-finish systems, the `PS-200` start signal generator and its
   loud-hailer sets, track timers, photobeam units, wind gauges and field
   equipment.[^rikujyo]
@@ -99,7 +100,8 @@ cross-sport
 whose earlier generations are the
 [PS-105](../equipment/swimming/starter/seiko-ps-105.md),
 [PS-107](../equipment/swimming/starter/seiko-ps-107.md) and
-[PS-109](../equipment/swimming/starter/seiko-ps-109.md); and the two touch plates, the
+[PS-109](../equipment/swimming/starter/seiko-ps-109.md); and the two touch plates (Seiko's name for its
+[swimming touchpads](../equipment/swimming/touchpad/index.md)), the
 [AQUA type](../equipment/swimming/touchpad/seiko-aqua-touch-plate.md) and the narrower
 [full-frame type](../equipment/swimming/touchpad/seiko-full-frame-touch-plate.md).
 Timers and scoreboards are added as those pages are written.

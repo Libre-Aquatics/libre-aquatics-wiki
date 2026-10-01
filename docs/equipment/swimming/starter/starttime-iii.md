@@ -1,5 +1,7 @@
 ---
 title: Swiss Timing StartTime III
+description: "Swiss Timing StartTime III (StartTime 3) starter: specifications, microphone unit, setup menu, audio, connectors, and a comparison with the StartTime IV."
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -41,7 +43,7 @@ with the successor [StartTime IV](starttime-iv.md).[^manual][^egun] It succeeded
 DIP switch rather than the setup menu of the III. Swiss Timing no longer publishes the
 manual for the discontinued device online, so this article cites it by document number
 rather than hosting a copy.[^manual] This article covers the StartTime III specifically;
-the [start-systems overview](index.md) covers the shared background that applies to
+the overview of [swim start systems](index.md) covers the shared background that applies to
 every starter.
 
 ## Design and hardware

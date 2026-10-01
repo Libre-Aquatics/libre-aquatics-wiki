@@ -58,5 +58,5 @@ This article is a stub. The System 4000 is the Colorado Time Systems sports timi
 of the late 1980s, the generation before the [System 5](system-5.md), which took its
 sport-specific programs on cards inserted at the rear panel.
 
-See the [timers overview](index.md) for the shared background that applies to every CTS
+See the overview of [swim timing consoles](index.md) for the shared background that applies to every CTS
 timing console.

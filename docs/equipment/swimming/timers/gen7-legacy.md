@@ -1,5 +1,7 @@
 ---
 title: Colorado Time Systems Gen7 Legacy Timer
+description: "Colorado Time Systems Gen7 Legacy Timer (GEN7-TMR-L): reuse of existing CTS deck wiring, software, specifications, installation, and the Serial timer compared."
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -45,7 +47,7 @@ infobox:
      visible difference, and no picture of them is held. This page reuses the Serial
      timer's front view meanwhile, which the caption explains. -->
 
-The Gen7 Legacy Timer (part number `GEN7-TMR-L`) is a swimming timing console made by
+The Gen7 Legacy Timer (part number `GEN7-TMR-L`) is a [swim timing console](index.md) made by
 [Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS). It
 is one of the two consoles in the company's Gen7 swim-timing platform: it collects the
 finish signals from each lane's touchpad and backup pushbuttons, runs the race clock,

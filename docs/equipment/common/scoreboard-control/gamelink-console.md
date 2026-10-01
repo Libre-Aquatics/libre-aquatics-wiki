@@ -51,5 +51,5 @@ that entered team-sport scoring data, either as an input to
 [DisplayLink](../../../software/displaylink.md) or, with a standalone template loaded, to a
 matrix display with no display computer in the path.
 
-See the [scoreboard control overview](index.md) for the shared background, and the
+See the overview of [scoreboard controllers](index.md) for the shared background, and the
 [scoreboards overview](../scoreboard/index.md) for the displays it fed.

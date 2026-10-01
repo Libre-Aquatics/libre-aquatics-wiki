@@ -3,6 +3,7 @@ title: Colorado Time Systems WTTC-1
 description: >-
   The WTTC-1 is the Colorado Time Systems wireless tabletop controller that runs a
   multisport scoreboard, deck clocks and shot clocks for water polo and other sports.
+updated: 2026-10-01
 tags:
   - Equipment
   - Scoring
@@ -119,7 +120,7 @@ mean; the radio module; the Tabletop Quick Reference Guide; whether any sport be
 polo has a full manual like F1071.
 -->
 
-The WTTC-1 is a wireless tabletop controller made by
+The WTTC-1 is a wireless tabletop [scoreboard controller](index.md) made by
 [Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS). An operator at the
 officials' table uses it to run the clocks, scores and fouls of a game on CTS's 2.4 GHz
 scoreboards, deck clocks and pace clocks, with no timing console involved.[^f1071][^f1045] CTS

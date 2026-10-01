@@ -21,8 +21,10 @@ function docFile(url) {
   return [`docs/${route}.md`, `docs/${route}/index.md`].find((file) => existsSync(file));
 }
 
-// Sitemap <lastmod> from git, mirroring src/lib/gitDates.ts (which cannot be
-// imported here because the config is evaluated before Astro's TS pipeline).
+// Sitemap <lastmod>, the same rule as contentModifiedISO() in
+// src/lib/gitDates.ts (which cannot be imported here because the config is
+// evaluated before Astro's TS pipeline): front-matter `updated` when set,
+// otherwise the date the file was first committed, never the latest commit.
 // Only routes backed by a docs/ Markdown file get a date; the virtual pages
 // (Main Page, categories) are left without one. CI must check out with
 // fetch-depth: 0 or git reports no date and the entry is skipped.
@@ -30,9 +32,21 @@ function docLastmod(url) {
   const file = docFile(url);
   if (!file) return undefined;
   try {
-    return execFileSync('git', ['log', '-1', '--format=%cI', '--', file], {
-      encoding: 'utf8',
-    }).trim() || undefined;
+    // YAML reads a bare date as a Date at UTC midnight.
+    const { updated } = matter(readFileSync(file, 'utf8')).data;
+    if (updated instanceof Date) return updated.toISOString().slice(0, 10);
+    if (updated) return String(updated);
+  } catch {
+    // Unreadable front matter: fall through to git.
+  }
+  try {
+    const dates = execFileSync(
+      'git',
+      ['log', '--follow', '--diff-filter=A', '--format=%cI', '--', file],
+      { encoding: 'utf8' },
+    ).trim();
+    // Newest first; the last line is the original addition.
+    return dates.split('\n').pop() || undefined;
   } catch {
     // git unavailable: leave the entry without lastmod.
     return undefined;

@@ -3,6 +3,7 @@ title: Colorado Time Systems WA-3
 description: >-
   The WA-3 is the Colorado Time Systems 2.4 GHz wireless scoreboard adapter that carries
   data from a timing console, laptop or controller to CTS scoreboards and video boards.
+updated: 2026-10-01
 tags:
   - Equipment
   - Scoring
@@ -129,7 +130,7 @@ The WA-3 is a 2.4 GHz wireless scoreboard adapter made by
 cable between a scoreboard and whatever feeds it. One adapter plugs into the data source and
 sends its scoreboard output by radio, and a second adapter at the display receives it, unless
 the display has a 2.4 GHz radio of its own.[^f1045][^ds19] The data source can be a timing
-console, a laptop running CTS software, or one of CTS's wireless controllers. CTS names
+console, a laptop running CTS software, or one of CTS's wireless [scoreboard controllers](index.md). CTS names
 water polo, diving, swimming and synchronized swimming as its uses.[^ds19]
 
 ## Role in the scoreboard system

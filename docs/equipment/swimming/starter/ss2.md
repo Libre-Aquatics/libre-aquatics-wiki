@@ -160,7 +160,7 @@ late by an amount that grows with distance from the nearest speaker. Research on
 sprint starts has measured that penalty directly: reaction times lengthen
 the farther a competitor sits from the source of the sound.[^brown] CTS notes a second
 benefit, that a visible signal serves swimmers with a hearing impairment; see
-the [start-systems overview](index.md) for the governing-body rules behind this
+the overview of [swim start systems](index.md) for the governing-body rules behind this
 practice.[^f503] A weaker or longer start tone indicates a low battery.[^f503]
 
 Both the tone and the flash are required by rule. USA Swimming's rule on

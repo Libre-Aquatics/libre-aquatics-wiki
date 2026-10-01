@@ -44,7 +44,7 @@ it, where its swimming starter, the
 [PS-1400 Electronic Start Sound Generator](seiko-ps-1400.md), is listed as conforming
 to World Aquatics rules and certified by the Japan Swimming
 Federation.[^ipros][^en][^catalogue]
-This article is a starting point; the [start-systems overview](index.md) covers the
+This article is a starting point; the overview of [swim start systems](index.md) covers the
 shared background that applies to every starter.
 
 ## Models and naming

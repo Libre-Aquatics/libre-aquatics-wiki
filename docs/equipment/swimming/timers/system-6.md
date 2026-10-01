@@ -1,5 +1,7 @@
 ---
 title: Colorado Time Systems System 6
+description: "Colorado Time Systems System 6 (SYS6) swim timing console: hardware, connectivity, built-in software, Meet Manager link, specs, and how it compares with Gen7."
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -28,8 +30,9 @@ infobox:
       https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/System6/System_6_Swimming_Manual_F890.pdf
 ---
 
-The System 6 (part number `SYS6`) is a swimming timing and scoring console made by
-[Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS). Unlike
+The System 6 (part number `SYS6`) is a timing and scoring console made by
+[Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS), one of several
+[swim timing consoles](index.md) in the company's line. Unlike
 the [Gen7 timers](gen7-serial.md) that replaced it, the System 6 is a self-contained
 unit: it carries its own backlit LCD, keypad, and timing software, and is operated
 directly from the console rather than from a separate computer. It collects the finish

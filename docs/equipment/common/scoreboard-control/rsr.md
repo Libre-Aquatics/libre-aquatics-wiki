@@ -73,4 +73,4 @@ and the two-button water polo `RSR-3`, are hand switches that plug into a
 shot clock.
 
 See the [WTTC-1](wttc-1.md) article for how the controller assigns the clocks to each unit, and
-the [scoreboard control overview](index.md) for the shared background.
+the overview of [scoreboard controllers](index.md) for the shared background.

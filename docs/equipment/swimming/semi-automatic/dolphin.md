@@ -187,7 +187,7 @@ sells it.[^blog][^shop]
 
 Depending on how it is started, the Dolphin serves either as a semi-automatic timing
 system in its own right or as the backup layer beneath touchpads and buttons. See the
-[semi-automatic timing overview](index.md) for the shared background: what
+overview of [semi-automatic timing](index.md) for the shared background: what
 semi-automatic timing is, how the rulebooks rank primary, secondary and tertiary
 systems, and how multiple times for one lane resolve into an official time.
 

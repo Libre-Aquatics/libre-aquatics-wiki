@@ -41,7 +41,7 @@ covers both pads.[^f147]
 
 ## Role in the timing system
 
-The [touchpads overview](index.md) covers how automatic touchpad timing developed and
+The overview of [swimming touchpads](index.md) covers how automatic touchpad timing developed and
 the World Aquatics requirements that apply to any touch panel. A Standard pad reaches
 the console the same way every CTS pad does, through a cable harness or an in-deck
 plate, and the console measures the elapsed time and drives the

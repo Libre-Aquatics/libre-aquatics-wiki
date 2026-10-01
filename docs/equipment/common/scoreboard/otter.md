@@ -100,7 +100,7 @@ adapter, which is the arrangement the Dolphin article describes.[^f1004]
 ## Role in the timing system
 
 An Otter board is a display, as every numeric board is, and the shared background on that is
-on the [scoreboards overview](index.md). Two things here are its own. It takes data from more
+on the overview of [aquatic scoreboards](index.md). Two things here are its own. It takes data from more
 kinds of source than a cabled board can, whether a CTS console over a cable or over the air, a
 Dolphin system directly, or a RoadRunner timing system on the track version.[^f1004][^f995] It
 also sets its own brightness, from light sensors spread across the face.[^f1004]

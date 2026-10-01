@@ -1,5 +1,6 @@
 ---
 title: Superior Swim Timing
+updated: 2026-10-01
 tags:
   - Equipment
   - Reference
@@ -50,10 +51,10 @@ single location is stated here.[^zoominfo]
 - The SST timer, the external timing box that connects the timing hardware to the
   laptop software over USB.[^sst]
 - The [Atlantis Swimming Starter System](../equipment/swimming/starter/atlantis.md),
-  a portable start system with an internal speaker, a 360 degree LED start
+  a portable [starting system](../equipment/swimming/starter/index.md) with an internal speaker, a 360 degree LED start
   strobe, and a microphone, introduced May 8, 2019.[^atlantis][^announce]
 - The [SST lane speakers](../equipment/swimming/external-speaker/sst.md),
-  under-block lane speakers and 6-, 8-, or 10-lane speaker harnesses that the
+  under-block [starter speakers](../equipment/swimming/external-speaker/index.md) and 6-, 8-, or 10-lane speaker harnesses that the
   Atlantis drives in addition to its internal speaker.[^atlantis][^pricing]
 - A mobile scoreboard, a spectator-facing result view.[^sst]
 - Buttons and cables, and replacement starter microphones for Colorado Time

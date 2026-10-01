@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems
+updated: 2026-10-01
 sameAs:
   - https://en.wikipedia.org/wiki/Colorado_Time_Systems
 tags:
@@ -66,7 +67,7 @@ CTS designs, manufactures, sells, and services timing, scoring, and display
 equipment, with a core focus on aquatics.[^about]
 
 - Aquatic timing, timing consoles (the current line is the Gen7
-  platform), AquaGrip touchpads (which use a patented non-skid surface), start
+  platform), AquaGrip [swimming touchpads](../equipment/swimming/touchpad/index.md) (which use a patented non-skid surface), start
   systems, and dedicated water-polo and diving scoring systems.[^about][^products]
 - Scoreboards & displays, aquatic and multisport scoreboards and LED video
   displays.[^about][^campusrec]
@@ -98,17 +99,18 @@ which replaced the earlier deck-wired
 each lane's finish and the discontinued
 [Standard touchpads](../equipment/swimming/touchpad/standard.md) they replaced, the
 [backup pushbutton](../equipment/swimming/semi-automatic/pushbutton/cts.md) that backs it up, the
-[Dolphin Wireless Stopwatch Timing System](../equipment/swimming/semi-automatic/dolphin.md)
-that replaces that button with a wireless stopwatch and its
+[Dolphin Wireless Stopwatch Timing System](../equipment/swimming/semi-automatic/dolphin.md), a form of
+[semi-automatic timing](../equipment/swimming/semi-automatic/index.md) that replaces that button with a wireless stopwatch and its
 [Dolphin Starter Unit](../equipment/swimming/starter/dolphin-starter-unit.md) and
 [scoreboard adapter](../equipment/swimming/semi-automatic/dolphin-scoreboard-adapter.md), the
-[RJP relay judging platforms](../equipment/swimming/relay-judging/cts.md) that
-judge relay exchanges from the blocks, the
-[backstroke start device](../equipment/swimming/backstroke-start/cts.md) that gives
-backstrokers a fixed foothold at the start, and the
-[lane speakers](../equipment/swimming/external-speaker/cts.md) the start systems drive
-under each block.
-Scoreboard models are added as those pages are written.
+[RJP](../equipment/swimming/relay-judging/cts.md), one of the
+[relay judging platforms](../equipment/swimming/relay-judging/index.md) that judge relay exchanges from the blocks, the
+[backstroke start device](../equipment/swimming/backstroke-start/cts.md), one of several
+[backstroke ledges](../equipment/swimming/backstroke-start/index.md) that give backstrokers a fixed foothold at the start, and the
+[lane speakers](../equipment/swimming/external-speaker/cts.md), the
+[starter speakers](../equipment/swimming/external-speaker/index.md) the start systems drive under each block. CTS also makes
+[aquatic scoreboards](../equipment/common/scoreboard/index.md), the [scoreboard controllers](../equipment/common/scoreboard-control/index.md) and wireless
+adapters that feed them, and [pace clocks](../equipment/common/pace-clock/index.md).
 
 ## In swim timing
 

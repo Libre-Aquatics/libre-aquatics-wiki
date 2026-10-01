@@ -1,6 +1,8 @@
 ---
 title: Colorado Time Systems Championship Start System
 seoTitle: CTS Championship Start System
+description: "Colorado Time Systems Championship Start System (SS): versions and part numbers, deck-wired lane speaker and speedlight connections, specs, and accessories."
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -48,7 +50,7 @@ alternative. Its successor is the
 [Championship Elite](championship-elite-start-system.md) (`SSE`), and its
 predecessor is the legacy
 [Championship Start System (CHAMP-SSM)](champ-ssm.md) generation. For the full
-lineup and a side-by-side comparison, see the [start-systems overview](index.md).
+lineup and a side-by-side comparison, see the overview of [swim start systems](index.md).
 
 ### Versions and part numbers
 

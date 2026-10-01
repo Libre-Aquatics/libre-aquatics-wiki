@@ -68,4 +68,4 @@ Primary & Secondary pair of complete timers with a data switch (`3480.912`).
 
 It works with the [StartTime V](../starter/starttime-v.md) starter and connects to
 [Splash Meet Manager](../../../software/splash-meet-manager.md); see the
-[timers overview](index.md) for the shared background that applies to every timing console.
+overview of [swim timing consoles](index.md) for the shared background that applies to every timing console.

@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems Multizone Pads
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -60,7 +61,7 @@ Still to check:
   magazines.
 -->
 
-Multizone Pads is a name Colorado Time Systems (CTS) gave to a swimming touch panel in
+Multizone Pads is a name Colorado Time Systems (CTS) gave to a [swimming touch panel](index.md) in
 its 2008 catalogue. The company listed it among its training tools and never described
 it: no part number, size, price or photograph accompanies the name, in that catalogue or
 in any other source consulted for this article.[^mtc2008] By the 2011 catalogue the

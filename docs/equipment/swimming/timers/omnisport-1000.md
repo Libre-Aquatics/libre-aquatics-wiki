@@ -34,7 +34,7 @@ computer over a serial connection.[^hytek1000] Daktronics publishes no manual,
 specification sheet, or product page for the console, so its surviving record is
 the interface guide of Hy-Tek's MEET MANAGER meet-management software, which
 carried a dedicated OmniSport 1000 interface, and period discussion among timing
-operators.[^hytek1000][^usenet] The [timers overview](index.md) covers what a swim
+operators.[^hytek1000][^usenet] The overview of [swim timing consoles](index.md) covers what a swim
 timing console does; the OmniSport 1000's successors are covered in the
 [OmniSport 2000](omnisport-2000.md#history-and-predecessors) article.
 

@@ -1,5 +1,7 @@
 ---
 title: Swiss Timing StartTime II
+description: "Swiss Timing StartTime II (StartTime 2) starter: specs, DIP-switch setup, microphone unit, audio, connectors, and how it differs from the StartTime III and IV."
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -48,7 +50,7 @@ hosting a copy.[^manual] Although this wiki treats the unit as swimming equipmen
 Swiss Timing did not sell it that way: its 2007 product catalogue files the StartTime II
 as an acoustic start device for swimming and running alike.[^cat2007] This article
 covers the StartTime II specifically; the
-[start-systems overview](index.md) covers the shared background that applies to every
+overview of [swim start systems](index.md) covers the shared background that applies to every
 starter.
 
 ## Design and hardware

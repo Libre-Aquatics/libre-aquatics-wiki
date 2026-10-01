@@ -3,6 +3,7 @@ title: Colorado Time Systems HWPM 110 and HWPM 220
 description: >-
   HWPM 110 and HWPM 220 are optional parts named in the Colorado Time Systems
   matrix display manual and explained nowhere.
+updated: 2026-10-01
 tags:
   - Equipment
   - Scoring
@@ -54,7 +55,7 @@ building this out.
 
 This article is a stub. `HWPM 110` and `HWPM 220` are optional parts that Colorado Time
 Systems lists among the components of a [Myriad](myriad.md) or [Mercury16](mercury16.md)
-matrix display, in the manual that covers both boards.
+matrix [scoreboard](index.md), in the manual that covers both boards.
 
 That manual never says what either part is, and no other document held names them, so
 what they do and how they differ from each other are unestablished.

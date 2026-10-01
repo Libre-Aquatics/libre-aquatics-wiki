@@ -37,7 +37,7 @@ internal speaker, a 360 degree LED start strobe, and a microphone in one
 battery-powered unit, and is sold directly by SST and through
 SwimNerd.[^shop][^swimnerd] SST publishes no wattage or manufacturer
 for the internal speaker. This article is a starting point; the
-[start-systems overview](index.md) covers the shared background that applies to
+overview of [starting systems](index.md) covers the shared background that applies to
 every starter.
 
 ## Naming and product line

@@ -1,5 +1,6 @@
 ---
 title: ALGE-Timing
+updated: 2026-10-01
 tags:
   - Equipment
   - Reference
@@ -49,8 +50,8 @@ ALGE equipment is installed in the pools this wiki otherwise covers.
 -->
 
 This article is a stub. ALGE-Timing is a sports timing manufacturer whose SWIM 2000 and
-Timy consoles are among the timers
-[Hy-Tek Meet Manager](../software/hy-tek-meet-manager.md) supports, the first over a serial
+Timy consoles are among the
+[timers](../equipment/swimming/timers/index.md) [Hy-Tek Meet Manager](../software/hy-tek-meet-manager.md) supports, the first over a serial
 cable and the second through a shared results file.
 
 It also sells a semi-automatic package for eight lanes plus the start channel, in cabled

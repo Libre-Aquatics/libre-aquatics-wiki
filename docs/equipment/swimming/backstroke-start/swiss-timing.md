@@ -1,5 +1,7 @@
 ---
 title: Omega OBL2 Pro Backstroke Ledge
+description: "Swiss Timing Omega OBL2 Pro backstroke ledge: design, mounting on OSB11 and OSB14 blocks, the five footrest heights, care, and research on its effect on starts."
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing

@@ -1,6 +1,8 @@
 ---
 title: Pushbuttons
 seoTitle: Swim timing backup pushbuttons
+description: "Swim timing backup pushbuttons, or pickles: their role behind the touchpad, how button times resolve a lane's official time, and the CTS and Daktronics models."
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -17,7 +19,7 @@ faults. It is nicknamed a "pickle" for its shape.[^usaswim][^ctsshop]
 
 ## Role in the timing system
 
-The [semi-automatic timing overview](../index.md) covers the shared background that
+The overview of [semi-automatic timing systems](../index.md) covers the shared background that
 applies to every semi-automatic system: the layered primary, secondary, and tertiary
 timing structure, and the governing-body rules that require independent backup. The
 button is the usual secondary layer. In fully automatic officiating the buttons wait in

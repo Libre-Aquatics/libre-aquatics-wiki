@@ -71,5 +71,5 @@ a workout, in both cases beside the [System 5](system-5.md) and [System 6](syste
 No CTS document held describes the console itself, and the company's own account of its
 timer generations does not mention it.
 
-See the [timers overview](index.md) for the shared background that applies to every CTS
+See the overview of [swim timing consoles](index.md) for the shared background that applies to every CTS
 timing console.

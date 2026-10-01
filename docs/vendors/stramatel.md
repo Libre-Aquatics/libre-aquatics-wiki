@@ -3,6 +3,7 @@ title: Stramatel
 description: >-
   Stramatel is a French maker of scoreboards and swimming timing systems, based in
   Le Cellier near Nantes.
+updated: 2026-10-01
 tags:
   - Equipment
   - Reference
@@ -52,9 +53,10 @@ Sources: stramatel.com (swimming timing page); wiki.swimrankings.net Stramatel p
 Meet Manager release notes; splash-software.ch/en/.
 -->
 
-This article is a stub. Stramatel is a French manufacturer of scoreboards and sports timing
+This article is a stub. Stramatel is a French manufacturer of [scoreboards](../equipment/common/scoreboard/index.md) and sports timing
 equipment, based in Le Cellier, whose swimming line is the Aquasport V timer with Aquaswim
-software and Aquatouch touchpads.
+software and Aquatouch
+[swimming touchpads](../equipment/swimming/touchpad/index.md).
 
 [Splash Meet Manager](../software/splash-meet-manager.md) exchanges start lists and results
 with the Aquaswim software through files; see the [vendors](index.md) register for the

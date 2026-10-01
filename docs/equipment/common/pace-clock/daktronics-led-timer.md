@@ -29,5 +29,5 @@ clocks; Daktronics product literature is the place to look.
 
 This article is a stub. Daktronics announced a portable LED timer in 1995 that it said had been designed as a swimming pace clock, counting up or down under the control of two switches and running from mains power.
 
-See the [pace clocks overview](index.md) for the history and shared background that apply to
+See the overview of [pace clocks](index.md) for the history and shared background that apply to
 every pace clock.

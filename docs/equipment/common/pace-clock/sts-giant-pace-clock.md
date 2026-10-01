@@ -39,5 +39,5 @@ Michigan timing device.
 
 This article is a stub. Swim Training Supply (STS), a division of Avionic Products Engineering Corp. of Succasunna, New Jersey, advertised giant pace clocks for wall or floor mounting from 1962 to 1967, including a pair installed at Princeton.
 
-See the [pace clocks overview](index.md) for the history and shared background that apply to
+See the overview of [pace clocks](index.md) for the history and shared background that apply to
 every pace clock.

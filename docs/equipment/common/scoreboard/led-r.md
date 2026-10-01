@@ -89,7 +89,7 @@ Each line shows one thing at a time, chosen by a code set on switches inside the
 a six-line board is six lines each assigned a different piece of the race. The data arrives
 from a CTS timing console over a single RS-232 run.[^f1078][^f1079] Shared background on
 numeric boards, including the contrast with light-reflective digits, is on the
-[scoreboards overview](index.md).
+overview of [scoreboards](index.md).
 
 ## Naming
 

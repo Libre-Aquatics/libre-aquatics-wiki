@@ -40,7 +40,7 @@ start pulse to the timing console.[^datasheet] It is sold in two versions, with
 a start and microphone unit (article 3481.930) or with an e-gun trigger (article
 3481.931); neither the e-gun nor the microphone unit is compatible with the
 earlier [StartTime IV](starttime-iv.md).[^datasheet] This article is a starting
-point; the [start-systems overview](index.md) covers the shared background that
+point; the overview of [swim start systems](index.md) covers the shared background that
 applies to every starter.
 
 ## Design and hardware

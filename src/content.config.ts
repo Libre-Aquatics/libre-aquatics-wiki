@@ -15,6 +15,12 @@ const articles = defineCollection({
     // Optional meta-description override. Left unset, src/lib/seo.ts derives
     // one from the article's lead paragraph; set it only when that reads badly.
     description: z.string().optional(),
+    // Date the page's content last changed meaningfully (YYYY-MM-DD). Feeds
+    // dateModified, article:modified_time, the sitemap lastmod and the
+    // visible "Last updated" line; left unset, those fall back to the date the
+    // file was first committed. Commit times are not used, so a typo fix or a
+    // bulk reformat does not make a page look freshly rewritten.
+    updated: z.coerce.date().optional(),
     tags: z.array(z.string()).default([]),
     // Keeps the page out of search results while still passing links on.
     // The sitemap filter in astro.config.mjs reads this same key straight

@@ -3,9 +3,9 @@ import { getCollection, render } from 'astro:content';
 import ArticleLayout from '../layouts/ArticleLayout.astro';
 import { idToSlug } from '../lib/routes';
 import { breadcrumbTrail } from '../lib/navigation';
-import { lastUpdated, lastUpdatedISO, firstCommittedISO } from '../lib/gitDates';
+import { contentModifiedISO, firstCommittedISO, formatDate } from '../lib/gitDates';
 import { findPhotos, photoObjects, summarize } from '../lib/seo';
-import { aboutEntity } from '../lib/entity';
+import { aboutEntity, subjectMentions } from '../lib/entity';
 import { relatedArticles } from '../lib/related';
 import { resolveNoindex } from '../lib/stub.mjs';
 
@@ -24,6 +24,7 @@ const { title, seoTitle, description, tags, infoboxTitle, infobox } = article.da
 // Stubs are noindexed unless front matter says otherwise; astro.config.mjs
 // applies the same rule to the sitemap.
 const noindex = resolveNoindex(article.data.noindex, article.body);
+const modified = contentModifiedISO(article.data.updated, article.filePath);
 ---
 
 <ArticleLayout
@@ -37,12 +38,13 @@ const noindex = resolveNoindex(article.data.noindex, article.body);
   headings={headings}
   entryId={article.id}
   filePath={article.filePath}
-  lastUpdated={lastUpdated(article.filePath)}
-  modifiedTime={lastUpdatedISO(article.filePath) || undefined}
+  lastUpdated={formatDate(modified)}
+  modifiedTime={modified || undefined}
   publishedTime={firstCommittedISO(article.filePath) || undefined}
   breadcrumbs={breadcrumbTrail(article.id)}
   photos={photoObjects(findPhotos(article.body), Astro.site!)}
   about={aboutEntity(article, Astro.site!)}
+  mentions={subjectMentions(article, Astro.site!)}
   related={related}
   noindex={noindex}
 >

@@ -1,5 +1,7 @@
 ---
 title: Colorado Time Systems RJP
+description: "Colorado Time Systems RJP relay judging platform: product generations, RJPLD sizes and weights, speedlights, mounting and connection, Train Right, and specs."
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -45,7 +47,7 @@ and with the start impulse to measure start reaction time, both to 1/100 of a
 second.[^f507][^ctsrjp] The current line is the RJPLD, which the user guide expands as
 relay judging platforms with speedlights and dual connectors.[^f968] Shared background
 on how relay exchanges are judged and ruled on is in the
-[relay take-off platforms overview](index.md).
+overview of [relay judging platforms](index.md).
 
 ## History and generations
 

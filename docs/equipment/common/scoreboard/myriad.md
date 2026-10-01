@@ -150,7 +150,7 @@ what either line showed.[^f837]
 A Myriad is an output device: it shows what a timing console or a meet-management computer
 has already worked out, by way of the DisplayLink computer that formats it. Nothing about
 that arrangement is particular to this board, and the
-[scoreboards overview](index.md) carries the shared account of how a CTS matrix display is
+overview of [swimming scoreboards](index.md) carries the shared account of how a CTS matrix display is
 built, powered and cabled. The sections below cover only what is particular to the Myriad.
 
 ## Announcement and marketing

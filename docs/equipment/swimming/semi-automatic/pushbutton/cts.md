@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems Pushbutton
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -30,7 +31,8 @@ The Colorado Time Systems pushbutton is the hand-held backup timing button used 
 swim-timing systems. A timer standing behind a lane holds the button and presses it as
 the swimmer touches the wall, which sends a stop signal to that lane's clock on the
 [timing console](../../timers/index.md). It is the secondary, human-operated input that
-backs up the [touchpad](../../touchpad/aquagrip.md) at each lane. CTS sells the current
+backs up the [touchpad](../../touchpad/aquagrip.md) at each lane, the
+[semi-automatic timing](../index.md) layer of the system. CTS sells the current
 model as the PB-6, a button on a six-foot cord; the shop listing also calls it a swim
 timing "pickle."[^ctspb][^ctsshop][^poolweb]
 

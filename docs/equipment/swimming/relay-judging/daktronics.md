@@ -49,7 +49,7 @@ Unlike the mechanical platforms of other makers, the RTOP detects the swimmer
 capacitively, sensing human contact rather than pressure or force, an approach
 Daktronics patented in the 2000s.[^patent][^support] Shared background on how relay
 exchanges are judged and ruled on is in the
-[relay take-off platforms overview](index.md).
+overview of [relay take-off platforms](index.md).
 
 Daktronics lists the RTOP both on an active support page and among its discontinued
 product resources, so a facility may encounter it described either

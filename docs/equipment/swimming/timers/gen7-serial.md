@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems Gen7 Serial Timer
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -35,7 +36,7 @@ infobox:
   <figcaption>A Gen7 Serial Timer, seen from the front left. Both Gen7 consoles are built in this case, to the same dimensions and weight.</figcaption>
 </figure>
 
-The Gen7 Serial Timer (part number `GEN7-TMR`) is a swimming timing console
+The Gen7 Serial Timer (part number `GEN7-TMR`) is a [swimming timing console](index.md)
 made by [Colorado Time Systems](../../../vendors/colorado-time-systems.md)
 (CTS). It is the central unit of the company's Gen7 swim-timing platform: it
 collects the finish signals from each lane's [touchpad](../touchpad/index.md) and backup pushbuttons, runs

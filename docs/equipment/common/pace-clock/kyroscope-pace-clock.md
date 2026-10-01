@@ -40,5 +40,5 @@ suggest a successor, but nothing found confirms it. Not stated in the body.
 
 This article is a stub. The Kyroscope programmable digital pace clock was sold through the dealer Thrifty Timing from 1974 at $350, under the Kyroscope brand of Taroda Industries of Chicago, which advertised a programmable digital pace clock with 7 in digits in 1976.
 
-See the [pace clocks overview](index.md) for the history and shared background that apply to
+See the overview of [swim pace clocks](index.md) for the history and shared background that apply to
 every pace clock.

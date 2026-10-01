@@ -51,5 +51,5 @@ This article is a stub. `SASC9` is a Colorado Time Systems display named in the
 the [Ultimate Pace Clock](ultimate-pace-clock.md).
 
 No document held describes it and Colorado Time Systems publishes nothing about it, so what
-kind of display it is remains unestablished; see the [pace clocks overview](index.md) for
+kind of display it is remains unestablished; see the overview of [pace clocks](index.md) for
 the context in which it is named.

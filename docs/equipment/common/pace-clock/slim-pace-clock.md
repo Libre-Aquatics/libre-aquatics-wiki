@@ -99,4 +99,4 @@ four-digit clock and `SP-1600` and `SP-1601` for the six-digit.
 Left alone they show the time of day and keep themselves in step over the air; fed by a
 [handheld segment timer](whc-2.md) they run a workout, and fed by the
 [WTTC-1](../scoreboard-control/wttc-1.md) or [WHC-1](../scoreboard-control/whc-1.md) they
-show game time. See the [pace clocks overview](index.md) for the shared background.
+show game time. See the overview of [pace clocks](index.md) for the shared background.

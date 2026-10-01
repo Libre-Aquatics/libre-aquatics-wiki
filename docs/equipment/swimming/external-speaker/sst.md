@@ -29,7 +29,7 @@ The products are sold directly by SST and through SwimNerd, whose store lists
 them alongside SST's timing systems.[^snspeaker][^snharness] SST does not
 publish the lane speaker's wattage, impedance, or manufacturer, so this article
 is limited to what the listings state. Shared background on lane speakers is in
-the [external-speakers overview](index.md).
+the overview of [starter speakers](index.md).
 
 ## Design and construction
 

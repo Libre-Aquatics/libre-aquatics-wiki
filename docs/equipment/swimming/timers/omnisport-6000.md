@@ -40,7 +40,7 @@ connection.[^hytek6000] Daktronics publishes no manual or specifications for the
 console; its surviving record is the interface documentation of Hy-Tek's
 meet-management software, the compatibility provisions that the OmniSport 2000
 still carries for it, and period discussion among timing
-operators.[^hytek6000][^manual2000][^usenet] The [timers overview](index.md)
+operators.[^hytek6000][^manual2000][^usenet] The overview of [timing consoles for swimming](index.md)
 covers what a swim timing console does.
 
 ## Results interface

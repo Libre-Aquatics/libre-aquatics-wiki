@@ -1,5 +1,6 @@
 ---
 title: International Sports Timing
+updated: 2026-10-01
 tags:
   - Equipment
   - Reference
@@ -52,19 +53,19 @@ IST's catalog covers hardware and software for running swimming, diving, and
 water polo meets.[^home][^products]
 
 - The [SWIMSTART Electronic Start](../equipment/swimming/starter/swimstart.md), a
-  portable start system that packages a public-address system, start tone,
+  portable [swim start system](../equipment/swimming/starter/index.md) that packages a public-address system, start tone,
   strobe, and false-start recall in a battery-powered case.[^swimstart]
 - The [under-block lane speakers](../equipment/swimming/external-speaker/ist.md),
-  a set of 6 watt speakers on a multi-lane cable sold as an accessory to the
+  a set of 6 watt [starter speakers](../equipment/swimming/external-speaker/index.md) on a multi-lane cable sold as an accessory to the
   SWIMSTART, together with 40 watt deck and far-end speakers.[^ubss]
-- Touchpads in 60 inch and 78 inch sizes with a non-slip surface.[^products]
+- [Swimming touchpads](../equipment/swimming/touchpad/index.md) in 60 inch and 78 inch sizes with a non-slip surface.[^products]
 - Timing software, which IST offers as TimeWare (console software for teams using
   Hy-Tek Meet Manager) and MeetWare (a full meet and team management system),
   alongside WorkWare (workout management), PoloWare (water polo), and BoardWare
   (video scoreboard).[^products]
-- Programmable digital pace clocks, including wireless two- and four-digit
+- Programmable digital [pace clocks](../equipment/common/pace-clock/index.md), including wireless two- and four-digit
   models.[^products]
-- Electronic scoreboards in video matrix, projected video, and alphanumeric
+- Electronic [scoreboards](../equipment/common/scoreboard/index.md) in video matrix, projected video, and alphanumeric
   formats.[^products]
 - Diving equipment, including the SWIMWARE handheld judge's scoring consoles,
   which IST describes as letting each judge enter a score directly into its

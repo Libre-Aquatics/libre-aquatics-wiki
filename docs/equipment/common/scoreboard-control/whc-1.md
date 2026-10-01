@@ -3,6 +3,7 @@ title: Colorado Time Systems WHC-1
 description: >-
   The WHC-1 is the Colorado Time Systems wireless handheld controller that runs the score,
   period and clock on a multisport scoreboard, deck clock or pace clock.
+updated: 2026-10-01
 tags:
   - Equipment
   - Scoring
@@ -102,9 +103,9 @@ Still to research: whether the generic and baseball versions are separate part n
 the firmware versions; whether the handheld can address more than six modules.
 -->
 
-The WHC-1 is a wireless handheld controller made by
+The WHC-1 is a wireless handheld [scoreboard controller](index.md) made by
 [Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS) for its multisport
-scoreboards. It runs a board's home and guest scores, period and game clock over the air, and a
+boards. It runs a board's home and guest scores, period and game clock over the air, and a
 shot clock and timeout indicators where the board has them, with no timing console in the
 loop.[^f970] CTS describes it as a palm-sized unit for an operator who needs to move
 around.[^shop13]

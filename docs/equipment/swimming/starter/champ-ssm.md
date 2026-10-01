@@ -46,7 +46,7 @@ period manual and from independent period sources.
 
 This article covers it separately only because it is the earlier hardware
 generation of the Championship, not a distinct product line; the
-[start-systems overview](index.md) places it in the full CTS lineup.
+overview of [swim start systems](index.md) places it in the full CTS lineup.
 
 ## Naming and product line
 

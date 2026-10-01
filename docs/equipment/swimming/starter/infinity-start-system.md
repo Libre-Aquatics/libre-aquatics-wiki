@@ -46,7 +46,7 @@ speaker, an optional second speaker, and no lane-speaker or speedlight outputs.
 Its successor is the [Infinity Pro](infinity-pro-start-system.md); the deck-wired
 [Championship](championship-start-system.md) family is the larger alternative. For
 the full lineup and a side-by-side comparison of all the models, see the
-[start-systems overview](index.md).
+overview of [start systems for swimming](index.md).
 
 An earlier revision of its manual (F849 Rev. 1005) shows the product was on the
 market by the mid-2000s.[^f849old] The `INF-SSMF` variant is the unit sold with

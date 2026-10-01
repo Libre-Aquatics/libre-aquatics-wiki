@@ -39,7 +39,7 @@ the touch plate of its competitive swimming system.[^system]
 
 ## Role in the timing system
 
-The [touchpads overview](index.md) covers the history of automatic touchpad timing and
+The overview of [swimming touchpads](index.md) covers the history of automatic touchpad timing and
 the World Aquatics requirements that apply to every touch panel. The AQUA plate sits at
 the wall end of a chain that Seiko builds as a single certified system: the plate
 reports to a lane box, one per lane, which sorts that lane's signals and passes them to

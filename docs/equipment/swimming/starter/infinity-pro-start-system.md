@@ -1,6 +1,8 @@
 ---
 title: Colorado Time Systems Infinity Pro Start System
 seoTitle: CTS Infinity Pro Start System
+description: "Colorado Time Systems Infinity Pro Start System (INF-PRO): portable horn, strobe and microphone unit, operation, connections, specifications and part numbers."
+updated: 2026-10-01
 tags:
   - Equipment
   - Timing
@@ -45,7 +47,7 @@ The Infinity Pro is the portable, entry-level model of the CTS start line and th
 current member of the Infinity family; the deck-wired
 [Championship](championship-start-system.md) family is the larger alternative. For
 the full lineup and a side-by-side comparison, see the
-[start-systems overview](index.md).
+overview of [swim start systems](index.md).
 
 The Infinity Pro replaced the older
 [Infinity Start System](infinity-start-system.md)

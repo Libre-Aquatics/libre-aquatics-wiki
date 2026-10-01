@@ -32,5 +32,5 @@ The company's full name and address were not recovered from the OCR; check the P
 
 This article is a stub. Maric advertised its Paceclox range in 1978, from a 15 in square battery travel clock to 30 in square battery, mains and wall-mounted clocks with 3 in numerals and quartz movements.
 
-See the [pace clocks overview](index.md) for the history and shared background that apply to
+See the overview of [swimming pace clocks](index.md) for the history and shared background that apply to
 every pace clock.

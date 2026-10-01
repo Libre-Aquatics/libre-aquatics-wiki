@@ -39,7 +39,7 @@ same all-plastic, air-filled body CTS has built since 1972 and replaces the earl
 
 ## Role in the timing system
 
-The [touchpads overview](index.md) covers the history of automatic touchpad timing and
+The overview of [swimming touchpads](index.md) covers the history of automatic touchpad timing and
 the World Aquatics requirements that apply to every touch panel. The AquaGrip pad
 connects through a cable harness or in-deck plates back to the timing console, which
 measures the elapsed time and drives the scoreboard; on the CTS Gen7 platform the

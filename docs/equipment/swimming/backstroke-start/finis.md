@@ -1,5 +1,6 @@
 ---
 title: FINIS Backstroke Start Wedge
+description: "FINIS Backstroke Start Wedge (1.30.031): strap-on design, five height settings, installation, operation, rule compliance, price, care, and specifications."
 tags:
   - Equipment
   - Timing
@@ -28,8 +29,7 @@ infobox:
       https://www.finisswim.com/documents/Manuals/BSW-Instructions-8.5x11-FNL.pdf
 ---
 
-The Backstroke Start Wedge made by [FINIS](../../../vendors/finis.md) is a
-[backstroke start device](index.md): a foot wedge that hangs from a starting block on
+The Backstroke Start Wedge made by [FINIS](../../../vendors/finis.md) is one of several [backstroke ledges](index.md): a foot wedge that hangs from a starting block on
 two straps and gives a backstroke swimmer a non-slip foothold on the wall at the start
 of a race. The swimmer sets the wedge height by moving a hook between five numbered
 settings on the straps. It is a manual device with no retraction mechanism, in contrast
