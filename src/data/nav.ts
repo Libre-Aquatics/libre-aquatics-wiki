@@ -279,6 +279,7 @@ export const nav: NavNode[] = [
                 title: 'Swiss Timing',
                 children: [
                   { title: 'Calypso', page: 'equipment/common/scoreboard/calypso.md' },
+                  { title: 'Piccolo', page: 'equipment/common/scoreboard/piccolo.md' },
                 ],
               },
             ],
@@ -345,6 +346,12 @@ export const nav: NavNode[] = [
                 ],
               },
               {
+                title: 'Swiss Timing',
+                children: [
+                  { title: 'Water Polo Shot Clocks', page: 'equipment/common/pace-clock/swiss-timing-shot-clocks.md' },
+                ],
+              },
+              {
                 title: 'Taroda Industries',
                 children: [
                   { title: 'Kyroscope Pace Clock', page: 'equipment/common/pace-clock/kyroscope-pace-clock.md' },
@@ -380,6 +387,12 @@ export const nav: NavNode[] = [
                       { title: 'WHC-1 Handheld Controller', page: 'equipment/common/scoreboard-control/whc-1.md' },
                       { title: 'GameLink Console', page: 'equipment/common/scoreboard-control/gamelink-console.md' },
                       { title: 'Run-Stop-Reset Units (WTTC-1 accessory)', page: 'equipment/common/scoreboard-control/rsr.md' },
+                    ],
+                  },
+                  {
+                    title: 'Swiss Timing',
+                    children: [
+                      { title: 'Calypso WPO Console', page: 'equipment/common/scoreboard-control/calypso-wpo-console.md' },
                     ],
                   },
                 ],
@@ -436,6 +449,7 @@ export const nav: NavNode[] = [
           { title: 'CPS-Schwimm', page: 'software/cps-schwimm.md' },
           { title: 'Aquabec', page: 'software/aquabec.md' },
           { title: 'SynchroMM', page: 'software/synchromm.md' },
+          { title: 'DIV Scoring Manager', page: 'software/div-scoring-manager.md' },
         ],
       },
       {
