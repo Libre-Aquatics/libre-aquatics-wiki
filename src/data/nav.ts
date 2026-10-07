@@ -207,6 +207,8 @@ export const nav: NavNode[] = [
                 children: [
                   { title: 'Quantum Aquatics', page: 'equipment/swimming/timers/quantum.md' },
                   { title: 'ARES 21', page: 'equipment/swimming/timers/ares-21.md' },
+                  { title: 'OSM6', page: 'equipment/swimming/timers/osm6.md' },
+                  { title: 'OSM-5', page: 'equipment/swimming/timers/osm-5.md' },
                 ],
               },
             ],
