@@ -83,11 +83,12 @@ shipped from June 2013 carry an Ethernet jack and are marketed as the OmniSport
 
 Swiss Timing sells its console under the Omega name as
 [Quantum Aquatics](quantum.md), either as a single timer or as a primary and secondary pair
-with a switch between them. That page is a stub.
+with a switch between them. Its predecessor was [ARES 21](ares-21.md).
 
 | Product | Part number | Deck cabling | Lanes | Status |
 |---|---|---|---|---|
-| [Quantum Aquatics](quantum.md) | `3480.911` (Primary); `3480.912` (Primary & Secondary) | Not yet documented here | Not yet documented here | Current |
+| [Quantum Aquatics](quantum.md) | `3480.911` (Primary); `3480.912` (Primary & Secondary) | [Mobile harness](quantum-mobile-harness.md) or in-deck plates to an [ODB10-SW](odb10-sw.md) | Up to 10 per pool end | Current |
+| [ARES 21](ares-21.md) | None published | Harness to the IF-ARES interface | Up to 10 | Documented 2008; replaced by Quantum |
 
 Each article covers one console in full (its specifications, connections, and
 part-number variants) and how it differs from the others; this page is the shared

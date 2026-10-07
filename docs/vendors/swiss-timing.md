@@ -101,8 +101,11 @@ that start the race, the
 it drives under and around each block, and the
 [OBL2 Pro backstroke ledge](../equipment/swimming/backstroke-start/swiss-timing.md)
 that mounts on the OSB blocks. The
-[Quantum Aquatics](../equipment/swimming/timers/quantum.md) console has a stub page; the OCP5
-touchpads and OSB starting blocks are added as those pages are written.
+[Quantum Aquatics](../equipment/swimming/timers/quantum.md) console has its own article, with
+stubs for its predecessor [ARES 21](../equipment/swimming/timers/ares-21.md), the
+[OCP5](../equipment/swimming/touchpad/ocp5.md) touchpad and the
+[Calypso](../equipment/common/scoreboard/calypso.md) scoreboard; the OSB starting blocks are
+added as those pages are written.
 
 ## In swim timing
 

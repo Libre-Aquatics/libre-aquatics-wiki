@@ -94,6 +94,7 @@ of its plates but no sensing principle.[^datasheet][^watiming][^seikojp]
 | [Multizone pads](multizone.md) | None published | Not published | Not published | Announced 2008; no evidence of production |
 | [T-7000 series touchpad](t-7000.md) | Daktronics `T-7060`–`T-7096`, `FT-7150`–`FT-7240T` | Non-slip textured stainless steel; three conductive plates | Dual banana plug; OmniSport 2000 | Documented; also listed under Daktronics' discontinued-product resources |
 | [Seiko AQUA touch plate](seiko-aqua-touch-plate.md) | None published in Japanese; `TP-3000` on Seiko's older English pages | High-impact resin panel, 2,400 mm wide | Lane box per lane, then the `PT-9000` printing timer | Current |
+| [OCP5 touchpad](ocp5.md) | Swiss Timing `2924.000`–`2924.005` | PVC slats on a stainless steel frame, four sizes | Dual banana plug to a Quantum harness module | Documented 2015 |
 | [Seiko full-frame touch plate](seiko-full-frame-touch-plate.md) | None published in Japanese; `TP-3019` on Seiko's older English pages | High-impact resin panel, 1,900 mm wide | Lane box per lane, then the `PT-9000` printing timer | Current |
 
 CTS has built touchpads on the same all-plastic, air-filled design since 1972; its

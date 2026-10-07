@@ -143,6 +143,12 @@ export const nav: NavNode[] = [
                   { title: 'Seiko Full-Frame Touch Plate', page: 'equipment/swimming/touchpad/seiko-full-frame-touch-plate.md' },
                 ],
               },
+              {
+                title: 'Swiss Timing',
+                children: [
+                  { title: 'OCP5 Touchpad', page: 'equipment/swimming/touchpad/ocp5.md' },
+                ],
+              },
             ],
           },
           {
@@ -200,6 +206,20 @@ export const nav: NavNode[] = [
                 title: 'Swiss Timing',
                 children: [
                   { title: 'Quantum Aquatics', page: 'equipment/swimming/timers/quantum.md' },
+                  { title: 'ARES 21', page: 'equipment/swimming/timers/ares-21.md' },
+                ],
+              },
+            ],
+          },
+          {
+            title: 'Cables and Accessories',
+            children: [
+              {
+                title: 'Swiss Timing',
+                children: [
+                  { title: 'Quantum Mobile Harness', page: 'equipment/swimming/timers/quantum-mobile-harness.md' },
+                  { title: 'ODB10-SW', page: 'equipment/swimming/timers/odb10-sw.md' },
+                  { title: 'Programmer AQ', page: 'equipment/swimming/timers/programmer-aq.md' },
                 ],
               },
             ],
@@ -251,6 +271,12 @@ export const nav: NavNode[] = [
                   { title: '3009 Scoreboard', page: 'equipment/common/scoreboard/3009.md' },
                   { title: 'HWPM 110 and HWPM 220', page: 'equipment/common/scoreboard/hwpm.md' },
                   { title: 'Multisport Portable Scoreboard', page: 'equipment/common/scoreboard/multisport-portable-scoreboard.md' },
+                ],
+              },
+              {
+                title: 'Swiss Timing',
+                children: [
+                  { title: 'Calypso', page: 'equipment/common/scoreboard/calypso.md' },
                 ],
               },
             ],

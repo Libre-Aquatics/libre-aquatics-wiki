@@ -156,6 +156,7 @@ article was being researched.
 | [Mercury16](mercury16.md) | Colorado Time Systems | Indoor LED matrix display, with outdoor and Sun Series variants | Attested 1996; discontinued |
 | [4009](4009.md) | Colorado Time Systems | Light-reflective numeric scoreboard, 9 in sliding digits | Listed 2002; dropped from the 2026 installation guide |
 | [3009](3009.md) | Colorado Time Systems | Numeric scoreboard series named beside the 4009 | Named 1995 and 2004 |
+| [Calypso](calypso.md) | Swiss Timing | Modular eight-digit LED board, 24 cm white digits | Documented 2016 |
 
 The adapters, controllers and video processors that feed these boards are listed on the
 [scoreboard control overview](../scoreboard-control/index.md).
