@@ -156,6 +156,7 @@ in 2015; the IV and V are not cross-compatible.
 | [StartTime III](starttime-iii.md) | Not published | Electronic starting device (acoustic) | Discontinued (superseded by StartTime IV) |
 | [StartTime IV](starttime-iv.md) | 3481.900 (microphone unit), 3481.901 (e-gun) | Electronic starting device | Discontinued (superseded by StartTime V) |
 | [StartTime V](starttime-v.md) | 3481.930 (microphone unit), 3481.931 (e-gun) | Electronic starting device | Current |
+| [ORA2](ora2.md) | Not published | Omega start system of the 1984 Games | Discontinued |
 
 Seiko makes two separate lines of electronic starter, and only one of them is swimming
 equipment. The deck generators are the swimming line: Seiko lists them as

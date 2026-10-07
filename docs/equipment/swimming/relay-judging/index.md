@@ -112,6 +112,7 @@ at the international meets it times.[^dak-compat][^swimswam]
 | [Colorado Time Systems RJP](cts.md) | Colorado Time Systems | Mechanical, top and leading edge | Current |
 | [Daktronics RTOP](daktronics.md) | Daktronics | Capacitive | Current |
 | Omega relay take-off platform | Swiss Timing | Integrated with Omega starting blocks | Current |
+| [Omega OSB6](osb6.md) | Omega Electronics | Force-operated contact in the block top | Introduced 1984; discontinued |
 
 The [Colorado Time Systems RJP](cts.md) article covers the RJP and RJPLD lines and the
 [Daktronics RTOP](daktronics.md) article covers the RTOP models in full; this page holds

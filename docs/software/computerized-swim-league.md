@@ -40,6 +40,14 @@ first Hy-Tek advertisement held, October 1986, already says MEET MANAGER and TEA
 whatever happened to the name happened between June 1984 and October 1986 and the magazines
 do not record it.
 
+A possible second attestation turned up while building out osm6.md (October 2026):
+swimming-technique/198502.txt:1062-1072, February-May 1985, a Sportyme advertisement headed
+"The OMEGA OSM 6 goes on-line with CSL Swimming Software". Its CSL column lists swim team
+rosters, time progress charts, qualifying and record times, meet scoring and seeding, team and
+league administration, $10 evaluation disks and systems from $195. The ad never expands CSL,
+so reading it as Computerized Swim League is an inference, but the timing and the feature list
+fit, and it would make this a club and league package rather than only a coaching tool.
+
 Still to research: whether Computerized Swim League was renamed, split, or simply dropped;
 what hardware it ran on, since Columbia Data Products made IBM PC compatibles; and whether
 Micro Computer Co. had any continuing relationship with Hy-Tek.

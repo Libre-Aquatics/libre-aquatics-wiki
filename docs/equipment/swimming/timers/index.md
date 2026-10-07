@@ -89,8 +89,9 @@ with a switch between them. Its predecessor was [ARES 21](ares-21.md).
 |---|---|---|---|---|
 | [Quantum Aquatics](quantum.md) | `3480.911` (Primary); `3480.912` (Primary & Secondary) | [Mobile harness](quantum-mobile-harness.md) or in-deck plates to an [ODB10-SW](odb10-sw.md) | Up to 10 per pool end | Current |
 | [ARES 21](ares-21.md) | None published | Harness to the IF-ARES interface | Up to 10 | Documented 2008; replaced by Quantum |
-| [OSM6](osm6.md) | None published | Not documented here | Not documented here | Used at the 1984 Games; discontinued |
+| [OSM6](osm6.md) | None published | Omega lane harness of numbered connection modules | Up to 10 | In use by 1983; used at the 1984 Games; discontinued |
 | [OSM-5](osm-5.md) | `OSM-5 (6)-A`, `(8)-A`, `(10)-A` systems | Deck cable harness | Up to 10 | Advertised 1975–1979; discontinued |
+| [Swim-O-Matic](swim-o-matic.md) | None published | Touchpads | Not documented here | Advertised 1973; the name later printed by the OSM6 |
 
 Each article covers one console in full (its specifications, connections, and
 part-number variants) and how it differs from the others; this page is the shared

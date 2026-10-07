@@ -158,6 +158,7 @@ article was being researched.
 | [3009](3009.md) | Colorado Time Systems | Numeric scoreboard series named beside the 4009 | Named 1995 and 2004 |
 | [Calypso](calypso.md) | Swiss Timing | Modular LED board of 1–10 lines, eight 24 cm white digits per line, with a 17-character team-name line | Current; datasheet 2015 |
 | [Piccolo](piccolo.md) | Swiss Timing | Indoor alphanumeric board, eight lines of twelve 10 cm characters | Documented 2015 |
+| [UNT4](unt4.md) | Omega Electronics | Multi-line board of the 1984 Games; now the name of a scoreboard protocol | Discontinued as a board |
 
 The adapters, controllers and video processors that feed these boards are listed on the
 [scoreboard control overview](../scoreboard-control/index.md).
