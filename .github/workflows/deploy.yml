@@ -61,5 +61,12 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v5
 
+      # Sends only the pages changed by this push. The scheduled run is skipped
+      # because it redeploys without new content; a manual run sends every page.
       - name: Notify IndexNow
+        if: github.event_name != 'schedule'
         run: node scripts/indexnow-ping.mjs
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+          INDEXNOW_ALL: ${{ github.event_name == 'workflow_dispatch' }}
