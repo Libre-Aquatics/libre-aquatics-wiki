@@ -39,6 +39,8 @@ same timing vendors that supply swimming, listed on the
   900 MHz and 2.4 GHz generations
 - [Colorado Time Systems judging terminals](judging-terminals.md): the wired terminals
   for the System 5 and System 6
+- [Omega MTE judge's keypad](omega-mte-keypads.md): Swiss Timing's handheld ZigBee scoring
+  keypad, used with DIV Scoring Manager
 - [Colorado Time Systems Gen7 wired judging](gen7-wired-judging.md): the wired judging
   system released in 2016 for Gen7 Diving and Gen7 Artistic Swimming
 

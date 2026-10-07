@@ -241,6 +241,12 @@ export const nav: NavNode[] = [
               { title: 'Wireless Judging', page: 'equipment/diving/wireless-judging.md' },
             ],
           },
+          {
+            title: 'Swiss Timing',
+            children: [
+              { title: 'Omega MTE Keypad', page: 'equipment/diving/omega-mte-keypads.md' },
+            ],
+          },
         ],
       },
       {
@@ -450,6 +456,9 @@ export const nav: NavNode[] = [
           { title: 'Aquabec', page: 'software/aquabec.md' },
           { title: 'SynchroMM', page: 'software/synchromm.md' },
           { title: 'DIV Scoring Manager', page: 'software/div-scoring-manager.md' },
+          { title: 'SWA Scoring Manager', page: 'software/swa-scoring-manager.md' },
+          { title: 'i-Judge', page: 'software/i-judge.md' },
+          { title: 'Display Results', page: 'software/display-results.md' },
         ],
       },
       {
@@ -524,6 +533,7 @@ export const nav: NavNode[] = [
       { title: 'Hy-Point Software', page: 'vendors/hy-point-software.md' },
       { title: 'Hy-Tek Sports Software', page: 'vendors/hy-tek.md' },
       { title: 'Incomar', page: 'vendors/incomar.md' },
+      { title: 'Integrated Sports Systems', page: 'vendors/integrated-sports-systems.md' },
       { title: 'International Sports Timing', page: 'vendors/international-sports-timing.md' },
       { title: 'Kyrotech', page: 'vendors/kyrotech.md' },
       { title: 'Macsha', page: 'vendors/macsha.md' },

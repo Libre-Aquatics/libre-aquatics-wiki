@@ -55,6 +55,7 @@ and GeoLogix because it developed that program for about twelve years.
 | [The Active Network](active-network.md) | United States | No equipment; owner of the Hy-Tek line and of Meet Mobile since 2008 |
 | [Hy-Point Software](hy-point-software.md) | Northwest Indiana, United States | No equipment; the SwimMeet Manager meet software, advertised around 2000 and unrelated to Hy-Tek |
 | [Splash Software](splash-software.md) | Spiegel bei Bern, Switzerland | No equipment; Splash Meet Manager, whose author also maintains the Lenex exchange format |
+| [Integrated Sports Systems (ISS)](integrated-sports-systems.md) | Not established | No equipment; diving and artistic swimming scoring software, supplied to Swiss Timing as DIV and SWA Scoring Manager |
 | [GeoLogix](geologix.md) | Berne, Switzerland | No equipment; developed and supported Splash Meet Manager from 2003 to about 2015 |
 | [Kyrotech](kyrotech.md) | Northbrook, Illinois, United States | The Tec-Timer printing meet timer, advertised in the press between 1984 and 1993 |
 | [Incomar](incomar.md) | Utica, Michigan, United States | The Splash I pacing system of 1980, and a console Hy-Tek supported in 1988 |
