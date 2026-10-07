@@ -113,6 +113,7 @@ at the international meets it times.[^dak-compat][^swimswam]
 | [Daktronics RTOP](daktronics.md) | Daktronics | Capacitive | Current |
 | Omega relay take-off platform | Swiss Timing | Integrated with Omega starting blocks | Current |
 | [Omega OSB6](osb6.md) | Omega Electronics | Force-operated contact in the block top | Introduced 1984; discontinued |
+| [Omega OSB-3](osb-3.md) | Omega Electronics | Block top that moves under the swimmer's push | Used 1982; discontinued |
 
 The [Colorado Time Systems RJP](cts.md) article covers the RJP and RJPLD lines and the
 [Daktronics RTOP](daktronics.md) article covers the RTOP models in full; this page holds

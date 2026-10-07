@@ -47,5 +47,5 @@ advertised in North America in 1973 as a touchpad system that printed splits and
 thousandth of a second, and it remained the heading printed by the [OSM6](osm6.md) console in
 the 1980s.
 
-Its later consoles included the [OSM-5](osm-5.md); see the [timers overview](index.md) for the
+Its later consoles included the [OSM-3](osm-3.md), [OSM-4](osm-4.md) and [OSM-5](osm-5.md); see the [timers overview](index.md) for the
 shared background.

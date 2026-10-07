@@ -65,6 +65,7 @@ and GeoLogix because it developed that program for about twelve years.
 | [BestBet](bestbet.md) | Not established | A timing console documented only by comparison with the Colorado Time Systems 4 |
 | [Stramatel](stramatel.md) | Le Cellier, France | The Aquasport V swim timer, Aquaswim software and Aquatouch touchpads |
 | [Time Drops](time-drops.md) | Walnut Creek, California, United States | A wireless timing system of keyfob buttons and a tablet controller |
+| [Seagull Enterprises](seagull.md) | Los Altos and Palo Alto, California, United States | No equipment of its own; Omega's US and Canadian representative in the 1970s, which sold the OSM-4 and OSM-5 |
 | [Sportyme](sportyme.md) | Hatboro, Pennsylvania, United States | No equipment of its own; Omega's US sales and service agent in the early 1980s, which advertised the OSM6 |
 | [Adolph Kiefer & Associates](kiefer.md) | Zion, Illinois, United States | Competitor pace clocks; Omega's exclusive US timing agent from 1988 |
 | [Macsha](macsha.md) | Not established | The Macsha Swim touchpad and lane-unit system |
