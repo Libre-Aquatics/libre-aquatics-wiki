@@ -34,8 +34,13 @@ Most of this section is still to be written. Diving scoring hardware is made by 
 same timing vendors that supply swimming, listed on the
 [Vendors](../../vendors/index.md) page.
 
-- [900 MHz wireless judging](wireless-judging.md): Colorado Time Systems judges'
-  terminals and console interface for diving and artistic swimming
+- [Colorado Time Systems wireless judging](wireless-judging.md): handheld judges'
+  terminals and a radio interface for the System 5, System 6 and synchro software, in
+  900 MHz and 2.4 GHz generations
+- [Colorado Time Systems judging terminals](judging-terminals.md): the wired terminals
+  for the System 5 and System 6
+- [Colorado Time Systems Gen7 wired judging](gen7-wired-judging.md): the wired judging
+  system released in 2016 for Gen7 Diving and Gen7 Artistic Swimming
 
 ## See also
 

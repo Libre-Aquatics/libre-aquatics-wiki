@@ -211,7 +211,14 @@ export const nav: NavNode[] = [
         index: 'equipment/diving/index.md',
         indexTitle: 'Diving Equipment Overview',
         children: [
-          { title: '900 MHz Wireless Judging', page: 'equipment/diving/wireless-judging.md' },
+          {
+            title: 'Colorado Time Systems',
+            children: [
+              { title: 'Gen7 Wired Judging', page: 'equipment/diving/gen7-wired-judging.md' },
+              { title: 'Judging Terminals', page: 'equipment/diving/judging-terminals.md' },
+              { title: 'Wireless Judging', page: 'equipment/diving/wireless-judging.md' },
+            ],
+          },
         ],
       },
       {
