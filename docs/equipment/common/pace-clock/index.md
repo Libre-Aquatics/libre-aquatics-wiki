@@ -191,20 +191,23 @@ been designed as a swimming pace clock.[^dak95]
 ## Products
 
 This section catalogs the pace clock hardware named in the articles on this wiki. The
-[pace clock controller](upc-c.md), the [handheld segment timer](whc-2.md) and the
-[Pace Clock/Shot Clock](pace-clock-shot-clock.md) line have had research passes of their own;
+[pace clock controller](upc-c.md), the [Ultimate Pace Clock](ultimate-pace-clock.md), the
+[handheld segment timer](whc-2.md) and the [Pace Clock/Shot Clock](pace-clock-shot-clock.md)
+line have had research passes of their own;
 the rest are stubs, written from what a manual says in
 passing.
 
 | Product | Maker | Type | Status |
 |---|---|---|---|
 | [Pace clock controller](upc-c.md) | Colorado Time Systems | Keypad console storing and playing out workouts | Listed as current[^ctspc] |
-| [Ultimate Pace Clock](ultimate-pace-clock.md) | Colorado Time Systems | The system the controller was sold as part of, with two portable displays[^f819] | No longer listed |
+| [Ultimate Pace Clock](ultimate-pace-clock.md) | Colorado Time Systems | The system the controller was sold as part of, with light-reflective or LED portable displays[^f819] | Advertised 1996; displays no longer listed by 2008 |
+| [QuickStart](quickstart.md) | Colorado Time Systems | Portable LED pace clock and start, relay and turn reaction trainer | Advertised 1996–1998 |
+| [QuickStart Pro](quickstart-pro.md) | Colorado Time Systems | Successor to the QuickStart with fifteen training modes | Documented 2006 |
 | [Handheld segment timer](whc-2.md) | Colorado Time Systems | Wireless handheld interval controller, `WHC-2` | Current[^ctsstp] |
 | [Slim pace clock](slim-pace-clock.md) | Colorado Time Systems | Wall-mounted LED clock, four or six digits, `MS-0037`–`MS-0040` | Current |
 | [Deck clock](deck-clock.md) | Colorado Time Systems | Portable game, shot and pace clock, `MS-0043`–`MS-0045` | Current |
 | [Pace Clock/Shot Clock](pace-clock-shot-clock.md) | Colorado Time Systems | 10 in LED pace and shot clocks, wired `PC-` and 900 MHz `PCW-`, Standard, Portable and Pro | Current[^f904] |
-| [SASC9](sasc9.md) | Colorado Time Systems | Named as a display the controller drives; nothing further established | Unestablished |
+| [SASC9](sasc9.md) | Colorado Time Systems | 9 in LED pace clock and water polo shot clock, two or four digits | Listed by CTS 2002–2004 |
 | [Counsilman Pace Clock](counsilman-pace-clock.md) | James Counsilman | Electric sweep-hand clock sold by mail, and the battery Porta-Pace | Advertised 1964–1971[^couns64] |
 | [STS giant pace clock](sts-giant-pace-clock.md) | Swim Training Supply | Large wall or floor clock | Advertised 1962–1967[^sts64] |
 | [Kyroscope pace clock](kyroscope-pace-clock.md) | Taroda Industries | Programmable digital pace clock | Advertised 1974–1976[^kyroscope74] |

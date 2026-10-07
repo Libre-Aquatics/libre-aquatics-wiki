@@ -247,6 +247,8 @@ export const nav: NavNode[] = [
                   { title: 'Mini Scoreboard Caddy', page: 'equipment/common/scoreboard/cad-mini.md' },
                   { title: 'Myriad', page: 'equipment/common/scoreboard/myriad.md' },
                   { title: 'Mercury16', page: 'equipment/common/scoreboard/mercury16.md' },
+                  { title: '4009 Scoreboard', page: 'equipment/common/scoreboard/4009.md' },
+                  { title: '3009 Scoreboard', page: 'equipment/common/scoreboard/3009.md' },
                   { title: 'HWPM 110 and HWPM 220', page: 'equipment/common/scoreboard/hwpm.md' },
                   { title: 'Multisport Portable Scoreboard', page: 'equipment/common/scoreboard/multisport-portable-scoreboard.md' },
                 ],
@@ -263,6 +265,8 @@ export const nav: NavNode[] = [
                 children: [
                   { title: 'Pace Clock Controller', page: 'equipment/common/pace-clock/upc-c.md' },
                   { title: 'Ultimate Pace Clock', page: 'equipment/common/pace-clock/ultimate-pace-clock.md' },
+                  { title: 'QuickStart', page: 'equipment/common/pace-clock/quickstart.md' },
+                  { title: 'QuickStart Pro', page: 'equipment/common/pace-clock/quickstart-pro.md' },
                   { title: 'Handheld Segment Timer', page: 'equipment/common/pace-clock/whc-2.md' },
                   { title: 'Slim Pace Clock', page: 'equipment/common/pace-clock/slim-pace-clock.md' },
                   { title: 'Deck Clock', page: 'equipment/common/pace-clock/deck-clock.md' },
