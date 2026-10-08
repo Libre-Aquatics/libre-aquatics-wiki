@@ -229,6 +229,8 @@ export const nav: NavNode[] = [
                   { title: 'ODB10-SW', page: 'equipment/swimming/timers/odb10-sw.md' },
                   { title: 'Programmer AQ', page: 'equipment/swimming/timers/programmer-aq.md' },
                   { title: 'DH-1 Data Handling Module', page: 'equipment/swimming/timers/dh-1.md' },
+                  { title: 'ARES Data Switcher', page: 'equipment/swimming/timers/ares-data-switcher.md' },
+                  { title: 'ARES Online Printer', page: 'equipment/swimming/timers/ares-online-printer.md' },
                 ],
               },
             ],
@@ -293,6 +295,7 @@ export const nav: NavNode[] = [
                 children: [
                   { title: 'Calypso', page: 'equipment/common/scoreboard/calypso.md' },
                   { title: 'Piccolo', page: 'equipment/common/scoreboard/piccolo.md' },
+                  { title: 'Galactica', page: 'equipment/common/scoreboard/galactica.md' },
                   { title: 'UNT4', page: 'equipment/common/scoreboard/unt4.md' },
                 ],
               },
@@ -467,6 +470,10 @@ export const nav: NavNode[] = [
           { title: 'SWA Scoring Manager', page: 'software/swa-scoring-manager.md' },
           { title: 'i-Judge', page: 'software/i-judge.md' },
           { title: 'Display Results', page: 'software/display-results.md' },
+          { title: 'ARES-Print', page: 'software/ares-print.md' },
+          { title: 'ARES Diving', page: 'software/ares-diving.md' },
+          { title: 'ARES Synchronized Swimming', page: 'software/ares-synchronized-swimming.md' },
+          { title: 'ARES Water Polo', page: 'software/ares-water-polo.md' },
         ],
       },
       {
@@ -504,6 +511,7 @@ export const nav: NavNode[] = [
           { title: 'swimlib', page: 'software/swimlib.md' },
           { title: 'SDIFCheck', page: 'software/sdifcheck.md' },
           { title: 'Swimrankings', page: 'software/swimrankings.md' },
+          { title: 'ERTD', page: 'software/ertd.md' },
         ],
       },
       {
@@ -520,6 +528,12 @@ export const nav: NavNode[] = [
               { title: 'ScheduleLink', page: 'software/schedulelink.md' },
               { title: 'MultiSport Reprogrammer', page: 'software/multisport-reprogrammer.md' },
               { title: 'Wireless Polo Scoreboard Mapper', page: 'software/wireless-polo-scoreboard-mapper.md' },
+            ],
+          },
+          {
+            title: 'Daktronics',
+            children: [
+              { title: 'Venus', page: 'software/venus.md' },
             ],
           },
         ],
