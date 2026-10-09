@@ -329,6 +329,7 @@ export const nav: NavNode[] = [
                   { title: 'Piccolo', page: 'equipment/common/scoreboard/piccolo.md' },
                   { title: 'Galactica', page: 'equipment/common/scoreboard/galactica.md' },
                   { title: 'UNT4', page: 'equipment/common/scoreboard/unt4.md' },
+                  { title: 'Saturn 2', page: 'equipment/common/scoreboard/saturn-2.md' },
                 ],
               },
             ],
@@ -398,6 +399,8 @@ export const nav: NavNode[] = [
                 title: 'Swiss Timing',
                 children: [
                   { title: 'Water Polo Shot Clocks', page: 'equipment/common/pace-clock/swiss-timing-shot-clocks.md' },
+                  { title: 'Montreal Shot Clocks', page: 'equipment/common/pace-clock/montreal-shot-clocks.md' },
+                  { title: 'Coyote Horn', page: 'equipment/common/pace-clock/coyote-horn.md' },
                 ],
               },
               {
@@ -442,6 +445,7 @@ export const nav: NavNode[] = [
                     title: 'Swiss Timing',
                     children: [
                       { title: 'Calypso WPO Console', page: 'equipment/common/scoreboard-control/calypso-wpo-console.md' },
+                      { title: 'Team-Name Module (3400.740)', page: 'equipment/common/scoreboard-control/calypso-team-name-module.md' },
                     ],
                   },
                 ],
@@ -566,6 +570,12 @@ export const nav: NavNode[] = [
             title: 'Daktronics',
             children: [
               { title: 'Venus', page: 'software/venus.md' },
+            ],
+          },
+          {
+            title: 'Swiss Timing',
+            children: [
+              { title: 'FlashSimple', page: 'software/flashsimple.md' },
             ],
           },
         ],
