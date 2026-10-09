@@ -192,8 +192,8 @@ been designed as a swimming pace clock.[^dak95]
 
 This section catalogs the pace clock hardware named in the articles on this wiki. The
 [pace clock controller](upc-c.md), the [Ultimate Pace Clock](ultimate-pace-clock.md), the
-[handheld segment timer](whc-2.md) and the [Pace Clock/Shot Clock](pace-clock-shot-clock.md)
-line have had research passes of their own;
+[handheld segment timer](whc-2.md), the [Pace Clock/Shot Clock](pace-clock-shot-clock.md)
+line and the Daktronics [PC-2001](pc-2001.md) have had research passes of their own;
 the rest are stubs, written from what a manual says in
 passing.
 
@@ -216,6 +216,11 @@ passing.
 | [Competitor pace clocks](kiefer-competitor-pace-clock.md) | Kiefer McNeil | Electric and battery sweep-hand clocks | Advertised 1980; brand still sold 1996[^kiefer80][^kiefer96] |
 | [AutoCoach](kyrotech-autocoach.md) | Kyrotech | Microprocessor-programmed digital pace clock | Advertised 1982–1986[^autocoach82] |
 | [Daktronics LED timer](daktronics-led-timer.md) | Daktronics | LED timer designed as a pace clock | Announced 1995[^dak95] |
+| [PC-2001](pc-2001.md) | Daktronics | Portable battery LED pace clock with eleven programs, including start and relay reaction timers | Introduced 2003; manual revised 2023 |
+| [PC-2002](pc-2002.md) | Daktronics | Mains-powered wall-mounted indoor version of the PC-2001 | Documented 2003–2021 |
+| [TI-2022](ti-2022.md) | Daktronics | Portable LED timer on the PC-2001 cabinet, with general sports programs | Documented 2003–2023 |
+| [TI-2101](ti-2101.md) | Daktronics | Four-digit indoor timing display with 13 in digits, usable as a pace clock | Listed 2026 |
+| [Hy-Tek data cable](hy-tek-data-cable.md) | Daktronics | Serial cable for downloading Hy-Tek workouts to the PC-2001 and PC-2002 | Documented 2003–2023 |
 
 The [multisport portable scoreboard](../scoreboard/multisport-portable-scoreboard.md) is
 the third display a segment timer drives, and is filed with the scoreboards. The counting

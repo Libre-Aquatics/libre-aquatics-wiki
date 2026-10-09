@@ -174,7 +174,7 @@ meets with events of unlimited divers in up to 99 rounds, and scores synchronize
 diving. It exchanges files with outside results packages, DiveMeets.com and E-dive among
 them; Daktronics notes it does not verify dive sheets.[^prodiving]
 The Pro Synchro software scores technical and free routines from two to eighteen
-judge consoles (wireless RC-100 or wired JC-100); the console itself only relays
+judge consoles (wireless RC-100 or wired [JC-100](../../diving/jc-100.md)); the console itself only relays
 the judges' inputs in its synchro mode.[^prosynchro] Daktronics states that the
 ProSwimming, ProDiving, and ProSyncro interfaces are discontinued and no longer
 available for purchase, directing customers to its professional services for

@@ -94,7 +94,8 @@ that judge relay exchanges from the blocks, the
 [HS-200 Horn Start](../equipment/swimming/starter/hs-200.md) that starts the race,
 and the [lane speakers](../equipment/swimming/external-speaker/daktronics.md), the
 [starter speakers](../equipment/swimming/external-speaker/index.md) mounted under each block. Daktronics also makes
-[aquatic scoreboards](../equipment/common/scoreboard/index.md) and [pace clocks](../equipment/common/pace-clock/index.md); its scoreboard models are added as
+[aquatic scoreboards](../equipment/common/scoreboard/index.md) and [pace clocks](../equipment/common/pace-clock/index.md), among them the portable
+[PC-2001](../equipment/common/pace-clock/pc-2001.md); its scoreboard models are added as
 those pages are written.
 
 ## In swim timing

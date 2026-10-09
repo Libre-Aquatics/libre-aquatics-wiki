@@ -336,8 +336,8 @@ Daktronics OmniSport 2000, OmniSport 6000 and PC 2000. Transfers use a serial po
 cable, except to the OmniSport 6000, which takes the workout on a floppy disk.[^paceclock]
 
 The two vendors name the required option differently. Hy-Tek's package list puts a separate
-Workout Manager Pace Clock option in the Gold package, while the Daktronics PC-2001 manual
-makes the Workout Manager Basic option the prerequisite.[^packages][^dakpc] Both statements may be true if the pace-clock option depends
+Workout Manager Pace Clock option in the Gold package, while the manual for the Daktronics
+[PC-2001](../equipment/common/pace-clock/pc-2001.md) makes the Workout Manager Basic option the prerequisite.[^packages][^dakpc] Both statements may be true if the pace-clock option depends
 on the basic one, but neither source says so. Daktronics specifies a 20-foot cable with
 a DB9 serial connector at the computer and a stereo phone plug at the clock.[^dakpc]
 

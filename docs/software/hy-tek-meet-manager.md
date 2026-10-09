@@ -378,8 +378,8 @@ Daktronics pace clocks accept a session from.[^f901][^dakbro] The pace clock con
 article covers that export from the clock's side.
 
 The sources disagree over which program performs the pace-clock export. CTS and the
-Daktronics aquatics brochure credit Workout Manager, while the Daktronics PC-2001 manual
-credits Team Manager.[^f901][^dakbro][^dakpc] Both are right for their period: Workout
+Daktronics aquatics brochure credit Workout Manager, while the manual for the Daktronics
+[PC-2001](../equipment/common/pace-clock/pc-2001.md) pace clock credits Team Manager.[^f901][^dakbro][^dakpc] Both are right for their period: Workout
 Manager began as a program of its own and is now sold as a set of options inside Team
 Manager, where Hy-Tek's current guide places the pace-clock export.[^tmpackages]
 

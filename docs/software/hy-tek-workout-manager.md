@@ -85,5 +85,5 @@ sends it to a pace clock or a timing console rather than to a meet.
 It is no longer separate: Hy-Tek now sells the pace-clock export as a licensed option within
 [Team Manager](hy-tek-team-manager.md), which is why some documents credit the workout
 download to one product and some to the other. See the
-[pace clock controller](../equipment/common/pace-clock/upc-c.md) for that download from the
-clock's side, and the [software overview](index.md) for what this section covers.
+[pace clock controller](../equipment/common/pace-clock/upc-c.md) and the Daktronics
+[PC-2001](../equipment/common/pace-clock/pc-2001.md) for that download from the clock's side, and the [software overview](index.md) for what this section covers.

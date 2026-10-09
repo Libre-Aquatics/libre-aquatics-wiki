@@ -283,6 +283,12 @@ export const nav: NavNode[] = [
             ],
           },
           {
+            title: 'Daktronics',
+            children: [
+              { title: 'JC-100', page: 'equipment/diving/jc-100.md' },
+            ],
+          },
+          {
             title: 'Swiss Timing',
             children: [
               { title: 'Omega MTE Keypad', page: 'equipment/diving/omega-mte-keypads.md' },
@@ -393,6 +399,11 @@ export const nav: NavNode[] = [
                 title: 'Daktronics',
                 children: [
                   { title: 'LED Timer', page: 'equipment/common/pace-clock/daktronics-led-timer.md' },
+                  { title: 'PC-2001', page: 'equipment/common/pace-clock/pc-2001.md' },
+                  { title: 'PC-2002', page: 'equipment/common/pace-clock/pc-2002.md' },
+                  { title: 'TI-2022', page: 'equipment/common/pace-clock/ti-2022.md' },
+                  { title: 'TI-2101', page: 'equipment/common/pace-clock/ti-2101.md' },
+                  { title: 'Hy-Tek Data Cable', page: 'equipment/common/pace-clock/hy-tek-data-cable.md' },
                 ],
               },
               {
@@ -449,6 +460,12 @@ export const nav: NavNode[] = [
                       { title: 'WA-3', page: 'equipment/common/scoreboard-control/wa-3.md' },
                     ],
                   },
+                  {
+                    title: 'Daktronics',
+                    children: [
+                      { title: 'Gen VI Radio', page: 'equipment/common/scoreboard-control/gen-vi-radio.md' },
+                    ],
+                  },
                 ],
               },
               {
@@ -461,6 +478,13 @@ export const nav: NavNode[] = [
                       { title: 'WHC-1 Handheld Controller', page: 'equipment/common/scoreboard-control/whc-1.md' },
                       { title: 'GameLink Console', page: 'equipment/common/scoreboard-control/gamelink-console.md' },
                       { title: 'Run-Stop-Reset Units (WTTC-1 accessory)', page: 'equipment/common/scoreboard-control/rsr.md' },
+                    ],
+                  },
+                  {
+                    title: 'Daktronics',
+                    children: [
+                      { title: 'All Sport 1600', page: 'equipment/common/scoreboard-control/all-sport-1600.md' },
+                      { title: 'All Sport 5000', page: 'equipment/common/scoreboard-control/all-sport-5000.md' },
                     ],
                   },
                 ],

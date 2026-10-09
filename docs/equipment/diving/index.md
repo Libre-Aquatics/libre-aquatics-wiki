@@ -43,6 +43,8 @@ same timing vendors that supply swimming, listed on the
   keypad, used with DIV Scoring Manager
 - [Colorado Time Systems Gen7 wired judging](gen7-wired-judging.md): the wired judging
   system released in 2016 for Gen7 Diving and Gen7 Artistic Swimming
+- [Daktronics JC-100](jc-100.md): the wired hand-held judge console for the OmniSport 2000,
+  which also programs Daktronics pace clocks
 
 ## See also
 
