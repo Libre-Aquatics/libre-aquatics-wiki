@@ -136,8 +136,8 @@ on the [touchpads overview](index.md).
 
 The pad hangs on the end wall of each lane and signals the timer when a swimmer finishes or
 turns. In a current Swiss Timing installation it plugs into the yellow socket of a lane module
-on the [Quantum Mobile Harness](../timers/quantum-mobile-harness.md), or into an in-deck plate
-wired to an [ODB10-SW](../timers/odb10-sw.md) box, and from there into a
+on the [Quantum Mobile Harness](../deck-cabling/quantum-mobile-harness.md), or into an in-deck plate
+wired to an [ODB10-SW](../deck-cabling/odb10-sw.md) box, and from there into a
 [Quantum Aquatics](../timers/quantum.md) timer.[^harness][^swconcept] Earlier Omega pads worked
 with the [OSM-5](../timers/osm-5.md) and [OSM6](../timers/osm6.md) consoles.[^sw7601][^sw8511]
 

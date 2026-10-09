@@ -87,7 +87,7 @@ with a switch between them. Its predecessor was [ARES 21](ares-21.md).
 
 | Product | Part number | Deck cabling | Lanes | Status |
 |---|---|---|---|---|
-| [Quantum Aquatics](quantum.md) | `3480.911` (Primary); `3480.912` (Primary & Secondary) | [Mobile harness](quantum-mobile-harness.md) or in-deck plates to an [ODB10-SW](odb10-sw.md) | Up to 10 per pool end | Current |
+| [Quantum Aquatics](quantum.md) | `3480.911` (Primary); `3480.912` (Primary & Secondary) | [Mobile harness](../deck-cabling/quantum-mobile-harness.md) or in-deck plates to an [ODB10-SW](../deck-cabling/odb10-sw.md) | Up to 10 per pool end | Current |
 | [ARES 21](ares-21.md) | `3330.900` | Harness to the IF-ARES interface | Up to 10 | Dated 1995 by Swiss Timing; replaced by Quantum |
 | [OSM6](osm6.md) | None published | Omega lane harness of numbered connection modules | Up to 10 | In use by 1983; used at the 1984 Games; discontinued |
 | [OSM-5](osm-5.md) | `OSM-5 (6)-A`, `(8)-A`, `(10)-A` systems | Single-cord deck harness | Up to 10 | Advertised 1975–1982; discontinued |

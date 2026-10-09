@@ -45,14 +45,16 @@ sanctioning organization.
 ## Products
 
 [Colorado Time Systems](../../../../vendors/colorado-time-systems.md) (CTS) and
-Daktronics each make the wired backup pushbutton used with their swim-timing systems.
-This section catalogs both buttons; Daktronics states that the two makers' buttons are
-cross-compatible, so either can be used on either maker's lane wiring.[^dakcompat]
+Daktronics each make the wired backup pushbutton used with their swim-timing systems, and
+Swiss Timing supplies its OIT3 button with the Quantum harness. This section catalogs the
+three buttons; Daktronics states that its buttons and the CTS buttons are cross-compatible, so
+either can be used on either maker's lane wiring.[^dakcompat]
 
 | Product | Manufacturer | Cord | Connection | Status |
 |---|---|---|---|---|
 | [Colorado Time Systems Pushbutton](cts.md) | Colorado Time Systems | 6 ft | Banana plug into deck plate or cable harness | Current |
 | [Daktronics Pushbutton](daktronics.md) | Daktronics | Not published | Banana plug into lane module or deck plate | Supplied with deck-cabling systems |
+| [Swiss Timing OIT3 Pushbutton](swiss-timing.md) | Swiss Timing | Not published | Banana plug into a Quantum harness module or deck plate | Supplied with Quantum harness sets |
 
 Each article covers its button in full, its role in the timing layers, how a timer uses
 it, how it connects, and its care; this page is the shared overview they refer back

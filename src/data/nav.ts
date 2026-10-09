@@ -153,6 +153,39 @@ export const nav: NavNode[] = [
             ],
           },
           {
+            title: 'Deck Cabling',
+            index: 'equipment/swimming/deck-cabling/index.md',
+            indexTitle: 'Deck Cabling Overview',
+            children: [
+              {
+                title: 'Colorado Time Systems',
+                children: [
+                  { title: 'Cable Harness', page: 'equipment/swimming/deck-cabling/cts-cable-harness.md' },
+                  { title: 'QuickConnect Deck Plate', page: 'equipment/swimming/deck-cabling/cts-quickconnect-deck-plate.md' },
+                  { title: 'Titanium Deckplate', page: 'equipment/swimming/deck-cabling/cts-titanium-deckplate.md' },
+                  { title: 'Wall Plate', page: 'equipment/swimming/deck-cabling/cts-wall-plate.md' },
+                ],
+              },
+              {
+                title: 'Daktronics',
+                children: [
+                  { title: 'Lane Module', page: 'equipment/swimming/deck-cabling/daktronics-lane-module.md' },
+                  { title: 'Deck Plates', page: 'equipment/swimming/deck-cabling/daktronics-deck-plate.md' },
+                ],
+              },
+              {
+                title: 'Swiss Timing',
+                children: [
+                  { title: 'Quantum Mobile Harness', page: 'equipment/swimming/deck-cabling/quantum-mobile-harness.md' },
+                  { title: 'Quantum Harness Cable', page: 'equipment/swimming/deck-cabling/quantum-harness-cable.md' },
+                  { title: 'Quantum Harness Terminator', page: 'equipment/swimming/deck-cabling/quantum-harness-terminator.md' },
+                  { title: 'Deck Plate', page: 'equipment/swimming/deck-cabling/swiss-timing-deck-plate.md' },
+                  { title: 'ODB10-SW', page: 'equipment/swimming/deck-cabling/odb10-sw.md' },
+                ],
+              },
+            ],
+          },
+          {
             title: 'Semi-Automatic Timing',
             index: 'equipment/swimming/semi-automatic/index.md',
             indexTitle: 'Semi-Automatic Timing Overview',
@@ -164,6 +197,7 @@ export const nav: NavNode[] = [
                 children: [
                   { title: 'Colorado Time Systems Pushbutton', page: 'equipment/swimming/semi-automatic/pushbutton/cts.md' },
                   { title: 'Daktronics Pushbutton', page: 'equipment/swimming/semi-automatic/pushbutton/daktronics.md' },
+                  { title: 'Swiss Timing OIT3 Pushbutton', page: 'equipment/swimming/semi-automatic/pushbutton/swiss-timing.md' },
                 ],
               },
               { title: 'Colorado Time Systems Dolphin Wireless Stopwatch Timing System', page: 'equipment/swimming/semi-automatic/dolphin.md' },
@@ -225,8 +259,6 @@ export const nav: NavNode[] = [
               {
                 title: 'Swiss Timing',
                 children: [
-                  { title: 'Quantum Mobile Harness', page: 'equipment/swimming/timers/quantum-mobile-harness.md' },
-                  { title: 'ODB10-SW', page: 'equipment/swimming/timers/odb10-sw.md' },
                   { title: 'Programmer AQ', page: 'equipment/swimming/timers/programmer-aq.md' },
                   { title: 'DH-1 Data Handling Module', page: 'equipment/swimming/timers/dh-1.md' },
                   { title: 'ARES Data Switcher', page: 'equipment/swimming/timers/ares-data-switcher.md' },

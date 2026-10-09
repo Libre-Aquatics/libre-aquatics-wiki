@@ -46,7 +46,7 @@ Still to research: whether 3494.901 and 3480.921/922 are the same unit; price.
 -->
 
 This article is a stub. The Programmer AQ is a hand-held Swiss Timing RFID tool that reads and
-rewrites the lane number held in a [Quantum Mobile Harness](quantum-mobile-harness.md) module or
-an [ODB10-SW](odb10-sw.md) circuit, so a replacement module can be set to its lane on site.
+rewrites the lane number held in a [Quantum Mobile Harness](../deck-cabling/quantum-mobile-harness.md) module or
+an [ODB10-SW](../deck-cabling/odb10-sw.md) circuit, so a replacement module can be set to its lane on site.
 
 See the [Quantum Aquatics](quantum.md) article for the system it serves.

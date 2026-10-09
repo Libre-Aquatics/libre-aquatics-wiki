@@ -96,13 +96,16 @@ export default defineConfig({
   // as "on<a>Image credits</a>". `true` compresses without changing what
   // renders, which is what the templates here are written for.
   compressHTML: true,
-  // The pushbutton pages moved under the semi-automatic category after the
-  // site went live; these keep the published URLs working (static
-  // meta-refresh pages on GitHub Pages).
+  // Pages that moved after the site went live: the pushbutton pages went
+  // under the semi-automatic category, and the Quantum harness and ODB10-SW
+  // pages went from timers to deck cabling. These keep the published URLs
+  // working (static meta-refresh pages on GitHub Pages).
   redirects: {
     '/equipment/swimming/pushbutton/': '/equipment/swimming/semi-automatic/pushbutton/',
     '/equipment/swimming/pushbutton/cts/': '/equipment/swimming/semi-automatic/pushbutton/cts/',
     '/equipment/swimming/pushbutton/daktronics/': '/equipment/swimming/semi-automatic/pushbutton/daktronics/',
+    '/equipment/swimming/timers/quantum-mobile-harness/': '/equipment/swimming/deck-cabling/quantum-mobile-harness/',
+    '/equipment/swimming/timers/odb10-sw/': '/equipment/swimming/deck-cabling/odb10-sw/',
   },
   integrations: [
     react(),

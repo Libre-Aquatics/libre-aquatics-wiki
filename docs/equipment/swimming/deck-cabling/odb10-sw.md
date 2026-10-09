@@ -40,13 +40,21 @@ in slot 11 of P&S boxes; programmer 3494.901. Box to Quantum at most 200 m, usin
 deck plates. Wall sockets 2650.6xx and 2650.749/750. Deck-plate protection with silicone grease
 9038.7047. 3.350 kg (P, 10 lanes), 3.690 kg (P&S, 10 lanes). Store -10 to 60 C, work 0 to 45 C.
 The swimming concept guide 0017.509.02 places it in the timing room as the hub of fixed cabling.
-AVK Group lists it as "Distribution box ODB10" (avkgroup.at); not read.
+AVK Group, an Austrian distributor, lists a "Distribution box ODB10" as discontinued
+(https://www.avkgroup.at/catalog/distribution-box-odb10/, read 2026-10-08). Its figures do not
+match the ODB10-SW: 60 x 40 x 23.5 cm, 13 kg with one rack rising to 16 kg with four, and the
+supplied cables include one to an ARES timing unit. That reads as an earlier ARES-era ODB10, not
+this box; inferred, not confirmed by a Swiss Timing document.
 
-Still to research: earlier ODB versions; the matrix-display ODB the concept guide mentions.
+Moved from timers/ to the deck-cabling category on 2026-10-08; the shared background on fixed
+in-deck wiring is now on deck-cabling/index.md.
+
+Still to research: the ARES-era ODB10 (part numbers, manual); the matrix-display ODB the
+concept guide mentions.
 -->
 
 This article is a stub. The ODB10-SW is a Swiss Timing distribution box, mounted in the timing
 room, that terminates the in-deck cable from each lane's deck plate and passes the touchpad,
-platform and pushbutton contacts to a [Quantum Aquatics](quantum.md) timer up to 200 m away.
+platform and pushbutton contacts to a [Quantum Aquatics](../timers/quantum.md) timer up to 200 m away.
 
-See the [timers overview](index.md) for the shared background.
+See the [deck cabling overview](index.md) for the shared background on fixed in-deck wiring.

@@ -206,8 +206,8 @@ The pool side connects through one of two cabling schemes:[^concept][^harness][^
 
 | Scheme | Lane connection | Link to the console |
 |---|---|---|
-| Mobile | A [Quantum Mobile Harness](quantum-mobile-harness.md) module at each lane, chained module to module, up to ten per pool end, with a terminator on the last | One 25 m cable, extendable to 50 m or more on drums |
-| Fixed | In-deck deck plates wired back to an [ODB10-SW](odb10-sw.md) distribution box in the timing room | Up to 100 m from deck plate to box and 200 m from box to console |
+| Mobile | A [Quantum Mobile Harness](../deck-cabling/quantum-mobile-harness.md) module at each lane, chained module to module, up to ten per pool end, with a terminator on the last | One 25 m cable, extendable to 50 m or more on drums |
+| Fixed | In-deck deck plates wired back to an [ODB10-SW](../deck-cabling/odb10-sw.md) distribution box in the timing room | Up to 100 m from deck plate to box and 200 m from box to console |
 
 Either scheme joins the console at its harness inputs, HA1 for the finish end and HA2 for the
 other end. Swiss Timing's cabling diagrams run from one harness on a Primary console to two
@@ -341,7 +341,7 @@ This section lists the part numbers in Swiss Timing's documents.
 ## See also
 
 - [ARES 21](ares-21.md): the Swiss Timing system Quantum replaced
-- [Quantum Mobile Harness](quantum-mobile-harness.md), [Programmer AQ](programmer-aq.md) and [ODB10-SW](odb10-sw.md): the lane cabling
+- [Quantum Mobile Harness](../deck-cabling/quantum-mobile-harness.md), [Programmer AQ](programmer-aq.md) and [ODB10-SW](../deck-cabling/odb10-sw.md): the lane cabling
 - [StartTime V](../starter/starttime-v.md): the current Swiss Timing starter
 - [OCP5](../touchpad/ocp5.md): the Omega touchpad
 - [Calypso](../../common/scoreboard/calypso.md): the Swiss Timing numeric scoreboard
