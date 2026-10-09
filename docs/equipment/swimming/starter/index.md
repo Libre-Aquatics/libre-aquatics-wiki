@@ -42,6 +42,114 @@ travels far faster than sound, the visual signal is the reference for a fair sta
 while the audible tone is for the athletes on the blocks, who have a loudspeaker at
 each platform.
 
+## Start tones
+
+This section compares the start tones of the systems the wiki covers, from
+manufacturer documents and from recordings measured for the wiki.
+
+Manufacturers describe their start signals in general terms and do not publish
+frequencies. Colorado Time Systems (CTS) calls its start signal a dual-tone blast.
+The blast lasts half a second on the SS2 and the original Infinity, and a quarter
+second on the Championship, Championship Elite, and Infinity
+Pro.[^f503][^f849][^f875][^f1064][^f1063] The Championship Elite and Infinity Pro can
+replace this classic CTS beep with an alternate beep, and the Championship Elite manual
+describes the alternate as the shorter of the two.[^f1064][^f1063] The Daktronics HS-200 offers two swimming tones and
+a gunshot emulation without describing either tone.[^dak] Swiss Timing units select a
+sound type: the StartTime II chooses between a sampled gunshot and a modulated tone,
+and the StartTime V uses a bang as its default start sound.[^st2][^st5]
+
+The measurements below come from phone recordings of start systems in use at pools,
+analysed for the wiki in 2026. Each clip is rebuilt from those measurements. It
+reproduces the tone as heard beside a lane speaker, so it carries the coloring of the
+speaker, the room, and the recording microphone, and it is not the electrical signal
+the start system generates.
+
+| Tone | Recorded on | Measured content | Length |
+|---|---|---|---|
+| CTS classic beep | Championship, Championship Elite, Infinity Pro | 600 Hz with a weaker 800 Hz; the waveform repeats 200 times a second | 0.25 s (documented) |
+| CTS alternate beep | Championship Elite | 892.5 Hz and 1020 Hz at similar levels; the waveform repeats 63.75 times a second | About 0.15 s |
+| Swiss Timing tone | StartTime V | The same two frequencies as the CTS alternate beep | About 0.15 s |
+| Daktronics tone | HS-200 | 715 Hz with odd harmonics, the strongest at 2145 Hz | About 0.4 s |
+
+The Championship Elite and Infinity Pro recordings both measured 600 Hz to within
+0.1 Hz. The Championship unit recorded sounded about 2 percent lower, at 587 and
+782 Hz, and its tone ran 268 ms against the documented 250 ms. CTS warns that a
+Championship on run-down batteries sounds a quieter, longer tone, but the recording
+does not show whether that was the cause here.[^f875] The CTS alternate beep and the
+Swiss Timing tone match to within 0.05 Hz and sound alike. The Swiss recording rang on
+for about 0.29 seconds, which is taken here as an echo from the far end of the pool,
+so the clip uses the length of the CTS alternate beep. Two recordings of the HS-200 measured 714.6
+and 714.8 Hz.
+
+<div class="wiki-figure-row">
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-cts-classic.mp3" aria-label="CTS classic start beep"><a href="/assets/start-tone-cts-classic.mp3">CTS classic start beep (MP3)</a></audio>
+  <figcaption>CTS classic beep, rebuilt from recordings of three CTS start systems: a buzzing 600 Hz tone lasting a quarter second.</figcaption>
+</figure>
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-cts-alternate.mp3" aria-label="CTS alternate start beep"><a href="/assets/start-tone-cts-alternate.mp3">CTS alternate start beep (MP3)</a></audio>
+  <figcaption>CTS alternate beep from a Championship Elite: a higher, rougher two-note tone of about 0.15 seconds.</figcaption>
+</figure>
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-swiss-timing.mp3" aria-label="Swiss Timing start tone"><a href="/assets/start-tone-swiss-timing.mp3">Swiss Timing start tone (MP3)</a></audio>
+  <figcaption>Swiss Timing tone: the same rough two-note tone as the CTS alternate beep, lasting about 0.15 seconds.</figcaption>
+</figure>
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-daktronics-hs-200.mp3" aria-label="Daktronics HS-200 start tone"><a href="/assets/start-tone-daktronics-hs-200.mp3">Daktronics HS-200 start tone (MP3)</a></audio>
+  <figcaption>Daktronics HS-200 tone: a steady 715 Hz tone, lower and smoother than the CTS beeps, lasting about 0.4 seconds.</figcaption>
+</figure>
+</div>
+
+<!-- Research notes, start-tone measurements (October 2026).
+     Method: phone videos of start systems in use, supplied to the wiki as MP4 (AAC,
+     48 kHz). Audio decoded to mono, the steady part of each tone taken, spectral peaks
+     picked with a Blackman-Harris window and a 2^18 to 2^20 point FFT, pitch refined by
+     parabolic interpolation, timing read from band-limited Hilbert envelopes. Every take
+     turned out to be a periodic waveform, so each clip was rebuilt only from partials on
+     multiples of its measured repeat rate (which also drops crowd noise and music), then
+     placed on an exact ideal grid. Partial levels are the median across takes so one
+     outlier cannot pull the result. All clips are "as heard": speaker, room and phone mic
+     are baked in. A line-out recording would be needed for the raw generator signal.
+     CTS classic. SSE take: 600.2 Hz, repeat 200.07 Hz, 800 Hz at -20 dB, strong
+     partials at 1600 (-9 dB), 1800 (-7 dB) and 2000 Hz (-16 dB); clip cut off before the
+     end. Infinity Pro take: 600.16 Hz, repeat 200.05 Hz, 800 Hz at -18 dB, similar upper
+     partials; the end of the tone is not trustworthy (the audio after it drops below the
+     earlier background, suggesting a trim or noise suppression). Championship Start take
+     (unit model SS): 586.9 and 782.4 Hz at nearly equal level, repeat 195.6 Hz, 268 ms
+     with a clean stop. All three share the 3:4 pair and the 200 Hz-type repeat, so the
+     Championship unit is treated as the same tone running about 2.2 percent slow. F875
+     lists weak batteries as a cause of a quieter, longer tone; whether that also shifts
+     pitch is an inference, not documented. Length 0.25 s is from F875, F1063 and F1064,
+     not measured on the SSE or Infinity Pro.
+     CTS alternate and Swiss Timing. Partials are the 14th and 16th of a 63.75 Hz repeat
+     (892.5 and 1020 Hz, a 7:8 ratio), with sidebands at the neighbouring multiples, which
+     gives the rough sound. SSE alternate take: 892.45 and 1019.80 Hz, about 145 ms, clean
+     stop. Swiss take used: 892.8 and 1018.8 Hz, the two within about 1 dB, about 290 ms
+     with the lower note dipping in the second half, which fits a strong reflection. The
+     recordist hears the Swiss tone as short and close to the CTS alternate, so the Swiss
+     clip takes the 145–150 ms length and is levelled as the median of the Swiss take and
+     the SSE alternate take. Three older Swiss clips were set aside because the recordist was not
+     confident they were Swiss Timing units: two measured 63.65 to 63.75 Hz (about 110 to
+     160 ms) and one ran 2.3 percent sharp (913 and 1046 Hz, about 170 ms). A fifth
+     recording of the same tone from an unidentified unit measured 63.75 Hz, about 160 ms.
+     Which of the two notes sounds louder swung from -10 to +10 dB between takes, so the
+     balance at the source is probably near equal. The recordist identified the Swiss unit as a
+     StartTime V, which defaults to a bang, so it was on a non-default sound. The StartTime
+     II's "modulated tone" setting and the selectable sound types of the IV and V are
+     consistent with this tone but no Swiss document gives its frequencies. Why the
+     CTS alternate and the Swiss tone match to 0.05 Hz is unexplained.
+     Daktronics HS-200. Two takes: 714.76 Hz (clipped recording, 3rd harmonic -28 dB,
+     about 0.40 s with a clean stop followed by a natatorium reverb tail decaying near
+     17 dB/s) and 714.64 Hz (not clipped, 3rd harmonic -11 dB, 5th -31 dB; the room kept
+     the level up for about a second, so no usable length). The strong odd harmonics in the
+     second take suggest a square-ish source rolled off by the horn; the weaker ones in
+     the first probably reflect an off-axis microphone. Which of the HS-200's two swimming
+     tones this is was not recorded. Two non-harmonic peaks (3185 and 4615 Hz) in the
+     first take were treated as artifacts.
+     Still needed: an HS-200 recording with a clean stop and its tone setting noted; an
+     SSE or Infinity Pro classic beep with its end intact; another Swiss recording with
+     the model noted; a second Championship Start unit; any line-out recording. -->
+
 ## Governing-body requirements
 
 World Aquatics, the international federation for the sport, sets the equipment
@@ -206,3 +314,11 @@ whole chain, and each generation has its own operating manual.
 [^omegahist]: [Monochrome Watches, Omega's Gold Medal Olympic Timekeeping Equipment](https://monochrome-watches.com/omegas-gold-medal-olympic-timekeeping-equipment/) (on the loudspeaker placed behind each starting block to equalise the start signal).
 [^seiko]: [Google Patents, EP0557888B1, Timing system for swimming race](https://patents.google.com/patent/EP0557888B1/en) (Seiko Instruments; start-signal detection with a visual display for deaf swimmers; priority 1992).
 [^watiming]: [Wikipedia, Aquatic timing system](https://en.wikipedia.org/wiki/Aquatic_timing_system).
+[^f503]: [Colorado Time Systems, Electronic Start System Model SS2 Instruction Guide (F503 Rev. 0897, ©1993)](https://spanish.coloradotime.com/manuals/StartSystem2-man.pdf).
+[^f849]: [Colorado Time Systems, Infinity Start System User Guide (F849 Rev. 202202)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Start%20Systems/Infinity_User_Guide_F849.pdf).
+[^f875]: [Colorado Time Systems, Championship Start Instruction Guide (F875 Rev. 202202)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Start%20Systems/Champ_Start_User_Guide_F875.pdf).
+[^f1064]: [Colorado Time Systems, Championship Elite Start System User Instructions (F1064 Rev. 202606)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Start%20Systems/Elite/Championship%20Elite%20Starter_F1064.pdf).
+[^f1063]: [Colorado Time Systems, Infinity Pro Start System User Instructions (F1063)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Start%20Systems/Infinity%20Pro/INF-PRO%20Starter_F1063.pdf).
+[^dak]: [Daktronics, Horn Start HS-200 Owner's Manual (ED-12935, Rev 17, 17 March 2021)](https://www.daktronics.com/web-documents/customer-service-manuals/ed-12935.pdf).
+[^st2]: Swiss Timing, StartTime II User's Manual (document 3399.502.02, Version 2.1, July 2007).
+[^st5]: [Swiss Timing, StartTime V User's Manual (3481.560.02, Version 1.2, March 2018)](https://www.swisstiming.com/fileadmin/Resources/Instruction_Manuals/3481.560.02_STV_Egun_User_Manual.pdf).

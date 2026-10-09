@@ -115,6 +115,18 @@ tone sounded from all connected speakers, including any underwater speaker. The
 microphone volume controls affect only the public-address audio; the start and
 recall tones are fixed at full volume except at the auxiliary speaker.[^f875]
 
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-cts-classic.mp3" aria-label="CTS classic start beep"><a href="/assets/start-tone-cts-classic.mp3">CTS classic start beep (MP3)</a></audio>
+  <figcaption>The classic CTS start beep, rebuilt from recordings of three CTS start systems: a buzzing 600 Hz tone lasting a quarter second.</figcaption>
+</figure>
+
+The dual tone is the classic CTS beep shared with the later CTS start systems. A
+Championship recorded for this wiki sounded it about 2 percent lower than the newer
+models, at 587 and 782 Hz, and for 268 ms rather than 250 ms. CTS warns that run-down
+batteries make the tone quieter and longer, but the recording does not show whether
+that was the cause; the [start-systems overview](index.md) gives the measurements for
+each CTS model.[^f875][^tones]
+
 Officials and spectators are meant to start their watches from the strobe or the
 block speedlights rather than the horn. World Aquatics rules require the starter's
 commands and the starting signal to be heard equally and simultaneously at each
@@ -152,6 +164,7 @@ tabletop, a wall (with the wall-mount kit), the `TR-3` tripod, or a flagpole
 | Microphones | Up to 2 wired (M2 family), independent volume |
 | Start output | Normally-open pulses; strobe recharge ~30 s |
 | Start tone | 0.25 s dual-tone blast with simultaneous strobe/speedlight |
+| Start tone (measured) | Classic CTS beep; one unit recorded at 587 and 782 Hz, 268 ms |
 
 ## Part numbers and accessories
 
@@ -188,6 +201,7 @@ tabletop, a wall (with the wall-mount kit), the `TR-3` tripod, or a flagpole
 ## References
 
 [^f875]: [Colorado Time Systems, Championship Start Instruction Guide (F875 Rev. 202202)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Start%20Systems/Champ_Start_User_Guide_F875.pdf).
+[^tones]: [Libre Aquatics Wiki, Start systems: start tones](index.md#start-tones) (recordings measured for the wiki, 2026).
 [^product]: [Colorado Time Systems, Championship Start System (SS) product page](https://coloradotime.com/products/championship-start-system-ss).
 [^psu]: [Colorado Time Systems shop, Start System Power Supply (R-920-059)](https://shop.coloradotime.com/products/start-system-power-supply-920-029), compatibility list covering `SS`/`SSF`/`WSS`/`WSSF`, `INF-SSM`/`INF-SSMF`, and legacy `SS-01`/`SS-02`.
 [^champ-mic]: [Colorado Time Systems shop, Start System Microphone (M2-C15)](https://shop.coloradotime.com/collections/start-systems).

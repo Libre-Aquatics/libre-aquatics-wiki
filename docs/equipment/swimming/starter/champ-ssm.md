@@ -133,6 +133,18 @@ a limited public-address system: pressing push-to-talk alone carries the
 starter's voice to the speakers without firing a start. The microphone volume
 controls affect only this public-address audio.[^f875-0604]
 
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-cts-classic.mp3" aria-label="CTS classic start beep"><a href="/assets/start-tone-cts-classic.mp3">CTS classic start beep (MP3)</a></audio>
+  <figcaption>The classic CTS start beep, rebuilt from recordings of three later CTS start systems: a buzzing 600 Hz tone lasting a quarter second. This model itself was not recorded.</figcaption>
+</figure>
+
+No CHAMP-SSM has been recorded for this wiki, so its frequencies are not measured.
+The clip is the classic CTS beep as recorded on later CTS start systems, 600 Hz with
+a weaker 800 Hz component, played for the same quarter second that CTS documents for
+this model. It assumes the dual tone itself did not change between models. The
+[start-systems overview](index.md) gives the measurements and how they were
+made.[^tones]
+
 The optional wireless-microphone kit consists of a belt-clipped transmitter and
 a receiver that plugs into the rear panel; the receiver's model designation,
 `RXR`, appears on its FCC identification label. The receiver carries squelch and
@@ -212,6 +224,7 @@ current generation.
 ## References
 
 [^f875-0604]: [Colorado Time Systems, Championship Start Instruction Guide, F875 Rev. 0604 (©2004)](https://spanish.coloradotime.com/manuals/ChampStart_0604.pdf), hosted as "ChampStart" on the CTS Spanish-language site; the current generation is covered by later revisions of the same document number (see F875 Rev. 202202 below).
+[^tones]: [Libre Aquatics Wiki, Start systems: start tones](index.md#start-tones) (recordings measured for the wiki, 2026).
 [^advert]: Colorado Time Systems advertisement, "Tips for Training with the Championship Start System," *Swimming Technique* 41(1), April–June 2004, p. 16 (©2004 Colorado Time Systems). [Issue PDF](https://www.swimmingworldmagazine.com/premium/samples/200404st.pdf).
 [^psu]: [Colorado Time Systems shop, Start System Power Supply (R-920-059)](https://shop.coloradotime.com/products/start-system-power-supply-920-029), compatibility list covering `SS`/`SSF`/`WSS`/`WSSF`, `INF-SSM`/`INF-SSMF`, and legacy `SS-01`/`SS-02`.
 [^manuals]: [Colorado Time Systems, Manuals library](https://coloradotime.com/support/manuals) (lists "Championship Start System Legacy Tripod Mounting Instructions," document TR-2).

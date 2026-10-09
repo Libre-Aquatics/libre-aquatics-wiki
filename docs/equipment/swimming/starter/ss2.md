@@ -151,6 +151,17 @@ start. With more than one microphone connected, a recall fails if two
 starters press their buttons at the same time, so the manual directs that one
 starter be designated to control recalls.[^f503]
 
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-cts-classic-half-second.mp3" aria-label="CTS classic start beep, half-second version"><a href="/assets/start-tone-cts-classic-half-second.mp3">CTS classic start beep, half-second version (MP3)</a></audio>
+  <figcaption>An illustration of the classic CTS beep at the half-second length documented for this model, built from recordings of later CTS start systems. This model itself was not recorded.</figcaption>
+</figure>
+
+No SS2 has been recorded for this wiki, so its frequencies are not measured. The
+clip is the classic CTS beep as recorded on later CTS start systems, 600 Hz with a
+weaker 800 Hz component, played for the half second that CTS documents for the SS2.
+It assumes the dual tone itself did not change between models. The [start-systems
+overview](index.md) gives the measurements and how they were made.[^tones]
+
 The camera-type strobe flashes automatically with every start pulse and needs
 about 30 seconds between flashes to recharge; a start given before the strobe
 circuit has recharged sounds the tone without a flash. The manual tells anyone
@@ -249,6 +260,7 @@ the crowd.[^f503]
 ## References
 
 [^f503]: [Colorado Time Systems, Electronic Start System Model SS2 Instruction Guide (F503 Rev. 0897, ©1993)](https://spanish.coloradotime.com/manuals/StartSystem2-man.pdf), hosted on the CTS Spanish-language legacy site.
+[^tones]: [Libre Aquatics Wiki, Start systems: start tones](index.md#start-tones) (recordings measured for the wiki, 2026).
 [^f506]: [Colorado Time Systems, Swimming 5 for the System 5 Sports Timer user guide (F506, Rev. 0698)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/System5/System5swim-man.pdf), hardware-setup chapter (the SS2 as the standard package start system) and start-system appendix (the `SS-1`/SS2/LS series).
 [^f890]: [Colorado Time Systems, Swimming 6 for the System 6 Sports Timer user guide (F890)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/System6/System_6_Swimming_Manual_F890.pdf), timing-corrections section ("a CTS Infinity, ChampStart or SS-2").
 [^psu]: [Colorado Time Systems shop, Start System Power Supply (R-920-059)](https://shop.coloradotime.com/products/start-system-power-supply-920-029), compatibility list covering `SS`/`SSF`/`WSS`/`WSSF`, `INF-SSM`/`INF-SSMF`, and legacy `SS-01`/`SS-02`.

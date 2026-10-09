@@ -745,6 +745,54 @@ html { scroll-behavior: smooth; }
 /* A figure whose image links to the full-size asset: without this the article link
    rule draws an underline stub and leaves an inline baseline gap under the image. */
 .wiki-article figure.wiki-figure a { display: block; text-decoration: none; }
+/* A sound clip. Without JS it shows the browser's own player at the figure's
+   width; AudioPlayers.astro swaps that for the .wiki-audio player below. Either
+   way the caption describes the sound, which is the clip's text alternative.
+   A clip needs far less room than a photograph, so its figure floats narrower. */
+.wiki-article figure.wiki-figure audio { display: block; width: 100%; }
+.wiki-article figure.wiki-figure:has(audio) { width: 300px; }
+.wiki-article .wiki-figure-row > figure.wiki-figure:has(audio) { width: auto; flex-basis: 220px; }
+.wiki-audio {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  padding: 0.45em 0.5em;
+  background: var(--wiki-bg);
+  border-bottom: 1px solid var(--wiki-divider);
+}
+.wiki-audio__play {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  /* The page background as the icon colour keeps the icon at well over 3:1
+     against the accent in both themes (WCAG 1.4.11). */
+  background: var(--wiki-accent);
+  color: var(--wiki-bg);
+  cursor: pointer;
+}
+.wiki-audio__play:hover { filter: brightness(1.1); }
+.wiki-audio__play:focus-visible { outline: 2px solid var(--wiki-fg); outline-offset: 2px; }
+.wiki-audio__play svg { display: block; }
+/* Nudge the triangle right so it sits optically centred in the circle. */
+.wiki-audio:not(.is-playing) .wiki-audio__play svg { margin-left: 2px; }
+.wiki-audio__track {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--wiki-divider);
+  overflow: hidden;
+}
+.wiki-audio__fill {
+  height: 100%;
+  background: var(--wiki-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+}
 
 /* ---- Lightbox -------------------------------------------------------------- */
 /* Enlarges a figure in place. The figure's link still works without JS, so this

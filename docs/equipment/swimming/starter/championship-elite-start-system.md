@@ -99,6 +99,23 @@ only), a choice of the classic CTS beep or a shorter alternate tone for both
 start and recall, strobe and lane-indicator intensity, and start-signal
 polarity.[^f1064]
 
+<div class="wiki-figure-row">
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-cts-classic.mp3" aria-label="CTS classic start beep"><a href="/assets/start-tone-cts-classic.mp3">CTS classic start beep (MP3)</a></audio>
+  <figcaption>The classic CTS beep, rebuilt from recordings: a buzzing 600 Hz tone lasting a quarter second.</figcaption>
+</figure>
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-cts-alternate.mp3" aria-label="CTS alternate start beep"><a href="/assets/start-tone-cts-alternate.mp3">CTS alternate start beep (MP3)</a></audio>
+  <figcaption>The alternate beep, rebuilt from a recording of an Elite: a higher, rougher two-note tone of about 0.15 seconds.</figcaption>
+</figure>
+</div>
+
+Recordings of an Elite measured for this wiki put the classic beep at 600 Hz, with a
+weaker 800 Hz component, and the alternate beep at two notes of 892.5 and 1020 Hz
+sounding for about 0.15 seconds. The alternate beep matches the start tone recorded
+from a Swiss Timing system; the [start-systems overview](index.md) compares the
+tones and describes how they were measured.[^tones]
+
 A training mode plays a recorded "take your marks" message and then, after a
 randomized 1.5–2.5-second delay, the start tone and strobe. The random delay
 keeps swimmers from anticipating the start. It repeats at a settable interval
@@ -162,6 +179,7 @@ unit mounts on a tabletop, the `TR-3` tripod, or a flagpole
 | Visual indicators | Up to 13 EVIs/EXTSTROBE+ and up to 12 speedlights |
 | Start signaling | Normally-open or normally-closed; polarity-independent input |
 | Start tone | 0.25 s dual-tone blast with simultaneous strobe/speedlight |
+| Start tone (measured) | Classic beep 600 Hz; alternate beep 892.5 and 1020 Hz, about 0.15 s |
 | Certifications | cULus (UL 863/UL 1492, file E190097), FCC Part 15, CE, RoHS |
 
 ## Part numbers and accessories
@@ -201,6 +219,7 @@ unit mounts on a tabletop, the `TR-3` tripod, or a flagpole
 ## References
 
 [^f1064]: [Colorado Time Systems, Championship Elite Start System User Instructions (F1064 Rev. 202606)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Start%20Systems/Elite/Championship%20Elite%20Starter_F1064.pdf). Figures cited from the local copy, revision 202606; an earlier revision (202509) is also in circulation.
+[^tones]: [Libre Aquatics Wiki, Start systems: start tones](index.md#start-tones) (recordings measured for the wiki, 2026).
 [^datasheet]: [Colorado Time Systems, Elite Start System datasheet (Rev. 05/24)](https://coloradotime.com/hubfs/Products/Elite/Elite_Start_System.pdf).
 [^swimmingworld]: [Swimming World, Colorado Time Systems Introduces New Championship Elite Start System](https://www.swimmingworldmagazine.com/news/colorado-time-systems-introduces-new-championship-elite-start-system/) (press release, 13 February 2024).
 [^vss]: [Colorado Time Systems, Visual Start Signaling (VSS)](https://coloradotime.com/products/visual-start-signaling-vss).

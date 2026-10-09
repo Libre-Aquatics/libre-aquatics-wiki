@@ -7,14 +7,15 @@ tags:
 noindex: true
 ---
 
-Every image on Libre Aquatics Wiki is listed here with its author, licence, and source,
-as required by [Sources & citations](sources.md). If you hold rights to an image and
-want it removed or corrected, email info@libreaquatics.org or open an issue on the
-wiki's repository.
+Every image and sound clip on Libre Aquatics Wiki is listed here with its author,
+licence, and source, as required by [Sources & citations](sources.md). If you hold
+rights to an image or clip and want it removed or corrected, email
+info@libreaquatics.org or open an issue on the wiki's repository.
 
-Original photographs taken for the wiki are released under the same licence as the
-wiki's text, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), so they
-can be reused on the same terms as the articles around them.
+Original photographs and sound clips made for the wiki are released under the same
+licence as the wiki's text,
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), so they can be reused
+on the same terms as the articles around them.
 
 Non-original images are used only where they are in the public domain or under a free
 licence that permits commercial use and modification (CC0, or CC BY without a
@@ -34,3 +35,17 @@ description page before use.
 
 No non-original images are currently in use. When one is added, it will be listed
 here with its author, licence, and source URL.
+
+## Sound clips
+
+The start-tone clips are not recordings. Each is synthesized from frequencies and
+durations measured in field recordings of start systems at pools, as described under
+[Start tones](../equipment/swimming/starter/index.md#start-tones).
+
+| Clip | Used on | Author | Licence |
+| --- | --- | --- | --- |
+| CTS classic start beep | [Start systems](../equipment/swimming/starter/index.md), [Championship Start System (CHAMP-SSM)](../equipment/swimming/starter/champ-ssm.md), [Championship Start System](../equipment/swimming/starter/championship-start-system.md), [Championship Elite Start System](../equipment/swimming/starter/championship-elite-start-system.md), [Infinity Pro Start System](../equipment/swimming/starter/infinity-pro-start-system.md) | Ethan Herstedt (synthesized reconstruction) | CC BY-SA 4.0 |
+| CTS classic start beep, half-second version | [SS2 Electronic Start System](../equipment/swimming/starter/ss2.md), [Infinity Start System](../equipment/swimming/starter/infinity-start-system.md) | Ethan Herstedt (synthesized reconstruction) | CC BY-SA 4.0 |
+| CTS alternate start beep | [Start systems](../equipment/swimming/starter/index.md), [Championship Elite Start System](../equipment/swimming/starter/championship-elite-start-system.md), [Infinity Pro Start System](../equipment/swimming/starter/infinity-pro-start-system.md) | Ethan Herstedt (synthesized reconstruction) | CC BY-SA 4.0 |
+| Swiss Timing start tone | [Start systems](../equipment/swimming/starter/index.md), [StartTime V](../equipment/swimming/starter/starttime-v.md) | Ethan Herstedt (synthesized reconstruction) | CC BY-SA 4.0 |
+| Daktronics HS-200 start tone | [Start systems](../equipment/swimming/starter/index.md), [HS-200](../equipment/swimming/starter/hs-200.md) | Ethan Herstedt (synthesized reconstruction) | CC BY-SA 4.0 |

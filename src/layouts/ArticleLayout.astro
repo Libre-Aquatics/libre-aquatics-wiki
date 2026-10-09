@@ -12,6 +12,7 @@ import PageActions from '../components/PageActions.astro';
 import PrevNext from '../components/PrevNext.astro';
 import CitationHovercards from '../components/CitationHovercards.tsx';
 import Lightbox from '../components/Lightbox.astro';
+import AudioPlayers from '../components/AudioPlayers.astro';
 
 interface Heading {
   depth: number;
@@ -163,4 +164,7 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
 
   {/* Enlarges a figure in place; without JS its link opens the asset. */}
   <Lightbox />
+
+  {/* Wiki-styled sound-clip players; without JS the native controls remain. */}
+  <AudioPlayers />
 </BaseLayout>

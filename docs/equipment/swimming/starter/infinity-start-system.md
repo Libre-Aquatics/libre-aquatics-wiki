@@ -96,6 +96,18 @@ at fixed full volume, a simultaneous strobe flash, and a start pulse to the
 timer. Pressing a start button again signals a false-start recall, a repeating
 dual tone.[^f849]
 
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-cts-classic-half-second.mp3" aria-label="CTS classic start beep, half-second version"><a href="/assets/start-tone-cts-classic-half-second.mp3">CTS classic start beep, half-second version (MP3)</a></audio>
+  <figcaption>An illustration of the classic CTS beep at the half-second length documented for this model, built from recordings of later CTS start systems. This model itself was not recorded.</figcaption>
+</figure>
+
+No Infinity has been recorded for this wiki, so its frequencies are not measured.
+The clip is the classic CTS beep as recorded on later CTS start systems, 600 Hz with
+a weaker 800 Hz component, played for the half second that CTS documents for the
+Infinity. It assumes the dual tone itself did not change between models. The
+[start-systems overview](index.md) gives the measurements and how they were
+made.[^tones]
+
 The strobe flashes with the start tone, and officials and watch timers are meant
 to start from the flash rather than the tone. World Aquatics rules require the
 starter's commands and the starting signal to be heard equally and
@@ -157,6 +169,7 @@ mount.[^f849]
 ## References
 
 [^f849]: [Colorado Time Systems, Infinity Start System User Guide (F849 Rev. 202202)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Start%20Systems/Infinity_User_Guide_F849.pdf).
+[^tones]: [Libre Aquatics Wiki, Start systems: start tones](index.md#start-tones) (recordings measured for the wiki, 2026).
 [^product]: [Colorado Time Systems, Infinity Start System (INF-SSM) product page](https://coloradotime.com/products/infinity-start-system-inf-ssm).
 [^f849old]: [Colorado Time Systems, Infinity Start System User Guide (F849 Rev. 1005), copy hosted by Poolweb](https://assets.poolweb.com/products/Colorado_Time/Infinity_Manual.pdf).
 [^psu]: [Colorado Time Systems shop, Start System Power Supply (R-920-059)](https://shop.coloradotime.com/products/start-system-power-supply-920-029), lists compatibility with Championship (`SS`/`SSF`/`WSS`/`WSSF`), Infinity (`INF-SSM`/`INF-SSMF`), and legacy (`SS-01`/`SS-02`) start systems.

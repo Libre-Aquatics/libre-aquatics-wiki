@@ -122,6 +122,17 @@ In swimming, the external outputs drive Swiss Timing's
 [in-block lane speakers and mobile loudspeaker sets](../external-speaker/swiss-timing.md),
 sited so the start reaches every swimmer at the same instant.[^datasheet]
 
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-swiss-timing.mp3" aria-label="Swiss Timing start tone"><a href="/assets/start-tone-swiss-timing.mp3">Swiss Timing start tone (MP3)</a></audio>
+  <figcaption>A StartTime V start tone, rebuilt from a recording: a rough two-note tone lasting about 0.15 seconds.</figcaption>
+</figure>
+
+A StartTime V recorded for this wiki was set to an electronic tone rather than the
+default bang. The tone measured as two notes, 892.5 and 1020 Hz, lasting about
+0.15 seconds, and matches the alternate beep of the CTS Championship Elite to within
+0.05 Hz. The [start-systems overview](index.md) compares the two and describes how
+they were measured.[^manual][^tones]
+
 ## Connections
 
 The unit connects to Swiss Timing's Quantum timing console, and its rear panel
@@ -150,6 +161,7 @@ Main unit:
 | Dimensions | 395 × 192 × 160 mm |
 | Weight | 5.8 kg |
 | Speaker | Built-in high fidelity loudspeaker and amplifier |
+| Start tone (measured) | Electronic tone setting: 892.5 and 1020 Hz, about 0.15 s |
 | Public address output | Up to 2 x 20 W |
 | External speaker load | 3.2 to 16 Ω recommended; 2 Ω with increased distortion |
 | Speaker cable runs | 30 m at 0.75 mm²; 50 m at 1 or 1.5 mm² |
@@ -183,6 +195,7 @@ E-gun and microphone unit:
 
 ## References
 
+[^tones]: [Libre Aquatics Wiki, Start systems: start tones](index.md#start-tones) (recordings measured for the wiki, 2026).
 [^datasheet]: [Swiss Timing, StartTime V Electronic Starting Device datasheet (10-2015)](https://www.swisstiming.com/fileadmin/Resources/Data/Datasheets/DOCM_MS_StartTimeV_1015_EN.pdf).
 [^manual]: [Swiss Timing, StartTime V User's Manual (3481.560.02, Version 1.2, March 2018)](https://www.swisstiming.com/fileadmin/Resources/Instruction_Manuals/3481.560.02_STV_Egun_User_Manual.pdf).
 [^egunds]: [Swiss Timing, e-GUN Electronic Starting System datasheet (EGUN_3434_1303, 09-2013)](https://www.swisstiming.com/fileadmin/Resources/Data/Datasheets/DOCM_MS_EgunStartingSystem_0913_EN.pdf) (the e-gun as a new-generation flash gun replacing the powder gun and its transducer, debuting at the Vancouver Winter Games and run from the earlier StartTime IV).

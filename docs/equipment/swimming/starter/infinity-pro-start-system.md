@@ -81,7 +81,31 @@ The starter presses push-to-talk with either start button to fire the start: a
 horn blast with a simultaneous strobe flash and a start pulse to the timer. A
 false-start recall function lets the starter alert the competitors.
 The unit can sound the standard CTS start tone or an alternate tone, and doubles
-as a limited public-address system for announcements.[^datasheet][^product]
+as a limited public-address system for announcements.[^datasheet][^product] The
+user manual gives the start signal as a dual tone lasting a quarter
+second.[^datasheet]
+
+A Start Tone Selection item in the setup menu switches between the CTS tone and the
+alternate tone, and the choice applies to both the start and the recall signal; the
+unit ships set to the CTS beep.[^datasheet]
+
+<div class="wiki-figure-row">
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-cts-classic.mp3" aria-label="CTS classic start beep"><a href="/assets/start-tone-cts-classic.mp3">CTS classic start beep (MP3)</a></audio>
+  <figcaption>The classic CTS start beep, rebuilt from recordings of three CTS start systems: a buzzing 600 Hz tone lasting a quarter second.</figcaption>
+</figure>
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-cts-alternate.mp3" aria-label="CTS alternate start beep"><a href="/assets/start-tone-cts-alternate.mp3">CTS alternate start beep (MP3)</a></audio>
+  <figcaption>The CTS alternate beep as recorded on a Championship Elite: a higher, rougher two-note tone of about 0.15 seconds. The Infinity Pro's alternate tone has not been recorded.</figcaption>
+</figure>
+</div>
+
+An Infinity Pro recorded for this wiki sounded the classic beep at 600 Hz, the same
+pitch as the Championship Elite, with a weaker 800 Hz component. Its alternate tone
+was not recorded; the clip is the Championship Elite's alternate beep, on the
+assumption that CTS uses the same alternate tone on both models. The
+[start-systems overview](index.md) compares the CTS beeps with the Daktronics and
+Swiss Timing tones and describes how they were measured.[^tones]
 
 The strobe flashes with the horn, and officials and watch timers are meant to
 start from the flash rather than the tone. World Aquatics rules require the
@@ -113,6 +137,7 @@ tripod, or on a flagpole with the `START-FPM-2` mount.[^datasheet]
 | Speaker port | Output max 40 W; one external `R-INF-SPxxx` speaker |
 | Strobe | Adjustable-intensity strobe, flashes with horn |
 | Start signaling | Normally-open or normally-closed to the timer |
+| Start tone | 0.25 s dual-tone blast; CTS beep (measured at 600 Hz) or alternate beep |
 | Battery | Internal gel-cell; 12+ h operation; 90% in ~4 h, 100% in ~6.5 h |
 | Charging | 115 V (`INF-PRO`) or 230 V (`INF-PRO-F`); no operation while charging |
 | Auto shut-off | After 60 minutes idle |
@@ -152,6 +177,7 @@ tripod, or on a flagpole with the `START-FPM-2` mount.[^datasheet]
 ## References
 
 [^datasheet]: [Colorado Time Systems, Infinity Pro Start System datasheet (Rev. 11/24)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Datasheets/Infinity_Pro_Start_System.pdf). User manual: [CTS F1063](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Start%20Systems/Infinity%20Pro/INF-PRO%20Starter_F1063.pdf).
+[^tones]: [Libre Aquatics Wiki, Start systems: start tones](index.md#start-tones) (recordings measured for the wiki, 2026).
 [^product]: [Colorado Time Systems, Infinity Pro Start System (INF-PRO) product page](https://coloradotime.com/products/infinity-pro-start-system-inf-pro).
 [^psu]: [Colorado Time Systems shop, Start System Power Supply (R-920-059)](https://shop.coloradotime.com/products/start-system-power-supply-920-029), the `-F` suffix denotes the 230 V variant across the Championship and Infinity lines.
 [^wacr]: [World Aquatics, Competition Regulations (Part Two: Swimming Rules)](https://resources.fina.org/fina/document/2026/02/18/e6815ecc-06d9-4f0b-98e9-4c441cf5e6a3/2026-02-18_World-Aquatics_CR-Final.pdf), article 15.16.3 (loudspeakers at each starting block; false-start detection equipment required).
