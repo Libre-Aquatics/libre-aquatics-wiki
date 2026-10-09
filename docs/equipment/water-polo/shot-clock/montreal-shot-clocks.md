@@ -47,7 +47,7 @@ Still to research: whether the Montreal name dates from the 2005 Montreal world 
 This article is a stub. The Montreal (`3435.904`) is a Swiss Timing water polo shot clock with
 40 cm possession-time digits and a game clock, sold in kits of four with a battery-backed
 power and horn unit and controlled from the
-[Calypso WPO console](../scoreboard-control/calypso-wpo-console.md).
+[Calypso WPO console](../console/calypso-wpo-console.md).
 
-See the [pace clocks overview](index.md) for the shared background that applies to every
-clock.
+See the [water polo shot clocks overview](index.md) for the shared background that applies
+to every shot clock.

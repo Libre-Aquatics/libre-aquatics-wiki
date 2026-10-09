@@ -29,7 +29,7 @@ devices it updates.
 -->
 
 This article is a stub. FlashSimple is the PC program that Swiss Timing provides for writing new
-firmware to the [Calypso WPO console](../equipment/common/scoreboard-control/calypso-wpo-console.md)
+firmware to the [Calypso WPO console](../equipment/water-polo/console/calypso-wpo-console.md)
 over an RS232 cable, programming the console's Renesas H8S/2134F microcontroller in about four
 minutes.
 

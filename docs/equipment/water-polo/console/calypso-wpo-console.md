@@ -129,14 +129,14 @@ possession input drives a possession arrow on the board.
 
 The Calypso WPO console is the keypad controller that Swiss Timing makes for water polo. From the
 officials' table it keeps the score and runs the game clock, the shot clocks, team fouls,
-exclusions and timeouts, and sends them to [Calypso](../scoreboard/calypso.md) or
-[Piccolo](../scoreboard/piccolo.md) scoreboards. It also drives Swiss Timing's
-[water polo shot clocks](../pace-clock/swiss-timing-shot-clocks.md) and a horn.[^manual] The
+exclusions and timeouts, and sends them to [Calypso](../../common/scoreboard/calypso.md) or
+[Piccolo](../../common/scoreboard/piccolo.md) scoreboards. It also drives Swiss Timing's
+[water polo shot clocks](../shot-clock/swiss-timing-shot-clocks.md) and a horn.[^manual] The
 manual's running header calls it the WPO Saturn Console, and the shot-clock documents call it
 the Saturn Waterpolo or WPO Saturn controller.[^manual][^shotds][^shot2023] A Swiss Timing
 representative in Austria lists it as the Omega Calypso Waterpolo controller, article
-`3403.900`.[^avkwpo] The general background on scoreboard controllers is on the
-[scoreboard control overview](index.md).
+`3403.900`.[^avkwpo] The general background on water polo consoles is on the
+[water polo consoles overview](index.md).
 
 ## Naming and the Saturn family
 
@@ -285,8 +285,8 @@ boards must then use the other one.[^manual]
 Shot clocks are supplied as kits of two or four with a power and horn unit, 30 m and 70 m cable
 reels and a cable to the console.[^shot2014][^shot2023] Dealer AVK offers two shot-clock
 families with the console, the Calypso clocks and the larger
-[Montreal shot clocks](../pace-clock/montreal-shot-clocks.md), together with the
-[Coyote horn](../pace-clock/coyote-horn.md).[^avkstwp][^montreal]
+[Montreal shot clocks](../shot-clock/montreal-shot-clocks.md), together with the
+[Coyote horn](../shot-clock/coyote-horn.md).[^avkstwp][^montreal]
 
 ## Connections
 
@@ -341,20 +341,21 @@ and dry.[^manual]
 - `3403.900`: Omega Calypso Waterpolo controller, per AVK.[^avkwpo]
 - `3400.740`: [team-name module](calypso-team-name-module.md), needed to send team names.[^manual]
 - `9051.1307`: RS232 cable for firmware updates.[^manual]
-- `3403.950.CA`, `3403.951.CA`, `3403.790`: [Calypso water polo shot clocks](../pace-clock/swiss-timing-shot-clocks.md).[^shot2023][^avkshot]
-- `3435.904`: [Montreal shot clocks](../pace-clock/montreal-shot-clocks.md) with game clock.[^montreal]
-- `3435.900`: [Coyote horn](../pace-clock/coyote-horn.md).[^avkcoyote]
-- `3500.900`: [Saturn 2](../scoreboard/saturn-2.md) multisport controller, the hall-sports
+- `3403.950.CA`, `3403.951.CA`, `3403.790`: [Calypso water polo shot clocks](../shot-clock/swiss-timing-shot-clocks.md).[^shot2023][^avkshot]
+- `3435.904`: [Montreal shot clocks](../shot-clock/montreal-shot-clocks.md) with game clock.[^montreal]
+- `3435.900`: [Coyote horn](../shot-clock/coyote-horn.md).[^avkcoyote]
+- `3500.900`: [Saturn 2](../../common/scoreboard/saturn-2.md) multisport controller, the hall-sports
   counterpart.[^avksat]
 
 ## See also
 
-- [Calypso](../scoreboard/calypso.md) and [Piccolo](../scoreboard/piccolo.md): the scoreboards it drives
-- [Swiss Timing water polo shot clocks](../pace-clock/swiss-timing-shot-clocks.md): the possession clocks it runs
-- [Saturn 2](../scoreboard/saturn-2.md): the multisport scoreboard family it belongs to
-- [WTTC-1 Tabletop Controller](wttc-1.md): the Colorado Time Systems water polo controller
-- [Water polo equipment](../../water-polo/index.md): the water polo equipment overview
-- [Scoreboard control](index.md): the scoreboard control overview
+- [Calypso](../../common/scoreboard/calypso.md) and [Piccolo](../../common/scoreboard/piccolo.md): the scoreboards it drives
+- [Swiss Timing water polo shot clocks](../shot-clock/swiss-timing-shot-clocks.md): the possession clocks it runs
+- [Saturn 2](../../common/scoreboard/saturn-2.md): the multisport scoreboard family it belongs to
+- [WTTC-1 Tabletop Controller](../../common/scoreboard-control/wttc-1.md): the Colorado Time Systems water polo controller
+- [Water polo consoles](index.md): the water polo consoles overview
+- [Scoreboard control](../../common/scoreboard-control/index.md): the scoreboard control overview
+- [Water polo equipment](../index.md): the water polo equipment overview
 - [Swiss Timing](../../../vendors/swiss-timing.md): the manufacturer
 - [Equipment](../../index.md): the equipment reference
 

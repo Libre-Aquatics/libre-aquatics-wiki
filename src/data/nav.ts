@@ -294,7 +294,37 @@ export const nav: NavNode[] = [
         title: 'Water Polo',
         index: 'equipment/water-polo/index.md',
         indexTitle: 'Water Polo Equipment Overview',
-        children: [],
+        children: [
+          {
+            title: 'Consoles',
+            index: 'equipment/water-polo/console/index.md',
+            indexTitle: 'Water Polo Consoles Overview',
+            children: [
+              {
+                title: 'Swiss Timing',
+                children: [
+                  { title: 'Calypso WPO Console', page: 'equipment/water-polo/console/calypso-wpo-console.md' },
+                  { title: 'Team-Name Module (3400.740)', page: 'equipment/water-polo/console/calypso-team-name-module.md' },
+                ],
+              },
+            ],
+          },
+          {
+            title: 'Shot Clocks',
+            index: 'equipment/water-polo/shot-clock/index.md',
+            indexTitle: 'Water Polo Shot Clocks Overview',
+            children: [
+              {
+                title: 'Swiss Timing',
+                children: [
+                  { title: 'Water Polo Shot Clocks', page: 'equipment/water-polo/shot-clock/swiss-timing-shot-clocks.md' },
+                  { title: 'Montreal Shot Clocks', page: 'equipment/water-polo/shot-clock/montreal-shot-clocks.md' },
+                  { title: 'Coyote Horn', page: 'equipment/water-polo/shot-clock/coyote-horn.md' },
+                ],
+              },
+            ],
+          },
+        ],
       },
       {
         title: 'Common',
@@ -396,14 +426,6 @@ export const nav: NavNode[] = [
                 ],
               },
               {
-                title: 'Swiss Timing',
-                children: [
-                  { title: 'Water Polo Shot Clocks', page: 'equipment/common/pace-clock/swiss-timing-shot-clocks.md' },
-                  { title: 'Montreal Shot Clocks', page: 'equipment/common/pace-clock/montreal-shot-clocks.md' },
-                  { title: 'Coyote Horn', page: 'equipment/common/pace-clock/coyote-horn.md' },
-                ],
-              },
-              {
                 title: 'Taroda Industries',
                 children: [
                   { title: 'Kyroscope Pace Clock', page: 'equipment/common/pace-clock/kyroscope-pace-clock.md' },
@@ -439,13 +461,6 @@ export const nav: NavNode[] = [
                       { title: 'WHC-1 Handheld Controller', page: 'equipment/common/scoreboard-control/whc-1.md' },
                       { title: 'GameLink Console', page: 'equipment/common/scoreboard-control/gamelink-console.md' },
                       { title: 'Run-Stop-Reset Units (WTTC-1 accessory)', page: 'equipment/common/scoreboard-control/rsr.md' },
-                    ],
-                  },
-                  {
-                    title: 'Swiss Timing',
-                    children: [
-                      { title: 'Calypso WPO Console', page: 'equipment/common/scoreboard-control/calypso-wpo-console.md' },
-                      { title: 'Team-Name Module (3400.740)', page: 'equipment/common/scoreboard-control/calypso-team-name-module.md' },
                     ],
                   },
                 ],

@@ -134,8 +134,8 @@ settings.[^sw] Swiss Timing also lists its older ARES system and a Saturn contro
 compatible.[^manual]
 
 The Calypso name covers more than the line boards. Swiss Timing's water polo controller is the
-[Calypso WPO console](../scoreboard-control/calypso-wpo-console.md), and a Swiss Timing dealer
-sells the company's [water polo shot clocks](../pace-clock/swiss-timing-shot-clocks.md) as Omega
+[Calypso WPO console](../../water-polo/console/calypso-wpo-console.md), and a Swiss Timing dealer
+sells the company's [water polo shot clocks](../../water-polo/shot-clock/swiss-timing-shot-clocks.md) as Omega
 Calypso shot clocks.[^wpo][^avk]
 
 ## Models and configurations
@@ -202,7 +202,7 @@ This section lists what drives a Calypso board in each sport.
 |---|---|---|
 | Swimming | Quantum Aquatics timer | "SCB Calypso" output on a serial port, with options to show the event and heat on a chosen line and to shift the results down[^sw] |
 | Diving | [DIV Scoring Manager](../../../software/div-scoring-manager.md) | Serial link from its Run Event screen using the UNT4 protocol, with layouts for 5, 7 and 9 to 11-judge panels including synchronised diving[^divsm][^dvsy] |
-| Water polo | [Calypso WPO console](../scoreboard-control/calypso-wpo-console.md) | Six-, eight- or ten-line layouts, horizontal or vertical, with team names, scores, penalties and timeouts[^manual][^wpo] |
+| Water polo | [Calypso WPO console](../../water-polo/console/calypso-wpo-console.md) | Six-, eight- or ten-line layouts, horizontal or vertical, with team names, scores, penalties and timeouts[^manual][^wpo] |
 
 The smaller [Piccolo](piccolo.md) alphanumeric board understands the same Calypso protocol.[^piccolo]
 
@@ -253,7 +253,7 @@ This section lists the part numbers in Swiss Timing's datasheet.
 ## See also
 
 - [Piccolo](piccolo.md): the smaller Swiss Timing alphanumeric board on the same protocol
-- [Calypso WPO console](../scoreboard-control/calypso-wpo-console.md): the water polo controller that drives it
+- [Calypso WPO console](../../water-polo/console/calypso-wpo-console.md): the water polo controller that drives it
 - [Quantum Aquatics](../../swimming/timers/quantum.md): the swimming timer that drives it
 - [LED-R](led-r.md): a Colorado Time Systems numeric line board
 - [Scoreboards](index.md): the scoreboards overview

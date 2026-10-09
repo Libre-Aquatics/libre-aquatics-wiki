@@ -43,7 +43,8 @@ Held: sources/vendors/swiss-timing/pace-clocks/swiss-timing-wpo-shotclock-user-m
     and 3403.950.CA (two); 50 x 35 x 53 cm, 5.8 kg, 24 cm digits, 24 V DC from the power and horn
     module, 30 VA max, -10 to 50 C. https://www.avkgroup.at/catalog/3403.951.CA/
   - The AVK water polo system page offers "Calypso or Montreal" shot clocks with game time;
-    Montreal is not otherwise documented here.
+    Montreal now has its own stub, montreal-shot-clocks.md.
+  - Moved from common/pace-clock/ to water-polo/shot-clock/ on 2026-10-08.
   - Driven by the Calypso WPO console.
 
 Still to research: read both manuals in full; the Montreal model; which consoles besides the
@@ -52,7 +53,7 @@ Calypso console drive them.
 
 This article is a stub. Swiss Timing's water polo shot clocks are free-standing LED displays with
 24 cm digits, supplied in kits with a power and horn unit and controlled from the
-[Calypso WPO console](../scoreboard-control/calypso-wpo-console.md); a 2023 model adds a game clock
+[Calypso WPO console](../console/calypso-wpo-console.md); a 2023 model adds a game clock
 above the shot clock.
 
-See the [pace clocks overview](index.md) for the shared background on pace and shot clocks.
+See the [water polo shot clocks overview](index.md) for the shared background on shot clocks.

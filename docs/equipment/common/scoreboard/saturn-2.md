@@ -51,7 +51,7 @@ dealer dimensions, weight and display; inferred).
 
 This article is a stub. The Saturn 2 is a Swiss Timing multisport LED scoreboard series for
 indoor hall sports, run from a keypad controller with a 240 × 128 pixel display (`3500.900`),
-and its controller family includes the [Calypso WPO console](../scoreboard-control/calypso-wpo-console.md)
+and its controller family includes the [Calypso WPO console](../../water-polo/console/calypso-wpo-console.md)
 used for water polo.
 
 See the [scoreboards overview](index.md) for the shared background that applies to every

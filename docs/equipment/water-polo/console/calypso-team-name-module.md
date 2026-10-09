@@ -41,5 +41,5 @@ This article is a stub. The team-name module (`3400.740`) is a Swiss Timing opti
 [Calypso WPO console](calypso-wpo-console.md) needs before it can send the two teams' names to
 the scoreboard; Swiss Timing's manual does not say what form the module takes.
 
-See the [scoreboard control overview](index.md) for the shared background that applies to
-every controller.
+See the [water polo consoles overview](index.md) for the shared background that applies to
+every water polo console.

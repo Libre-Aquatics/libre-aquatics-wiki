@@ -98,7 +98,8 @@ export default defineConfig({
   compressHTML: true,
   // Pages that moved after the site went live: the pushbutton pages went
   // under the semi-automatic category, and the Quantum harness and ODB10-SW
-  // pages went from timers to deck cabling. These keep the published URLs
+  // pages went from timers to deck cabling, and the Swiss Timing water polo pages went
+  // from common to water polo. These keep the published URLs
   // working (static meta-refresh pages on GitHub Pages).
   redirects: {
     '/equipment/swimming/pushbutton/': '/equipment/swimming/semi-automatic/pushbutton/',
@@ -106,6 +107,8 @@ export default defineConfig({
     '/equipment/swimming/pushbutton/daktronics/': '/equipment/swimming/semi-automatic/pushbutton/daktronics/',
     '/equipment/swimming/timers/quantum-mobile-harness/': '/equipment/swimming/deck-cabling/quantum-mobile-harness/',
     '/equipment/swimming/timers/odb10-sw/': '/equipment/swimming/deck-cabling/odb10-sw/',
+    '/equipment/common/scoreboard-control/calypso-wpo-console/': '/equipment/water-polo/console/calypso-wpo-console/',
+    '/equipment/common/pace-clock/swiss-timing-shot-clocks/': '/equipment/water-polo/shot-clock/swiss-timing-shot-clocks/',
   },
   integrations: [
     react(),

@@ -5,9 +5,6 @@ tags:
   - Water polo
   - Timing
   - Scoring
-# Section placeholder: no articles beneath it yet. Remove once this
-# section has pages of its own.
-noindex: true
 ---
 
 The hardware used to run a water polo match, the goals that define the field of
@@ -31,8 +28,22 @@ Water polo equipment is grouped by role:
 
 ## Articles
 
-This section of the catalog is still to be written. Water polo clocks and scoreboards
-are made by the same timing vendors that supply swimming, listed on the
+[Water polo consoles](console/index.md), the controllers at the officials' table, and
+[water polo shot clocks](shot-clock/index.md), the deck displays and horn units they drive:
+
+- [Calypso WPO console](console/calypso-wpo-console.md) and its
+  [team-name module](console/calypso-team-name-module.md), from Swiss Timing
+- [Swiss Timing water polo shot clocks](shot-clock/swiss-timing-shot-clocks.md), the
+  [Montreal shot clocks](shot-clock/montreal-shot-clocks.md) and the
+  [Coyote horn](shot-clock/coyote-horn.md)
+
+Multisport equipment that also serves water polo stays with the
+[common equipment](../common/index.md): Colorado Time Systems'
+[WTTC-1](../common/scoreboard-control/wttc-1.md) controller, its
+[deck clocks](../common/pace-clock/deck-clock.md) and
+[Pace Clock/Shot Clock](../common/pace-clock/pace-clock-shot-clock.md), and the
+scoreboards. Goals and table equipment are still to be written. Water polo clocks and
+scoreboards are made by the same timing vendors that supply swimming, listed on the
 [Vendors](../../vendors/index.md) page.
 
 ## See also

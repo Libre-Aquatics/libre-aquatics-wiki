@@ -42,8 +42,8 @@ clock kit's power and horn unit.
 
 This article is a stub. The Coyote (`3435.900`) is a Swiss Timing horn and power unit for
 water polo that supplies 24 V DC and data to the shot clocks and sounds at 113 dB, sold with the
-[Calypso WPO console](../scoreboard-control/calypso-wpo-console.md) and Swiss Timing's
+[Calypso WPO console](../console/calypso-wpo-console.md) and Swiss Timing's
 [water polo shot clocks](swiss-timing-shot-clocks.md).
 
-See the [pace clocks overview](index.md) for the shared background that applies to every
-clock.
+See the [water polo shot clocks overview](index.md) for the shared background that applies
+to every shot clock.
