@@ -93,7 +93,7 @@ export const PORTALS: Portal[] = [
   },
   {
     title: 'File formats',
-    blurb: 'The formats that carry entries and results between programs, and the tools that read them.',
+    blurb: 'The formats that carry entries and results between programs.',
     href: 'software/index.md',
     sections: ['Data Exchange'],
   },
@@ -102,6 +102,12 @@ export const PORTALS: Portal[] = [
     blurb: 'Software that puts timing results on scoreboards and video boards.',
     href: 'software/index.md',
     sections: ['Display'],
+  },
+  {
+    title: 'Tools',
+    blurb: 'Free in-browser tools for opening and checking competition files.',
+    href: 'tools/index.md',
+    sections: ['tools/index.md'],
   },
   {
     title: 'Vendors',

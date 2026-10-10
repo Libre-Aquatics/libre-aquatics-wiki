@@ -1,0 +1,3 @@
+# SDIF files are fixed-width records ending CR LF; keep them byte-for-byte.
+*.sd3 binary
+*.cl2 binary

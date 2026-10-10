@@ -622,6 +622,14 @@ export const nav: NavNode[] = [
     ],
   },
   {
+    title: 'Tools',
+    index: 'tools/index.md',
+    indexTitle: 'Tools Overview',
+    children: [
+      { title: 'SDIF File Reader', page: 'tools/sdif-reader.md' },
+    ],
+  },
+  {
     title: 'Vendors',
     index: 'vendors/index.md',
     indexTitle: 'Vendors Overview',

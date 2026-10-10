@@ -794,6 +794,171 @@ html { scroll-behavior: smooth; }
   transform-origin: left;
 }
 
+/* ---- SDIF file reader ------------------------------------------------------ */
+/* SdifReader.tsx, mounted into a .sdif-reader div by SdifReaderMount.astro. Its
+   tables inherit the article table style; wide ones scroll inside .sdif-scroll so
+   the page itself never scrolls sideways. Severity is carried by text and a border,
+   never by colour alone. */
+.sdif-reader { margin: 1em 0 1.5em; }
+.sdif-drop {
+  padding: 1em 1.1em;
+  border: 2px dashed var(--wiki-border);
+  border-radius: 4px;
+  background: var(--wiki-panel);
+}
+.sdif-drop.is-dragging { border-color: var(--wiki-accent); background: var(--wiki-titlebar); }
+.sdif-drop__text { margin: 0; }
+.sdif-drop__note { margin: 0.4em 0 0; color: var(--wiki-muted); font-size: 0.9em; }
+.sdif-link-button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--wiki-link);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sdif-link-button:focus-visible,
+.sdif-tab:focus-visible,
+.sdif-record-head:focus-visible { outline: 2px solid var(--wiki-fg); outline-offset: 2px; }
+.sdif-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+.sdif-status { min-height: 1.4em; margin: 0.5em 0; color: var(--wiki-muted); }
+.sdif-status.is-error { padding-left: 0.6em; border-left: 6px solid #d33; color: var(--wiki-fg); }
+.sdif-zip-files { margin: 0 0 1em; }
+.sdif-round { margin: 0.8em 0 0.2em; font-size: 1em; }
+.sdif-summary {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.2em 1em;
+  margin: 0.5em 0 1em;
+}
+.sdif-summary dt { font-weight: 600; }
+.sdif-summary dd { margin: 0; }
+.sdif-tabs { display: flex; flex-wrap: wrap; gap: 0.25em; border-bottom: 1px solid var(--wiki-border); }
+.sdif-tab {
+  padding: 0.4em 0.9em;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  background: none;
+  color: var(--wiki-link);
+  font: inherit;
+  cursor: pointer;
+}
+.sdif-tab[aria-selected="true"] {
+  margin-bottom: -1px;
+  border-color: var(--wiki-border);
+  background: var(--wiki-bg);
+  color: var(--wiki-fg);
+  font-weight: 600;
+}
+.sdif-badge {
+  display: inline-block;
+  margin-left: 0.4em;
+  padding: 0 0.45em;
+  border: 1px solid currentColor;
+  border-radius: 1em;
+  font-size: 0.8em;
+}
+.sdif-panel { padding-top: 0.8em; }
+.sdif-scroll { max-width: 100%; overflow-x: auto; }
+.wiki-article .sdif-scroll > table { display: table; margin: 0.4em 0 1em; }
+.sdif-event h3 { margin-top: 0.6em; font-size: 1.05em; }
+.sdif-event-toggle {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--wiki-link);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.sdif-event-toggle:focus-visible { outline: 2px solid var(--wiki-fg); outline-offset: 2px; }
+.sdif-event-count { font-size: 0.85em; font-weight: normal; }
+.sdif-muted { color: var(--wiki-muted); }
+.sdif-bad { font-style: italic; text-decoration: underline dotted; }
+.sdif-subrow > td { padding: 0.5em 0.6em; background: var(--wiki-panel); }
+/* Splits as small cells that fill the row and wrap: distance, cumulative time, lap. */
+.wiki-article .sdif-splitgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5.25rem, 1fr));
+  gap: 0.3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wiki-article .sdif-splitgrid > li {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0.2em 0.45em;
+  border: 1px solid var(--wiki-divider);
+  border-radius: 3px;
+  background: var(--wiki-bg);
+  line-height: 1.3;
+}
+.sdif-split-dist { color: var(--wiki-muted); font-size: 0.8em; }
+.sdif-split-cum { font-variant-numeric: tabular-nums; font-weight: 600; }
+.sdif-split-lap { color: var(--wiki-muted); font-size: 0.85em; font-variant-numeric: tabular-nums; }
+/* A relay: one line per swimmer, their splits beside them. */
+.sdif-leg {
+  display: grid;
+  grid-template-columns: 1.5rem minmax(8rem, 13rem) 4.5rem 1fr;
+  gap: 0.3rem 0.75rem;
+  align-items: start;
+  padding: 0.35em 0;
+  border-bottom: 1px solid var(--wiki-divider);
+}
+.sdif-leg:last-of-type { border-bottom: 0; }
+.sdif-leg-no {
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid var(--wiki-border);
+  border-radius: 50%;
+  font-size: 0.85em;
+}
+.sdif-leg-name { padding-top: 0.15em; font-weight: 600; }
+.sdif-leg-time { padding-top: 0.15em; font-variant-numeric: tabular-nums; }
+.sdif-alternates { margin: 0.4em 0 0; }
+@media (max-width: 640px) {
+  .sdif-leg { grid-template-columns: 1.5rem 1fr auto; }
+  .sdif-leg > .sdif-splitgrid { grid-column: 1 / -1; }
+}
+.sdif-controls { display: flex; flex-wrap: wrap; gap: 0.5em 1.5em; align-items: center; }
+.sdif-records { list-style: none; margin: 0; padding: 0; }
+.sdif-records > li { padding: 0.35em 0; border-bottom: 1px solid var(--wiki-divider); }
+.sdif-records > li.is-focus { background: var(--wiki-titlebar); }
+.sdif-record-head { padding: 0; border: 0; background: none; color: var(--wiki-fg); font: inherit; text-align: left; cursor: pointer; }
+.sdif-raw {
+  margin: 0.25em 0 0;
+  padding: 0.2em 0.4em;
+  overflow-x: auto;
+  font-family: var(--wiki-mono);
+  font-size: 0.8em;
+  white-space: pre;
+  background: var(--wiki-panel);
+}
+.sdif-rawcell { white-space: pre; }
+.sdif-findings { padding-left: 0; list-style: none; }
+.sdif-finding { margin: 0.3em 0; padding: 0.2em 0 0.2em 0.6em; border-left: 4px solid var(--wiki-border); }
+.sdif-finding--error { border-left-color: #d33; border-left-width: 6px; }
+.sdif-finding--warning { border-left-color: #ac6600; }
+.sdif-level { font-weight: 600; text-transform: uppercase; font-size: 0.8em; letter-spacing: 0.03em; }
+.sdif-exports { list-style: none; padding-left: 0; }
+.sdif-exports li { margin: 0.4em 0; }
+.sdif-pager button, .sdif-exports button { font: inherit; }
+
 /* ---- Lightbox -------------------------------------------------------------- */
 /* Enlarges a figure in place. The figure's link still works without JS, so this
    styles an enhancement rather than the only way to see the full-size file. */

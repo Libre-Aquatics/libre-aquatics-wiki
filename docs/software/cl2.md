@@ -186,6 +186,7 @@ Hy-Tek itself calls old.
 
 - [HY3](hy3.md): the newer Hy-Tek format shipped in the same export
 - [SDIF](sdif.md): the published standard the conversion targets
+- [SDIF file reader](../tools/sdif-reader.md): opens a CL2 in the browser and tests its checksums
 - [swimlib](swimlib.md): the library that reads this format as relaxed SDIF
 - [Commlink](commlink.md): the diskette-era predecessor of the same exchange
 - [Meet Manager](hy-tek-meet-manager.md) and [Team Manager](hy-tek-team-manager.md): the

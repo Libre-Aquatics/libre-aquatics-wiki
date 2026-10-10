@@ -1,0 +1,33 @@
+A01V3      02                              Libre Aquatics Wiki 1.0       Sample Data         555-555-010006152026                                               
+B11        Lakeside Summer Invitational                                              Lakeside            CO          USA10613202606142026            Y          
+C11        COLKSDLakeside Aquatic Club         Lakeside AC                                                 Lakeside            CO          USA                  
+C21        COLKSDRivera, Dana                                                           Lakeside AC                                                             
+D01        Avery, Jordan M             SAMPLE001   A   0101201214FF 10011   1314061320261:00.00 Q                  58.31   Y     1 2     2                      
+D01        Chen, Robin                 SAMPLE011   A   0101201213FF 10011   1314061320261:00.00 Y                  1:01.07 Y     1 3     6                      
+D01        Delgado, Sam                SAMPLE021   A   0101201214FF 10011   1314061320261:00.00 Y                  59.88   Y     1 4     4                      
+D01        Ellis, Morgan K             SAMPLE031   A   0101201214FF 10011   1314061320261:00.00 Y                  DQ            1 5                            
+D01        Avery, Jordan M             SAMPLE003   A   0101201214FF 20053   1314061320261:00.00 Y                  2:21.40 Y     1 2     2                      
+G01            Avery, Jordan M             SAMPLE003   1 4  50C33.23   1:09.29 1:46.76 2:21.40                                                 F                
+D01        Chen, Robin                 SAMPLE013   A   0101201213FF 20053   1314061320261:00.00 Y                  2:26.95 Y     1 3     4                      
+G01            Chen, Robin                 SAMPLE013   1 4  50C34.53   1:12.01 1:50.95 2:26.95                                                 F                
+E01        ACOLKSD 4F 20065   1314   06142026                           1:49.62 Y     1 4     1                                                                 
+F01            COLKSDAAvery, Jordan M             SAMPLE00R      0101201214F001                                                                                 
+F01            COLKSDAChen, Robin                 SAMPLE01R      0101201213F002                                                                                 
+F01            COLKSDADelgado, Sam                SAMPLE02R      0101201214F003                                                                                 
+F01            COLKSDAEllis, Morgan K             SAMPLE03R      0101201214F004                                                                                 
+C11        COPNRGPine Ridge Swim Team          Pine Ridge                                                  Lakeside            CO          USA                  
+C21        COPNRGOkafor, Lee                                                            Pine Ridge                                                              
+D01        Foster, Casey               SAMPLE101   A   0101201214FF 10011   1314061320261:00.00 Y                  57.94   Y     1 6     1                      
+D01        Garcia, Riley A             SAMPLE111   A   0101201213FF 10011   1314061320261:00.00 Y                  1:00.42 Y     1 7     5                      
+D01        Hughes, Taylor              SAMPLE121   A   0101201214FF 10011   1314061320261:00.00 Y                  1:02.15 Y     1 8     7                      
+D01        Ito, Quinn                  SAMPLE131   A   0101201214FF 10011   1314061320261:00.00 Y                  59.12   Y     1 9     3                      
+D01        Foster, Casey               SAMPLE103   A   0101201214FF 20053   1314061320261:00.00 Y                  2:19.83 Y     1 6     1                      
+G01            Foster, Casey               SAMPLE103   1 4  50C32.86   1:08.52 1:45.57 2:19.83                                                 F                
+D01        Hughes, Taylor              SAMPLE123   A   0101201214FF 20053   1314061320261:00.00 Y                  2:25.10 Y     1 8     3                      
+G01            Hughes, Taylor              SAMPLE123   1 4  50C34.10   1:11.10 1:49.55 2:25.10                                                 F                
+E01        ACOPNRG 4F 20065   1314   06142026                           1:51.08 Y     1 5     2                                                                 
+F01            COPNRGAFoster, Casey               SAMPLE10R      0101201214F001                                                                                 
+F01            COPNRGAGarcia, Riley A             SAMPLE11R      0101201213F002                                                                                 
+F01            COPNRGAHughes, Taylor              SAMPLE12R      0101201214F003                                                                                 
+F01            COPNRGAIto, Quinn                  SAMPLE13R      0101201214F004                                                                                 
+Z01        02Fictional sample data           1  1   4   2    12     8    2     8     4                                                                          

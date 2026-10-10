@@ -526,6 +526,16 @@ consequence of a format that has no checksum to tell a reader where a file went 
 Validation utilities exist to fill that gap, including SDIFCheck and the SDIF Master and
 SDIF_PRO extraction tools.[^sdifcheck][^swimdata]
 
+## Read a file
+
+The wiki's [SDIF file reader](../tools/sdif-reader.md) opens an `.sd3` or `.cl2` file in the
+browser, without uploading it, and lays out the meet, every record field by field and a
+check against the rules above. A quick summary is available here.
+
+<div class="sdif-reader" data-sdif-reader="compact" data-tool-href="/tools/sdif-reader/">
+<p><em>The reader needs JavaScript; see the <a href="/tools/sdif-reader/">SDIF file reader</a> page.</em></p>
+</div>
+
 ## Gaps
 
 SWIMS accepts the format and an XML variant beside it, but USA Swimming's own documentation
@@ -544,6 +554,7 @@ terminator is untested, because only one file was available.
 - [XSDIF](xsdif.md): the XML form SWIMS accepts beside it
 - [Lenex](lenex.md): the European exchange format, XML where this one is fixed-width
 - [Commlink](commlink.md): the proprietary route that ran alongside it for years
+- [SDIF file reader](../tools/sdif-reader.md): the wiki's own in-browser reader and validator
 - [swimlib](swimlib.md) and [SDIFCheck](sdifcheck.md): software that reads and validates it
 - [SwimMeet Manager](swimmeet-manager.md): a competitor that advertised compliance with it
 - [Meet Manager](hy-tek-meet-manager.md): the program that writes the files examined here

@@ -13,6 +13,7 @@ import PrevNext from '../components/PrevNext.astro';
 import CitationHovercards from '../components/CitationHovercards.tsx';
 import Lightbox from '../components/Lightbox.astro';
 import AudioPlayers from '../components/AudioPlayers.astro';
+import SdifReaderMount from '../components/SdifReaderMount.astro';
 
 interface Heading {
   depth: number;
@@ -167,4 +168,7 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
 
   {/* Wiki-styled sound-clip players; without JS the native controls remain. */}
   <AudioPlayers />
+
+  {/* SDIF file reader, loaded only on pages that place a data-sdif-reader mount. */}
+  <SdifReaderMount />
 </BaseLayout>

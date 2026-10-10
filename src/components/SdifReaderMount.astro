@@ -1,0 +1,27 @@
+---
+// Mounts the SDIF file reader wherever an article places
+//   <div class="sdif-reader" data-sdif-reader="full|compact"></div>
+// The React bundle is imported only when such an element exists, so other pages load
+// nothing. Without JS, the element's own fallback text stays in place.
+---
+
+<script>
+  const mounts = document.querySelectorAll<HTMLElement>('[data-sdif-reader]');
+  if (mounts.length) {
+    Promise.all([import('react'), import('react-dom/client'), import('./SdifReader.tsx')]).then(
+      ([React, { createRoot }, { default: SdifReader }]) => {
+        for (const el of mounts) {
+          const mode = el.dataset.sdifReader === 'compact' ? 'compact' : 'full';
+          el.replaceChildren();
+          createRoot(el).render(
+            React.createElement(SdifReader, {
+              mode,
+              toolHref: el.dataset.toolHref,
+              sampleHref: el.dataset.sampleHref,
+            }),
+          );
+        }
+      },
+    );
+  }
+</script>
