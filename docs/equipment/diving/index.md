@@ -45,6 +45,8 @@ same timing vendors that supply swimming, listed on the
   system released in 2016 for Gen7 Diving and Gen7 Artistic Swimming
 - [Daktronics JC-100](jc-100.md): the wired hand-held judge console for the OmniSport 2000,
   which also programs Daktronics pace clocks
+- [Daktronics RC-100](rc-100.md) and [RC-200](rc-200.md): the 900 MHz and 2.4 GHz wireless
+  hand-held controllers that serve as judge consoles through a base station
 
 ## See also
 

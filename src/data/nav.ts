@@ -297,6 +297,8 @@ export const nav: NavNode[] = [
             title: 'Daktronics',
             children: [
               { title: 'JC-100', page: 'equipment/diving/jc-100.md' },
+              { title: 'RC-100', page: 'equipment/diving/rc-100.md' },
+              { title: 'RC-200', page: 'equipment/diving/rc-200.md' },
             ],
           },
           {
