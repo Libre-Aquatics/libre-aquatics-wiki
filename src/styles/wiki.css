@@ -457,7 +457,13 @@ html { scroll-behavior: smooth; }
 }
 /* Subheads step down from h2 in both size and spacing; without explicit
    margins the UA's 1em default would give h3 a larger top gap than h2. */
-.wiki-article h3 { font-size: 1.3125rem; margin: 1.1em 0 0.45em; }
+/* h3 matches h2's regular weight so a subhead reads as a smaller section
+   heading rather than outweighing the h2 above it; h4-h6 stay semibold
+   because at their size regular weight barely separates from body text. */
+.wiki-article h3 { font-weight: 400; font-size: 1.3125rem; margin: 1.1em 0 0.5em; }
+/* The next block's own top margin (1em on a paragraph) would collapse with
+   and outweigh the h3's, so drop it and let the h3 set the gap. */
+.wiki-article h3 + * { margin-top: 0; }
 .wiki-article h4 { font-size: 1.0625rem; margin: 1em 0 0.4em; }
 .wiki-article h5 { font-size: 1rem; margin: 1em 0 0.35em; }
 .wiki-article h6 { font-size: 0.9375rem; margin: 1em 0 0.3em; }
@@ -655,7 +661,9 @@ html { scroll-behavior: smooth; }
 .wiki-article .footnotes li { overflow-wrap: anywhere; }
 /* Wikipedia-style bracketed citation marks. */
 .wiki-article a[data-footnote-ref] { text-decoration: none; }
-.wiki-article a[data-footnote-ref]::before { content: "["; }
+/* The word joiner (U+2060) ahead of the bracket forbids a line break before
+   it, so a marker never wraps away from the word or marker it follows. */
+.wiki-article a[data-footnote-ref]::before { content: "\2060["; }
 .wiki-article a[data-footnote-ref]::after { content: "]"; }
 .wiki-article a[data-footnote-backref] { text-decoration: none; }
 /* Following a citation mark highlights the targeted reference in the list. */
