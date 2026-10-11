@@ -71,8 +71,9 @@ Sources held and read in full:
     upc-c.md transcribes its keys.
   - The cover photo of F819 and the 1996 advert both show a long horizontal display reading
     8:00 with the console beside it. Not used beyond that; no digit count is stated anywhere.
-  - sources/67452a.pdf (in the root of sources/, no .txt): a ManualsLib print of the same
-    F819 Rev. 0903, 24 pp. with ManualsLib cover and back pages. Same text page for page.
+  - A ManualsLib print of the same F819 Rev. 0903 (24 pp. with ManualsLib cover and back
+    pages, same text page for page) was held as sources/67452a.pdf and removed on 2026-10-10
+    as a duplicate of the CTS copy.
     https://www.manualslib.com/manual/823330/Colorado-Time-Systems-Ultimate-Pace-Clock.html
     Not cited; the held CTS PDF is the better copy.
   - F901 (both typesettings), pace clock controller, Rev. 1007, (c)2007: names the Ultimate

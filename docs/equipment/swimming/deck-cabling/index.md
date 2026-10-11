@@ -148,7 +148,9 @@ cables to the wall plate.
 A deck plate is set flush into the deck at each lane, usually under or beside the starting
 block, and carries the jacks for that lane's equipment. CTS places the deck box under the
 block's platform, between the end wall and the block legs, and asks for 3 in of clear space
-around it. Each CTS plate arrives pre-wired with up to 200 ft (61 m) of cable and potted, and
+around it. With a two-legged block the box is centred both side to side, halfway between the
+legs, and front to back, halfway from the coping to them; with a single-post block it is
+centred front to back in the same way and lined up with the post's mounting plate.[^arch][^archg7] Each CTS plate arrives pre-wired with up to 200 ft (61 m) of cable and potted, and
 is screwed to the tile over a 4 × 4 × 6 in (10.2 × 10.2 × 15.2 cm) PVC box. The finished floor
 must sit level with the box's top edge to within a quarter of an inch.[^arch] At the two outside
 lanes the plates also take the start-system connection.[^arch]
@@ -160,7 +162,9 @@ Each manufacturer lays out the plate differently:
   block and leaves only a military-style connector in the deck, joined to the hub by one short
   cable. CTS requires it for relay platforms with speedlights.[^arch][^f881] The
   [Titanium Deckplate](cts-titanium-deckplate.md) has titanium jacks on a domed top so that
-  water runs off between the contacts, and it can replace older 7.5 in square plates.[^tdpsheet][^patentplate]
+  water runs off between the contacts, and it can replace the older 7.5 in square
+  [DP-7](cts-dp-7-deck-plate.md). It comes in a passive version and an intelligent version
+  for the Gen7 Serial bus.[^tdpsheet][^patentplate][^f1034]
 - [Daktronics deck plates](daktronics-deck-plate.md) come in three kinds. A lane plate has jacks
   for the touchpad, three buttons, a lane speaker and a remote strobe. A start plate serves the
   horn start and the auxiliary speaker. Bulkhead plates come in pairs: the deck
@@ -176,7 +180,10 @@ The conduit sizes limit how many deck boxes one run can serve. The two editions 
 architectural guidelines agree that a 2 in run can take up to 12 boxes, but disagree on smaller
 conduit. The System 6 edition allows four boxes on a 1 in run. The later Gen7 Legacy edition
 allows four on 1.5 in and only two on 1 in, and it also recommends draining the
-conduit.[^arch][^archg7] This page treats the later edition, the more conservative of
+conduit.[^arch][^archg7] The Gen7 Legacy edition's conduit drawing shows why the limit falls with
+the conduit size: each plate's cable runs the whole way back to the wall box, so eight boxes on
+one 2 in run put eight cables in it, and smaller conduit is split into more runs, two of four
+boxes on 1.5 in and four of two on 1 in.[^archg7] This page treats the later edition, the more conservative of
 the two, as current. CTS keeps all in-deck wiring under 5 V, grounded at the
 console.[^arch] Swiss Timing asks for ducts at least 75 mm across. That leaves room for twenty
 lane cables of 6.3 mm plus four cables of 4 × 0.5 mm², the load it expects on the last duct
@@ -274,8 +281,10 @@ covers the product itself, and this page is the shared overview they refer back 
 | Article | Manufacturer | Type | Installation |
 |---|---|---|---|
 | [Colorado Time Systems cable harness](cts-cable-harness.md) | Colorado Time Systems | Multi-conductor lane harness | On-deck |
-| [QuickConnect deck plate](cts-quickconnect-deck-plate.md) | Colorado Time Systems | Deck connector and block-mounted hub | In-deck |
-| [Titanium Deckplate](cts-titanium-deckplate.md) | Colorado Time Systems | Deck plate | In-deck |
+| [QuickConnect deck plate](cts-quickconnect-deck-plate.md) | Colorado Time Systems | Deck connector and block-mounted hub (discontinued) | In-deck |
+| [Titanium Deckplate](cts-titanium-deckplate.md) | Colorado Time Systems | Deck plate (passive and intelligent) | In-deck |
+| [DP-7 deck plate](cts-dp-7-deck-plate.md) | Colorado Time Systems | Deck plate | In-deck |
+| [Gen7 serial connect hubs](gen7-serial-connect-hubs.md) | Colorado Time Systems | Bus connection hubs | In-deck |
 | [Colorado Time Systems wall plate](cts-wall-plate.md) | Colorado Time Systems | Wall plate | In-deck |
 | [Daktronics lane module](daktronics-lane-module.md) | Daktronics | Lane module harness | On-deck |
 | [Daktronics deck plates](daktronics-deck-plate.md) | Daktronics | Deck plates | In-deck |

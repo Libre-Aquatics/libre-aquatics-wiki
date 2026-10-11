@@ -276,7 +276,8 @@ enclosure voids the warranty.[^f1034]
 - `R-470-117`, Gen7 Swimming software (`R-470-118`, software maintenance).
 - `USB2USB`, CTS USB-Connect coupler, linking a meet-management computer to the
   interface laptop over a simulated serial connection.
-- Connect hubs (timer, starter, scoreboard, bulkhead), titanium deckplates,
+- [Connect hubs](../deck-cabling/gen7-serial-connect-hubs.md) (timer, starter, scoreboard, bulkhead),
+  [titanium deckplates](../deck-cabling/cts-titanium-deckplate.md),
   wallplates, and connection cables and harnesses (up to 20 lanes).
 - `TP-GEN7-6` / `TP-GEN7-8` / `TP-GEN7-10`, 6-, 8-, and 10-lane touchpad systems
   (harness, pushbuttons, meter, and vacuum pump; touchpads sold separately).

@@ -160,7 +160,8 @@ normally closed; CTS warns that setting the polarity wrong for a given timer
 makes the recorded times inaccurate.[^f1064] For older installations
 the wallplate connector carries the start, audio, speedlight, and strobe lines to
 a legacy wall plate through a `CMP-WPxx` cable, and a Gen7 starter cable
-(`R-015-706-xx`) connects the Elite to a Gen7 in-deck TDPI-S2 node.[^f1064] The
+(`R-015-706-xx`) connects the Elite to a Gen7 in-deck
+[TDPI-S2 node](../deck-cabling/gen7-serial-connect-hubs.md).[^f1064] The
 unit mounts on a tabletop, the `TR-3` tripod, or a flagpole
 (`START-FPM-2`).[^f1064]
 

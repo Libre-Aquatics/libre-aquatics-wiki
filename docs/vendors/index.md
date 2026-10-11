@@ -69,6 +69,8 @@ and GeoLogix because it developed that program for about twelve years.
 | [Sportyme](sportyme.md) | Hatboro, Pennsylvania, United States | No equipment of its own; Omega's US sales and service agent in the early 1980s, which advertised the OSM6 |
 | [Adolph Kiefer & Associates](kiefer.md) | Zion, Illinois, United States | Competitor pace clocks; Omega's exclusive US timing agent from 1988 |
 | [Macsha](macsha.md) | Not established | The Macsha Swim touchpad and lane-unit system |
+| [Paragon Aquatics](paragon-aquatics.md) | LaGrangeville, New York, United States | No timing equipment; the Track Start Competitor block used in the Colorado Block |
+| [Spectrum Aquatics](spectrum-aquatics.md) | Missoula, Montana, United States | No timing equipment; the Fusion Starting Platform with a built-in CTS relay platform |
 
 Colorado Time Systems was founded in 1972 and Daktronics in 1968. Swiss Timing is
 part of the Swatch Group, Seiko traces its origins to 1881, IST has supplied aquatics

@@ -161,6 +161,8 @@ export const nav: NavNode[] = [
                 title: 'Colorado Time Systems',
                 children: [
                   { title: 'Cable Harness', page: 'equipment/swimming/deck-cabling/cts-cable-harness.md' },
+                  { title: 'DP-7 Deck Plate', page: 'equipment/swimming/deck-cabling/cts-dp-7-deck-plate.md' },
+                  { title: 'Gen7 Serial Connect Hubs', page: 'equipment/swimming/deck-cabling/gen7-serial-connect-hubs.md' },
                   { title: 'QuickConnect Deck Plate', page: 'equipment/swimming/deck-cabling/cts-quickconnect-deck-plate.md' },
                   { title: 'Titanium Deckplate', page: 'equipment/swimming/deck-cabling/cts-titanium-deckplate.md' },
                   { title: 'Wall Plate', page: 'equipment/swimming/deck-cabling/cts-wall-plate.md' },
@@ -213,6 +215,15 @@ export const nav: NavNode[] = [
               { title: 'Daktronics RTOP', page: 'equipment/swimming/relay-judging/daktronics.md' },
               { title: 'Omega OSB6', page: 'equipment/swimming/relay-judging/osb6.md' },
               { title: 'Omega OSB-3', page: 'equipment/swimming/relay-judging/osb-3.md' },
+            ],
+          },
+          {
+            title: 'Starting Blocks',
+            index: 'equipment/swimming/starting-blocks/index.md',
+            indexTitle: 'Starting Blocks Overview',
+            children: [
+              { title: 'Colorado Block', page: 'equipment/swimming/starting-blocks/colorado-block.md' },
+              { title: 'Fusion Starting Platform', page: 'equipment/swimming/starting-blocks/fusion-starting-platform.md' },
             ],
           },
           {
@@ -650,7 +661,9 @@ export const nav: NavNode[] = [
       { title: 'Kyrotech', page: 'vendors/kyrotech.md' },
       { title: 'Macsha', page: 'vendors/macsha.md' },
       { title: 'NovaStar', page: 'vendors/novastar.md' },
+      { title: 'Paragon Aquatics', page: 'vendors/paragon-aquatics.md' },
       { title: 'Seiko', page: 'vendors/seiko.md' },
+      { title: 'Spectrum Aquatics', page: 'vendors/spectrum-aquatics.md' },
       { title: 'Splash Software', page: 'vendors/splash-software.md' },
       { title: 'Seagull Enterprises', page: 'vendors/seagull.md' },
       { title: 'Sportyme', page: 'vendors/sportyme.md' },
