@@ -1,6 +1,8 @@
 ---
 title: Touchpads
 seoTitle: Swimming touchpads
+description: "How a swimming touchpad stops the clock, why times stop at hundredths, where pads are fitted, gutter or flat-wall mounting, care, rules, and the pads on sale."
+updated: 2026-10-13
 tags:
   - Equipment
   - Timing
@@ -14,6 +16,30 @@ touches the panel it closes an internal switch and sends a timing signal to the
 automatic officiating setup a touchpad stands at both ends of every lane, backed up
 by pushbuttons, so the swimmer's own touch, not a human timekeeper, records the
 official time.
+
+## How a touchpad works
+
+A touchpad turns a swimmer's touch into a time in three steps. The swimmer touches the
+face or the top edge of the panel at the end of the lane. The pressure closes a switch
+inside the panel. The closed switch signals the [timing console](../timers/index.md) over
+that lane's cable, and the console stops the lane's clock and records the time and the
+place.[^frules][^f147] Because the switch responds to pressure, Colorado Time Systems
+notes that a fingertip trips its pad more readily than a flat palm, which spreads the same
+push over a larger area.[^f147]
+
+A touchpad must ignore the constant wave action and turbulence of a racing pool yet
+register the light touch of a finishing or turning swimmer, then close a switch that
+signals the timer. Manufacturers meet this requirement in different ways. Colorado Time Systems uses an air-filled panel whose sensitivity is
+set by its internal air pressure, and the
+[Daktronics T-7000 series](t-7000.md) uses layered conductive
+plates.[^datasheet][^watiming] A third approach appears in a 1995 Seiko Instruments
+patent, which describes a panel switch overlaid with a fine mesh so that a swimmer's
+touch bears on the raised points of the mesh and closes the switch, while the load of
+wave action spread across the whole face does not.[^seikopad] That a panel must tell a
+real touch from accidental water contact is a long-standing engineering problem: a 1992
+Seiko patent for a swimming-race timing system covers the same
+discrimination.[^seiko] Neither patent is tied to a product on sale, and Seiko publishes
+no sensing principle for the touch plates it currently makes.[^seikojp]
 
 ## History and development
 
@@ -45,21 +71,38 @@ to a hundredth of a second and removed reliance on human timekeepers.[^waomega] 
 Time Systems, founded in 1972, has built touchpads on the same all-plastic, air-filled
 design since then.[^datasheet][^watiming]
 
-## How a touchpad works
+## Accuracy and the hundredth of a second
 
-A touchpad must ignore the constant wave action and turbulence of a racing pool yet
-register the light touch of a finishing or turning swimmer, then close a switch that
-signals the timer. Manufacturers meet this requirement in different ways. Colorado Time Systems uses an air-filled panel whose sensitivity is
-set by its internal air pressure, and the
-[Daktronics T-7000 series](t-7000.md) uses layered conductive
-plates.[^datasheet][^watiming] A third approach appears in a 1995 Seiko Instruments
-patent, which describes a panel switch overlaid with a fine mesh so that a swimmer's
-touch bears on the raised points of the mesh and closes the switch, while the load of
-wave action spread across the whole face does not.[^seikopad] That a panel must tell a
-real touch from accidental water contact is a long-standing engineering problem: a 1992
-Seiko patent for a swimming-race timing system covers the same
-discrimination.[^seiko] Neither patent is tied to a product on sale, and Seiko publishes
-no sensing principle for the touch plates it currently makes.[^seikojp]
+Swimming results are official to a hundredth of a second, though timing equipment can
+resolve much shorter intervals. Under World Aquatics rules, automatic equipment records
+results only to 1/100 of a second, and swimmers level at that resolution share the
+placing.[^wasw][^frules]
+
+The rule dates from the 1972 Munich Olympic Games. In the final of the men's 400 m
+individual medley, Gunnar Larsson of Sweden and Tim McKee of the United States both
+showed 4:31.98. The officials separated them on the thousandths kept by the timing
+equipment, 4:31.981 for Larsson against 4:31.983 for McKee, and gave Larsson the gold
+medal by 0.002 s.[^olympedia][^ishof] Thousandths were used once more at the 1973 World
+Championships. FINA then limited swimming times to hundredths, a change Olympedia
+attributes to the controversy over the accuracy of timing at that resolution; the third
+digit is no longer recorded or used for placing, and a tie at the hundredth is
+shared.[^olympedia][^ishof]
+
+The usual explanation lies in how pools are built. The facilities rules let a
+pool fitted with touch panels measure up to 10 mm over its nominal length, a tolerance
+that has to hold from 0.3 m above to 0.8 m below the water, so the lanes of one pool need
+not be identical to the millimetre.[^frules] Omega, the Olympic timekeeper, gives that as
+its reason for stopping at the hundredth: lane lengths cannot be guaranteed to
+match.[^swisswatches] CBS Sports, working from the 50 m world-record pace, put a
+thousandth of a second at about 2.4 mm of travel.[^cbs]
+
+The best-known touchpad finish is the men's 100 m butterfly final at the 2008 Beijing
+Games, which Michael Phelps won in 50.58 to Milorad Čavić's 50.59. Čavić glided into the
+wall while Phelps took a short extra half stroke. Serbia protested, and a frame-by-frame
+review of the finish upheld the result.[^swphelps] Čavić later said that he had reached
+the wall first but had not set off the timing system first.[^swphelps] The panel records
+the touch that closes its switch, not the first contact with it, which is why the rules
+require a panel that turbulence cannot trigger but a light hand touch can.[^frules]
 
 ## Governing-body requirements
 
@@ -72,6 +115,73 @@ colour bearing the end-wall line markings. The panel is installed in the centre 
 each lane and may be portable so the operator can remove it when no race is being
 held. Its sensitivity must be such that water turbulence cannot trigger it but a
 light hand touch can, and it must be sensitive along the top edge.[^frules]
+
+World Para Swimming applies matching requirements. Its rulebook requires approved
+automatic officiating equipment at the Paralympic Games, its world championships, and its
+sanctioned and Approved Plus competitions, judged and timed to 1/100 of a second, and sets
+the same minimum touch-panel size of 2.4 m by 0.9 m.[^wps]
+
+## Where touchpads are installed
+
+Touch panels are fixed in the centre of each lane, and the rules allow them at the
+starting end alone or at both ends.[^frules] Either way the pool has to give the exact race
+distance between the two panels, or between one panel and the bare wall opposite, and
+World Aquatics sets the wall-to-wall length to suit. A 25 m pool measures 25.010–25.020 m
+with a panel at one end and 25.020–25.030 m with panels at both; a 50 m pool with panels
+at both ends measures 50.020–50.030 m. The extra length allows for the panels themselves:
+each is 0.01 m thick, and the race distance runs between the panel faces, so every panel
+adds 10 mm to the wall-to-wall minimum, and the upper limit adds a further 10 mm of
+tolerance.[^frules] USA Swimming states the same distance
+requirement whether pads are used at one end or both.[^usas] For the Olympic Games and
+long-course World Championships the 50 m is measured between panels, while the 25 m
+World Championships need panels only at the starting end, with either a wall or panels at
+the turning end.[^frules]
+
+The rules provide for a backup to the touchpad. World Aquatics accepts semi-automatic
+equipment as the backup at major events when each lane has three buttons, each pressed by
+a separate official. If the automatic equipment breaks down, or a swimmer fails to
+activate it, the backup times become the official ones.[^frules][^wasw] USA Swimming asks
+for at least one timer per lane where touchpads are used, against three without
+them.[^usas] The buttons and watches are covered on the
+[semi-automatic timing overview](../semi-automatic/index.md).
+
+## Gutter-hung or flat-wall
+
+How a pad hangs depends on the end wall. A pool with a gutter at the waterline takes a
+gutter-hung pad, which rests over the gutter on brackets sized to its profile; a pool with
+a flat end wall takes a flat-wall pad, which carries a stainless-steel bracket at each end
+bolted to anchors drilled into the deck.[^f147] Colorado Time Systems sells each model in
+one form or the other. In the AquaGrip line the gutter-hung pads carry a `G` suffix
+(`TP-…G`) and the flat-wall pads `GF` (`TP-…GF`); the discontinued Standard line used no
+suffix for gutter-hung pads and `F` for flat-wall ones.[^aquagrip][^standard] The
+gutter-hung models also carry a switch along the top edge.[^datasheet]
+
+CTS's guide adds two points of fitting. Gutter-hung pads are held with Velcro link brackets
+between neighbouring lanes and out to each side wall, which stop the pads sliding
+sideways, and must not ride against the lane-line anchors. Flat-wall pads should be
+numbered so that each always goes back to the same lane.[^f147]
+
+## Care and lifespan
+
+Manufacturers do not publish a service life in years. Colorado Time Systems says a pad
+that is looked after will last indefinitely, that one that is not can be destroyed within
+months, and that damage from mishandling voids the warranty.[^f147] Its user guide covers
+the following care points:[^f147]
+
+- Storage: taken out of the pool during long breaks between uses, away from foot traffic,
+  with nothing leaning on the face or on the switch along the top corner, and between
+  50 °F and 110 °F (10–43 °C). A cold pad should warm in the pool water for
+  15–30 minutes first.
+- Sun and heat: a pad left in direct sun out of the water can warp, and the AquaGrip
+  surface can peel. CTS describes sun or heat damage as irreparable.
+- Cable: a pad is never lifted or carried by its cable, which CTS says is weaker than its
+  size suggests.
+- Air: sensitivity depends on the air inside the pad, adjusted out of the water with a
+  needle, or a needle and vacuum pump, through a plug on the connector block. A hole in
+  the face lets water in and ruins the pad.
+- Plugs and jacks: the dual banana plug and the jacks it fits are cleaned with isopropyl
+  alcohol and kept greased with dielectric grease. A badly corroded or bent plug is cut
+  off and replaced (CTS part `R-025-045`).
 
 ## Products
 
@@ -128,7 +238,7 @@ Seiko plates; this page is the shared overview they refer back to.
 ## References
 
 [^ocp5man]: Swiss Timing, Touchpad OCP5 User's Manual (2924.510.02, version 3.1, February 2015).
-[^frules]: [World Aquatics, Facilities Rules 2021–2025](https://resources.fina.org/fina/document/2022/02/08/77c3058d-b549-4543-8524-ad51a857864e/210805-Facilities-Rules_clean.pdf), FR 2.3 Automatic Officiating Equipment for Swimming (touch panels: FR 2.3.4).
+[^frules]: [World Aquatics, Facilities Rules 2021–2025](https://resources.fina.org/fina/document/2022/02/08/77c3058d-b549-4543-8524-ad51a857864e/210805-Facilities-Rules_clean.pdf), FR 2.1.1–2.1.2 and FR 2.2.1 (length), FR 2.3 (touch panels: FR 2.3.4; backup: FR 2.3.5).
 [^f147]: [Colorado Time Systems, Standard and AquaGrip Touchpads User Guide (F147)](https://spanish.coloradotime.com/manuals/touchpad-man.pdf).
 [^datasheet]: [Colorado Time Systems, AquaGrip Touchpads datasheet](https://coloradotime.com/products/aquagrip-touchpads).
 [^aquagrip]: [Colorado Time Systems, AquaGrip Touchpads](https://coloradotime.com/products/aquagrip-touchpads).
@@ -143,3 +253,11 @@ Seiko plates; this page is the shared overview they refer back to.
 [^seikopad]: [Google Patents, JPH08257196A, 競泳用タッチ板](https://patents.google.com/patent/JPH08257196A/en) (Seiko Instruments; inventor Michio Tomita; a panel switch under a fine mesh; filed 1995, lapsed 2012).
 [^seikojp]: [Seiko Time Creation, タッチプレート（AQUAタイプ）](https://www.seiko-stc.co.jp/products/detail/sts_1257.html) (Japanese product page; panel material and dimensions, with no sensing principle given).
 [^seikoff]: [Seiko Time Creation, タッチプレート（1,900mmフルフレームタイプ）](https://www.seiko-stc.co.jp/products/detail/sts_1313.html) (Japan Swimming Federation Class A, with no World Aquatics line).
+[^wasw]: [World Aquatics, Swimming Technical Rules 2023–2025](https://resources.fina.org/fina/document/2023/01/04/65961a45-bde5-4217-b666-ca1f5dc2d1f0/1_Swimming-Technical-Rules.04.01.2023.pdf), SW 11.1 and SW 11.2.
+[^usas]: [USA Swimming, 2026 Rules and Regulations](https://www.usaswimming.org/rulebook), 102.10.3 (timers per lane) and 103.3.1D (course length).
+[^olympedia]: [Olympedia, Gunnar Larsson](https://www.olympedia.org/athletes/50424) (1972 400 m medley to the thousandth; the later move to hundredths).
+[^ishof]: [International Swimming Hall of Fame, When a Tie Was Not a Tie: How .002 Decided Olympic Gold](https://ishof.org/?p=4557).
+[^swisswatches]: [Swisswatches Magazine, How Omega's Timekeeping Lab Revolutionised Olympic Timing](https://swisswatches-magazine.com/omegas-timekeeping-lab) (July 2024).
+[^cbs]: [CBS Sports, Here's the reason why there are so many ties in swimming](https://www.cbssports.com/olympics/news/rio-olympics-heres-the-reason-why-there-are-so-many-ties-in-swimming) (August 2016).
+[^swphelps]: [Swimming World, On This Date: Michael Phelps vs. Milorad Cavic](https://www.swimmingworldmagazine.com/news/on-this-date-michael-phelps-vs-milorad-cavic-a-half-stroke-to-history-at-beijing-games/) (2024).
+[^wps]: [World Para Swimming, Rules and Regulations](https://www.paralympic.org/sites/default/files/2026-01/2025_12_06_World%20Para%20Swimming%20Rules%20and%20Regulations%201%20February%202026%20-FINAL%20_0.pdf) (February 2026), facilities 1.4.1, 1.4.2, 1.4.5.

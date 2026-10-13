@@ -1,6 +1,7 @@
 ---
 title: FINIS Backstroke Start Wedge
 description: "FINIS Backstroke Start Wedge (1.30.031): strap-on design, five height settings, installation, operation, rule compliance, price, care, and specifications."
+updated: 2026-10-13
 tags:
   - Equipment
   - Timing
@@ -44,8 +45,15 @@ of automatic wedge systems, with setup in under two minutes, and states that it 
 FINA-compliant under rule FR 2.10 and usable in both training and
 competition.[^sw2018][^faq] That rule number comes from an older edition of the
 rulebook; in the 2021–2025 FINA Facilities Rules the backstroke ledge specification is
-FR 2.1.11.[^fr] An independent reviewer in 2018 judged the price (then US$249.99, listed
-at US$270 as of 2026) high in absolute terms but well below other devices.[^wizard] The
+FR 2.1.11.[^fr] As of 2026 the product listing still cites FR 2.10.[^product]
+
+FINIS does not publish the wedge's length. Its instructions, technical sheet and product
+listing give the parts, materials and height settings but no dimensions, and the 2018
+independent review gives none either.[^manual][^techsheet][^product][^wizard] The length
+therefore cannot be checked against the World Aquatics minimum, which was 65 cm when the
+wedge was introduced and has been 60 cm since 2025.[^fr][^wa2025] An independent reviewer
+in 2018 judged the price (then US$249.99, listed at US$270 as of 2026) high in absolute
+terms but well below other devices.[^wizard] The
 regulatory status of ledges by governing body, the history of the equipment, and the
 foot-placement rule that governs its use are covered in the
 [backstroke start devices overview](index.md).
@@ -109,6 +117,7 @@ straps, and hooks as replacement parts.[^techsheet]
 | Weight | 3.88 lb (1.76 kg) |
 | Attachment | Two block straps to posts or hand grips; S hook option for a block edge |
 | Height settings | Five, numbered −4 to +4; top of wedge at water level at 0 |
+| Length | Not published by FINIS |
 | Retraction | None (manual; repositioned by hand) |
 | Replacement parts | Block strap `1.30.047`, wedge strap `1.30.049`, S hook `1.30.050`, Z hook `1.30.051`, grip tape `1.30.052` |
 | Introduced | March 2018 |
@@ -130,3 +139,4 @@ straps, and hooks as replacement parts.[^techsheet]
 [^sw2018]: [Swimming World, FINIS Creates New Backstroke Start Wedge](https://www.swimmingworldmagazine.com/news/finis-creates-new-backstroke-start-wedge/) (28 March 2018; published in conjunction with FINIS).
 [^wizard]: [The Swimming Wizard, Product Review: FINIS Backstroke Start Wedge](https://swimmingwizard.com/2018/12/18/product-review-finis-backstroke-start-wedge/) (independent review, 18 December 2018).
 [^fr]: [World Aquatics, Facilities Rules 2021–2025](https://resources.fina.org/fina/document/2022/02/08/77c3058d-b549-4543-8524-ad51a857864e/210805-Facilities-Rules_clean.pdf), FR 2.1.11 (backstroke ledge).
+[^wa2025]: [World Aquatics, World Aquatics updates Competition Regulations](https://www.worldaquatics.com/news/4186172/world-aquatics-updates-competition-regulations-2025) (15 December 2024; minimum ledge length cut from 65 cm to 60 cm).

@@ -2,7 +2,7 @@
 title: Relay take-off platforms
 seoTitle: Swimming relay take-off platforms
 description: "Relay take-off platforms for swimming, including the CTS RJP and Daktronics RTOP: how exchanges are judged automatically, the rules, and disputed results."
-updated: 2026-10-01
+updated: 2026-10-13
 tags:
   - Equipment
   - Timing
@@ -90,6 +90,76 @@ negative reading on non-Omega equipment (below minus 0.03 on Omega equipment), a
 not charge a violation on a reading of 0.00 or better unless an official observed
 contact with the block.[^uil]
 
+### Worked example: an early take-off under USA Swimming rules
+
+In this example the third swimmer's feet leave the block while the second swimmer is still
+short of the wall. What happens next depends on how the meet judges relay exchanges.
+
+<figure class="wiki-figure wiki-figure--wide">
+<svg class="wiki-diagram" viewBox="0 0 600 460" role="img" aria-labelledby="rj-title rj-desc" xmlns="http://www.w3.org/2000/svg" font-size="11">
+<title id="rj-title">Early relay take-off under USA Swimming rules, flowchart</title>
+<desc id="rj-desc">Flowchart. Swimmer 3's feet leave the block before swimmer 2 touches the wall. The path then depends on how exchanges are judged. With one take-off judge per lane, the lane judge sees it and must raise a hand at once; if no hand is raised there is no disqualification unless the meet runs under World Aquatics procedures; the judge then reports to the referee. Under dual confirmation, the lane and side judges each write the infraction down without a hand signal, and the relay is disqualified only if the side judge confirms the lane judge's report. With automatic equipment, swimmer 2 must finish on the touchpad, the system printout shows a negative differential for the exchange, and the referee may confirm it from integrated backup cameras. All three paths end with the whole relay disqualified, not only swimmer 3, and the swimmer or coach is told the reason; if they are not told, the disqualification still stands.</desc>
+<defs><marker id="rj-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="wiki-diagram__arrowhead"/></marker></defs>
+<rect x="150" y="10" width="300" height="42" rx="4" class="wiki-diagram__box"/>
+<text x="300" y="28" text-anchor="middle"><tspan x="300" dy="0">Swimmer 3's feet leave the block</tspan><tspan x="300" dy="14">before swimmer 2 touches the wall</tspan></text>
+<line x1="300" y1="52" x2="300" y2="68" class="wiki-diagram__arrow"/>
+<line x1="100" y1="68" x2="500" y2="68" class="wiki-diagram__arrow"/>
+<line x1="100" y1="68" x2="100" y2="86" class="wiki-diagram__arrow" marker-end="url(#rj-arrow)"/>
+<line x1="300" y1="68" x2="300" y2="86" class="wiki-diagram__arrow" marker-end="url(#rj-arrow)"/>
+<line x1="500" y1="68" x2="500" y2="86" class="wiki-diagram__arrow" marker-end="url(#rj-arrow)"/>
+<rect x="10" y="86" width="180" height="28" rx="4" class="wiki-diagram__box"/>
+<text x="100" y="104" text-anchor="middle"><tspan x="100" dy="0">One take-off judge</tspan></text>
+<line x1="100" y1="114" x2="100" y2="130" class="wiki-diagram__arrow" marker-end="url(#rj-arrow)"/>
+<rect x="10" y="130" width="180" height="42" rx="4" class="wiki-diagram__box"/>
+<text x="100" y="148" text-anchor="middle"><tspan x="100" dy="0">Lane judge sees the feet</tspan><tspan x="100" dy="14">leave before the touch</tspan></text>
+<line x1="100" y1="172" x2="100" y2="188" class="wiki-diagram__arrow" marker-end="url(#rj-arrow)"/>
+<rect x="10" y="188" width="180" height="70" rx="4" class="wiki-diagram__box"/>
+<text x="100" y="206" text-anchor="middle"><tspan x="100" dy="0">Judge must raise a hand at</tspan><tspan x="100" dy="14">once; if not, there is no DQ</tspan><tspan x="100" dy="14">unless the meet runs under</tspan><tspan x="100" dy="14">World Aquatics procedures</tspan></text>
+<line x1="100" y1="258" x2="100" y2="274" class="wiki-diagram__arrow" marker-end="url(#rj-arrow)"/>
+<rect x="10" y="274" width="180" height="42" rx="4" class="wiki-diagram__box"/>
+<text x="100" y="292" text-anchor="middle"><tspan x="100" dy="0">Judge reports the</tspan><tspan x="100" dy="14">infraction to the referee</tspan></text>
+<rect x="210" y="86" width="180" height="28" rx="4" class="wiki-diagram__box"/>
+<text x="300" y="104" text-anchor="middle"><tspan x="300" dy="0">Dual confirmation</tspan></text>
+<line x1="300" y1="114" x2="300" y2="130" class="wiki-diagram__arrow" marker-end="url(#rj-arrow)"/>
+<rect x="210" y="130" width="180" height="56" rx="4" class="wiki-diagram__box"/>
+<text x="300" y="148" text-anchor="middle"><tspan x="300" dy="0">Lane and side judges each</tspan><tspan x="300" dy="14">write the infraction down,</tspan><tspan x="300" dy="14">with no hand signal</tspan></text>
+<line x1="300" y1="186" x2="300" y2="202" class="wiki-diagram__arrow" marker-end="url(#rj-arrow)"/>
+<rect x="210" y="202" width="180" height="56" rx="4" class="wiki-diagram__box"/>
+<text x="300" y="220" text-anchor="middle"><tspan x="300" dy="0">Relay is disqualified only</tspan><tspan x="300" dy="14">if the side judge confirms</tspan><tspan x="300" dy="14">the lane judge's report</tspan></text>
+<rect x="410" y="86" width="180" height="28" rx="4" class="wiki-diagram__box"/>
+<text x="500" y="104" text-anchor="middle"><tspan x="500" dy="0">Automatic equipment</tspan></text>
+<line x1="500" y1="114" x2="500" y2="130" class="wiki-diagram__arrow" marker-end="url(#rj-arrow)"/>
+<rect x="410" y="130" width="180" height="42" rx="4" class="wiki-diagram__box"/>
+<text x="500" y="148" text-anchor="middle"><tspan x="500" dy="0">Swimmer 2 must finish</tspan><tspan x="500" dy="14">on the touchpad</tspan></text>
+<line x1="500" y1="172" x2="500" y2="188" class="wiki-diagram__arrow" marker-end="url(#rj-arrow)"/>
+<rect x="410" y="188" width="180" height="56" rx="4" class="wiki-diagram__box"/>
+<text x="500" y="206" text-anchor="middle"><tspan x="500" dy="0">System printout shows a</tspan><tspan x="500" dy="14">negative differential</tspan><tspan x="500" dy="14">for the exchange</tspan></text>
+<line x1="500" y1="244" x2="500" y2="260" class="wiki-diagram__arrow" marker-end="url(#rj-arrow)"/>
+<rect x="410" y="260" width="180" height="42" rx="4" class="wiki-diagram__box wiki-diagram__box--note"/>
+<text x="500" y="278" text-anchor="middle"><tspan x="500" dy="0">Referee may confirm from</tspan><tspan x="500" dy="14">integrated backup cameras</tspan></text>
+<line x1="100" y1="316" x2="100" y2="332" class="wiki-diagram__arrow"/>
+<line x1="300" y1="258" x2="300" y2="332" class="wiki-diagram__arrow"/>
+<line x1="500" y1="302" x2="500" y2="332" class="wiki-diagram__arrow"/>
+<line x1="100" y1="332" x2="500" y2="332" class="wiki-diagram__arrow"/>
+<line x1="300" y1="332" x2="300" y2="350" class="wiki-diagram__arrow" marker-end="url(#rj-arrow)"/>
+<rect x="150" y="350" width="300" height="42" rx="4" class="wiki-diagram__box"/>
+<text x="300" y="368" text-anchor="middle"><tspan x="300" dy="0">The whole relay is disqualified,</tspan><tspan x="300" dy="14">not only swimmer 3</tspan></text>
+<line x1="300" y1="392" x2="300" y2="408" class="wiki-diagram__arrow" marker-end="url(#rj-arrow)"/>
+<rect x="150" y="408" width="300" height="42" rx="4" class="wiki-diagram__box"/>
+<text x="300" y="426" text-anchor="middle"><tspan x="300" dy="0">Swimmer or coach is told the reason;</tspan><tspan x="300" dy="14">if they are not, the DQ still stands</tspan></text>
+</svg>
+<figcaption>An early take-off in the third leg of a USA Swimming relay, followed through each of the three ways a meet can judge exchanges. The dashed box is optional.</figcaption>
+</figure>
+
+The chart follows the USA Swimming rulebook. Rule 101.7.4 disqualifies the team, not only
+the swimmer, when an outgoing swimmer leaves the platform before the teammate touches, and
+requires a touch on the pad where exchanges are judged automatically. Rule 102.13.6 places
+the take-off judges, sets out dual confirmation, and makes the system printout the record
+under automatic judging, with optional review of backup cameras. Rule 102.21 requires the
+immediate hand signal from a single judge and sets out how the swimmer or coach is
+told.[^usaswim] A negative differential is the equipment's reading for a swimmer who left
+before the touch, as described [above](#how-automatic-relay-judging-works).[^ncaa][^uil]
+
 ## Reliability and disputes
 
 Automatic relay judging has produced disputed disqualifications. A Stanford relay was
@@ -137,7 +207,7 @@ the shared background on how the platforms are judged and ruled on.
 [^dak-compat]: [Daktronics, RTOP and starting block compatibility](https://www.daktronics.com/en-us/support/kb/DD2090313) (Omega relay take-off platforms and starting blocks alongside Daktronics RTOPs).
 [^wa-sw]: [World Aquatics, Swimming Technical Rules 2023–2025](https://resources.fina.org/fina/document/2023/01/04/65961a45-bde5-4217-b666-ca1f5dc2d1f0/1_Swimming-Technical-Rules.04.01.2023.pdf), SW 10.13 (early take-off disqualification), SW 2.1.9 and SW 2.6.8 (officials judge contact), SW 2.2.3 and SW 2.2.4 (relay exchange printout and video), SW 13.1 (precedence of automatic equipment).
 [^wa-fr]: [World Aquatics, Facilities Rules 2021–2025](https://resources.fina.org/fina/document/2022/02/08/77c3058d-b549-4543-8524-ad51a857864e/210805-Facilities-Rules_clean.pdf), FR 2.3.6.3 (relay take-off judging to 1/100 second; overhead video as a supplement; the manufacturer consulted for the differential).
-[^usaswim]: [USA Swimming, 2025 Rules and Regulations](https://websitedevsa.blob.core.windows.net/sitefinity/docs/default-source/governance/governance-lsc-website/rules_policies/rulebooks/2025-mini-rulebook.pdf), 101.7.4 (pad touch required under automatic relay take-off judging; early take-off disqualification) and 102.13.6 (take-off judges, dual confirmation, and the system printout).
+[^usaswim]: [USA Swimming, 2025 Rules and Regulations](https://websitedevsa.blob.core.windows.net/sitefinity/docs/default-source/governance/governance-lsc-website/rules_policies/rulebooks/2025-mini-rulebook.pdf), 101.7.4 (pad touch, early take-off), 102.13.6 (take-off judges, dual confirmation, printout) and 102.21 (hand signal).
 [^ncaa]: [NCAA, Swimming and Diving Rules Book](https://ncaaorg.s3.amazonaws.com/championships/sports/swimdive/rules/PRXSW_RulesBook.pdf) (electronic relay takeoff equipment differential windows; blocks must accommodate relay judging platforms; video review).
 [^uil]: [University Interscholastic League, Protocols for Electronic Relay Judging Equipment](https://www.uiltexas.org/swimming-diving/page/uil-protocols-for-electronic-relay-judging-equipment) (judge assignments and confirmation thresholds by equipment type).
 [^swimswam]: [SwimSwam, Why Was Australia's -0.03 Relay Start Not A DQ? A Rules Deep Dive](https://swimswam.com/why-was-australias-0-03-relay-start-not-a-dq-a-rules-deep-dive/) (the manufacturer-consulted differential and Omega's reported minus 0.03 second tolerance).

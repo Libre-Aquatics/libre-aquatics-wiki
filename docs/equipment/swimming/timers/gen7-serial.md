@@ -1,6 +1,6 @@
 ---
 title: Colorado Time Systems Gen7 Serial Timer
-updated: 2026-10-01
+updated: 2026-10-13
 tags:
   - Equipment
   - Timing
@@ -171,8 +171,16 @@ as intended for merging time-trial events.[^blog]
 Two features address reliability. A pre-meet diagnostic screen checks the health of
 the whole system and can flag connections that are corroding or wired incorrectly;
 CTS holds a patent on detecting and identifying timing components by their
-electrical signature.[^patentdetect][^datasheet] And a race-finish safeguard logs
-all timing data on the timer itself: if the laptop or tablet interface drops, the
+electrical signature.[^patentdetect][^datasheet] Two of its functions depend on the Serial
+deckplates and are not in the [Legacy timer's](gen7-legacy.md) guide. Input detection
+identifies what is plugged into each deckplate socket, greying out missing inputs and
+marking mismatched ones in orange; it works on in-deck systems only, not with cable
+harnesses. A speedlight test fires the near-end and far-end starting lights without a
+start signal while the deckplates measure the current through each, reporting lights that
+work, lights that are damaged and lanes with none.[^f1034]
+
+The second feature is a race-finish safeguard, which logs all timing data on the timer
+itself. If the laptop or tablet interface drops, the
 timer keeps running and will finish the race, with the raw data available for
 replay. A second timer can still be added for redundancy, but is not required as it was
 with a System 6 console.[^datasheet][^f1034][^blog]
@@ -228,12 +236,17 @@ Both Gen7 timers replace CTS's earlier [System 5](system-5.md) and System 6 cons
 announced the Gen7 platform, beginning with the Serial in-deck system, in April 2017,
 and gave it a wider launch that December.[^launch2][^launch] Where System 6 was a
 self-contained console operated from its own keypad and ran one course at a time,
-the Gen7 timers move the interface to a Windows computer and let one timer run
-multiple and simultaneous courses, recover from an interface failure without a
-second backup timer, connect to meet-management software over USB or Ethernet, and
-accept an integrated start and speaker input.[^datasheet] Within the Gen7 line, the
+the Serial timer moves the interface to a Windows computer, lets one timer run
+multiple and simultaneous courses, recovers from an interface failure without a
+second backup timer, connects to meet-management software over USB or by network file
+sharing, and accepts an integrated start and speaker input.[^datasheet][^f1034] CTS claims
+the multi-course ability for the Serial timer only; the Legacy datasheet and user guide do
+not mention it.[^datasheet][^legacyds][^f1058] Within the Gen7 line, the
 Serial timer suits new installations built around connect-hub cabling, while the
-[Gen7 Legacy Timer](gen7-legacy.md) reuses existing multi-pin lane hardware.[^blog] Both
+[Gen7 Legacy Timer](gen7-legacy.md) reuses existing multi-pin lane hardware.[^blog] The
+Legacy article carries a
+[side-by-side table of the two consoles](gen7-legacy.md#compared-with-system-6-and-the-serial-timer).
+Both
 Gen7 consoles remain current products, sold by CTS and stocked by independent
 aquatic-equipment dealers.[^dealer]
 
@@ -247,7 +260,7 @@ aquatic-equipment dealers.[^dealer]
 | Humidity / altitude | 90% non-condensing; 0–3000 m |
 | Power | 12 VDC, 7.5 A Class 2 supply |
 | Battery | 7.2 V, 10,000 mAh NiMH; ~6 h (small system) to ~3 h (large system) |
-| Scoreboard outputs | RS-485 (3 V, 300 mA) |
+| Scoreboard outputs | Three RS-485 (3 V, 300 mA); built-in wireless scoreboard link |
 | Data | Gigabit Ethernet (isolated); USB; start input 3.3 V |
 | Certifications | cULus, FCC, RoHS |
 | Patents | US 10,137,353; US 11,192,016 (system); US 8,602,815 (deckplate) |
@@ -303,3 +316,5 @@ enclosure voids the warranty.[^f1034]
 [^hytek]: [Hy-Tek / ACTIVE, Interface with Colorado Gen 7 Timer](https://activenetwork.my.salesforce-sites.com/hytekswimming/articles/en_US/Article/Interface-with-Colorado-Gen-7-Timer).
 [^swimtopia]: [SwimTopia, CTS Gen 7 Timing Consoles: Meet Maestro Setup](https://help.swimtopia.com/hc/en-us/articles/360056845272--IN-BETA-CTS-System-5-6-or-CTS-Gen-7-Timing-Consoles-Meet-Maestro-Setup).
 [^dealer]: Dealer listings: [Recreonics, CTS Gen7 Legacy Swim Timing](https://www.recreonics.com/product/colorado-time-gen7-legacy-swim-timing/); [Team Aquatic Supplies, CTS Gen7 Legacy Timing](https://team-aquatic.com/products/coloroda-time-system-gen7-legacy-timing).
+[^legacyds]: [Colorado Time Systems, Gen7 Legacy Swimming datasheet](https://coloradotime.com/hubfs/PDFs/data%20sheets/Gen7_Legacy_Swimming.pdf).
+[^f1058]: [Colorado Time Systems, Gen7 Legacy Timer User Guide (F1058)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Gen7/Gen7LegacyTimerUserGuide_F1058.pdf).

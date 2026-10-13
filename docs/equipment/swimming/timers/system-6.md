@@ -1,7 +1,7 @@
 ---
 title: Colorado Time Systems System 6
 description: "Colorado Time Systems System 6 (SYS6) swim timing console: hardware, connectivity, built-in software, Meet Manager link, specs, and how it compares with Gen7."
-updated: 2026-10-01
+updated: 2026-10-13
 tags:
   - Equipment
   - Timing
@@ -161,10 +161,11 @@ CTS's Gen7 platform replaced the earlier [System 5](system-5.md) and System 6 co
 first announced Gen7 in 2017.[^datasheet] Where the System 6 is a self-contained console
 operated from its own keypad, runs one course at a time, and needs a second console
 attached for redundancy, the [Gen7 timers](gen7-serial.md) move the operator interface to
-a Windows laptop or tablet over Ethernet, let one timer run several courses at once, and
-keep all timing data on the console so a race finishes even if the interface drops. The
-Gen7 line is split into the connect-hub [Serial](gen7-serial.md) and the multi-pin
-[Legacy](gen7-legacy.md) consoles.[^datasheet] The System 6 is discontinued as a new
+a Windows laptop or tablet over Ethernet and keep all timing data on the console so a
+race finishes even if the interface drops. The Gen7 line is split into the connect-hub
+[Serial](gen7-serial.md) and the multi-pin [Legacy](gen7-legacy.md) consoles. Only for the
+Serial model does CTS claim that one timer can run several courses at
+once.[^datasheet][^gen7serialds] The System 6 is discontinued as a new
 product, but CTS continues to sell refurbished units (part `SYS6.S`), and the console is
 still stocked by independent aquatic-equipment dealers.[^product][^dealer]
 
@@ -201,3 +202,4 @@ still stocked by independent aquatic-equipment dealers.[^product][^dealer]
 [^swimtopia]: [SwimTopia, CTS System 5/6 or CTS Gen 7 Timing Consoles: Meet Maestro Setup](https://help.swimtopia.com/hc/en-us/articles/360056845272--IN-BETA-CTS-System-5-6-or-CTS-Gen-7-Timing-Consoles-Meet-Maestro-Setup).
 [^dealer]: Dealer listings: [Colorado Time Systems, System 6 Timing Console (Refurbished, SYS6.S)](https://shop.coloradotime.com/products/system-6-timing-console-refurbished-sys6-s); [Poolweb, System 6 Sports Timing System](https://www.poolweb.com/products/system-6-sports-timing-system).
 [^warules]: [World Aquatics, Swimming Technical Rules](https://resources.fina.org/fina/document/2023/01/04/65961a45-bde5-4217-b666-ca1f5dc2d1f0/1_Swimming-Technical-Rules.04.01.2023.pdf), competition times are recorded to a hundredth of a second, timed by automatic officiating equipment.
+[^gen7serialds]: [Colorado Time Systems, Gen7 Serial Swimming datasheet](https://web.archive.org/web/20260409172128/https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Datasheets/Gen7_Serial_Swimming.pdf), archived (up to four courses with one timer).

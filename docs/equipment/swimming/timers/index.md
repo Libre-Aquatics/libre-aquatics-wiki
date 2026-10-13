@@ -1,6 +1,7 @@
 ---
 title: Timers
 seoTitle: Swim timing consoles
+description: "Swim timing consoles: how the timer links touchpads, start system and scoreboard, its history, and the CTS, Daktronics and Swiss Timing consoles covered here."
 tags:
   - Equipment
   - Timing

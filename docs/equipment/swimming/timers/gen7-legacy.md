@@ -1,7 +1,7 @@
 ---
 title: Colorado Time Systems Gen7 Legacy Timer
 description: "Colorado Time Systems Gen7 Legacy Timer (GEN7-TMR-L): reuse of existing CTS deck wiring, software, specifications, installation, and the Serial timer compared."
-updated: 2026-10-01
+updated: 2026-10-13
 tags:
   - Equipment
   - Timing
@@ -156,12 +156,17 @@ only one gender's events, and a per-lane distance setting that lets one or more 
 finish in fewer lengths than the rest of the race, which CTS describes as intended for
 merging time-trial events.[^blog]
 
-Two features address reliability, both shared with the Serial timer. A pre-meet
-diagnostic screen checks the health of the whole system and can flag connections that are
-corroding or shorted before a meet begins; CTS holds a patent on detecting and
-identifying timing components by their electrical signature.[^patentdetect][^f1058] And a
-race-finish safeguard logs all timing data on the timer itself: if the laptop or tablet
-interface drops, the timer keeps running and will finish the race, with the raw data
+Two features address reliability. A diagnostics screen tests every input, in a real-time
+mode with the pool empty and a pre-meet mode while someone walks the deck triggering each
+pad, button and relay platform, and reports each one as open, closed, shorted or corroded;
+the scoreboard can also show each input's state during the walk.[^f1058][^legacyds] These
+tests match the Serial timer's, but two Serial functions are missing from the Legacy user
+guide: input detection, in which Serial deckplates identify what is plugged into each
+socket, and a speedlight test, in which the deckplates measure the current through each
+starting light.[^f1058][^f1034]
+
+The second feature is a race-finish safeguard, which logs all timing data on the timer
+itself. If the laptop or tablet interface drops, the timer keeps running and will finish the race, with the raw data
 available for replay. A second timer can still be added for redundancy, but it is not
 required as it was with a System 6 console.[^f1058][^blog]
 
@@ -199,18 +204,39 @@ carries a built-in wireless scoreboard link that System 6 required an adapter to
 provide.[^blog]
 
 Within the Gen7 line, the Legacy timer and the [Gen7 Serial Timer](gen7-serial.md) share
-the same enclosure, Gen7 software, diagnostics, and race-finish safeguard; the difference
-is the deck cabling. The Serial timer uses CTS's connect-hub bus with keyed, colour-coded,
+the same enclosure, Gen7 software, meet-management connections, input tests and
+race-finish safeguard; the difference is the deck cabling, and with it two Serial-only
+diagnostic functions. The Serial timer uses CTS's connect-hub bus with keyed, colour-coded,
 wet-pluggable titanium connectors and titanium deckplates, and its cabling supports up to
 20 lanes; the Legacy timer reuses a facility's existing multi-pin CTS harnesses and
 display boards for up to 12 lanes, and adds an RS-232 legacy-scoreboard output the Serial
 model does not carry.[^f1058][^blog] The connect-hub patent (US 10,137,353) covers the
 Serial model's connect-hub cabling, which the Legacy timer does not use; the
 titanium-deckplate patent (US 8,602,815) covers a deck component used in CTS in-deck
-installations, including Legacy in-deck systems, and both consoles share the
-component-detection patent (US 11,192,016).[^patentnode][^patentplate][^patentdetect] Both
+installations, including Legacy in-deck systems. CTS names the component-detection patent
+(US 11,192,016) for the Serial system only; its Legacy datasheet and user guide name no
+patents.[^patentnode][^patentplate][^patentdetect][^serialds] Both
 Gen7 consoles remain current products, sold by CTS and stocked by independent
 aquatic-equipment dealers.[^dealer]
+
+The table sets the two Gen7 consoles side by side, from the CTS user guide and datasheet
+for each.[^f1058][^legacyds][^f1034][^serialds][^blog]
+
+| | Gen7 Serial Timer | Gen7 Legacy Timer |
+|---|---|---|
+| Part number | `GEN7-TMR` | `GEN7-TMR-L` |
+| Deck cabling | CTS connect-hub bus: keyed, colour-coded, wet-pluggable titanium connect hubs and deckplates | A facility's existing CTS multi-pin lane harnesses and deckplates |
+| Lanes | Up to 20 | Up to 12, in-deck or on-deck |
+| Lane connectors on the timer | One in-deck connection; on-deck near-end and far-end connections | Four multi-pin connectors: near and far end for lanes 1–10, near and far end for lanes 11 and 12 |
+| Scoreboard outputs | RS-485 (three); built-in wireless scoreboard link | RS-485 (two), RS-232 for a legacy scoreboard; built-in 2.4 GHz wireless |
+| Displays listed by CTS | LED numeric and LED video | LED numeric and LED video |
+| Operator interface | Windows laptop or tablet over Ethernet | Windows laptop or tablet over Ethernet |
+| Meet-management link | USB to the timer or to the interface laptop, or Windows file sharing over the network; a UDP network link for names, team scores and results | Same |
+| Diagnostics | Real-time and pre-meet input tests (open, closed, shorted, corroded); input detection on in-deck deckplates; speedlight current test | Real-time and pre-meet input tests (open, closed, shorted, corroded) |
+| Battery | 7.2 V, 10,000 mAh NiMH; about 6 h on a small system, about 3 h on a large one | 7.2 V, 10,000 mAh NiMH; about 6 h in the user guide, about 8 h in the datasheet |
+| Case | 4.90 × 14.23 × 13.07 in, 11.0 lb | Same case, dimensions and weight |
+| Patents named by CTS | US 10,137,353 (connect hubs); US 11,192,016 (component detection); US 8,602,815 (deckplate) | None named in the Legacy datasheet or user guide |
+| Typical use | New installations wired for connect hubs | Replacing a System 5 or System 6 console without rewiring the deck |
 
 ## Specifications
 
@@ -227,7 +253,7 @@ aquatic-equipment dealers.[^dealer]
 | Scoreboard outputs | RS-232 (±12 V, 60 mA); two RS-485 (3 V, 300 mA); built-in 2.4 GHz wireless |
 | Data | Gigabit Ethernet (isolated); USB; start input 3.3 V @ 1.7 mA |
 | Certifications | cULus, FCC, RoHS |
-| Patents | US 11,192,016 (component detection) |
+| Patents | None named by CTS for this console |
 
 ## Installation and safety
 
@@ -268,3 +294,5 @@ opening the enclosure voids the warranty.[^f1058]
 [^swimtopia]: [SwimTopia, CTS Gen 7 Timing Consoles: Meet Maestro Setup](https://help.swimtopia.com/hc/en-us/articles/360056845272--IN-BETA-CTS-System-5-6-or-CTS-Gen-7-Timing-Consoles-Meet-Maestro-Setup).
 [^dealer]: Dealer listings: [Recreonics, CTS Gen7 Legacy Swim Timing](https://www.recreonics.com/product/colorado-time-gen7-legacy-swim-timing/); [Team Aquatic Supplies, CTS Gen7 Legacy Timing](https://team-aquatic.com/products/coloroda-time-system-gen7-legacy-timing).
 [^legacyds]: [Colorado Time Systems, Gen7 Legacy Swimming datasheet](https://coloradotime.com/hubfs/PDFs/data%20sheets/Gen7_Legacy_Swimming.pdf), which states 8-hour battery life; also the [Gen7 Swim Timing (Legacy) product page](https://coloradotime.com/products/gen7-swim-timing-legacy).
+[^f1034]: [Colorado Time Systems, Gen7 Serial Timer User Guide (F1034)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Gen7/Gen7SerialTimerUserGuide_F1034.pdf).
+[^serialds]: [Colorado Time Systems, Gen7 Serial Swimming datasheet](https://web.archive.org/web/20260409172128/https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Datasheets/Gen7_Serial_Swimming.pdf), archived.

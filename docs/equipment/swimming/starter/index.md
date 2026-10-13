@@ -1,15 +1,19 @@
 ---
 title: Start systems
 seoTitle: Swimming start systems
+description: "Swimming start systems: the start tone (beep or horn) and strobe that begin a race, the speaker behind each block, the rules, start-tone recordings, and models."
+updated: 2026-10-13
 tags:
   - Equipment
   - Timing
   - Swimming
 ---
 
-A start system is the starter's equipment that begins a race: a unit with a
-microphone, a start tone (horn), and a strobe light, connected to loudspeakers and,
-on deck-wired systems, to visual indicators at the blocks. Pressing the start sounds
+A start system is the starter's equipment that begins a race. The start signal in
+swimming is an electronic start tone, the beep or horn heard from a loudspeaker behind
+each block, sounded together with the flash of a strobe light. The unit combines a
+microphone, the start tone, and the strobe, and connects to the loudspeakers and, on
+deck-wired systems, to visual indicators at the blocks. Pressing the start sounds
 the tone, flashes the strobe, and simultaneously sends a start pulse to the timing
 system so the race clock begins with the signal. Officials and watch timers are
 directed to start from the strobe flash rather than the horn, because the speed of
