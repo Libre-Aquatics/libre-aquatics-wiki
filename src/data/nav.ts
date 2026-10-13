@@ -297,6 +297,7 @@ export const nav: NavNode[] = [
             title: 'Daktronics',
             children: [
               { title: 'JC-100', page: 'equipment/diving/jc-100.md' },
+              { title: 'JC-100 Junction Box', page: 'equipment/diving/jc-100-junction-box.md' },
               { title: 'RC-100', page: 'equipment/diving/rc-100.md' },
               { title: 'RC-200', page: 'equipment/diving/rc-200.md' },
             ],
@@ -498,6 +499,7 @@ export const nav: NavNode[] = [
                     children: [
                       { title: 'All Sport 1600', page: 'equipment/common/scoreboard-control/all-sport-1600.md' },
                       { title: 'All Sport 5000', page: 'equipment/common/scoreboard-control/all-sport-5000.md' },
+                      { title: 'Phone-Jack Junction Box (console accessory)', page: 'equipment/common/scoreboard-control/daktronics-phone-jack-junction-box.md' },
                     ],
                   },
                 ],
