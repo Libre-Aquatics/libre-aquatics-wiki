@@ -182,6 +182,7 @@ export const nav: NavNode[] = [
                   { title: 'Quantum Harness Cable', page: 'equipment/swimming/deck-cabling/quantum-harness-cable.md' },
                   { title: 'Quantum Harness Terminator', page: 'equipment/swimming/deck-cabling/quantum-harness-terminator.md' },
                   { title: 'Deck Plate', page: 'equipment/swimming/deck-cabling/swiss-timing-deck-plate.md' },
+                  { title: 'Deckplate Adapter', page: 'equipment/swimming/deck-cabling/swiss-timing-deckplate-adapter.md' },
                   { title: 'ODB10-SW', page: 'equipment/swimming/deck-cabling/odb10-sw.md' },
                   { title: 'ODB10', page: 'equipment/swimming/deck-cabling/odb10.md' },
                   { title: 'Quantum Start Cable', page: 'equipment/swimming/deck-cabling/quantum-start-cable.md' },
@@ -227,6 +228,7 @@ export const nav: NavNode[] = [
             children: [
               { title: 'Colorado Block', page: 'equipment/swimming/starting-blocks/colorado-block.md' },
               { title: 'Fusion Starting Platform', page: 'equipment/swimming/starting-blocks/fusion-starting-platform.md' },
+              { title: 'Swiss Timing OSB14', page: 'equipment/swimming/starting-blocks/osb14.md' },
             ],
           },
           {
