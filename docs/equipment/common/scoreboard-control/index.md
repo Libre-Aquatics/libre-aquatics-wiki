@@ -108,7 +108,7 @@ than by who made it, so a NovaStar controller and a CTS adapter sit in the same 
 | [GameLink console](gamelink-console.md) | Colorado Time Systems | Keyboard console for team-sport data entry | Discontinued |
 | [All Sport 1600](all-sport-1600.md) | Daktronics | Scoreboard control console | Released 2000 |
 | [All Sport 5000](all-sport-5000.md) | Daktronics | Keyboard scoreboard console with sport inserts | Released 2000 |
-| [Gen VI radio](gen-vi-radio.md) | Daktronics | Radio link from All Sport and OmniSport consoles to display receivers | Documented 2015–2021 |
+| [Gen VI radio](gen-vi-radio.md) | Daktronics | 2.4 GHz radio link from All Sport and OmniSport consoles to display receivers | Introduced 2011–2012 |
 | [MCTRL-300](mctrl-300.md) | NovaStar | LED video display controller | Shipped by CTS |
 | [MCTRL-600](mctrl-600.md) | NovaStar | LED video display controller | Shipped by CTS |
 | [MCTRL-660](mctrl-660.md) | NovaStar | LED video display controller | Shipped by CTS |
