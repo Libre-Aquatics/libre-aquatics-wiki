@@ -69,7 +69,7 @@ product in full, and this page is the shared overview they refer back to.
 
 | Article | Manufacturer | Display | Connection |
 |---|---|---|---|
-| [Swiss Timing water polo shot clocks](swiss-timing-shot-clocks.md) | Swiss Timing | 24 cm shot-time digits; game time on the 2023 model | Wired, from a power and horn unit |
+| [Swiss Timing water polo shot clocks](swiss-timing-shot-clocks.md) | Swiss Timing | 24 cm shot-time digits; 15 cm game-time digits on the later model | Wired, from a power and horn unit |
 | [Montreal shot clocks](montreal-shot-clocks.md) | Swiss Timing | 40 cm shot-time digits and game clock | Wired, from a battery-backed power and horn unit |
 | [Coyote horn](coyote-horn.md) | Swiss Timing | Horn and power unit | Feeds the shot clocks |
 | [Deck Clock](../../common/pace-clock/deck-clock.md) | Colorado Time Systems | 10 in shot-time and 5 in game-time digits | 2.4 GHz wireless or cable; also a pace clock |
