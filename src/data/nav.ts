@@ -268,6 +268,12 @@ export const nav: NavNode[] = [
             title: 'Cables and Accessories',
             children: [
               {
+                title: 'Colorado Time Systems',
+                children: [
+                  { title: 'USB Connect', page: 'equipment/swimming/timers/cts-usb-connect.md' },
+                ],
+              },
+              {
                 title: 'Swiss Timing',
                 children: [
                   { title: 'Programmer AQ', page: 'equipment/swimming/timers/programmer-aq.md' },
@@ -556,6 +562,10 @@ export const nav: NavNode[] = [
           { title: 'CPS-Schwimm', page: 'software/cps-schwimm.md' },
           { title: 'Aquabec', page: 'software/aquabec.md' },
           { title: 'SynchroMM', page: 'software/synchromm.md' },
+          { title: 'Gen7 Artistic Swimming', page: 'software/gen7-artistic-swimming.md' },
+          { title: 'DiveMeets', page: 'software/divemeets.md' },
+          { title: 'ieDive', page: 'software/iedive.md' },
+          { title: 'OmadaTrak', page: 'software/omadatrak.md' },
           { title: 'DIV Scoring Manager', page: 'software/div-scoring-manager.md' },
           { title: 'SWA Scoring Manager', page: 'software/swa-scoring-manager.md' },
           { title: 'i-Judge', page: 'software/i-judge.md' },

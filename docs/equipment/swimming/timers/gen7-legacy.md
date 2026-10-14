@@ -177,7 +177,7 @@ returns; the console does the timing itself. The Legacy timer offers the same fo
 connections as the
 [Gen7 Serial Timer](gen7-serial.md#meet-management-software), where they are described
 in full: USB straight to a port on the timer, USB to the interface laptop through CTS's
-`USB2USB` coupler, a shared Windows folder over the network, and a UDP link that carries
+[`USB2USB`](cts-usb-connect.md) coupler, a shared Windows folder over the network, and a UDP link that carries
 the swimmers' names to the console for the operator's screen and the scoreboard, along
 with team scores and full event results. The first three are interchangeable in what they exchange, so the
 choice among them comes down to what the meet-management computer can reach.[^f1058]

@@ -193,7 +193,7 @@ computer can connect to the Gen7 in four ways:
 
 - By USB directly to a port on the timer, where the computer sees it as a virtual serial
   (COM) port.
-- By USB to the Gen7 interface laptop, through CTS's USB-Connect coupler (part `USB2USB`),
+- By USB to the Gen7 interface laptop, through CTS's [USB Connect](cts-usb-connect.md) coupler (part `USB2USB`),
   which simulates a null-modem serial link over USB.
 - Over the network by file sharing, in which the meet-management computer and the Gen7
   laptop read and write a shared Windows folder, enabled as the meet-management
