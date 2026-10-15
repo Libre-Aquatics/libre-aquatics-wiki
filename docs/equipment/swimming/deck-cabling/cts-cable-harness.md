@@ -39,7 +39,7 @@ Read (local copies under sources/vendors/colorado-time-systems/):
 - touchpads-deckplates/cts-deck-plate-and-cable-harness-cleaning-f897 (Rev. 201111): grease each
   pod jack before use; clean with alcohol and a cotton pipe cleaner after; hang the harness to
   dry, never bag it; brush the 50-pin plug (timer or wall-plate end) with alcohol.
-- timers-consoles/cts-serial-timer-user-guide-f1034 (Rev 202603): the Gen7 Serial uses serial
+- timers-consoles/cts-serial-timer-user-guide-f1034-rev-202603 (Rev 202603): the Gen7 Serial uses serial
   cable harnesses with separate near- and far-end inputs, which link end to end so one console can take primary and
   backup harnesses across as many as 20 lanes; input detection does not work on harnesses. Whether the serial
   harness has its own part number was not found.

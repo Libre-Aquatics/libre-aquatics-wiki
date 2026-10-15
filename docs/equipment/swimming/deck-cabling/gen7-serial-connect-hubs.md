@@ -41,7 +41,7 @@ Read:
   connection twice a second; on-board memory for troubleshooting data; cap supplied with each
   hub; floor plates can be power-washed; timer, start, scoreboard and bulkhead hubs mount in the
   deck or in wallplates.
-- sources/.../timers-consoles/cts-serial-timer-user-guide-f1034 (Rev 202603): R-015-715-xx cable,
+- sources/.../timers-consoles/cts-serial-timer-user-guide-f1034-rev-202603 (Rev 202603): R-015-715-xx cable,
   black end to the timer, white end with red keyway to a "Timer" node in wall or deck; the starter
   reaches its own node over R-015-706-xx, whose keyway is green.
 - sources/.../start-systems/cts-championship-elite-start-system-user-instructions-f1064:

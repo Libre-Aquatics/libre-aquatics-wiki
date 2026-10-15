@@ -18,7 +18,7 @@ tags:
   -f888.pdf (F888 Rev. 0404, 2004), cts-displaylink-aqualink-1.6-and-1.7-...-f854.pdf
   (F854 Rev. 0404), cts-displaylink-template-editor-1.5-...-f855.pdf (F855 Rev. 0404),
   cts-displaylink-video-to-broadcast-software-instructions-f1062-2.pdf (Rev. 202104).
-  Gen7 claims come from timers-consoles/cts-serial-timer-user-guide-f1034.pdf.
+  Gen7 claims come from timers-consoles/cts-serial-timer-user-guide-f1034-rev-202603.pdf.
 
   Checked against those files 2026-07-28:
   - Multi-layer really did arrive in v4.2.7 (20 Nov 2013) as a paid add-on, and v4.2.10

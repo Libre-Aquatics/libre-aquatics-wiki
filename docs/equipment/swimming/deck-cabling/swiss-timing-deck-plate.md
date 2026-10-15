@@ -85,7 +85,18 @@ Part number: three of four Swiss Timing occurrences read 3494.603 (concept p19 d
 figures 20-22 and bottom view); only the concept guide's text reads 3493.603. The text calls
 3494.603 the likelier number but keeps both. AVK and a web search found neither number.
 
-Still to research: price; whether the ARES-era 3274.044 plate has the same jack layout; the
+Dealer listing added 2026-10-14: Australasia Sports Timing (sportstiming.com.au, SKU DECK_PLATE),
+established 2013 after taking over Swiss Timing's services in the region. Gives 151 x 151 mm and
+153 x 153 x 29.5 mm (4 mm above floor), Lexan EXL1433T, RAL 9010, -20 to +60 C, threaded pins,
+stainless contacts, primary and secondary; only the sets include fixing material, silicone,
+epoxy and grease. Kit table (6/8/10 lanes): 3494.603 plate and 3494.012 bridge plate 6/8/10;
+nut M6 A4 9551.1505 75/100/125; crimp terminal M6 9039.6006 63/84/105; crimp pliers 9071.3543;
+silicone paste Rhodorsil 9038.7047 x2; CAF 30 cartridge 9038.7083; gun 9038.7030; C255GR resin
+9038.7034 (-/2/1); Biothan 2MD2170 resin 9038.7085 (2/2/3); Torx 4 x 45 9540.2200 and plugs
+6 x 30 9039.8558 30/40/50; DOC3274.511 resin manual. Also 3494.951 one lane, 3494.961 start
+plate, 3494.962 start set with adapters and cables, 3274.049 adapter. The bridge plate is not
+explained.
+Still to research: price; what the bridge plate 3494.012 is; whether the ARES-era 3274.044 plate has the same jack layout; the
 adapter's second connector (label not legible, presumably loudspeaker); materials.
 -->
 
@@ -111,9 +122,10 @@ keeps the start area clear of cables, as World Aquatics (then FINA) recommends, 
 starting blocks be removed without touching the wiring.[^concept] Because each lane has its own
 cable, every lane is addressed separately at the box.[^concept]
 
-Each plate sits under the centre of its lane's starting block.[^osb11][^osb14] The OSB14 block
+Each plate sits under the centre of its lane's starting block.[^osb11][^osb14] The text of the OSB14 block
 manual places the hole for a fixed-cabling plate 238 mm from the pool edge, the same distance
-as the front of the block.[^osb14m] One plate type covers both primary and secondary timing.
+as the front of the block. Its drawings put the 238 mm on the centre of the hole instead, with
+the front of the base about 185 mm from the edge.[^osb14m] One plate type covers both primary and secondary timing.
 The pushbuttons can serve as backup in semi-automatic mode. Alternatively, the touchpad and
 platform can be wired in parallel to both systems. Swiss Timing says that second option calls
 for backup video and is used at the highest-level meets.[^concept]
@@ -222,6 +234,8 @@ unplugged from the deck plate.[^quantum]
 | Lane cable | Shielded, 6 × 0.5 mm² stranded, 9 mm maximum; 100 m maximum to the ODB10-SW[^concept][^odb] |
 | Start cable | Shielded, 4 × 0.5 mm², 9 mm maximum[^odb] |
 | Loudspeaker cable | Shielded, 2 × 1.5 mm²[^odb] |
+| Material | Lexan EXL1433T resin, white RAL 9010 (dealer listing)[^ast] |
+| Operating temperature | −20 to +60 °C (dealer listing)[^ast] |
 
 ## Part numbers and accessories
 
@@ -239,9 +253,29 @@ This section lists the parts Swiss Timing names.
 | `9036.7083` | Silicone glue[^concept] |
 | `9038.7047` | Silicone paste[^concept][^odb] |
 | `3399.930` | Mobile loudspeaker with 5 m cable for a deck plate[^stv] |
+| `3494.951` | Deck plate set for one lane (dealer listing)[^ast] |
+| `3494.956`, `3494.958`, `3494.950` | Deck plate kits for 6, 8 or 10 lanes, with epoxy[^osb14][^ast] |
+| `3494.961` | Start plate (dealer listing)[^ast] |
+| `3494.962` | Start deck plate set with adapters and cables[^osb14][^ast] |
+| `3494.012` | Bridge plate, one per lane in the kits (dealer listing)[^ast] |
+| `9551.1505` | A4 stainless M6 nut (dealer listing)[^ast] |
+| `9039.6006` | M6 crimp terminal (dealer listing)[^ast] |
+| `9071.3543` | Crimp pliers for DIN 46228 cable ferrules (dealer listing)[^ast] |
+| `9038.7083` | Transparent silicone cartridge, CAF 30, 310 ml (dealer listing)[^ast] |
+| `9038.7030` | Cartridge gun (dealer listing)[^ast] |
+| `9038.7034` | C255GR resin, 204 g with hardener (dealer listing)[^ast] |
+| `9038.7085` | Biothan 2MD2170 resin, 705 g with hardener (dealer listing)[^ast] |
 
 Every Swiss Timing drawing of the plate labels it `3494.603`. The `3493.603` in the Swimming
 Concept text is probably a misprint, but no source corrects it.[^concept][^odb]
+
+The Australian distributor's kit list gives quantities for 6, 8 and 10 lanes: one deck plate and
+one bridge plate per lane, 75, 100 or 125 M6 nuts, and 30, 40 or 50 Torx screws and plugs, with
+one set of crimping tools, silicone and resins per kit.[^ast] Its numbers do not all agree with
+the Swimming Concept guide. It gives the CAF 30 silicone as `9038.7083`, where the guide's
+silicone glue is `9036.7083`. It also lists `3274.511` as the manual for the Biothan resin,
+where the guide uses that number for the potting resin itself.[^ast][^concept] The same listing
+gives the face as 151 × 151 mm in one place and 153 × 153 mm in another.[^ast]
 
 ## See also
 
@@ -258,8 +292,9 @@ Concept text is probably a misprint, but no source corrects it.[^concept][^odb]
 
 [^concept]: [Swiss Timing, Swimming Concept: Quantum / OSB with footrest (0017.509.02, v4.9, January 2017)](https://www.swisstiming.com/fileadmin/Resources/Instruction_Manuals/0017.509.02_AQU_Concept.pdf).
 [^odb]: [Swiss Timing, ODB10-SW User's Manual (3494.501.02, v1.7, December 2018)](https://www.swisstiming.com/fileadmin/Resources/Instruction_Manuals/3494.501.02_AQU_ODB10_User_Manual.pdf), 2.3 and 5.2.
-[^osb14m]: Swiss Timing, OSB14 Swimming Starting Block User's Manual (3454.519.02, v1.4, March 2020), 2.1 and 2.4.
+[^osb14m]: [Swiss Timing, OSB14 Swimming Starting Block User's Manual (3454.519.02, v1.4, March 2020)](https://www.swisstiming.com/fileadmin/Resources/Instruction_Manuals/3454.519.02_OSB14_User_Manual.pdf), 2.1 and 2.4.
 [^osb11]: [Swiss Timing, OSB11 Swimming Starting Block datasheet (V3, 03-2019)](https://www.swisstiming.com/fileadmin/Resources/Data/Datasheets/DOCM_AQ_OSB11_anTiSlip_0519.pdf).
 [^osb14]: [Swiss Timing, OSB14 Swimming Starting Block datasheet (V2, 03-2019)](https://www.swisstiming.com/fileadmin/Resources/Data/Datasheets/DOCM_AQ_OSB14_anTiSlip_0519_EN.pdf).
 [^quantum]: Swiss Timing, Quantum Swimming Software User's Manual (3480.509.02), 8.1.2 and 8.1.4.
 [^stv]: Swiss Timing, StartTime V User's Manual (3481.560.02, v1.2, March 2018), accessories.
+[^ast]: [Australasia Sports Timing, Deck plate](https://www.sportstiming.com.au/shop/Aquatic+Sports/Swimming/Deck+plate%3Fsku=DECK_PLATE.html) (kit contents).

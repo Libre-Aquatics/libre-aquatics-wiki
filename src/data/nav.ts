@@ -115,6 +115,7 @@ export const nav: NavNode[] = [
             children: [
               { title: 'Colorado Time Systems Backstroke Start Device', page: 'equipment/swimming/backstroke-start/cts.md' },
               { title: 'FINIS Backstroke Start Wedge', page: 'equipment/swimming/backstroke-start/finis.md' },
+              { title: 'Omega OBL1 Backstroke Ledge', page: 'equipment/swimming/backstroke-start/obl1.md' },
               { title: 'Omega OBL2 Pro Backstroke Ledge', page: 'equipment/swimming/backstroke-start/swiss-timing.md' },
             ],
           },
@@ -228,6 +229,10 @@ export const nav: NavNode[] = [
             children: [
               { title: 'Colorado Block', page: 'equipment/swimming/starting-blocks/colorado-block.md' },
               { title: 'Fusion Starting Platform', page: 'equipment/swimming/starting-blocks/fusion-starting-platform.md' },
+              { title: 'S.R. Smith Velocity', page: 'equipment/swimming/starting-blocks/velocity.md' },
+              { title: 'Swiss Timing OSB9', page: 'equipment/swimming/starting-blocks/osb9.md' },
+              { title: 'Swiss Timing OSB11', page: 'equipment/swimming/starting-blocks/osb11.md' },
+              { title: 'Swiss Timing OSB12', page: 'equipment/swimming/starting-blocks/osb12.md' },
               { title: 'Swiss Timing OSB14', page: 'equipment/swimming/starting-blocks/osb14.md' },
             ],
           },
@@ -682,6 +687,7 @@ export const nav: NavNode[] = [
       { title: 'NovaStar', page: 'vendors/novastar.md' },
       { title: 'Paragon Aquatics', page: 'vendors/paragon-aquatics.md' },
       { title: 'Seiko', page: 'vendors/seiko.md' },
+      { title: 'S.R. Smith', page: 'vendors/s-r-smith.md' },
       { title: 'Spectrum Aquatics', page: 'vendors/spectrum-aquatics.md' },
       { title: 'Splash Software', page: 'vendors/splash-software.md' },
       { title: 'Seagull Enterprises', page: 'vendors/seagull.md' },

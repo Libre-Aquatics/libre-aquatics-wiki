@@ -73,7 +73,7 @@ Local sources read in full (sources/vendors/colorado-time-systems/):
   same patent and features as the 2014 sheet; "smart wallplates and deckplates" in the feature
   table; 1.5 in conduit; connect hubs plus titanium deckplates in the parts list (no deckplate
   part number given).
-- timers-consoles/cts-serial-timer-user-guide-f1034, Rev 202603: deckplates at each lane take
+- timers-consoles/cts-serial-timer-user-guide-f1034-rev-202603, Rev 202603: deckplates at each lane take
   pads, buttons and RJPs; in-deck input detection of what is plugged into each position, gray for
   missing, orange for mismatched, a few seconds to run, in-deck only, not on harnesses;
   deckplates measure speedlight current and report good, damaged or missing per lane;
