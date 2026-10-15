@@ -116,12 +116,86 @@ each lane and may be portable so the operator can remove it when no race is bein
 held. Its sensitivity must be such that water turbulence cannot trigger it but a
 light hand touch can, and it must be sensitive along the top edge.[^frules]
 
+The pool's own markings carry on across the panels. Each panel is edged with a black border
+0.025 m wide, and each lane's target line, 0.2–0.3 m wide, runs down the middle of the
+panel with a cross line 0.5 m long centred 0.3 m below the surface. Lanes are 2.5 m apart
+centre to centre, so two panels of the minimum width leave a gap of 0.1 m.[^frules]
+
+<figure class="wiki-figure wiki-figure--wide">
+<svg class="wiki-diagram" viewBox="0 0 520 250" role="img" aria-labelledby="tp-front-title tp-front-desc" xmlns="http://www.w3.org/2000/svg" font-size="11">
+<title id="tp-front-title">Touch panels in two adjacent lanes, front view</title>
+<desc id="tp-front-desc">Front view of the end wall from the pool, drawn to scale, showing two adjacent lanes. Lane centres are 2.5 metres apart. Each touch panel is 2.4 metres wide, leaving a 0.1 metre gap between panels, and reaches 0.3 metres above and 0.6 metres below the water surface, edged with a narrow black border. A dark target line runs down the centre of each lane across the panel, with a cross line 0.5 metres long centred 0.3 metres below the surface.</desc>
+<rect x="0" y="40" width="520" height="210" class="wiki-diagram__wall"/>
+<rect x="0" y="90" width="520" height="160" class="wiki-diagram__water"/>
+<rect x="44" y="66" width="192" height="72" class="wiki-diagram__pad" stroke-width="2"/>
+<rect x="244" y="66" width="192" height="72" class="wiki-diagram__pad" stroke-width="2"/>
+<line x1="0" y1="90" x2="520" y2="90" class="wiki-diagram__waterline"/>
+<rect x="130" y="40" width="20" height="210" class="wiki-diagram__mark"/>
+<rect x="330" y="40" width="20" height="210" class="wiki-diagram__mark"/>
+<rect x="120" y="104" width="40" height="20" class="wiki-diagram__mark"/>
+<rect x="320" y="104" width="40" height="20" class="wiki-diagram__mark"/>
+<line x1="140" y1="40" x2="140" y2="24" class="wiki-diagram__guide"/>
+<line x1="340" y1="40" x2="340" y2="24" class="wiki-diagram__guide"/>
+<line x1="140" y1="28" x2="340" y2="28" class="wiki-diagram__dim"/>
+<line x1="140" y1="24" x2="140" y2="32" class="wiki-diagram__dim"/>
+<line x1="340" y1="24" x2="340" y2="32" class="wiki-diagram__dim"/>
+<text x="240" y="20" text-anchor="middle">2.5 m between lane centres</text>
+<text x="252" y="80">Touch panel</text>
+<text x="366" y="118">Cross line</text>
+<line x1="44" y1="138" x2="44" y2="166" class="wiki-diagram__guide"/>
+<line x1="236" y1="138" x2="236" y2="166" class="wiki-diagram__guide"/>
+<line x1="44" y1="162" x2="236" y2="162" class="wiki-diagram__dim"/>
+<text x="90" y="178" text-anchor="middle">Panel 2.4 m</text>
+<line x1="240" y1="138" x2="240" y2="190" class="wiki-diagram__guide"/>
+<text x="240" y="204" text-anchor="middle">0.1 m gap</text>
+<line x1="436" y1="66" x2="470" y2="66" class="wiki-diagram__guide"/>
+<line x1="436" y1="138" x2="470" y2="138" class="wiki-diagram__guide"/>
+<line x1="462" y1="66" x2="462" y2="138" class="wiki-diagram__dim"/>
+<line x1="458" y1="90" x2="466" y2="90" class="wiki-diagram__dim"/>
+<text x="468" y="82">0.3 m</text>
+<text x="468" y="118">0.6 m</text>
+</svg>
+<figcaption>Two adjacent lanes, looking at the wall from the pool, drawn to scale from the World Aquatics minimums. Each panel is 2.4 m wide and 0.9 m high, set 0.3 m above and 0.6 m below the surface, with a 0.025 m black border. The target line runs down each lane's centre, with its 0.5 m cross line 0.3 m below the surface.</figcaption>
+</figure>
+
 World Para Swimming applies matching requirements. Its rulebook requires approved
 automatic officiating equipment at the Paralympic Games, its world championships, and its
 sanctioned and Approved Plus competitions, judged and timed to 1/100 of a second, and sets
 the same minimum touch-panel size of 2.4 m by 0.9 m.[^wps]
 
 ## Where touchpads are installed
+
+<figure class="wiki-figure wiki-figure--wide">
+<svg class="wiki-diagram" viewBox="0 0 520 230" role="img" aria-labelledby="tp-length-title tp-length-desc" xmlns="http://www.w3.org/2000/svg" font-size="11">
+<title id="tp-length-title">How touch panels set the pool length, side view</title>
+<desc id="tp-length-desc">Side view of a 25 metre pool with a touch panel on each end wall, not to scale along its length and with the panel thickness exaggerated. Each panel is 0.01 metres thick and reaches 0.3 metres above and 0.6 metres below the water. The race distance of 25.000 metres runs between the two panel faces, so the wall-to-wall length is 25.020 to 25.030 metres. A bracket on the left wall marks the depth band over which the length tolerance applies, from 0.3 metres above to 0.8 metres below the surface, which reaches deeper than the bottom of the panel.</desc>
+<rect x="0" y="30" width="40" height="200" class="wiki-diagram__wall"/>
+<rect x="480" y="30" width="40" height="200" class="wiki-diagram__wall"/>
+<rect x="40" y="80" width="440" height="150" class="wiki-diagram__water"/>
+<line x1="40" y1="80" x2="480" y2="80" class="wiki-diagram__waterline"/>
+<rect x="40" y="56" width="8" height="72" class="wiki-diagram__pad"/>
+<rect x="472" y="56" width="8" height="72" class="wiki-diagram__pad"/>
+<path d="M254,70 L250,90 L258,110 L250,130 L258,150 L250,170 L254,190" class="wiki-diagram__dim"/>
+<path d="M266,70 L262,90 L270,110 L262,130 L270,150 L262,170 L266,190" class="wiki-diagram__dim"/>
+<text x="50" y="48">Panel, 0.01 m thick</text>
+<text x="300" y="74">Water surface</text>
+<line x1="30" y1="56" x2="30" y2="144" class="wiki-diagram__dim"/>
+<line x1="26" y1="56" x2="34" y2="56" class="wiki-diagram__dim"/>
+<line x1="26" y1="144" x2="34" y2="144" class="wiki-diagram__dim"/>
+<line x1="34" y1="144" x2="60" y2="144" class="wiki-diagram__guide"/>
+<text x="52" y="156">Length checked 0.3 m above</text>
+<text x="52" y="169">to 0.8 m below the surface</text>
+<line x1="48" y1="128" x2="48" y2="186" class="wiki-diagram__guide"/>
+<line x1="472" y1="128" x2="472" y2="186" class="wiki-diagram__guide"/>
+<line x1="48" y1="182" x2="472" y2="182" class="wiki-diagram__dim"/>
+<text x="360" y="177" text-anchor="middle">25.000 m between panel faces</text>
+<line x1="40" y1="196" x2="40" y2="216" class="wiki-diagram__guide"/>
+<line x1="480" y1="196" x2="480" y2="216" class="wiki-diagram__guide"/>
+<line x1="40" y1="212" x2="480" y2="212" class="wiki-diagram__dim"/>
+<text x="360" y="207" text-anchor="middle">25.020–25.030 m wall to wall</text>
+</svg>
+<figcaption>A 25 m pool with panels at both ends, in side view: not to scale along the pool, and with the panels drawn thicker than they are. The race runs between the panel faces, so each 0.01 m panel adds to the wall-to-wall length. The bracket on the left is the depth band over which that length is checked (FR 2.1.2), 0.3 m above to 0.8 m below the water. A minimum-size panel ends 0.6 m down, so the lowest 0.2 m of the band is measured on the bare walls.</figcaption>
+</figure>
 
 Touch panels are fixed in the centre of each lane, and the rules allow them at the
 starting end alone or at both ends.[^frules] Either way the pool has to give the exact race
@@ -136,6 +210,17 @@ requirement whether pads are used at one end or both.[^usas] For the Olympic Gam
 long-course World Championships the 50 m is measured between panels, while the 25 m
 World Championships need panels only at the starting end, with either a wall or panels at
 the turning end.[^frules]
+
+The length is not checked at a single depth. A surveyor or a similarly qualified person certifies
+it, and the wall-to-wall distance has to fall within those limits everywhere from 0.3 m above
+the surface to 0.8 m below it.[^frules] That band is deeper than the panel. A panel of the
+minimum size stops 0.6 m below the surface, so over the lowest 0.2 m of the band there is no
+panel, and the distance is measured between the bare end walls. The wall-to-wall figures are
+written to work at every depth in the band: they already include the 0.01 m of each panel, so
+the same limits apply whether a given depth has a panel on it or not. The 0.8 m figure matches
+the rule for a bulkhead used as an end wall, which must give a flat surface for touch pads from
+0.3 m above to 0.8 m below the water.[^frules] The rules do not say why the band reaches below
+the panel.
 
 The rules provide for a backup to the touchpad. World Aquatics accepts semi-automatic
 equipment as the backup at major events when each lane has three buttons, each pressed by
