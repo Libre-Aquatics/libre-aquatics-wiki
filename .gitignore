@@ -23,3 +23,7 @@ Thumbs.db
 
 # Raw camera media and its processed output. Finals are copied into public/assets/ by hand
 /dump/
+
+# Local tooling: vendored Python deps for scripts/, and the agent copy of CLAUDE.md
+/.scan-deps/
+/AGENTS.md
