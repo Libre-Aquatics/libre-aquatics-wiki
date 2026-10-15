@@ -270,6 +270,7 @@ export const nav: NavNode[] = [
                   { title: 'OSM-4', page: 'equipment/swimming/timers/osm-4.md' },
                   { title: 'OSM-3', page: 'equipment/swimming/timers/osm-3.md' },
                   { title: 'Swim-O-Matic', page: 'equipment/swimming/timers/swim-o-matic.md' },
+                  { title: 'PowerTime II', page: 'equipment/swimming/timers/powertime-ii.md' },
                 ],
               },
             ],
@@ -398,6 +399,14 @@ export const nav: NavNode[] = [
                   { title: 'Saturn 2', page: 'equipment/common/scoreboard/saturn-2.md' },
                 ],
               },
+            ],
+          },
+          {
+            title: 'Photo Finish',
+            index: 'equipment/common/photo-finish/index.md',
+            indexTitle: 'Photo Finish Overview',
+            children: [
+              { title: "Scan'O'Vision", page: 'equipment/common/photo-finish/scan-o-vision.md' },
             ],
           },
           {

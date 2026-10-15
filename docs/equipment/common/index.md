@@ -57,6 +57,8 @@ that program them:
   [Ultimate Pace Clock](pace-clock/ultimate-pace-clock.md) it came from and the
   [handheld segment timer](pace-clock/whc-2.md) that followed: the devices that store a
   training workout and play it out on a clock or a board.
+- [Photo finish](photo-finish/index.md): finish-line camera systems, such as Swiss Timing's
+  [Scan'O'Vision](photo-finish/scan-o-vision.md).
 
 The rest of this section of the catalog is still to be written. The shared hardware is
 made by the timing vendors listed on the [Vendors](../../vendors/index.md) page.
