@@ -173,7 +173,10 @@ export const nav: NavNode[] = [
                 title: 'Daktronics',
                 children: [
                   { title: 'Lane Module', page: 'equipment/swimming/deck-cabling/daktronics-lane-module.md' },
+                  { title: 'Lane Extension Module', page: 'equipment/swimming/deck-cabling/daktronics-lane-extension-module.md' },
                   { title: 'Deck Plates', page: 'equipment/swimming/deck-cabling/daktronics-deck-plate.md' },
+                  { title: 'Lane Interface', page: 'equipment/swimming/deck-cabling/daktronics-lane-interface.md' },
+                  { title: 'Wall Plate', page: 'equipment/swimming/deck-cabling/daktronics-wall-plate.md' },
                 ],
               },
               {
