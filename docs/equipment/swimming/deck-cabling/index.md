@@ -209,6 +209,140 @@ primary and secondary for the finish end and for the far end.[^odb10][^swconcept
 
 The console has to know which lane every signal came from. The designs differ:
 
+<figure class="wiki-figure wiki-figure--wide">
+<svg class="wiki-diagram" viewBox="0 0 640 452" role="img" aria-labelledby="dc-title dc-desc" xmlns="http://www.w3.org/2000/svg" font-size="10">
+<title id="dc-title">Four ways a timing console identifies each lane</title>
+<desc id="dc-desc">Four schematic sketches of how a timing console learns which lane a signal came from, and where the start system connects in each. One: a CTS System 6 multi-conductor harness, one conductor per lane pod, with the starter on a conductor of its own, plugged into a start connector on the primary harness. Two: a chain of identical Daktronics lane modules, where the console counts each module's place in the chain; the starter's cable runs straight to the console, and in-deck systems add a start-location deck plate. Three: Swiss Timing Quantum modules that each store their own lane number, chained with a terminator on the last, up to ten per pool end and remappable in software; the starter plugs into the timer's START1 or START2 input. Four: CTS Gen7 Serial nodes on a powered serial bus, each of a set type with its own keyed, colour-coded connector: a timer node for the console, a start node for the starter, and lane nodes, with lanes mapped to the near and far ends in the console setup.</desc>
+<rect x="6" y="6" width="312" height="216" rx="4" class="wiki-diagram__box" style="fill: none"/>
+<text x="16" y="24" font-size="11">1. Multi-conductor harness (CTS System 6)</text>
+<text x="16" y="210" font-size="10">The lane is the conductor the signal arrives on.</text>
+<rect x="16" y="80" width="54" height="36" rx="3" class="wiki-diagram__box"/>
+<text x="43" y="101.5" text-anchor="middle" font-size="10">Console</text>
+<rect x="16" y="36" width="54" height="22" rx="3" class="wiki-diagram__box wiki-diagram__box--note"/>
+<text x="43" y="50.5" text-anchor="middle" font-size="9">Starter</text>
+<line x1="70" y1="84" x2="104" y2="84" class="wiki-diagram__dim"/>
+<line x1="104" y1="84" x2="104" y2="58" class="wiki-diagram__dim"/>
+<rect x="86" y="36" width="36" height="22" rx="3" class="wiki-diagram__box"/>
+<text x="104" y="50.5" text-anchor="middle" font-size="9">Start</text>
+<line x1="70" y1="47" x2="86" y2="47" class="wiki-diagram__dim"/>
+<line x1="70" y1="90" x2="138" y2="90" class="wiki-diagram__dim"/>
+<line x1="138" y1="90" x2="138" y2="140" class="wiki-diagram__dim"/>
+<rect x="125" y="140" width="26" height="20" rx="3" class="wiki-diagram__box"/>
+<text x="138" y="153.5" text-anchor="middle" font-size="10">1</text>
+<line x1="70" y1="95" x2="176" y2="95" class="wiki-diagram__dim"/>
+<line x1="176" y1="95" x2="176" y2="140" class="wiki-diagram__dim"/>
+<rect x="163" y="140" width="26" height="20" rx="3" class="wiki-diagram__box"/>
+<text x="176" y="153.5" text-anchor="middle" font-size="10">2</text>
+<line x1="70" y1="100" x2="214" y2="100" class="wiki-diagram__dim"/>
+<line x1="214" y1="100" x2="214" y2="140" class="wiki-diagram__dim"/>
+<rect x="201" y="140" width="26" height="20" rx="3" class="wiki-diagram__box"/>
+<text x="214" y="153.5" text-anchor="middle" font-size="10">3</text>
+<line x1="70" y1="105" x2="252" y2="105" class="wiki-diagram__dim"/>
+<line x1="252" y1="105" x2="252" y2="140" class="wiki-diagram__dim"/>
+<rect x="239" y="140" width="26" height="20" rx="3" class="wiki-diagram__box"/>
+<text x="252" y="153.5" text-anchor="middle" font-size="10">4</text>
+<line x1="70" y1="110" x2="290" y2="110" class="wiki-diagram__dim"/>
+<line x1="290" y1="110" x2="290" y2="140" class="wiki-diagram__dim"/>
+<rect x="277" y="140" width="26" height="20" rx="3" class="wiki-diagram__box"/>
+<text x="290" y="153.5" text-anchor="middle" font-size="10">5</text>
+<text x="130" y="51" font-size="9" class="wiki-diagram__muted">The starter has its own conductor.</text>
+<text x="138" y="178" font-size="9" class="wiki-diagram__muted">Each lane pod has its own conductor.</text>
+<rect x="328" y="6" width="312" height="216" rx="4" class="wiki-diagram__box" style="fill: none"/>
+<text x="338" y="24" font-size="11">2. Chain of identical modules (Daktronics)</text>
+<text x="338" y="210" font-size="10">The lane is the module's place in the chain.</text>
+<rect x="338" y="80" width="54" height="36" rx="3" class="wiki-diagram__box"/>
+<text x="365" y="101.5" text-anchor="middle" font-size="10">Console</text>
+<rect x="338" y="36" width="54" height="22" rx="3" class="wiki-diagram__box wiki-diagram__box--note"/>
+<text x="365" y="50.5" text-anchor="middle" font-size="9">Starter</text>
+<line x1="365" y1="58" x2="365" y2="80" class="wiki-diagram__dim"/>
+<text x="400" y="51" font-size="9" class="wiki-diagram__muted">The start cable runs straight to the console.</text>
+<line x1="392" y1="98" x2="445" y2="98" class="wiki-diagram__face"/>
+<rect x="445" y="86" width="30" height="24" rx="3" class="wiki-diagram__box"/>
+<text x="460" y="101.5" text-anchor="middle" font-size="10">M</text>
+<line x1="475" y1="98" x2="483" y2="98" class="wiki-diagram__face"/>
+<text x="460" y="128" text-anchor="middle" font-size="9" class="wiki-diagram__muted">lane 1</text>
+<rect x="483" y="86" width="30" height="24" rx="3" class="wiki-diagram__box"/>
+<text x="498" y="101.5" text-anchor="middle" font-size="10">M</text>
+<line x1="513" y1="98" x2="521" y2="98" class="wiki-diagram__face"/>
+<text x="498" y="128" text-anchor="middle" font-size="9" class="wiki-diagram__muted">lane 2</text>
+<rect x="521" y="86" width="30" height="24" rx="3" class="wiki-diagram__box"/>
+<text x="536" y="101.5" text-anchor="middle" font-size="10">M</text>
+<line x1="551" y1="98" x2="559" y2="98" class="wiki-diagram__face"/>
+<text x="536" y="128" text-anchor="middle" font-size="9" class="wiki-diagram__muted">lane 3</text>
+<rect x="559" y="86" width="30" height="24" rx="3" class="wiki-diagram__box"/>
+<text x="574" y="101.5" text-anchor="middle" font-size="10">M</text>
+<line x1="589" y1="98" x2="597" y2="98" class="wiki-diagram__face"/>
+<text x="574" y="128" text-anchor="middle" font-size="9" class="wiki-diagram__muted">lane 4</text>
+<rect x="597" y="86" width="30" height="24" rx="3" class="wiki-diagram__box"/>
+<text x="612" y="101.5" text-anchor="middle" font-size="10">M</text>
+<text x="612" y="128" text-anchor="middle" font-size="9" class="wiki-diagram__muted">lane 5</text>
+<text x="420" y="166" font-size="9" class="wiki-diagram__muted">Every module is identical.</text>
+<text x="420" y="178" font-size="9" class="wiki-diagram__muted">In-deck systems add a start deck plate.</text>
+<rect x="6" y="228" width="312" height="216" rx="4" class="wiki-diagram__box" style="fill: none"/>
+<text x="16" y="246" font-size="11">3. Addressed modules (Swiss Timing Quantum)</text>
+<text x="16" y="432" font-size="10">The lane is the number stored in the module.</text>
+<rect x="16" y="302" width="54" height="36" rx="3" class="wiki-diagram__box"/>
+<text x="43" y="323.5" text-anchor="middle" font-size="10">Console</text>
+<rect x="16" y="258" width="54" height="22" rx="3" class="wiki-diagram__box wiki-diagram__box--note"/>
+<text x="43" y="272.5" text-anchor="middle" font-size="9">Starter</text>
+<line x1="43" y1="280" x2="43" y2="302" class="wiki-diagram__dim"/>
+<text x="78" y="273" font-size="9" class="wiki-diagram__muted">The starter plugs into the timer's START inputs.</text>
+<line x1="70" y1="320" x2="123" y2="320" class="wiki-diagram__face"/>
+<rect x="123" y="308" width="30" height="24" rx="3" class="wiki-diagram__box"/>
+<text x="138" y="323.5" text-anchor="middle" font-size="10">1</text>
+<line x1="153" y1="320" x2="161" y2="320" class="wiki-diagram__face"/>
+<rect x="161" y="308" width="30" height="24" rx="3" class="wiki-diagram__box"/>
+<text x="176" y="323.5" text-anchor="middle" font-size="10">2</text>
+<line x1="191" y1="320" x2="199" y2="320" class="wiki-diagram__face"/>
+<rect x="199" y="308" width="30" height="24" rx="3" class="wiki-diagram__box"/>
+<text x="214" y="323.5" text-anchor="middle" font-size="10">3</text>
+<line x1="229" y1="320" x2="237" y2="320" class="wiki-diagram__face"/>
+<rect x="237" y="308" width="30" height="24" rx="3" class="wiki-diagram__box"/>
+<text x="252" y="323.5" text-anchor="middle" font-size="10">4</text>
+<line x1="267" y1="320" x2="279" y2="320" class="wiki-diagram__face"/>
+<rect x="279" y="311" width="22" height="18" rx="3" class="wiki-diagram__box wiki-diagram__box--note"/>
+<text x="290" y="323.5" text-anchor="middle" font-size="9">T</text>
+<text x="290" y="346" text-anchor="middle" font-size="9" class="wiki-diagram__muted">terminator</text>
+<rect x="98" y="360" width="200" height="30" rx="3" class="wiki-diagram__box wiki-diagram__box--note"/>
+<text x="198" y="373" text-anchor="middle" font-size="9">Software can run modules 3 and 5</text>
+<text x="198" y="385" text-anchor="middle" font-size="9">as lanes 1 and 2.</text>
+<text x="16" y="412" font-size="9" class="wiki-diagram__muted">Each pool end takes up to ten modules.</text>
+<rect x="328" y="228" width="312" height="216" rx="4" class="wiki-diagram__box" style="fill: none"/>
+<text x="338" y="246" font-size="11">4. Networked nodes (CTS Gen7 Serial)</text>
+<text x="338" y="432" font-size="10">The lane is the node's identity, mapped in the setup.</text>
+<rect x="338" y="302" width="54" height="36" rx="3" class="wiki-diagram__box"/>
+<text x="365" y="323.5" text-anchor="middle" font-size="10">Console</text>
+<line x1="426" y1="294" x2="628" y2="294" class="wiki-diagram__face"/>
+<line x1="392" y1="331" x2="407" y2="331" class="wiki-diagram__face"/>
+<text x="508" y="286" text-anchor="middle" font-size="9" class="wiki-diagram__muted">powered serial bus</text>
+<line x1="426" y1="294" x2="426" y2="320" class="wiki-diagram__dim"/>
+<rect x="407" y="320" width="38" height="22" rx="3" class="wiki-diagram__box"/>
+<text x="426" y="334.5" text-anchor="middle" font-size="9">Timer</text>
+<text x="426" y="356" text-anchor="middle" font-size="9" class="wiki-diagram__muted">console</text>
+<line x1="470" y1="294" x2="470" y2="320" class="wiki-diagram__dim"/>
+<rect x="451" y="320" width="38" height="22" rx="3" class="wiki-diagram__box"/>
+<text x="470" y="334.5" text-anchor="middle" font-size="9">Start</text>
+<text x="470" y="356" text-anchor="middle" font-size="9" class="wiki-diagram__muted">starter</text>
+<line x1="514" y1="294" x2="514" y2="320" class="wiki-diagram__dim"/>
+<rect x="495" y="320" width="38" height="22" rx="3" class="wiki-diagram__box"/>
+<text x="514" y="334.5" text-anchor="middle" font-size="9">Lane</text>
+<text x="514" y="356" text-anchor="middle" font-size="9" class="wiki-diagram__muted">lane 1</text>
+<line x1="558" y1="294" x2="558" y2="320" class="wiki-diagram__dim"/>
+<rect x="539" y="320" width="38" height="22" rx="3" class="wiki-diagram__box"/>
+<text x="558" y="334.5" text-anchor="middle" font-size="9">Lane</text>
+<text x="558" y="356" text-anchor="middle" font-size="9" class="wiki-diagram__muted">lane 2</text>
+<line x1="602" y1="294" x2="602" y2="320" class="wiki-diagram__dim"/>
+<rect x="583" y="320" width="38" height="22" rx="3" class="wiki-diagram__box"/>
+<text x="602" y="334.5" text-anchor="middle" font-size="9">Lane</text>
+<text x="602" y="356" text-anchor="middle" font-size="9" class="wiki-diagram__muted">lane 3</text>
+<text x="407" y="384" font-size="9" class="wiki-diagram__muted">Each node type has its own keyed,</text>
+<text x="407" y="396" font-size="9" class="wiki-diagram__muted">colour-coded connector, and the console</text>
+<text x="407" y="408" font-size="9" class="wiki-diagram__muted">maps lanes to the near and far ends.</text>
+</svg>
+<figcaption>The four designs in the table below, drawn schematically and not to scale, with the point where each one takes the start system: a dedicated conductor per lane, position in a chain of identical modules, a number stored in each module, and typed nodes on a network mapped in the console's setup.</figcaption>
+</figure>
+
+
 | Design | How the lane is identified | Example |
 |---|---|---|
 | Multi-conductor harness or plate wiring | The conductors the signal arrives on | CTS System 6 cable harness and legacy deck plates[^f870] |
@@ -223,6 +357,8 @@ the type of device in each jack and flags missing or mismatched inputs, and it m
 current through each speedlight. This works only on in-deck systems, not on
 harnesses.[^f1034] CTS's patent on this describes the plate sending a voltage step into the
 attached device and matching the response against stored signatures.[^patentdetect]
+
+The start system plugs in at a different point in each design. On a CTS System 6 it goes into a start connector on the primary harness.[^f870] A Daktronics console on an on-deck chain takes the start cable directly, and an in-deck system adds a start-location deck plate for the horn start and the auxiliary speakers.[^manual] A Swiss Timing Quantum timer has its own START1 and START2 inputs.[^concept] On the Gen7 Serial bus the starter has a node of its own. CTS makes separate nodes for the timer, the starter, the scoreboard and the bulkheads, each keyed and colour-coded so that a cable fits only the node meant for it; see the [Gen7 serial connect hubs](gen7-serial-connect-hubs.md).[^f1034][^hubsds]
 
 ## Connectors
 
@@ -318,6 +454,7 @@ covers the product itself, and this page is the shared overview they refer back 
 [^f881]: [Colorado Time Systems, Quick Connect Deck Plate Instructions (F881 Rev. 1204)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Misc/Other/QuickConnectDeckplateInstr.pdf).
 [^ctsmeter]: [Colorado Time Systems, Test Meter Instructions (F696 Rev. 0205)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Misc/Maintenance/TestMeterInstr.pdf) (harness-pod and deck-plate receptacle names).
 [^tdpsheet]: [Colorado Time Systems, Titanium Deckplate (TDP)](https://www.coloradotime.com/titanium-deckplate/) (titanium jacks, domed top, retrofit of DP-7 plates).
+[^hubsds]: [Colorado Time Systems, Gen7 Serial Connect Hubs](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Datasheets/Gen7_Connect_Hubs.pdf) (datasheet REV 09/22).
 [^patentplate]: [US Patent 8,602,815 B2, Swimming pool deckplate for horizontal surfaces with integrated slopes around electrical contacts](https://patents.google.com/patent/US8602815B2/en).
 [^patentdetect]: [US Patent 11,192,016 B2, Apparatus and method for the detection of timing components in swimming pools](https://patents.google.com/patent/US11192016B2/en).
 [^manual]: [Daktronics, OmniSport 2000 Timing Console Operation Manual (ED-13312, Rev 16, 23 May 2019)](https://www.daktronics.com/web-documents/customer-service-manuals/ed13312.pdf), deck cabling.

@@ -103,34 +103,64 @@ width and slope without a drawing reference; the diagram that accompanies the Wo
 Aquatics rule shows the 2 cm at the base of the profile and the 10° slope on the face the
 feet push against, measured from the vertical.[^fr]
 
-<figure class="wiki-figure wiki-figure--panorama">
-<svg class="wiki-diagram" viewBox="0 0 460 260" role="img" aria-labelledby="bsl-front-title bsl-front-desc" xmlns="http://www.w3.org/2000/svg" font-size="11">
+<figure class="wiki-figure wiki-figure--wide" data-layers-legend="Show:">
+<svg class="wiki-diagram" viewBox="0 0 500 300" role="img" aria-labelledby="bsl-front-title bsl-front-desc" xmlns="http://www.w3.org/2000/svg" font-size="11">
 <title id="bsl-front-title">Backstroke ledge front view diagram</title>
-<desc id="bsl-front-desc">Front view of the end wall seen from the pool, drawn to scale. A touch panel 2.4 metres wide reaches 0.3 metres above and 0.6 metres below the water surface. A backstroke ledge 60 centimetres long and 8 centimetres high lies across the middle of the panel, its top edge at the water surface.</desc>
-<rect x="0" y="20" width="460" height="240" class="wiki-diagram__wall"/>
+<desc id="bsl-front-desc">Front view of the end wall seen from the pool, drawn to scale, with one layer per governing body for the ledge's minimum length. A touch panel 2.4 metres wide reaches 0.3 metres above and 0.6 metres below the water surface. A backstroke ledge 8 centimetres high lies across the middle of the panel, its top edge at the water surface. World Aquatics, since 2025, and the NCAA require it to be at least 60 centimetres long; USA Swimming and World Para Swimming, and World Aquatics before 2025, require 65 centimetres, shown as a dashed outline 2.5 centimetres longer at each end.</desc>
+<rect x="0" y="20" width="500" height="280" class="wiki-diagram__wall"/>
 <rect x="40" y="50" width="360" height="135" class="wiki-diagram__pad"/>
-<rect x="0" y="95" width="460" height="165" class="wiki-diagram__water"/>
-<line x1="0" y1="95" x2="460" y2="95" class="wiki-diagram__waterline"/>
+<rect x="0" y="95" width="500" height="205" class="wiki-diagram__water"/>
+<line x1="0" y1="95" x2="500" y2="95" class="wiki-diagram__waterline"/>
 <text x="48" y="66">Touch panel</text>
 <text x="48" y="89">Water surface</text>
-<rect x="175" y="95" width="90" height="12" class="wiki-diagram__ledge"/>
+<rect x="175.0" y="95" width="90.0" height="12" class="wiki-diagram__ledge"/>
 <text x="220" y="86" text-anchor="middle">Ledge at 0</text>
-<line x1="175" y1="107" x2="175" y2="200" class="wiki-diagram__guide"/>
-<line x1="265" y1="107" x2="265" y2="200" class="wiki-diagram__guide"/>
-<line x1="175" y1="196" x2="265" y2="196" class="wiki-diagram__dim"/>
-<text x="220" y="211" text-anchor="middle">Ledge at least 60 cm long</text>
-<line x1="40" y1="185" x2="40" y2="234" class="wiki-diagram__guide"/>
-<line x1="400" y1="185" x2="400" y2="234" class="wiki-diagram__guide"/>
-<line x1="40" y1="230" x2="400" y2="230" class="wiki-diagram__dim"/>
-<text x="220" y="248" text-anchor="middle">Touch panel at least 2.4 m wide</text>
 <line x1="400" y1="50" x2="420" y2="50" class="wiki-diagram__guide"/>
 <line x1="400" y1="185" x2="420" y2="185" class="wiki-diagram__guide"/>
 <line x1="416" y1="50" x2="416" y2="185" class="wiki-diagram__dim"/>
 <line x1="412" y1="95" x2="420" y2="95" class="wiki-diagram__dim"/>
 <text x="422" y="76">0.3 m</text>
 <text x="422" y="144">0.6 m</text>
+<line x1="40" y1="185" x2="40" y2="274" class="wiki-diagram__guide"/>
+<line x1="400" y1="185" x2="400" y2="274" class="wiki-diagram__guide"/>
+<line x1="40" y1="270" x2="400" y2="270" class="wiki-diagram__dim"/>
+<text x="220" y="288" text-anchor="middle">Touch panel at least 2.4 m wide</text>
+<g data-layer="wa" data-layer-label="World Aquatics" class="wiki-diagram__layer--1">
+<line x1="175.0" y1="107" x2="175.0" y2="203" class="wiki-diagram__guide"/>
+<line x1="265.0" y1="107" x2="265.0" y2="203" class="wiki-diagram__guide"/>
+<line x1="175.0" y1="200" x2="265.0" y2="200" class="wiki-diagram__rule"/>
+<line x1="175.0" y1="196" x2="175.0" y2="204" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="265.0" y1="196" x2="265.0" y2="204" class="wiki-diagram__rule" stroke-width="1.5"/>
+<text x="163.25" y="204" text-anchor="end" font-size="10">World Aquatics 60 cm</text>
+</g>
+<g data-layer="ncaa" data-layer-default="off" data-layer-label="NCAA" class="wiki-diagram__layer--4">
+<line x1="175.0" y1="107" x2="175.0" y2="219" class="wiki-diagram__guide"/>
+<line x1="265.0" y1="107" x2="265.0" y2="219" class="wiki-diagram__guide"/>
+<line x1="175.0" y1="216" x2="265.0" y2="216" class="wiki-diagram__rule"/>
+<line x1="175.0" y1="212" x2="175.0" y2="220" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="265.0" y1="212" x2="265.0" y2="220" class="wiki-diagram__rule" stroke-width="1.5"/>
+<text x="163.25" y="220" text-anchor="end" font-size="10">NCAA 60 cm</text>
+</g>
+<g data-layer="usas" data-layer-default="off" data-layer-label="USA Swimming" class="wiki-diagram__layer--3">
+<rect x="171.25" y="95" width="97.5" height="12" class="wiki-diagram__ghost"/>
+<line x1="171.25" y1="107" x2="171.25" y2="235" class="wiki-diagram__guide"/>
+<line x1="268.75" y1="107" x2="268.75" y2="235" class="wiki-diagram__guide"/>
+<line x1="171.25" y1="232" x2="268.75" y2="232" class="wiki-diagram__rule"/>
+<line x1="171.25" y1="228" x2="171.25" y2="236" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="268.75" y1="228" x2="268.75" y2="236" class="wiki-diagram__rule" stroke-width="1.5"/>
+<text x="163.25" y="236" text-anchor="end" font-size="10">USA Swimming 65 cm</text>
+</g>
+<g data-layer="wps" data-layer-default="off" data-layer-label="World Para Swimming" class="wiki-diagram__layer--6">
+<rect x="171.25" y="95" width="97.5" height="12" class="wiki-diagram__ghost"/>
+<line x1="171.25" y1="107" x2="171.25" y2="251" class="wiki-diagram__guide"/>
+<line x1="268.75" y1="107" x2="268.75" y2="251" class="wiki-diagram__guide"/>
+<line x1="171.25" y1="248" x2="268.75" y2="248" class="wiki-diagram__rule"/>
+<line x1="171.25" y1="244" x2="171.25" y2="252" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="268.75" y1="244" x2="268.75" y2="252" class="wiki-diagram__rule" stroke-width="1.5"/>
+<text x="163.25" y="252" text-anchor="end" font-size="10">World Para 65 cm</text>
+</g>
 </svg>
-<figcaption>Front view, looking at the wall from the pool, drawn to scale from the World Aquatics minimums: a touch panel 2.4 m wide reaching 0.3 m above and 0.6 m below the water, with a 60 cm ledge at the 0 setting, its top at the surface. The ledge is drawn centred on the panel; the ledge rule does not fix its position along the wall.</figcaption>
+<figcaption>Front view, looking at the wall from the pool, drawn to scale: a touch panel at the World Aquatics minimum of 2.4 m wide, reaching 0.3 m above and 0.6 m below the water, with the ledge at the 0 setting, its top at the surface. The rows under the ledge give each body's minimum length (World Aquatics asked for 65 cm before 2025); World Aquatics is shown first, and the checkboxes add the others, with a dashed outline where a body asks for 65 cm. The ledge is drawn centred on the panel; the ledge rule does not fix its position along the wall.</figcaption>
 </figure>
 
 The setting is read at the top edge of the foot rest. Swiss Timing's manual sets position 0

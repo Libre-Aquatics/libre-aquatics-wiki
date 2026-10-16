@@ -13,6 +13,7 @@ import PrevNext from '../components/PrevNext.astro';
 import CitationHovercards from '../components/CitationHovercards.tsx';
 import Lightbox from '../components/Lightbox.astro';
 import AudioPlayers from '../components/AudioPlayers.astro';
+import DiagramLayers from '../components/DiagramLayers.astro';
 import SdifReaderMount from '../components/SdifReaderMount.astro';
 
 interface Heading {
@@ -168,6 +169,9 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
 
   {/* Wiki-styled sound-clip players; without JS the native controls remain. */}
   <AudioPlayers />
+
+  {/* Layer toggles on diagrams; without JS every layer is drawn. */}
+  <DiagramLayers />
 
   {/* SDIF file reader, loaded only on pages that place a data-sdif-reader mount. */}
   <SdifReaderMount />

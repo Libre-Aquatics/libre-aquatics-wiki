@@ -60,15 +60,17 @@ Second pass, 2026-10-14 (expanded on request):
     S.R. Smith Velocity advertisement.
   - The Jan 2009 and May 2009 reports conflict with Garcia-Hermoso et al. (2013), who date OSB11
     use from the 2009 Worlds in Rome; flagged in the text, not resolved.
-  - World Aquatics FR 2.1.4 (1.35 m from 1.0 to 6.0 m where blocks are used), FR 2.2.4 (2 m for
+  - World Aquatics FR 2.1.4 (1.35 m from 1.0 to 6.0 m where blocks are used, 1.0 m minimum everywhere else, so the first metre too), FR 2.2.4 (2 m for
     Olympic and World Championship pools), FR 2.1.8 (read-out boards under the blocks allowed,
     no flashing, figures still during backstroke starts), FR 2.1.9 (numbers on all four sides,
     lane 0 recommended on the right).
-  - USA Swimming 103.2: racing starts measured 1.0-5.0 m from the wall; below 4 ft (1.22 m) start
+  - USA Swimming 103.2: /NC/ 2 m throughout the course (103.1: /NC/ binds USA Swimming
+    championships and international meets), the only USA Swimming depth covering 0-1 m;
+    racing starts measured 1.0-5.0 m from the wall; below 4 ft (1.22 m) start
     in the water and no ledge; teaching starts before certification at 6 ft (1.84 m).
     NCAA Rule 1: at least 4 ft at the starting end (existing facilities), 7 ft desirable.
     NFHS 2012-13 Rule 2-7-2 and Figure 1 (the 2024-25 excerpt held lacks this rule): depth
-    measured to 5 m; 4 ft or more allows platforms up to 30 in; less than 4 ft means in-water
+    measured from the end wall (0 m) out to at least 5 m, unlike USA Swimming's 1-5 m; 4 ft or more allows platforms up to 30 in; less than 4 ft means in-water
     starts; not waivable by mutual consent.
   - CTS Gen7 Swimming User Guide F1034 Rev 201807 (held): on legacy timers an RJP shares push
     button A's input; on the serial timer they are separate; start reaction comes from RJPs for
@@ -193,19 +195,192 @@ in the [backstroke start devices overview](../backstroke-start/index.md).
 
 This section covers the depth needed under the blocks.
 
+<figure class="wiki-figure wiki-figure--wide" data-layers-legend="Show:">
+<svg class="wiki-diagram" viewBox="0 0 480 268" role="img" aria-labelledby="sb-depth-title sb-depth-desc" xmlns="http://www.w3.org/2000/svg" font-size="11">
+<title id="sb-depth-title">Minimum water depth at the start end</title>
+<desc id="sb-depth-desc">Cross-section of the start end of a pool, drawn to scale, with one layer per governing body. World Aquatics requires at least 1.35 metres from 1.0 to 6.0 metres out from the end wall, shown as a dashed zone, and 1.0 metre everywhere else, including the first metre from the wall; Olympic and World Championship pools must be 2 metres throughout. USA Swimming requires 4 feet, or 1.22 metres, from 1.0 to 5.0 metres out, and 6 feet, or 1.84 metres, over the same stretch to teach racing starts; it sets nothing for the first metre except at its championships, which need 2 metres throughout the course. The high school (NFHS) minimum is also 4 feet, but measured from the wall itself out to 5 metres. The NCAA minimum at the start end is 4 feet, with 7 feet, or 2.13 metres, called desirable; it gives no distance from the wall, so its lines run the full width.</desc>
+<rect x="0" y="20" width="40" height="248" class="wiki-diagram__wall"/>
+<rect x="40" y="40" width="440" height="228" class="wiki-diagram__water"/>
+<line x1="40" y1="40" x2="480" y2="40" class="wiki-diagram__waterline"/>
+<text x="2" y="14">Wall</text>
+<g data-layer="wa" data-layer-label="World Aquatics" class="wiki-diagram__layer--1">
+<rect x="80" y="40" width="200" height="54" class="wiki-diagram__rule wiki-diagram__rule--zone"/>
+<line x1="40" y1="30" x2="280" y2="30" class="wiki-diagram__dim"/>
+<line x1="80" y1="26" x2="80" y2="34" class="wiki-diagram__dim"/>
+<line x1="280" y1="26" x2="280" y2="34" class="wiki-diagram__dim"/>
+<text x="80" y="20" text-anchor="middle">1 m</text>
+<text x="280" y="20" text-anchor="middle">6 m</text>
+<line x1="40" y1="80" x2="80" y2="80" class="wiki-diagram__rule wiki-diagram__rule--minor"/>
+<line x1="280" y1="80" x2="480" y2="80" class="wiki-diagram__rule wiki-diagram__rule--minor"/>
+<line x1="52" y1="156" x2="76" y2="156" class="wiki-diagram__rule wiki-diagram__rule--zone"/>
+<text x="84" y="160">World Aquatics: 1.35 m from 1–6 m out; 1.0 m elsewhere</text>
+</g>
+<g data-layer="olympic" data-layer-default="off" data-layer-label="Olympic and World Championships" class="wiki-diagram__layer--2">
+<line x1="40" y1="120" x2="480" y2="120" class="wiki-diagram__rule"/>
+<line x1="52" y1="174" x2="76" y2="174" class="wiki-diagram__rule"/>
+<text x="84" y="178">Olympic and World Championship pools: 2 m throughout</text>
+</g>
+<g data-layer="usas" data-layer-default="off" data-layer-label="USA Swimming" class="wiki-diagram__layer--3">
+<line x1="80" y1="88.8" x2="240" y2="88.8" class="wiki-diagram__rule"/>
+<line x1="80" y1="113.6" x2="240" y2="113.6" class="wiki-diagram__rule wiki-diagram__rule--minor"/>
+<line x1="40" y1="30" x2="240" y2="30" class="wiki-diagram__dim"/>
+<line x1="80" y1="26" x2="80" y2="34" class="wiki-diagram__dim"/>
+<line x1="240" y1="26" x2="240" y2="34" class="wiki-diagram__dim"/>
+<text x="80" y="20" text-anchor="middle">1 m</text>
+<text x="240" y="20" text-anchor="middle">5 m</text>
+<line x1="52" y1="192" x2="76" y2="192" class="wiki-diagram__rule"/>
+<text x="84" y="196">USA Swimming: 1.22 m from 1–5 m out; 1.84 m there to teach racing starts</text>
+</g>
+<g data-layer="usas-nc" data-layer-default="off" data-layer-label="USA Swimming championships" class="wiki-diagram__layer--6">
+<line x1="40" y1="120" x2="480" y2="120" class="wiki-diagram__rule wiki-diagram__rule--dash"/>
+<line x1="52" y1="246" x2="76" y2="246" class="wiki-diagram__rule wiki-diagram__rule--dash"/>
+<text x="84" y="250">USA Swimming championships: 2 m throughout, wall included</text>
+</g>
+<g data-layer="ncaa" data-layer-default="off" data-layer-label="NCAA" class="wiki-diagram__layer--4">
+<line x1="40" y1="88.8" x2="480" y2="88.8" class="wiki-diagram__rule wiki-diagram__rule--dash"/>
+<line x1="40" y1="125.2" x2="480" y2="125.2" class="wiki-diagram__rule wiki-diagram__rule--minor"/>
+<line x1="52" y1="210" x2="76" y2="210" class="wiki-diagram__rule wiki-diagram__rule--dash"/>
+<text x="84" y="214">NCAA: 1.22 m at the start end; 2.13 m desirable</text>
+</g>
+<g data-layer="nfhs" data-layer-default="off" data-layer-label="NFHS" class="wiki-diagram__layer--5">
+<line x1="40" y1="88.8" x2="240" y2="88.8" class="wiki-diagram__rule wiki-diagram__rule--dot"/>
+<line x1="40" y1="30" x2="240" y2="30" class="wiki-diagram__dim"/>
+<line x1="240" y1="26" x2="240" y2="34" class="wiki-diagram__dim"/>
+<text x="240" y="20" text-anchor="middle">5 m</text>
+<line x1="52" y1="228" x2="76" y2="228" class="wiki-diagram__rule wiki-diagram__rule--dot"/>
+<text x="84" y="232">NFHS (high school): 1.22 m from the wall to 5 m out</text>
+</g>
+</svg>
+<figcaption>The start end in cross-section, drawn to scale, with each governing body's minimum depth as its own layer; World Aquatics is shown first, and the checkboxes beside the drawing add or remove the others. Thin lines mark the World Aquatics 1.0 m minimum outside its 1–6 m zone, USA Swimming's 1.84 m for teaching racing starts and the NCAA's desirable 2.13 m. In the first metre from the wall only World Aquatics (1.0 m) and the NFHS, whose 4 ft zone starts at the wall, set a depth; USA Swimming measures from 1 m out, except at its championships, which need 2 m throughout. The NCAA gives no distance from the wall, so its lines run the full width.</figcaption>
+</figure>
+
 Diving from a block needs deep enough water at the start end, and every governing body ties the
 use of blocks to depth. World Aquatics requires at least 1.35 m from 1.0 m to 6.0 m out from the
-end wall in any pool with starting blocks, and 2 m throughout for Olympic and World Championship
-pools.[^wa-fr] USA Swimming measures depth from 1.0 m to 5.0 m out. Below 4 ft (1.22 m), swimmers
-must start in the water and backstroke ledges may not be used. Racing starts are taught before a
-swimmer is certified only in water at least 6 ft (1.84 m) deep.[^usas] The NCAA asks for at least
+end wall in any pool with starting blocks, 1.0 m everywhere else (the first metre from the wall
+included), and 2 m throughout for Olympic and World Championship pools.[^wa-fr] USA Swimming
+measures depth from 1.0 m to 5.0 m out and sets nothing for the first metre, except at USA
+Swimming championships and international meets, which need 2 m (6 ft 7 in) throughout the
+course. Below 4 ft (1.22 m), swimmers must start in the water and backstroke ledges may not be
+used. Racing starts are taught before a swimmer is certified only in water at least 6 ft (1.84 m) deep.[^usas] The NCAA asks for at least
 4 ft at the starting end of an existing course and calls 7 ft desirable.[^ncaa] The high school
-rules have the same 4 ft line. Shallower than that, starts are made from the water, and the depth
+rules have the same 4 ft line but measure it from the wall itself out to 5 m. Shallower than that, starts are made from the water, and the depth
 and platform-height rules cannot be waived by agreement between teams.[^nfhs2012]
 
 ## Governing-body requirements
 
 This section summarizes the platform rules of the main governing bodies.
+
+<figure class="wiki-figure wiki-figure--wide" data-layers-legend="Show:">
+<svg class="wiki-diagram" viewBox="0 0 880 370" role="img" aria-labelledby="sb-block-title sb-block-desc" xmlns="http://www.w3.org/2000/svg" font-size="11">
+<title id="sb-block-title">Starting platform limits, side view</title>
+<desc id="sb-block-desc">Side view of a generic starting platform at the end wall, drawn to scale with one layer per governing body. The top is drawn at the 10 degree maximum slope every body allows, shown by an angle at the platform's front lower corner, with an optional back plate near the rear and a vertical backstroke grip at the wall face on an arm from the block's post. Dimension lines parallel to the top give each body's required length of the top, measured back from the front edge. The platform height is the height of the front edge above the water. Dashed lines carry the front edge, and the top and bottom of the grip, across to two groups of columns giving each body's allowed range for the platform height and for the grips. World Aquatics: platform height 0.50 to 0.75 metres, grips 0.30 to 0.60 metres, top at least 0.50 metres. USA Swimming: the same in metre pools, and a platform no higher than 0.762 metres in yard pools. NCAA: platform and grips no higher than 30 inches, or 0.762 metres; a top at least 20 inches long recommended and no more than 34 inches allowed. NFHS: platform and grips no higher than 30 inches where the water is at least 4 feet deep; a top at least 20 inches long is recommended.</desc>
+<rect x="0" y="264.0" width="330" height="106.0" class="wiki-diagram__wall" style="stroke: none"/>
+<line x1="0" y1="264.0" x2="330" y2="264.0" class="wiki-diagram__dim"/>
+<rect x="330" y="334" width="550" height="36" class="wiki-diagram__water"/>
+<line x1="330" y1="334" x2="880" y2="334" class="wiki-diagram__waterline"/>
+<line x1="330" y1="264.0" x2="330" y2="370" class="wiki-diagram__face"/>
+<text x="8" y="282.0">Deck</text>
+<text x="338" y="356" font-size="10">Heights are measured up from the water surface.</text>
+<polygon points="220,128.8 274,138.3 274,264.0 220,264.0" class="wiki-diagram__box" stroke-linejoin="round"/>
+<polygon points="164.6,108.8 330,138.0 328.3,147.8 162.8,118.7" class="wiki-diagram__ledge" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M 225.2 119.5 L 191.2 91.0 Q 186.6 87.1 185.6 93.0 L 182.2 111.9 Z" class="wiki-diagram__ledge" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="178.6" y="91.1" text-anchor="end">Back plate (optional)</text>
+<line x1="328.3" y1="147.8" x2="176.3" y2="147.8" class="wiki-diagram__guide"/>
+<path d="M 188.3 147.8 A 140 140 0 0 1 190.4 123.5" class="wiki-diagram__dim"/>
+<text x="182.3" y="143.8" text-anchor="end" font-size="10">10° max</text>
+<polygon points="274,204.0 322,204.0 322,180.0 330,180.0 330,236.0 322,236.0 322,212.0 274,212.0" class="wiki-diagram__ledge" stroke-width="1.5" stroke-linejoin="round"/>
+<line x1="330.7" y1="134.1" x2="344.9" y2="53.3" class="wiki-diagram__guide"/>
+<line x1="192.8" y1="109.8" x2="207.1" y2="29.0" class="wiki-diagram__guide"/>
+<line x1="344" y1="138.0" x2="344" y2="334" class="wiki-diagram__dim"/>
+<line x1="339" y1="334" x2="349" y2="334" class="wiki-diagram__dim"/>
+<line x1="339" y1="138.0" x2="349" y2="138.0" class="wiki-diagram__dim"/>
+<text x="352" y="304" font-size="10">platform height</text>
+<text x="352" y="316" font-size="10">0.70 m</text>
+<line x1="332" y1="138.0" x2="738" y2="138.0" class="wiki-diagram__guide"/>
+<text x="742" y="142.0" font-size="10">front edge</text>
+<line x1="332" y1="180.0" x2="738" y2="180.0" class="wiki-diagram__guide"/>
+<line x1="332" y1="236.0" x2="738" y2="236.0" class="wiki-diagram__guide"/>
+<text x="742" y="206.0" font-size="10">backstroke grip</text>
+<text x="742" y="218.0" font-size="10">0.35–0.55 m</text>
+<text x="456" y="86.6" text-anchor="middle" font-size="10">Platform height</text>
+<text x="456" y="98.6" text-anchor="middle" font-size="10">allowed range</text>
+<text x="623" y="86.6" text-anchor="middle" font-size="10">Backstroke grip</text>
+<text x="623" y="98.6" text-anchor="middle" font-size="10">allowed range</text>
+<line x1="706" y1="120.6" x2="706" y2="334" class="wiki-diagram__dim"/>
+<line x1="702" y1="250.0" x2="710" y2="250.0" class="wiki-diagram__dim"/>
+<text x="714" y="254.0" font-size="9" class="wiki-diagram__muted">0.30</text>
+<line x1="702" y1="194.0" x2="710" y2="194.0" class="wiki-diagram__dim"/>
+<text x="714" y="198.0" font-size="9" class="wiki-diagram__muted">0.50</text>
+<line x1="702" y1="166.0" x2="710" y2="166.0" class="wiki-diagram__dim"/>
+<text x="714" y="170.0" font-size="9" class="wiki-diagram__muted">0.60</text>
+<line x1="702" y1="124.0" x2="710" y2="124.0" class="wiki-diagram__dim"/>
+<text x="714" y="132.0" font-size="9" class="wiki-diagram__muted">0.75</text>
+<line x1="702" y1="120.6" x2="710" y2="120.6" class="wiki-diagram__dim"/>
+<text x="714" y="117.6" font-size="9" class="wiki-diagram__muted">0.762 (30 in)</text>
+<g data-layer="wa" data-layer-label="World Aquatics" class="wiki-diagram__layer--1">
+<line x1="408" y1="124.0" x2="408" y2="194.0" class="wiki-diagram__rule" stroke-width="3"/>
+<line x1="402" y1="124.0" x2="414" y2="124.0" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="402" y1="194.0" x2="414" y2="194.0" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="572" y1="166.0" x2="572" y2="250.0" class="wiki-diagram__rule" stroke-width="3"/>
+<line x1="566" y1="166.0" x2="578" y2="166.0" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="566" y1="250.0" x2="578" y2="250.0" class="wiki-diagram__rule" stroke-width="1.5"/>
+<text x="408" y="114.6" text-anchor="middle" font-size="9">WA</text>
+<text x="572" y="114.6" text-anchor="middle" font-size="9">WA</text>
+<line x1="336.9" y1="98.6" x2="199.1" y2="74.3" class="wiki-diagram__rule"/>
+<line x1="336.3" y1="102.5" x2="337.6" y2="94.7" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="198.4" y1="78.2" x2="199.8" y2="70.4" class="wiki-diagram__rule" stroke-width="1.5"/>
+<text x="332.0" y="94.7" text-anchor="end" font-size="9.5" transform="rotate(10 332.0 94.7)">WA: at least 0.50 m</text>
+</g>
+<g data-layer="usas" data-layer-default="off" data-layer-label="USA Swimming" class="wiki-diagram__layer--3">
+<line x1="440" y1="124.0" x2="440" y2="194.0" class="wiki-diagram__rule" stroke-width="3"/>
+<line x1="434" y1="124.0" x2="446" y2="124.0" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="434" y1="194.0" x2="446" y2="194.0" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="448" y1="120.6" x2="448" y2="334" class="wiki-diagram__rule wiki-diagram__rule--minor" stroke-width="1.5"/>
+<line x1="442" y1="120.6" x2="454" y2="120.6" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="442" y1="334" x2="454" y2="334" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="606" y1="166.0" x2="606" y2="250.0" class="wiki-diagram__rule" stroke-width="3"/>
+<line x1="600" y1="166.0" x2="612" y2="166.0" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="600" y1="250.0" x2="612" y2="250.0" class="wiki-diagram__rule" stroke-width="1.5"/>
+<text x="440" y="114.6" text-anchor="middle" font-size="9">USAS</text>
+<text x="606" y="114.6" text-anchor="middle" font-size="9">USAS</text>
+<line x1="339.4" y1="84.8" x2="201.5" y2="60.5" class="wiki-diagram__rule"/>
+<line x1="338.7" y1="88.8" x2="340.1" y2="80.9" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="200.8" y1="64.4" x2="202.2" y2="56.6" class="wiki-diagram__rule" stroke-width="1.5"/>
+<text x="334.4" y="80.9" text-anchor="end" font-size="9.5" transform="rotate(10 334.4 80.9)">USAS: at least 0.50 m</text>
+</g>
+<g data-layer="ncaa" data-layer-default="off" data-layer-label="NCAA" class="wiki-diagram__layer--4">
+<line x1="472" y1="120.6" x2="472" y2="334" class="wiki-diagram__rule" stroke-width="3"/>
+<line x1="466" y1="120.6" x2="478" y2="120.6" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="466" y1="334" x2="478" y2="334" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="640" y1="120.6" x2="640" y2="334" class="wiki-diagram__rule" stroke-width="3"/>
+<line x1="634" y1="120.6" x2="646" y2="120.6" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="634" y1="334" x2="646" y2="334" class="wiki-diagram__rule" stroke-width="1.5"/>
+<text x="472" y="114.6" text-anchor="middle" font-size="9">NCAA</text>
+<text x="640" y="114.6" text-anchor="middle" font-size="9">NCAA</text>
+<line x1="341.8" y1="71.0" x2="201.7" y2="46.3" class="wiki-diagram__rule wiki-diagram__rule--minor"/>
+<line x1="341.1" y1="75.0" x2="342.5" y2="67.1" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="201.0" y1="50.3" x2="202.4" y2="42.4" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="201.7" y1="46.3" x2="103.6" y2="29.0" class="wiki-diagram__rule" stroke-width="1.2"/>
+<line x1="102.9" y1="33.0" x2="104.3" y2="25.1" class="wiki-diagram__rule" stroke-width="1.5"/>
+<text x="336.8" y="67.1" text-anchor="end" font-size="9.5" transform="rotate(10 336.8 67.1)">NCAA: 0.508–0.864 m</text>
+</g>
+<g data-layer="nfhs" data-layer-default="off" data-layer-label="NFHS" class="wiki-diagram__layer--5">
+<line x1="504" y1="120.6" x2="504" y2="334" class="wiki-diagram__rule" stroke-width="3"/>
+<line x1="498" y1="120.6" x2="510" y2="120.6" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="498" y1="334" x2="510" y2="334" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="674" y1="120.6" x2="674" y2="334" class="wiki-diagram__rule" stroke-width="3"/>
+<line x1="668" y1="120.6" x2="680" y2="120.6" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="668" y1="334" x2="680" y2="334" class="wiki-diagram__rule" stroke-width="1.5"/>
+<text x="504" y="114.6" text-anchor="middle" font-size="9">NFHS</text>
+<text x="674" y="114.6" text-anchor="middle" font-size="9">NFHS</text>
+<line x1="344.2" y1="57.2" x2="204.2" y2="32.5" class="wiki-diagram__rule wiki-diagram__rule--minor"/>
+<line x1="343.5" y1="61.2" x2="344.9" y2="53.3" class="wiki-diagram__rule" stroke-width="1.5"/>
+<line x1="203.5" y1="36.5" x2="204.9" y2="28.6" class="wiki-diagram__rule" stroke-width="1.5"/>
+<text x="339.2" y="53.3" text-anchor="end" font-size="9.5" transform="rotate(10 339.2 53.3)">NFHS: 0.508 m recommended</text>
+</g>
+</svg>
+<figcaption>A generic starting platform in side view at the end wall, drawn to scale with the top at the 10° maximum slope; the block's shape, the back plate, the deck height and the grip are illustrative. Lines parallel to the top give each body's minimum length of the top, measured from the front edge; dashed lines are recommendations, and the NCAA line runs on to its required 34 in maximum. On the right, the block's front edge and grip are carried across to each body's allowed range; a column running down to the water is a maximum only, and USA Swimming's thin dashed column is its limit in yard pools. The NFHS limits apply where the water is at least 4 ft deep.</figcaption>
+</figure>
 
 | Rule | World Aquatics | NCAA | USA Swimming |
 |---|---|---|---|

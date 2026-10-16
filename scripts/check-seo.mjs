@@ -7,7 +7,9 @@
  * Errors fail the build: a missing or duplicated <title>, a page without
  * exactly one <h1>, a canonical that does not point at the page's own URL, a
  * noindex page listed in the sitemap, an <img> with no alt attribute
- * (alt="" is a deliberate decorative image and passes), a photograph with no
+ * (alt="" is a deliberate decorative image and passes), an inline SVG
+ * diagram without role="img", a <title> and <desc> named in its
+ * aria-labelledby, and a <figure> with a <figcaption>, a photograph with no
  * author and licence in src/data/image-credits.mjs, a JSON-LD block that
  * is not valid JSON, a BreadcrumbList item that is not a built page (a
  * crumb pointing at a 404 or a redirect stub), and a JSON-LD datePublished or
@@ -203,6 +205,33 @@ for (const file of htmlFiles(distDir)) {
     // the logo is the site's own mark and is not a photograph.
     if (/^\/assets\/[^/]+\.(jpe?g|png|webp|avif|gif)$/i.test(src) && !IMAGE_CREDITS[src]) {
       errors.push(`${route}: ${src} has no entry in src/data/image-credits.mjs`);
+    }
+  }
+
+  // An inline SVG diagram has no alt attribute, so its text alternative is its
+  // own <title> and <desc>, tied to it by role="img" and aria-labelledby, and it
+  // sits in a <figure> with a visible <figcaption>, the text search engines and
+  // Pagefind index for it.
+  for (const svg of body.matchAll(/<svg\b[^>]*class="[^"]*\bwiki-diagram\b[^"]*"[^>]*>[\s\S]*?<\/svg>/gi)) {
+    const open = svg[0].match(/<svg\b[^>]*>/i)[0];
+    const labelled = attr(open, 'aria-labelledby') ?? '';
+    const ids = labelled.split(/\s+/).filter(Boolean);
+    const name = ids[0] ?? '(unlabelled)';
+    if (attr(open, 'role') !== 'img') errors.push(`${route}: diagram ${name} lacks role="img"`);
+    for (const tag of ['title', 'desc']) {
+      const el = svg[0].match(new RegExp(`<${tag}\\b[^>]*>([\\s\\S]*?)</${tag}>`, 'i'));
+      const id = el ? attr(el[0], 'id') : undefined;
+      if (!el || !el[1].trim()) errors.push(`${route}: diagram ${name} has no <${tag}> text`);
+      else if (!id || !ids.includes(id)) {
+        errors.push(`${route}: diagram ${name} <${tag}> is not named in aria-labelledby`);
+      }
+    }
+    const before = body.slice(0, svg.index);
+    const inFigure = before.lastIndexOf('<figure') > before.lastIndexOf('</figure>');
+    const after = body.slice(svg.index + svg[0].length);
+    const figureRest = after.slice(0, after.search(/<\/figure>/i) + 1 || 0);
+    if (!inFigure || !/<figcaption\b[^>]*>\s*\S/i.test(figureRest)) {
+      errors.push(`${route}: diagram ${name} is not in a <figure> with a <figcaption>`);
     }
   }
 

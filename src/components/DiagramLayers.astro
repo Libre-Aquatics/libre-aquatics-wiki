@@ -1,0 +1,68 @@
+---
+// Show/hide toggles for the layers of an inline SVG diagram, so a reader can
+// compare overlapping rules (one governing body's, several, or all of them)
+// without the drawing carrying everything at once. Progressive enhancement:
+// a diagram marks each layer as <g data-layer="id" data-layer-label="Name">,
+// and without JS every layer is drawn and no controls appear. A layer marked
+// data-layer-default="off" starts hidden, so the diagram opens on its main
+// case and the reader adds the others.
+---
+
+<script>
+  for (const figure of document.querySelectorAll<HTMLElement>('.wiki-article figure.wiki-figure')) {
+    const svg = figure.querySelector('svg.wiki-diagram');
+    const layers = svg ? [...svg.querySelectorAll<SVGGElement>('g[data-layer]')] : [];
+    if (!svg || layers.length < 2) continue;
+
+    const group = document.createElement('fieldset');
+    group.className = 'wiki-diagram-layers';
+    const legend = document.createElement('legend');
+    legend.className = 'wiki-diagram-layers__legend';
+    legend.textContent = figure.dataset.layersLegend ?? 'Show layers';
+    group.append(legend);
+
+    for (const layer of layers) {
+      const label = document.createElement('label');
+      label.className = 'wiki-diagram-layers__item';
+
+      const box = document.createElement('input');
+      box.type = 'checkbox';
+      const show = (on: boolean) => {
+        if (on) layer.removeAttribute('hidden');
+        else layer.setAttribute('hidden', '');
+      };
+      box.checked = layer.dataset.layerDefault !== 'off';
+      show(box.checked);
+      box.addEventListener('change', () => show(box.checked));
+
+      // The swatch takes the layer's own colour, so the toggle and the lines it
+      // controls match in either theme. Decorative: the text names the layer.
+      const swatch = document.createElement('span');
+      swatch.className = 'wiki-diagram-layers__swatch';
+      swatch.setAttribute('aria-hidden', 'true');
+      swatch.style.color = getComputedStyle(layer).color;
+
+      label.append(box, swatch, layer.dataset.layerLabel ?? layer.dataset.layer ?? '');
+      group.append(label);
+    }
+
+    // The drawing and its toggles share a stage, and the figure sits in a host
+    // that spans the article column. The host is the CSS size container, so the
+    // toggles move beside the drawing only when the column has room for both at
+    // the drawing's full width, and drop under it otherwise.
+    // Only a wide figure gets the host: the size container applies layout
+    // containment, which would wrap a floated figure and stop the text flowing
+    // beside it. A floated figure keeps its toggles in a row under the drawing.
+    const stage = document.createElement('div');
+    stage.className = 'wiki-diagram-stage';
+    svg.before(stage);
+    stage.append(svg, group);
+    if (figure.classList.contains('wiki-figure--wide')) {
+      const host = document.createElement('div');
+      host.className = 'wiki-diagram-host';
+      figure.before(host);
+      host.append(figure);
+    }
+    figure.classList.add('wiki-figure--layered');
+  }
+</script>
