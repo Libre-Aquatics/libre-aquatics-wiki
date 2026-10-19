@@ -223,9 +223,8 @@ April 1996 CTS advertised a new series of indoor full-matrix LED displays under 
 Mercury.[^sw9604] The two-color Myriad followed in January 1997. From March 1997 the
 advertisements offered the two boards together.[^sw9701][^sw9703] The name Mercury 16 appears
 in CTS advertising from early 1999.[^st9901] That year's copy described the Mercury 16 and
-Myriad together as multi-color displays.[^sw9903] That wording sits awkwardly with the
-single-color pixel CTS described on its own website, and is the company's advertising
-phrase.[^webmerc]
+Myriad together as multi-color displays.[^sw9903] The phrase is CTS's advertising, and it does
+not match the single-color pixel the company described on its own website.[^webmerc]
 
 The product pages were still online in late 2004.[^webocust] CTS's 2004 DisplayLink 3.6 guide
 names the Mercury16 and the Outdoor Mercury16, while the later guides of the same revision speak

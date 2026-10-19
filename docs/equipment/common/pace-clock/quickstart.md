@@ -240,8 +240,8 @@ released, ran again in 1998.[^st98]
 
 A 1997 CTS advertisement in Swim News pictured QuickStart with an RJP and an SS2 start
 system.[^swimnews] In 2000 CTS advertised it as "the only tool" that timed starts, turns, relay
-exchanges and break-outs.[^sw2000] That is the company's claim. The Ultimate Pace Clock's portable
-displays already did the same job.[^f819] CTS house advertisements in 2001 still listed a
+exchanges and break-outs.[^sw2000] The claim is CTS's own, and the portable
+displays of its Ultimate Pace Clock already did the same job.[^f819] CTS house advertisements in 2001 still listed a
 "QuickStart reaction timer" next to the Infinity Start System.[^st01]
 
 ## Compared with the QuickStart Pro

@@ -268,8 +268,7 @@ shot clocks lists only the segment timer as a controller for the slim clocks.[^g
 ## Wireless
 
 The radio is an XBee-PRO or XBee 3 module on 2.4 GHz.[^f972] The segment timer's guide lists the
-same two modules.[^f1050] CTS's other 2.4 GHz products, such as the
-[WA-3](../scoreboard-control/wa-3.md) wireless adapter, are covered on their own pages. CTS describes the band as having 12 operating channels, matching
+same two modules.[^f1050] CTS describes the band as having 12 operating channels, matching
 the menu's 0 to 11.[^datasheet][^f972] A clock and its controller must share both channel and PAN, and the
 controller turns on each display by its module address.[^f972] CTS's product page
 says the digits can be read from up to 500 ft.[^product]
