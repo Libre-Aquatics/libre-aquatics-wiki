@@ -212,7 +212,6 @@ export const nav: NavNode[] = [
                 ],
               },
               { title: 'Colorado Time Systems Dolphin Wireless Stopwatch Timing System', page: 'equipment/swimming/semi-automatic/dolphin.md' },
-              { title: 'Colorado Time Systems Dolphin Scoreboard Adapter', page: 'equipment/swimming/semi-automatic/dolphin-scoreboard-adapter.md' },
             ],
           },
           {
@@ -504,6 +503,7 @@ export const nav: NavNode[] = [
                       { title: 'Sky-Fi WA-1', page: 'equipment/common/scoreboard-control/wa-1.md' },
                       { title: 'WA-2', page: 'equipment/common/scoreboard-control/wa-2.md' },
                       { title: 'WA-3', page: 'equipment/common/scoreboard-control/wa-3.md' },
+                      { title: 'Dolphin Scoreboard Adapter', page: 'equipment/common/scoreboard-control/dolphin-scoreboard-adapter.md' },
                     ],
                   },
                   {

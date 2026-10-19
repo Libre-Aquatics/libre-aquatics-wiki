@@ -59,6 +59,11 @@ over RS-485; the [WA-2](wa-2.md), CTS's first 2.4 GHz adapter, from 2014; and th
 current [WA-3](wa-3.md), rated at 2.4 GHz over 1000 ft (100 m) with 12 channels of 8
 networks each.[^wa1][^f987][^wa3][^f1045]
 
+A [Dolphin Scoreboard Adapter](dolphin-scoreboard-adapter.md) works alone rather than in a
+pair. It plugs into a board's RS-485 jack and listens to the base unit of a
+[Dolphin](../../swimming/semi-automatic/dolphin.md) wireless stopwatch system, and Otter boards
+carry one inside on a channel separate from their own radio.[^f928][^f1004]
+
 ## Controllers
 
 A controller holds the data itself rather than passing on someone else's. The score, the
@@ -102,6 +107,7 @@ than by who made it, so a NovaStar controller and a CTS adapter sit in the same 
 | [Sky-Fi WA-1](wa-1.md) | Colorado Time Systems | 900 MHz wireless scoreboard adapter | Discontinued |
 | [WA-2](wa-2.md) | Colorado Time Systems | Wireless scoreboard adapter | Superseded |
 | [WA-3](wa-3.md) | Colorado Time Systems | 2.4 GHz wireless scoreboard adapter | Current |
+| [Dolphin Scoreboard Adapter](dolphin-scoreboard-adapter.md) | Colorado Time Systems | Receiver linking a Dolphin stopwatch system to a numeric scoreboard | Current |
 | [WTTC-1](wttc-1.md) | Colorado Time Systems | Tabletop controller for multisport boards and water polo | Current |
 | [Run-stop-reset units](rsr.md) | Colorado Time Systems | Hand switches for extra clock operators on the WTTC-1 | Current |
 | [WHC-1](whc-1.md) | Colorado Time Systems | Handheld controller for multisport boards | Documented |
@@ -132,6 +138,7 @@ See everything tagged [Scoring](../../../categories.md).
 [^wa1]: Colorado Time Systems, Sky-Fi Wireless Adapter (WA-1) User Instructions.
 [^wa3]: Colorado Time Systems, 2.4 GHz Wireless Scoreboard Adapter datasheet (Rev. 04/19).
 [^f1045]: Colorado Time Systems, 2.4 GHz Wireless Adapter WA-3 User Guide (F1045).
+[^f928]: Colorado Time Systems, Dolphin Scoreboard Adapter installation instructions (F928 Rev. 201505).
 [^f1004]: Colorado Time Systems, Scoreboard for Swimming & Track With 2.4 GHz Integrated Wireless, Installation and User Guide (F1004 Rev. 202605).
 [^f995]: Colorado Time Systems, Diving Scoreboard With 2.4 GHz Integrated Wireless, Installation and User Guide (F995 Rev. 202605).
 [^f901]: Colorado Time Systems, Pace Clock Controller User Guide (F901 Rev. 1007).

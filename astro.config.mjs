@@ -109,6 +109,7 @@ export default defineConfig({
     '/equipment/swimming/timers/odb10-sw/': '/equipment/swimming/deck-cabling/odb10-sw/',
     '/equipment/common/scoreboard-control/calypso-wpo-console/': '/equipment/water-polo/console/calypso-wpo-console/',
     '/equipment/common/pace-clock/swiss-timing-shot-clocks/': '/equipment/water-polo/shot-clock/swiss-timing-shot-clocks/',
+    '/equipment/swimming/semi-automatic/dolphin-scoreboard-adapter/': '/equipment/common/scoreboard-control/dolphin-scoreboard-adapter/',
   },
   integrations: [
     react(),

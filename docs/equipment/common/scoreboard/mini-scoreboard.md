@@ -87,7 +87,7 @@ two lines of its [LED-R](led-r.md) scoreboard show in a quarter of the
 space.[^ds26][^product] The board displays data from a CTS timing console, from the UPC-C
 [pace clock controller](../pace-clock/upc-c.md), or from a
 [Dolphin](../../swimming/semi-automatic/dolphin.md) wireless watch system through the
-[Dolphin Scoreboard Adapter](../../swimming/semi-automatic/dolphin-scoreboard-adapter.md).[^ds26][^f927]
+[Dolphin Scoreboard Adapter](../scoreboard-control/dolphin-scoreboard-adapter.md).[^ds26][^f927]
 
 Boards come as portable or fixed units, each built for one combination of what the two
 lines show, and they stack: several modules mounted in a column make a multi-line board of
@@ -191,7 +191,7 @@ A console connects by cable to the RS-232 side, using a CTS data cable ordered t
 length.[^f927][^ds26] For a wireless link the board takes a [Sky-Fi WA-1](../scoreboard-control/wa-1.md) adapter
 on its RS-485 side, with a second WA-1 at the console, both set to the same channel.[^f927]
 A Dolphin system reaches the board through the
-[Dolphin Scoreboard Adapter](../../swimming/semi-automatic/dolphin-scoreboard-adapter.md),
+[Dolphin Scoreboard Adapter](../scoreboard-control/dolphin-scoreboard-adapter.md),
 also on RS-485.[^f927] Further boards, shot clocks and horns chain onward from the first
 device with the same kind of cable it is already using.[^f927]
 
@@ -255,7 +255,7 @@ and notes an extended lead time from the manufacturer.[^poolweb]
   what the rules require of a results display
 - [LED-R](led-r.md): the full-size numeric line this board condenses
 - [Dolphin Wireless Stopwatch Timing System](../../swimming/semi-automatic/dolphin.md) and
-  the [Dolphin Scoreboard Adapter](../../swimming/semi-automatic/dolphin-scoreboard-adapter.md):
+  the [Dolphin Scoreboard Adapter](../scoreboard-control/dolphin-scoreboard-adapter.md):
   the wireless timing system it can display
 - [Sky-Fi WA-1](../scoreboard-control/wa-1.md): the adapter that replaces the console cable with a radio link
 - [Colorado Time Systems](../../../vendors/colorado-time-systems.md): the manufacturer

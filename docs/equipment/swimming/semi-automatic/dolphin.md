@@ -377,7 +377,7 @@ position rather than leaving a gap.[^swimrankings]
 ## Scoreboards
 
 Dolphin results can drive a CTS numeric scoreboard without a console in the loop. Most
-boards need the [Dolphin Scoreboard Adapter](dolphin-scoreboard-adapter.md) between
+boards need the [Dolphin Scoreboard Adapter](../../common/scoreboard-control/dolphin-scoreboard-adapter.md) between
 them and the system, while CTS's [Otter](../../common/scoreboard/otter.md) swimming scoreboards
 have the adapter built in.[^f912] The software controls the display directly: whether
 the board is enabled, whether results are ordered by lane or by place, how many lines
@@ -458,7 +458,7 @@ Separate parts and accessories:
   adapters.[^f911][^shop]
 - `R-015-606`, the USB cable between base unit and computer. The 2007 sheet listed
   `R-015-569` for the same purpose.[^f911][^f911r0707]
-- `K-DSCB`, the [Dolphin Scoreboard Adapter](dolphin-scoreboard-adapter.md) kit,
+- `K-DSCB`, the [Dolphin Scoreboard Adapter](../../common/scoreboard-control/dolphin-scoreboard-adapter.md) kit,
   comprising the adapter and its mounting hardware.[^flyer22]
 - `K-DSS-1` and `K-DSS-2`, the cable and holster kits joining the starter unit to a CTS
   start system; see the
@@ -479,7 +479,7 @@ case.[^flyer22]
 - [Semi-automatic timing](index.md): the semi-automatic timing overview
 - [Colorado Time Systems Dolphin Starter Unit](../starter/dolphin-starter-unit.md): the
   wireless start trigger that starts the watches together
-- [Dolphin Scoreboard Adapter](dolphin-scoreboard-adapter.md): the link from the system
+- [Dolphin Scoreboard Adapter](../../common/scoreboard-control/dolphin-scoreboard-adapter.md): the link from the system
   to a CTS numeric scoreboard
 - [Colorado Time Systems Pushbutton](pushbutton/cts.md) and
   [Pushbuttons](pushbutton/index.md): the wired alternative to a wireless stopwatch

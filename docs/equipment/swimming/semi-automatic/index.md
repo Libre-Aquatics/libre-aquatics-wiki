@@ -217,7 +217,7 @@ semi-automatic timing in sanctioned competition since April 13, 2023.[^blog]
 | [Dolphin Wireless Stopwatch Timing System](dolphin.md) | Colorado Time Systems | Wireless stopwatches, synchronized start | Current |
 
 A CTS numeric scoreboard can take results from the Dolphin by radio, with no timing console
-in between, through the [Dolphin Scoreboard Adapter](dolphin-scoreboard-adapter.md), kit
+in between, through the [Dolphin Scoreboard Adapter](../../common/scoreboard-control/dolphin-scoreboard-adapter.md), kit
 `K-DSCB`.
 
 Each article covers its equipment in full, how a timer uses it, how it connects, and its

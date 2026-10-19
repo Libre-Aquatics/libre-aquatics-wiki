@@ -102,7 +102,7 @@ each lane's finish and the discontinued
 [Dolphin Wireless Stopwatch Timing System](../equipment/swimming/semi-automatic/dolphin.md), a form of
 [semi-automatic timing](../equipment/swimming/semi-automatic/index.md) that replaces that button with a wireless stopwatch and its
 [Dolphin Starter Unit](../equipment/swimming/starter/dolphin-starter-unit.md) and
-[scoreboard adapter](../equipment/swimming/semi-automatic/dolphin-scoreboard-adapter.md), the
+[scoreboard adapter](../equipment/common/scoreboard-control/dolphin-scoreboard-adapter.md), the
 [RJP](../equipment/swimming/relay-judging/cts.md), one of the
 [relay judging platforms](../equipment/swimming/relay-judging/index.md) that judge relay exchanges from the blocks, the
 [backstroke start device](../equipment/swimming/backstroke-start/cts.md), one of several
