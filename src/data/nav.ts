@@ -320,6 +320,8 @@ export const nav: NavNode[] = [
               { title: 'JC-100 Junction Box', page: 'equipment/diving/jc-100-junction-box.md' },
               { title: 'RC-100', page: 'equipment/diving/rc-100.md' },
               { title: 'RC-200', page: 'equipment/diving/rc-200.md' },
+              { title: 'RC-200 Base Station', page: 'equipment/diving/rc-200-base-station.md' },
+              { title: 'RC-200 Charging Station', page: 'equipment/diving/rc-200-charging-station.md' },
             ],
           },
           {
