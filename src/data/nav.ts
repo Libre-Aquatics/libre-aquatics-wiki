@@ -311,6 +311,7 @@ export const nav: NavNode[] = [
             children: [
               { title: 'Gen7 Wired Judging', page: 'equipment/diving/gen7-wired-judging.md' },
               { title: 'Judging Terminals', page: 'equipment/diving/judging-terminals.md' },
+              { title: 'Judging Interface Box', page: 'equipment/diving/judging-interface-box.md' },
               { title: 'Wireless Judging', page: 'equipment/diving/wireless-judging.md' },
             ],
           },
