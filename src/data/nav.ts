@@ -47,6 +47,7 @@ export const nav: NavNode[] = [
                 children: [
                   { title: 'Infinity Start System', page: 'equipment/swimming/starter/infinity-start-system.md' },
                   { title: 'Infinity Pro Start System', page: 'equipment/swimming/starter/infinity-pro-start-system.md' },
+                  { title: 'SS-1', page: 'equipment/swimming/starter/ss-1.md' },
                   { title: 'SS2 Electronic Start System', page: 'equipment/swimming/starter/ss2.md' },
                   { title: 'Championship Start System (CHAMP-SSM)', page: 'equipment/swimming/starter/champ-ssm.md' },
                   { title: 'Championship Start System', page: 'equipment/swimming/starter/championship-start-system.md' },
@@ -610,6 +611,7 @@ export const nav: NavNode[] = [
           { title: 'Hy-Tek Team Connect Online', page: 'software/hy-tek-team-connect-online.md' },
           { title: 'Hy-Tek Pro SWIMMER', page: 'software/hy-tek-pro-swimmer.md' },
           { title: 'Hy-Tek Workout Manager', page: 'software/hy-tek-workout-manager.md' },
+          { title: 'QSTART', page: 'software/qstart.md' },
           { title: 'Hy-Tek Business Manager', page: 'software/hy-tek-business-manager.md' },
           { title: 'Hy-Tek Personal Swim Manager', page: 'software/hy-tek-personal-swim-manager.md' },
           { title: 'Hy-Tek Team Registration', page: 'software/hy-tek-team-registration.md' },
