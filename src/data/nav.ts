@@ -163,6 +163,7 @@ export const nav: NavNode[] = [
                 title: 'Colorado Time Systems',
                 children: [
                   { title: 'Cable Harness', page: 'equipment/swimming/deck-cabling/cts-cable-harness.md' },
+                  { title: 'Gen7 Serial Cable Harness', page: 'equipment/swimming/deck-cabling/gen7-serial-cable-harness.md' },
                   { title: 'DP-7 Deck Plate', page: 'equipment/swimming/deck-cabling/cts-dp-7-deck-plate.md' },
                   { title: 'Gen7 Serial Connect Hubs', page: 'equipment/swimming/deck-cabling/gen7-serial-connect-hubs.md' },
                   { title: 'QuickConnect Deck Plate', page: 'equipment/swimming/deck-cabling/cts-quickconnect-deck-plate.md' },
@@ -192,6 +193,7 @@ export const nav: NavNode[] = [
                   { title: 'ODB10', page: 'equipment/swimming/deck-cabling/odb10.md' },
                   { title: 'Quantum Start Cable', page: 'equipment/swimming/deck-cabling/quantum-start-cable.md' },
                   { title: 'Wall Socket', page: 'equipment/swimming/deck-cabling/swiss-timing-wall-socket.md' },
+                  { title: 'PowerTime Swimming Harness', page: 'equipment/swimming/deck-cabling/powertime-swimming-harness.md' },
                 ],
               },
             ],
@@ -231,6 +233,7 @@ export const nav: NavNode[] = [
             indexTitle: 'Starting Blocks Overview',
             children: [
               { title: 'Colorado Block', page: 'equipment/swimming/starting-blocks/colorado-block.md' },
+              { title: 'Paragon Track Start Competitor', page: 'equipment/swimming/starting-blocks/track-start-competitor.md' },
               { title: 'Fusion Starting Platform', page: 'equipment/swimming/starting-blocks/fusion-starting-platform.md' },
               { title: 'S.R. Smith Velocity', page: 'equipment/swimming/starting-blocks/velocity.md' },
               { title: 'Swiss Timing OSB9', page: 'equipment/swimming/starting-blocks/osb9.md' },
@@ -274,6 +277,7 @@ export const nav: NavNode[] = [
                   { title: 'OSM-3', page: 'equipment/swimming/timers/osm-3.md' },
                   { title: 'Swim-O-Matic', page: 'equipment/swimming/timers/swim-o-matic.md' },
                   { title: 'PowerTime II', page: 'equipment/swimming/timers/powertime-ii.md' },
+                  { title: 'PowerTime', page: 'equipment/swimming/timers/powertime.md' },
                 ],
               },
             ],
@@ -601,6 +605,7 @@ export const nav: NavNode[] = [
           { title: 'ARES Diving', page: 'software/ares-diving.md' },
           { title: 'ARES Synchronized Swimming', page: 'software/ares-synchronized-swimming.md' },
           { title: 'ARES Water Polo', page: 'software/ares-water-polo.md' },
+          { title: 'TOP-8', page: 'software/top-8.md' },
         ],
       },
       {

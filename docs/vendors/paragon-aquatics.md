@@ -35,7 +35,7 @@ and a Pentair source directly.
 -->
 
 This article is a stub. Paragon Aquatics is an American maker of pool deck equipment, based in
-LaGrangeville, New York and part of Pentair since 1999, whose Track Start Competitor block is the
+LaGrangeville, New York and part of Pentair since 1999, whose [Track Start Competitor](../equipment/swimming/starting-blocks/track-start-competitor.md) block is the
 base of the [Colorado Block](../equipment/swimming/starting-blocks/colorado-block.md).
 
 See the [vendors](index.md) register for the companies this wiki covers.

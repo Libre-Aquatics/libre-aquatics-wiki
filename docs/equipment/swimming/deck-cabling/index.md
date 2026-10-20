@@ -122,7 +122,7 @@ The three main manufacturers build their harnesses differently:
   pod at each lane. On a System 6 the touchpads and the first backup button plug into a primary
   harness, and the second and third buttons into a separate B and C backup-button harness. Near-
   and far-end harnesses have their own inputs on the console, and a second set of inputs allows
-  a backup timer to be connected.[^f870] The Gen7 Serial uses serial harnesses instead, which
+  a backup timer to be connected.[^f870] The Gen7 Serial uses [serial harnesses](gen7-serial-cable-harness.md) instead, which
   can be linked end to end so that one console takes a primary harness and a backup harness
   across as many as 20 lanes.[^f1034]
 - [Daktronics lane module](daktronics-lane-module.md): every module is identical and can go in
@@ -417,6 +417,7 @@ covers the product itself, and this page is the shared overview they refer back 
 | Article | Manufacturer | Type | Installation |
 |---|---|---|---|
 | [Colorado Time Systems cable harness](cts-cable-harness.md) | Colorado Time Systems | Multi-conductor lane harness | On-deck |
+| [Gen7 Serial cable harness](gen7-serial-cable-harness.md) | Colorado Time Systems | Serial lane harness | On-deck |
 | [QuickConnect deck plate](cts-quickconnect-deck-plate.md) | Colorado Time Systems | Deck connector and block-mounted hub (discontinued) | In-deck |
 | [Titanium Deckplate](cts-titanium-deckplate.md) | Colorado Time Systems | Deck plate (passive and intelligent) | In-deck |
 | [DP-7 deck plate](cts-dp-7-deck-plate.md) | Colorado Time Systems | Deck plate | In-deck |

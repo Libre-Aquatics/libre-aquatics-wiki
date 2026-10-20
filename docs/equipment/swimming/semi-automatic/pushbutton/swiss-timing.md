@@ -35,7 +35,10 @@ Read:
   and let them dry; the OIT3 has no serviceable parts inside.
 - A web search summary attributed to a TOP-8 timer manual (manualslib.tech) lists 2872.003 as
   "OIT3 pushbutton 3m coiled"; the page itself was not read, so the 3 m coiled cable is
-  unverified.
+  unverified. Update 2026-10-19: now verified. Swiss Timing's PowerTime II General User's Manual
+  3462.501.02, section 7, lists 2872.003 as a pushbutton with a 3 m coiled cable, and the Omega
+  Electronics TOP-8 manual 3361-511-02 (ManualZilla copy) gives the same, beside an OIT8 with a
+  5 m cable, 2872-008.
 - AVK Group (avkgroup.at/catalog/3498.701/) lists a related OIT5 judge's button, 3498.701:
   waterproof, IP67, 1.25 m coiled cable, banana connectors, open at rest. That is the OIT5, a
   separate product; it needs its own stub once researched.
