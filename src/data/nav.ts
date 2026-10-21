@@ -169,6 +169,7 @@ export const nav: NavNode[] = [
                   { title: 'QuickConnect Deck Plate', page: 'equipment/swimming/deck-cabling/cts-quickconnect-deck-plate.md' },
                   { title: 'Titanium Deckplate', page: 'equipment/swimming/deck-cabling/cts-titanium-deckplate.md' },
                   { title: 'Wall Plate', page: 'equipment/swimming/deck-cabling/cts-wall-plate.md' },
+                  { title: 'Wall Plate Cover', page: 'equipment/swimming/deck-cabling/cts-wall-plate-cover.md' },
                 ],
               },
               {
@@ -289,6 +290,10 @@ export const nav: NavNode[] = [
                 title: 'Colorado Time Systems',
                 children: [
                   { title: 'USB Connect', page: 'equipment/swimming/timers/cts-usb-connect.md' },
+                  { title: 'Timer-to-Wallplate Cable', page: 'equipment/swimming/timers/cts-timer-wallplate-cable.md' },
+                  { title: 'CMP-WP Cable', page: 'equipment/swimming/timers/cts-cmp-wp-cable.md' },
+                  { title: 'R-015-027 Cable', page: 'equipment/swimming/timers/cts-r-015-027-cable.md' },
+                  { title: 'TPM-D Test Meter', page: 'equipment/swimming/timers/cts-tpm-d-test-meter.md' },
                 ],
               },
               {
