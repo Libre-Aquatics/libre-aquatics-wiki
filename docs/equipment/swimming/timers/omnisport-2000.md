@@ -36,6 +36,14 @@ infobox:
       https://www.daktronics.com/web-documents/customer-service-manuals/ed13312.pdf
 ---
 
+<!--
+Research note, added 2026-10-21 while building out daktronics-lane-interface.md: Daktronics KB
+DD4199116 (an SW-2000 time-of-day article) has a section headed "OmniSport EOL plan as of fall
+2023": Daktronics has decided to sunset the OmniSport timing system, no new orders are planned,
+and existing systems have up to a 7-year service plan. pc-2001.md cites the same decision from
+KB DD2796781. This page does not yet carry a status line; add one when the page is next revised.
+-->
+
 The OmniSport 2000 is a multi-sport timing console made by Daktronics, Inc., of
 Brookings, South Dakota. It is the head end of a Daktronics swim-timing system: the
 unit that collects the finish signals from each lane's

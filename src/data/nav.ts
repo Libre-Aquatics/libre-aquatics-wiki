@@ -131,6 +131,8 @@ export const nav: NavNode[] = [
                   { title: 'AquaGrip Touchpad', page: 'equipment/swimming/touchpad/aquagrip.md' },
                   { title: 'Standard Touchpad', page: 'equipment/swimming/touchpad/standard.md' },
                   { title: 'Multizone Pads', page: 'equipment/swimming/touchpad/multizone.md' },
+                  { title: 'VP-1 Vacuum Pump (accessory)', page: 'equipment/swimming/touchpad/cts-vp-1-vacuum-pump.md' },
+                  { title: 'VP-2 Vacuum Pump (accessory)', page: 'equipment/swimming/touchpad/cts-vp-2-vacuum-pump.md' },
                 ],
               },
               {
@@ -332,6 +334,8 @@ export const nav: NavNode[] = [
               { title: 'RC-200', page: 'equipment/diving/rc-200.md' },
               { title: 'RC-200 Base Station', page: 'equipment/diving/rc-200-base-station.md' },
               { title: 'RC-200 Charging Station', page: 'equipment/diving/rc-200-charging-station.md' },
+              { title: 'W-1823 Cable', page: 'equipment/diving/w-1823-cable.md' },
+              { title: 'Judging Control J-Box Cover', page: 'equipment/diving/daktronics-judging-jbox-cover.md' },
             ],
           },
           {
@@ -402,6 +406,13 @@ export const nav: NavNode[] = [
                   { title: '3009 Scoreboard', page: 'equipment/common/scoreboard/3009.md' },
                   { title: 'HWPM 110 and HWPM 220', page: 'equipment/common/scoreboard/hwpm.md' },
                   { title: 'Multisport Portable Scoreboard', page: 'equipment/common/scoreboard/multisport-portable-scoreboard.md' },
+                ],
+              },
+              {
+                title: 'Daktronics',
+                children: [
+                  { title: 'WP-2101 Water Polo Scoreboard', page: 'equipment/common/scoreboard/wp-2101.md' },
+                  { title: 'WP-2102 Penalty Module', page: 'equipment/common/scoreboard/wp-2102.md' },
                 ],
               },
               {
@@ -539,8 +550,15 @@ export const nav: NavNode[] = [
                     title: 'Daktronics',
                     children: [
                       { title: 'All Sport 1600', page: 'equipment/common/scoreboard-control/all-sport-1600.md' },
+                      { title: 'All Sport 3000', page: 'equipment/common/scoreboard-control/all-sport-3000.md' },
                       { title: 'All Sport 5000', page: 'equipment/common/scoreboard-control/all-sport-5000.md' },
+                      { title: 'All Sport 5500', page: 'equipment/common/scoreboard-control/all-sport-5500.md' },
+                      { title: 'Main Clock Start/Stop/Horn Switch', page: 'equipment/common/scoreboard-control/daktronics-main-clock-switch.md' },
+                      { title: 'Shot Clock Control', page: 'equipment/common/scoreboard-control/daktronics-shot-clock-control.md' },
+                      { title: 'RC-200 Remote Start/Stop Kit', page: 'equipment/common/scoreboard-control/rc-200-remote-start-stop-kit.md' },
                       { title: 'Phone-Jack Junction Box (console accessory)', page: 'equipment/common/scoreboard-control/daktronics-phone-jack-junction-box.md' },
+                      { title: 'Dual Phone-Jack Junction Box (console accessory)', page: 'equipment/common/scoreboard-control/daktronics-dual-phone-jack-junction-box.md' },
+                      { title: 'RTD Cable 0A-1240-0032 (console accessory)', page: 'equipment/common/scoreboard-control/daktronics-rtd-cable.md' },
                     ],
                   },
                 ],
@@ -671,6 +689,7 @@ export const nav: NavNode[] = [
           {
             title: 'Daktronics',
             children: [
+              { title: 'All Sport Pro', page: 'software/all-sport-pro.md' },
               { title: 'Venus', page: 'software/venus.md' },
             ],
           },

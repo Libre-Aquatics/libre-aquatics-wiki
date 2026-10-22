@@ -113,7 +113,11 @@ than by who made it, so a NovaStar controller and a CTS adapter sit in the same 
 | [WHC-1](whc-1.md) | Colorado Time Systems | Handheld controller for multisport boards | Documented |
 | [GameLink console](gamelink-console.md) | Colorado Time Systems | Keyboard console for team-sport data entry | Discontinued |
 | [All Sport 1600](all-sport-1600.md) | Daktronics | Scoreboard control console | Released 2000 |
-| [All Sport 5000](all-sport-5000.md) | Daktronics | Keyboard scoreboard console with sport inserts | Released 2000 |
+| [All Sport 3000](all-sport-3000.md) | Daktronics | Scoreboard control console | Discontinued |
+| [All Sport 5000](all-sport-5000.md) | Daktronics | Keyboard scoreboard console with sport inserts, including water polo | Released 2000 |
+| [All Sport 5500](all-sport-5500.md) | Daktronics | Keyboard console for ColorSmart scoreboards | Discontinued |
+| [Main clock start/stop/horn switch](daktronics-main-clock-switch.md) | Daktronics | Remote clock and horn switch for All Sport consoles | Documented |
+| [Shot clock control](daktronics-shot-clock-control.md) | Daktronics | Remote shot clock start/stop and reset switch | Documented |
 | [Gen VI radio](gen-vi-radio.md) | Daktronics | 2.4 GHz radio link from All Sport and OmniSport consoles to display receivers | Introduced 2011–2012 |
 | [MCTRL-300](mctrl-300.md) | NovaStar | LED video display controller | Shipped by CTS |
 | [MCTRL-600](mctrl-600.md) | NovaStar | LED video display controller | Shipped by CTS |
