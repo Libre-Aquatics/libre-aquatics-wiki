@@ -194,7 +194,7 @@ AquaGrip version of the same size, with the `G` added, wherever one exists.[^dat
   `TP-195F`, `TP-240F`).
 - `TPM-D`, touchpad test meter (it also checks the scoreboard, deck plates,
   pushbuttons and cable harness).
-- [`VP-2`](cts-vp-2-vacuum-pump.md), vacuum pump for adjusting pad air.
+- [`VP-2`](../timers/cts-vp-2-vacuum-pump.md), vacuum pump for adjusting pad air.
 - `CAD-TP-P`, touchpad caddy (holds up to ten pads).
 - `R-025-045`, replacement dual banana plug.
 

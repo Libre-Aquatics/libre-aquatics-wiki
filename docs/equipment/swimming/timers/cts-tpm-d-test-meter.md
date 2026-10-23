@@ -182,7 +182,7 @@ A CTS touchpad's sensitivity depends on the air sealed inside it, as the
 [touchpads overview](../touchpad/index.md) explains.[^f147] The adjustment is made out of the water, with the pad plugged into the meter
 so its state can be watched.[^vp1][^vp2] To cure a shorted pad, a needle pushed into the plug
 on the pad's connector block lets air in until the meter's lamps go out. To cure an open pad,
-the needle is fitted to a [vacuum pump](../touchpad/cts-vp-2-vacuum-pump.md) and air is drawn
+the needle is fitted to a [vacuum pump](cts-vp-2-vacuum-pump.md) and air is drawn
 out until the bar is fully lit. Pumping stops there, and the needle comes out five seconds
 after the lamps begin to go out.[^vp1][^vp2]
 
@@ -190,7 +190,7 @@ The sources disagree on which way the bar fills. The pump instructions say the l
 go out from right to left.[^vp1][^vp2] The touchpad guide's in-water check says left to right,
 which matches the 3 to 5 V scale printed on the panel.[^f147][^f696]
 
-The 2005 meter sheet names the [VP-1](../touchpad/cts-vp-1-vacuum-pump.md) hand pump.[^f696]
+The 2005 meter sheet names the [VP-1](cts-vp-1-vacuum-pump.md) hand pump.[^f696]
 CTS's 2011 and 2015 catalogues and its current shop list the TPM-D beside the VP-2
 instead.[^cat11][^cat15][^shop]
 
@@ -213,8 +213,8 @@ instead.[^cat11][^cat15][^shop]
 This section lists the parts the sources name with the meter.
 
 - `TPM-D`, the test meter.[^shop][^f506]
-- [`VP-2`](../touchpad/cts-vp-2-vacuum-pump.md), the vacuum pump CTS sells beside the meter.[^shop][^vp2]
-- [`VP-1`](../touchpad/cts-vp-1-vacuum-pump.md), the earlier hand pump named in the meter's
+- [`VP-2`](cts-vp-2-vacuum-pump.md), the vacuum pump CTS sells beside the meter.[^shop][^vp2]
+- [`VP-1`](cts-vp-1-vacuum-pump.md), the earlier hand pump named in the meter's
   instructions.[^f696][^vp1]
 
 ## See also

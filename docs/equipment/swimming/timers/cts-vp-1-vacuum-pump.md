@@ -35,16 +35,21 @@ Sources (held, sources/vendors/colorado-time-systems/):
   part number; the number VP-1 comes from the meter sheet.
 - accessories/cts-test-meter-instructions (F696 Rev.0205): names "a touchpad needle and a
   vacuum pump (CTS part number VP-1)".
-- The VP-2 trigger pump sheet F908 is dated September 2009, and the 2011 and 2015 catalogues and
-  the current shop list only the VP-2. That the VP-2 replaced the VP-1 is inferred from those
-  dates, not stated anywhere.
+- The held VP-2 trigger pump sheet F908 is dated September 2009, but a Wayback capture of an
+  earlier revision (F908 Rev.0806, August 2006) puts the VP-2 on sale by then; the 2008, 2011
+  and 2015 catalogues and the current shop list only the VP-2. That the VP-2 replaced the VP-1
+  is inferred from those dates, not stated anywhere (see cts-vp-2-vacuum-pump.md).
+- Wayback CDX (October 2026): www.coloradotime.com/manuals/VacuumPump.pdf captured 2006 and
+  VacuumPump_VP-1.pdf captured 2007; the sheet is still hosted on the current site at
+  coloradotime.com/hubfs/.../Touchpads/VacuumPump_VP-1.pdf (200). Not compared with the held
+  copy.
 Not found: introduction date, pump maker, price, needle part number.
 -->
 
 This article is a stub. The `VP-1` is a Colorado Time Systems hand vacuum pump with a needle,
-named in the 2005 instructions for the [TPM-D test meter](../timers/cts-tpm-d-test-meter.md),
+named in the 2005 instructions for the [TPM-D test meter](cts-tpm-d-test-meter.md),
 that draws air out of a touchpad through the plug on its connector block until the meter shows
 the pad closing, a role later filled by the [VP-2](cts-vp-2-vacuum-pump.md).
 
-See the [touchpads overview](index.md) for the shared background that applies to every
+See the [touchpads overview](../touchpad/index.md) for the shared background that applies to every
 touchpad.

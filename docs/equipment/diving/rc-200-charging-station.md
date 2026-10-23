@@ -40,7 +40,14 @@ Sources:
 - Daktronics RC-200 Product Specifications DD3715714 (November 2018) lists a multi-unit charger
   for six controllers as an option.
 No part number for the station itself was found in any source.
-Still to research: part number; whether it is the same unit sold for the RC-100; price.
+Update 2026-10-22, from the RC-100 manual ED-15133 Rev 11 (2018, now held under
+sources/vendors/daktronics/accessories/): its DWG-231674, "Charging Station, Specifications &
+Operation", drawn 14 January 2004 for the RC-100 console, has the same outline dimensions,
+10 V AC leads, W-1181 cord, F-1006 fuse, weight and 100 W rating, so the RC-200 drawing is a
+redraw of the RC-100 station. The 2004 drawing's statement that the battery is not field
+replaceable is contradicted for later RC-100 handhelds by the manual's own battery section
+(see rc-100.md).
+Still to research: part number; whether one physical unit serves both handhelds; price.
 -->
 
 This article is a stub. The RC-200 charging station is a

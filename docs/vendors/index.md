@@ -39,7 +39,9 @@ miss in that group. It is named in the held periodicals, though never in its own
 competitor's advertisement of 2001 to 2003 lists it among the timing systems that software
 works with. Stramatel, Time Drops and Macsha are here because
 [Splash Meet Manager](../software/splash-meet-manager.md) has interfaces to their equipment,
-and GeoLogix because it developed that program for about twelve years.
+and GeoLogix because it developed that program for about twelve years. Mityvac makes no
+timing equipment; it is here because Colorado Time Systems sells one of its hand pumps as a
+touchpad accessory.
 
 | Vendor | Headquarters | Equipment documented here |
 |---|---|---|
@@ -69,6 +71,7 @@ and GeoLogix because it developed that program for about twelve years.
 | [Sportyme](sportyme.md) | Hatboro, Pennsylvania, United States | No equipment of its own; Omega's US sales and service agent in the early 1980s, which advertised the OSM6 |
 | [Adolph Kiefer & Associates](kiefer.md) | Zion, Illinois, United States | Competitor pace clocks; Omega's exclusive US timing agent from 1988 |
 | [Macsha](macsha.md) | Not established | The Macsha Swim touchpad and lane-unit system |
+| [Mityvac](mityvac.md) | Not established | No timing equipment; the hand pump Colorado Time Systems sells as the VP-2 |
 | [Paragon Aquatics](paragon-aquatics.md) | LaGrangeville, New York, United States | No timing equipment; the Track Start Competitor block used in the Colorado Block |
 | [Spectrum Aquatics](spectrum-aquatics.md) | Missoula, Montana, United States | No timing equipment; the Fusion Starting Platform with a built-in CTS relay platform |
 

@@ -99,7 +99,8 @@ export default defineConfig({
   // Pages that moved after the site went live: the pushbutton pages went
   // under the semi-automatic category, and the Quantum harness and ODB10-SW
   // pages went from timers to deck cabling, and the Swiss Timing water polo pages went
-  // from common to water polo. These keep the published URLs
+  // from common to water polo, and the CTS vacuum pumps went from touchpads to timers
+  // (the Cables and Accessories nav section). These keep the published URLs
   // working (static meta-refresh pages on GitHub Pages).
   redirects: {
     '/equipment/swimming/pushbutton/': '/equipment/swimming/semi-automatic/pushbutton/',
@@ -110,6 +111,8 @@ export default defineConfig({
     '/equipment/common/scoreboard-control/calypso-wpo-console/': '/equipment/water-polo/console/calypso-wpo-console/',
     '/equipment/common/pace-clock/swiss-timing-shot-clocks/': '/equipment/water-polo/shot-clock/swiss-timing-shot-clocks/',
     '/equipment/swimming/semi-automatic/dolphin-scoreboard-adapter/': '/equipment/common/scoreboard-control/dolphin-scoreboard-adapter/',
+    '/equipment/swimming/touchpad/cts-vp-1-vacuum-pump/': '/equipment/swimming/timers/cts-vp-1-vacuum-pump/',
+    '/equipment/swimming/touchpad/cts-vp-2-vacuum-pump/': '/equipment/swimming/timers/cts-vp-2-vacuum-pump/',
   },
   integrations: [
     react(),

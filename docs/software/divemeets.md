@@ -40,13 +40,14 @@ NCAA dual/tri/quad meet service was also mentioned, price not current.
 
 Not found: who publishes it, when it started, the official homepage text (divemeets.com
 returned no readable content), current pricing, and the file or serial format used with
-Gen7 Diving and the OmniSport. E-dive is a separate program and still needs its own page.
+Gen7 Diving and the OmniSport. E-dive is a separate program; see edive.md (created 2026-10-22).
 -->
 
 This article is a stub. DiveMeets is a diving meet management service that pairs a website for
 entries and published results with a desktop program, Meet Control, for running the meet.
 Colorado Time Systems names it as a meet-management program that
 [Gen7 wired judging](../equipment/diving/gen7-wired-judging.md) can exchange data with, and
-Daktronics names it as one its OmniSport 2000 diving software can import from and export to.
+Daktronics names it as one its [OmniSport Pro Diving](omnisport-pro-diving.md) software can
+import from and export to.
 
 See the [software overview](index.md) for what this section covers.

@@ -192,7 +192,7 @@ scheme.
 - `TP-…GF`, flat-wall AquaGrip pads (for example `TP-60GF`, `TP-78GF`).
 - `TPM-D`, touchpad test meter (also tests pushbuttons, cable harness, deck plates,
   and scoreboard).
-- [`VP-2`](cts-vp-2-vacuum-pump.md), vacuum pump for adjusting pad air.
+- [`VP-2`](../timers/cts-vp-2-vacuum-pump.md), vacuum pump for adjusting pad air.
 - `CAD-TP-P`, touchpad caddy (holds up to ten pads).
 - `R-025-045`, replacement dual banana plug.
 
