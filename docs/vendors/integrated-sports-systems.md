@@ -11,7 +11,7 @@ infobox:
   - label: Industry
     value: Scoring software for judged aquatic sports
   - label: Key products
-    value: ISS MMS Diving; ISS MMS Artistic Swimming; i-Judge; Display Results
+    value: ISS MMS Diving; [ISS MMS Artistic Swimming](software/iss-mms-artistic-swimming.md); [Coach Card](software/coach-card.md); [i-Judge](software/i-judge.md); [Display Results](software/display-results.md)
   - label: Headquarters
     value: Not established
   - label: Website

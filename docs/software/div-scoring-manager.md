@@ -163,7 +163,7 @@ late entries and scratches.[^manual]
 
 Judges enter awards on one of two kinds of device:[^manual][^quick]
 
-- [Omega MTE keypads](../equipment/diving/omega-mte-keypads.md), cabled through a Swiss Timing converter or linked by a wireless XBee
+- [Omega MTE keypads](../equipment/diving/omega-mte-keypads.md), cabled through a Swiss Timing [INT131](../equipment/swimming/timers/swiss-timing-int131.md) converter or linked by a wireless XBee
   connector, on a serial port at 19,200 baud. A second port is used when the panel is split
   across the pool.
 - [i-Judge](i-judge.md), ISS's scoring program, on Windows computers or tablets connected to the
