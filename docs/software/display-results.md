@@ -30,7 +30,14 @@ timer), scores, championship totals and team standings. Most functions are paid;
 exists. DIV Scoring Manager (2022) uses it for live Internet results and points users to
 integratedsports.net to download it; SWA Scoring Manager (2026) lists it as a companion.
 
-Still to research: later versions; the DC204 timer; Internet results service.
+ISS products page (integratedsports.net/products.asp, read 2026-10-28): the DC 204 Sports Timer
+connects two timing devices, such as touchpads or starting blocks, to a PC to time performances;
+specifications and ordering are on an external site, not followed. Display Results itself is not
+listed there; the ISS diving page names it as part of the ISS MMS suite with Run Event and the
+Canadian dive sheet generators.
+
+Still to research: later versions; the DC 204 timer (stub it when this page is built out);
+Internet results service.
 -->
 
 This article is a stub. Display Results is an Integrated Sports Systems program, also supplied

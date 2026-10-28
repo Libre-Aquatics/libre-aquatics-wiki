@@ -638,6 +638,7 @@ export const nav: NavNode[] = [
           { title: 'Coach Card', page: 'software/coach-card.md' },
           { title: 'i-Judge', page: 'software/i-judge.md' },
           { title: 'Display Results', page: 'software/display-results.md' },
+          { title: 'Rezman', page: 'software/rezman.md' },
           { title: 'TriCaster', page: 'software/tricaster.md' },
           { title: 'ARES-Print', page: 'software/ares-print.md' },
           { title: 'ARES Diving', page: 'software/ares-diving.md' },

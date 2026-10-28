@@ -89,7 +89,13 @@ Web (October 2026):
     Rezman scoring system", with dive sheets prepared in the Dive Sheet Generator at rezman.net.
     https://diving.ca/wp-content/uploads/2025/12/SK-Provincials-2026-MeetPackage.pdf
     Rezman is evidently tied to ISS's Canadian diving software (the DIV licence names a
-    rezman.net address), but no source states the relationship; not asserted in the body.
+    rezman.net address). Update 2026-10-28: ISS's own products page
+    (https://www.integratedsports.net/products.asp) lists Rezman as an ISS product for results
+    management and analysis (historical results, queries by athlete, team and judging), beside
+    ISS Meet Management Software, video storage and the DC 204 Sports Timer. Its diving page
+    names the suite as ISS MMS, Display Results, Run Event and the Canadian dive sheet generators,
+    and links archived results under integratedsports.net/diving/results.asp as rezman. The body
+    links the name to its new stub, rezman.md.
 
 Not found: a Swiss Timing product page; prices for the Swiss Timing edition; which
 international events used it; the relationship between the Swiss Timing version numbers (1.x)
@@ -202,7 +208,7 @@ FINA standard and as used by FINA's technical diving committee.[^manual] Whole c
 lists, entries and judges can be exported and imported, and Swiss Timing advises exporting the
 results to the national federation after the meet.[^manual] The licence requires Canadian clubs to
 send the results of sanctioned meets to an address at rezman.net.[^manual] A 2026 Diving Plongeon
-Canada meet package names a "Rezman scoring system" and sends clubs to a dive sheet generator on
+Canada meet package names a "[Rezman](rezman.md) scoring system" and sends clubs to a dive sheet generator on
 that site.[^dpc]
 
 ## Related programs
