@@ -59,6 +59,7 @@ touchpad accessory.
 | [Splash Software](splash-software.md) | Spiegel bei Bern, Switzerland | No equipment; Splash Meet Manager, whose author also maintains the Lenex exchange format |
 | [Integrated Sports Systems (ISS)](integrated-sports-systems.md) | Not established | No equipment; diving and artistic swimming scoring software, supplied to Swiss Timing as DIV and SWA Scoring Manager |
 | [Deutscher Schwimm-Verband (DSV)](deutscher-schwimm-verband.md) | Kassel, Germany | No equipment; the German swimming federation, publisher of the DSV-Standard data format |
+| [Dexstar Communications](dexstar-communications.md) | Pointe-Claire, Quebec, Canada | Swiss Timing distributor for Eastern Canada; the DC 204 Sports Timer |
 | [Schwimmverband NRW](schwimmverband-nrw.md) | North Rhine-Westphalia, Germany | No equipment; the regional association, formerly the WSV, in which the DSV-Standard was written |
 | [GeoLogix](geologix.md) | Berne, Switzerland | No equipment; developed and supported Splash Meet Manager from 2003 to about 2015 |
 | [Kyrotech](kyrotech.md) | Northbrook, Illinois, United States | The Tec-Timer printing meet timer, advertised in the press between 1984 and 1993 |

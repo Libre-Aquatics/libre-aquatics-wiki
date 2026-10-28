@@ -226,6 +226,7 @@ export const nav: NavNode[] = [
               { title: 'Daktronics RTOP', page: 'equipment/swimming/relay-judging/daktronics.md' },
               { title: 'Omega OSB6', page: 'equipment/swimming/relay-judging/osb6.md' },
               { title: 'Omega OSB-3', page: 'equipment/swimming/relay-judging/osb-3.md' },
+              { title: 'Dexstar DC 204 Sports Timer', page: 'equipment/swimming/relay-judging/dc-204-sports-timer.md' },
             ],
           },
           {
@@ -639,6 +640,7 @@ export const nav: NavNode[] = [
           { title: 'i-Judge', page: 'software/i-judge.md' },
           { title: 'Display Results', page: 'software/display-results.md' },
           { title: 'Rezman', page: 'software/rezman.md' },
+          { title: 'Run Event', page: 'software/run-event.md' },
           { title: 'TriCaster', page: 'software/tricaster.md' },
           { title: 'ARES-Print', page: 'software/ares-print.md' },
           { title: 'ARES Diving', page: 'software/ares-diving.md' },
@@ -740,6 +742,7 @@ export const nav: NavNode[] = [
       { title: 'Colorado Time Systems', page: 'vendors/colorado-time-systems.md' },
       { title: 'Daktronics', page: 'vendors/daktronics.md' },
       { title: 'Deutscher Schwimm-Verband', page: 'vendors/deutscher-schwimm-verband.md' },
+      { title: 'Dexstar Communications', page: 'vendors/dexstar-communications.md' },
       { title: 'FINIS', page: 'vendors/finis.md' },
       { title: 'GeoLogix', page: 'vendors/geologix.md' },
       { title: 'Hy-Point Software', page: 'vendors/hy-point-software.md' },

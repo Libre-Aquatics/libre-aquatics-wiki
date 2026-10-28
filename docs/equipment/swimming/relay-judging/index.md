@@ -187,7 +187,10 @@ at the international meets it times.[^dak-compat][^swimswam]
 
 The [Colorado Time Systems RJP](cts.md) article covers the RJP and RJPLD lines and the
 [Daktronics RTOP](daktronics.md) article covers the RTOP models in full; this page holds
-the shared background on how the platforms are judged and ruled on.
+the shared background on how the platforms are judged and ruled on. The
+[DC 204 Sports Timer](dc-204-sports-timer.md), sold by a Canadian Swiss Timing distributor, is not
+a platform: it connects a touchpad and a platform to a PC to show takeover margins in
+training.[^dc204]
 
 ## See also
 
@@ -212,3 +215,4 @@ the shared background on how the platforms are judged and ruled on.
 [^uil]: [University Interscholastic League, Protocols for Electronic Relay Judging Equipment](https://www.uiltexas.org/swimming-diving/page/uil-protocols-for-electronic-relay-judging-equipment) (judge assignments and confirmation thresholds by equipment type).
 [^swimswam]: [SwimSwam, Why Was Australia's -0.03 Relay Start Not A DQ? A Rules Deep Dive](https://swimswam.com/why-was-australias-0-03-relay-start-not-a-dq-a-rules-deep-dive/) (the manufacturer-consulted differential and Omega's reported minus 0.03 second tolerance).
 [^swimmingworld]: [Swimming World, Suspend the Use of Electronic Relay Take-Off Platforms](https://www.swimmingworldmagazine.com/news/suspend-the-use-of-electronic-relay-take-off-platforms/) (2011 editorial; the 2008 Stanford disqualification).
+[^dc204]: [Dexstar Communications, DC204 Sports Timer](http://www.integratedsports.net/dexstar/products/dc204.php).

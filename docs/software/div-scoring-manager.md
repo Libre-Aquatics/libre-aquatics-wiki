@@ -105,7 +105,7 @@ and ISS MMS Diving's (5.x).
 DIV Scoring Manager is a Windows program for running diving competitions, sold by
 [Swiss Timing](../vendors/swiss-timing.md) and written for it by
 [Integrated Sports Systems](../vendors/integrated-sports-systems.md) (ISS).[^manual][^iss] It covers
-a meet from entries and dive sheets to final results. A separate scoring program, Run Event,
+a meet from entries and dive sheets to final results. A separate scoring program, [Run Event](run-event.md),
 takes judges' awards from Omega keypads or networked tablets, and the results go to
 scoreboards, video displays, reports and an XML file in the FINA format.[^manual] Its first version
 is dated April 2014, and the current manual, version 1.9, January 2022.[^manual]
