@@ -215,6 +215,7 @@ export const nav: NavNode[] = [
                 ],
               },
               { title: 'Colorado Time Systems Dolphin Wireless Stopwatch Timing System', page: 'equipment/swimming/semi-automatic/dolphin.md' },
+              { title: 'DIGI Sport-Event-Timer', page: 'equipment/swimming/semi-automatic/digi-sport-event-timer.md' },
             ],
           },
           {
@@ -286,6 +287,12 @@ export const nav: NavNode[] = [
                 title: 'ALGE-Timing',
                 children: [
                   { title: 'TM-SWIM', page: 'equipment/swimming/timers/alge-tm-swim.md' },
+                ],
+              },
+              {
+                title: 'Other',
+                children: [
+                  { title: 'ZES99', page: 'equipment/swimming/timers/zes99.md' },
                 ],
               },
             ],
@@ -623,6 +630,10 @@ export const nav: NavNode[] = [
           { title: 'WinSwim', page: 'software/winswim.md' },
           { title: 'Swimify', page: 'software/swimify.md' },
           { title: 'EasyWk', page: 'software/easywk.md' },
+          { title: 'EasyClub', page: 'software/easyclub.md' },
+          { title: 'EasyFW', page: 'software/easyfw.md' },
+          { title: 'EasyVis', page: 'software/easyvis.md' },
+          { title: 'EasyAnzeige', page: 'software/easyanzeige.md' },
           { title: 'CPS-Schwimm', page: 'software/cps-schwimm.md' },
           { title: 'Aquabec', page: 'software/aquabec.md' },
           { title: 'SynchroMM', page: 'software/synchromm.md' },
@@ -762,6 +773,7 @@ export const nav: NavNode[] = [
       { title: 'Schwimmverband NRW', page: 'vendors/schwimmverband-nrw.md' },
       { title: 'Spectrum Aquatics', page: 'vendors/spectrum-aquatics.md' },
       { title: 'Splash Software', page: 'vendors/splash-software.md' },
+      { title: 'Sportronic', page: 'vendors/sportronic.md' },
       { title: 'Seagull Enterprises', page: 'vendors/seagull.md' },
       { title: 'Sportyme', page: 'vendors/sportyme.md' },
       { title: 'Stramatel', page: 'vendors/stramatel.md' },

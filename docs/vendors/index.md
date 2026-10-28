@@ -68,6 +68,7 @@ touchpad accessory.
 | [Wylas Timing](wylas-timing.md) | Not established | A wireless timing system for six to ten lanes, with its own screen displays |
 | [Take Your Mark](take-your-mark.md) | Not established | A timing console reached by shared file rather than by cable |
 | [BestBet](bestbet.md) | Not established | A timing console documented only by comparison with the Colorado Time Systems 4 |
+| [Sportronic](sportronic.md) | Germany | A swimming timing system with an STM-11 control unit, and transponder lap counting |
 | [Stramatel](stramatel.md) | Le Cellier, France | The Aquasport V swim timer, Aquaswim software and Aquatouch touchpads |
 | [Time Drops](time-drops.md) | Walnut Creek, California, United States | A wireless timing system of keyfob buttons and a tablet controller |
 | [Seagull Enterprises](seagull.md) | Los Altos and Palo Alto, California, United States | No equipment of its own; Omega's US and Canadian representative in the 1970s, which sold the OSM-4 and OSM-5 |
