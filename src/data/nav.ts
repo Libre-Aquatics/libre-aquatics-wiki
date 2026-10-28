@@ -281,6 +281,12 @@ export const nav: NavNode[] = [
                   { title: 'PowerTime', page: 'equipment/swimming/timers/powertime.md' },
                 ],
               },
+              {
+                title: 'ALGE-Timing',
+                children: [
+                  { title: 'TM-SWIM', page: 'equipment/swimming/timers/alge-tm-swim.md' },
+                ],
+              },
             ],
           },
           {

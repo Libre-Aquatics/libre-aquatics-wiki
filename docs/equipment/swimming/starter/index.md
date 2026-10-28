@@ -51,8 +51,8 @@ each platform.
 This section compares the start tones of the systems the wiki covers, from
 manufacturer documents and from recordings measured for the wiki.
 
-Manufacturers describe their start signals in general terms and do not publish
-frequencies. Colorado Time Systems (CTS) calls its start signal a dual-tone blast.
+Most manufacturers describe their start signals in general terms and do not publish
+frequencies; ALGE-Timing is the exception among the systems covered here. Colorado Time Systems (CTS) calls its start signal a dual-tone blast.
 The blast lasts half a second on the SS2 and the original Infinity, and a quarter
 second on the Championship, Championship Elite, and Infinity
 Pro.[^f503][^f849][^f875][^f1064][^f1063] The Championship Elite and Infinity Pro can
@@ -60,7 +60,10 @@ replace this classic CTS beep with an alternate beep, and the Championship Elite
 describes the alternate as the shorter of the two.[^f1064][^f1063] The Daktronics HS-200 offers two swimming tones and
 a gunshot emulation without describing either tone.[^dak] Swiss Timing units select a
 sound type: the StartTime II chooses between a sampled gunshot and a modulated tone,
-and the StartTime V uses a bang as its default start sound.[^st2][^st5]
+and the StartTime V uses a bang as its default start sound.[^st2][^st5] On the ALGE
+[TM-SWIM](../timers/alge-tm-swim.md), the operator sets the start tone's frequency and
+its length on the lane speakers in the SwimTime software, and the default frequency
+shown in the manual is 1800 Hz.[^algeswim]
 
 The measurements below come from phone recordings of start systems in use at pools,
 analysed for the wiki in 2026. Each clip is rebuilt from those measurements. It
@@ -74,6 +77,7 @@ the start system generates.
 | CTS alternate beep | Championship Elite | 892.5 Hz and 1020 Hz at similar levels; the waveform repeats 63.75 times a second | About 0.15 s |
 | Swiss Timing tone | StartTime V | The same two frequencies as the CTS alternate beep | About 0.15 s |
 | Daktronics tone | HS-200 | 715 Hz with odd harmonics, the strongest at 2145 Hz | About 0.4 s |
+| ALGE tone | ALGE system, model not identified | 1796 Hz, close to a pure sine; harmonics 38 dB and more below it | 0.2–0.3 s; 0.2 s default (see below) |
 
 The Championship Elite and Infinity Pro recordings both measured 600 Hz to within
 0.1 Hz. The Championship unit recorded sounded about 2 percent lower, at 587 and
@@ -84,6 +88,19 @@ Swiss Timing tone match to within 0.05 Hz and sound alike. The Swiss recording r
 for about 0.29 seconds, which is taken here as an echo from the far end of the pool,
 so the clip uses the length of the CTS alternate beep. Two recordings of the HS-200 measured 714.6
 and 714.8 Hz.
+
+The ALGE tone is the highest of the recorded tones, about an octave and a half above
+the CTS classic beep, and the plainest in sound. Seven recordings of it measured between
+1793.6 and 1797.6 Hz, about 0.2 percent under the 1800 Hz default. The system's
+model was not identified, and the recordings do not show whether they come from one
+installation or several. The tone stopped after about 0.23–0.25 seconds in three
+recordings and about 0.30 seconds in two, which suggests that different length
+settings were in use. The manual gives the default speaker length as 20 but is
+inconsistent about the unit: the settings screen labels it in seconds and the text
+says tenths of a second, and neither reading fits a start tone. Read as hundredths it
+is 0.2 seconds, which matches the shorter recordings. The clip is built at the two
+defaults, 1800 Hz and 0.2 seconds, with the harmonic levels measured in the
+recordings.[^algeswim]
 
 <div class="wiki-figure-row">
 <figure class="wiki-figure">
@@ -101,6 +118,10 @@ and 714.8 Hz.
 <figure class="wiki-figure">
   <audio controls preload="metadata" src="/assets/start-tone-daktronics-hs-200.mp3" aria-label="Daktronics HS-200 start tone"><a href="/assets/start-tone-daktronics-hs-200.mp3">Daktronics HS-200 start tone (MP3)</a></audio>
   <figcaption>Daktronics HS-200 tone: a steady 715 Hz tone, lower and smoother than the CTS beeps, lasting about 0.4 seconds.</figcaption>
+</figure>
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-alge.mp3" aria-label="ALGE start tone"><a href="/assets/start-tone-alge.mp3">ALGE start tone (MP3)</a></audio>
+  <figcaption>ALGE tone, rebuilt from recordings of an ALGE system: a high, pure tone at the 1800 Hz, 0.2-second defaults.</figcaption>
 </figure>
 </div>
 
@@ -150,9 +171,37 @@ and 714.8 Hz.
      the first probably reflect an off-axis microphone. Which of the HS-200's two swimming
      tones this is was not recorded. Two non-harmonic peaks (3185 and 4615 Hz) in the
      first take were treated as artifacts.
+     ALGE (added October 2026). Seven phone videos, 4 to 6 s each, supplied as an ALGE starter
+     with the model not known and no record of whether they are one unit or several. Crowd
+     noise is heavy, so the tone was located with a narrow band envelope around 1.8 kHz,
+     median-filtered to ignore clicks, rather than broadband energy. Fundamentals per take:
+     1795.58, 1793.63, 1795.99, 1797.62, 1796.92, 1797.58 and 1796.12 Hz (the seventh, the
+     cleanest, 34 dB over the crowd), median 1796.12 Hz, total spread 0.22 percent, which
+     reads as one frequency setting. Second harmonic at -30 to -46 dB (median -38.1), third
+     at -34 to -60 dB (median -49.6), fourth near -65 dB or in the noise and left out. Peaks seen about 18 to 30 Hz either side of the fundamental did not stay
+     at a fixed offset across takes and sit at the window's main-lobe edge, so they were
+     taken as leakage and room noise, not modulation. No subharmonic and no repeat grid
+     below the fundamental, unlike the CTS tones. Onsets are sharp (about 5 ms) where the
+     signal is clean. Length: the main drop came at about 230, 245, 250, 300, 315 and 530 ms
+     in six takes (one too noisy to read); the 230 and 300 ms takes both have clean stops, so
+     the spread looks like different settings rather than measurement error. The 530 ms take
+     holds level with interference dips, which fits several lane speakers or the room
+     carrying the tone on, though that is inferred.
+     Manufacturer: the ALGE Swimming Timing System manual (E24-08-29) makes frequency and
+     speaker length software settings on the TM-SWIM; its Advanced settings screenshot (p26)
+     shows defaults of 1800 Hz and a speaker length of 20 (headset 50). The screenshot labels
+     the length in seconds and the text says tenths; both give an implausible tone (20 s or
+     2 s). Hundredths gives 0.20 s, which matches the 230-250 ms cluster once room overhang
+     is allowed for. The clip is set at the defaults, 1800 Hz and 200 ms, not at the measured
+     1796 Hz; harmonic levels are the measured medians. The 300 ms takes would then be a
+     setting of 30.
+     That the recordings come from a TM-SWIM rather than an older ALGE system (the 1997 Timer
+     S4 with a Start Acoustic SA1 driving horns) is inferred from the frequency match only.
+     Measured 1796 Hz is 0.2 percent under the 1800 Hz nominal in every take; why is unknown.
      Still needed: an HS-200 recording with a clean stop and its tone setting noted; an
      SSE or Infinity Pro classic beep with its end intact; another Swiss recording with
-     the model noted; a second Championship Start unit; any line-out recording. -->
+     the model noted; a second Championship Start unit; an ALGE recording with the system
+     model and its SwimTime length setting noted; any line-out recording. -->
 
 ## Governing-body requirements
 
@@ -326,3 +375,4 @@ whole chain, and each generation has its own operating manual.
 [^dak]: [Daktronics, Horn Start HS-200 Owner's Manual (ED-12935, Rev 17, 17 March 2021)](https://www.daktronics.com/web-documents/customer-service-manuals/ed-12935.pdf).
 [^st2]: Swiss Timing, StartTime II User's Manual (document 3399.502.02, Version 2.1, July 2007).
 [^st5]: [Swiss Timing, StartTime V User's Manual (3481.560.02, Version 1.2, March 2018)](https://www.swisstiming.com/fileadmin/Resources/Instruction_Manuals/3481.560.02_STV_Egun_User_Manual.pdf).
+[^algeswim]: [ALGE-Timing, Swimming Timing System Manual (Version E24-08-29)](https://alge-timing.com/downloads/userGuides/Swimming-BE.pdf), 4.5.1.4.

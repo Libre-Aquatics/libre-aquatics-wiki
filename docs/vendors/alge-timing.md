@@ -1,6 +1,6 @@
 ---
 title: ALGE-Timing
-updated: 2026-10-01
+updated: 2026-10-28
 tags:
   - Equipment
   - Reference
@@ -9,7 +9,7 @@ infobox:
   - label: Industry
     value: Sports timing
   - label: Key products
-    value: SWIM 2000 and Timy timing consoles; semi-automatic swimming packages
+    value: SWIM 2000, Timy and TM-SWIM timing consoles; semi-automatic swimming packages
   - label: Website
     value: alge-swimusa.com
     href: 'https://www.alge-swimusa.com/'
@@ -47,6 +47,15 @@ Still to research: the company's full name, nationality and founding, none of wh
 established here; what the SWIM 2000 and Timy are as hardware; the relationship between
 ALGE-Timing and the ALGE-Swim USA distributor whose site the wiki cites; and whether any
 ALGE equipment is installed in the pools this wiki otherwise covers.
+
+Start tone (October 2026): seven phone videos of an ALGE system in use were measured for
+the start-systems overview and a clip rebuilt from them. The tone came out near 1796 Hz,
+against the 1800 Hz default in ALGE's Swimming Timing System manual (E24-08-29), where the
+TM-SWIM's start frequency and speaker length are software settings. The system's model was
+not identified; the full measurements and the manual's unclear length unit are covered in
+the research comment on that overview page. That manual, the SU3 start unit manual
+(E-23-11-02) and a 1997 Timer S4 installation guide (E-97-03-24) are now held under
+sources/vendors/alge-timing/, with every product they name listed in the source tracker.
 -->
 
 This article is a stub. ALGE-Timing is a sports timing manufacturer whose SWIM 2000 and
@@ -58,3 +67,14 @@ It also sells a semi-automatic package for eight lanes plus the start channel, i
 and radio versions; see the
 [semi-automatic timing overview](../equipment/swimming/semi-automatic/index.md) for that
 class of equipment and the [vendors](index.md) register for the companies this wiki covers.
+
+Its swim timing controller is the [TM-SWIM](../equipment/swimming/timers/alge-tm-swim.md),
+which sounds the start tone over the lane speakers at a frequency and length set in software.
+
+<figure class="wiki-figure">
+  <audio controls preload="metadata" src="/assets/start-tone-alge.mp3" aria-label="ALGE start tone"><a href="/assets/start-tone-alge.mp3">ALGE start tone (MP3)</a></audio>
+  <figcaption>An ALGE start tone, rebuilt from recordings of an ALGE system: a pure tone at the 1800 Hz, 0.2-second defaults.</figcaption>
+</figure>
+
+The [start-systems overview](../equipment/swimming/starter/index.md#start-tones) compares
+this tone with the CTS, Swiss Timing and Daktronics tones.
