@@ -24,8 +24,10 @@ covers club administration, and EasyFW handles open-water timing (easywk.de/doc/
 The program reads entry files in several formats, produces results and protocols, and prints
 start cards and certificates.
 
-Not checked: which DSV-Standard versions it supports, its Lenex version, and current
-release. The manual at easywk.de/doc/DokuEasyWk.pdf was not read.
+DSV-Standard: a definition list for the Coesfeld cup of 14 November 2026 (sources/samples/dsv/,
+from sccoesfeld.org) was written by EasyWk 5.25, dated 24 March 2024, on 14 July 2026, in
+Format 7; see dsv-standard.md. Not checked: Format 8 support, its Lenex version, and the
+current release. The manual at easywk.de/doc/DokuEasyWk.pdf was not read.
 
 Sources: wiki.swimrankings.net/index.php/swimrankings:Lenex; easywk.de; stickan.info;
 easywk.de/doc/DokuEasyWk.pdf (not read).
