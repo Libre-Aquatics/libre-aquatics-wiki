@@ -1,6 +1,7 @@
 ---
 title: Seiko PS-1300 Electronic Start Sound Generator
 seoTitle: Seiko PS-1300 Start Sound Generator
+description: "The Seiko PS-1300, a discontinued electronic start sound generator for swimming: hardware, operation, audio, specifications, and comparison with the PS-1200 and PS-1400."
 tags:
   - Equipment
   - Timing

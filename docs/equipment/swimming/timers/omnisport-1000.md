@@ -1,5 +1,6 @@
 ---
 title: Daktronics OmniSport 1000
+description: "The Daktronics OmniSport 1000, a discontinued swim timing console and the earliest of the OmniSport line: its results interface and comparison with later consoles."
 tags:
   - Equipment
   - Timing

@@ -1,5 +1,6 @@
 ---
 title: Swiss Timing lane speakers
+description: "Swiss Timing lane speakers: in-block loudspeakers built into the starting block, mobile loudspeaker sets, governing-body requirements, connections, and specifications."
 tags:
   - Equipment
   - Timing

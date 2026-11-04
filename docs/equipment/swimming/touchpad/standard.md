@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems Standard Touchpad
+description: "The discontinued CTS Standard touchpad: pneumatic operation and sensitivity, gutter and flat-wall models, mounting, care, and comparison with the AquaGrip touchpad."
 tags:
   - Equipment
   - Timing

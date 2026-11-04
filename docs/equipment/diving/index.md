@@ -1,5 +1,6 @@
 ---
 title: Diving equipment
+description: "Diving equipment: the judging and scoring gear that turns a panel's marks into a result, the displays that show it, and the pool-surface equipment behind the dive."
 tags:
   - Equipment
   - Diving

@@ -2,7 +2,7 @@
 title: Start systems
 seoTitle: Swimming start systems
 description: "Swimming start systems: the start tone (beep or horn) and strobe that begin a race, the speaker behind each block, the rules, start-tone recordings, and models."
-updated: 2026-10-13
+updated: 2026-11-03
 tags:
   - Equipment
   - Timing
@@ -60,7 +60,7 @@ replace this classic CTS beep with an alternate beep, and the Championship Elite
 describes the alternate as the shorter of the two.[^f1064][^f1063] The Daktronics HS-200 offers two swimming tones and
 a gunshot emulation without describing either tone.[^dak] Swiss Timing units select a
 sound type: the StartTime II chooses between a sampled gunshot and a modulated tone,
-and the StartTime V uses a bang as its default start sound.[^st2][^st5] On the ALGE
+and the StartTime V has BANG as the start sound of its athletics and speed skating presets and BIP in its swimming preset.[^st2][^st5] On the ALGE
 [TM-SWIM](../timers/alge-tm-swim.md), the operator sets the start tone's frequency and
 its length on the lane speakers in the SwimTime software, and the default frequency
 shown in the manual is 1800 Hz.[^algeswim]
@@ -159,7 +159,7 @@ recordings.[^algeswim]
      recording of the same tone from an unidentified unit measured 63.75 Hz, about 160 ms.
      Which of the two notes sounds louder swung from -10 to +10 dB between takes, so the
      balance at the source is probably near equal. The recordist identified the Swiss unit as a
-     StartTime V, which defaults to a bang, so it was on a non-default sound. The StartTime
+     StartTime V, whose swimming preset uses BIP rather than a bang, so the tone may be that preset. The StartTime
      II's "modulated tone" setting and the selectable sound types of the IV and V are
      consistent with this tone but no Swiss document gives its frequencies. Why the
      CTS alternate and the Swiss tone match to 0.05 Hz is unexplained.

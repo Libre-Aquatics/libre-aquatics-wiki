@@ -20,7 +20,10 @@ on the same terms as the articles around them.
 Non-original images are used only where they are in the public domain or under a free
 licence that permits commercial use and modification (CC0, or CC BY without a
 non-commercial or no-derivatives clause). Licences are verified on each file's own
-description page before use.
+description page before use. Screenshots of vendor software are the exception: they are used
+under fair use to document how the software works. The interface belongs to the publisher, the
+screenshots are not released under the wiki's licence, and reusers need their own basis for
+copying them.
 
 ## Images
 
@@ -32,9 +35,11 @@ description page before use.
 | Gen7 Serial Timer underside and rating label | [Gen7 Serial Timer](../equipment/swimming/timers/gen7-serial.md) | Ethan Herstedt (original photograph) | CC BY-SA 4.0 |
 | Gen7 Serial Timer front panel, indicators dark | [Gen7 Serial Timer](../equipment/swimming/timers/gen7-serial.md) | Ethan Herstedt (original photograph) | CC BY-SA 4.0 |
 | Gen7 Serial Timer front panel, charging indicator lit | [Gen7 Serial Timer](../equipment/swimming/timers/gen7-serial.md) | Ethan Herstedt (original photograph) | CC BY-SA 4.0 |
+| DisplayLink Plus License Status and Activation window | [DisplayLink Plus](../software/displaylink-plus.md) | Colorado Time Systems (software interface); screenshot by Ethan Herstedt | Fair use, to document the software; not covered by CC BY-SA 4.0 |
+| DisplayLink Plus Product Not Activated prompt | [DisplayLink Plus](../software/displaylink-plus.md) | Colorado Time Systems (software interface); screenshot by Ethan Herstedt | Fair use, to document the software; not covered by CC BY-SA 4.0 |
 
-No non-original images are currently in use. When one is added, it will be listed
-here with its author, licence, and source URL.
+Any further non-original image will be listed here with its author, licence, and source
+URL.
 
 ## Sound clips
 

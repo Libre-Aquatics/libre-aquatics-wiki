@@ -1,5 +1,6 @@
 ---
 title: Seiko Electronic Starting System
+description: "The Seiko Electronic Starting System (PS-110J), a portable electronic starter that replaces a blank-cartridge pistol: models, hardware, audio, connections, and parts."
 tags:
   - Equipment
   - Timing

@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems
+description: "Colorado Time Systems (CTS), an American aquatic timing, scoring and display manufacturer in Loveland, Colorado, founded in 1972: history, products, and competition use."
 updated: 2026-10-01
 sameAs:
   - https://en.wikipedia.org/wiki/Colorado_Time_Systems

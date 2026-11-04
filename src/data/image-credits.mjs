@@ -25,6 +25,9 @@ export const IMAGE_CREDITS = {
   '/assets/gen7-serial-timer-underside.webp': OWN_PHOTO,
   '/assets/gen7-serial-timer-front-panel.webp': OWN_PHOTO,
   '/assets/gen7-serial-timer-front-panel-lit.webp': OWN_PHOTO,
+  // Screenshots of vendor software, used under fair use: not ours to license, so no licence is claimed.
+  '/assets/displaylink-plus-license-activation.webp': { creator: 'Colorado Time Systems', license: '' },
+  '/assets/displaylink-plus-not-activated.webp': { creator: 'Colorado Time Systems', license: '' },
 };
 
 // Short names for the licence URLs above, used in creditText and

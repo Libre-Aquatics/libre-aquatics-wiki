@@ -1,5 +1,6 @@
 ---
 title: International Sports Timing lane speakers
+description: "The International Sports Timing Under Block Speaker System, a lane speaker accessory for the SWIMSTART Electronic Start: design, specifications, and part numbers."
 tags:
   - Equipment
   - Timing

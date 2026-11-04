@@ -1,5 +1,6 @@
 ---
 title: Superior Swim Timing
+description: "Superior Swim Timing software and hardware: the laptop-based SST timing software, the USB SST timer, the Atlantis starter, lane speakers, and company history."
 updated: 2026-11-03
 tags:
   - Equipment

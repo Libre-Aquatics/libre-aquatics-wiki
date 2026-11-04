@@ -1,6 +1,7 @@
 ---
 title: Colorado Time Systems SS2 Electronic Start System
 seoTitle: CTS SS2 Electronic Start System
+description: "The discontinued Colorado Time Systems SS2 Electronic Start System, a 1990s loudspeaker start system: models, start module, operation, connections, and part numbers."
 tags:
   - Equipment
   - Timing

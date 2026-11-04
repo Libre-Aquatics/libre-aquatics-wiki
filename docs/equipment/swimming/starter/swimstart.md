@@ -1,6 +1,8 @@
 ---
 title: International Sports Timing SWIMSTART Electronic Start
 seoTitle: IST SWIMSTART Electronic Start
+description: "The IST SWIMSTART Electronic Start, a portable swim start system with PA, start tone, strobe and recall tone: setup, remote start, connections, care, and specs."
+updated: 2026-11-03
 tags:
   - Equipment
   - Timing
@@ -30,9 +32,10 @@ The SWIMSTART Electronic Start is a portable start system for swimming made by
 Inc., of Grand Rapids, Michigan. It packages a public-address system, a start
 tone, a 360 degree strobe, and a false-start recall tone in a battery-powered
 case that sits on the deck or straps to the backstroke
-flagpole.[^manual][^listing][^brochure] This article is a starting point; the
-overview of [starting systems](index.md) covers the shared background that applies to
-every starter.
+flagpole.[^manual][^listing][^brochure] It works alone or connected to a timing
+console.[^manual] The
+overview of [starting systems](index.md) covers the shared background that applies to every
+starter.
 
 ## Design and hardware
 
@@ -58,7 +61,10 @@ battery is charging, and flashing or off once the battery is fully
 charged.[^manual]
 
 Power comes from an internal 12 volt battery that IST rates at 12 to 14 hours
-per charge. Charging is from the supplied 110 V to 28 V AC wall transformer
+per charge in the manual and at 12 hours or more in the brochure.[^manual][^brochure] Units
+leave the factory partly charged, and IST suggests a full overnight charge before first use.
+Charging takes longer if the unit is in use while plugged in, and the unit must be switched
+off after use, since leaving it on drains the battery.[^manual] Charging is from the supplied 110 V to 28 V AC wall transformer
 through a connector near the switch, and the status light shows red until the
 battery is full.[^manual][^brochure] IST describes an intelligent charging
 circuit that prevents overcharging, so the unit can be left on charge, and says
@@ -71,6 +77,13 @@ backstroke flagpole, and no-tip feet let it sit directly on the
 deck.[^manual][^listing]
 
 ## Operation
+
+The speaker is fitted before first use. Its U-shaped bracket slides onto the mount on the
+right of the case and is held by a wing nut, the horn is turned until its long edges stand
+vertical, and the speaker's banana plug fits the top socket, its GND tab going to the black
+side.[^manual] Used alone, the unit is set on the deck or strapped to a pole and switched on;
+connected to a timing console, the start cable is fitted first, as described under
+[Connections](#connections).[^manual]
 
 The starter works the system from the microphone: a bar switch on the side
 opens the public address, pressing the small top button while holding the bar
@@ -86,14 +99,16 @@ The optional SWIMSTART Remote Start is a wireless transmitter and receiver that
 lets an official trigger the start tone, the recall, and the public address
 without a cable.[^manual][^brochure] It uses 900 MHz radio in the 903.3 to
 921.3 MHz band with eight selectable channels, and the receiver responds only to
-the transmitter's encoded start and audio signals, which IST says prevents an
-accidental start or stray audio.[^brochure] IST rates the range at more than
+the transmitter's encoded start and audio signals, which IST says guards against
+an accidental start or stray audio.[^brochure] IST rates the range at more than
 100 yards and states the radio is FCC approved and needs no operator
 license.[^brochure] The handheld transmitter runs on a 9 volt alkaline battery,
 with a low-battery warning and an estimated 20 hours of continuous transmission;
 the receiver is powered by the SWIMSTART.[^brochure] One transmitter can trigger
 receivers on two starts at once, and the package can be added to other
-electronic starts.[^brochure]
+electronic starts. Handing a transmitter each to the starter and the referee lets either one
+use the public address or send a recall, and coaches can use the same link to sound the
+start tone from elsewhere in the pool while teaching starts.[^brochure]
 
 ## Audio
 
@@ -111,7 +126,7 @@ accessories:
 ## Connections
 
 The start output is selectable between normally-open and normally-closed
-contacts on a three-hole socket: IST's own timing system, Colorado
+contacts on a three-hole socket on the left of the case: IST's own timing system, Colorado
 Time Systems, and Daktronics timing consoles use the normally-open side, and
 Omega timing consoles use the normally-closed side.[^manual] The socket has a
 center contact marked "common" for the cable's ground tab, and a rubber plug
@@ -123,7 +138,10 @@ sold separately.[^listing]
 For off-season storage, IST directs the user to fully charge the battery, then
 disconnect it from the wall transformer and wipe water spots from the case with
 glass cleaner and a soft cloth. After storage of a month or more, the battery
-should be charged again before the unit is used.[^manual]
+should be charged again before the unit is used.[^manual] The manual is not consistent on this
+point: an earlier section suggests keeping the unit plugged into a GFI outlet so that it is
+fully charged when next needed, and the brochure also allows storage on the charger. The
+off-season section is the more specific of the two.[^manual][^brochure]
 
 ## Specifications
 
@@ -142,11 +160,27 @@ should be charged again before the unit is used.[^manual]
 | Battery | Internal 12 V, 12 to 14 h per charge |
 | Mounting | Deck feet or backstroke flagpole straps |
 | Warranty | Five-year limited (two years on batteries) |
+| Remote transmitter | 5 × 2.75 × 1 in, 0.25 lb, 9 V battery, lanyard, ABS case |
+| Remote receiver | 5.5 × 3.5 × 1.25 in, 0.5 lb, ABS case, −97 dBm typical sensitivity |
 
 The warranty runs five years on the product and two years on the 12 volt
 battery; IST replaces the battery at cost for the remaining three years, and
 excludes in-deck wiring, deck plates, and wall plates, which carry a separate
-warranty.[^manual]
+warranty.[^manual] A warranty claim starts with a telephone diagnosis, and a unit that cannot
+be fixed that way is returned under a Return Material Authorization number at the owner's
+shipping cost. IST also describes an exchange service that sends a refurbished unit where one
+is available, for the balance of the original warranty.[^manual]
+
+## Part numbers and accessories
+
+The current listing gives no separate number for the unit, and as of 2026 shows it as sold
+out at US$1,150. It includes the charging cable and mounting straps.[^listing]
+
+- Replacement case speaker: `SPEAKER40W-M`[^40w]
+- Far-end speaker: `SPEAKER40W`[^farend]
+- Start cable: `SWSTRTCBL-25`, sold separately[^listing]
+- SWIMSTART Remote Start: transmitter and receiver package[^brochure]
+- [Under-block speaker system](../external-speaker/ist.md): no longer in the current catalog
 
 ## See also
 

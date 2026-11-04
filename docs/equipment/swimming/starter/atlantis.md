@@ -1,6 +1,7 @@
 ---
 title: Superior Swim Timing Atlantis Swimming Starter System
 seoTitle: SST Atlantis Swimming Starter System
+description: "The Superior Swim Timing Atlantis Swimming Starter System, a portable swim start system: product line, hardware, operation, audio, specifications, and part numbers."
 tags:
   - Equipment
   - Timing

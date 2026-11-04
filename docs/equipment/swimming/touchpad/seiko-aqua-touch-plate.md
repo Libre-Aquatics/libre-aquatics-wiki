@@ -1,5 +1,6 @@
 ---
 title: Seiko AQUA Touch Plate
+description: "The Seiko AQUA touch plate for swimming: model numbers, construction, sensing and wave rejection, mounting, competition use, and comparison with the full-frame plate."
 tags:
   - Equipment
   - Timing

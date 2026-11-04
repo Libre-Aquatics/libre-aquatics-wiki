@@ -1,6 +1,7 @@
 ---
 title: Colorado Time Systems Championship Start System (CHAMP-SSM)
 seoTitle: CTS CHAMP-SSM Championship Start System
+description: "CHAMP-SSM, the pre-2005 generation of the Colorado Time Systems Championship start system: naming, hardware, operation, and how it differs from the current SS model."
 tags:
   - Equipment
   - Timing

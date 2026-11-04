@@ -1,5 +1,6 @@
 ---
 title: Daktronics OmniSport 6000
+description: "The discontinued Daktronics OmniSport 6000, the top OmniSport swim timing console of the late 1990s: results interface, pace clock program, and console comparisons."
 tags:
   - Equipment
   - Timing

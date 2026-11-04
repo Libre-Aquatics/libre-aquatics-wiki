@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems Multizone Pads
+description: "Multizone Pads, a touch panel named in the 2008 Colorado Time Systems catalogue with no evidence of production: the listing, a patent application, and what CTS sold."
 updated: 2026-10-01
 tags:
   - Equipment

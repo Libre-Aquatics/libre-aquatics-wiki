@@ -1,5 +1,6 @@
 ---
 title: Daktronics
+description: "Daktronics, an American manufacturer of scoreboards and LED video displays based in Brookings, South Dakota: its history, products, swim timing, and competition use."
 updated: 2026-10-01
 sameAs:
   - https://en.wikipedia.org/wiki/Daktronics

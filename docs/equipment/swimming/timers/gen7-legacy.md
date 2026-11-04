@@ -1,7 +1,7 @@
 ---
 title: Colorado Time Systems Gen7 Legacy Timer
 description: "Colorado Time Systems Gen7 Legacy Timer (GEN7-TMR-L): reuse of existing CTS deck wiring, software, specifications, installation, and the Serial timer compared."
-updated: 2026-10-13
+updated: 2026-11-03
 tags:
   - Equipment
   - Timing
@@ -170,6 +170,18 @@ itself. If the laptop or tablet interface drops, the timer keeps running and wil
 available for replay. A second timer can still be added for redundancy, but it is not
 required as it was with a System 6 console.[^f1058][^blog]
 
+## Updating the software and firmware
+
+The Legacy user guide describes the same Available Timers window as the Serial guide: it
+shows each timer's firmware version and displays Update(s) Req'd when updates are
+pending.[^f1058] CTS's update guide covers Gen7 as a whole and does not name the Legacy timer.
+Its [procedure](gen7-serial.md#updating-the-software-and-firmware) treats Serial systems as a
+special case, adding a second batch of node updates and a longer run time, so a Legacy timer
+would be expected to take only the internal batch. That is an inference from the guide's
+wording, not a CTS statement.[^f1049] CTS's maintenance checklist groups the Gen7 with its
+other timers and marks firmware and software updates as a monthly task, repeated at the start
+of a season and before extended storage.[^checklist]
+
 ## Meet-management software
 
 Meet-management software supplies start lists to the timer and records the results it
@@ -284,6 +296,8 @@ opening the enclosure voids the warranty.[^f1058]
 ## References
 
 [^f1058]: [Colorado Time Systems, Gen7 Legacy Timer User Guide (F1058)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Gen7/Gen7LegacyTimerUserGuide_F1058.pdf).
+[^f1049]: [Colorado Time Systems, Gen7 Software Updates (F1049)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Gen7/Gen7_Software_Updates_F1049.pdf), v1.6.0, November 2020.
+[^checklist]: [Colorado Time Systems, Maintenance Checklist](https://www.coloradotime.com/hubfs/CTS%20Website%20%20Assets/Datasheets/Maintenance-Checklist.pdf), timers and controllers.
 [^product]: [Colorado Time Systems, Gen7 Swim Timing (Legacy)](https://coloradotime.com/products/gen7-swim-timing-legacy).
 [^blog]: [Colorado Time Systems, Serial or Legacy, Which Gen7 Timer is Right for You?](https://coloradotime.com/blog/serial-or-legacy-which-gen7-timer-is-right-for-you).
 [^patentdetect]: [US Patent 11,192,016 B2, Apparatus and method for the detection of timing components in swimming pools](https://patents.google.com/patent/US11192016B2/en) (assignee Everlast Climbing Industries, dba Colorado Time Systems).

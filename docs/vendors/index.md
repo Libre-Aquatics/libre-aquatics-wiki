@@ -1,6 +1,7 @@
 ---
 title: Vendors
 seoTitle: Aquatics timing and software vendors
+description: "The manufacturers and suppliers referenced across the wiki's equipment catalog, covering aquatic timing, touchpads, start systems, lane speakers and relay platforms."
 tags:
   - Reference
 ---

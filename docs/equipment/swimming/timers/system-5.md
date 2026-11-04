@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems System 5
+description: "The Colorado Time Systems System 5, a discontinued swim timing and scoring console: hardware, connectivity, meet software, specs, and comparison with System 6 and Gen7."
 updated: 2026-10-01
 tags:
   - Equipment

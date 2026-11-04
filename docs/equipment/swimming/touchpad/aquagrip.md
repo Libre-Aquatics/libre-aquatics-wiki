@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems AquaGrip Touchpad
+description: "The CTS AquaGrip touchpad: pneumatic operation and sensitivity, gutter and flat-wall models and sizes, mounting, care, and comparison with the Standard touchpad."
 tags:
   - Equipment
   - Timing

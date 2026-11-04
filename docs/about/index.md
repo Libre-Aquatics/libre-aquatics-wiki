@@ -1,5 +1,6 @@
 ---
 title: About Libre Aquatics Wiki
+description: "About Libre Aquatics Wiki, a free CC BY-SA reference for competitive aquatics equipment and meet operations: its scope, organization, naming, and how to contribute."
 tags:
   - Reference
 ---

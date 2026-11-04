@@ -1,5 +1,6 @@
 ---
 title: Daktronics OmniSport 2000
+description: "The Daktronics OmniSport 2000 multi-sport timing console: its role in swim timing, history, hardware, connectivity, operation, the 2000e model, and specifications."
 tags:
   - Equipment
   - Timing

@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems Infinity Start System
+description: "The discontinued Colorado Time Systems Infinity Start System (INF-SSM), a portable horn, strobe and PA unit: product line, design, operation, and connections."
 tags:
   - Equipment
   - Timing

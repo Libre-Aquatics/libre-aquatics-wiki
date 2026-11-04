@@ -2,7 +2,7 @@
 title: Backstroke start devices
 seoTitle: Backstroke ledges (start wedges)
 description: "Backstroke ledges and wedges: dimensions with a labelled diagram, World Aquatics, USA Swimming, NCAA and NFHS rules, history, Para use, and the devices on sale."
-updated: 2026-10-13
+updated: 2026-11-03
 tags:
   - Equipment
   - Timing
@@ -232,6 +232,40 @@ ledge starts reached the 10 m mark about 0.13 s sooner, with roughly 2.5% less
 variation and about 0.14 m greater head-entry distance than starts without a
 ledge.[^obl2]
 
+## Care and maintenance
+
+This section gathers what the manufacturers say about service life and checks; each product
+article gives its own cleaning and storage steps.
+
+None of the three manufacturers' documents gives a service life or a replacement interval, so
+replacement is left to the condition of the device. CTS says only that a unit installed
+correctly and properly maintained should give "many years of trouble free use".[^f1024] FINIS
+presents its care advice as a way of making the wedge and its grip tape last
+longer.[^finisfaq]
+
+The documents point to different wear items in each design:
+
+- CTS Backstroke Start Device: the troubleshooting table lists a worn or damaged spring, and
+  wear or damage to the shaft or bearings, among the causes of retraction faults, and sends
+  persistent problems to customer service. The unit is also inspected periodically for damage
+  and loosened connections.[^f1024]
+- FINIS Backstroke Start Wedge: the grip tape's adhesive can let go with regular use and with
+  large temperature changes. The tape, straps and hooks are sold as replacement
+  parts.[^finisfaq][^finistech]
+- Swiss Timing OBL2 Pro: a missing safety clasp is replaced at once, screws and springs are
+  checked periodically for oxidation, and a unit that has taken a severe impact stays out of
+  use if there is any doubt about it.[^obl2man]
+
+A ledge is a mechanical device, and none of these documents describes a calibration procedure.
+The relevant check is the height setting, described under [Dimensions](#dimensions).
+Swiss Timing makes the referees responsible for confirming that an installation suits the
+competition, and asks that the straps run under the rims, stay taut, and hold the footrest
+bar level. Its standard unit has five positions; taking out a locking screw opens further 2 cm
+steps, which are usable only if the competition's rules accept them.[^obl2man] On the CTS
+device the water line should fall within the red areas of the straps and wedge where the
+ruling body limits the wedge's height, and the first swimmer of a meet submerges the wedge to
+full strap extension so that the wet straps retract evenly.[^f1024]
+
 ## Products
 
 This section catalogs the devices of three manufacturers, whose designs differ mainly
@@ -271,6 +305,8 @@ care; this page is the shared overview they refer back to.
 [^ncaanews]: [NCAA, Rule on adjustable backstroke ledges approved in men's and women's swimming](https://www.ncaa.org/news/rule-on-adjustable-backstroke-ledges-approved-in-mens-and-womens-swimming/) (30 July 2026).
 [^wps]: [World Para Swimming, Rules and Regulations](https://www.paralympic.org/sites/default/files/2026-01/2025_12_06_World%20Para%20Swimming%20Rules%20and%20Regulations%201%20February%202026%20-FINAL%20_0.pdf) (February 2026), 10.2.7.5, 11.3.1 and facilities 1.2.7.11.
 [^obl2ds]: [Swiss Timing, OBL2 Pro Backstroke Ledge datasheet](https://www.swisstiming.com/fileadmin/Resources/Data/Datasheets/DOCM_AQ_OBL2_Pro_1015_EN.pdf) (October 2015; second generation, Doha approval December 2014).
+[^finisfaq]: [FINIS, Backstroke Start Wedge FAQ](https://www.finisswim.com/faq?title=backstroke-start-wedge) (care instructions).
+[^finistech]: [FINIS, Backstroke Start Wedge Tech Sheet](https://www.finisswim.com/documents/TechSheets/BackstrokeStartWedge_TechSheet.pdf) (replacement parts).
 [^obl2man]: Swiss Timing, OBL2-PRO Omega Backstroke Ledge User's Manual (3454.521.02, version 1.4, April 2026), water-level setting, positions and version history.
 [^f1024]: [Colorado Time Systems, Backstroke Start Device User Guide (F1024)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Training%20Tools/Tools/Backstroke_Start_Device_Manual_F1024.pdf).
 [^finis]: [FINIS, Backstroke Start Wedge](https://www.finisswim.com/Backstroke-Start-Wedge) (product page, part `1.30.031`).

@@ -1,6 +1,7 @@
 ---
 title: Software
 seoTitle: Aquatics competition software
+description: "Software for aquatic competitions: meet and team management programs, timing and display software, and the file formats that carry data between them."
 tags:
   - Software
 ---

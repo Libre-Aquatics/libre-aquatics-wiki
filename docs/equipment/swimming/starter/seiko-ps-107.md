@@ -1,5 +1,6 @@
 ---
 title: Seiko PS-107 Electronic Starter
+description: "The Seiko PS-107, a discontinued electronic starter that replaced the PS-105, adding a second selectable start sound and a semiconductor relay for the start contact."
 tags:
   - Equipment
   - Timing

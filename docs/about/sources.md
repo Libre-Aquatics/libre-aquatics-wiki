@@ -1,5 +1,6 @@
 ---
 title: Sources & citations
+description: "How Libre Aquatics Wiki cites its sources: licensing, linking official documents rather than hosting them, and the rules for images, trademarks, icons and fonts."
 tags:
   - Reference
 ---

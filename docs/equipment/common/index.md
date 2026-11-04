@@ -1,6 +1,7 @@
 ---
 title: Common equipment
 seoTitle: Common aquatics competition equipment
+description: "Equipment shared across swimming, diving, water polo, artistic swimming and open water: result displays, multi-sport console platforms, cabling, audio and data gear."
 tags:
   - Equipment
 ---

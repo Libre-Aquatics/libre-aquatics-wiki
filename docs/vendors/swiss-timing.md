@@ -1,5 +1,6 @@
 ---
 title: Swiss Timing
+description: "Swiss Timing, the Swatch Group timekeeping company in Corgémont, Switzerland, whose aquatics equipment appears under the Omega brand: history, products, and use."
 updated: 2026-10-01
 tags:
   - Equipment

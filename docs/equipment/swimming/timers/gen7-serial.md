@@ -1,6 +1,7 @@
 ---
 title: Colorado Time Systems Gen7 Serial Timer
-updated: 2026-10-13
+description: "The CTS Gen7 Serial Timer: connect-hub cabling, specifications, laptop setup and software updates, and how the console compares with the Gen7 Legacy timer."
+updated: 2026-11-03
 tags:
   - Equipment
   - Timing
@@ -185,6 +186,36 @@ timer keeps running and will finish the race, with the raw data available for
 replay. A second timer can still be added for redundancy, but is not required as it was
 with a System 6 console.[^datasheet][^f1034][^blog]
 
+## Updating the software and firmware
+
+Updates reach a Gen7 timer through the operator's computer. CTS's datasheet contrasts this
+with the System 6, which it lists as updating over Ethernet only: on Gen7, the laptop or
+tablet connects by Ethernet and passes the update to the timer.[^datasheet] The Gen7
+Swimming installer is offered under the Gen7 tab of CTS's software page.[^f1034] CTS's
+update guide, dated November 2020, gives this order of work:[^f1049]
+
+1. Prepare the equipment. Link the computer to the timer by Ethernet or wirelessly, run both
+   from AC power, and remove any USB cable from the timer. After pressing the power button,
+   wait for the LEDs in the logo sweep to pulse slowly for 30 seconds.
+2. Run the MSI installer on the computer, which requires Administrator privileges.
+3. Open Gen7 Swimming and connect to the timer. The software reports the pending updates, and
+   its Update screen estimates the time they will take, which CTS puts at up to 30 minutes
+   on larger Serial systems.
+4. Click Update. The software applies everything in sequence: the timer's internal software
+   and firmware as one batch, then the Serial nodes as a second. The connection may drop and
+   return while this runs.
+5. Check that every device's Version column matches its Latest column, then turn the timer
+   off and restart it.
+
+A Power Controller update works differently. The timer switches itself off
+when the update succeeds, and has to be turned back on before the software is restarted and
+the remaining updates continue.[^f1049]
+
+The Available Timers window, which opens when the software starts, shows each timer's firmware
+version and displays Update(s) Req'd when updates are pending.[^f1034] CTS's maintenance
+checklist marks updating timer firmware and software as a monthly task, repeated at the
+start of a season and before extended storage.[^checklist]
+
 ## Meet-management software
 
 Third-party meet-management programs supply start lists to the timer and record the
@@ -305,6 +336,8 @@ enclosure voids the warranty.[^f1034]
 ## References
 
 [^f1034]: [Colorado Time Systems, Gen7 Serial Timer User Guide (F1034)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Gen7/Gen7SerialTimerUserGuide_F1034.pdf).
+[^f1049]: [Colorado Time Systems, Gen7 Software Updates (F1049)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Gen7/Gen7_Software_Updates_F1049.pdf), v1.6.0, November 2020.
+[^checklist]: [Colorado Time Systems, Maintenance Checklist](https://www.coloradotime.com/hubfs/CTS%20Website%20%20Assets/Datasheets/Maintenance-Checklist.pdf), timers and controllers.
 [^datasheet]: [Colorado Time Systems, Gen7 Serial Swimming datasheet](https://web.archive.org/web/20260409172128/https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Datasheets/Gen7_Serial_Swimming.pdf), archived; CTS has withdrawn the original.
 [^product]: [Colorado Time Systems, Gen7 Swim Timing (Serial)](https://coloradotime.com/products/gen7-swim-timing-serial).
 [^blog]: [Colorado Time Systems, Serial or Legacy, Which Gen7 Timer is Right for You?](https://coloradotime.com/blog/serial-or-legacy-which-gen7-timer-is-right-for-you).

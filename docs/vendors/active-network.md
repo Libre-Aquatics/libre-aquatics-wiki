@@ -1,5 +1,6 @@
 ---
 title: The Active Network
+description: "The Active Network, an American event registration and participation software company, listed in this wiki because it has owned Hy-Tek Sports Software since 2008."
 tags:
   - Software
   - Reference

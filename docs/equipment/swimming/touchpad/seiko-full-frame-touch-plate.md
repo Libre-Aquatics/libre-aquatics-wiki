@@ -1,5 +1,6 @@
 ---
 title: Seiko Full-Frame Touch Plate
+description: "The Seiko 1,900 mm full-frame touch plate for swimming: model numbers, construction, sensing and wave rejection, mounting, and comparison with the AQUA touch plate."
 tags:
   - Equipment
   - Timing

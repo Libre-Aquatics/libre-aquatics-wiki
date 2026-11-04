@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems lane speakers
+description: "The Colorado Time Systems SP-6/45 under-block lane speaker, a 6 watt, 45 ohm reflex horn: its use across the CTS start line, the Fourjay 306 horn, and part numbers."
 tags:
   - Equipment
   - Timing

@@ -1,5 +1,6 @@
 ---
 title: Daktronics Pushbutton
+description: "The Daktronics pushbutton, a hand-held backup timing button: use with the OmniSport 2000, design, connection, cross-compatibility with CTS, care, and part numbers."
 updated: 2026-10-01
 tags:
   - Equipment

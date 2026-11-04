@@ -1,5 +1,6 @@
 ---
 title: Swiss Timing StartTime IV
+description: "The Swiss Timing StartTime IV electronic starting device: product line, hardware, audio, connections, specifications, and how it compares with the StartTime V."
 tags:
   - Equipment
   - Timing

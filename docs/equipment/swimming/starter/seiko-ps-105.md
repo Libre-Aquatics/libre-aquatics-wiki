@@ -1,5 +1,6 @@
 ---
 title: Seiko PS-105 Electronic Starter
+description: "The Seiko PS-105, a discontinued portable electronic starter with a pistol and separate speaker box, the earliest documented model of the line leading to the PS-110J."
 tags:
   - Equipment
   - Timing

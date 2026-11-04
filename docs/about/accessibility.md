@@ -1,5 +1,6 @@
 ---
 title: Accessibility
+description: "Accessibility on Libre Aquatics Wiki: the WCAG 2.1 AA conformance target, the site's accessibility features, known limitations, and how to report a problem."
 tags:
   - Reference
 ---

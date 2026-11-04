@@ -1,6 +1,7 @@
 ---
 title: Equipment
 seoTitle: Competitive aquatics equipment
+description: "A catalog of aquatic competition equipment: timing consoles, lane hardware, connectors and cabling, start systems, judging hardware, scoreboards and pool equipment."
 tags:
   - Equipment
 ---

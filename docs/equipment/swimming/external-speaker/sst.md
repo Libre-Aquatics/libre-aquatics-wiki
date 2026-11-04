@@ -1,5 +1,6 @@
 ---
 title: Superior Swim Timing lane speakers
+description: "Superior Swim Timing lane speakers and multi-lane speaker harnesses for the Atlantis Swimming Starter System: design, specifications, part numbers, and where sold."
 tags:
   - Equipment
   - Timing

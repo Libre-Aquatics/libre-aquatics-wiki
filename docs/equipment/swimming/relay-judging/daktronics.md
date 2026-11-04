@@ -1,5 +1,6 @@
 ---
 title: Daktronics RTOP
+description: "Daktronics RTOP relay take-off platforms: how they sense a swimmer's departure, exchange judging and the zero point, OmniSport 2000 use, mounting, and models."
 tags:
   - Equipment
   - Timing

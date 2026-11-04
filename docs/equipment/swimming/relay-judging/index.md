@@ -2,7 +2,7 @@
 title: Relay take-off platforms
 seoTitle: Swimming relay take-off platforms
 description: "Relay take-off platforms for swimming, including the CTS RJP and Daktronics RTOP: how exchanges are judged automatically, the rules, and disputed results."
-updated: 2026-10-13
+updated: 2026-11-04
 tags:
   - Equipment
   - Timing
@@ -89,6 +89,86 @@ for example, assign at least two take-off judges, require judge confirmation of 
 negative reading on non-Omega equipment (below minus 0.03 on Omega equipment), and do
 not charge a violation on a reading of 0.00 or better unless an official observed
 contact with the block.[^uil]
+
+### What a take-off judge watches
+
+This section covers judging an exchange by eye, as officials do where no equipment is used
+and alongside it where the rules still call for a judge.
+
+Each rulebook asks the same question: is the outgoing swimmer still on the block at the
+instant of the incoming swimmer's touch? World Aquatics gives that decision to each lane's
+starting-end inspector, one of the inspectors of turns, and the referee also appoints officials
+to make it.[^wa-sw] Its quick-reference card for officials, in force from March 2026, lists the
+offence under rule 10.4.5 as "Feet lost touch with the starting platform before the preceding
+team-mate touched the wall".[^wa-card] Under USA Swimming rules the referee assigns relay take-off judges, whose
+decision covers the same moment.[^usaswim]
+
+Position is defined by the sight line. USA Swimming fixes no spot on the deck; its judge
+needs a clear view of two things at once, the departing feet and the incoming touch.[^usaswim]
+USA Swimming's championships and trials go further, with a timer in each lane at the start
+end doubling as a take-off judge, and four more take-off judges along the sides, two per
+side.[^usas26] Its Guide to Officiating, last revised in 2006, names two posts: the lane judge
+beside the block, and the side judge, who watches a row of lanes from the pool edge. A side
+judge takes two to four lanes and a lane judge one to four, and the guide prefers giving
+lane judges the smaller share.[^usaguide] The guide treats double confirmation as the normal
+practice, while the current rulebook applies it only where dual judging is used.[^usaguide][^usaswim]
+The NFHS manual for high school officials is more specific about the spot. Its judge stands
+close to the corner of the side wall and the end wall, and covers the half of the pool
+nearer to that corner. At championship meets one judge takes four lanes at most.[^nfhs-om]
+
+The rulebooks name what must be seen but not the order of looking. USA Swimming's officials'
+material makes the order a requirement. Its Situations and Resolutions, in the March 2025
+version, rejects a call where the judge saw the touch first and only then found the next
+swimmer gone. A swimmer can leave legally in the moment the judge's eyes are moving, so the
+judge has to see the feet come off the block before looking at the wall. That keeps the benefit
+of the doubt with the swimmer.[^usasit]
+
+USA Swimming's 2006 guide and the NFHS manual describe the same sequence. The judge's eyes begin
+on the feet of the swimmer leaving the block. When those feet come off the platform, the eyes drop to the wall to see
+whether the arriving swimmer has touched.[^usaguide][^nfhs-om] The guide's shorthand is
+"toenails to fingernails", and it suggests noting beforehand where the swimmer's feet sit,
+at the front of the block or at the back for a step-up take-off.[^usaguide]
+
+A 2019 standard instruction issued with USA Swimming take-off forms calls the same sequence
+"Toes to Touch". It also advises watching the field approach, to see which lanes will arrive
+first, and warns of the recoil, in which a swimmer touches and bounces straight off the
+wall.[^rto]
+
+Situations and Resolutions also settles several related cases:[^usasit]
+
+- An incoming swimmer who misjudges the finish and adds a stroke does not excuse the exchange.
+  If the next swimmer has gone before the touch, the relay is disqualified.
+- With electronic judging in use, a touch on the top of the wall that misses the pad does not
+  complete the leg.
+- With an in-water start, leaving the wall before the touch disqualifies the relay,
+  unless the swimmer goes back to the original position on the wall and starts from there.
+- A take-off from the adjustable back plate alone is illegal. One foot has to be on the platform
+  ahead of the plate during the exchange.
+
+Medley relays add a further task for the referee and
+starter in the NFHS scheme: once the swimmers are in the water, they also check that the right
+stroke is being swum.[^nfhs-om]
+
+Recording and signalling differ between bodies, and between single and dual judging:
+
+- USA Swimming, one judge: the official raises a hand overhead immediately on seeing the
+  infraction. Without that signal there is no disqualification, unless the meet runs under
+  World Aquatics procedures.[^usaswim]
+- USA Swimming, dual judging: the lane and side judges each put the infraction in writing and
+  give no hand signal. The relay is disqualified only if the side judge confirms the
+  infraction the lane judge reported.[^usaswim]
+- NFHS: without dual confirmation the hand goes up at once. With it, the judges record
+  independently, and the open-palm signal waits until the heat's final swimmer has entered
+  the water.[^nfhs-om]
+
+North Carolina Swimming, a USA Swimming local committee, teaches a routine for the paper form.
+Before the heat the judge fills in the event, heat, name, assigned lanes, and whether the
+position is side or lane. Every swimmer in those lanes is then marked, X for an early take-off
+and O for a legal one, with no talking until the heat is over. After the last swimmer has
+left the blocks the two judges compare forms, and a confirmed early take-off goes to the chief
+judge or deck referee.[^ncs] The USA Swimming guide and the NFHS relay takeoff card use a
+variant: an X marks a violation and a circle around the number marks a legal
+exchange.[^usaguide][^nfhs-om]
 
 ### Worked example: an early take-off under USA Swimming rules
 
@@ -211,6 +291,13 @@ training.[^dc204]
 [^wa-sw]: [World Aquatics, Swimming Technical Rules 2023–2025](https://resources.fina.org/fina/document/2023/01/04/65961a45-bde5-4217-b666-ca1f5dc2d1f0/1_Swimming-Technical-Rules.04.01.2023.pdf), SW 10.13 (early take-off disqualification), SW 2.1.9 and SW 2.6.8 (officials judge contact), SW 2.2.3 and SW 2.2.4 (relay exchange printout and video), SW 13.1 (precedence of automatic equipment).
 [^wa-fr]: [World Aquatics, Facilities Rules 2021–2025](https://resources.fina.org/fina/document/2022/02/08/77c3058d-b549-4543-8524-ad51a857864e/210805-Facilities-Rules_clean.pdf), FR 2.3.6.3 (relay take-off judging to 1/100 second; overhead video as a supplement; the manufacturer consulted for the differential).
 [^usaswim]: [USA Swimming, 2025 Rules and Regulations](https://websitedevsa.blob.core.windows.net/sitefinity/docs/default-source/governance/governance-lsc-website/rules_policies/rulebooks/2025-mini-rulebook.pdf), 101.7.4 (pad touch, early take-off), 102.13.6 (take-off judges, dual confirmation, printout) and 102.21 (hand signal).
+[^usas26]: [USA Swimming, 2026 Rules and Regulations](https://www.usaswimming.org/rulebook), 102.10.5 (officials for championships).
+[^usasit]: [USA Swimming, Situations and Resolutions: Stroke and Turn](https://www.usaswimming.org/docs/default-source/new-officials-documents/officials-continuing-education-resources/situations-and-resolutions-stroke-and-turn.pdf) (version 03/07/2025), 139, 143–148.
+[^usaguide]: [USA Swimming Officials Committee, Guide to Officiating, Chapter 5](https://www.ddst.org/ddst/UserFiles/File/Officials/stmanual.pdf) (rev. October 2006; third-party copy).
+[^rto]: [Relay Take-Off Judge Standard Instruction](https://www.gomotionapp.com/reclmslwa/UserFiles/File/League%20Documents/Meetings/2019%20Meetings/relay-take-off-judges_090496.pdf) (2019; league-hosted copy).
+[^wa-card]: [World Aquatics, Swimming Rule Quick Reference Infraction Sheet](https://resources.fina.org/fina/document/2026/03/16/b5e32601-4fdf-4943-9879-947b42f79c56/Swimming-Reference-Card-13.03.2026.docx), 10.4.5.
+[^nfhs-om]: NFHS, 2024-25 Swimming Officials' Guidelines Manual, relay takeoff judges, referee positions and Appendix A.
+[^ncs]: [North Carolina Swimming, Stroke and Turn Clinic Part 2](https://www.swimnc.com/wp-content/uploads/2023/03/NCS-ST-Part-2-Clinic-Mar2023_v1.pdf) (March 2023), slide 26.
 [^ncaa]: [NCAA, Swimming and Diving Rules Book](https://ncaaorg.s3.amazonaws.com/championships/sports/swimdive/rules/PRXSW_RulesBook.pdf) (electronic relay takeoff equipment differential windows; blocks must accommodate relay judging platforms; video review).
 [^uil]: [University Interscholastic League, Protocols for Electronic Relay Judging Equipment](https://www.uiltexas.org/swimming-diving/page/uil-protocols-for-electronic-relay-judging-equipment) (judge assignments and confirmation thresholds by equipment type).
 [^swimswam]: [SwimSwam, Why Was Australia's -0.03 Relay Start Not A DQ? A Rules Deep Dive](https://swimswam.com/why-was-australias-0-03-relay-start-not-a-dq-a-rules-deep-dive/) (the manufacturer-consulted differential and Omega's reported minus 0.03 second tolerance).

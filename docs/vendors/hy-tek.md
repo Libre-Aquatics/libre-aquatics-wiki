@@ -1,5 +1,6 @@
 ---
 title: Hy-Tek Sports Software
+description: "Hy-Tek Sports Software, the American company whose meet and team management programs run most US competitive swimming, owned by The Active Network since 2008."
 tags:
   - Software
   - Reference

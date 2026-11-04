@@ -1,5 +1,6 @@
 ---
 title: Seiko PS-109 Electronic Starter
+description: "The Seiko PS-109, a discontinued electronic starter that kept the PS-107's pistol and headset, with a new speaker box running on a single cell size and a taller case."
 tags:
   - Equipment
   - Timing

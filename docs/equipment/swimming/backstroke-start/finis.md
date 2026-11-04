@@ -1,7 +1,7 @@
 ---
 title: FINIS Backstroke Start Wedge
 description: "FINIS Backstroke Start Wedge (1.30.031): strap-on design, five height settings, installation, operation, rule compliance, price, care, and specifications."
-updated: 2026-10-13
+updated: 2026-11-04
 tags:
   - Equipment
   - Timing
@@ -107,6 +107,17 @@ replaced: the old tape is removed, the surface cleaned with isopropyl alcohol, a
 replacement tape applied with heat and pressure.[^faq] FINIS sells the grip tape,
 straps, and hooks as replacement parts.[^techsheet]
 
+FINIS's care instructions and technical sheet give no service life or replacement interval for
+the wedge. FINIS's warranty chart gives technical products and pool equipment a 60-day limited
+warranty and excludes normal wear. The chart does not name the wedge, so its category is
+inferred.[^warranty] FINIS's care material treats the grip tape as the part most likely to need attention: tape that has
+peeled too far to repair is replaced through FINIS customer service.[^faq][^techsheet] The
+wedge has no spring or retraction mechanism to wear, and FINIS describes no calibration
+procedure, so the checks before use are the tape's edges and the height setting described
+under [Operation](#operation).[^faq][^manual] The
+[backstroke start devices overview](index.md#care-and-maintenance) compares what each
+manufacturer says about service life.
+
 ## Specifications
 
 | | |
@@ -136,6 +147,7 @@ straps, and hooks as replacement parts.[^techsheet]
 [^manual]: [FINIS, Backstroke Start Wedge Instructions](https://www.finisswim.com/documents/Manuals/BSW-Instructions-8.5x11-FNL.pdf) (parts, assembly, settings, and block attachments).
 [^techsheet]: [FINIS, Backstroke Start Wedge Tech Sheet](https://www.finisswim.com/documents/TechSheets/BackstrokeStartWedge_TechSheet.pdf) (materials and replacement parts).
 [^faq]: [FINIS, Backstroke Start Wedge FAQ](https://www.finisswim.com/faq?title=backstroke-start-wedge) (materials, care instructions, and compliance statement).
+[^warranty]: [FINIS, FAQs](https://www.finisswim.com/faqs), warranty policy.
 [^sw2018]: [Swimming World, FINIS Creates New Backstroke Start Wedge](https://www.swimmingworldmagazine.com/news/finis-creates-new-backstroke-start-wedge/) (28 March 2018; published in conjunction with FINIS).
 [^wizard]: [The Swimming Wizard, Product Review: FINIS Backstroke Start Wedge](https://swimmingwizard.com/2018/12/18/product-review-finis-backstroke-start-wedge/) (independent review, 18 December 2018).
 [^fr]: [World Aquatics, Facilities Rules 2021–2025](https://resources.fina.org/fina/document/2022/02/08/77c3058d-b549-4543-8524-ad51a857864e/210805-Facilities-Rules_clean.pdf), FR 2.1.11 (backstroke ledge).

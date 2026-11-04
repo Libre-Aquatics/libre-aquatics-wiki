@@ -1,5 +1,6 @@
 ---
 title: FINIS
+description: "FINIS, an American manufacturer of swim training and pool equipment founded in 1993 by John Mix and Pablo Morales: its history, products, and use in competition."
 tags:
   - Equipment
   - Reference

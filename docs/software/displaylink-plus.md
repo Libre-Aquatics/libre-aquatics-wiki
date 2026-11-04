@@ -1,5 +1,7 @@
 ---
 title: DisplayLink Plus
+description: "DisplayLink Plus, the CTS scoreboard software: templates, water polo and diving setup, transparent overlays, and its link to CTS timing consoles and meet software."
+updated: 2026-11-03
 tags:
   - Software
   - Scoring
@@ -35,6 +37,11 @@ tags:
     returning, while the overview and toolbar topics still document it as working.
   - Help text lags in places: the two-layer topic still gives Vista as the minimum OS,
     which the release notes overtook in 2015.
+
+  Activation: the Product Not Activated and License Status and Activation windows were read
+  from screenshots of an unactivated copy on 2026-11-03. The Activate button on the prompt
+  probably leads to the second window, but that is not confirmed. What Output Count means is
+  unknown and still needs checking.
 
   Still open: whether GameLink shipped as its own SKU; what the Lite build omits beyond
   the video-board requirement; whether AquaLink 1.6/1.7 ran on anything but 3.6/3.7.
@@ -336,6 +343,52 @@ graphics overlay, which takes timing and scoring data through DisplayLink Plus a
 NDI output for streaming software. Facilities without a CTS video board receive a reduced
 build, DisplayLink Plus Lite, bundled with the AquaSync installer.[^aquasync][^aquasyncprod]
 
+### Activation and license files
+
+An unactivated copy shows a Product Not Activated prompt, which offers Continue Trial, Activate
+and Exit, so the program can run as a trial before it is licensed.[^licwin]
+
+<figure class="wiki-figure">
+  <a href="/assets/displaylink-plus-not-activated.webp">
+    <img src="/assets/displaylink-plus-not-activated.webp" loading="lazy" decoding="async" width="389" height="193" alt="The Product Not Activated dialog box. It asks whether to continue the trial or activate with user credentials, and has three buttons: Continue Trial, Activate and Exit." />
+  </a>
+  <figcaption>The Product Not Activated prompt. The interface belongs to Colorado Time Systems and is not covered by this wiki's licence.</figcaption>
+</figure>
+
+The program's License Status and Activation window handles activation. It reports the
+activation status, which reads TrialMode on an unactivated copy, along with an expiration
+date, an output count and a list of available features. Three buttons offer the routes:
+Activate Online, Generate Offline Request and Load Offline Response.[^licwin]
+
+<figure class="wiki-figure">
+  <a href="/assets/displaylink-plus-license-activation.webp">
+    <img src="/assets/displaylink-plus-license-activation.webp" loading="lazy" decoding="async" width="474" height="304" alt="The License Status and Activation dialog box. Activation Status reads TrialMode, the Expiration and Output Count fields are empty, and the Available Features list is blank. A note below gives the requirements for online activation, and three buttons read Activate Online, Generate Offline Request and Load Offline Response." />
+  </a>
+  <figcaption>The License Status and Activation window on an unactivated copy. The interface belongs to Colorado Time Systems and is not covered by this wiki's licence.</figcaption>
+</figure>
+
+Online activation needs an internet connection and an account with CTS's licensing service. The
+window directs anyone without an account to CTS support, and sends password resets to
+`id.coloradotime.com`.[^licwin] The offline route runs through CTS support. Generate Offline
+Request produces a text file, which is sent to support, and support returns a `.lic` license
+file that is loaded with Load Offline Response.
+
+CTS's website and help file do not set out activation steps. Its
+installation page sends customers to support for a download link, and asks anyone moving
+from 4.4.x or earlier to contact support first, because that upgrade needs a new license
+file.[^dlplus] The release notes mention activation only where a version changed or repaired it.
+Version 4.3.9 in August 2019 improved license activation, and version 4.6.6 in August 2024
+fixed failures in requesting and activating a license and in the check for an internet
+connection made during licensing.[^relnotes]
+
+A licensed copy shows its license name at the bottom left of the main window, and clicking
+that name lists the features covered. At the bottom right, the About link leads to a splash
+screen with the installed version and a link that checks for a newer release.[^help]
+
+The standalone Template Editor needs its own license. CTS's download page says
+licenses are bought through its online store, and that a separate email with the download link
+follows the purchase.[^ste]
+
 ## See also
 
 - [DisplayLink](displaylink.md): the 3.x software this program replaced
@@ -351,6 +404,8 @@ build, DisplayLink Plus Lite, bundled with the AquaSync installer.[^aquasync][^a
 [^help]: Colorado Time Systems, Display Link Plus Help (help file shipped with the software).
 [^relnotes]: Colorado Time Systems, Display Link Plus Help, Release Notes topic.
 [^dlplus]: [Colorado Time Systems, DLPlus Installation Resources](https://coloradotime.com/software/dlplus).
+[^licwin]: Colorado Time Systems, DisplayLink Plus, Product Not Activated and License Status and Activation windows.
+[^ste]: [Colorado Time Systems, Standalone Template Editor for DisplayLink Customers](https://coloradotime.com/standalone-template-editor-download).
 [^shop]: [Colorado Time Systems, DisplayLink Plus](https://shop.coloradotime.com/collections/displaylink-plus).
 [^ledvideo]: [Colorado Time Systems, LED Video Scoreboards](https://coloradotime.com/products/led-video-scoreboards).
 [^support]: [Colorado Time Systems, DisplayLink Plus: Team Scores and Event Results](https://coloradotime.com/support/displaylink-plus-team-scores-and-event-results).

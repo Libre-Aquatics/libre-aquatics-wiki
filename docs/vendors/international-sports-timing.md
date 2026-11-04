@@ -1,5 +1,6 @@
 ---
 title: International Sports Timing
+description: "International Sports Timing (IST) is a Michigan manufacturer of aquatic timing equipment: the SWIMSTART Electronic Start, touchpads, timing software and scoreboards."
 updated: 2026-10-01
 tags:
   - Equipment

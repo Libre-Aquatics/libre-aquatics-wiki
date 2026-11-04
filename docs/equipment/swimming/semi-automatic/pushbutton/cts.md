@@ -1,5 +1,6 @@
 ---
 title: Colorado Time Systems Pushbutton
+description: "The Colorado Time Systems PB-6 pushbutton, the hand-held backup timing button for CTS swim timing: its role in the system, connection, care, and part numbers."
 updated: 2026-10-01
 tags:
   - Equipment

@@ -1,5 +1,7 @@
 ---
 title: Swiss Timing StartTime V
+description: "The Swiss Timing StartTime V starting device: e-gun and microphone versions, sport presets, the Wireless Recaller, audio, connectors, specs, and part numbers."
+updated: 2026-11-03
 tags:
   - Equipment
   - Timing
@@ -39,9 +41,8 @@ loudspeaker and any connected external loudspeakers, an optical flash, and a
 start pulse to the timing console.[^datasheet] It is sold in two versions, with
 a start and microphone unit (article 3481.930) or with an e-gun trigger (article
 3481.931); neither the e-gun nor the microphone unit is compatible with the
-earlier [StartTime IV](starttime-iv.md).[^datasheet] This article is a starting
-point; the overview of [swim start systems](index.md) covers the shared background that
-applies to every starter.
+earlier [StartTime IV](starttime-iv.md).[^datasheet] The overview of
+[swim start systems](index.md) covers the shared background that applies to every starter.
 
 ## Design and hardware
 
@@ -49,7 +50,8 @@ The main unit measures 395 by 192 by 160 mm, weighs 5.8 kg, and is protected to
 IP43. Setup is menu-driven through an LCD and keypad, and power comes from an
 integrated 12 volt, 7 Ah lead-acid battery with an indoor-only charger; the
 battery holds its charge for up to 12 months when not in use, and a battery
-indicator shows four levels of charge. The operating range is -10 to +50 degrees
+indicator shows four levels of charge. The manual rates a full charge at 1,000 starts with
+the unit working stand-alone.[^manual] The operating range is -10 to +50 degrees
 C, the storage range -20 to +70 degrees C, and the unit is rated for 20 to 80
 percent relative humidity, non-condensing.[^datasheet]
 
@@ -90,17 +92,52 @@ reaches them across the pool or track.[^core77][^swisswatches]
 
 ## Operation
 
-At power-on the unit runs a self-test: the LOW BAT (red), READY 1, and READY 2
+The power key is held for 5 seconds to switch on and 3 seconds to switch off, and the unit
+turns itself off after 90 minutes under all three presets.[^manual] At power-on the unit runs
+a self-test: the LOW BAT (red), READY 1, and READY 2
 (green) indicators light in sequence and the display shows the Swiss Timing
-logo. Setup is menu-driven, with presets for swimming, athletics, and speed
-skating; changing any value within a preset switches the sport selection to a
-custom mode (CUS).[^manual]
+logo, followed by a WAITING READY message. If no sport is chosen within 5 seconds, the
+unit takes the one used last. Setup is menu-driven, with presets for swimming, athletics, and
+speed skating; changing any value within a preset switches the sport selection to a
+custom mode (CUS). The stand-by and power-off settings are the two that do not carry
+over.[^manual]
 
-By default the start sound is a bang, the false-start sound is a bang followed by
-a whistle, and the false-start timeout, the window in which a second trigger pull
-is read as a recall, is 4 seconds; the timeout is programmable.[^manual] An
-optional Wireless Recaller module adds wireless false-start recall; the recall
-menu entry and function appear only when the module is fitted.[^manual]
+The presets differ in the sounds they use. The manual's factory settings table reads as
+follows:[^manual]
+
+| Setting | Athletics | Swimming | Speed skating |
+|---|---|---|---|
+| Start sound | BANG | BIP | BANG |
+| False-start sound | BANG | OFF | WHISTLE |
+| False-start timeout | 4 s | NO | 19 s |
+| False-start repeat | 1x | OFF | 1x |
+| Contacts | N.O. | N.O. | N.O. |
+
+The timeout is the window in which a second trigger pull is read as a recall. A swimming
+preset therefore gives no false-start signal until one is set up, which moves the unit to
+custom mode. The timeout has a range of 1 to 90 seconds, and the repeat of 1 to 5
+times.[^manual] Version 1.1 of the manual, dated April 2016, records a change to these
+protected presets.[^manual]
+
+The unit runs in two ways. Connected to a Quantum timer, it waits for the READY signal: the
+green LED on the trigger head comes on and the display reads EXTERNAL READY before the starter
+fires. Used independently, with no e-gun or microphone unit, the starter presses a key on the
+main unit to force MANUAL READY, and then uses the START button for the start and any
+false start.[^manual]
+
+### Wireless Recaller
+
+The Wireless Recaller is a handheld option that lets a judge call a false start away from the
+starter. It works only with a StartTime V fitted with the Recaller module (`3481.773`), whose
+menu entry appears only when the module is present. Each handset is paired through that menu,
+and several can be paired in turn. The handset's trigger then makes the recall.[^manual]
+
+The handset (`3481.705`) has the same 280 by 35 by 140 mm outline as the e-gun, weighs 320 g,
+and is protected to IP64. Its battery takes about 4 hours to charge by micro USB and runs for
+about 10 hours, and it switches off after 30 minutes. The table lists the radio frequency as
+868 MHz for the EMEA region. The manual's Recaller steps name athletics, speed skating and
+custom as the sport choices and leave out swimming, and the Recaller first appears in the
+March 2018 version of the manual.[^manual]
 
 ## Audio
 
@@ -127,23 +164,36 @@ sited so the start reaches every swimmer at the same instant.[^datasheet]
   <figcaption>A StartTime V start tone, rebuilt from a recording: a rough two-note tone lasting about 0.15 seconds.</figcaption>
 </figure>
 
-A StartTime V recorded for this wiki was set to an electronic tone rather than the
-default bang. The tone measured as two notes, 892.5 and 1020 Hz, lasting about
+A StartTime V recorded for this wiki was set to an electronic tone rather than a bang, which
+is consistent with the swimming preset's BIP, although the manual gives no frequencies for
+that sound. The tone measured as two notes, 892.5 and 1020 Hz, lasting about
 0.15 seconds, and matches the alternate beep of the CTS Championship Elite to within
 0.05 Hz. The [start-systems overview](index.md) compares the two and describes how
 they were measured.[^manual][^tones]
 
 ## Connections
 
-The unit connects to Swiss Timing's Quantum timing console, and its rear panel
+The unit connects to Swiss Timing's Quantum timing console. Its front panel
 carries connections for the microphone or e-gun, timer, external flash,
-speakers, line out, and charger.[^datasheet][^manual] A cable on winder (article
+speakers, line out, and charger, and the internal flash and speaker sit at the
+rear.[^datasheet][^manual] A cable on winder (article
 1865.050) links the StartTime V to the timing device over a 50 m cable.[^datasheet]
 
 The OMEGA Flash Start, a visual start signal for athletes who are deaf or hard
 of hearing, is powered by the StartTime and connects with a 25 m cable (article
 3481.951.25); a variant with an extension cable is also sold (article
 3481.951.05).[^datasheet]
+
+The connectors are as follows:[^manual]
+
+| Connector | Type | Use |
+|---|---|---|
+| E-GUN / MICRO | UTS 10-pin | E-gun or microphone unit, detected automatically |
+| START | Tuchel 4-pin | Start pulse out and ready signal in |
+| FLASH | Tuchel 4-pin | 12 V supply and control for an external flash |
+| SPEAKER | Tuchel 4-pin | Left and right channels, 20 W RMS each |
+| LINE OUT | XLR 3-pin | External sound system, typical impedance 10 kΩ |
+| CHARGER | DIN 3-pin | 12 V DC battery charger |
 
 ## Care and maintenance
 
@@ -166,6 +216,7 @@ Main unit:
 | External speaker load | 3.2 to 16 Ω recommended; 2 Ω with increased distortion |
 | Speaker cable runs | 30 m at 0.75 mm²; 50 m at 1 or 1.5 mm² |
 | Battery | Integrated 12 V, 7 Ah lead-acid; self-discharge 12 months |
+| Battery autonomy | 1,000 starts, stand-alone |
 | Battery indicator | 4 levels |
 | Operating temperature | -10 to +50 C |
 | Storage temperature | -20 to +70 C |
@@ -183,6 +234,25 @@ E-gun and microphone unit:
 | Power | 7 to 18 V DC input | (from main unit) |
 | Flash | 0.1 s; sun-visible >200 m; 360° horizontal, 90° vertical | (none) |
 | Protection | IP64 | IP43 |
+
+## Part numbers and accessories
+
+The datasheet and the manual number the product differently. The datasheet's `3481.930` and
+`3481.931` are the two sale versions, while the manual lists the items inside each
+package.[^datasheet][^manual]
+
+- StartTime V main unit: `3481.770`; with Recaller module, `3481.773`
+- Start and microphone unit: `3481.772`
+- E-gun (electronic start device): `3481.704`
+- Wireless Recaller: `3481.705`
+- Headset: `9051.8155`
+- Charger, 12 V DC, 2 A: `3418.753`
+- Transportation case: `9072.6001`
+- OMEGA Flash Start: `3481.951.25`
+- Mobile loudspeaker sets: `3399.933.06` (3 with 6 m cables), `3399.934.06` and `3399.934.03`
+  (4), `3399.935.06` and `3399.935.03` (5), `3399.936.03` (6), `3399.938.03` (8) and
+  `3399.940.03` (10); the 3 m cable sets end in `.03` and the 6 m sets in `.06`
+- Mobile loudspeakers with 5 m cable for a deckplate: `3399.930`
 
 ## See also
 

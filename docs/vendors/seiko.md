@@ -1,5 +1,6 @@
 ---
 title: Seiko
+description: "Seiko, the Japanese sports timing manufacturer based in Tokyo, and its subsidiary Seiko Time Creation: history, products, swim timing equipment, and competition use."
 updated: 2026-10-01
 tags:
   - Equipment

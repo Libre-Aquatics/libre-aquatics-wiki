@@ -1,5 +1,6 @@
 ---
 title: Daktronics lane speakers
+description: "The Daktronics lane speaker for the HS-200 Horn Start: the 4J 306-45-54 (DS-1059) under-block horn, its design and construction, specifications, and part numbers."
 tags:
   - Equipment
   - Timing

@@ -1,6 +1,7 @@
 ---
 title: Seiko PS-1200 Electronic Start Sound Generator
 seoTitle: Seiko PS-1200 Start Sound Generator
+description: "The Seiko PS-1200, a discontinued electronic start sound generator for swimming with the PF-125 pistol: design, operation, audio, and comparison with the PS-1300."
 tags:
   - Equipment
   - Timing
