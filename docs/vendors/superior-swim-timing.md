@@ -1,6 +1,6 @@
 ---
 title: Superior Swim Timing
-updated: 2026-10-01
+updated: 2026-11-03
 tags:
   - Equipment
   - Reference
@@ -21,10 +21,12 @@ infobox:
 
 Superior Swim Timing (SST) is an American manufacturer of swim meet timing
 software and equipment, founded in 2010 by Pete Santilli.[^sst][^zoominfo] The
-company's central product is laptop-based timing software that connects to a
-small external timing box over USB, which SST markets as a lower-cost
+company's central product is the
+[SST timing software](../software/sst-timing-software.md), a laptop program that
+connects to a small external timing box over USB, which SST markets as a lower-cost
 alternative to the larger dedicated timing consoles used at major meets.[^sst]
-Alongside the software, SST sells the SST timer, the
+Alongside the software, SST sells the
+[SST timer](../equipment/swimming/timers/sst-timer.md), the
 [Atlantis Swimming Starter System](../equipment/swimming/starter/atlantis.md),
 a mobile scoreboard, [lane speakers](../equipment/swimming/external-speaker/sst.md)
 and speaker harnesses, and button and cable lines.[^sst][^atlantis][^pricing]
@@ -38,17 +40,21 @@ product notices include a version 7 software release in April 2018, a March 2019
 pre-order teaser for the Atlantis starter, and the Atlantis launch on May 8,
 2019.[^news][^announce]
 
-SST does not publish a headquarters address, and third-party business listings
-disagree on its location (some place it in Jacksonville, Florida, others in
-Superior, Colorado, the latter likely inferred from the company name), so no
-single location is stated here.[^zoominfo]
+Superior Swim Timing, LLC was filed as a Florida limited liability company on December 16, 2011,
+under document number `L11000141740`, and is listed as active in Jacksonville.[^flcorp] That date is
+later than the 2010 founding given by ZoomInfo, and the sources do not settle which marks the start
+of the business.[^zoominfo] Business directories also place it in Superior, Colorado.[^zoominfo] The
+company's May 2012 website described the product as "made in Colorado", and its early users included
+schools and a club in Boulder and Louisville, Colorado.[^home2012][^company2013] By 2014 it called
+itself Florida based.[^about2014]
 
 ## Products
 
-- Timing software, a laptop-based system that supports up to ten lanes and
-  interfaces with meet-management software such as Hy-Tek's Meet Manager, using
-  the SST timer as its USB hardware interface.[^sst][^zoominfo]
-- The SST timer, the external timing box that connects the timing hardware to the
+- The [SST timing software](../software/sst-timing-software.md), a laptop-based
+  system that supports up to ten lanes and interfaces with meet-management software
+  such as Hy-Tek's Meet Manager, using the SST timer as its USB hardware
+  interface.[^sst][^zoominfo]
+- The [SST timer](../equipment/swimming/timers/sst-timer.md), the external timing box that connects the timing hardware to the
   laptop software over USB.[^sst]
 - The [Atlantis Swimming Starter System](../equipment/swimming/starter/atlantis.md),
   a portable [starting system](../equipment/swimming/starter/index.md) with an internal speaker, a 360 degree LED start
@@ -56,8 +62,11 @@ single location is stated here.[^zoominfo]
 - The [SST lane speakers](../equipment/swimming/external-speaker/sst.md),
   under-block [starter speakers](../equipment/swimming/external-speaker/index.md) and 6-, 8-, or 10-lane speaker harnesses that the
   Atlantis drives in addition to its internal speaker.[^atlantis][^pricing]
-- A mobile scoreboard, a spectator-facing result view.[^sst]
-- Buttons and cables, and replacement starter microphones for Colorado Time
+- A mobile scoreboard, a spectator-facing result view, along with the
+  [SST App Server](../software/sst-app-server.md) and
+  [SST Stopwatch](../software/sst-stopwatch.md) app.[^sst]
+- [Buttons](../equipment/swimming/semi-automatic/pushbutton/sst.md) and
+  [cables](../equipment/swimming/deck-cabling/sst-lane-harness.md), and replacement starter microphones for Colorado Time
   Systems and Daktronics start systems.[^sst][^pricing]
 
 ## In swim timing
@@ -76,6 +85,7 @@ including the 2016 South American Masters Championship in Uruguay.[^news]
 
 ## See also
 
+- [SST timing software](../software/sst-timing-software.md): the company's main product
 - [Vendors](index.md): other manufacturers referenced in Libre Aquatics Wiki
 - [Atlantis Swimming Starter System](../equipment/swimming/starter/atlantis.md): SST's portable start system
 - [Superior Swim Timing lane speakers](../equipment/swimming/external-speaker/sst.md): SST's lane speakers and harnesses
@@ -90,4 +100,8 @@ including the 2016 South American Masters Championship in Uruguay.[^news]
 [^news]: [Superior Swim Timing, News & Events](https://superiorswimtiming.com/contact-us/news-events/) (version 7 software, April 2018; March 20, 2019 pre-order teaser; May 8, 2019 launch; 2016 South American Masters Championship).
 [^pricing]: [Superior Swim Timing, Pricing](https://superiorswimtiming.com/pricing/) (lane speaker; 6-, 8-, and 10-lane speaker harnesses; CTS and Daktronics starter microphones).
 [^shop]: [Superior Swim Timing shop](https://shop.superiorswimtiming.com/) (products sold directly by SST).
+[^flcorp]: [Bizprofile, Superior Swim Timing, LLC](https://www.bizprofile.net/fl/jacksonville/superior-swim-timing-llc) (from the Florida Division of Corporations index).
+[^home2012]: [Superior Swim Timing, Home](https://web.archive.org/web/20120520053951/http://www.superiorswimtiming.com/) (archived May 2012).
+[^company2013]: [Superior Swim Timing, Company Information](https://web.archive.org/web/20131208201843/http://superiorswimtiming.com/company-information.html) (archived December 2013).
+[^about2014]: [Superior Swim Timing, About Us](https://web.archive.org/web/20141201202639/http://www.superiorswimtiming.com/SwimFast/contact-us/) (archived December 2014).
 [^swimnerd]: [SwimNerd, Atlantis Swimming Starter System](https://swimpractice.com/products/atlantis-starter-system) (SST products sold through the SwimNerd store).

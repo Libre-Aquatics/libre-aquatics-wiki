@@ -183,6 +183,12 @@ export const nav: NavNode[] = [
                 ],
               },
               {
+                title: 'Superior Swim Timing',
+                children: [
+                  { title: 'SST lane harness', page: 'equipment/swimming/deck-cabling/sst-lane-harness.md' },
+                ],
+              },
+              {
                 title: 'Swiss Timing',
                 children: [
                   { title: 'Quantum Mobile Harness', page: 'equipment/swimming/deck-cabling/quantum-mobile-harness.md' },
@@ -211,6 +217,7 @@ export const nav: NavNode[] = [
                 children: [
                   { title: 'Colorado Time Systems Pushbutton', page: 'equipment/swimming/semi-automatic/pushbutton/cts.md' },
                   { title: 'Daktronics Pushbutton', page: 'equipment/swimming/semi-automatic/pushbutton/daktronics.md' },
+                  { title: 'Superior Swim Timing Pushbutton', page: 'equipment/swimming/semi-automatic/pushbutton/sst.md' },
                   { title: 'Swiss Timing OIT3 Pushbutton', page: 'equipment/swimming/semi-automatic/pushbutton/swiss-timing.md' },
                 ],
               },
@@ -290,6 +297,12 @@ export const nav: NavNode[] = [
                 ],
               },
               {
+                title: 'Superior Swim Timing',
+                children: [
+                  { title: 'SST timer', page: 'equipment/swimming/timers/sst-timer.md' },
+                ],
+              },
+              {
                 title: 'Other',
                 children: [
                   { title: 'ZES99', page: 'equipment/swimming/timers/zes99.md' },
@@ -310,6 +323,12 @@ export const nav: NavNode[] = [
                   { title: 'TPM-D Test Meter', page: 'equipment/swimming/timers/cts-tpm-d-test-meter.md' },
                   { title: 'VP-2 Vacuum Pump', page: 'equipment/swimming/timers/cts-vp-2-vacuum-pump.md' },
                   { title: 'VP-1 Vacuum Pump', page: 'equipment/swimming/timers/cts-vp-1-vacuum-pump.md' },
+                ],
+              },
+              {
+                title: 'Superior Swim Timing',
+                children: [
+                  { title: 'USB-NMC-2.5m', page: 'equipment/swimming/timers/usb-nmc-2-5m.md' },
                 ],
               },
               {
@@ -532,6 +551,13 @@ export const nav: NavNode[] = [
             indexTitle: 'Scoreboard Control Overview',
             children: [
               {
+                title: 'Serial Adapters',
+                children: [
+                  { title: 'SST scoreboard adapter', page: 'equipment/common/scoreboard-control/sst-scoreboard-adapter.md' },
+                  { title: 'SST wireless adapter', page: 'equipment/common/scoreboard-control/sst-wireless-adapter.md' },
+                ],
+              },
+              {
                 title: 'Wireless Adapters',
                 children: [
                   {
@@ -629,6 +655,8 @@ export const nav: NavNode[] = [
           { title: 'LSA SwimMeet and SwimTeam', page: 'software/lsa-swimmeet.md' },
           { title: 'WinSwim', page: 'software/winswim.md' },
           { title: 'Swimify', page: 'software/swimify.md' },
+          { title: 'Swimcloud Meet', page: 'software/swimcloud-meet.md' },
+          { title: 'TeamUnify TouchPad', page: 'software/teamunify-touchpad.md' },
           { title: 'EasyWk', page: 'software/easywk.md' },
           { title: 'EasyClub', page: 'software/easyclub.md' },
           { title: 'EasyFW', page: 'software/easyfw.md' },
@@ -681,6 +709,26 @@ export const nav: NavNode[] = [
         ],
       },
       {
+        title: 'Timing',
+        children: [
+          {
+            title: 'Superior Swim Timing',
+            children: [
+              { title: 'SST timing software', page: 'software/sst-timing-software.md' },
+              { title: 'SST Gateway', page: 'software/sst-gateway.md' },
+              { title: 'SST App Server', page: 'software/sst-app-server.md' },
+              { title: 'SST Cloud Relay', page: 'software/sst-cloud-relay.md' },
+              { title: 'SST Scoreboard App', page: 'software/sst-scoreboard-app.md' },
+              { title: 'SST Stopwatch', page: 'software/sst-stopwatch.md' },
+            ],
+          },
+          { title: 'TIMEWARE3', page: 'software/timeware3.md' },
+          { title: 'Swimnerd Live', page: 'software/swimnerd-live.md' },
+          { title: 'com0com', page: 'software/com0com.md' },
+          { title: 'HW VSP3', page: 'software/hw-vsp3.md' },
+        ],
+      },
+      {
         title: 'Data Exchange',
         children: [
           { title: 'SDIF', page: 'software/sdif.md' },
@@ -694,6 +742,7 @@ export const nav: NavNode[] = [
           { title: 'EV3', page: 'software/ev3.md' },
           { title: 'Hy-Tek Commlink', page: 'software/commlink.md' },
           { title: 'Hy-Tek The Interface', page: 'software/the-interface.md' },
+          { title: 'Generic network file sharing', page: 'software/generic-network-file-sharing.md' },
           { title: 'swimlib', page: 'software/swimlib.md' },
           { title: 'SDIFCheck', page: 'software/sdifcheck.md' },
           { title: 'Swimrankings', page: 'software/swimrankings.md' },
@@ -755,6 +804,7 @@ export const nav: NavNode[] = [
       { title: 'Deutscher Schwimm-Verband', page: 'vendors/deutscher-schwimm-verband.md' },
       { title: 'Dexstar Communications', page: 'vendors/dexstar-communications.md' },
       { title: 'FINIS', page: 'vendors/finis.md' },
+      { title: 'FTDI', page: 'vendors/ftdi.md' },
       { title: 'GeoLogix', page: 'vendors/geologix.md' },
       { title: 'Hy-Point Software', page: 'vendors/hy-point-software.md' },
       { title: 'Hy-Tek Sports Software', page: 'vendors/hy-tek.md' },
@@ -778,6 +828,7 @@ export const nav: NavNode[] = [
       { title: 'Sportyme', page: 'vendors/sportyme.md' },
       { title: 'Stramatel', page: 'vendors/stramatel.md' },
       { title: 'Superior Swim Timing', page: 'vendors/superior-swim-timing.md' },
+      { title: 'Swimnerd', page: 'vendors/swimnerd.md' },
       { title: 'Swiss Timing', page: 'vendors/swiss-timing.md' },
       { title: 'Take Your Mark', page: 'vendors/take-your-mark.md' },
       { title: 'Time Drops', page: 'vendors/time-drops.md' },

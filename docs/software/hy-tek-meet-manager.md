@@ -457,6 +457,11 @@ start lists to a USB stick or a 3.5-inch floppy and carry them to the scoreboard
 computer.[^f902] The Dolphin wireless stopwatch system is covered on its own page, as is the
 scoreboard side of the CTS arrangement.
 
+The laptop-based [SST timing software](sst-timing-software.md) uses the
+[generic network file sharing](generic-network-file-sharing.md) option, which exchanges a
+`generic.sch` schedule and race result files through a folder, or poses as a Colorado console
+on a serial link. Its setup steps are covered on that page.
+
 CTS puts it more strongly in its own catalogues than the word option suggests. Both the
 2011 and the 2015 editions list Hy-Tek Meet Manager under the Dolphin's requirements,
 alongside a Windows laptop, rather than among its accessories.[^cat11][^cat15]

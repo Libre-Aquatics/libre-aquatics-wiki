@@ -35,6 +35,11 @@ company's [OmniSport 1000](omnisport-1000.md) and [OmniSport 6000](omnisport-600
 consoles of the 1990s; the lineage is covered in the OmniSport 2000 article's
 [history section](omnisport-2000.md#history-and-predecessors).
 
+Some systems move the console onto a laptop altogether. The
+[SST timing software](../../../software/sst-timing-software.md) from
+[Superior Swim Timing](../../../vendors/superior-swim-timing.md) runs the operator screen and
+scoreboards on a computer, while a USB [SST timer](sst-timer.md) box measures the times.
+
 ## How a swim timing console works
 
 In a fully automatic officiating setup the console is the

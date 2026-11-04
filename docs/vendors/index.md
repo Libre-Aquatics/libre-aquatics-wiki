@@ -66,6 +66,8 @@ touchpad accessory.
 | [Incomar](incomar.md) | Utica, Michigan, United States | The Splash I pacing system of 1980, and a console Hy-Tek supported in 1988 |
 | [ALGE-Timing](alge-timing.md) | Not established | The SWIM 2000 and Timy timing consoles, and a semi-automatic swimming package |
 | [Wylas Timing](wylas-timing.md) | Not established | A wireless timing system for six to ten lanes, with its own screen displays |
+| [Swimnerd](swimnerd.md) | Not established | A seller of pace clocks and timing equipment, including Superior Swim Timing products |
+| [FTDI](ftdi.md) | Not established | USB interface products named in Superior Swim Timing documentation |
 | [Take Your Mark](take-your-mark.md) | Not established | A timing console reached by shared file rather than by cable |
 | [BestBet](bestbet.md) | Not established | A timing console documented only by comparison with the Colorado Time Systems 4 |
 | [Sportronic](sportronic.md) | Germany | A swimming timing system with an STM-11 control unit, and transponder lap counting |

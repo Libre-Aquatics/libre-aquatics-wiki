@@ -17,6 +17,7 @@ between them.
 - Meet-management software, builds events, seeds entries, records results, and
   scores the competition.
 - Team-management software, rosters, best times, and entries on the club side.
+- Timing software, programs that run a timing console on a laptop.
 - Display software, the applications that push results from a timing console to
   scoreboards and video boards.
 - File formats, the interchange formats that move entries and results between
@@ -85,6 +86,16 @@ programs have stub pages.
 | [TeamUnify](teamunify.md) | TeamUnify | Web-based club management founded in 2007; owned by SportsEngine from 2016 and by PlayMetrics from 2026 |
 | [SwimTopia](swimtopia.md) | Team Topia, Inc. | Web-based team management begun for summer-league teams |
 | [Splash Team Manager](splash-team-manager.md) | [Splash Software](../vendors/splash-software.md) | Windows club program for members, entries, results and records; compulsory for entering swimmers in Switzerland |
+
+## Timing software
+
+Most timing consoles are dedicated hardware, covered under
+[timers](../equipment/swimming/timers/index.md). A few systems put the console on a laptop
+instead, with a small box taking the signals from the deck. The
+[SST timing software](sst-timing-software.md) from
+[Superior Swim Timing](../vendors/superior-swim-timing.md) has a full article, and
+[TIMEWARE3](timeware3.md) from
+[International Sports Timing](../vendors/international-sports-timing.md) has a stub page.
 
 ## Display software
 

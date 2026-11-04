@@ -97,6 +97,7 @@ either can be used on either maker's lane wiring.[^dakcompat]
 |---|---|---|---|---|
 | [Colorado Time Systems Pushbutton](cts.md) | Colorado Time Systems | 6 ft | Banana plug into deck plate or cable harness | Current |
 | [Daktronics Pushbutton](daktronics.md) | Daktronics | Not published | Banana plug into lane module or deck plate | Supplied with deck-cabling systems |
+| [Superior Swim Timing Pushbutton](sst.md) | Superior Swim Timing | Not published | Waterproof connector or banana plug | Current |
 | [Swiss Timing OIT3 Pushbutton](swiss-timing.md) | Swiss Timing | Not published | Banana plug into a Quantum harness module or deck plate | Supplied with Quantum harness sets |
 
 Each article covers its button in full, its role in the timing layers, how a timer uses
