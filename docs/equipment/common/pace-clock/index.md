@@ -199,6 +199,7 @@ passing.
 
 | Product | Maker | Type | Status |
 |---|---|---|---|
+| [Pacedyne](pacedyne.md) | Sycom | Battery pace clock with a quartz movement | Advertised 1975–1978 |
 | [Pace clock controller](upc-c.md) | Colorado Time Systems | Keypad console storing and playing out workouts | Listed as current[^ctspc] |
 | [Ultimate Pace Clock](ultimate-pace-clock.md) | Colorado Time Systems | The system the controller was sold as part of, with light-reflective or LED portable displays[^f819] | Advertised 1996; displays no longer listed by 2008 |
 | [QuickStart](quickstart.md) | Colorado Time Systems | Portable LED pace clock and start, relay and turn reaction trainer | Advertised 1996–1998 |

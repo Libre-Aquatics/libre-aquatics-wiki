@@ -73,6 +73,13 @@ touchpad accessory.
 | [Stramatel](stramatel.md) | Le Cellier, France | The Aquasport V swim timer, Aquaswim software and Aquatouch touchpads |
 | [Time Drops](time-drops.md) | Walnut Creek, California, United States | A wireless timing system of keyfob buttons and a tablet controller |
 | [Seagull Enterprises](seagull.md) | Los Altos and Palo Alto, California, United States | No equipment of its own; Omega's US and Canadian representative in the 1970s, which sold the OSM-4 and OSM-5 |
+| [Cronus](cronus.md) | Not established | Digital stopwatches distributed in swimming by Seagull |
+| [Heuer](heuer.md) | Switzerland | Stopwatches sold in the United States by Seagull |
+| [Sycom](sycom.md) | Orange, California, United States | The Pasar pacing system and Pacedyne pace clock |
+| [Microsel](microsel.md) | Not established | The Racer wrist chronograph |
+| [Accusplit](accusplit.md) | Not established | Electronic stopwatches |
+| [Spectronics](spectronics.md) | Edmonton, Alberta, Canada | No equipment of its own; a service contractor to Seagull |
+| [Mod International](mod-international.md) | Vancouver and St. Lambert, Canada; Burlingame, California | No equipment of its own; a swim equipment dealer |
 | [Sportyme](sportyme.md) | Hatboro, Pennsylvania, United States | No equipment of its own; Omega's US sales and service agent in the early 1980s, which advertised the OSM6 |
 | [Adolph Kiefer & Associates](kiefer.md) | Zion, Illinois, United States | Competitor pace clocks; Omega's exclusive US timing agent from 1988 |
 | [Macsha](macsha.md) | Not established | The Macsha Swim touchpad and lane-unit system |

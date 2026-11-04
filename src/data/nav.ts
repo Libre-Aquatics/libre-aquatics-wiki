@@ -528,6 +528,7 @@ export const nav: NavNode[] = [
             index: 'equipment/common/pace-clock/index.md',
             indexTitle: 'Pace Clocks Overview',
             children: [
+              { title: 'Pacedyne', page: 'equipment/common/pace-clock/pacedyne.md' },
               {
                 title: 'Colorado Time Systems',
                 children: [
@@ -850,9 +851,11 @@ export const nav: NavNode[] = [
     children: [
       { title: 'The Active Network', page: 'vendors/active-network.md' },
       { title: 'ALGE-Timing', page: 'vendors/alge-timing.md' },
+      { title: 'Accusplit', page: 'vendors/accusplit.md' },
       { title: 'BestBet', page: 'vendors/bestbet.md' },
       { title: 'CleanEntries', page: 'vendors/cleanentries.md' },
       { title: 'Colorado Time Systems', page: 'vendors/colorado-time-systems.md' },
+      { title: 'Cronus', page: 'vendors/cronus.md' },
       { title: 'Daktronics', page: 'vendors/daktronics.md' },
       { title: 'Deutscher Schwimm-Verband', page: 'vendors/deutscher-schwimm-verband.md' },
       { title: 'Dexstar Communications', page: 'vendors/dexstar-communications.md' },
@@ -867,8 +870,11 @@ export const nav: NavNode[] = [
       { title: 'International Sports Timing', page: 'vendors/international-sports-timing.md' },
       { title: 'Kyrotech', page: 'vendors/kyrotech.md' },
       { title: 'Lab Software Associates', page: 'vendors/lab-software-associates.md' },
+      { title: 'Heuer', page: 'vendors/heuer.md' },
       { title: 'Macsha', page: 'vendors/macsha.md' },
+      { title: 'Microsel', page: 'vendors/microsel.md' },
       { title: 'Mityvac', page: 'vendors/mityvac.md' },
+      { title: 'Mod International', page: 'vendors/mod-international.md' },
       { title: 'Nevco', page: 'vendors/nevco.md' },
       { title: 'NovaStar', page: 'vendors/novastar.md' },
       { title: 'Paragon Aquatics', page: 'vendors/paragon-aquatics.md' },
@@ -882,8 +888,10 @@ export const nav: NavNode[] = [
       { title: 'Sportyme', page: 'vendors/sportyme.md' },
       { title: 'Stramatel', page: 'vendors/stramatel.md' },
       { title: 'Superior Swim Timing', page: 'vendors/superior-swim-timing.md' },
+      { title: 'Spectronics', page: 'vendors/spectronics.md' },
       { title: 'Swimnerd', page: 'vendors/swimnerd.md' },
       { title: 'Swiss Timing', page: 'vendors/swiss-timing.md' },
+      { title: 'Sycom', page: 'vendors/sycom.md' },
       { title: 'Take Your Mark', page: 'vendors/take-your-mark.md' },
       { title: 'Time Drops', page: 'vendors/time-drops.md' },
       { title: 'Wylas Timing', page: 'vendors/wylas-timing.md' },
