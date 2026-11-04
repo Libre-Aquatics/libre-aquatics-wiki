@@ -268,16 +268,18 @@ full strap extension so that the wet straps retract evenly.[^f1024]
 
 ## Products
 
-This section catalogs the devices of three manufacturers, whose designs differ mainly
+This section catalogs the devices of four manufacturers, whose designs differ mainly
 in how the ledge attaches and how it clears the water after the start:
 [Swiss Timing](../../../vendors/swiss-timing.md) (Omega) makes the OBL2 Pro, which
 mounts on the company's own starting blocks and is lifted off by an official;
 [Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS) makes a device
-that retracts automatically; and [FINIS](../../../vendors/finis.md) makes a manual
-strap-hung wedge.
+that retracts automatically; [FINIS](../../../vendors/finis.md) makes a manual
+strap-hung wedge; and [ALGE-Timing](../../../vendors/alge-timing.md) makes a hook-on aid that
+the swimmer adjusts.
 
 | Product | Manufacturer | Attachment | Retraction | Status |
 |---|---|---|---|---|
+| [BSA backstroke start aid](alge-bsa.md) | ALGE-Timing | Hooks onto a platform, rests on the wall | None; lifted off by a handle | Current |
 | [Backstroke Start Device](cts.md) | Colorado Time Systems | Strap or deck anchors | Automatic, torsion-spring | Current |
 | [Backstroke Start Wedge](finis.md) | FINIS | Straps to block posts, hand grips, or block edge | None (manual) | Current |
 | [OBL2 Pro Backstroke Ledge](swiss-timing.md) | Swiss Timing (Omega) | Hooks over an Omega OSB platform top | None; removed by an official | Current |

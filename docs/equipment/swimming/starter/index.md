@@ -346,6 +346,18 @@ whole chain, and each generation has its own operating manual.
 | [Seiko PS-107 Electronic Starter](seiko-ps-107.md) | `PS-107` | Portable, cross-sport starter | Discontinued 2002 |
 | [Seiko PS-105 Electronic Starter](seiko-ps-105.md) | `PS-105` | Portable, cross-sport starter | Discontinued 1997 |
 
+[ALGE-Timing](../../../vendors/alge-timing.md) builds the start tone and amplifier into its
+[TM-SWIM](../timers/alge-tm-swim.md) timing console, so the starter's own equipment is a set of
+smaller units on the start cable. Its semi-automatic systems use a speaker start system instead.
+
+| Product | Part number | Family / tier | Status |
+|---|---|---|---|
+| [SU3 start unit](alge-su3.md) | `SU3` | Start button, microphone and speech amplifier | Current |
+| [E-START](alge-e-start.md) | `E-START`, `E-START W` | Electronic starting device with strobe | Current |
+| [SM8 start microphone](alge-sm8.md) | `SM8` | External start trigger for the SU3 | Named in the 2023 SU3 manual |
+| [FLASH XL](alge-flash-xl.md) | `FLASH XL` | Visual start signal | Current |
+| [BANG speaker systems](alge-bang.md) | `BANG2` | Speaker start system | Current |
+
 ## See also
 
 - [External speakers](../external-speaker/index.md): the lane, auxiliary, and

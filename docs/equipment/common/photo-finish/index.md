@@ -21,4 +21,5 @@ This article is a stub. A photo-finish system is a camera aimed along the finish
 records it many times a second against a timing clock, so that the order and times of finishers
 can be read from the images.
 
-See the [Scan'O'Vision](scan-o-vision.md) article for Swiss Timing's system.
+See the [Scan'O'Vision](scan-o-vision.md) article for Swiss Timing's system, and the
+[OPTIc3](alge-optic3.md) and [IDCam](alge-idcam.md) articles for ALGE-Timing's.

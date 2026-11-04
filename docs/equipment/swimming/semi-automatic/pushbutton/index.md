@@ -95,6 +95,7 @@ either can be used on either maker's lane wiring.[^dakcompat]
 
 | Product | Manufacturer | Cord | Connection | Status |
 |---|---|---|---|---|
+| [ALGE-Timing 023-02 push button](alge-023-02.md) | ALGE-Timing | 2 m (`023-10`: 10 m) | Banana plug into a SWT3 terminal or Timy cable | Current |
 | [Colorado Time Systems Pushbutton](cts.md) | Colorado Time Systems | 6 ft | Banana plug into deck plate or cable harness | Current |
 | [Daktronics Pushbutton](daktronics.md) | Daktronics | Not published | Banana plug into lane module or deck plate | Supplied with deck-cabling systems |
 | [Superior Swim Timing Pushbutton](sst.md) | Superior Swim Timing | Not published | Waterproof connector or banana plug | Current |

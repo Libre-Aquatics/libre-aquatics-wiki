@@ -277,7 +277,7 @@ Systems, the principal manufacturers are
 [Seiko](../../../vendors/seiko.md).[^watiming] This section catalogs the swimming touchpads covered on this wiki,
 which are those made by
 [Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS), Swiss Timing,
-Daktronics and Seiko. The CTS panel is all-plastic and air-filled, with sensitivity set by
+Daktronics, Seiko and ALGE-Timing. The CTS panel is all-plastic and air-filled, with sensitivity set by
 internal air pressure; the Swiss Timing [OCP5](ocp5.md) hangs PVC slats on a stainless steel
 frame in front of tape-switch contact strips; and the Daktronics panel uses three conductive
 stainless-steel plates and reads a touch as a change in electrical charge. Seiko gives the
@@ -288,6 +288,7 @@ panel material and dimensions of its plates but no sensing principle.[^datasheet
 | [AquaGrip touchpad](aquagrip.md) | `TP-…G` (gutter) / `TP-…GF` (flat-wall) | Patented AquaGrip non-slip texture | 10 ft cable, dual banana plug | Current |
 | [Standard touchpad](standard.md) | `TP-…` / `TP-…F` | Textured non-skid surface | 10 ft cable, dual banana plug | Discontinued |
 | [Multizone pads](multizone.md) | None published | Not published | Not published | Announced 2008; no evidence of production |
+| [TP touchpads](alge-tp-touchpads.md) | ALGE-Timing `TP2400C`, `TP1890C`, `TP2300C` | PVC lamellas on a stainless-steel casing; four tape switches | Banana plugs | Current |
 | [T-7000 series touchpad](t-7000.md) | Daktronics `T-7060`–`T-7096`, `FT-7150`–`FT-7240T` | Non-slip textured stainless steel; three conductive plates | Dual banana plug; OmniSport 2000 | Documented; also listed under Daktronics' discontinued-product resources |
 | [Seiko AQUA touch plate](seiko-aqua-touch-plate.md) | None published in Japanese; `TP-3000` on Seiko's older English pages | High-impact resin panel, 2,400 mm wide | Lane box per lane, then the `PT-9000` printing timer | Current |
 | [OCP5 touchpad](ocp5.md) | Swiss Timing `2924.000`–`2924.005` | Interlinked PVC slats on a stainless steel frame, four sizes | Dual banana plug to a Quantum harness module | Named by 1976; current |

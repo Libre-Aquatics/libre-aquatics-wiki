@@ -35,10 +35,7 @@ companies that Hy-Tek listed among the console makers its software supported in 
 are attested only in the swimming press, with no manual held for either, so their pages
 stay short. BestBet, Take Your Mark and Wylas Timing are here for the same reason in
 reverse: no source held for this wiki mentions any of them, and what is recorded about them
-comes from the documentation of the meet software that drives them. ALGE-Timing is the near
-miss in that group. It is named in the held periodicals, though never in its own right: a
-competitor's advertisement of 2001 to 2003 lists it among the timing systems that software
-works with. Stramatel, Time Drops and Macsha are here because
+comes from the documentation of the meet software that drives them. Stramatel, Time Drops and Macsha are here because
 [Splash Meet Manager](../software/splash-meet-manager.md) has interfaces to their equipment,
 and GeoLogix because it developed that program for about twelve years. Mityvac makes no
 timing equipment; it is here because Colorado Time Systems sells one of its hand pumps as a
@@ -65,7 +62,8 @@ touchpad accessory.
 | [GeoLogix](geologix.md) | Berne, Switzerland | No equipment; developed and supported Splash Meet Manager from 2003 to about 2015 |
 | [Kyrotech](kyrotech.md) | Northbrook, Illinois, United States | The Tec-Timer printing meet timer, advertised in the press between 1984 and 1993 |
 | [Incomar](incomar.md) | Utica, Michigan, United States | The Splash I pacing system of 1980, and a console Hy-Tek supported in 1988 |
-| [ALGE-Timing](alge-timing.md) | Not established | The SWIM 2000 and Timy timing consoles, and a semi-automatic swimming package |
+| [ALGE-Timing](alge-timing.md) | Lustenau, Austria | The TM-SWIM timing console, SWIM 2000 and Timy timers, and a semi-automatic swimming package |
+| [Nevco](nevco.md) | Not established | Aquatic timing and scoring systems built on ALGE-Timing equipment |
 | [Wylas Timing](wylas-timing.md) | Not established | A wireless timing system for six to ten lanes, with its own screen displays |
 | [Swimnerd](swimnerd.md) | Not established | A seller of pace clocks and timing equipment, including Superior Swim Timing products |
 | [FTDI](ftdi.md) | Not established | USB interface products named in Superior Swim Timing documentation |

@@ -57,6 +57,9 @@ predecessors the swimming press names, [Meet Mobile](meet-mobile.md) is the
 live-results application that publishes what a meet scores, and [SplashMe](splashme.md) does
 the same for meets run on Splash.
 
+[SwimTime](swimtime.md) is the ALGE-Timing program that operates its
+[TM-SWIM](../equipment/swimming/timers/alge-tm-swim.md) console.
+
 Several more meet programs have stub pages. [Swimify](swimify.md), [EasyWk](easywk.md) and
 [CPS-Schwimm](cps-schwimm.md) are European programs that the Swimrankings wiki lists as
 supporting Lenex. [SwimMeet Manager](swimmeet-manager.md) came from Hy-Point Software and was

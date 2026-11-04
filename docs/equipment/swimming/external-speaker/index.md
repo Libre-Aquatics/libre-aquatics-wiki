@@ -78,6 +78,7 @@ systems. Each has its own article:
 
 | Article | Manufacturer | Lane speaker | OEM horn | Status |
 |---|---|---|---|---|
+| [ALGE-Timing](alge-spa2-spp2.md) | ALGE-Timing | `SPA2` (active), `SPP2` (passive) | Not disclosed | Current |
 | [Colorado Time Systems](cts.md) | Colorado Time Systems | `SP-6/45` (6 W, 45 Ω) | Fourjay 306-45 | Current |
 | [Daktronics](daktronics.md) | Daktronics | `306-45-54` (`DS-1059`) | Fourjay 306-45 | Current |
 | [International Sports Timing](ist.md) | International Sports Timing | `SPEAKER6W` (6 W), `SPKRBLOCK` system | Not disclosed | Not in current catalog |

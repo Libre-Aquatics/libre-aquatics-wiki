@@ -1,7 +1,7 @@
 ---
 title: Timers
 seoTitle: Swim timing consoles
-description: "Swim timing consoles: how the timer links touchpads, start system and scoreboard, its history, and the CTS, Daktronics and Swiss Timing consoles covered here."
+description: "Swim timing consoles: how the timer links touchpads, start system and scoreboard, its history, and the CTS, Daktronics, Swiss Timing and ALGE consoles covered here."
 tags:
   - Equipment
   - Timing
@@ -56,7 +56,7 @@ console of this kind.[^warules]
 ## Products
 
 This section catalogs the swim timing consoles made by Colorado Time Systems,
-Daktronics and Swiss Timing.
+Daktronics, Swiss Timing and ALGE-Timing.
 
 Gen7 ships in two consoles that share the same enclosure, software, and price-list
 accessories but differ in how they cable to the deck:
@@ -100,6 +100,18 @@ with a switch between them. Its predecessor was [ARES 21](ares-21.md).
 | [OSM-4](osm-4.md) | None published | Not documented here | 6–10 | Shown 1973; discontinued |
 | [OSM-3](osm-3.md) | None published | Not documented here | 8–10 (display) | Advertised 1974; discontinued |
 | [Swim-O-Matic](swim-o-matic.md) | None published | Touchpads | Not documented here | Advertised 1973; the name later printed by the OSM6 |
+
+[ALGE-Timing](../../../vendors/alge-timing.md) sells its console as the
+[TM-SWIM](alge-tm-swim.md), which runs the race itself while the SwimTime program on a PC
+displays it. Older ALGE swim timers are known from fewer documents, and no source found states
+how they succeeded one another.
+
+| Product | Part number | Deck cabling | Lanes | Status |
+|---|---|---|---|---|
+| [TM-SWIM](alge-tm-swim.md) | `TM-SWIM` | RS485 bus of [SWT3 terminals](../deck-cabling/alge-swt3.md), one per end | Up to 16 per side | Current |
+| [SWC](alge-swc.md) | None published | Not documented here | Not documented here | Called old by ALGE |
+| [SWIM 2000](alge-swim-2000.md) | None published | Not documented here | Not documented here | Named by Hy-Tek and Splash |
+| [Timer S4](alge-timer-s4.md) | None published | S4-SWIM lane box and FIN1 adapters | 8 | Documented 1997; discontinued |
 
 Each article covers one console in full (its specifications, connections, and
 part-number variants) and how it differs from the others; this page is the shared

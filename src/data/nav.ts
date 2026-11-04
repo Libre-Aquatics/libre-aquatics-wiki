@@ -43,6 +43,16 @@ export const nav: NavNode[] = [
             indexTitle: 'Start Systems Overview',
             children: [
               {
+                title: 'ALGE-Timing',
+                children: [
+                  { title: 'SU3 Start Unit', page: 'equipment/swimming/starter/alge-su3.md' },
+                  { title: 'E-START', page: 'equipment/swimming/starter/alge-e-start.md' },
+                  { title: 'SM8 Start Microphone', page: 'equipment/swimming/starter/alge-sm8.md' },
+                  { title: 'FLASH XL', page: 'equipment/swimming/starter/alge-flash-xl.md' },
+                  { title: 'BANG Speaker Systems', page: 'equipment/swimming/starter/alge-bang.md' },
+                ],
+              },
+              {
                 title: 'Colorado Time Systems',
                 children: [
                   { title: 'Infinity Start System', page: 'equipment/swimming/starter/infinity-start-system.md' },
@@ -102,6 +112,7 @@ export const nav: NavNode[] = [
             index: 'equipment/swimming/external-speaker/index.md',
             indexTitle: 'External Speakers Overview',
             children: [
+              { title: 'ALGE-Timing SPA2 and SPP2', page: 'equipment/swimming/external-speaker/alge-spa2-spp2.md' },
               { title: 'Colorado Time Systems lane speakers', page: 'equipment/swimming/external-speaker/cts.md' },
               { title: 'Daktronics lane speakers', page: 'equipment/swimming/external-speaker/daktronics.md' },
               { title: 'International Sports Timing lane speakers', page: 'equipment/swimming/external-speaker/ist.md' },
@@ -114,6 +125,7 @@ export const nav: NavNode[] = [
             index: 'equipment/swimming/backstroke-start/index.md',
             indexTitle: 'Backstroke Start Overview',
             children: [
+              { title: 'ALGE-Timing BSA', page: 'equipment/swimming/backstroke-start/alge-bsa.md' },
               { title: 'Colorado Time Systems Backstroke Start Device', page: 'equipment/swimming/backstroke-start/cts.md' },
               { title: 'FINIS Backstroke Start Wedge', page: 'equipment/swimming/backstroke-start/finis.md' },
               { title: 'Omega OBL1 Backstroke Ledge', page: 'equipment/swimming/backstroke-start/obl1.md' },
@@ -125,6 +137,13 @@ export const nav: NavNode[] = [
             index: 'equipment/swimming/touchpad/index.md',
             indexTitle: 'Touchpads Overview',
             children: [
+              {
+                title: 'ALGE-Timing',
+                children: [
+                  { title: 'TP Touchpads', page: 'equipment/swimming/touchpad/alge-tp-touchpads.md' },
+                  { title: 'CADDY X', page: 'equipment/swimming/touchpad/alge-caddy-x.md' },
+                ],
+              },
               {
                 title: 'Colorado Time Systems',
                 children: [
@@ -159,6 +178,13 @@ export const nav: NavNode[] = [
             index: 'equipment/swimming/deck-cabling/index.md',
             indexTitle: 'Deck Cabling Overview',
             children: [
+              {
+                title: 'ALGE-Timing',
+                children: [
+                  { title: 'SWT3 Swim Terminal', page: 'equipment/swimming/deck-cabling/alge-swt3.md' },
+                  { title: 'Swimming Cable Sets', page: 'equipment/swimming/deck-cabling/alge-swim-cable-sets.md' },
+                ],
+              },
               {
                 title: 'Colorado Time Systems',
                 children: [
@@ -215,6 +241,7 @@ export const nav: NavNode[] = [
                 index: 'equipment/swimming/semi-automatic/pushbutton/index.md',
                 indexTitle: 'Pushbuttons Overview',
                 children: [
+                  { title: 'ALGE-Timing 023-02 Push Button', page: 'equipment/swimming/semi-automatic/pushbutton/alge-023-02.md' },
                   { title: 'Colorado Time Systems Pushbutton', page: 'equipment/swimming/semi-automatic/pushbutton/cts.md' },
                   { title: 'Daktronics Pushbutton', page: 'equipment/swimming/semi-automatic/pushbutton/daktronics.md' },
                   { title: 'Superior Swim Timing Pushbutton', page: 'equipment/swimming/semi-automatic/pushbutton/sst.md' },
@@ -230,6 +257,7 @@ export const nav: NavNode[] = [
             index: 'equipment/swimming/relay-judging/index.md',
             indexTitle: 'Relay Take-Off Overview',
             children: [
+              { title: 'ALGE-Timing SWR7', page: 'equipment/swimming/relay-judging/alge-swr7.md' },
               { title: 'Colorado Time Systems RJP', page: 'equipment/swimming/relay-judging/cts.md' },
               { title: 'Daktronics RTOP', page: 'equipment/swimming/relay-judging/daktronics.md' },
               { title: 'Omega OSB6', page: 'equipment/swimming/relay-judging/osb6.md' },
@@ -242,6 +270,8 @@ export const nav: NavNode[] = [
             index: 'equipment/swimming/starting-blocks/index.md',
             indexTitle: 'Starting Blocks Overview',
             children: [
+              { title: 'ALGE-Timing SO5', page: 'equipment/swimming/starting-blocks/alge-so5.md' },
+              { title: 'ALGE-Timing SO4 and So7', page: 'equipment/swimming/starting-blocks/alge-so4.md' },
               { title: 'Colorado Block', page: 'equipment/swimming/starting-blocks/colorado-block.md' },
               { title: 'Paragon Track Start Competitor', page: 'equipment/swimming/starting-blocks/track-start-competitor.md' },
               { title: 'Fusion Starting Platform', page: 'equipment/swimming/starting-blocks/fusion-starting-platform.md' },
@@ -294,6 +324,10 @@ export const nav: NavNode[] = [
                 title: 'ALGE-Timing',
                 children: [
                   { title: 'TM-SWIM', page: 'equipment/swimming/timers/alge-tm-swim.md' },
+                  { title: 'Timy', page: 'equipment/swimming/timers/alge-timy.md' },
+                  { title: 'SWC', page: 'equipment/swimming/timers/alge-swc.md' },
+                  { title: 'SWIM 2000', page: 'equipment/swimming/timers/alge-swim-2000.md' },
+                  { title: 'Timer S4', page: 'equipment/swimming/timers/alge-timer-s4.md' },
                 ],
               },
               {
@@ -313,6 +347,15 @@ export const nav: NavNode[] = [
           {
             title: 'Cables and Accessories',
             children: [
+              {
+                title: 'ALGE-Timing',
+                children: [
+                  { title: 'P6-8 Printer', page: 'equipment/swimming/timers/alge-p6-8.md' },
+                  { title: 'SWIM-SIM10', page: 'equipment/swimming/timers/alge-swim-sim10.md' },
+                  { title: 'HS4 Headsets', page: 'equipment/swimming/timers/alge-hs4-1.md' },
+                  { title: 'TN-SWIM Transport Box', page: 'equipment/swimming/timers/alge-tn-swim.md' },
+                ],
+              },
               {
                 title: 'Colorado Time Systems',
                 children: [
@@ -428,6 +471,13 @@ export const nav: NavNode[] = [
             indexTitle: 'Scoreboards Overview',
             children: [
               {
+                title: 'ALGE-Timing',
+                children: [
+                  { title: 'D-SW Display Boards', page: 'equipment/common/scoreboard/alge-d-sw.md' },
+                  { title: 'D-RTNM Display Boards', page: 'equipment/common/scoreboard/alge-d-rtnm.md' },
+                ],
+              },
+              {
                 title: 'Colorado Time Systems',
                 children: [
                   { title: 'Otter Scoreboards', page: 'equipment/common/scoreboard/otter.md' },
@@ -468,6 +518,8 @@ export const nav: NavNode[] = [
             index: 'equipment/common/photo-finish/index.md',
             indexTitle: 'Photo Finish Overview',
             children: [
+              { title: 'ALGE-Timing OPTIc3', page: 'equipment/common/photo-finish/alge-optic3.md' },
+              { title: 'ALGE-Timing IDCam', page: 'equipment/common/photo-finish/alge-idcam.md' },
               { title: "Scan'O'Vision", page: 'equipment/common/photo-finish/scan-o-vision.md' },
             ],
           },
@@ -657,6 +709,7 @@ export const nav: NavNode[] = [
           { title: 'Swimify', page: 'software/swimify.md' },
           { title: 'Swimcloud Meet', page: 'software/swimcloud-meet.md' },
           { title: 'TeamUnify TouchPad', page: 'software/teamunify-touchpad.md' },
+          { title: 'SwimTime', page: 'software/swimtime.md' },
           { title: 'EasyWk', page: 'software/easywk.md' },
           { title: 'EasyClub', page: 'software/easyclub.md' },
           { title: 'EasyFW', page: 'software/easyfw.md' },
@@ -816,6 +869,7 @@ export const nav: NavNode[] = [
       { title: 'Lab Software Associates', page: 'vendors/lab-software-associates.md' },
       { title: 'Macsha', page: 'vendors/macsha.md' },
       { title: 'Mityvac', page: 'vendors/mityvac.md' },
+      { title: 'Nevco', page: 'vendors/nevco.md' },
       { title: 'NovaStar', page: 'vendors/novastar.md' },
       { title: 'Paragon Aquatics', page: 'vendors/paragon-aquatics.md' },
       { title: 'Seiko', page: 'vendors/seiko.md' },
