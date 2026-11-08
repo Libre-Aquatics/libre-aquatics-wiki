@@ -47,6 +47,9 @@ Sources:
   - ALGE-Timing product page (alge-timing.com/en/product/2298/swspa10, read 2026-11-04)
   - ALGE-Timing product page (alge-timing.com/en/product/2069/199-20, read 2026-11-04)
   - ALGE-Timing product page (alge-timing.com/en/product/2117/kt199z10, read 2026-11-04)
+  - ALGE-Timing product page (alge-timing.com/en/product/2070/199-30, read 2026-11-07): 199-30 is the
+    30 m version of 199-20, LTW F plugs, same uses (TimeManager to FLASH XL, SU2/SU3 and the BANG
+    models, or between BANG units). Added while building out alge-su3.md.
   - ALGE-Timing swimming page (alge-timing.com/en/sports/aquatics/swimming, read 2026-11-04)
 -->
 

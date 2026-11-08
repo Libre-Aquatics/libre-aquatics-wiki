@@ -46,6 +46,8 @@ export const nav: NavNode[] = [
                 title: 'ALGE-Timing',
                 children: [
                   { title: 'SU3 Start Unit', page: 'equipment/swimming/starter/alge-su3.md' },
+                  { title: 'SU2 Start Unit', page: 'equipment/swimming/starter/alge-su2.md' },
+                  { title: 'SU Start Unit (SWIM 2000)', page: 'equipment/swimming/starter/alge-su.md' },
                   { title: 'E-START', page: 'equipment/swimming/starter/alge-e-start.md' },
                   { title: 'SM8 Start Microphone', page: 'equipment/swimming/starter/alge-sm8.md' },
                   { title: 'FLASH XL', page: 'equipment/swimming/starter/alge-flash-xl.md' },
@@ -361,6 +363,7 @@ export const nav: NavNode[] = [
                   { title: 'P6-8 Printer', page: 'equipment/swimming/timers/alge-p6-8.md' },
                   { title: 'SWIM-SIM10', page: 'equipment/swimming/timers/alge-swim-sim10.md' },
                   { title: 'HS4 Headsets', page: 'equipment/swimming/timers/alge-hs4-1.md' },
+                  { title: 'HS3-2 Headset', page: 'equipment/swimming/timers/alge-hs3-2.md' },
                   { title: 'TN-SWIM Transport Box', page: 'equipment/swimming/timers/alge-tn-swim.md' },
                   { title: 'P4 Printer', page: 'equipment/swimming/timers/alge-p4.md' },
                   { title: 'NLG4 Charging Set', page: 'equipment/swimming/timers/alge-nlg4.md' },

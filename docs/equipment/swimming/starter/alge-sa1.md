@@ -20,7 +20,7 @@ infobox:
   - label: Connection
     value: 'Cable 004 from socket A or B to the [S4-SWIM](equipment/swimming/deck-cabling/alge-s4-swim.md)'
   - label: Succeeded by
-    value: '[SU3](equipment/swimming/starter/alge-su3.md) (inferred)'
+    value: '[SU](equipment/swimming/starter/alge-su.md) of the SWIM 2000 (inferred)'
   - label: Status
     value: 'Discontinued; dates not established'
 ---
@@ -46,8 +46,8 @@ Swimming installation guide E-97-03-24, read in full with drawings:
 Timer S4 manual E-06-04-18: the swimming program (6) starts through "a loud speaker (start acoustic
 SA1)", and the S4 manual points to the separate swimming manual for SA1 use.
 
-Not established: the start tone (frequency, length), power source, dimensions, dates. The SU3/SU2
-succession is inferred from role only.
+Not established: the start tone (frequency, length), power source, dimensions, dates. The succession
+SA1 -> SU (SWIM 2000) -> SU2 -> SU3 is inferred from role and date only; see alge-su3.md.
 
 Sources:
   - ALGE, Swimming System installation guide, Timer S4, Version E-97-03-24 (https://alge-timing.com/downloads/userGuides/s4-schwimmen-installation-be.pdf)

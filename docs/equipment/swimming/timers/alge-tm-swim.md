@@ -164,7 +164,7 @@ system's controller, gathering impulses from lane terminals on start-side and tu
 lines.[^swim2000] No source found states that the SWIM 2000 replaced the S4, or that the TM-SWIM
 replaced the SWC directly.
 
-The accessories have changed around the console. The 2013 SWT2, SU2 and P5 have become the SWT3,
+The accessories have changed around the console. The 2013 SWT2, [SU2](../starter/alge-su2.md) and P5 have become the SWT3,
 [SU3](../starter/alge-su3.md) and [P6-8](alge-p6-8.md), and ALGE warns against mixing the SWT3 with
 older terminals on one system.[^swt3][^cat2013][^cat2026] Firmware 24.C1 of December 2024 added
 support for extended terminal hardware that reports a touchpad becoming low-resistance, and

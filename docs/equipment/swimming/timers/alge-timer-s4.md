@@ -150,6 +150,11 @@ certificate; no 1990s ALGE patent found (the only ALGE touchpad patent seen is U
 1970, which belongs on the touchpad overview, not here); no press or club report of an S4 swimming
 installation found.
 
+Added 2026-11-07 (while building out alge-su3.md): ALGE's athletics brochure Start Devices for
+Track and Field, V1510.1 (PDF created 1 November 2015; splitsecond.com.au/brochures/Athletics-Start-
+Devices-KE.pdf, filed under sources/vendors/alge-timing/catalogs-brochures/) still lists the Timer
+S4 among the ALGE timing devices its start systems connect to.
+
 Not established: introduction and withdrawal dates; whether the SWIM 2000 directly replaced the
 S4 swimming system; what the R1 false start detector and SWIM-FIX box are.
 

@@ -353,6 +353,9 @@ smaller units on the start cable. Its semi-automatic systems use a speaker start
 | Product | Part number | Family / tier | Status |
 |---|---|---|---|
 | [SU3 start unit](alge-su3.md) | `SU3` | Start button, microphone and speech amplifier | Current |
+| [SU2 start unit](alge-su2.md) | `SU2` | Start unit before the SU3 | 2013 catalogue |
+| [SU start unit](alge-su.md) | `SU` | Start unit of the SWIM 2000 | 2002 brochure |
+| [Start Acoustic SA1](alge-sa1.md) | `SA1` | Start unit and horn driver of the Timer S4 system | 1997 guide |
 | [E-START](alge-e-start.md) | `E-START`, `E-START W` | Electronic starting device with strobe | Current |
 | [SM8 start microphone](alge-sm8.md) | `SM8` | External start trigger for the SU3 | Named in the 2023 SU3 manual |
 | [FLASH XL](alge-flash-xl.md) | `FLASH XL` | Visual start signal | Current |
