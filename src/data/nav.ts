@@ -823,6 +823,7 @@ export const nav: NavNode[] = [
           { title: 'swimlib', page: 'software/swimlib.md' },
           { title: 'SDIFCheck', page: 'software/sdifcheck.md' },
           { title: 'Swimrankings', page: 'software/swimrankings.md' },
+          { title: 'Swimcloud', page: 'software/swimcloud.md' },
           { title: 'ERTD', page: 'software/ertd.md' },
         ],
       },
