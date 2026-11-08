@@ -65,7 +65,9 @@ TM-SWIM's start frequency and speaker length are software settings. The system's
 not identified; the full measurements and the manual's unclear length unit are covered in
 the research comment on that overview page. That manual, the SU3 start unit manual
 (E-23-11-02) and a 1997 Timer S4 installation guide (E-97-03-24) are now held under
-sources/vendors/alge-timing/, with every product they name listed in the source tracker.
+sources/vendors/alge-timing/, with every product they name listed in the source tracker. Added
+November 2026: the Timer S4 manual (E-06-04-18) and the GAZ5 display board manual (E120911), both
+still published by ALGE; see alge-timer-s4.md for what they establish.
 -->
 
 This article is a stub. ALGE-Timing is an Austrian sports timing manufacturer, based in Lustenau,

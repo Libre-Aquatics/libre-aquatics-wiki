@@ -39,7 +39,8 @@ added 10/2024, banana cable 309-2.5. It claims a patented water-flow system.
 Discrepancies. Manual 5.2: 25 and 20 kg, steel 1.4571, sensitivity 2.5 to 3.5 kg. 2013 catalogue:
 TP24 2444 x 906 x 10 mm (28 kg, or 16.5 kg customized), TP18 1852 x 906 x 10 mm, TP8 900 x 906 x
 10 mm for training, 2 to 3 kg; p8 of the same catalogue gives TP18 as 1855 mm. 1997 guide: TP24
-about 3 kg, about 30 kg. The 980 mm width has no model code in the sources read. Nevco (search
+about 3 kg, about 30 kg. That guide's drawings (1994) and the Timer S4 manual (E-06-04-18) call
+the swimming pad TP1 instead; see alge-timer-s4.md. The 980 mm width has no model code in the sources read. Nevco (search
 result only, page not readable) names a TP1580C, and ALGE-Swim USA gives 74 x 24 in and 62 x 24 in,
 which roughly match TP1890C and that TP1580C. Those are not verified.
 

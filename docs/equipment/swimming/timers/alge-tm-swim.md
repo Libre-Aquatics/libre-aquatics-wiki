@@ -73,8 +73,11 @@ the "new TimeManager" and warns off "the old SWC".
 Lineage, unresolved. Inferred, not stated anywhere: Timer S4 (1997), then SWIM 2000 and/or SWC,
 then TM-SWIM. Splash's May 2010 guide lists ALGE Swim2000 and S4, and the Splash wiki's SwimTime
 images are filed under names beginning MM_AlgeSW2000, which hints that SwimTime ran the SWIM 2000;
-Hy-Tek's guide also refers to an "ALGE SWIM 2000 PC" computer. Whether SWC and SWIM 2000 are the
-same device is unknown. No SWC or SWIM 2000 manual found; those are the documents to ask for.
+Hy-Tek's guide also refers to an "ALGE SWIM 2000 PC" computer. Resolved 2026-11-07: ALGE's 2002
+SWIM 2000 brochure and E-02-01-24 architectural guideline (Split Second Timing Australia copies,
+filed under sources/vendors/alge-timing/) make the SWC the controller of the SWIM 2000 system,
+with SWT terminals on two RS485 buses; see alge-swc.md. Still no SWC or SWIM 2000 operating
+manual; that is the document to ask for.
 
 Internal conflicts, flagged in the article:
   - Video port speed: 9600 in the 5.1 list, 19200 in 5.1.1.2 and on the p26 screen. The 5.1 list
@@ -151,13 +154,15 @@ with a change of version numbering, so both have earlier history that is not pub
 Splash Software added an ALGE SwimTime interface to its meet manager in April 2010.[^relnotes]
 
 ALGE's earlier swimming products are known only in part. A 1997 guide describes a
-[Timer S4](alge-timer-s4.md) with an S4-SWIM lane box that had eight outlets, fed by a separate
-5-core cable to a finish adapter for each pair of lanes, with a Start Acoustic SA1 driving up to
-four horns.[^s4] [Hy-Tek Meet Manager](../../../software/hy-tek-meet-manager.md) and Splash also
+[Timer S4](alge-timer-s4.md) with an [S4-SWIM](../deck-cabling/alge-s4-swim.md) lane box that had
+eight outlets, fed by a separate 5-core cable to a finish adapter for each pair of lanes, with a
+[Start Acoustic SA1](../starter/alge-sa1.md) driving up to four horns.[^s4] [Hy-Tek Meet Manager](../../../software/hy-tek-meet-manager.md) and Splash also
 list an [ALGE SWIM 2000](alge-swim-2000.md).[^hytek][^howto] The current firmware page warns that
-the TM-SWIM firmware must not be loaded onto "the old SWC", ALGE's only reference found to an
-[SWC controller](alge-swc.md), and it calls the TM-SWIM the "new TimeManager".[^product] No source
-found states how the S4, SWIM 2000 and SWC relate to one another or which one the TM-SWIM replaced.
+the TM-SWIM firmware must not be loaded onto "the old SWC", and it calls the TM-SWIM the "new
+TimeManager".[^product] ALGE's 2002 SWIM 2000 brochure shows the [SWC](alge-swc.md) as that
+system's controller, gathering impulses from lane terminals on start-side and turn-side bus
+lines.[^swim2000] No source found states that the SWIM 2000 replaced the S4, or that the TM-SWIM
+replaced the SWC directly.
 
 The accessories have changed around the console. The 2013 SWT2, SU2 and P5 have become the SWT3,
 [SU3](../starter/alge-su3.md) and [P6-8](alge-p6-8.md), and ALGE warns against mixing the SWT3 with
@@ -356,9 +361,10 @@ In North America ALGE equipment is sold by ALGE-Swim USA and by [Nevco](../../..
 [^swt3]: [ALGE-Timing, SWT3 Swim Terminal](https://alge-timing.com/en/product/2229/swt3).
 [^su3]: [ALGE-Timing, SU3 Start Unit](https://alge-timing.com/en/product/2129/su3); Start Unit SU3 manual (Version E-23-11-02).
 [^sim]: [ALGE-Timing, SWIM-SIM10](https://alge-timing.com/en/product/2285/swim-sim10).
-[^s4]: ALGE, Swimming System, Timer S4 installation guide (Version E-97-03-24, 1997).
+[^s4]: [ALGE, Swimming System, Timer S4 installation guide](https://alge-timing.com/downloads/userGuides/s4-schwimmen-installation-be.pdf) (Version E-97-03-24, 1997).
 [^usa]: [ALGE-Swim USA, Solutions](https://www.alge-swimusa.com/solutions/).
 [^nevco]: [Nevco, Aquatic Facility Timing and Scoring Systems](https://nevco.com/products/aquatic-solutions).
+[^swim2000]: [ALGE, SWIM2000](https://www.splitsecond.com.au/brochures/swim2000-pe.pdf) (brochure, 2002; Split Second Timing copy).
 [^hytek]: [Hy-Tek, ALGE SWIM 2000](https://hytek.active.com/user_guides_html/swmm6/algeswim2000.htm) (Meet Manager guide).
 [^relnotes]: [Swim Wiki, Meet Manager: Release Notes](https://wiki.swimrankings.net/index.php/Meet_Manager:Release_Notes).
 [^howto]: [Splash Software, Meet Manager 11: How to Start](https://wiki.swimrankings.net/images/8/83/Meet_Manager_How-to-start.pdf) (GeoLogix AG, May 2010).

@@ -50,6 +50,7 @@ export const nav: NavNode[] = [
                   { title: 'SM8 Start Microphone', page: 'equipment/swimming/starter/alge-sm8.md' },
                   { title: 'FLASH XL', page: 'equipment/swimming/starter/alge-flash-xl.md' },
                   { title: 'BANG Speaker Systems', page: 'equipment/swimming/starter/alge-bang.md' },
+                  { title: 'SA1 Start Acoustic', page: 'equipment/swimming/starter/alge-sa1.md' },
                 ],
               },
               {
@@ -113,6 +114,7 @@ export const nav: NavNode[] = [
             indexTitle: 'External Speakers Overview',
             children: [
               { title: 'ALGE-Timing SPA2 and SPP2', page: 'equipment/swimming/external-speaker/alge-spa2-spp2.md' },
+              { title: 'ALGE-Timing LK1', page: 'equipment/swimming/external-speaker/alge-lk1.md' },
               { title: 'Colorado Time Systems lane speakers', page: 'equipment/swimming/external-speaker/cts.md' },
               { title: 'Daktronics lane speakers', page: 'equipment/swimming/external-speaker/daktronics.md' },
               { title: 'International Sports Timing lane speakers', page: 'equipment/swimming/external-speaker/ist.md' },
@@ -183,6 +185,10 @@ export const nav: NavNode[] = [
                 children: [
                   { title: 'SWT3 Swim Terminal', page: 'equipment/swimming/deck-cabling/alge-swt3.md' },
                   { title: 'Swimming Cable Sets', page: 'equipment/swimming/deck-cabling/alge-swim-cable-sets.md' },
+                  { title: 'S4-SWIM Lane Box', page: 'equipment/swimming/deck-cabling/alge-s4-swim.md' },
+                  { title: 'FIN1 Finish Adapter', page: 'equipment/swimming/deck-cabling/alge-fin1.md' },
+                  { title: 'Cable 078', page: 'equipment/swimming/deck-cabling/alge-cable-078.md' },
+                  { title: 'SWIM-FIX', page: 'equipment/swimming/deck-cabling/alge-swim-fix.md' },
                 ],
               },
               {
@@ -258,6 +264,7 @@ export const nav: NavNode[] = [
             indexTitle: 'Relay Take-Off Overview',
             children: [
               { title: 'ALGE-Timing SWR7', page: 'equipment/swimming/relay-judging/alge-swr7.md' },
+              { title: 'ALGE-Timing R1 False Start Detector', page: 'equipment/swimming/relay-judging/alge-r1.md' },
               { title: 'Colorado Time Systems RJP', page: 'equipment/swimming/relay-judging/cts.md' },
               { title: 'Daktronics RTOP', page: 'equipment/swimming/relay-judging/daktronics.md' },
               { title: 'Omega OSB6', page: 'equipment/swimming/relay-judging/osb6.md' },
@@ -328,6 +335,7 @@ export const nav: NavNode[] = [
                   { title: 'SWC', page: 'equipment/swimming/timers/alge-swc.md' },
                   { title: 'SWIM 2000', page: 'equipment/swimming/timers/alge-swim-2000.md' },
                   { title: 'Timer S4', page: 'equipment/swimming/timers/alge-timer-s4.md' },
+                  { title: 'Timer S3', page: 'equipment/swimming/timers/alge-timer-s3.md' },
                 ],
               },
               {
@@ -354,6 +362,10 @@ export const nav: NavNode[] = [
                   { title: 'SWIM-SIM10', page: 'equipment/swimming/timers/alge-swim-sim10.md' },
                   { title: 'HS4 Headsets', page: 'equipment/swimming/timers/alge-hs4-1.md' },
                   { title: 'TN-SWIM Transport Box', page: 'equipment/swimming/timers/alge-tn-swim.md' },
+                  { title: 'P4 Printer', page: 'equipment/swimming/timers/alge-p4.md' },
+                  { title: 'NLG4 Charging Set', page: 'equipment/swimming/timers/alge-nlg4.md' },
+                  { title: 'Q34 Headset', page: 'equipment/swimming/timers/alge-q34.md' },
+                  { title: 'Cable 010-10', page: 'equipment/swimming/timers/alge-cable-010.md' },
                 ],
               },
               {
@@ -475,6 +487,7 @@ export const nav: NavNode[] = [
                 children: [
                   { title: 'D-SW Display Boards', page: 'equipment/common/scoreboard/alge-d-sw.md' },
                   { title: 'D-RTNM Display Boards', page: 'equipment/common/scoreboard/alge-d-rtnm.md' },
+                  { title: 'GAZc Display Board', page: 'equipment/common/scoreboard/alge-gazc.md' },
                 ],
               },
               {
