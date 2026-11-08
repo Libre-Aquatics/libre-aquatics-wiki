@@ -390,6 +390,12 @@ export const nav: NavNode[] = [
                 ],
               },
               {
+                title: 'Trycom Technology',
+                children: [
+                  { title: 'TRP-C08H Converter', page: 'equipment/swimming/timers/trycom-trp-c08h.md' },
+                ],
+              },
+              {
                 title: 'Swiss Timing',
                 children: [
                   { title: 'Programmer AQ', page: 'equipment/swimming/timers/programmer-aq.md' },
@@ -397,6 +403,7 @@ export const nav: NavNode[] = [
                   { title: 'ARES Data Switcher', page: 'equipment/swimming/timers/ares-data-switcher.md' },
                   { title: 'ARES Online Printer', page: 'equipment/swimming/timers/ares-online-printer.md' },
                   { title: 'INT131 Converter', page: 'equipment/swimming/timers/swiss-timing-int131.md' },
+                  { title: 'INT004 Converter', page: 'equipment/swimming/timers/swiss-timing-int004.md' },
                 ],
               },
             ],
@@ -894,6 +901,7 @@ export const nav: NavNode[] = [
       { title: 'Nevco', page: 'vendors/nevco.md' },
       { title: 'NovaStar', page: 'vendors/novastar.md' },
       { title: 'Paragon Aquatics', page: 'vendors/paragon-aquatics.md' },
+      { title: 'Prolific Technology', page: 'vendors/prolific.md' },
       { title: 'Seiko', page: 'vendors/seiko.md' },
       { title: 'S.R. Smith', page: 'vendors/s-r-smith.md' },
       { title: 'Schwimmverband NRW', page: 'vendors/schwimmverband-nrw.md' },
@@ -910,6 +918,7 @@ export const nav: NavNode[] = [
       { title: 'Sycom', page: 'vendors/sycom.md' },
       { title: 'Take Your Mark', page: 'vendors/take-your-mark.md' },
       { title: 'Time Drops', page: 'vendors/time-drops.md' },
+      { title: 'Trycom Technology', page: 'vendors/trycom.md' },
       { title: 'Wylas Timing', page: 'vendors/wylas-timing.md' },
     ],
   },
