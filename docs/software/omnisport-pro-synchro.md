@@ -129,8 +129,8 @@ discontinued the program and no longer sells it.[^swsupport][^kbswiss]
 
 ## History and versions
 
-This section covers the release record. The one edition of the manual held, DD3109495 Rev 0 of
-August 2015, describes version 1.0.1.1. Its revision history has a single entry, the initial
+This section covers the release record. The manual, DD3109495 Rev 0 of August 2015, describes
+version 1.0.1.1. Its revision history has a single entry, the initial
 release in May 2007.[^manual] Synchro support in the console is older. Daktronics' firmware history for the
 OmniSport 2000 lists a first release of the synchronized swimming program in version 4.10.28,
 dated October 2004. The same release raised the number of judge consoles allowed for the sport
@@ -138,8 +138,8 @@ from 9 to 18 and added wireless handheld judge consoles.[^revhist] A console rel
 2009 let the console accept real-time data offset and dimming settings sent by the synchro
 program.[^revhist] The sources do not explain the three-year gap between the 2004 firmware entry
 and the program's own 2007 first release. The 2004 entry may refer to the console's synchro mode
-rather than to the Windows program. No version after 1.0.1.1 appears in any Daktronics document
-held.
+rather than to the Windows program. Daktronics' published documentation names no version after
+1.0.1.1.
 
 ## Role in the scoring system
 
@@ -234,7 +234,7 @@ split.[^f874] International judging later moved away from it. Swiss Timing's sco
 a three-panel system for routines to November 2013, and the rules adopted for 2022–2025 score
 each element against a declared difficulty.[^swa][^asa] FINA, now World Aquatics, renamed the
 sport artistic swimming in 2017.[^wiki] The 2015 manual still describes version 1.0.1.1 with a
-limit of two panels, and no Daktronics document held records an update for either rule
+limit of two panels, and Daktronics' documentation records no update for either rule
 change.[^manual]
 
 ## Scoreboard output
