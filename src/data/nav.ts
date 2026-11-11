@@ -749,6 +749,7 @@ export const nav: NavNode[] = [
           { title: 'OmadaTrak', page: 'software/omadatrak.md' },
           { title: 'OmniSport Pro Diving', page: 'software/omnisport-pro-diving.md' },
           { title: 'OmniSport Pro Synchro', page: 'software/omnisport-pro-synchro.md' },
+          { title: 'OmniSport Pro Swimming', page: 'software/omnisport-pro-swimming.md' },
           { title: 'DIV Scoring Manager', page: 'software/div-scoring-manager.md' },
           { title: 'SWA Scoring Manager', page: 'software/swa-scoring-manager.md' },
           { title: 'ISS MMS Artistic Swimming', page: 'software/iss-mms-artistic-swimming.md' },
@@ -848,6 +849,7 @@ export const nav: NavNode[] = [
             children: [
               { title: 'All Sport Pro', page: 'software/all-sport-pro.md' },
               { title: 'Venus', page: 'software/venus.md' },
+              { title: 'Daktronics Content Server', page: 'software/daktronics-content-server.md' },
             ],
           },
           {
