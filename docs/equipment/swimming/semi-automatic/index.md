@@ -228,7 +228,7 @@ Other manufacturers sell semi-automatic equipment this wiki has not yet document
 wired buttons as an alternative to touchpads for facilities on smaller budgets, with two
 buttons per lane in place of a pad.[^ist] ALGE-Timing sells its semi-automatic package in
 both a cabled form and a radio form, each covering eight lanes plus the start
-channel.[^alge] Time Drops and Wylas Timing are newer entrants whose wireless buttons and
+channel, built around its [Timy](../timers/alge-timy.md) timer.[^alge] Time Drops and Wylas Timing are newer entrants whose wireless buttons and
 phone-based watches take the start through an adapter cabled to an existing electronic
 start system.[^timedrops][^wylas]
 

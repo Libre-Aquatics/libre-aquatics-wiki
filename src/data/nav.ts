@@ -53,6 +53,7 @@ export const nav: NavNode[] = [
                   { title: 'FLASH XL', page: 'equipment/swimming/starter/alge-flash-xl.md' },
                   { title: 'BANG Speaker Systems', page: 'equipment/swimming/starter/alge-bang.md' },
                   { title: 'SA1 Start Acoustic', page: 'equipment/swimming/starter/alge-sa1.md' },
+                  { title: 'STB1 Startbeep', page: 'equipment/swimming/starter/alge-stb1.md' },
                 ],
               },
               {
@@ -191,6 +192,7 @@ export const nav: NavNode[] = [
                   { title: 'FIN1 Finish Adapter', page: 'equipment/swimming/deck-cabling/alge-fin1.md' },
                   { title: 'Cable 078', page: 'equipment/swimming/deck-cabling/alge-cable-078.md' },
                   { title: 'SWIM-FIX', page: 'equipment/swimming/deck-cabling/alge-swim-fix.md' },
+                  { title: 'MC8 Push-Button Cable', page: 'equipment/swimming/deck-cabling/alge-mc8.md' },
                 ],
               },
               {
@@ -361,6 +363,8 @@ export const nav: NavNode[] = [
                 title: 'ALGE-Timing',
                 children: [
                   { title: 'P6-8 Printer', page: 'equipment/swimming/timers/alge-p6-8.md' },
+                  { title: 'WTN Wireless Timing Network', page: 'equipment/swimming/timers/alge-wtn.md' },
+                  { title: 'MC9 Multichannel', page: 'equipment/swimming/timers/alge-mc9.md' },
                   { title: 'SWIM-SIM10', page: 'equipment/swimming/timers/alge-swim-sim10.md' },
                   { title: 'HS4 Headsets', page: 'equipment/swimming/timers/alge-hs4-1.md' },
                   { title: 'HS3-2 Headset', page: 'equipment/swimming/timers/alge-hs3-2.md' },
@@ -498,6 +502,7 @@ export const nav: NavNode[] = [
                   { title: 'D-SW Display Boards', page: 'equipment/common/scoreboard/alge-d-sw.md' },
                   { title: 'D-RTNM Display Boards', page: 'equipment/common/scoreboard/alge-d-rtnm.md' },
                   { title: 'GAZc Display Board', page: 'equipment/common/scoreboard/alge-gazc.md' },
+                  { title: 'D-LINE Display Board', page: 'equipment/common/scoreboard/alge-d-line.md' },
                 ],
               },
               {
