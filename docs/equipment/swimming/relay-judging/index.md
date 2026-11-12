@@ -260,6 +260,7 @@ at the international meets it times.[^dak-compat][^swimswam]
 | Product | Manufacturer | Sensing | Status |
 |---|---|---|---|
 | [ALGE-Timing SWR7](alge-swr7.md) | ALGE-Timing | Sensor plate on an existing platform | Current |
+| [ALGE-Timing SWR 2](alge-swr2.md) | ALGE-Timing | Sensor plate strapped to an existing platform | Catalogued 2002–2013; discontinued |
 | [Colorado Time Systems RJP](cts.md) | Colorado Time Systems | Mechanical, top and leading edge | Current |
 | [Daktronics RTOP](daktronics.md) | Daktronics | Capacitive | Current |
 | Omega relay take-off platform | Swiss Timing | Integrated with Omega starting blocks | Current |

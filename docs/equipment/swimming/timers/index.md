@@ -110,7 +110,7 @@ how they succeeded one another.
 |---|---|---|---|---|
 | [TM-SWIM](alge-tm-swim.md) | `TM-SWIM` | RS485 bus of [SWT3 terminals](../deck-cabling/alge-swt3.md), one per end | Up to 16 per side | Current |
 | [SWC](alge-swc.md) | `SWC` | Controller of the SWIM 2000: lane terminals on start-side and turn-side buses | Up to 12 | Documented 2002; called old by ALGE |
-| [SWIM 2000](alge-swim-2000.md) | None published | System built around the [SWC](alge-swc.md) | Up to 12 | Documented 2002; named by Hy-Tek and Splash |
+| [SWIM 2000](alge-swim-2000.md) | None published | RS485 buses of [SWT terminals](../deck-cabling/alge-swt.md) to the [SWC](alge-swc.md) | Up to 12 | Listed 2000; documented 2002; replaced by the TM-SWIM by 2007 |
 | [Timer S4](alge-timer-s4.md) | `S4` | [S4-SWIM lane box](../deck-cabling/alge-s4-swim.md) and [FIN1 adapters](../deck-cabling/alge-fin1.md) | 8 | Documented 1994–2006; FIS-homologated |
 
 Each article covers one console in full (its specifications, connections, and

@@ -411,6 +411,7 @@ refer back to.
 |---|---|---|---|---|
 | [ALGE-Timing SO5](alge-so5.md) | ALGE-Timing | Six-position footrest | Integrated sensor | Current |
 | [ALGE-Timing SO4 and So7](alge-so4.md) | ALGE-Timing | Five-position footrest | Integrated sensor | `So7` current; `SO4` absent from the 2026 catalogue |
+| [ALGE-Timing SO 2](alge-so2.md) | ALGE-Timing | None | Integrated sensor | Documented 2002–2007; discontinued |
 | [Colorado Block](colorado-block.md) | Paragon Aquatics and Colorado Time Systems | Track start platform | Relay platform, speaker, connection hub | See article |
 | [Fusion Starting Platform](fusion-starting-platform.md) | Spectrum Aquatics and Colorado Time Systems | See article | Built-in relay platform | See article |
 | [S.R. Smith Velocity](velocity.md) | S.R. Smith | Fold-away wedge | Compatible with CTS and Daktronics timing | Current |

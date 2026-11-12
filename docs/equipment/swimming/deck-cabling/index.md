@@ -417,6 +417,7 @@ covers the product itself, and this page is the shared overview they refer back 
 | Article | Manufacturer | Type | Installation |
 |---|---|---|---|
 | [SWT3 swim terminal](alge-swt3.md) | ALGE-Timing | Bus lane terminal | On-deck |
+| [SWT swim terminal](alge-swt.md) | ALGE-Timing | Bus lane terminal of the SWIM 2000 | On-deck |
 | [ALGE swimming cable sets](alge-swim-cable-sets.md) | ALGE-Timing | Terminal and speaker cable sets | On-deck |
 | [Colorado Time Systems cable harness](cts-cable-harness.md) | Colorado Time Systems | Multi-conductor lane harness | On-deck |
 | [Gen7 Serial cable harness](gen7-serial-cable-harness.md) | Colorado Time Systems | Serial lane harness | On-deck |

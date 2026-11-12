@@ -187,6 +187,7 @@ export const nav: NavNode[] = [
                 title: 'ALGE-Timing',
                 children: [
                   { title: 'SWT3 Swim Terminal', page: 'equipment/swimming/deck-cabling/alge-swt3.md' },
+                  { title: 'SWT Swim Terminal (SWIM 2000)', page: 'equipment/swimming/deck-cabling/alge-swt.md' },
                   { title: 'Swimming Cable Sets', page: 'equipment/swimming/deck-cabling/alge-swim-cable-sets.md' },
                   { title: 'S4-SWIM Lane Box', page: 'equipment/swimming/deck-cabling/alge-s4-swim.md' },
                   { title: 'FIN1 Finish Adapter', page: 'equipment/swimming/deck-cabling/alge-fin1.md' },
@@ -268,6 +269,7 @@ export const nav: NavNode[] = [
             indexTitle: 'Relay Take-Off Overview',
             children: [
               { title: 'ALGE-Timing SWR7', page: 'equipment/swimming/relay-judging/alge-swr7.md' },
+              { title: 'ALGE-Timing SWR 2', page: 'equipment/swimming/relay-judging/alge-swr2.md' },
               { title: 'ALGE-Timing R1 False Start Detector', page: 'equipment/swimming/relay-judging/alge-r1.md' },
               { title: 'Colorado Time Systems RJP', page: 'equipment/swimming/relay-judging/cts.md' },
               { title: 'Daktronics RTOP', page: 'equipment/swimming/relay-judging/daktronics.md' },
@@ -283,6 +285,7 @@ export const nav: NavNode[] = [
             children: [
               { title: 'ALGE-Timing SO5', page: 'equipment/swimming/starting-blocks/alge-so5.md' },
               { title: 'ALGE-Timing SO4 and So7', page: 'equipment/swimming/starting-blocks/alge-so4.md' },
+              { title: 'ALGE-Timing SO 2', page: 'equipment/swimming/starting-blocks/alge-so2.md' },
               { title: 'Colorado Block', page: 'equipment/swimming/starting-blocks/colorado-block.md' },
               { title: 'Paragon Track Start Competitor', page: 'equipment/swimming/starting-blocks/track-start-competitor.md' },
               { title: 'Fusion Starting Platform', page: 'equipment/swimming/starting-blocks/fusion-starting-platform.md' },
@@ -369,6 +372,7 @@ export const nav: NavNode[] = [
                   { title: 'HS4 Headsets', page: 'equipment/swimming/timers/alge-hs4-1.md' },
                   { title: 'HS3-2 Headset', page: 'equipment/swimming/timers/alge-hs3-2.md' },
                   { title: 'TN-SWIM Transport Box', page: 'equipment/swimming/timers/alge-tn-swim.md' },
+                  { title: 'P5 Printer', page: 'equipment/swimming/timers/alge-p5.md' },
                   { title: 'P4 Printer', page: 'equipment/swimming/timers/alge-p4.md' },
                   { title: 'NLG4 Charging Set', page: 'equipment/swimming/timers/alge-nlg4.md' },
                   { title: 'Q34 Headset', page: 'equipment/swimming/timers/alge-q34.md' },
@@ -501,6 +505,7 @@ export const nav: NavNode[] = [
                 children: [
                   { title: 'D-SW Display Boards', page: 'equipment/common/scoreboard/alge-d-sw.md' },
                   { title: 'D-RTNM Display Boards', page: 'equipment/common/scoreboard/alge-d-rtnm.md' },
+                  { title: 'GAZ4 Display Board', page: 'equipment/common/scoreboard/alge-gaz4.md' },
                   { title: 'GAZc Display Board', page: 'equipment/common/scoreboard/alge-gazc.md' },
                   { title: 'D-LINE Display Board', page: 'equipment/common/scoreboard/alge-d-line.md' },
                 ],
@@ -739,6 +744,7 @@ export const nav: NavNode[] = [
           { title: 'Swimcloud Meet', page: 'software/swimcloud-meet.md' },
           { title: 'TeamUnify TouchPad', page: 'software/teamunify-touchpad.md' },
           { title: 'SwimTime', page: 'software/swimtime.md' },
+          { title: 'ALGE SWIM-Manager', page: 'software/alge-swim-manager.md' },
           { title: 'EasyWk', page: 'software/easywk.md' },
           { title: 'EasyClub', page: 'software/easyclub.md' },
           { title: 'EasyFW', page: 'software/easyfw.md' },
@@ -915,6 +921,7 @@ export const nav: NavNode[] = [
       { title: 'Schwimmverband NRW', page: 'vendors/schwimmverband-nrw.md' },
       { title: 'Spectrum Aquatics', page: 'vendors/spectrum-aquatics.md' },
       { title: 'Splash Software', page: 'vendors/splash-software.md' },
+      { title: 'Split Second Timing', page: 'vendors/split-second-timing.md' },
       { title: 'Sportronic', page: 'vendors/sportronic.md' },
       { title: 'Seagull Enterprises', page: 'vendors/seagull.md' },
       { title: 'Sportyme', page: 'vendors/sportyme.md' },

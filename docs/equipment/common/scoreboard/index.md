@@ -147,6 +147,7 @@ article was being researched.
 |---|---|---|---|
 | [D-SW display boards](alge-d-sw.md) | ALGE-Timing | Numeric LED swimming boards, one line or several | Current |
 | [D-RTNM](alge-d-rtnm.md) | ALGE-Timing | Matrix LED board for event names and messages | Attested 2013 |
+| [GAZ4](alge-gaz4.md) | ALGE-Timing | Numeric electromagnetic boards for the SWIM 2000 | Documented 2000–2007 |
 | [Otter](otter.md) | Colorado Time Systems | Wireless LED numeric scoreboards for swimming, diving and water polo | Current |
 | [LED-R](led-r.md) | Colorado Time Systems | Single-line LED numeric scoreboard module | Current |
 | [LED-REX](led-rex.md) | Colorado Time Systems | LED retrofit for a light-reflective board | Attested 2011 |

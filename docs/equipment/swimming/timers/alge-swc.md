@@ -55,12 +55,32 @@ Second pass, 2026-11-07 (while adding sources to alge-timer-s4.md):
   So the SWC and the SWIM 2000 are not two names for one device: the SWC is the controller at the
   heart of the SWIM 2000 system. That the TM-SWIM succeeded the SWC follows from the TM-SWIM page's
   "old SWC" warning and the shared SWT bus design; inferred.
-  Not stubbed: SO 2, SWR 2, SU, GAZ4, SWIMSOFT and Split Second Timing Pty Ltd are named only in
-  these research notes, not in any article body.
+  (Stubs for SO 2, SWR 2, GAZ4, the SWT, the P5, SWIM-Manager and Split Second Timing were created
+  on 2026-11-11; SU already had a page.)
   Sources:
     - ALGE, SWIM2000 (https://www.splitsecond.com.au/brochures/swim2000-pe.pdf)
     - ALGE, SWIM2000 Architectural Guidelines, Version E-02-01-24 (https://www.splitsecond.com.au/manuals/swim2000-be-architectural.pdf)
     - Split Second Timing Australia, Swimming (https://www.splitsecond.com.au/swimming.htm)
+
+Third pass, 2026-11-11 (while building out alge-swim-2000.md, which now holds the system-level
+detail): ALGE's SWIM2000 manual, version E-020222, and its German edition were recovered from
+Wayback captures of alge-timing.com and filed under sources/vendors/alge-timing/timers-consoles/.
+SWC-specific findings:
+  - The architectural guideline's page 5 is a Neuchatel observatory certificate for SWC serial
+    9913001, dated 16 March 1999; at the 20-hour mark it read 19:59:59.9958. The serial and date
+    put the controller in existence by early 1999.
+  - The manual calls the PC software only the display and keyboard of the SWC and recommends
+    recalibration every 3-5 years. In an emergency mode the SWC runs without the PC: hold the
+    internal start button about 5 s to reprint, longer (double beep) to arm the next heat.
+  - PC link: 9600 baud (brochure, German manual, 2001 page) against 38400 (English manual).
+  - Front panel (German manual and 2001 page): talk, line test and manual start buttons; error,
+    external-supply and charge lamps.
+  - ALGE's FAQ, January 2003: speaker feedback after the start is fixed by SWC firmware update.
+  - Flash update from the timing software loses the current heat's times (manual warning).
+  Sources:
+    - ALGE-Timing, SWIM2000 Manual, Version E-020222 (https://web.archive.org/web/20030323112316/http://alge-timing.com/alge/download/manual/swim2000/swim2000-be.pdf)
+    - ALGE-Timing, SWIM2000 Bedienungsanleitung, Version D-020222 (https://web.archive.org/web/20041014223020/http://www.alge-timing.com/alge/download/manual/swim2000/swim2000-bd.pdf)
+    - ALGE-Timing, FAQ for SWIM 2000 (https://web.archive.org/web/20030106180123/http://www.alge-timing.com/alge/faq/faqswim2000.html)
 -->
 
 This article is a stub. The SWC, which ALGE calls the SWIM Controller, is the
@@ -68,5 +88,6 @@ This article is a stub. The SWC, which ALGE calls the SWIM Controller, is the
 system, collecting impulses from lane terminals on two bus lines, and the
 [TM-SWIM](alge-tm-swim.md) product page warns that it must not receive TM-SWIM firmware.
 
-See the [timers overview](index.md) for the shared background that applies to every timing
-console.
+See the [SWIM 2000](alge-swim-2000.md) article for the controller's specifications and the system
+it runs, and the [timers overview](index.md) for the shared background that applies to every
+timing console.

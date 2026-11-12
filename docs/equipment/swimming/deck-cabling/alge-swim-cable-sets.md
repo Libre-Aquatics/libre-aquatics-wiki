@@ -37,6 +37,11 @@ SPA units; 037-xx to the display in the manual's diagram (D-LINE ships with 037-
 100 m, 350 x 310 x 230 mm, 6100 g; KT200Z10 and KT201Z10 not separately read. The 004, 010-xx, 033
 and 078 cables belong to the Timer S4.
 
+SWIM 2000 (added 2026-11-11 while building out alge-swim-2000.md): the SWIM2000 manual, version
+E-020222, labels its schematics with the same families, 200-xx between SWT terminals and 201-xx
+between speakers, plus 202-xx from the SWC to the SU start unit and 067-02 from the SWC to the
+timing PC. Whether the 2002 cables and plugs fit the current TM-SWIM sets is not stated.
+
 Manual: fasten screw connectors with two fingers only; printed number at both ends; plugs differ
 by device.
 
@@ -51,6 +56,7 @@ Sources:
     30 m version of 199-20, LTW F plugs, same uses (TimeManager to FLASH XL, SU2/SU3 and the BANG
     models, or between BANG units). Added while building out alge-su3.md.
   - ALGE-Timing swimming page (alge-timing.com/en/sports/aquatics/swimming, read 2026-11-04)
+  - ALGE-Timing, SWIM2000 Manual, Version E-020222 (https://web.archive.org/web/20030323112316/http://alge-timing.com/alge/download/manual/swim2000/swim2000-be.pdf)
 -->
 
 This article is a stub. ALGE-Timing sells deck wiring for the
