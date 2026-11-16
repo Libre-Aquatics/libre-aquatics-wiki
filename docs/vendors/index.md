@@ -77,7 +77,10 @@ touchpad accessory.
 | [Heuer](heuer.md) | Switzerland | Stopwatches sold in the United States by Seagull |
 | [Sycom](sycom.md) | Orange, California, United States | The Pasar pacing system and Pacedyne pace clock |
 | [Microsel](microsel.md) | Not established | The Racer wrist chronograph |
-| [Accusplit](accusplit.md) | Not established | Electronic stopwatches |
+| [Accusplit](accusplit.md) | Pleasanton, California, United States | Electronic stopwatches, including the 760 memory stopwatch of 1978 |
+| [Harper Time & Electronics](harper-time-electronics.md) | Not established | The first Accusplit digital stopwatches, from 1973 |
+| [Siliconix](siliconix.md) | California, United States | Built the Accusplit from 1975; ET-series stopwatches |
+| [Recreonics](recreonics.md) | Not established | No equipment of its own in this wiki beyond a 1977 pace clock; a distributor of Siliconix stopwatches and pool equipment |
 | [Spectronics](spectronics.md) | Edmonton, Alberta, Canada | No equipment of its own; a service contractor to Seagull |
 | [Mod International](mod-international.md) | Vancouver and St. Lambert, Canada; Burlingame, California | No equipment of its own; a swim equipment dealer |
 | [Sportyme](sportyme.md) | Hatboro, Pennsylvania, United States | No equipment of its own; Omega's US sales and service agent in the early 1980s, which advertised the OSM6 |

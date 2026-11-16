@@ -28,6 +28,13 @@ Swimming World 197809 "What's New" page (sources/periodicals/swimming-world/), O
   - Also Sportsclox I (period timer, countdown to 15 min, remote, $199.95) and Sportsclox II
     (shooting timer to 60 s, $175.00).
 The company's full name and address were not recovered from the OCR; check the PDF.
+
+Added 2026-11-15 (Accusplit research): Swimming World, February 1981, Maric pace clock ad: 3 in
+numeral $169.95, 2 in $129.95, 1-1/2 in $94.95; a single flashlight cell lasting six months; quartz
+stepper; retractable legs; "now distributed exclusively by" Accusplit, 2290A Ringwood Ave., San
+Jose, CA. From May 1981 Accusplit advertised its own 330B (30 in, 3 in numerals, $169.95) and 320
+(20 in, 2 in numerals, $129.95) pace clocks with the same battery and leg description, so these
+are very likely Maric clocks under the Accusplit name (inference). See vendors/accusplit.md.
 -->
 
 This article is a stub. Maric advertised its Paceclox range in 1978, from a 15 in square battery travel clock to 30 in square battery, mains and wall-mounted clocks with 3 in numerals and quartz movements.
