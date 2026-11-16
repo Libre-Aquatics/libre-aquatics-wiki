@@ -84,7 +84,11 @@ touchpad accessory.
 | [Adolph Kiefer & Associates](kiefer.md) | Zion, Illinois, United States | Competitor pace clocks; Omega's exclusive US timing agent from 1988 |
 | [Macsha](macsha.md) | Not established | The Macsha Swim touchpad and lane-unit system |
 | [Mityvac](mityvac.md) | Not established | No timing equipment; the hand pump Colorado Time Systems sells as the VP-2 |
-| [Paragon Aquatics](paragon-aquatics.md) | LaGrangeville, New York, United States | No timing equipment; the Track Start Competitor block used in the Colorado Block |
+| [Paragon Aquatics](paragon-aquatics.md) | LaGrangeville, New York, United States | No timing equipment; starting platforms, including the Track Start Competitor block used in the Colorado Block |
+| [Pentair](pentair.md) | Not established | No timing equipment; owner of Paragon Aquatics since 1999 |
+| [KDI Corporation](kdi-corporation.md) | Cincinnati, Ohio, United States | No equipment of its own; owner of Paragon, traded as KDI Paragon, from about 1970 |
+| [General Aquatics](general-aquatics.md) | California, United States | No timing equipment; owner of Paragon Aquatics from 1995 to 1997 |
+| [Essef](essef.md) | Ohio, United States | No timing equipment; owner of Paragon Aquatics from 1997 to 1999 |
 | [Spectrum Aquatics](spectrum-aquatics.md) | Missoula, Montana, United States | No timing equipment; the Fusion Starting Platform with a built-in CTS relay platform |
 
 Colorado Time Systems was founded in 1972 and Daktronics in 1968. Swiss Timing is
