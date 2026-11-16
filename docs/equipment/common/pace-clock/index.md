@@ -174,9 +174,9 @@ than 1,000 sold, and by 1967 it gave the face as 3 ft square, alongside a 12 in 
 
 Digital clocks reached the swimming press in the 1970s. From 1974 the dealer Thrifty Timing
 sold a Kyroscope digital programmable pace clock at $350, later $395. Kyroscope was the brand
-of Taroda Industries of Chicago, whose 1971 meet timer carried the name, and in 1976 Taroda
+of Taroda Industries of Chicago, whose [meet timer](../../swimming/timers/kyroscope.md) carried the name, and in 1976 Taroda
 advertised a programmable digital pace clock from $395 with 7 in digits and programmable
-interval sequences.[^kyroscope74][^kyroscope71][^taroda76] Analog clocks carried on beside them: Recreonics advertised
+interval sequences; it sold the clock as the Model 2001A until 1982.[^kyroscope74][^kyroscope71][^taroda76][^taroda82] Analog clocks carried on beside them: Recreonics advertised
 a clock 40 in square in 1977 with an optional tone that sounded at a preset interval, Maric a range of
 battery quartz clocks in 1978, and Kiefer McNeil its Competitor clocks, electric or battery,
 in 1980. Competitor clocks were still advertised in 1996.[^recreonics77][^maric78][^kiefer80][^kiefer96]
@@ -211,7 +211,7 @@ passing.
 | [SASC9](sasc9.md) | Colorado Time Systems | 9 in LED pace clock and water polo shot clock, two or four digits | Listed by CTS 2002–2004 |
 | [Counsilman Pace Clock](counsilman-pace-clock.md) | James Counsilman | Electric sweep-hand clock sold by mail, and the battery Porta-Pace | Advertised 1964–1971[^couns64] |
 | [STS giant pace clock](sts-giant-pace-clock.md) | Swim Training Supply | Large wall or floor clock | Advertised 1962–1967[^sts64] |
-| [Kyroscope pace clock](kyroscope-pace-clock.md) | Taroda Industries | Programmable digital pace clock | Advertised 1974–1976[^kyroscope74] |
+| [Kyroscope pace clock](kyroscope-pace-clock.md) | Taroda Industries | Programmable digital pace clock | Advertised 1974–1982[^kyroscope74][^taroda82] |
 | [Recreonics pace clock](recreonics-pace-clock.md) | Recreonics | 40 in sweep-hand clock with interval tone | Advertised 1977[^recreonics77] |
 | [Maric Paceclox](maric-paceclox.md) | Maric | Battery and mains sweep-hand clocks | Advertised 1978[^maric78] |
 | [Competitor pace clocks](kiefer-competitor-pace-clock.md) | Kiefer McNeil | Electric and battery sweep-hand clocks | Advertised 1980; brand still sold 1996[^kiefer80][^kiefer96] |
@@ -268,6 +268,7 @@ clock pro is not yet covered; it is attested only by its own user guide, F925.[^
 [^kyroscope74]: Thrifty Timing, advertisement (Kyroscope digital programmable pace clock), Swimming World, October 1974.
 [^kyroscope71]: Taroda Industries, Kyroscope timing system advertisement, Swimming World, February 1971.
 [^taroda76]: Taroda Industries, advertisement (programmable digital pace clock), Swimming World, November 1976.
+[^taroda82]: Taroda Industries, Kyroscope Mark II advertisement (pace clock Model No. 2001 A), Swimming World, April 1982.
 [^recreonics77]: Recreonics, new-products advertisement, Swimming World, April 1977.
 [^maric78]: Maric Paceclox, advertisement, Swimming World, September 1978.
 [^kiefer80]: Kiefer McNeil, Competitor Pace Clocks advertisement, Swimming World, January 1980.

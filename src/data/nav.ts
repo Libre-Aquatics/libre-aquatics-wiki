@@ -109,6 +109,12 @@ export const nav: NavNode[] = [
                   { title: 'Seiko Electronic Starting System', page: 'equipment/swimming/starter/seiko-electronic-starting-system.md' },
                 ],
               },
+              {
+                title: 'Taroda Industries',
+                children: [
+                  { title: 'Kyroscope AH-1200', page: 'equipment/swimming/starter/kyroscope-ah-1200.md' },
+                ],
+              },
             ],
           },
           {
@@ -358,6 +364,7 @@ export const nav: NavNode[] = [
                 title: 'Other',
                 children: [
                   { title: 'ZES99', page: 'equipment/swimming/timers/zes99.md' },
+                  { title: 'Kyroscope', page: 'equipment/swimming/timers/kyroscope.md' },
                 ],
               },
             ],
@@ -942,6 +949,8 @@ export const nav: NavNode[] = [
       { title: 'Swiss Timing', page: 'vendors/swiss-timing.md' },
       { title: 'Sycom', page: 'vendors/sycom.md' },
       { title: 'Take Your Mark', page: 'vendors/take-your-mark.md' },
+      { title: 'Taroda Industries', page: 'vendors/taroda-industries.md' },
+      { title: 'Thrifty Timing', page: 'vendors/thrifty-timing.md' },
       { title: 'Time Drops', page: 'vendors/time-drops.md' },
       { title: 'Trycom Technology', page: 'vendors/trycom.md' },
       { title: 'Wylas Timing', page: 'vendors/wylas-timing.md' },
