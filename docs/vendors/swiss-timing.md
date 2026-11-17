@@ -44,6 +44,9 @@ operations of two Swiss watch houses, Omega and Longines, were combined into a s
 company. Both brands had timed sporting events for decades before then: Omega had served
 as sole timekeeper of the 1932 Los Angeles Olympic Games, and Longines had a parallel
 history in Olympic and equestrian timekeeping.[^history][^omega]
+[Heuer](heuer.md) joined the company in 1973, was one of its three partner brands at the 1976
+Games in Montreal and Innsbruck, and left soon after timing the 1980 Winter Games at Lake
+Placid.[^donze][^milestones]
 
 Swiss Timing became part of the Swatch Group through the 1983 merger, led by Nicolas G.
 Hayek, of the watchmaking holdings ASUAG and SSIH into the company later renamed the
@@ -141,6 +144,8 @@ timing and starting equipment at those competitions.[^quantum][^stconcept]
 ## References
 
 [^history]: [Swiss Timing, History](https://www.swisstiming.com/company/history/).
+[^donze]: [Pierre-Yves Donzé, Timing the Olympic Games, Europa Star](http://www.europastar.com/archives/1004092724-timing-the-olympic-games.html) (April 2021).
+[^milestones]: [Swiss Timing, History milestones](https://www.swisstiming.com/company/history-milestones/).
 [^swatch]: [Wikipedia, The Swatch Group](https://en.wikipedia.org/wiki/The_Swatch_Group).
 [^omega]: [Wikipedia, Omega SA](https://en.wikipedia.org/wiki/Omega_SA).
 [^wiki-timing]: [Wikipedia, Aquatic timing system](https://en.wikipedia.org/wiki/Aquatic_timing_system).
