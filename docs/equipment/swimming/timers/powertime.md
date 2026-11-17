@@ -39,6 +39,23 @@ Evidence that a PowerTime predates the PowerTime II:
   The page does not say which generation it means; the -20 to +40 C range differs from the
   PowerTime II datasheet (-10 to +50 C), which may point to the older model. Inferred only.
 
+Omega Electronics download page, Wayback captures of
+http://www.omega-electronics.ch/sports/powertime.shtml (found 2026-11-16 while building out
+top-8.md; the earlier CDX search used the unhyphenated domain):
+- May 2002 capture (page updated 24 April 2002): general user manual v1.2 (English, French);
+  Standard manual v1.0 (3361-512-0x), Ski manual v1.0 (3361-513-0x), Windmeter manual v1.0,
+  TOP-8 manual v1.1 (3361-511-02); a PC output protocol document for writing one's own data
+  handling; boot program 2.3, which needs ENTER + START together to switch on, against the unit
+  switching itself on inside the new bag; upgrading the boot program wipes results, settings
+  and the application, so the program disk is needed to reload. Programs: TOP-8 2.0, Standard
+  2.0 (German, French, English, Italian), Ski 1.4, Dual 1.1; Program Disk 1.9 for a floppy,
+  loaded with Pwtime.exe while the unit runs on its mains adaptor; the boot version shows after
+  pressing the reset hole on the back, and boots below 1.6 are updated with Pwupdate.exe.
+- Captures from October 2002: TOP-8 3.0, Dual 1.3 (4-digit bibs); program zip PT170702.zip.
+  General user manual v1.4 by April 2004. Pages unchanged in substance to August 2009.
+So the original PowerTime was on sale with a mature software set by April 2002. Verified from
+the archived pages; the PDFs and zips themselves were not archived.
+
 Not established: launch date; its own article number (the II is 3361.900 and shares the 3361
 accessory numbers); display, printer and memory figures; how the II differs from it. No product
 page was found on the Wayback Machine (CDX searches of omegaelectronics.ch and swisstiming.com,

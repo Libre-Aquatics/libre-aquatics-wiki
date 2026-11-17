@@ -4,7 +4,7 @@ description: >-
   The PowerTime II is a battery-powered Swiss Timing hand-held timer with a built-in thermal
   printer, used for athletics, skiing and small swimming meets, where its TOP-8 program times up
   to eight lanes from judges' pushbuttons.
-updated: 2026-10-19
+updated: 2026-11-16
 tags:
   - Equipment
   - Timing
@@ -99,7 +99,10 @@ Original PowerTime (predecessor, own stub at powertime.md):
 - IDB1 impulse distribution box manual 3411.510 v2.0 (Dec 2007): wiring example shares a start
   impulse with a PowerTime among other devices.
 No launch date for either model was found. The Wayback CDX for omegaelectronics.ch and
-swisstiming.com returned no PowerTime URLs (searched 2026-10-19).
+swisstiming.com returned no PowerTime URLs (searched 2026-10-19). Correction 2026-11-16: the
+hyphenated domain omega-electronics.ch does have an archived PowerTime download page
+(sports/powertime.shtml, captures May 2002 to August 2009) with program, boot and manual
+versions; see the research notes in top-8.md and powertime.md.
 
 Software interfaces:
 - Hy-Tek Meet Manager guide (swmm6, omegapowertime.htm): select Omega PowerTime; RS-232 cable,
@@ -232,7 +235,7 @@ ready signal from the timer.[^st2][^st3][^st4]
 
 ## Software and operation
 
-This section covers the general settings and the TOP-8 swimming program.
+This section covers the general settings and the program used for swimming.
 
 The unit loads programs over its serial cable from Swiss Timing's PC installer, which finds the
 port by itself. Swiss Timing names Standard, Ski and TOP-8 as available programs.[^general]
@@ -245,19 +248,10 @@ An arming delay of 0–99 s keeps an input closed after the start, and impulses 
 input is closed are kept in a separate store from which they can be recovered.[^general] Every
 correction or hand-entered time is printed with an asterisk.[^general]
 
-In TOP-8 lane mode, the operator picks an event and heat between 0 and 199, and the start input
-is armed. Once the start arrives, the running time shows on the display. After the arming delay
-each lane accepts one finish impulse, and the printer records both the time of day and the race
-time.[^top8] Pressing 1 to 8 moves the cursor to a lane, 0 closes every lane, and 9 reopens them
-all and discards their times. A lane pressed by mistake can be cleared and reopened. If a judge
-presses twice and the second press is the real finish, the operator picks it from the store of
-received impulses.[^top8] When the race ends the operator can send the results to the PC, and the heat
-number steps on by one.[^top8]
-
-Non-lane mode is for a lone judge with one pushbutton, who records competitors as they finish;
-the operator then types in each bib number. Swiss Timing gives the marathon and the 1500 m as
-examples.[^top8] Version 3.2 added a page time that scrolls results across a board of fewer than
-eight lines, and options for numbering finishes automatically in non-lane races.[^top8]
+For swimming the unit runs [TOP-8](../../../software/top-8.md), which has a lane mode that
+takes one finish per lane for up to eight lanes from judges' pushbuttons, and a non-lane mode in
+which one judge records every finisher and the operator adds bib numbers.[^top8] The TOP-8
+article covers both modes, the correction screen and the program's scoreboard settings.
 
 ## Meet-management software
 
@@ -328,6 +322,7 @@ a carrying bag with its system software installed.[^general]
 
 - [PowerTime](powertime.md): the earlier Omega model
 - [TOP-8](../../../software/top-8.md): the lane-timing program for swimming and athletics
+- [Swim Training](../../../software/powertime-swim-training.md): its program for timing practice
 - [PowerTime swimming harness](../deck-cabling/powertime-swimming-harness.md): the pushbutton
   harness for eight lanes
 - [Piccolo](../../common/scoreboard/piccolo.md): a Swiss Timing scoreboard listed for use with
