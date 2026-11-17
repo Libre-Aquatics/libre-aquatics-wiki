@@ -138,6 +138,8 @@ By February 1981 Accusplit had its own address, 2290A Ringwood Avenue, San Jose,
 exclusive distributor of [Maric](../equipment/common/pace-clock/maric-paceclox.md) pace clocks.[^sw8102]
 It traded as Accusplit, Inc. from the same address into the 1990s, adopted the tagline "The
 Stopwatch Company of America" by 1993, and announced its website in 1996.[^sw9112][^sw9304][^sw9609]
+In 1992 and 1993 the [Cronus](cronus.md) stopwatch brand was also advertised from the Ringwood Avenue
+address and Accusplit's dealer telephone number.[^cronus92]
 Its 2018 catalog gives an address in Pleasanton, California.[^cat2018] From 1983 the company also
 worked with the Kato family in Japan on pedometers, which became a second product line.[^about]
 
@@ -223,6 +225,7 @@ Atlanta Olympic Games.[^about]
 [^st8208]: Swimming Technique, August 1982, Accusplit 920XP, product news.
 [^st8305]: Swimming Technique, May 1983, Accusplit price list and model 170 game timer.
 [^sw8402]: Accusplit 790XM advertisement, Swimming World, February 1984.
+[^cronus92]: Cronus, "Nobody Beats Cronus Prices" advertisement, Swimming World, October 1992.
 [^sw9112]: Accusplit X3 Series advertisement, Swimming World, December 1991.
 [^sw9208]: Accusplit High School Relay Championships advertisement, Swimming World, August 1992.
 [^sw9304]: Accusplit advertisement, Swimming World, April 1993.
