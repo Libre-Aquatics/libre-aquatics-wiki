@@ -923,6 +923,7 @@ export const nav: NavNode[] = [
       { title: 'Chronomix', page: 'vendors/chronomix.md' },
       { title: 'CleanEntries', page: 'vendors/cleanentries.md' },
       { title: 'Colorado Time Systems', page: 'vendors/colorado-time-systems.md' },
+      { title: 'Counsilman Company', page: 'vendors/counsilman-company.md' },
       { title: 'Cronus', page: 'vendors/cronus.md' },
       { title: 'Daktronics', page: 'vendors/daktronics.md' },
       { title: 'Deutscher Schwimm-Verband', page: 'vendors/deutscher-schwimm-verband.md' },
