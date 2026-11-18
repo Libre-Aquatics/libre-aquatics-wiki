@@ -412,6 +412,9 @@ export const nav: NavNode[] = [
                 title: 'Trycom Technology',
                 children: [
                   { title: 'TRP-C08H Converter', page: 'equipment/swimming/timers/trycom-trp-c08h.md' },
+                  { title: 'TRP-C08E Converter', page: 'equipment/swimming/timers/trycom-trp-c08e.md' },
+                  { title: 'TRP-C08D Converter', page: 'equipment/swimming/timers/trycom-trp-c08d.md' },
+                  { title: 'TRP-C08 Converter', page: 'equipment/swimming/timers/trycom-trp-c08.md' },
                 ],
               },
               {
@@ -932,6 +935,7 @@ export const nav: NavNode[] = [
       { title: 'Microsel', page: 'vendors/microsel.md' },
       { title: 'Mityvac', page: 'vendors/mityvac.md' },
       { title: 'Mod International', page: 'vendors/mod-international.md' },
+      { title: 'MosChip Semiconductor', page: 'vendors/moschip.md' },
       { title: 'Nevco', page: 'vendors/nevco.md' },
       { title: 'NovaStar', page: 'vendors/novastar.md' },
       { title: 'Paragon Aquatics', page: 'vendors/paragon-aquatics.md' },
