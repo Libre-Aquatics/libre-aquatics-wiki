@@ -60,9 +60,10 @@ touchpad accessory.
 | [Dexstar Communications](dexstar-communications.md) | Pointe-Claire, Quebec, Canada | Swiss Timing distributor for Eastern Canada; the DC 204 Sports Timer |
 | [Schwimmverband NRW](schwimmverband-nrw.md) | North Rhine-Westphalia, Germany | No equipment; the regional association, formerly the WSV, in which the DSV-Standard was written |
 | [GeoLogix](geologix.md) | Berne, Switzerland | No equipment; developed and supported Splash Meet Manager from 2003 to about 2015 |
-| [Kyrotech](kyrotech.md) | Northbrook, Illinois, United States | The Tec-Timer printing meet timer, advertised in the press between 1984 and 1993 |
+| [Kyrotech](kyrotech.md) | Northbrook, Illinois, United States | The Tec-Timer printing meet timer, advertised in the press between 1984 and 1993, and the AutoCoach pace clock, advertised 1982–1986 |
 | [Taroda Industries](taroda-industries.md) | Chicago, Illinois, United States | The Kyroscope meet timer from 1969, the Kyroscope pace clock and the AH-1200 horn start |
 | [Thrifty Timing](thrifty-timing.md) | Eau Claire, Wisconsin, United States | No equipment of its own; a 1970s dealer that first advertised the Kyroscope pace clock |
+| [The Woodchester Company](woodchester-company.md) | Mississauga, Ontario, Canada | No equipment of its own; the 1984 Canadian distributor of the Kyrotech AutoCoach |
 | [Incomar](incomar.md) | Utica, Michigan, United States | The Splash I pacing system of 1980, and a console Hy-Tek supported in 1988 |
 | [ALGE-Timing](alge-timing.md) | Lustenau, Austria | The TM-SWIM timing console, SWIM 2000 and Timy timers, and a semi-automatic swimming package |
 | [Nevco](nevco.md) | Not established | Aquatic timing and scoring systems built on ALGE-Timing equipment |

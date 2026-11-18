@@ -115,6 +115,12 @@ export const nav: NavNode[] = [
                   { title: 'Kyroscope AH-1200', page: 'equipment/swimming/starter/kyroscope-ah-1200.md' },
                 ],
               },
+              {
+                title: 'Kyrotech',
+                children: [
+                  { title: 'Tec-Start', page: 'equipment/swimming/starter/kyrotech-tec-start.md' },
+                ],
+              },
             ],
           },
           {
@@ -366,6 +372,7 @@ export const nav: NavNode[] = [
                 children: [
                   { title: 'ZES99', page: 'equipment/swimming/timers/zes99.md' },
                   { title: 'Kyroscope', page: 'equipment/swimming/timers/kyroscope.md' },
+                  { title: 'Kyrotech Tec-Timer', page: 'equipment/swimming/timers/kyrotech-tec-timer.md' },
                 ],
               },
             ],
@@ -538,6 +545,12 @@ export const nav: NavNode[] = [
                   { title: '3009 Scoreboard', page: 'equipment/common/scoreboard/3009.md' },
                   { title: 'HWPM 110 and HWPM 220', page: 'equipment/common/scoreboard/hwpm.md' },
                   { title: 'Multisport Portable Scoreboard', page: 'equipment/common/scoreboard/multisport-portable-scoreboard.md' },
+                ],
+              },
+              {
+                title: 'Kyrotech',
+                children: [
+                  { title: 'Databoard', page: 'equipment/common/scoreboard/kyrotech-databoard.md' },
                 ],
               },
               {
@@ -963,6 +976,7 @@ export const nav: NavNode[] = [
       { title: 'Thrifty Timing', page: 'vendors/thrifty-timing.md' },
       { title: 'Time Drops', page: 'vendors/time-drops.md' },
       { title: 'Trycom Technology', page: 'vendors/trycom.md' },
+      { title: 'The Woodchester Company', page: 'vendors/woodchester-company.md' },
       { title: 'Wylas Timing', page: 'vendors/wylas-timing.md' },
     ],
   },

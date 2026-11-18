@@ -74,6 +74,22 @@ equipment/common/pace-clock/kyrotech-autocoach.md. Its ad presents it as the new
 of programmable digital clocks. A possible predecessor is the Kyroscope programmable pace
 clock of 1974-76, a brand of Taroda Industries of Chicago (kyroscope-pace-clock.md); the
 similar name and location suggest a link but nothing found confirms one.
+
+Added 2026-11-17 (AutoCoach build-out): Kyrotech's own advertising begins with the AutoCoach in
+Swimming World, September 1982 (sales (312) 472-9400, service (312) 272-5809). From December 1984
+it ran rotating line ads whose footer lists AUTO COACH, HAL, TEC-TIMER, TEC-START, DATABOARD,
+TOUCHPADS and MEET RECORD BOARD; HAL is never explained. Featured products: Tec-Start (December
+1984, November 1985, February 1986), Tec-Timer (March 1985 onward), Databoard (June to August
+1985), AutoCoach (May 1986). Pages now exist for the Tec-Timer
+(equipment/swimming/timers/kyrotech-tec-timer.md), Tec-Start
+(equipment/swimming/starter/kyrotech-tec-start.md) and Databoard
+(equipment/common/scoreboard/kyrotech-databoard.md). The September 1992 ad claims "10 years of
+TecTimers in operation" and gives the ZIP as 60065 and service on area code 708; the 1994-1996
+buyer's guides use 708-272-5809 and the 1997 guides 847-272-5809, the service number carried
+over as the main contact. Canadian distribution in 1984-1985 through The Woodchester Company
+(vendors/woodchester-company.md) and Sharper Aquatic Image, both at one Mississauga address.
+Google Patents has no patent assigned to Kyrotech (searched 2026-11-17); trademark and Illinois
+corporation records could not be searched automatically and remain unchecked.
 -->
 
 This article is a stub. Kyrotech was an American athletic timing company of Northbrook,

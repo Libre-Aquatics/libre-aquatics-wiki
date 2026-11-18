@@ -215,7 +215,7 @@ passing.
 | [Recreonics pace clock](recreonics-pace-clock.md) | Recreonics | 40 in sweep-hand clock with interval tone | Advertised 1977[^recreonics77] |
 | [Maric Paceclox](maric-paceclox.md) | Maric | Battery and mains sweep-hand clocks | Advertised 1978[^maric78] |
 | [Competitor pace clocks](kiefer-competitor-pace-clock.md) | Kiefer McNeil | Electric and battery sweep-hand clocks | Advertised 1980; brand still sold 1996[^kiefer80][^kiefer96] |
-| [AutoCoach](kyrotech-autocoach.md) | Kyrotech | Microprocessor-programmed digital pace clock | Advertised 1982–1986[^autocoach82] |
+| [AutoCoach](kyrotech-autocoach.md) | Kyrotech | Microprocessor-programmed digital pace clock | Advertised 1982–1986; listed 1991[^autocoach82] |
 | [Daktronics LED timer](daktronics-led-timer.md) | Daktronics | LED timer designed as a pace clock | Announced 1995[^dak95] |
 | [PC-2001](pc-2001.md) | Daktronics | Portable battery LED pace clock with eleven programs, including start and relay reaction timers | Introduced 2003; manual revised 2023 |
 | [PC-2002](pc-2002.md) | Daktronics | Mains-powered wall-mounted indoor version of the PC-2001 | Documented 2003–2021 |
