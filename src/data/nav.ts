@@ -394,6 +394,8 @@ export const nav: NavNode[] = [
                   { title: 'P4 Printer', page: 'equipment/swimming/timers/alge-p4.md' },
                   { title: 'NLG4 Charging Set', page: 'equipment/swimming/timers/alge-nlg4.md' },
                   { title: 'PS12A Power Supply', page: 'equipment/swimming/timers/alge-ps12a.md' },
+                  { title: 'BANG-HS Radio Headset', page: 'equipment/swimming/timers/alge-bang-hs.md' },
+                  { title: 'BANG SPK Speaker', page: 'equipment/swimming/timers/alge-bang-spk.md' },
                   { title: 'Q34 Headset', page: 'equipment/swimming/timers/alge-q34.md' },
                   { title: 'Cable 010-10', page: 'equipment/swimming/timers/alge-cable-010.md' },
                 ],
