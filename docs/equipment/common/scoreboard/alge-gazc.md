@@ -45,6 +45,12 @@ GAZ5 manual (Version E120911): the later GAZ5 still accepts data from a Timer S4
 rotation switch at 0 or 13, so GAZ5 kept the GAZc protocol. That the GAZ5 replaced the GAZc is
 inferred from this and the 2013 catalogue only.
 
+Added 2026-11-22 from the GAZ4 build-out (alge-gaz4.md): the GAZ4 manual E-98-06-22 uses the same
+thumb wheel (0-15), shift switch, NGAZ/R supply and Amphenol cable 033 as this guide, and its
+protocol table carries the Timer S4 swimming format with boards addressed A to H. A GAZ4 dimension
+sheet is dated October 1997, seven months after this guide. Whether GAZc is a GAZ4 variant, an
+earlier board or another name for it is still not established.
+
 Not established: digit height, digit count of the swimming version, dimensions, dates.
 
 Sources:

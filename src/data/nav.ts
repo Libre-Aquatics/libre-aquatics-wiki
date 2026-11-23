@@ -361,6 +361,9 @@ export const nav: NavNode[] = [
                   { title: 'SWIM 2000', page: 'equipment/swimming/timers/alge-swim-2000.md' },
                   { title: 'Timer S4', page: 'equipment/swimming/timers/alge-timer-s4.md' },
                   { title: 'Timer S3', page: 'equipment/swimming/timers/alge-timer-s3.md' },
+                  { title: 'TdC 8000', page: 'equipment/swimming/timers/alge-tdc-8000.md' },
+                  { title: 'TdC 4000', page: 'equipment/swimming/timers/alge-tdc-4000.md' },
+                  { title: 'Comet', page: 'equipment/swimming/timers/alge-comet.md' },
                 ],
               },
               {
@@ -402,6 +405,9 @@ export const nav: NavNode[] = [
                   { title: 'BANG SPK Speaker', page: 'equipment/swimming/timers/alge-bang-spk.md' },
                   { title: 'Q34 Headset', page: 'equipment/swimming/timers/alge-q34.md' },
                   { title: 'Cable 010-10', page: 'equipment/swimming/timers/alge-cable-010.md' },
+                  { title: 'Cable 033', page: 'equipment/swimming/timers/alge-cable-033.md' },
+                  { title: 'NGAZ/R Power Supply', page: 'equipment/swimming/timers/alge-ngaz-r.md' },
+                  { title: 'KT Cable Reels', page: 'equipment/swimming/timers/alge-kt-cable-reels.md' },
                 ],
               },
               {
@@ -533,6 +539,7 @@ export const nav: NavNode[] = [
                 children: [
                   { title: 'D-SW Display Boards', page: 'equipment/common/scoreboard/alge-d-sw.md' },
                   { title: 'D-RTNM Display Boards', page: 'equipment/common/scoreboard/alge-d-rtnm.md' },
+                  { title: 'GAZ5 Display Board', page: 'equipment/common/scoreboard/alge-gaz5.md' },
                   { title: 'GAZ4 Display Board', page: 'equipment/common/scoreboard/alge-gaz4.md' },
                   { title: 'GAZc Display Board', page: 'equipment/common/scoreboard/alge-gazc.md' },
                   { title: 'D-LINE Display Board', page: 'equipment/common/scoreboard/alge-d-line.md' },
@@ -781,6 +788,7 @@ export const nav: NavNode[] = [
           { title: 'TeamUnify TouchPad', page: 'software/teamunify-touchpad.md' },
           { title: 'SwimTime', page: 'software/swimtime.md' },
           { title: 'ALGE SWIM-Manager', page: 'software/alge-swim-manager.md' },
+          { title: 'ALGE GAZ4Test', page: 'software/alge-gaz4test.md' },
           { title: 'EasyWk', page: 'software/easywk.md' },
           { title: 'EasyClub', page: 'software/easyclub.md' },
           { title: 'EasyFW', page: 'software/easyfw.md' },
