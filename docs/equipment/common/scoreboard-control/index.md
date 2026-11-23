@@ -109,6 +109,7 @@ than by who made it, so a NovaStar controller and a CTS adapter sit in the same 
 | [WA-3](wa-3.md) | Colorado Time Systems | 2.4 GHz wireless scoreboard adapter | Current |
 | [Dolphin Scoreboard Adapter](dolphin-scoreboard-adapter.md) | Colorado Time Systems | Receiver linking a Dolphin stopwatch system to a numeric scoreboard | Current |
 | [WTTC-1](wttc-1.md) | Colorado Time Systems | Tabletop controller for multisport boards and water polo | Current |
+| [D-CKN](alge-d-ckn.md) | ALGE-Timing | Keypad terminal for multisport and water polo boards, wired or radio | Current |
 | [Run-stop-reset units](rsr.md) | Colorado Time Systems | Hand switches for extra clock operators on the WTTC-1 | Current |
 | [WHC-1](whc-1.md) | Colorado Time Systems | Handheld controller for multisport boards | Documented |
 | [GameLink console](gamelink-console.md) | Colorado Time Systems | Keyboard console for team-sport data entry | Discontinued |

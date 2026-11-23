@@ -544,6 +544,7 @@ export const nav: NavNode[] = [
                   { title: 'GAZ4 Display Board', page: 'equipment/common/scoreboard/alge-gaz4.md' },
                   { title: 'GAZc Display Board', page: 'equipment/common/scoreboard/alge-gazc.md' },
                   { title: 'D-LINE Display Board', page: 'equipment/common/scoreboard/alge-d-line.md' },
+                  { title: 'D-SAT Display Board', page: 'equipment/common/scoreboard/alge-d-sat.md' },
                 ],
               },
               {
@@ -717,6 +718,12 @@ export const nav: NavNode[] = [
                       { title: 'WHC-1 Handheld Controller', page: 'equipment/common/scoreboard-control/whc-1.md' },
                       { title: 'GameLink Console', page: 'equipment/common/scoreboard-control/gamelink-console.md' },
                       { title: 'Run-Stop-Reset Units (WTTC-1 accessory)', page: 'equipment/common/scoreboard-control/rsr.md' },
+                    ],
+                  },
+                  {
+                    title: 'ALGE-Timing',
+                    children: [
+                      { title: 'D-CKN Terminal', page: 'equipment/common/scoreboard-control/alge-d-ckn.md' },
                     ],
                   },
                   {
