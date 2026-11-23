@@ -797,6 +797,7 @@ export const nav: NavNode[] = [
           { title: 'SwimTime', page: 'software/swimtime.md' },
           { title: 'ALGE SWIM-Manager', page: 'software/alge-swim-manager.md' },
           { title: 'ALGE GAZ4Test', page: 'software/alge-gaz4test.md' },
+          { title: 'ALGE DisplayStudio', page: 'software/alge-displaystudio.md' },
           { title: 'EasyWk', page: 'software/easywk.md' },
           { title: 'EasyClub', page: 'software/easyclub.md' },
           { title: 'EasyFW', page: 'software/easyfw.md' },

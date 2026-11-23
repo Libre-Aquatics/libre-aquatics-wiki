@@ -146,7 +146,7 @@ article was being researched.
 | Product | Maker | Type | Status |
 |---|---|---|---|
 | [D-SW display boards](alge-d-sw.md) | ALGE-Timing | Numeric LED swimming boards: single line, one line per lane, or event and heat | Current; documented from 2007 |
-| [D-RTNM](alge-d-rtnm.md) | ALGE-Timing | Matrix LED board for event names and messages | Attested 2013 |
+| [D-RTNM](alge-d-rtnm.md) | ALGE-Timing | Red LED matrix board for event names, messages and advertising | Current; documented from 2006 |
 | [GAZ5](alge-gaz5.md) | ALGE-Timing | Numeric electromagnetic boards, successor to the GAZ4 | Listed 2012–2022; spare parts listed 2026 |
 | [GAZ4](alge-gaz4.md) | ALGE-Timing | Numeric electromagnetic boards, 15, 25 or 45 cm digits | Documented 1997–2010; spare parts listed 2026 |
 | [D-LINE](alge-d-line.md) | ALGE-Timing | Numeric LED boards, 57–1500 mm digits, indoor and outdoor | Current; documented from 2004 |
