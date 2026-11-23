@@ -45,6 +45,11 @@ What the sources say:
   - ALGE D-LINE / D-SAT manual E240226, display mode for CKN playing time (mm:ss centred) at
     9600 baud, wireless protocol from CKN software of November 2006; the wired link no longer
     exists. The 2005 D-LINE manual had separate wired and wireless game-console modes. Verified.
+  - Added 2026-11-23 from the D-SW build-out: ALGE's July 2007 "Scoreboards for Aquatic Sports"
+    leaflet (sources/vendors/alge-timing/catalogs-brochures/alge-d-sw-scoreboard-leaflet-2007)
+    names a "Multisport-Console D-CKM" in the same role (water polo game time and goals on D-SW
+    boards; shot clocks for use with a D-CKM-W). The 2013 catalogue names the D-CKN in that role.
+    That D-CKM is an earlier name or predecessor of the D-CKN is inferred, not stated.
 Not established: dimensions, power, display type beyond "LCD", introduction date.
 
 Sources:
