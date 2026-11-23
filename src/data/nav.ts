@@ -268,6 +268,7 @@ export const nav: NavNode[] = [
                 indexTitle: 'Pushbuttons Overview',
                 children: [
                   { title: 'ALGE-Timing 023-02 Push Button', page: 'equipment/swimming/semi-automatic/pushbutton/alge-023-02.md' },
+                  { title: 'ALGE-Timing WTN-PB Radio Push Button', page: 'equipment/swimming/semi-automatic/pushbutton/alge-wtn-pb.md' },
                   { title: 'Colorado Time Systems Pushbutton', page: 'equipment/swimming/semi-automatic/pushbutton/cts.md' },
                   { title: 'Daktronics Pushbutton', page: 'equipment/swimming/semi-automatic/pushbutton/daktronics.md' },
                   { title: 'Superior Swim Timing Pushbutton', page: 'equipment/swimming/semi-automatic/pushbutton/sst.md' },
@@ -391,6 +392,9 @@ export const nav: NavNode[] = [
                 children: [
                   { title: 'P6-8 Printer', page: 'equipment/swimming/timers/alge-p6-8.md' },
                   { title: 'WTN Wireless Timing Network', page: 'equipment/swimming/timers/alge-wtn.md' },
+                  { title: 'USB-WTN Adapter', page: 'equipment/swimming/timers/alge-usb-wtn.md' },
+                  { title: 'WTN-WS Anemometer Radio Link', page: 'equipment/swimming/timers/alge-wtn-ws.md' },
+                  { title: 'PR1aW Photocell', page: 'equipment/swimming/timers/alge-pr1aw.md' },
                   { title: 'MC9 Multichannel', page: 'equipment/swimming/timers/alge-mc9.md' },
                   { title: 'TIDO Docking Station', page: 'equipment/swimming/timers/alge-tido.md' },
                   { title: 'SWIM-SIM10', page: 'equipment/swimming/timers/alge-swim-sim10.md' },
@@ -727,6 +731,7 @@ export const nav: NavNode[] = [
                     title: 'ALGE-Timing',
                     children: [
                       { title: 'D-CKN Terminal', page: 'equipment/common/scoreboard-control/alge-d-ckn.md' },
+                      { title: 'WTN-DB Display-Board Receiver', page: 'equipment/common/scoreboard-control/alge-wtn-db.md' },
                     ],
                   },
                   {
