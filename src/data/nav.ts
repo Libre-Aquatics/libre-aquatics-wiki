@@ -408,6 +408,7 @@ export const nav: NavNode[] = [
                   { title: 'Cable 033', page: 'equipment/swimming/timers/alge-cable-033.md' },
                   { title: 'NGAZ/R Power Supply', page: 'equipment/swimming/timers/alge-ngaz-r.md' },
                   { title: 'KT Cable Reels', page: 'equipment/swimming/timers/alge-kt-cable-reels.md' },
+                  { title: 'GTT Carrying Bags', page: 'equipment/swimming/timers/alge-gtt-carrying-bags.md' },
                 ],
               },
               {

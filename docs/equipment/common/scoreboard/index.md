@@ -147,7 +147,7 @@ article was being researched.
 |---|---|---|---|
 | [D-SW display boards](alge-d-sw.md) | ALGE-Timing | Numeric LED swimming boards, one line or several | Current |
 | [D-RTNM](alge-d-rtnm.md) | ALGE-Timing | Matrix LED board for event names and messages | Attested 2013 |
-| [GAZ5](alge-gaz5.md) | ALGE-Timing | Numeric electromagnetic boards, successor to the GAZ4 | Listed 2012–2017 |
+| [GAZ5](alge-gaz5.md) | ALGE-Timing | Numeric electromagnetic boards, successor to the GAZ4 | Listed 2012–2022; spare parts listed 2026 |
 | [GAZ4](alge-gaz4.md) | ALGE-Timing | Numeric electromagnetic boards, 15, 25 or 45 cm digits | Documented 1997–2010; spare parts listed 2026 |
 | [Otter](otter.md) | Colorado Time Systems | Wireless LED numeric scoreboards for swimming, diving and water polo | Current |
 | [LED-R](led-r.md) | Colorado Time Systems | Single-line LED numeric scoreboard module | Current |
