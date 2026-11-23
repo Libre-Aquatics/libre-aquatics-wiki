@@ -42,6 +42,13 @@ What the sources say:
     Plate SO1" with rubber top and relay detection. Whether the SO1 is a predecessor or an earlier
     name is not stated.
   - Successors: SO4 and SO5 are in the 2013 catalogue; no SO 2. Succession inferred, not stated.
+  - Split Second Timing (ALGE Australia), so2.htm (https://www.splitsecond.com.au/so2.htm), undated
+    live page read 2026-11-23 while building out alge-swr2.md: polished stainless steel with a
+    sand-blasted top; the top part moves to register the relay take-off, and with the touchpad the
+    system works out a relay false start; a rear panel holds the contact mechanism with room for
+    the SWT and cables; an "SOL2" version gives the needed height for pools with a lapping edge;
+    existing blocks can take the SWR1 pad instead. The SOL2 looks like the high SO 2-EX under a
+    distributor's name (both serve decks level with the water); not confirmed, so no separate page.
 Not established: width, depth, weight, years of production.
 
 Sources:

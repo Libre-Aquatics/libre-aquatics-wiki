@@ -287,6 +287,7 @@ export const nav: NavNode[] = [
             children: [
               { title: 'ALGE-Timing SWR7', page: 'equipment/swimming/relay-judging/alge-swr7.md' },
               { title: 'ALGE-Timing SWR 2', page: 'equipment/swimming/relay-judging/alge-swr2.md' },
+              { title: 'ALGE-Timing SWR1', page: 'equipment/swimming/relay-judging/alge-swr1.md' },
               { title: 'ALGE-Timing R1 False Start Detector', page: 'equipment/swimming/relay-judging/alge-r1.md' },
               { title: 'Colorado Time Systems RJP', page: 'equipment/swimming/relay-judging/cts.md' },
               { title: 'Daktronics RTOP', page: 'equipment/swimming/relay-judging/daktronics.md' },
