@@ -219,7 +219,7 @@ buttons to a WTN mode that gives each one its own channel.[^tracktimer]
 The TrackTimer program can drive up to eight ALGE GAZ or [D-LINE](../../common/scoreboard/alge-d-line.md)
 display boards, one per lane or one per place, or one eight-digit board showing time, place and
 lane in turn.[^tracktimer] The same guide says lane timing also needs either an ALGE
-[MC9](alge-mc9.md) multichannel unit or an ALGE docking station.[^tracktimer]
+[MC9](alge-mc9.md) multichannel unit or an ALGE [TIDO](alge-tido.md) docking station.[^tracktimer]
 
 ### Training
 

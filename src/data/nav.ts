@@ -208,6 +208,7 @@ export const nav: NavNode[] = [
                   { title: 'Cable 078', page: 'equipment/swimming/deck-cabling/alge-cable-078.md' },
                   { title: 'SWIM-FIX', page: 'equipment/swimming/deck-cabling/alge-swim-fix.md' },
                   { title: 'MC8 Push-Button Cable', page: 'equipment/swimming/deck-cabling/alge-mc8.md' },
+                  { title: 'MC2-S Training Adapter', page: 'equipment/swimming/deck-cabling/alge-mc2-s.md' },
                 ],
               },
               {
@@ -391,6 +392,7 @@ export const nav: NavNode[] = [
                   { title: 'P6-8 Printer', page: 'equipment/swimming/timers/alge-p6-8.md' },
                   { title: 'WTN Wireless Timing Network', page: 'equipment/swimming/timers/alge-wtn.md' },
                   { title: 'MC9 Multichannel', page: 'equipment/swimming/timers/alge-mc9.md' },
+                  { title: 'TIDO Docking Station', page: 'equipment/swimming/timers/alge-tido.md' },
                   { title: 'SWIM-SIM10', page: 'equipment/swimming/timers/alge-swim-sim10.md' },
                   { title: 'HS4 Headsets', page: 'equipment/swimming/timers/alge-hs4-1.md' },
                   { title: 'HS3-2 Headset', page: 'equipment/swimming/timers/alge-hs3-2.md' },

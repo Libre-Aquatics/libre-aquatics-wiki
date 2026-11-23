@@ -32,8 +32,14 @@ Sources:
 - alge-tm-swim.md research notes also list the MC9 among open water parts.
 - Timy3 General manual E25-03-10: channel extensions add five channels each, up to 99; whether
   the MC9 is such an extension or a connection box is not stated. Inferred link only.
-Not established: number of inputs, connectors, power, dimensions and dates; how it differs from
-the TIDO docking station.
+- Added 2026-11-23 while building out alge-mc8.md: ALGE General catalogue 2017 (held,
+  catalogs-brochures/), p. 30, lists the MC9 as a unit that adds Timy3 channels, with nine
+  pairs of banana jacks (channels 0 to 8) and an RS232/RS485 socket; p. 121 (speed climbing)
+  says the Timy3 docks into it, and it takes the contact mats, start beep and false-start
+  light. The same p. 30 describes the TIDO (see alge-tido.md). ALGE's adapter page
+  (alge-timing.com/en/product/2279/adapter) lists a "Multichannel Adapter MC9". Verified.
+Not established: power, dimensions and dates; how it differs from the TIDO docking station beyond
+the TIDO's amplifier and extra sockets.
 -->
 
 This article is a stub. The `MC9` is an [ALGE-Timing](../../../vendors/alge-timing.md)
