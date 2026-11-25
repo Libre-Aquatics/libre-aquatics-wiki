@@ -10,7 +10,7 @@ tags:
 
 <!--
 Research notes, SST wireless adapter. Surfaced 2026-11-03 and given a page 2026-11-03 while extending
-software/sst-timing-software.md.
+software/timing/sst-timing-software.md.
 
 Sources: superiorswimtiming.com pricing page and shop feed (shop.superiorswimtiming.com), read
 2026-11-03 and 2026-11-03. Listed as Wireless Adapter for Daktronics Scoreboard, $400, shop entry

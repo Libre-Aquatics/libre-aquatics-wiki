@@ -129,7 +129,7 @@ available as an addition.[^ds19][^shop13] CTS's product page adds that the table
 operator control the scoreboard's dots, a term it does not define.[^ctswhc]
 
 To reach a video board, the handheld's data goes through a WA-3 at the
-[DisplayLink Plus](../../../software/displaylink-plus.md) computer, set to the controller's
+[DisplayLink Plus](../../../software/display/displaylink-plus.md) computer, set to the controller's
 channel and PAN with its switch 8 up.[^f1045]
 
 ## Design and controls
@@ -218,7 +218,7 @@ The two controllers reach the same boards without an adapter and share an operat
 up to 1,000 ft.[^f1045][^ds19] The handheld is the smaller and simpler of the two. It has one
 fixed key layout and runs on AA cells. The [WTTC-1](wttc-1.md) has sport-specific keyboard
 inserts, player statistics, water polo exclusions, inputs for
-[run-stop-reset units](rsr.md), a USB link, wired scoreboard ports and a real-time clock of its
+[run-stop-reset units](../accessories/rsr.md), a USB link, wired scoreboard ports and a real-time clock of its
 own.[^f970][^ds19] CTS's 2013 prices were $250 for the handheld and $600 for the tabletop.[^shop13][^shop13t]
 
 ## Specifications

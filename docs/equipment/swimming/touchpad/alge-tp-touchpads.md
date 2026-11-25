@@ -196,7 +196,7 @@ For occasional use, ALGE's manual allows a pad to be tied to the starting platfo
 holes in the top angle.[^manual] On the TP2400C drawing there are four 8 mm holes under the rubber,
 600 mm and 2100 mm apart, which an installer can open up for other fixings.[^manual]
 
-Permanent points use [holders](alge-touchpad-holders.md) that screw into M8 anchors set in the wall.
+Permanent points use [holders](../accessories/alge-touchpad-holders.md) that screw into M8 anchors set in the wall.
 The TP-D140 holds two neighbouring pads, the TP-S holds the outer edge of the end pad, and the TP-T
 reaches down from the deck. The fastener sits 75–175 mm below the top of the pad. Where turn plates
 extend the wall of an overflow pool, a TP-D140 is used with a TP-L backing plate, through a gap of at
@@ -210,7 +210,7 @@ The 1997 guide set the pad 30 cm above the water and 60 cm below it, with one ho
 
 This section covers how the pad's signal reaches the timer.
 
-A 2.5 m [cable 309-2.5](../deck-cabling/alge-cable-309.md) with banana plugs at both ends comes with
+A 2.5 m [cable 309-2.5](../accessories/alge-cable-309.md) with banana plugs at both ends comes with
 the pad.[^p2400][^p309] ALGE says the closing contact suits most other timing systems.[^cat2017]
 
 The TM-SWIM blocks every pad for a set time once the race starts, and each pad separately once it is
@@ -271,13 +271,13 @@ This section lists the parts ALGE names with the pad.
 | Part | Number |
 |---|---|
 | Touchpads | `TP2400C`, `TP2300C`, `TP1890C`, `TP914C`[^cat2026][^p914] |
-| Cable to the terminal | [`309-2.5`](../deck-cabling/alge-cable-309.md)[^p309] |
-| Wall and deck holders | [`TP-D140`, `TP-S`, `TP-T`, `TP-L`](alge-touchpad-holders.md)[^manual] |
-| Storage trolley, up to 12 pads | [`CADDY X`](alge-caddy-x.md)[^manual] |
+| Cable to the terminal | [`309-2.5`](../accessories/alge-cable-309.md)[^p309] |
+| Wall and deck holders | [`TP-D140`, `TP-S`, `TP-T`, `TP-L`](../accessories/alge-touchpad-holders.md)[^manual] |
+| Storage trolley, up to 12 pads | [`CADDY X`](../accessories/alge-caddy-x.md)[^manual] |
 
 ## See also
 
-- [CADDY X](alge-caddy-x.md) and [touchpad holders](alge-touchpad-holders.md): storage and mounting for the pad
+- [CADDY X](../accessories/alge-caddy-x.md) and [touchpad holders](../accessories/alge-touchpad-holders.md): storage and mounting for the pad
 - [SWT3](../deck-cabling/alge-swt3.md): the lane terminal it plugs into
 - [TM-SWIM](../timers/alge-tm-swim.md): the ALGE timing console
 - [OCP5 touchpad](ocp5.md), [AquaGrip touchpad](aquagrip.md) and [T-7000 series touchpad](t-7000.md): other manufacturers' pads

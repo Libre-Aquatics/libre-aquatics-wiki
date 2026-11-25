@@ -10,7 +10,7 @@ infobox:
   - label: Industry
     value: Diving software
   - label: Key products
-    value: '[eDive](software/edive.md)'
+    value: '[eDive](software/diving-artistic-swimming/edive.md)'
   - label: Headquarters
     value: Macedon, New York, United States
   - label: Website
@@ -34,7 +34,7 @@ Not established: founders, founding date, size.
 -->
 
 This article is a stub. CleanEntries LLC is an American diving software company based in
-Macedon, New York, which publishes the [eDive](../software/edive.md) meet management program
+Macedon, New York, which publishes the [eDive](../software/diving-artistic-swimming/edive.md) meet management program
 and runs the cleanentries.com site for diving meet entries and live results.
 
 See the [vendors overview](index.md) for the other companies this wiki covers.

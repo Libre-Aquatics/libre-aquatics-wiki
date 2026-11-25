@@ -159,7 +159,7 @@ Both 7-pin sockets also offer a 12 V output limited to 40 mA.[^m2014] The unit w
 its horn is rated at 114 dB.[^m2014][^m2023][^ds] Its power rating differs between sources: the
 two manuals give 350 VA at most, and the 2015 datasheet gives 300 VA.[^m2014][^m2023][^ds]
 
-The unit's connector set matches that of the [Coyote horn](coyote-horn.md), which a Swiss Timing
+The unit's connector set matches that of the [Coyote horn](../accessories/coyote-horn.md), which a Swiss Timing
 dealer sells with these clocks. The Coyote's listed size, weight and loudness are different,
 however, and no Swiss Timing document links the two names.[^avkcoyote][^m2023]
 
@@ -235,7 +235,7 @@ console to the current World Aquatics limits.[^ds]
 ## See also
 
 - [Montreal shot clocks](montreal-shot-clocks.md): Swiss Timing's larger shot clock with game clock
-- [Coyote horn](coyote-horn.md): the horn and power unit sold with these clocks
+- [Coyote horn](../accessories/coyote-horn.md): the horn and power unit sold with these clocks
 - [Calypso WPO console](../console/calypso-wpo-console.md): the console that runs them
 - [Water polo shot clocks](index.md): the water polo shot clocks overview
 - [Swiss Timing](../../../vendors/swiss-timing.md): the manufacturer

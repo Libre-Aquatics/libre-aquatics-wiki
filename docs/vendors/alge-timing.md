@@ -134,9 +134,9 @@ following swimming equipment.
   [Timy](../equipment/swimming/timers/alge-timy.md) timer, the earlier
   [SWIM 2000](../equipment/swimming/timers/alge-swim-2000.md) and
   [Timer S4](../equipment/swimming/timers/alge-timer-s4.md), and the
-  [WTN](../equipment/swimming/timers/alge-wtn.md) radio network.
+  [WTN](../equipment/swimming/accessories/alge-wtn.md) radio network.
 - Starts: the [SU3](../equipment/swimming/starter/alge-su3.md) start unit, the
-  [BANG](../equipment/swimming/starter/alge-bang.md) speakers, the
+  [BANG](../equipment/swimming/external-speaker/alge-bang.md) speakers, the
   [E-START](../equipment/swimming/starter/alge-e-start.md) and the
   [STB1](../equipment/swimming/starter/alge-stb1.md) horn.
 - Lane equipment: the [TP touchpads](../equipment/swimming/touchpad/alge-tp-touchpads.md),
@@ -151,8 +151,8 @@ following swimming equipment.
   [D-LINE](../equipment/common/scoreboard/alge-d-line.md),
   [D-RTNM](../equipment/common/scoreboard/alge-d-rtnm.md) and
   [GAZ5](../equipment/common/scoreboard/alge-gaz5.md) boards.
-- Software: [SwimTime](../software/swimtime.md), which operates the TM-SWIM, and
-  [DisplayStudio](../software/alge-displaystudio.md).
+- Software: [SwimTime](../software/meet-management/swimtime.md), which operates the TM-SWIM, and
+  [DisplayStudio](../software/display/alge-displaystudio.md).
 
 ALGE holds a German patent on a swimming touch device, filed in November 2014 and granted in December
 2023, with Wolfgang Alge as inventor. A sensor sits between a front unit and a plate fixed to the pool
@@ -169,9 +169,9 @@ timing.[^swim2007] See the
 [semi-automatic timing overview](../equipment/swimming/semi-automatic/index.md) for that class of
 equipment.
 
-[Hy-Tek Meet Manager](../software/hy-tek-meet-manager.md) reads the SWIM 2000 over a serial cable
+[Hy-Tek Meet Manager](../software/meet-management/hy-tek-meet-manager.md) reads the SWIM 2000 over a serial cable
 and the Timy through a shared results file.[^hytek][^hytektimy]
-[Splash Meet Manager](../software/splash-meet-manager.md) has interfaces for the S4, the SWIM 2000 and
+[Splash Meet Manager](../software/meet-management/splash-meet-manager.md) has interfaces for the S4, the SWIM 2000 and
 SwimTime.[^splash]
 
 The TM-SWIM sounds the start tone over its lane speakers, at a frequency and length set in

@@ -51,7 +51,7 @@ wylas-timing.com partnership post (April 2016); macsha.com archive captures.
 
 This article is a stub. Macsha is a sports timing company whose Macsha Swim system, a central
 timing unit with touchpad lane units, is among the timing systems
-[Splash Meet Manager](../software/splash-meet-manager.md) supports.
+[Splash Meet Manager](../software/meet-management/splash-meet-manager.md) supports.
 
 In 2016 it partnered with [Wylas Timing](wylas-timing.md) to combine its [swimming touchpads](../equipment/swimming/touchpad/index.md) with that
 company's wireless system; see the [vendors](index.md) register for the companies this wiki

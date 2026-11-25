@@ -59,8 +59,8 @@ work with Quantum or other Swiss Timing consoles.
 This article is a stub. The MTE is a Swiss Timing handheld judge's keypad, sold under the Omega
 name, with an 18-key keyboard and a small graphic display, which sends diving and artistic
 swimming awards by ZigBee radio, or by cable through an
-[INT131](../swimming/timers/swiss-timing-int131.md) converter, to scoring software such as
-[DIV Scoring Manager](../../software/div-scoring-manager.md) and
-[SWA Scoring Manager](../../software/swa-scoring-manager.md).
+[INT131](../common/accessories/swiss-timing-int131.md) converter, to scoring software such as
+[DIV Scoring Manager](../../software/diving-artistic-swimming/div-scoring-manager.md) and
+[SWA Scoring Manager](../../software/diving-artistic-swimming/swa-scoring-manager.md).
 
 See the [diving equipment overview](index.md) for the shared background on judging hardware.

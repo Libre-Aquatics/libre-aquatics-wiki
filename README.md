@@ -13,7 +13,8 @@ Pages. You edit plain Markdown, no coding required.
 ## Editing
 
 All content is Markdown under `docs/`, organized by section (`equipment/`,
-`meet-management/`, `team-management/`, `software/`, `vendors/`, `about/`).
+`software/`, `tools/`, `vendors/`, `about/`). Software articles are in one folder per
+purpose, such as `software/meet-management/`.
 The navigation tree lives in `src/data/nav.ts`; the site layout and the
 Wikipedia-style skin live under `src/`.
 

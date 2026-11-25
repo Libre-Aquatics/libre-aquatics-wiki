@@ -216,6 +216,9 @@ semi-automatic timing in sanctioned competition since April 13, 2023.[^blog]
 |---|---|---|---|
 | [Dolphin Wireless Stopwatch Timing System](dolphin.md) | Colorado Time Systems | Wireless stopwatches, synchronized start | Current |
 
+The [DIGI Sport-Event-Timer](digi-sport-event-timer.md) is a semi-automatic system that writes
+its results to files for the [EasyWk](../../../software/meet-management/easywk.md) meet program.
+
 A CTS numeric scoreboard can take results from the Dolphin by radio, with no timing console
 in between, through the [Dolphin Scoreboard Adapter](../../common/scoreboard-control/dolphin-scoreboard-adapter.md), kit
 `K-DSCB`.

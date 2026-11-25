@@ -10,7 +10,7 @@ tags:
 
 <!--
 Research notes, SST pushbutton. Surfaced 2026-11-03 while writing
-software/sst-timing-software.md.
+software/timing/sst-timing-software.md.
 
 Sources: superiorswimtiming.com pricing page, read 2026-11-03: waterproof button $80; button with
 banana plug connector $80. The Buttons & Cables page is already cited on the Daktronics pushbutton

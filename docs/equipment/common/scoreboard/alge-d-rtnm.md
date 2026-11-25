@@ -155,7 +155,7 @@ connected.[^cat2013][^leaflet09]
 In a pool, ALGE's 2007 and 2013 swimming documents pair the D-RTNM with the numeric D-SW boards:
 the D-SW shows rank, lane and time, while the D-RTNM carries the event's name and the heat number, plus
 advertising during or after a race, or information for the public outside competition.[^dsw][^cat2013]
-ALGE's [SwimTime](../../../software/swimtime.md) software drives it over the network, configured
+ALGE's [SwimTime](../../../software/meet-management/swimtime.md) software drives it over the network, configured
 from a D-RTNM tab in its settings.[^tmswim][^swimtime] The 2017 catalogue also shows D-RTNM boards
 beside equestrian and football scoreboards, and as athletics infield boards.[^cat2017]
 
@@ -219,7 +219,7 @@ The board has an Ethernet port, RS-232 and RS-485 ports that also supply 12 V, a
 an ALGE timer, a socket for an optional temperature sensor, and options for DCF or GPS time
 signals.[^leaflet09][^manual] It comes with a 10 m network cable.[^product]
 
-Layouts and lists are built in ALGE's [DisplayStudio](../../../software/alge-displaystudio.md)
+Layouts and lists are built in ALGE's [DisplayStudio](../../../software/display/alge-displaystudio.md)
 software and loaded over the network. A crossover cable links one board straight to a PC, and a
 utility installed with DisplayStudio sets each board's IP address, marking clashing addresses in
 red.[^manual] Start lists can be loaded from an Excel file, after which the board can show a
@@ -269,7 +269,7 @@ Sources: manuals, leaflets and 2017 catalogue.[^manual][^manual06][^leaflet09][^
 | Item | Part number | Notes |
 |---|---|---|
 | Display board | `D-RTNM-Pn-RxC-I/O` | Pixel type, resolution, indoor or outdoor |
-| Software | [DisplayStudio](../../../software/alge-displaystudio.md) | Layouts, lists and network setup |
+| Software | [DisplayStudio](../../../software/display/alge-displaystudio.md) | Layouts, lists and network setup |
 | Console | [`D-CKN`](../scoreboard-control/alge-d-ckn.md) | Multisport and water polo data |
 | Timer | [Timy](../../swimming/timers/alge-timy.md), [TdC 8000](../../swimming/timers/alge-tdc-8000.md) | Bib, rank and time |
 
@@ -279,8 +279,8 @@ Sources: manual and product page.[^manual][^product]
 
 - [D-SW display boards](alge-d-sw.md): the numeric swimming boards it is paired with
 - [D-LINE display board](alge-d-line.md): ALGE's general-purpose numeric LED board
-- [DisplayStudio](../../../software/alge-displaystudio.md): the software that programs it
-- [SwimTime](../../../software/swimtime.md): ALGE's swimming software that drives it
+- [DisplayStudio](../../../software/display/alge-displaystudio.md): the software that programs it
+- [SwimTime](../../../software/meet-management/swimtime.md): ALGE's swimming software that drives it
 - [Scoreboards](index.md): the scoreboard overview
 - [ALGE-Timing](../../../vendors/alge-timing.md): the manufacturer
 - [Equipment](../../index.md): the equipment reference

@@ -138,7 +138,7 @@ circuit stores its lane number. Swiss Timing programs the circuits for their lan
 delivery, so they need reprogramming only when one is replaced.[^manual] The Primary & Secondary
 box carries a spare circuit in slot 11, marked RES.[^manual] A circuit's lane number is set with
 an RFID programmer held within 1 cm of it. The ODB10-SW manual names programmer `3494.901`,
-sold with a spare circuit. The [Programmer AQ](../timers/programmer-aq.md), sets `3480.921` and
+sold with a spare circuit. The [Programmer AQ](../accessories/programmer-aq.md), sets `3480.921` and
 `3480.922`, does the same job, and its manual names ODB10-SW circuits. Neither manual says
 whether the two are the same tool.[^manual][^programmer]
 
@@ -237,7 +237,7 @@ This section lists the parts Swiss Timing names.
 | `3494.720` | ODB10-SW Primary & Secondary, 10 lanes[^manual] |
 | `3494.600` | Harness circuit, one per lane[^manual] |
 | `3494.901` | Programmer for harness circuits, with a spare circuit[^manual] |
-| `1865.010` | [Quantum start cable](quantum-start-cable.md), box to timer[^manual] |
+| `1865.010` | [Quantum start cable](../accessories/quantum-start-cable.md), box to timer[^manual] |
 | `1892.010` | [Quantum harness cable](quantum-harness-cable.md), box to timer[^manual] |
 | `9071.3003` | Tool for the WAGO terminals, supplied[^manual] |
 | `9038.7047` | Silicone grease for plugs and deck plates[^manual] |
@@ -250,7 +250,7 @@ product. A distributor lists it as discontinued, at 60 × 40 × 23.5 cm and 13�
 
 - [Swiss Timing deck plate](swiss-timing-deck-plate.md): the in-deck plate wired to the box
 - [Quantum Mobile Harness](quantum-mobile-harness.md): the on-deck alternative to fixed cabling
-- [Programmer AQ](../timers/programmer-aq.md): the tool that sets a circuit's lane number
+- [Programmer AQ](../accessories/programmer-aq.md): the tool that sets a circuit's lane number
 - [Quantum Aquatics](../timers/quantum.md): the timer the box feeds
 - [Deck cabling](index.md): the deck cabling overview
 - [Swiss Timing](../../../vendors/swiss-timing.md): the manufacturer

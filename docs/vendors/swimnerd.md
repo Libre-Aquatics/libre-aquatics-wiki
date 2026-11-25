@@ -8,7 +8,7 @@ tags:
 ---
 
 <!--
-Research notes, Swimnerd. Surfaced 2026-11-03 while writing software/sst-timing-software.md.
+Research notes, Swimnerd. Surfaced 2026-11-03 while writing software/timing/sst-timing-software.md.
 
 Sources: swimpractice.com product pages, read 2026-11-03, trading as Swimnerd Pace Clocks, with
 contact number 757-996-5512. Lists SST software at $1,850 and $2,499, and bundles with SST, the
@@ -23,6 +23,6 @@ in search snippets of its SwimSwam pieces. Location and founding date need their
 
 This article is a stub. Swimnerd is a seller of swim pace clocks and timing equipment that resells
 [Superior Swim Timing](superior-swim-timing.md) products alongside its own
-[Swimnerd Live](../software/swimnerd-live.md).
+[Swimnerd Live](../software/live-results/swimnerd-live.md).
 
 See the [vendors overview](index.md) for the other companies this wiki covers.

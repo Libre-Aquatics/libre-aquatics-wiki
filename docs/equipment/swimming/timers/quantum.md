@@ -213,7 +213,7 @@ Either scheme joins the console at its harness inputs, HA1 for the finish end an
 other end. Swiss Timing's cabling diagrams run from one harness on a Primary console to two
 harnesses on a Primary & Secondary console.[^concept][^swconcept] Each lane module carries its
 lane number, from 0 to 9. Swiss Timing sets the numbers at the factory, and the
-[Programmer AQ](programmer-aq.md) rewrites them on site by RFID when a module is
+[Programmer AQ](../accessories/programmer-aq.md) rewrites them on site by RFID when a module is
 replaced.[^harness][^programmer] The lane sockets are colour-coded: yellow for the
 [OCP5](../touchpad/ocp5.md) touchpad, white for the starting block, red for a pushbutton.[^harness]
 
@@ -280,14 +280,14 @@ connects.
 | Hy-Tek | Shared folder: Meet Manager writes the schedule and start lists, Quantum writes a `.qaq` result file per race[^sw][^hytek] |
 | Splash | Shared folder with a send file and a receive file[^sw][^omega] |
 
-[Hy-Tek Meet Manager](../../../software/hy-tek-meet-manager.md) lists the console as Omega
+[Hy-Tek Meet Manager](../../../software/meet-management/hy-tek-meet-manager.md) lists the console as Omega
 Quantum-AQ, beside Omega's older OSM 6, ARES 21 and Power Time.[^hytekv] Its guide describes the
 same shared folder, with result files ending in `.qaq`.[^hytek] The two vendors name the
 start-list files differently. Swiss Timing's manual expects files called `quantum.sch` and
 `startlist.slx`, while Hy-Tek's guide writes a start list called `quantum.slx` and, from
 Meet Manager 7.0, a records file called `quantum.rec`.[^sw][^hytek]
 
-[Splash Meet Manager](../../../software/splash-meet-manager.md) reads and writes a shared folder
+[Splash Meet Manager](../../../software/meet-management/splash-meet-manager.md) reads and writes a shared folder
 from build 20948, with Quantum set to its Splash protocol.[^omega] In January 2021 Splash added a
 second interface over UDP and TCP, and later releases fixed compatibility between the two
 protocol versions.[^relnotes]
@@ -341,7 +341,7 @@ This section lists the part numbers in Swiss Timing's documents.
 ## See also
 
 - [ARES 21](ares-21.md): the Swiss Timing system Quantum replaced
-- [Quantum Mobile Harness](../deck-cabling/quantum-mobile-harness.md), [Programmer AQ](programmer-aq.md) and [ODB10-SW](../deck-cabling/odb10-sw.md): the lane cabling
+- [Quantum Mobile Harness](../deck-cabling/quantum-mobile-harness.md), [Programmer AQ](../accessories/programmer-aq.md) and [ODB10-SW](../deck-cabling/odb10-sw.md): the lane cabling
 - [StartTime V](../starter/starttime-v.md): the current Swiss Timing starter
 - [OCP5](../touchpad/ocp5.md): the Omega touchpad
 - [Calypso](../../common/scoreboard/calypso.md): the Swiss Timing numeric scoreboard

@@ -262,8 +262,8 @@ The program has two scoreboard types:
 
 - [Galactica](../../common/scoreboard/galactica.md), Swiss Timing's alphanumeric board, which also takes start lists sent from the
   record-output dialog in a mode called "GALACTICA Startlist".[^ares]
-- [ERTD](../../../software/ertd.md), written for Daktronics boards controlled by Daktronics'
-  [Venus](../../../software/venus.md) software, which receive
+- [ERTD](../../../software/file-formats/ertd.md), written for Daktronics boards controlled by Daktronics'
+  [Venus](../../../software/display/venus.md) software, which receive
   each heat's start list when it is called up.[^ares]
 
 In [UNT4](../../common/scoreboard/unt4.md) modes an extra figure, such as a team score, can go on a twelfth line.[^ares] The
@@ -364,15 +364,15 @@ only one:[^ares]
 
 - an HTML page through the PC's web browser, or a plain text file, with or without a preview;
 - a text file in the data folder named from the event, round and heat (`sEEERRHH.txt`);
-- the [ARES-Print](../../../software/ares-print.md) program, the default, over a DDE link;
-- the [ARES online printer](ares-online-printer.md) connected to the box;
+- the [ARES-Print](../../../software/timing/ares-print.md) program, the default, over a DDE link;
+- the [ARES online printer](../accessories/ares-online-printer.md) connected to the box;
 - a line added to a results table file for import into a database.
 
 ## Meet-management software
 
 This section covers the two meet-management programs documented with ARES 21.
 
-[Hy-Tek Meet Manager](../../../software/hy-tek-meet-manager.md) offers an "Omega OSM6/ARES21"
+[Hy-Tek Meet Manager](../../../software/meet-management/hy-tek-meet-manager.md) offers an "Omega OSM6/ARES21"
 interface, in which the timer only sends, and an "Omega ARES21 Bi-Directional" interface, which
 requires ARES software 2.14 or later.[^hytek][^hytekkb] In bi-directional mode Meet Manager tests
 the link when the port is opened, can send the meet's events to ARES, and fetches each heat's
@@ -387,7 +387,7 @@ Manager sometimes failed to pick up times for events longer than 100 m, and give
 enter such events in ARES as 50 m races, since only the event number and lane times
 transfer.[^cvs]
 
-[Splash Meet Manager](../../../software/splash-meet-manager.md) lists Omega ARES 21 among its
+[Splash Meet Manager](../../../software/meet-management/splash-meet-manager.md) lists Omega ARES 21 among its
 supported timers in its 2010 getting-started guide and its 2018 brochure. Its 2011 FAQ describes
 the ARES 21 link as bidirectional: the operator selects a heat and Splash asks the timer for that
 heat's results.[^howto][^brochure][^faq] Splash added
@@ -440,14 +440,14 @@ This section lists the options on the two datasheet editions.
 | `3330.901` | ARES with aquatics interface and Bluetooth (UK edition) |
 | `3330.621` | Single power supply |
 | `3330.624` | Dual power supply for ARES 21 and switcher (Corgémont edition only) |
-| `3330.701` | [ARES data switcher](ares-data-switcher.md) |
+| `3330.701` | [ARES data switcher](../accessories/ares-data-switcher.md) |
 | `3397.902` | Laptop computer for ARES |
 | `3330.613` | Transport case |
-| `3330.630` | [ARES online printer](ares-online-printer.md), with integrated battery (`3330.630.US` in the UK edition) |
+| `3330.630` | [ARES online printer](../accessories/ares-online-printer.md), with integrated battery (`3330.630.US` in the UK edition) |
 | `3330.661` | ARES online printer, 115/230 V |
-| `3330.633` | [ARES diving](../../../software/ares-diving.md) and synchronized diving software |
-| `3330.634` | [ARES synchronized swimming](../../../software/ares-synchronized-swimming.md) software |
-| `3330.635` | [ARES water polo](../../../software/ares-water-polo.md) software |
+| `3330.633` | [ARES diving](../../../software/diving-artistic-swimming/ares-diving.md) and synchronized diving software |
+| `3330.634` | [ARES synchronized swimming](../../../software/diving-artistic-swimming/ares-synchronized-swimming.md) software |
+| `3330.635` | [ARES water polo](../../../software/timing/ares-water-polo.md) software |
 | `3330.636` | All ARES aquatics software |
 | `3330.650` | Scoreboard cable, 20 mA and RS485 |
 | `3330.651` | ARES double start cable |
@@ -460,8 +460,8 @@ Sources: Swiss Timing datasheets.[^ds][^dsuk]
 - [OSM6](osm6.md): the Omega console before it, whose output format it kept
 - [StartTime II](../starter/starttime-ii.md) and [StartTime III](../starter/starttime-iii.md): start systems documented with it
 - [Galactica](../../common/scoreboard/galactica.md) and [Calypso](../../common/scoreboard/calypso.md): Swiss Timing scoreboards it drives
-- [ERTD](../../../software/ertd.md) and [Venus](../../../software/venus.md): the Daktronics scoreboard protocol and software
-- [ARES-Print](../../../software/ares-print.md): the results-printing program
+- [ERTD](../../../software/file-formats/ertd.md) and [Venus](../../../software/display/venus.md): the Daktronics scoreboard protocol and software
+- [ARES-Print](../../../software/timing/ares-print.md): the results-printing program
 - [Timers](index.md): the timers overview
 - [Swiss Timing](../../../vendors/swiss-timing.md): the manufacturer
 - [Equipment](../../index.md): the equipment reference

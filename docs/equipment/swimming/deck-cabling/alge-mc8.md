@@ -109,7 +109,7 @@ number.[^tracktimer][^swimusa]
 ALGE's catalogues pair the cable with a different start device in each edition. The 2013 system
 uses an [STB1](../starter/alge-stb1.md) startbeep and a Timy2 PXE. The 2017 one uses a Timy3 WP
 with an SPP start speaker and a start push button wired to the timer. The 2026 one uses a Timy3
-WP and a [BANG2](../starter/alge-bang.md) speaker, with the starter's 023-10 button plugged into
+WP and a [BANG2](../external-speaker/alge-bang.md) speaker, with the starter's 023-10 button plugged into
 the BANG2 rather than into the MC8.[^cat2013][^cat2017][^cat2026] In ALGE's radio alternative,
 WTN-PB wireless buttons take the place of the cable.[^cat2026]
 
@@ -142,7 +142,7 @@ to the hundredth.[^timy2][^timy3] The TrackTimer guide's channel
 list instead gives channel 5 as 1/100 s as well, which would include lane 5.[^tracktimer]
 
 The TrackTimer guide also says that lane timing needs either an ALGE
-[MC9](../timers/alge-mc9.md) multichannel unit or a [TIDO](../timers/alge-tido.md) docking
+[MC9](../accessories/alge-mc9.md) multichannel unit or a [TIDO](../accessories/alge-tido.md) docking
 station besides the Timy. ALGE's 2017 catalogue describes both as boxes that bring the nine
 channels out to banana sockets.[^tracktimer][^cat2017] The wired drawing in the same guide shows
 the MC8 running straight to the Timy3 with neither unit, and the 2026 catalogue's cable system
@@ -184,11 +184,11 @@ This section lists the cable and the parts ALGE names with it.
 | `MC8-SWIM` | Name in the 2013 and 2017 catalogues[^cat2013][^cat2017] |
 | [`023-02`](../semi-automatic/pushbutton/alge-023-02.md) | Finish push button, one per lane[^cat2026] |
 | [`023-10`](../semi-automatic/pushbutton/alge-023-02.md) | Start push button, plugged into the BANG2[^cat2026] |
-| [`MC2-S`](alge-mc2-s.md) | Two-lane training adapter, listed with the MC8-S2[^product] |
+| [`MC2-S`](../accessories/alge-mc2-s.md) | Two-lane training adapter, listed with the MC8-S2[^product] |
 
 ## See also
 
-- [MC2-S Training Adapter](alge-mc2-s.md): the two-lane adapter for training
+- [MC2-S Training Adapter](../accessories/alge-mc2-s.md): the two-lane adapter for training
 - [SWT3 Swim Terminal](alge-swt3.md): the lane terminal of ALGE's fully automatic system
 - [Deck cabling](index.md): the deck-cabling overview
 - [Timy](../timers/alge-timy.md): the timer the cable plugs into

@@ -89,17 +89,19 @@ The steps in the flowchart are set out in rule 102.23.4 of the USA Swimming rule
 
 [Colorado Time Systems](../../../../vendors/colorado-time-systems.md) (CTS) and
 Daktronics each make the wired backup pushbutton used with their swim-timing systems, and
-Swiss Timing supplies its OIT3 button with the Quantum harness. This section catalogs the
-three buttons; Daktronics states that its buttons and the CTS buttons are cross-compatible, so
+Swiss Timing supplies its OIT3 button with the Quantum harness. This section catalogs
+these and the other buttons covered; Daktronics states that its buttons and the CTS buttons are cross-compatible, so
 either can be used on either maker's lane wiring.[^dakcompat]
 
 | Product | Manufacturer | Cord | Connection | Status |
 |---|---|---|---|---|
 | [ALGE-Timing 023-02 push button](alge-023-02.md) | ALGE-Timing | 2 m (`023-10`: 10 m) | Banana plug into a SWT3 terminal or Timy cable | Current |
+| [ALGE-Timing WTN-PB radio push button](alge-wtn-pb.md) | ALGE-Timing | None | WTN radio | Current |
 | [Colorado Time Systems Pushbutton](cts.md) | Colorado Time Systems | 6 ft | Banana plug into deck plate or cable harness | Current |
 | [Daktronics Pushbutton](daktronics.md) | Daktronics | Not published | Banana plug into lane module or deck plate | Supplied with deck-cabling systems |
 | [Superior Swim Timing Pushbutton](sst.md) | Superior Swim Timing | Not published | Waterproof connector or banana plug | Current |
 | [Swiss Timing OIT3 Pushbutton](swiss-timing.md) | Swiss Timing | Not published | Banana plug into a Quantum harness module or deck plate | Supplied with Quantum harness sets |
+| [Omega OIT8 Pushbutton](oit8.md) | Omega Electronics | 5 m | PowerTime | Dates not established |
 
 Each article covers its button in full, its role in the timing layers, how a timer uses
 it, how it connects, and its care; this page is the shared overview they refer back

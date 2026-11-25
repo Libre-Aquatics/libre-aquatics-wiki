@@ -2,6 +2,7 @@
 title: Software
 seoTitle: Aquatics competition software
 description: "Software for aquatic competitions: meet and team management programs, timing and display software, and the file formats that carry data between them."
+updated: 2026-11-25
 tags:
   - Software
 ---
@@ -15,189 +16,49 @@ between them.
 
 ## What lives here
 
-- Meet-management software, builds events, seeds entries, records results, and
-  scores the competition.
-- Team-management software, rosters, best times, and entries on the club side.
-- Timing software, programs that run a timing console on a laptop.
-- Display software, the applications that push results from a timing console to
+Software is grouped by purpose, and by publisher within each group:
+
+- [Meet management](meet-management/index.md): builds events, seeds entries, records
+  results, and scores the competition.
+- [Diving and artistic swimming](diving-artistic-swimming/index.md): meet and scoring
+  programs for judged events.
+- [Team management](team-management/index.md): rosters, best times, and entries on the club
+  side.
+- [Training](training/index.md): workouts, deck recording and training records.
+- [Timing](timing/index.md): programs that run a timing console on a laptop or work beside
+  one.
+- [Display](display/index.md): programs that put results from a timing console on
   scoreboards and video boards.
-- File formats, the interchange formats that move entries and results between
-  team software, meet software, and timing systems.
+- [Live results and rankings](live-results/index.md): spectator applications and results
+  databases.
+- [File formats](file-formats/index.md): the interchange formats that move entries and
+  results between team software, meet software, and timing systems.
+- [Data tools](data-tools/index.md): libraries, validators and converters for those formats.
 
-The display software is the best covered of these, together with Hy-Tek's Meet Manager
-and Team Manager; most of the other programs have stub pages only. The meet-management and team-management programs in common use are commercial
-products from other vendors, and the workflows they support are described under
-[meet management](../meet-management/index.md) and
-[team management](../team-management/index.md) rather than here.
+## Articles
 
-<!-- TODO: needs source: the three meet-management pages are stubs written from a
-     timing-system research pass, not from their own. CTS Synchro Meet Manager has no
-     article at all. Hy-Tek Team Manager was built out in September 2026.
-     Each needs its own research pass before a page is written or built out. -->
+The programs and formats that the rest of the section most often refers back to are these:
 
-## Meet-management software
-
-Meet-management software builds and seeds a competition, scores it, and reads finish
-times from the timing equipment. The three programs below are the ones Colorado Time
-Systems names as able to read results from a
-[Dolphin Wireless Stopwatch Timing System](../equipment/swimming/semi-automatic/dolphin.md);
-each is documented here only as far as that timing interface goes.[^f912]
-
-| Program | Vendor | Notes |
-|---|---|---|
-| [Hy-Tek Meet Manager](hy-tek-meet-manager.md) | [Hy-Tek Sports Software](../vendors/hy-tek.md), part of [The Active Network](../vendors/active-network.md) since 2008 | Advertised since 1986 and the program most American consoles were built to talk to; reads Dolphin `DO3` and `DO4` files as either the primary or the backup source |
-| [SwimTopia Meet Maestro](meet-maestro.md) | SwimTopia | Integrates with the Dolphin directly, and also sends event and heat detail back into the Dolphin software |
-| [Splash Meet Manager](splash-meet-manager.md) | [Splash Software](../vendors/splash-software.md), Spiegel bei Bern | Compulsory for meets in Switzerland and distributed through federation agreements in Europe and Quebec; reads Dolphin result files |
-
-Hy-Tek Meet Manager and Splash Meet Manager have had research passes of their own; Meet
-Maestro is a stub. The
-[Easy Meet](easy-meet.md), [Championship Meet Management](championship-meet-management.md)
-and [Computerized Swim League](computerized-swim-league.md) pages cover rivals and
-predecessors the swimming press names, [Meet Mobile](meet-mobile.md) is the
-live-results application that publishes what a meet scores, and [SplashMe](splashme.md) does
-the same for meets run on Splash.
-
-[SwimTime](swimtime.md) is the ALGE-Timing program that operates its
-[TM-SWIM](../equipment/swimming/timers/alge-tm-swim.md) console, and
-[PC Display Multisport](pc-display-multisport.md) shows its data on video walls. ALGE also lists
-[SPORTSYSTEMS](sportsystems.md) and [Orpheus](orpheus.md) among the meet programs SwimTime works with.
-
-Several more meet programs have stub pages. [Swimify](swimify.md), [EasyWk](easywk.md) and
-[CPS-Schwimm](cps-schwimm.md) are European programs that the Swimrankings wiki lists as
-supporting Lenex. [SwimMeet Manager](swimmeet-manager.md) came from Hy-Point Software and was
-advertised in 2000 and 2001, and [Aquabec](aquabec.md) was written in 1984 and spread to
-clubs across Quebec through the provincial federation. The Active Network's web product,
-[ACTIVEWorks Swim Manager](activeworks-swim-manager.md), handles club and meet
-administration and hands a meet host its entries as an HY3 file. Hy-Tek's
-[The Interface](the-interface.md), announced in 1988, was a disk and cable that connected
-Meet Manager to timing consoles.
-
-## Team-management software
-
-Team-management software keeps a club's roster, its swimmers' results and best times,
-and the entries it sends to meets. Hy-Tek Team Manager has a full article; the other
-programs have stub pages.
-
-| Program | Vendor | Notes |
-|---|---|---|
-| [Hy-Tek Team Manager](hy-tek-team-manager.md) | [Hy-Tek Sports Software](../vendors/hy-tek.md) | Windows program for a club's roster, results, best times and meet entries |
-| [Team Manager Online](hy-tek-team-manager-online.md) | Hy-Tek Sports Software | Web-hosted companion with online meet entry, advertised from the early 2000s |
-| [Team Connect Online](hy-tek-team-connect-online.md) | Hy-Tek Sports Software | Subscription service that holds a master copy of a club's Team Manager database on Hy-Tek's server |
-| [Pro SWIMMER](hy-tek-pro-swimmer.md) | Hy-Tek Sports Software | Palm OS program for hand times, splits and stroke rates on deck; no longer sold |
-| [Workout Manager](hy-tek-workout-manager.md) | Hy-Tek Sports Software | Builds interval sessions for a pace clock or console; announced in 1989, now a Team Manager option |
-| [Business Manager](hy-tek-business-manager.md) | Hy-Tek Sports Software | Club accounting, announced in 1989; no longer in the product line |
-| [Personal Swim Manager](hy-tek-personal-swim-manager.md) | Hy-Tek Sports Software | Training diary for an individual swimmer, announced in 1999 |
-| [Team Registration](hy-tek-team-registration.md) | Hy-Tek Sports Software | Club sign-up and registration |
-| [Team Websites](hy-tek-team-websites.md) | Hy-Tek Sports Software | A club website |
-| [TeamUnify](teamunify.md) | TeamUnify | Web-based club management founded in 2007; owned by SportsEngine from 2016 and by PlayMetrics from 2026 |
-| [SwimTopia](swimtopia.md) | Team Topia, Inc. | Web-based team management begun for summer-league teams |
-| [Splash Team Manager](splash-team-manager.md) | [Splash Software](../vendors/splash-software.md) | Windows club program for members, entries, results and records; compulsory for entering swimmers in Switzerland |
-
-## Timing software
-
-Most timing consoles are dedicated hardware, covered under
-[timers](../equipment/swimming/timers/index.md). A few systems put the console on a laptop
-instead, with a small box taking the signals from the deck. The
-[SST timing software](sst-timing-software.md) from
-[Superior Swim Timing](../vendors/superior-swim-timing.md) has a full article, and
-[TIMEWARE3](timeware3.md) from
-[International Sports Timing](../vendors/international-sports-timing.md) has a stub page.
-
-## Display software
-
-Display software sits between the timing equipment and the board. It does not time
-or score anything itself: it receives scoreboard data from a console such as the
-[Gen7 Serial Timer](../equipment/swimming/timers/gen7-serial.md) or
-[System 6](../equipment/swimming/timers/system-6.md), places each value in the
-position a template defines, and renders the finished frame. Fonts, colors,
-layout, and any sponsor content are set in the software rather than on the
-timer.[^help]
-
-All the documented programs are from
-[Colorado Time Systems](../vendors/colorado-time-systems.md), and each is connected
-to the others. DisplayLink Plus is the current program. DisplayLink is the earlier
-suite it replaced, and its templates cannot be opened in the newer software. The
-Standalone Template Editor is the DisplayLink Plus template designer packaged on its
-own. AquaSync runs on top of DisplayLink Plus and sends the same data to streaming
-software instead of to a board, and CTStream is an earlier overlay connection named only
-in the DisplayLink Plus release notes.[^help][^relnotes][^shop]
-
-| Program | Vendor | Role | Status |
-|---|---|---|---|
-| [DisplayLink Plus](displaylink-plus.md) | Colorado Time Systems | Drives matrix and LED video displays from templates, sequences, and media files | Current; version 4.7.0, issued 16 December 2025 |
-| [DisplayLink](displaylink.md) | Colorado Time Systems | The matrix-display suite it replaced, split across a Designer window, a separate Template Editor, and the AquaLink and GameLink data modules | Discontinued; attested from 1996; ran on Windows NT 4.0 or Windows 2000 |
-| [Standalone Template Editor](standalone-template-editor.md) | Colorado Time Systems | The DisplayLink Plus template designer sold as a separate application, part number `R-470-121` | Current; shipped in DisplayLink Plus v4.3.14, March 2020, announced as a product February 2021 |
-| [CTS AquaSync](cts-aquasync.md) | Colorado Time Systems | Renders live timing and scoring as broadcast-style graphics over a video stream, reaching streaming software over NDI; part number `R-470-123` | Announced April 2026; requires DisplayLink Plus |
-| [CTStream](ctstream.md) | Not established | Video overlay software DisplayLink Plus gained a connection to in 2022 | Stub; attested only in the DisplayLink Plus release notes |
-
-[DisplayLink Plus](displaylink-plus.md) carries the shared background on templates, sports
-modules, and the connections to timing consoles and meet-management computers that the
-other articles refer back to. [ScheduleLink](schedulelink.md) was an add-on for
-DisplayLink-driven matrix boards that CTS said scheduled advertisements and messages onto
-the display. It and CTStream are the display pages still at stub length, because little
-about either has been published: CTStream appears only in those release notes, and
-ScheduleLink only in archived product pages.
-
-Two smaller CTS programs serve the 2.4 GHz scoreboard hardware rather than a display. The
-[MultiSport Reprogrammer](multisport-reprogrammer.md) loads firmware into the WA-2 and WA-3
-adapters and the wireless controllers over USB. The
-[Wireless Polo Scoreboard Mapper](wireless-polo-scoreboard-mapper.md) writes the layout an
-LED-R board uses for water polo into one of those adapters. Both are stubs, known so far from
-CTS's 2019 water polo firmware sheet.[^f1026]
-
-## File formats
-
-Two formats appear across the display software. A template is a `.tpl` file naming
-which data items to show, where each sits on the board, and how each is formatted.
-Swimmer and event name data is carried in `.scb` files, which DisplayLink Plus can
-import from disk or removable media, and which a Gen7 console can load directly from
-a USB drive.[^help][^f1034]
-
-[SDIF](sdif.md), the Standard Data Interchange Format published by United States Swimming,
-is the open standard for moving entries and results between programs, carried in `.sd3`
-files whose records are 162 bytes, the last two of them a line terminator. Hy-Tek's own
-[Commlink](commlink.md) did the same job on a diskette and was treated as an alternative to
-it rather than an implementation of it. [XSDIF](xsdif.md) is an XML form of the same
-standard accepted beside it, and [Lenex](lenex.md) is the European format that answers the
-same need in XML. Germany keeps a plain-text format of its own, the
-[DSV-Standard](dsv-standard.md).
-
-Hy-Tek's own formats sit beside that standard rather than inside it, and they come in
-pairs. Results go out as [CL2](cl2.md) and [HY3](hy3.md) together, event lists as
-[HYV](hyv.md) and [EV3](ev3.md) together, with the older of each pair read by Team Manager
-releases before 4.0G and the newer by 4.0G and later. Hy-Tek has published a specification
-for none of them. Each line of an HY3 ends with a checksum the company never documented,
-which the program enforces on import; swimming volunteers worked it out and published it in
-2010, and it has been reproducible ever since. None of the four extensions appears anywhere
-in the source collection held for this wiki, so those pages rest on external sources and
-say so.
-
-Some tools work on these formats without defining them. [WinSwim](winswim.md) moves
-entries and results between teams and programs as SDIF, and its site distributes
-[SDIFCheck](sdifcheck.md), which checks an SDIF file against the published layout before
-it is imported. [swimlib](swimlib.md) is an open-source TypeScript library that reads and
-writes SDIF, HY3 and EV3. [Swimrankings](swimrankings.md) is the results and rankings
-database that issues the meet, club and athlete identifiers carried in Lenex files.
+- [Hy-Tek Meet Manager](meet-management/hy-tek-meet-manager.md) and
+  [Team Manager](team-management/hy-tek-team-manager.md): the meet and club programs
+  published by [Hy-Tek Sports Software](../vendors/hy-tek.md).
+- [Splash Meet Manager](meet-management/splash-meet-manager.md) and
+  [EasyWk](meet-management/easywk.md): European meet programs.
+- [SWA Scoring Manager](diving-artistic-swimming/swa-scoring-manager.md) and
+  [DIV Scoring Manager](diving-artistic-swimming/div-scoring-manager.md): the artistic
+  swimming and diving programs sold by [Swiss Timing](../vendors/swiss-timing.md).
+- [SST timing software](timing/sst-timing-software.md): a swim timing console on a laptop.
+- [DisplayLink Plus](display/displaylink-plus.md): the current
+  [Colorado Time Systems](../vendors/colorado-time-systems.md) display program.
+- [SDIF](file-formats/sdif.md), [Lenex](file-formats/lenex.md) and
+  [HY3](file-formats/hy3.md): the formats that carry entries and results.
 
 ## See also
 
-- [Meet management](../meet-management/index.md): the competition workflow the meet
-  software supports
-- [Team management](../team-management/index.md): the club-side workflow the team
-  software supports
 - [Timers](../equipment/swimming/timers/index.md): the consoles that produce the data
-  this software displays
+  this software reads
 - [Equipment](../equipment/index.md): the hardware this software drives
-- [Colorado Time Systems](../vendors/colorado-time-systems.md): the vendor of all four
-  documented programs
+- [Tools](../tools/index.md): the file reader hosted on this site
+- [Vendors](../vendors/index.md): the companies that publish these programs
 
 See everything tagged [Software](../categories.md).
-
-## References
-
-[^help]: Colorado Time Systems, Display Link Plus Help (help file shipped with the software).
-[^relnotes]: Colorado Time Systems, Display Link Plus Help, Release Notes topic.
-[^shop]: [Colorado Time Systems, DisplayLink Plus](https://shop.coloradotime.com/collections/displaylink-plus).
-[^f1034]: [Colorado Time Systems, Gen7 Serial Timer User Guide (F1034)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Gen7/Gen7SerialTimerUserGuide_F1034.pdf), Appendix C (athlete name integration).
-[^f912]: [Colorado Time Systems, Dolphin User Guide (F912)](https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Swim%20Timing%20Components/Dolphin/Dolphinextendedinstructions-F912.pdf) (Rev. 202412), which names the three meet-management programs.
-[^f1026]: [Colorado Time Systems, WA-2/WA-3 Water Polo (F1026 Rev. 201907)](https://web.archive.org/web/20220411150907/https://www.coloradotime.com/manuals/WTTC-WA2-WP-Instructions-20190722_F1026.pdf) (archived 2022).

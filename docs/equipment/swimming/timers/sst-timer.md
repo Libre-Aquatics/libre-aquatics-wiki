@@ -24,7 +24,7 @@ infobox:
 ---
 
 <!--
-Research notes, SST timer. Surfaced 2026-11-03 while writing software/sst-timing-software.md.
+Research notes, SST timer. Surfaced 2026-11-03 while writing software/timing/sst-timing-software.md.
 
 Sources: SST Operation Manual, current edition (pp. 11-14, 69-73); 2019 SST Operation Manual
 (pp. 11-12, 42); superiorswimtiming.com pad-interface and pricing pages, read 2026-11-03.
@@ -60,6 +60,6 @@ The site also says Omega pads and buttons work. The pinout has not been document
 This article is a stub. The SST timer, first sold as the `SST-PI`, is a USB box from
 [Superior Swim Timing](../../../vendors/superior-swim-timing.md), made in versions for
 SST and Colorado harnesses or with added Daktronics connections, that measures race times for the
-[SST timing software](../../../software/sst-timing-software.md).
+[SST timing software](../../../software/timing/sst-timing-software.md).
 
 See the [timers overview](index.md) for the shared background that applies to every timing console.

@@ -48,7 +48,7 @@ likely source; the ones held do not cover it.
 
 This article is a stub. The GameLink console is a Colorado Time Systems keyboard console
 that entered team-sport scoring data, either as an input to
-[DisplayLink](../../../software/displaylink.md) or, with a standalone template loaded, to a
+[DisplayLink](../../../software/display/displaylink.md) or, with a standalone template loaded, to a
 matrix display with no display computer in the path.
 
 See the overview of [scoreboard controllers](index.md) for the shared background, and the

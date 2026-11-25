@@ -148,7 +148,7 @@ nickel-cadmium battery pack with a nickel-metal hydride one that lasts about thr
 long.[^news][^timy2]
 
 The Timy3 drops the XE naming. The Timy3 W has no printer and the Timy3 WP has one, and both
-carry ALGE's built-in 2.4 GHz Wireless Timing Network ([WTN](alge-wtn.md)) radio.[^timy3] Its
+carry ALGE's built-in 2.4 GHz Wireless Timing Network ([WTN](../accessories/alge-wtn.md)) radio.[^timy3] Its
 manual's declaration of conformity names the kit versions Timy3 W-F and WP-F.[^timy3] No ALGE
 source gives a launch date. The Timy3's homologation numbers on the FIS list end in .14,
 against .10 for the earlier models, which suggests 2014.[^fis] As of 2026, ALGE sells the
@@ -211,7 +211,7 @@ channel.[^tracktimer][^cat2026] In the wired form the buttons, ALGE's
 [023-02](../semi-automatic/pushbutton/alge-023-02.md), plug into an eight-lane
 [MC8](../deck-cabling/alge-mc8.md) cable. The 2013 catalogue pairs a Timy2 PXE with the
 MC8-SWIM version and a [STB1](../starter/alge-stb1.md) startbeep. The 2026 catalogue pairs a
-Timy3 WP with the MC8-S2 and a [BANG2](../starter/alge-bang.md) speaker system.[^cat2013][^cat2026]
+Timy3 WP with the MC8-S2 and a [BANG2](../external-speaker/alge-bang.md) speaker system.[^cat2013][^cat2026]
 In the radio form each lane has a WTN-PB wireless button and one more button gives the start,
 for up to eight lanes.[^cat2026] From four lanes upward the TrackTimer guide switches the radio
 buttons to a WTN mode that gives each one its own channel.[^tracktimer]
@@ -219,7 +219,7 @@ buttons to a WTN mode that gives each one its own channel.[^tracktimer]
 The TrackTimer program can drive up to eight ALGE GAZ or [D-LINE](../../common/scoreboard/alge-d-line.md)
 display boards, one per lane or one per place, or one eight-digit board showing time, place and
 lane in turn.[^tracktimer] The same guide says lane timing also needs either an ALGE
-[MC9](alge-mc9.md) multichannel unit or an ALGE [TIDO](alge-tido.md) docking station.[^tracktimer]
+[MC9](../accessories/alge-mc9.md) multichannel unit or an ALGE [TIDO](../accessories/alge-tido.md) docking station.[^tracktimer]
 
 ### Training
 
@@ -236,10 +236,10 @@ The 2026 catalogue offers the same training setup with a Timy3 WP.[^cat2026]
 
 At diving events ALGE uses one Timy3 W per judge as a scoring terminal, linked to the results
 computer by the WTN radio.[^cat2026] For swimming results, ALGE's
-[SwimTime](../../../software/swimtime.md) program has read times from a Timy over USB since
+[SwimTime](../../../software/meet-management/swimtime.md) program has read times from a Timy over USB since
 September 2018. It works with the PC-Timer, Backup, TrackTimer and Swim Trainer
-programs.[^swimtime] [Hy-Tek Meet Manager](../../../software/hy-tek-meet-manager.md) takes Timy
-results through [Generic Network File Sharing](../../../software/generic-network-file-sharing.md).
+programs.[^swimtime] [Hy-Tek Meet Manager](../../../software/meet-management/hy-tek-meet-manager.md) takes Timy
+results through [Generic Network File Sharing](../../../software/file-formats/generic-network-file-sharing.md).
 An ALGE program on a computer cabled to the Timy writes one file per race into a shared folder,
 and Meet Manager reads it from there. The operator enters each race on the Timy as a four-digit
 number, the event in the first two digits and the heat in the last two.[^hytek]
@@ -306,12 +306,12 @@ This section lists the swimming accessories named in ALGE's catalogues.
 |---|---|
 | [023-02](../semi-automatic/pushbutton/alge-023-02.md) push button | finish button for each lane; the longer-cabled 023-10 is used for the start |
 | [MC8](../deck-cabling/alge-mc8.md) cable (MC8-SWIM, MC8-S2) | connects eight lane buttons to the timer |
-| [WTN](alge-wtn.md) devices (WTN-PB, WTN-DB) | radio push buttons and a display-board receiver |
-| [MC9](alge-mc9.md) multichannel | extra timing channels, used in lane timing and open water |
+| [WTN](../accessories/alge-wtn.md) devices (WTN-PB, WTN-DB) | radio push buttons and a display-board receiver |
+| [MC9](../accessories/alge-mc9.md) multichannel | extra timing channels, used in lane timing and open water |
 | [STB1](../starter/alge-stb1.md) startbeep | start tone on the start channel (2013 package) |
-| [BANG2](../starter/alge-bang.md) speaker system | start tone and commands (2026 package) |
+| [BANG2](../external-speaker/alge-bang.md) speaker system | start tone and commands (2026 package) |
 | [D-LINE](../../common/scoreboard/alge-d-line.md) display board | running and finish time |
-| [P6-8](alge-p6-8.md) printer | external log printer |
+| [P6-8](../accessories/alge-p6-8.md) printer | external log printer |
 
 Sources: the 2013 and 2026 catalogues and the TrackTimer guide.[^cat2013][^cat2026][^tracktimer]
 

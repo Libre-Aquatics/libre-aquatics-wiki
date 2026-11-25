@@ -140,7 +140,7 @@ This section places the base station between the handhelds and the equipment the
 [diving equipment overview](index.md) covers judging systems as a whole.
 
 For diving, synchronized swimming and rodeo judging, a tabletop base station is cabled to the
-J14 or J15 judge port on the back of an OmniSport 2000 with a [`W-1823`](w-1823-cable.md) cable.
+J14 or J15 judge port on the back of an OmniSport 2000 with a [`W-1823`](accessories/w-1823-cable.md) cable.
 It replaces a chain of wired [JC-100](jc-100.md) judge consoles.[^riser][^os2000] Up to nine
 handhelds work through one base station. For synchronized swimming a second base station on the
 other port, set to a different channel, raises the total to 18.[^riser] The handhelds need no
@@ -251,7 +251,7 @@ harness.[^install][^outdoor] A scoreboard can carry an RC-100 base station and a
 splitter cable. That needs base station firmware 3.7 or later, and whichever transmitter the
 board hears first keeps control.[^genvi]
 
-The [remote start/stop kit](../common/scoreboard-control/rc-200-remote-start-stop-kit.md) uses its
+The [remote start/stop kit](../common/accessories/rc-200-remote-start-stop-kit.md) uses its
 own outdoor base station, `0A-1110-0104`, on function 5. A 25 ft cable runs from it to a junction
 box at the All Sport console, and the junction box takes its power from an 18 V DC wall
 pack.[^rss]
@@ -315,7 +315,7 @@ This section lists the part numbers the drawings give.
 - `0A-1110-0045`, the outdoor base station.[^manual]
 - `0A-1110-0035`, a base station named in the installation drawing for scoreboards built before April 2015.[^install]
 - `0A-1110-0104`, the outdoor base station in remote start/stop kit `0A-1110-0106`.[^rss]
-- [`W-1823`](w-1823-cable.md), the cable from the tabletop unit to the OmniSport 2000.[^riser]
+- [`W-1823`](accessories/w-1823-cable.md), the cable from the tabletop unit to the OmniSport 2000.[^riser]
 - `W-2913`, the adapter from the 6-pin plug to an older driver's 5-pin radio jack.[^install][^outdoor]
 
 ## See also

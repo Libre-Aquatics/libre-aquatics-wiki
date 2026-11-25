@@ -61,7 +61,7 @@ Consoles are built in two ways. Some are dedicated to water polo, such as Swiss 
 with a water polo mode, such as Colorado Time Systems'
 [WTTC-1](../../common/scoreboard-control/wttc-1.md), which also runs other sports.[^wpo][^wttc]
 A swimming timing system can also run water polo: Swiss Timing's ARES 21 had its own
-[water polo program](../../../software/ares-water-polo.md).[^ares]
+[water polo program](../../../software/timing/ares-water-polo.md).[^ares]
 
 ## Governing-body requirements
 
@@ -84,10 +84,18 @@ product in full, and this page is the shared overview they refer back to.
 | Article | Manufacturer | Type | Sports |
 |---|---|---|---|
 | [Calypso WPO console](calypso-wpo-console.md) | Swiss Timing | Wired keypad console | Water polo |
-| [Team-name module (3400.740)](calypso-team-name-module.md) | Swiss Timing | Console option | Water polo |
 | [WTTC-1](../../common/scoreboard-control/wttc-1.md) | Colorado Time Systems | Wireless tabletop controller | Water polo and other sports |
-| [Run-stop-reset units](../../common/scoreboard-control/rsr.md) | Colorado Time Systems | Hand switches for the WTTC-1 | Water polo and other sports |
-| [ARES Water Polo](../../../software/ares-water-polo.md) | Swiss Timing | Timing-system software | Water polo |
+| [ARES Water Polo](../../../software/timing/ares-water-polo.md) | Swiss Timing | Timing-system software | Water polo |
+
+### Related accessories
+
+Items listed under [water polo cables and accessories](../accessories/index.md) and
+[common cables and accessories](../../common/accessories/index.md):
+
+| Article | Manufacturer | Type | Sports |
+|---|---|---|---|
+| [Team-name module (3400.740)](../accessories/calypso-team-name-module.md) | Swiss Timing | Console option | Water polo |
+| [Run-stop-reset units](../../common/accessories/rsr.md) | Colorado Time Systems | Hand switches for the WTTC-1 | Water polo and other sports |
 
 ## See also
 

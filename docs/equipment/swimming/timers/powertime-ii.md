@@ -18,7 +18,7 @@ infobox:
   - label: Type
     value: Hand-held timer with printer
   - label: Lanes
-    value: Up to 8, with the [TOP-8](software/top-8.md) program
+    value: Up to 8, with the [TOP-8](software/timing/top-8.md) program
   - label: Display
     value: LCD, 4 lines of 16 characters
   - label: Printer
@@ -132,7 +132,7 @@ The PowerTime II is a battery-powered timer, small enough to hold in one hand, w
 thermal printer, made by
 [Swiss Timing](../../../vendors/swiss-timing.md) and sold with Omega branding on its
 accessories. Swiss Timing offers it for athletics, skiing and swimming.[^datasheet] The operator loads its
-programs from a PC. For swimming, the [TOP-8](../../../software/top-8.md) program times up
+programs from a PC. For swimming, the [TOP-8](../../../software/timing/top-8.md) program times up
 to eight lanes, each from a judge's pushbutton, and can drive a scoreboard such as the
 [Piccolo](../../common/scoreboard/piccolo.md).[^general][^top8][^piccolo] It succeeded the
 [PowerTime](powertime.md), which Omega Electronics sold under the same article series.[^top8old]
@@ -248,7 +248,7 @@ An arming delay of 0–99 s keeps an input closed after the start, and impulses 
 input is closed are kept in a separate store from which they can be recovered.[^general] Every
 correction or hand-entered time is printed with an asterisk.[^general]
 
-For swimming the unit runs [TOP-8](../../../software/top-8.md), which has a lane mode that
+For swimming the unit runs [TOP-8](../../../software/timing/top-8.md), which has a lane mode that
 takes one finish per lane for up to eight lanes from judges' pushbuttons, and a non-lane mode in
 which one judge records every finisher and the operator adds bib numbers.[^top8] The TOP-8
 article covers both modes, the correction screen and the program's scoreboard settings.
@@ -257,12 +257,12 @@ article covers both modes, the correction screen and the program's scoreboard se
 
 This section lists the meet programs that read results from a PowerTime.
 
-[Hy-Tek Meet Manager](../../../software/hy-tek-meet-manager.md) reads a PowerTime over an
+[Hy-Tek Meet Manager](../../../software/meet-management/hy-tek-meet-manager.md) reads a PowerTime over an
 RS-232 cable with a phone jack at the timer and a 9-pin plug at the computer. The operator sends
 results to the PC from the timer's menu. Only the finish time is transferred, with no splits, and
 Hy-Tek says TOP-8 version 2.0 will not work.[^hytek] Its open water module can also download
 times from the timer.[^hytekow]
-[Splash Meet Manager](../../../software/splash-meet-manager.md) lists the Swiss Timing PowerTime
+[Splash Meet Manager](../../../software/meet-management/splash-meet-manager.md) lists the Swiss Timing PowerTime
 among the timers it reads, over a one-way serial link.[^splashfaq] Neither program's guide says
 whether it means the PowerTime or the PowerTime II.
 
@@ -321,8 +321,8 @@ a carrying bag with its system software installed.[^general]
 ## See also
 
 - [PowerTime](powertime.md): the earlier Omega model
-- [TOP-8](../../../software/top-8.md): the lane-timing program for swimming and athletics
-- [Swim Training](../../../software/powertime-swim-training.md): its program for timing practice
+- [TOP-8](../../../software/timing/top-8.md): the lane-timing program for swimming and athletics
+- [Swim Training](../../../software/training/powertime-swim-training.md): its program for timing practice
 - [PowerTime swimming harness](../deck-cabling/powertime-swimming-harness.md): the pushbutton
   harness for eight lanes
 - [Piccolo](../../common/scoreboard/piccolo.md): a Swiss Timing scoreboard listed for use with

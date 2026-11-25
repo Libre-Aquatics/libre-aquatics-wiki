@@ -139,11 +139,11 @@ This section covers what the adapter connects and when one is needed.
 
 A WA-3 is needed at each end of the link that has no radio. At the source end, it takes the
 scoreboard output of a [System 6](../../swimming/timers/system-6.md) or another CTS console,
-or the output of [SynchroMM](../../../software/synchromm.md) or other CTS software on a laptop.
+or the output of [SynchroMM](../../../software/diving-artistic-swimming/synchromm.md) or other CTS software on a laptop.
 The [WTTC-1](wttc-1.md) and [WHC-1](whc-1.md) controllers have radios built in and need no
 adapter to transmit.[^f1045] At the display end, an adapter is needed for a cabled board such
 as the [LED-R](../scoreboard/led-r.md) or the [mini scoreboard](../scoreboard/mini-scoreboard.md),
-and for the computer running [DisplayLink Plus](../../../software/displaylink-plus.md) for a
+and for the computer running [DisplayLink Plus](../../../software/display/displaylink-plus.md) for a
 video board. Multisport boards, including the [deck clock](../pace-clock/deck-clock.md) and the
 [Otter](../scoreboard/otter.md) boards, have their own radios and take the adapter's signal
 directly. CTS warns against cabling a second adapter to them.[^f1045][^f1004]
@@ -300,7 +300,7 @@ This section lists the adapter's part number, its cables and dealer prices.
 - [WA-2](wa-2.md) and [Sky-Fi WA-1](wa-1.md): the adapters it succeeds
 - [WTTC-1](wttc-1.md) and [WHC-1](whc-1.md): the wireless controllers that need no adapter to
   transmit
-- [SynchroMM](../../../software/synchromm.md): the CTS artistic swimming software it can carry
+- [SynchroMM](../../../software/diving-artistic-swimming/synchromm.md): the CTS artistic swimming software it can carry
 - [Scoreboard control](index.md): the scoreboard-control overview
 - [Colorado Time Systems](../../../vendors/colorado-time-systems.md): the manufacturer
 - [Equipment](../../index.md): the equipment reference

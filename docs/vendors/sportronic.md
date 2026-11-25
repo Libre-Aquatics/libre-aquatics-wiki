@@ -35,7 +35,7 @@ whether the pool system meets World Aquatics requirements.
 
 This article is a stub. Sportronic is a German maker of electronic sports timing, whose range
 includes a swimming system built around an STM-11 control unit with touchpads and a transponder
-system for counting laps at 24-hour swims, and whose data the [EasyWk](../software/easywk.md)
+system for counting laps at 24-hour swims, and whose data the [EasyWk](../software/meet-management/easywk.md)
 meet program reads over the network.
 
 See the [vendors overview](index.md) for the other organizations the wiki covers.

@@ -10,7 +10,7 @@ infobox:
   - label: Industry
     value: National governing body for aquatic sports
   - label: Key products
-    value: '[DSV-Standard](software/dsv-standard.md) data format'
+    value: '[DSV-Standard](software/file-formats/dsv-standard.md) data format'
   - label: Headquarters
     value: Kassel, Germany
   - label: Website
@@ -41,6 +41,6 @@ which clubs upload result files.
 
 This article is a stub. The Deutscher Schwimm-Verband (DSV) is the German swimming federation,
 based in Kassel and made up of eighteen regional swimming associations, which publishes the
-[DSV-Standard](../software/dsv-standard.md) format for exchanging entries and results.
+[DSV-Standard](../software/file-formats/dsv-standard.md) format for exchanging entries and results.
 
 See the [vendors overview](index.md) for the other organizations the wiki covers.

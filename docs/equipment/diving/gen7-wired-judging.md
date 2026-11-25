@@ -23,7 +23,7 @@ infobox:
   - label: Power
     value: 12 V DC, 1 A maximum, from the hub's supply, or USB alone
   - label: Software
-    value: Gen7 Diving; [Gen7 Artistic Swimming](software/gen7-artistic-swimming.md)
+    value: Gen7 Diving; [Gen7 Artistic Swimming](software/diving-artistic-swimming/gen7-artistic-swimming.md)
   - label: Introduced
     value: '2016'
   - label: Manual
@@ -107,7 +107,7 @@ output.
 Colorado Time Systems (CTS) Gen7 wired judging is a cabled system for collecting diving and
 artistic swimming judges' scores. It has three parts: a `JT-01` terminal for each judge,
 `CB-01` breakout boxes, and an `IH-01` interface hub. The hub connects by USB to a computer
-running Gen7 Diving or [Gen7 Artistic Swimming](../../software/gen7-artistic-swimming.md).[^f1022]
+running Gen7 Diving or [Gen7 Artistic Swimming](../../software/diving-artistic-swimming/gen7-artistic-swimming.md).[^f1022]
 CTS released the system in May 2016. It says it built the system because World Aquatics (then
 FINA) and USA Diving had asked for wired terminals at national and international
 events.[^ss2015][^ss2016] It is sold in packages of 3 to 15 judges, part numbers `JSYS-3` to
@@ -226,11 +226,11 @@ places. It also gives an average time per dive over the last ten dives and an es
 finishing time.[^f1022]
 
 Gen7 Diving exchanges data with a meet-management computer over a serial link. CTS names
-[DiveMeets](../../software/divemeets.md), [ieDive](../../software/iedive.md) and
-[OmadaTrak](../../software/omadatrak.md) as compatible programs.[^gen7ds][^f1022] Entries are
+[DiveMeets](../../software/diving-artistic-swimming/divemeets.md), [ieDive](../../software/diving-artistic-swimming/iedive.md) and
+[OmadaTrak](../../software/diving-artistic-swimming/omadatrak.md) as compatible programs.[^gen7ds][^f1022] Entries are
 imported before an event. Each dive's marks go back once every judge has scored or, in Hold
 mode, once the operator sends them.[^f1022] Names can be exported as an XML file for
-[DisplayLink Plus](../../software/displaylink-plus.md) or as CSV, with a variant for the Indiana
+[DisplayLink Plus](../../software/display/displaylink-plus.md) or as CSV, with a variant for the Indiana
 high school association's reporting system.[^f1022] The manual's troubleshooting table notes
 that the software refuses events of more than eight divers when no hub is connected.[^f1022]
 
@@ -316,7 +316,7 @@ Diving software and the cables.[^gen7ds] The datasheet's third page carries the 
 - `R-015-569`, USB cable from computer to hub.[^f1022]
 - `R-015-707-x`, scoreboard cable to a Gen7 wall plate or deck plate.[^f1022]
 - `R-xxxDC`, cable from the CTS-232 port to a legacy scoreboard.[^f1022]
-- [USB Connect](../swimming/timers/cts-usb-connect.md) (`USB2USB`), coupler for the
+- [USB Connect](../common/accessories/cts-usb-connect.md) (`USB2USB`), coupler for the
   meet-management link. The alternative is two USB-to-serial adapters, linked through a gender
   changer and a null modem.[^f1022][^usb2usb]
 

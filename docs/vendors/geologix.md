@@ -11,7 +11,7 @@ infobox:
   - label: Industry
     value: IT services
   - label: Key products
-    value: '[Splash Meet Manager](software/splash-meet-manager.md) (2003 to about 2015)'
+    value: '[Splash Meet Manager](software/meet-management/splash-meet-manager.md) (2003 to about 2015)'
   - label: Headquarters
     value: Berne, Switzerland
   - label: Founded
@@ -61,7 +61,7 @@ swiss-aquatics.ch/leistungssport/swimming/wettkampfbetrieb/.
 
 This article is a stub. GeoLogix AG is an IT services company in Berne, Switzerland, founded
 in 2002, which took over the development and support of
-[Splash Meet Manager](../software/splash-meet-manager.md) in November 2003 with the program's
+[Splash Meet Manager](../software/meet-management/splash-meet-manager.md) in November 2003 with the program's
 author, Christian Kaufmann, as a shareholder.
 
 The program has since passed to [Splash Software](splash-software.md); see the

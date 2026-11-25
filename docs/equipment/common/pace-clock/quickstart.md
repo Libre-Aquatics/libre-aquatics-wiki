@@ -217,7 +217,7 @@ triple click.[^f816]
 ## PC logging software
 
 The RS-232 port sends each result to a PC running QSTART, a DOS program supplied on floppy disk
-with the optional cable.[^f816] [QSTART](../../../software/qstart.md) installs into a C:\CTS
+with the optional cable.[^f816] [QSTART](../../../software/training/qstart.md) installs into a C:\CTS
 directory and is started with the name of a log file. It asks which serial port (COM1 or COM2)
 the display uses, and then for swimmer names: one for start testing, or two to four for a relay,
 each up to 20 characters. Names can be left blank.[^f816] The program shows the incoming times on
@@ -289,7 +289,7 @@ This section lists what the guide names. No part number for the display itself w
 
 - [QuickStart Pro](quickstart-pro.md): the 2006 successor
 - [Ultimate Pace Clock](ultimate-pace-clock.md): a CTS pace clock whose portable displays had the same inputs
-- [QSTART](../../../software/qstart.md): the DOS logging program
+- [QSTART](../../../software/training/qstart.md): the DOS logging program
 - [Colorado Time Systems RJP](../../swimming/relay-judging/cts.md): the relay judging platform it reads
 - [SS-1](../../swimming/starter/ss-1.md) and [SS2](../../swimming/starter/ss2.md): CTS start systems of the period
 - [Pace clocks](index.md): the pace clocks overview

@@ -254,7 +254,7 @@ turn, and multi-line boards could also show water polo and diving.[^sw7809][^sw7
 the console compares each lane's touchpad with a relay judging unit on top of the block and
 marks an early take-off on the printout. Seagull called this "An Omega Exclusive".[^sw7809]
 
-[Splash Meet Manager](../../../software/splash-meet-manager.md) lists the OSM 5 among the
+[Splash Meet Manager](../../../software/meet-management/splash-meet-manager.md) lists the OSM 5 among the
 consoles it reads, over a one-way serial link.[^splashfaq]
 
 ## Documentation status

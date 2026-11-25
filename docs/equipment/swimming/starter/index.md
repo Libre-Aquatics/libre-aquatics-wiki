@@ -250,22 +250,23 @@ systems by manufacturer.
 CTS sells two families with similar names. The Infinity family is portable and
 self-contained; the Championship family is deck-wired and drives
 [lane speakers](../external-speaker/index.md), underwater speakers, and the
-speedlights on relay-judging platforms. Both were preceded in the 1990s by the SS
-series of loudspeaker start systems, whose documented member is the
+speedlights on relay-judging platforms. Both were preceded by the SS
+series of loudspeaker start systems, the [SS-1](ss-1.md) and then the
 [SS2](ss2.md).
 
 | Product | Part number | Family / tier | Status |
 |---|---|---|---|
 | [Infinity Start System](infinity-start-system.md) | `INF-SSM` | Infinity, portable, entry | Discontinued 2024 |
 | [Infinity Pro Start System](infinity-pro-start-system.md) | `INF-PRO` | Infinity, portable, entry | Current |
+| [SS-1](ss-1.md) | `SS-1` | SS series, loudspeaker, legacy | Advertised 1991; succeeded by the SS2 |
 | [SS2 Electronic Start System](ss2.md) | `SS2-1` … `SS2-10` | SS series, loudspeaker, legacy | Discontinued |
 | [Championship Start System (CHAMP-SSM)](champ-ssm.md) | `CHAMP-SSM` | Championship, deck-wired, legacy | Discontinued (pre-2005) |
 | [Championship Start System](championship-start-system.md) | `SS` | Championship, deck-wired, full | Discontinued |
 | [Championship Elite Start System](championship-elite-start-system.md) | `SSE` | Championship, deck-wired, full | Current |
 
 Within each family the newer model succeeds the older one. The
-[SS2](ss2.md) is the oldest documented system, from the 1990s SS series that
-preceded both families. The Infinity Pro replaced the Infinity. The
+[SS-1](ss-1.md) is the oldest CTS system covered here, followed by the [SS2](ss2.md) of the
+1990s; both come from the SS series that preceded the two families. The Infinity Pro replaced the Infinity. The
 Championship line runs through three generations, the legacy
 [CHAMP-SSM](champ-ssm.md), the current-era
 [Championship](championship-start-system.md) (`SS`), and today's
@@ -357,9 +358,26 @@ smaller units on the start cable. Its semi-automatic systems use a speaker start
 | [SU start unit](alge-su.md) | `SU` | Start unit of the SWIM 2000 | 2002 brochure |
 | [Start Acoustic SA1](alge-sa1.md) | `SA1` | Start unit and horn driver of the Timer S4 system | 1997 guide |
 | [E-START](alge-e-start.md) | `E-START`, `E-START W` | Electronic starting device with strobe | Current |
-| [SM8 start microphone](alge-sm8.md) | `SM8` | External start trigger for the SU3 | Named in the 2023 SU3 manual |
-| [FLASH XL](alge-flash-xl.md) | `FLASH XL` | Visual start signal | Current |
-| [BANG speaker systems](alge-bang.md) | `BANG2` | Speaker start system | Current |
+| [STB1 Startbeep](alge-stb1.md) | `STB1` | Portable start horn with countdowns | Current |
+
+[Taroda Industries](../../../vendors/taroda-industries.md) and
+[Kyrotech](../../../vendors/kyrotech.md) sold start systems alongside their meet timers.
+
+| Product | Part number | Family / tier | Status |
+|---|---|---|---|
+| [Kyroscope AH-1200](kyroscope-ah-1200.md) | `AH-1200` | Portable horn start and public address | Introduced 1980 |
+| [Tec-Start](kyrotech-tec-start.md) | Not published | Electronic start and public address with lane speakers | Advertised from 1984 |
+
+### Related accessories
+
+Items listed under [swimming cables and accessories](../accessories/index.md) and, for the BANG
+speakers, [external speakers](../external-speaker/index.md):
+
+| Product | Part number | Family / tier | Status |
+|---|---|---|---|
+| [SM8 start microphone](../accessories/alge-sm8.md) | `SM8` | External start trigger for the SU3 | Named in the 2023 SU3 manual |
+| [FLASH XL](../accessories/alge-flash-xl.md) | `FLASH XL` | Visual start signal | Current |
+| [BANG speaker systems](../external-speaker/alge-bang.md) | `BANG2` | Speaker start system | Current |
 
 ## See also
 

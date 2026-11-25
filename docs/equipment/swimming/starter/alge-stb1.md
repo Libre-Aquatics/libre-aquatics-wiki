@@ -182,7 +182,7 @@ example.[^trainer] In that arrangement the push button sends the start impulse t
 the STB1 supplies the sound.
 
 ALGE's 2026 aquatics catalogue no longer shows the STB1. Its semi-automatic swimming systems give
-the start through a [BANG2](alge-bang.md) speaker instead.[^cat2026] See the
+the start through a [BANG2](../external-speaker/alge-bang.md) speaker instead.[^cat2026] See the
 [semi-automatic timing overview](../semi-automatic/index.md) for how push-button timing works.
 
 ## Connections
@@ -193,7 +193,7 @@ The STB1 has three sets of connections:[^manual]
 |---|---|
 | White banana jacks | Start output to a timing device: a reed relay contact, normally open, rated at 12 V and 0.5 A |
 | Green and black banana jacks | Input for synchronizing with other timing devices, and for an external hand switch that triggers a countdown or the horn |
-| 6-pin DIN socket | The [NGL13](../timers/alge-ngl13.md) charger, an external supply of 10–15 V, or an external switch with a DIN plug |
+| 6-pin DIN socket | The [NGL13](../accessories/alge-ngl13.md) charger, an external supply of 10–15 V, or an external switch with a DIN plug |
 
 The start contact closes at the beginning of the final high beep, so a timer connected to it
 starts with the audible start signal.[^manual] The DIN socket uses pin 1 for the external button,
@@ -235,13 +235,13 @@ This section lists the STB1's companion parts.[^manual][^product]
 | Item | Part number | Article |
 |---|---|---|
 | Startbeep | `STB1` | This article |
-| Charger | `NGL13` | [NGL13](../timers/alge-ngl13.md) |
+| Charger | `NGL13` | [NGL13](../accessories/alge-ngl13.md) |
 | Push button | `023-02` | [023-02 push button](../semi-automatic/pushbutton/alge-023-02.md) |
 | Banana cable | `000-05` | None |
 
 ## See also
 
-- [BANG](alge-bang.md): the ALGE speaker start system that replaced the STB1 in its swimming drawings
+- [BANG](../external-speaker/alge-bang.md): the ALGE speaker start system that replaced the STB1 in its swimming drawings
 - [E-START](alge-e-start.md): ALGE's hand-held electronic starting device with a flash
 - [Timy](../timers/alge-timy.md): the timer the STB1 starts in ALGE's semi-automatic systems
 - [Start systems](index.md): the start-systems overview

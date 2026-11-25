@@ -9,7 +9,7 @@ tags:
 
 <!--
 Research notes, Prolific Technology. Surfaced 2026-11-07 while building out
-equipment/swimming/timers/swiss-timing-int131.md.
+equipment/common/accessories/swiss-timing-int131.md.
 
 Sources:
   - Swiss Timing, INT131 User's Manual (3434.502.02, version 1.2, November 2007) and Trycom,
@@ -32,7 +32,7 @@ Sources:
 -->
 
 This article is a stub. Prolific Technology makes the PL-2303 family of USB-to-serial chips, whose
-driver is installed with the Swiss Timing [INT131](../equipment/swimming/timers/swiss-timing-int131.md)
-and [Trycom TRP-C08H](../equipment/swimming/timers/trycom-trp-c08h.md) converters.
+driver is installed with the Swiss Timing [INT131](../equipment/common/accessories/swiss-timing-int131.md)
+and [Trycom TRP-C08H](../equipment/common/accessories/trycom-trp-c08h.md) converters.
 
 See the [vendors overview](index.md) for the other companies this wiki covers.

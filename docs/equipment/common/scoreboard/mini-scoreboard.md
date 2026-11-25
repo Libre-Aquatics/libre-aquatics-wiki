@@ -166,7 +166,7 @@ take codes `01` to `09` and lane 10 takes `0A`.[^f927]
 
 A portable board takes a handle and a set of legs, both bolted to threaded holes in the
 enclosure, the legs underneath and the handle on top. Two further options carry one or more
-boards upright: a wheeled [CAD-MINI caddy](cad-mini.md), or a pair of pipe stands that bolt
+boards upright: a wheeled [CAD-MINI caddy](../accessories/cad-mini.md), or a pair of pipe stands that bolt
 to brackets on the back of the board and are pinned in place, with a foot pointing forward
 and another back on each side.[^f927][^caddy]
 
@@ -236,7 +236,7 @@ use.[^f927]
   `F01-1-0006`, the fixed equivalents. A trailing `F` marks the 220 V version of
   either.[^ds14]
 - `SP-01-0001`, the separate sign panel, ordered on its own.[^poolweb]
-- `CAD-MINI-4` and `CAD-MINI-5`, the [caddies](cad-mini.md) that hold four or five modules
+- `CAD-MINI-4` and `CAD-MINI-5`, the [caddies](../accessories/cad-mini.md) that hold four or five modules
   and roll the board to the deck.[^caddy]
 - `R-xxDC` and `R-2DC` data cables for the RS-232 side, and `R-DC4-xx` for RS-485, each
   ordered to length.[^f927]

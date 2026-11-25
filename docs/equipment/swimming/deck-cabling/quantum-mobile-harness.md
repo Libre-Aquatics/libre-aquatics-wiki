@@ -179,7 +179,7 @@ timer's typical draw at 0.55 A for a Primary unit with no harness modules connec
 
 Swiss Timing programs each module's lane number at the factory, and the number printed on the
 case shows which lane it is set to.[^harness] Replacing a module on site uses the
-[Programmer AQ](../timers/programmer-aq.md), a hand-held RFID unit. It reads or writes the lane
+[Programmer AQ](../accessories/programmer-aq.md), a hand-held RFID unit. It reads or writes the lane
 number when held within 1 cm of the antenna mark on the module.[^programmer] Writing a Primary
 module needs only the programmer. A Primary & Secondary module holds two circuits, so it must be
 cabled to a Quantum while it is written. The operator deselects the HA1 harness in the timing
@@ -244,7 +244,7 @@ and dry, between −10 and 60 °C, and are rated for use between 0 and 45 °C.[^
 - Spare modules, at most two per harness: the harness manual numbers them `3480.75X` (Primary)
   and `3480.76X` (Primary & Secondary), while the 2013 datasheet lists them as `3480.923` and
   `3480.924`.[^harness][^ds2013]
-- `3480.921`, `3480.922`: [Programmer AQ](../timers/programmer-aq.md) sets, each with a Primary or
+- `3480.921`, `3480.922`: [Programmer AQ](../accessories/programmer-aq.md) sets, each with a Primary or
   a Primary & Secondary module.[^harness]
 - `3480.770`: [Quantum harness terminator](quantum-harness-terminator.md), one per set.[^ds2013]
 - `1892.025`, `1892.050`, `1892.075`, `1892.100`: [Quantum harness cables](quantum-harness-cable.md),
@@ -258,7 +258,7 @@ and dry, between −10 and 60 °C, and are rated for use between 0 and 45 °C.[^
 
 - [Quantum Aquatics](../timers/quantum.md): the timer the harness serves
 - [ODB10-SW](odb10-sw.md) and [Swiss Timing deck plate](swiss-timing-deck-plate.md): the fixed-wiring alternative
-- [Programmer AQ](../timers/programmer-aq.md): the RFID tool that sets the lane numbers
+- [Programmer AQ](../accessories/programmer-aq.md): the RFID tool that sets the lane numbers
 - [OCP5 Touchpad](../touchpad/ocp5.md): the touchpad that plugs into the yellow sockets
 - [Deck cabling](index.md): the deck-cabling overview
 - [Swiss Timing](../../../vendors/swiss-timing.md): the manufacturer

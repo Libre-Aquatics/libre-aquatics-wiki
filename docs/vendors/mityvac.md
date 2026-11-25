@@ -8,7 +8,7 @@ infobox:
   - label: Industry
     value: Hand vacuum and pressure pumps
   - label: Key products
-    value: Pump sold by Colorado Time Systems as the [VP-2](equipment/swimming/timers/cts-vp-2-vacuum-pump.md)
+    value: Pump sold by Colorado Time Systems as the [VP-2](equipment/swimming/accessories/cts-vp-2-vacuum-pump.md)
 ---
 
 <!--
@@ -46,6 +46,6 @@ the exact model CTS rebadges.
 
 This article is a stub. Mityvac is a brand of hand-operated vacuum and pressure pumps, and a
 pump carrying its name is the one Colorado Time Systems has sold since 2009 as the
-[VP-2 vacuum pump](../equipment/swimming/timers/cts-vp-2-vacuum-pump.md) for adjusting touchpads.
+[VP-2 vacuum pump](../equipment/swimming/accessories/cts-vp-2-vacuum-pump.md) for adjusting touchpads.
 
 See the [vendors](index.md) register for the companies this wiki covers.

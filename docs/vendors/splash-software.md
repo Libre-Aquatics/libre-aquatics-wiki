@@ -11,7 +11,7 @@ infobox:
   - label: Industry
     value: Swimming meet-management software
   - label: Key products
-    value: '[Splash Meet Manager](software/splash-meet-manager.md)'
+    value: '[Splash Meet Manager](software/meet-management/splash-meet-manager.md)'
   - label: Headquarters
     value: Spiegel bei Bern, Switzerland
   - label: Website
@@ -60,10 +60,10 @@ summary only); SwimNews 268-275; pro-swim.swimnews.com.
 -->
 
 This article is a stub. Splash Software is the Swiss publisher of
-[Splash Meet Manager](../software/splash-meet-manager.md) and its team-management
+[Splash Meet Manager](../software/meet-management/splash-meet-manager.md) and its team-management
 counterpart, named as Splash Software GmbH of Spiegel bei Bern in files its program writes,
 and its software is credited to Christian Kaufmann, who also maintains the
-[Lenex](../software/lenex.md) format.
+[Lenex](../software/file-formats/lenex.md) format.
 
 From 2003 until about 2015 the product was developed and supported by
 [GeoLogix](geologix.md) of Berne, with Kaufmann as a shareholder; see the

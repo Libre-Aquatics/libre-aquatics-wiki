@@ -44,7 +44,7 @@ function competes with the display vendors this wiki covers.
 
 This article is a stub. Wylas Timing makes a wireless swimming timing system for six to ten
 lanes that accepts up to three watches per lane alongside touchpads, and whose recorder
-software reaches [Hy-Tek Meet Manager](../software/hy-tek-meet-manager.md) over a network
+software reaches [Hy-Tek Meet Manager](../software/meet-management/hy-tek-meet-manager.md) over a network
 rather than a serial cable.
 
 The same system drives televisions and large screens around a pool deck as scoreboards; see

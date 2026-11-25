@@ -16,7 +16,7 @@ infobox:
   - label: Type
     value: 'Display-board radio receiver'
   - label: Connection
-    value: '4-pin Amphenol plug to the board; [WTN](equipment/swimming/timers/alge-wtn.md) radio, 2.4 GHz'
+    value: '4-pin Amphenol plug to the board; [WTN](equipment/swimming/accessories/alge-wtn.md) radio, 2.4 GHz'
   - label: Dimensions
     value: '145 × 90 × 75 mm'
   - label: Weight
@@ -54,6 +54,6 @@ Not established: introduction date; use with boards from other makers.
 This article is a stub. The `WTN-DB` is an [ALGE-Timing](../../../vendors/alge-timing.md)
 receiver that clips to an ALGE display board such as the [D-LINE](../scoreboard/alge-d-line.md),
 draws its power from the board, and passes on the data a timer sends over the
-[WTN](../../swimming/timers/alge-wtn.md) radio network.
+[WTN](../../swimming/accessories/alge-wtn.md) radio network.
 
 See the [scoreboard control overview](index.md) for the shared background on scoreboard control.

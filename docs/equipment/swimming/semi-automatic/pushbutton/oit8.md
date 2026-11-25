@@ -41,7 +41,7 @@ Sources:
 -->
 
 This article is a stub. The OIT8 (`2872.008`) is an Omega judge's pushbutton on a 5 m cable that
-Omega Electronics' [TOP-8](../../../../software/top-8.md) manual lists for the original
+Omega Electronics' [TOP-8](../../../../software/timing/top-8.md) manual lists for the original
 [PowerTime](../../timers/powertime.md), alongside the shorter
 [OIT3](swiss-timing.md).
 

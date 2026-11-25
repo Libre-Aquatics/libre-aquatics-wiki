@@ -16,7 +16,7 @@ infobox:
   - label: Type
     value: 'Start unit'
   - label: Connection
-    value: '[SWC](equipment/swimming/timers/alge-swc.md) controller; [Q34](equipment/swimming/timers/alge-q34.md) headset socket'
+    value: '[SWC](equipment/swimming/timers/alge-swc.md) controller; [Q34](equipment/swimming/accessories/alge-q34.md) headset socket'
   - label: Status
     value: 'Discontinued; dates not established'
 ---
@@ -47,7 +47,7 @@ Sources:
 
 This article is a stub. The `SU` is the start unit of the ALGE-Timing
 [SWIM 2000](../timers/alge-swim-2000.md) system, with a start button, a microphone and a socket for a
-[Q34 headset](../timers/alge-q34.md), and it connects to the system's [SWC](../timers/alge-swc.md)
+[Q34 headset](../accessories/alge-q34.md), and it connects to the system's [SWC](../timers/alge-swc.md)
 controller.
 
 See the [start-systems overview](index.md) for the shared background that applies to every start

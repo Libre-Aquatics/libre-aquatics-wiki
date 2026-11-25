@@ -201,7 +201,7 @@ This section lists what drives a Calypso board in each sport.
 | Sport | Source | How it is set up |
 |---|---|---|
 | Swimming | Quantum Aquatics timer | "SCB Calypso" output on a serial port, with options to show the event and heat on a chosen line and to shift the results down[^sw] |
-| Diving | [DIV Scoring Manager](../../../software/div-scoring-manager.md) | Serial link from its Run Event screen using the UNT4 protocol, with layouts for 5, 7 and 9 to 11-judge panels including synchronised diving[^divsm][^dvsy] |
+| Diving | [DIV Scoring Manager](../../../software/diving-artistic-swimming/div-scoring-manager.md) | Serial link from its Run Event screen using the UNT4 protocol, with layouts for 5, 7 and 9 to 11-judge panels including synchronised diving[^divsm][^dvsy] |
 | Water polo | [Calypso WPO console](../../water-polo/console/calypso-wpo-console.md) | Six-, eight- or ten-line layouts, horizontal or vertical, with team names, scores, penalties and timeouts[^manual][^wpo] |
 
 The smaller [Piccolo](piccolo.md) alphanumeric board understands the same Calypso protocol.[^piccolo]

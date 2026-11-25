@@ -32,10 +32,10 @@ The CL2 checksum test uses the algorithm and worked example on cl2.md; the digit
 checked, the prefix is not, because the published prefix rule is known to be incomplete.
 -->
 
-The SDIF file reader opens a file in the [SDIF](../software/sdif.md) swimming data format and shows what
+The SDIF file reader opens a file in the [SDIF](../software/file-formats/sdif.md) swimming data format and shows what
 it holds: the meet, its teams, every individual and relay result with splits, each record
 decoded field by field, a check against the version 3 specification, and CSV exports of the
-results.[^spec] It also reads Hy-Tek [CL2](../software/cl2.md) files, which use the same record
+results.[^spec] It also reads Hy-Tek [CL2](../software/file-formats/cl2.md) files, which use the same record
 layout.
 
 The file is read inside your browser. It is not uploaded, sent anywhere or saved, and closing
@@ -43,7 +43,7 @@ the page discards it. That is deliberate: SDIF files contain swimmers' names, bi
 dates and registration numbers.
 
 <div class="sdif-reader" data-sdif-reader="full" data-sample-href="/assets/sdif-sample.sd3">
-<p><em>The reader needs JavaScript. With it turned off, the format itself is described on the <a href="/software/sdif/">SDIF</a> page.</em></p>
+<p><em>The reader needs JavaScript. With it turned off, the format itself is described on the <a href="/software/file-formats/sdif/">SDIF</a> page.</em></p>
 </div>
 
 ## Using it
@@ -98,7 +98,7 @@ The validator applies the rules a program importing the file relies on:[^spec]
 
 Two results are reported as notes rather than faults, because the specification does not
 settle them. A `Z0` that counts only the `D0` records as "D records" is a reading at least
-one widely used program takes, as the [SDIF](../software/sdif.md) page describes. The same program
+one widely used program takes, as the [SDIF](../software/file-formats/sdif.md) page describes. The same program
 counts "G records" as one per swim with splits rather than one per split record, so a long
 race that needs several split records is counted once. A stroke code of `H`
 is not in the specification's table, but some meet programs use it for diving, with the
@@ -114,7 +114,7 @@ that had no prelims or swim-offs. Only a swimmer with no leg order for any round
 reported.
 
 For a CL2 file the reader also tests each record's checksum against the algorithm
-published for that format, as described on the [CL2](../software/cl2.md) page. Only the two checksum
+published for that format, as described on the [CL2](../software/file-formats/cl2.md) page. Only the two checksum
 digits are compared, because the published rule for the two characters before them is
 known to be incomplete.
 
@@ -123,14 +123,14 @@ known to be incomplete.
 The reader follows version 3 of the specification, dated 28 April 1998, which is the
 version files still declare.[^spec] It reads files and does not write or repair them. Code
 tables are the specification's own, so country and LSC codes added after 1998 show as not
-in the table. The [HY3](../software/hy3.md) format and the XML forms ([XSDIF](../software/xsdif.md),
-[Lenex](../software/lenex.md)) are different formats and are not read here.
+in the table. The [HY3](../software/file-formats/hy3.md) format and the XML forms ([XSDIF](../software/file-formats/xsdif.md),
+[Lenex](../software/file-formats/lenex.md)) are different formats and are not read here.
 
 ## See also
 
-- [SDIF](../software/sdif.md): the format, its records and its history
-- [CL2](../software/cl2.md): Hy-Tek's near-SDIF export, which this reader also opens
-- [SDIFCheck](../software/sdifcheck.md) and [swimlib](../software/swimlib.md): other software that reads and validates SDIF
+- [SDIF](../software/file-formats/sdif.md): the format, its records and its history
+- [CL2](../software/file-formats/cl2.md): Hy-Tek's near-SDIF export, which this reader also opens
+- [SDIFCheck](../software/data-tools/sdifcheck.md) and [swimlib](../software/data-tools/swimlib.md): other software that reads and validates SDIF
 - [Tools](index.md): the tools overview
 - [Software](../software/index.md): the software reference
 

@@ -114,7 +114,7 @@ generically in the body); WTN-DB and BANG-HS (not named in the body); P5-8 (name
 The SU3 is the start unit made by [ALGE-Timing](../../../vendors/alge-timing.md) of Lustenau,
 Austria: a hand-held box for the starter that combines a start button and a microphone with its
 own speech amplifier.[^manual] In swimming it plugs into the [TM-SWIM](../timers/alge-tm-swim.md) timing
-console, and in athletics into ALGE's [BANG](alge-bang.md) speaker start systems or other ALGE
+console, and in athletics into ALGE's [BANG](../external-speaker/alge-bang.md) speaker start systems or other ALGE
 timing devices. It has no battery and draws its power from whichever device it is connected
 to.[^manual][^system]
 
@@ -156,7 +156,7 @@ where the drawing has 8.[^manual]
 
 This section describes the controls in use. Pressing START sends a start impulse to the timing
 device; an external trigger such as an [E-START](alge-e-start.md) or an
-[SM8 start microphone](alge-sm8.md) can be used instead.[^manual] The status LED blinks green when
+[SM8 start microphone](../accessories/alge-sm8.md) can be used instead.[^manual] The status LED blinks green when
 the timing system is ready to accept a start.[^manual]
 
 The starter uses the microphone both for announcements to the competitors and for talking to the
@@ -182,13 +182,13 @@ The SU3 has three sockets:[^manual]
 | DIN socket for a headset | A headset, for the starter's announcements and for speaking to the timing operator |
 | Socket for cable `199-xx` | The TM-SWIM, a BANG or BANG CW, or another ALGE timing device; carries the start channel, the talk line, the ready status and the SU3's 12 V supply |
 
-In a swimming installation the SU3 and a [FLASH XL](alge-flash-xl.md) stand at the starter's
+In a swimming installation the SU3 and a [FLASH XL](../accessories/alge-flash-xl.md) stand at the starter's
 position. A `199-20` cable or the `KT199Z10` cable reel runs from the TM-SWIM to the FLASH XL, the
 SU3 or both.[^system] ALGE's cable pages list the 20 m `199-20` and the 30 m `199-30` for this link,
 and the 100 m `KT199Z10` reel; see [swimming cable sets](../deck-cabling/alge-swim-cable-sets.md).[^cable]
-ALGE currently lists the [HS4-1 and HS4-2](../timers/alge-hs4-1.md) headsets as SU3 accessories.
+ALGE currently lists the [HS4-1 and HS4-2](../accessories/alge-hs4-1.md) headsets as SU3 accessories.
 Its 2015 brochure and the SU3 manual's wiring example show an earlier
-[HS3-2](../timers/alge-hs3-2.md) headset instead.[^product][^athl2015][^manual]
+[HS3-2](../accessories/alge-hs3-2.md) headset instead.[^product][^athl2015][^manual]
 
 ## Specifications
 
@@ -215,11 +215,11 @@ This section lists the SU3's companion parts that have articles here.[^product][
 |---|---|---|
 | Start unit | `SU3` | This article |
 | Electronic start trigger | `E-START` | [E-START](alge-e-start.md) |
-| Start microphone | `SM8` | [SM8](alge-sm8.md) |
-| Headsets | `HS4-1`, `HS4-2` | [HS4 headsets](../timers/alge-hs4-1.md) |
+| Start microphone | `SM8` | [SM8](../accessories/alge-sm8.md) |
+| Headsets | `HS4-1`, `HS4-2` | [HS4 headsets](../accessories/alge-hs4-1.md) |
 | Connection cables and reel | `199-20`, `199-30`, `KT199Z10` | [Swimming cable sets](../deck-cabling/alge-swim-cable-sets.md) |
-| Start flash | `FLASH XL` | [FLASH XL](alge-flash-xl.md) |
-| Speaker start system | `BANG2` | [BANG](alge-bang.md) |
+| Start flash | `FLASH XL` | [FLASH XL](../accessories/alge-flash-xl.md) |
+| Speaker start system | `BANG2` | [BANG](../external-speaker/alge-bang.md) |
 
 ## See also
 

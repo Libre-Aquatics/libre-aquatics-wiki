@@ -50,7 +50,7 @@ CTS places in the other connection group.
 
 This article is a stub. The MCTRL600, which Colorado Time Systems writes `MCTRL-600`, is a
 NovaStar LED display controller that CTS has shipped between a
-[DisplayLink Plus](../../../software/displaylink-plus.md) computer and an LED video board.
+[DisplayLink Plus](../../../software/display/displaylink-plus.md) computer and an LED video board.
 CTS groups it with the controllers that need a pass-through video capture device when the
 board's output is also being streamed.
 

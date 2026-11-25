@@ -136,7 +136,7 @@ This section covers the sources and displays the WA-1 links.
 
 F929, the adapter's user instructions, gives three data sources: a CTS timer (the
 [System 6](../../swimming/timers/system-6.md) is its example), a laptop running
-[SynchroMM](../../../software/synchromm.md), and the [UPC-C](../pace-clock/upc-c.md) pace clock
+[SynchroMM](../../../software/diving-artistic-swimming/synchromm.md), and the [UPC-C](../pace-clock/upc-c.md) pace clock
 controller. The data it carries includes the shot clock.[^f929] The datasheet names only a CTS
 timing console as the source, and CTS says the adapter works with its older
 consoles.[^ds14]
@@ -148,11 +148,11 @@ The receiving end depends on the display:[^f929]
 - A numeric LED board, such as an [LED-R](../scoreboard/led-r.md), takes a second WA-1
   cabled to its data input.
 - A video or matrix board takes the second WA-1 at the computer running
-  [DisplayLink](../../../software/displaylink.md).
+  [DisplayLink](../../../software/display/displaylink.md).
 
 Other CTS documents show the same uses. The [mini scoreboard](../scoreboard/mini-scoreboard.md)
 guide describes a pair of WA-1s, one at the timer and one at the board.[^f927] The help file
-for [DisplayLink Plus](../../../software/displaylink-plus.md) allows its data source to arrive
+for [DisplayLink Plus](../../../software/display/displaylink-plus.md) allows its data source to arrive
 through a WA-1 or a WA-2.[^dlphelp] In 2026 the datasheet for the
 [Gen7 Legacy](../../swimming/timers/gen7-legacy.md) timer still says a System 6 needs one of
 those two adapters to drive a wireless board.[^legacyds]
@@ -308,7 +308,7 @@ This section lists the adapter's part number, its cables and dealer prices.
 - [Pace Clock/Shot Clock](../pace-clock/pace-clock-shot-clock.md): the line whose 900 MHz `PCW-` models it transmits to
 - [Wireless judging](../../diving/wireless-judging.md): the 900 MHz judging system that shares
   its channels
-- [UPC-C](../pace-clock/upc-c.md) and [SynchroMM](../../../software/synchromm.md): data sources
+- [UPC-C](../pace-clock/upc-c.md) and [SynchroMM](../../../software/diving-artistic-swimming/synchromm.md): data sources
   it can carry
 - [Scoreboard control](index.md): the scoreboard-control overview
 - [Colorado Time Systems](../../../vendors/colorado-time-systems.md): the manufacturer

@@ -38,7 +38,7 @@ brand or a company; and whether any facility this wiki covers uses one.
 -->
 
 This article is a stub. BestBet is a swimming timing console that
-[Hy-Tek Meet Manager](../software/hy-tek-meet-manager.md) supports, and which Hy-Tek
+[Hy-Tek Meet Manager](../software/meet-management/hy-tek-meet-manager.md) supports, and which Hy-Tek
 documents chiefly by saying it behaves like a Colorado Time Systems 4 except that its cable
 must be a null modem.
 

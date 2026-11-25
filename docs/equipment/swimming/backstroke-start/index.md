@@ -283,6 +283,7 @@ the swimmer adjusts.
 | [Backstroke Start Device](cts.md) | Colorado Time Systems | Strap or deck anchors | Automatic, torsion-spring | Current |
 | [Backstroke Start Wedge](finis.md) | FINIS | Straps to block posts, hand grips, or block edge | None (manual) | Current |
 | [OBL2 Pro Backstroke Ledge](swiss-timing.md) | Swiss Timing (Omega) | Hooks over an Omega OSB platform top | None; removed by an official | Current |
+| [OBL1 Backstroke Ledge](obl1.md) | Swiss Timing (Omega) | Mounts on the OSB14 platform | Not documented here | Succeeded by the OBL2 Pro |
 
 Each product article covers its device in full, its parts, mounting, operation, and
 care; this page is the shared overview they refer back to.

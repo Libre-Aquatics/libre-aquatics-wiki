@@ -23,7 +23,7 @@ infobox:
   - label: Power
     value: 115 VAC ±10% at 2.5 A per module, or 230 VAC ±10% at 1.3 A, 50–60 Hz
   - label: Software
-    value: '[DisplayLink](software/displaylink.md)'
+    value: '[DisplayLink](software/display/displaylink.md)'
   - label: Introduced
     value: Announced April 1996
   - label: Status
@@ -120,7 +120,7 @@ The Mercury16 is a discontinued LED matrix display made by
 [Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS). Besides scores and
 times it can show text, graphics and animation. CTS announced it in 1996 as a new series of
 indoor full-matrix boards, each sold with the company's
-[DisplayLink](../../../software/displaylink.md) software.[^sw9604] Every pixel is a cluster of
+[DisplayLink](../../../software/display/displaylink.md) software.[^sw9604] Every pixel is a cluster of
 diodes in a single color, and CTS gave the board 16 shades, which is where the name comes
 from.[^webmerc] A red-only outdoor version, the Outdoor Sun Series Mercury16, was sold for
 stadiums and outdoor pools.[^webmerc][^weboutdoor] The two-color [Myriad](myriad.md), introduced
@@ -203,18 +203,18 @@ Vinyl-clad trim then widens the matrix display to match the 4009.[^f853]
 DisplayLink came with every Mercury16.[^sw9604][^webmerc] The 1996 advertisements called it a
 Windows program written by CTS for graphics and animation. They said it worked with CTS timing
 equipment and with meet-management software from [Hy-Tek](../../../vendors/hy-tek.md) and,
-from September 1996, from [LSA](../../../software/lsa-swimmeet.md).[^sw9604][^sw9609] CTS sold
+from September 1996, from [LSA](../../../software/meet-management/lsa-swimmeet.md).[^sw9604][^sw9609] CTS sold
 four additions for the board:[^webmerc]
 
-- [ScheduleLink](../../../software/schedulelink.md), for running advertisements and messages
+- [ScheduleLink](../../../software/display/schedulelink.md), for running advertisements and messages
   to a timetable
 - the [GameLink console](../scoreboard-control/gamelink-console.md), so more than one person
   can keep score
-- a [template editor](../../../software/standalone-template-editor.md), for arranging where
+- a [template editor](../../../software/display/standalone-template-editor.md), for arranging where
   names, times and graphics appear
 - libraries of ready-made animations
 
-The [DisplayLink](../../../software/displaylink.md) article covers the program itself.
+The [DisplayLink](../../../software/display/displaylink.md) article covers the program itself.
 
 ## History and marketing
 
@@ -270,8 +270,8 @@ vinyl-clad trim, and the optional [HWPM 110 and HWPM 220](hwpm.md).[^f853]
 
 - [Myriad](myriad.md): the two-color board sold beside it, and its manual partner
 - [4009](4009.md): the CTS scoreboard it could be installed beside
-- [DisplayLink](../../../software/displaylink.md): the program that drove it
-- [ScheduleLink](../../../software/schedulelink.md): the scheduling add-on
+- [DisplayLink](../../../software/display/displaylink.md): the program that drove it
+- [ScheduleLink](../../../software/display/schedulelink.md): the scheduling add-on
 - [Scoreboards](index.md): the display overview, with the shared matrix architecture
 - [Colorado Time Systems](../../../vendors/colorado-time-systems.md): the manufacturer
 - [Equipment](../../index.md): the equipment reference

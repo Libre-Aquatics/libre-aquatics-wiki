@@ -73,7 +73,7 @@ example, accepts any speaker combination presenting between 3.2 and
 
 ## Products
 
-Five manufacturers sell, or have sold, lane speakers for swimming start
+Six manufacturers sell, or have sold, lane speakers for swimming start
 systems. Each has its own article:
 
 | Article | Manufacturer | Lane speaker | OEM horn | Status |
@@ -103,6 +103,11 @@ brand, fits an internal loudspeaker inside its OSB starting blocks for fixed
 installations and supplies sets of mobile loudspeakers, positioned near each
 block, for mobile ones; both are driven by its
 [StartTime V](../starter/starttime-v.md) starting device.[^osb11][^stconcept]
+
+ALGE-Timing also makes the [BANG](alge-bang.md) series, portable amplified speakers that
+sound the start and false-start signals themselves, and the [BANG SPK](alge-bang-spk.md)
+passive speaker that extends one. The [LK1](alge-lk1.md) is the horn of its earlier Timer S4
+system.
 
 ## See also
 

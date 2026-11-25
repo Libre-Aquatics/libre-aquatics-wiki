@@ -23,7 +23,7 @@ infobox:
 Superior Swim Timing (SST) is an American manufacturer of swim meet timing
 software and equipment, founded in 2010 by Pete Santilli.[^sst][^zoominfo] The
 company's central product is the
-[SST timing software](../software/sst-timing-software.md), a laptop program that
+[SST timing software](../software/timing/sst-timing-software.md), a laptop program that
 connects to a small external timing box over USB, which SST markets as a lower-cost
 alternative to the larger dedicated timing consoles used at major meets.[^sst]
 Alongside the software, SST sells the
@@ -51,7 +51,7 @@ itself Florida based.[^about2014]
 
 ## Products
 
-- The [SST timing software](../software/sst-timing-software.md), a laptop-based
+- The [SST timing software](../software/timing/sst-timing-software.md), a laptop-based
   system that supports up to ten lanes and interfaces with meet-management software
   such as Hy-Tek's Meet Manager, using the SST timer as its USB hardware
   interface.[^sst][^zoominfo]
@@ -64,8 +64,8 @@ itself Florida based.[^about2014]
   under-block [starter speakers](../equipment/swimming/external-speaker/index.md) and 6-, 8-, or 10-lane speaker harnesses that the
   Atlantis drives in addition to its internal speaker.[^atlantis][^pricing]
 - A mobile scoreboard, a spectator-facing result view, along with the
-  [SST App Server](../software/sst-app-server.md) and
-  [SST Stopwatch](../software/sst-stopwatch.md) app.[^sst]
+  [SST App Server](../software/timing/sst-app-server.md) and
+  [SST Stopwatch](../software/timing/sst-stopwatch.md) app.[^sst]
 - [Buttons](../equipment/swimming/semi-automatic/pushbutton/sst.md) and
   [cables](../equipment/swimming/deck-cabling/sst-lane-harness.md), and replacement starter microphones for Colorado Time
   Systems and Daktronics start systems.[^sst][^pricing]
@@ -86,7 +86,7 @@ including the 2016 South American Masters Championship in Uruguay.[^news]
 
 ## See also
 
-- [SST timing software](../software/sst-timing-software.md): the company's main product
+- [SST timing software](../software/timing/sst-timing-software.md): the company's main product
 - [Vendors](index.md): other manufacturers referenced in Libre Aquatics Wiki
 - [Atlantis Swimming Starter System](../equipment/swimming/starter/atlantis.md): SST's portable start system
 - [Superior Swim Timing lane speakers](../equipment/swimming/external-speaker/sst.md): SST's lane speakers and harnesses

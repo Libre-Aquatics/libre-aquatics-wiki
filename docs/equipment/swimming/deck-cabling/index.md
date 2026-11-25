@@ -418,6 +418,11 @@ covers the product itself, and this page is the shared overview they refer back 
 |---|---|---|---|
 | [SWT3 swim terminal](alge-swt3.md) | ALGE-Timing | Bus lane terminal | On-deck |
 | [SWT swim terminal](alge-swt.md) | ALGE-Timing | Bus lane terminal of the SWIM 2000 | On-deck |
+| [S4-SWIM lane box](alge-s4-swim.md) | ALGE-Timing | Eight-lane switch box of the Timer S4 | On-deck |
+| [FIN1 finish adapter](alge-fin1.md) | ALGE-Timing | Two-lane adapter for the S4-SWIM | On-deck |
+| [Cable 078](alge-cable-078.md) | ALGE-Timing | Cable from the S4-SWIM to each FIN1 | On-deck |
+| [MC8 push-button cable](alge-mc8.md) | ALGE-Timing | Eight-lane push-button cable for the Timy | On-deck |
+| [SWIM-FIX](alge-swim-fix.md) | ALGE-Timing | Under-deck box of the Timer S4 system | In-deck |
 | [ALGE swimming cable sets](alge-swim-cable-sets.md) | ALGE-Timing | Terminal and speaker cable sets | On-deck |
 | [Colorado Time Systems cable harness](cts-cable-harness.md) | Colorado Time Systems | Multi-conductor lane harness | On-deck |
 | [Gen7 Serial cable harness](gen7-serial-cable-harness.md) | Colorado Time Systems | Serial lane harness | On-deck |
@@ -426,17 +431,30 @@ covers the product itself, and this page is the shared overview they refer back 
 | [DP-7 deck plate](cts-dp-7-deck-plate.md) | Colorado Time Systems | Deck plate | In-deck |
 | [Gen7 serial connect hubs](gen7-serial-connect-hubs.md) | Colorado Time Systems | Bus connection hubs | In-deck |
 | [Colorado Time Systems wall plate](cts-wall-plate.md) | Colorado Time Systems | Wall plate | In-deck |
+| [Wall plate cover](cts-wall-plate-cover.md) | Colorado Time Systems | Lockable cover for a wall plate | In-deck |
 | [Daktronics lane module](daktronics-lane-module.md) | Daktronics | Lane module harness | On-deck |
+| [Daktronics lane extension module](daktronics-lane-extension-module.md) | Daktronics | Harness lead to the console | On-deck |
 | [Daktronics deck plates](daktronics-deck-plate.md) | Daktronics | Deck plates | In-deck |
+| [Daktronics lane interface](daktronics-lane-interface.md) | Daktronics | Unit where the in-deck lane cables end | In-deck |
+| [Daktronics wall plate](daktronics-wall-plate.md) | Daktronics | Wall plate | In-deck |
+| [SST lane harness](sst-lane-harness.md) | Superior Swim Timing | Lane harness for 6, 8 or 10 lanes | On-deck |
 | [Quantum Mobile Harness](quantum-mobile-harness.md) | Swiss Timing | Addressed lane module harness | On-deck |
 | [Quantum harness cable](quantum-harness-cable.md) | Swiss Timing | Harness-to-console cable | On-deck |
 | [Quantum harness terminator](quantum-harness-terminator.md) | Swiss Timing | Bus terminator | On-deck |
+| [PowerTime swimming harness](powertime-swimming-harness.md) | Swiss Timing | Pushbutton harness, one start and eight lanes | On-deck |
 | [Swiss Timing deck plate](swiss-timing-deck-plate.md) | Swiss Timing | Deck plate | In-deck |
 | [ODB10-SW](odb10-sw.md) | Swiss Timing | Distribution box | In-deck |
 | [ODB10](odb10.md) | Swiss Timing | ARES-era distribution box, discontinued | In-deck |
 | [Deckplate adapter](swiss-timing-deckplate-adapter.md) | Swiss Timing | Tuchel adapter for a start deck plate | In-deck |
 | [Swiss Timing wall socket](swiss-timing-wall-socket.md) | Swiss Timing | Poolside wall socket | In-deck |
-| [Quantum start cable](quantum-start-cable.md) | Swiss Timing | Box-to-timer start cable | In-deck |
+
+### Related accessories
+
+Items listed under [swimming cables and accessories](../accessories/index.md):
+
+| Article | Manufacturer | Type | Installation |
+|---|---|---|---|
+| [Quantum start cable](../accessories/quantum-start-cable.md) | Swiss Timing | Box-to-timer start cable | In-deck |
 
 ## See also
 

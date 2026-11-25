@@ -149,7 +149,7 @@ point where the in-deck cables, the timer and the start system meet.[^spec]
 
 A wall plate can also carry the console's data out of the pool hall. Daktronics' guide to
 linking its timing consoles with matrix displays covers a console set up far from the display's
-[Venus](../../../software/venus.md) 7000 control computer. The console plugs into a wall plate
+[Venus](../../../software/display/venus.md) 7000 control computer. The console plugs into a wall plate
 where it sits, and the wiring runs to a second wall plate at the control computer. Over that distance the link uses current
 loop, with a signal converter between the far wall plate and the computer's serial
 port.[^matrix]
@@ -182,7 +182,7 @@ The double-ended plate has five panels.[^manual]
 - Two panels below, marked NEAR and FAR, each with a lead for one end's lane data.
 
 The RTD connection carries the console's real-time data to a matrix display. Daktronics' usual
-link is a 50 ft [9-pin to 1/4 in cable](../../common/scoreboard-control/daktronics-rtd-cable.md)
+link is a 50 ft [9-pin to 1/4 in cable](../../common/accessories/daktronics-rtd-cable.md)
 from the console's RTD port to the matching connector on the wall plate.[^manual] A 2006
 operations guide for visiting officials at the Prince George's Sports and Learning Complex in
 Maryland describes that arrangement in use. There a cable from the console's RTD port ended at a
@@ -244,9 +244,9 @@ on the interface itself.[^t7000man]
 This section covers the plate's role in diving judging.
 
 In a pool wired for in-deck judging, the console's J14 port connects to the JUDGES CONSOLES
-socket on wall plate 1 by the 30 ft [`W-1823`](../../diving/w-1823-cable.md) cable. From
+socket on wall plate 1 by the 30 ft [`W-1823`](../../diving/accessories/w-1823-cable.md) cable. From
 there, cable in the wall runs up to 550 ft to further wall boxes, each finished with a
-[judging control J-box cover](../../diving/daktronics-judging-jbox-cover.md) that has a judges'
+[judging control J-box cover](../../diving/accessories/daktronics-judging-jbox-cover.md) that has a judges'
 console socket and a scoreboard socket.[^manual] Wired [JC-100](../../diving/jc-100.md)
 consoles chain from those sockets, up to nine on one console output.[^manual]
 
@@ -296,11 +296,11 @@ This section lists the part numbers the sources give with the wall plate.
 
 - `0A-1240-0059`, wall plate, single-ended.[^manual]
 - `0A-1240-0060`, wall plate, double-ended.[^manual]
-- [`0A-1240-0057`](../../diving/daktronics-judging-jbox-cover.md), judging control J-box cover
+- [`0A-1240-0057`](../../diving/accessories/daktronics-judging-jbox-cover.md), judging control J-box cover
   for further judging locations.[^manual]
-- [`W-1823`](../../diving/w-1823-cable.md), 30 ft cable from console J14 to the judging
+- [`W-1823`](../../diving/accessories/w-1823-cable.md), 30 ft cable from console J14 to the judging
   socket.[^manual]
-- [`0A-1240-0032`](../../common/scoreboard-control/daktronics-rtd-cable.md), 50 ft 9-pin to 1/4 in
+- [`0A-1240-0032`](../../common/accessories/daktronics-rtd-cable.md), 50 ft 9-pin to 1/4 in
   cable from the console's RTD port.[^manual]
 
 ## See also

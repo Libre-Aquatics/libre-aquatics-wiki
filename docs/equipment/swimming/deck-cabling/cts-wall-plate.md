@@ -376,13 +376,13 @@ retrofit version for the older ABS plates.[^arch][^uwp]
 
 On a parallel-wired installation the console's cable plugs into the 50-pin sockets on the
 plate. CTS's Gen7 Legacy manual connects the plate's near-end and far-end sockets to the timer's
-rear panel with a [timer-to-wallplate cable](../timers/cts-timer-wallplate-cable.md), `CHI-xx-CPUA`, with a
+rear panel with a [timer-to-wallplate cable](../accessories/cts-timer-wallplate-cable.md), `CHI-xx-CPUA`, with a
 further `CHI12-xx` cable for a 12-lane pool.[^f1034old] CTS sells the 25 ft version as
 `CHI-25-CPUA`.[^shop] A US dealer also offers a 50 ft length, and a UK dealer sells a 3 m cable
 for linking a Gen7 timer to a wall plate.[^dealercable]
 
 CTS start systems connect in one of two ways. The Championship and Championship Elite starters
-take a [CMP-WP cable](../timers/cts-cmp-wp-cable.md) from their wallplate connector to the plate's
+take a [CMP-WP cable](../accessories/cts-cmp-wp-cable.md) from their wallplate connector to the plate's
 start-system socket. One cable carries the start signal, the starter's audio for the lane
 speakers, the speedlight signal and power for an external strobe.[^f875][^f1064] The Infinity Pro starter
 uses a start jumper to the plate's start jacks instead.[^f1063] On a
@@ -390,7 +390,7 @@ Gen7 Serial plate, the timer uses cable `R-015-715-xx` to the timer node and the
 uses `R-015-706-xx` to the `WPI-S2` node.[^f1034][^f1064]
 
 Video display data also passes through the plate. CTS's matrix-display manuals route the data
-from the [DisplayLink](../../../software/displaylink.md) computer into a wall plate and on to
+from the [DisplayLink](../../../software/display/displaylink.md) computer into a wall plate and on to
 the display. Where several plates in a building each carry a display switch, only the one in
 use is set to local.[^f853][^f850]
 
@@ -434,8 +434,8 @@ This section lists the plates and the parts used with them.
 - `WLPA`, `WLPA-F`, `WLPA-S`, `WLPA-FS`, Universal Wall Plate configurations by pool end.[^uwp]
 - `K-DV` and `K-12`, the diving and 12-lane options.[^uwp]
 - `C-WLP-01` and `C-WLP-02`, the [wall plate cover](cts-wall-plate-cover.md) for new and retrofit plates.[^uwp]
-- `CHI-xx-CPUA` and `CHI12-xx`, the [timer-to-wallplate cable](../timers/cts-timer-wallplate-cable.md) and its lanes 11 and 12 companion.[^f1034old]
-- `CMP-WPxx`, the [CMP-WP cable](../timers/cts-cmp-wp-cable.md) from a Championship-series starter to the plate.[^f875][^f1064]
+- `CHI-xx-CPUA` and `CHI12-xx`, the [timer-to-wallplate cable](../accessories/cts-timer-wallplate-cable.md) and its lanes 11 and 12 companion.[^f1034old]
+- `CMP-WPxx`, the [CMP-WP cable](../accessories/cts-cmp-wp-cable.md) from a Championship-series starter to the plate.[^f875][^f1064]
 - `WPI-S2`, the Gen7 starter node in a wall plate; `R-015-706-xx`, the Elite's cable to it.[^f1064]
 - `R-015-715-xx`, the Gen7 Serial timer cable to a timer node.[^f1034]
 

@@ -58,7 +58,7 @@ Sources:
 
 This article is a stub. The GEMINI is a [Swiss Timing](../../../vendors/swiss-timing.md)
 modular LED scoreboard sold in 6-digit (`3449.961`), 9-digit (`3449.991`) and alphanumeric
-versions, and the [TOP-8](../../../software/top-8.md) manual gives it as an example of a
+versions, and the [TOP-8](../../../software/timing/top-8.md) manual gives it as an example of a
 board that a [PowerTime II](../../swimming/timers/powertime-ii.md) drives in multiline mode.
 
 See the [scoreboard overview](index.md) for the shared background that applies to every

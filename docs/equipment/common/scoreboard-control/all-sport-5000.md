@@ -224,7 +224,7 @@ the 3000 in April 2000 and the 5500 in August 2011.[^manual] The smaller
 [All Sport 1600](all-sport-1600.md) followed in December 2000.[^revhist] Unlike the 3000 and
 the 5500, the All Sport 5000 does not appear on Daktronics' list of discontinued products, and its
 support page remains current as of 2026.[^discontinued][^support] From 2019 the console
-supports [All Sport Pro](../../../software/all-sport-pro.md), the browser-based scoring software
+supports [All Sport Pro](../../../software/display/all-sport-pro.md), the browser-based scoring software
 that Daktronics extended to some fixed-digit boards in 2025.[^revhist][^svg]
 
 ## Design and hardware
@@ -365,12 +365,12 @@ pair of 22 AWG shielded cable per board, and sells signal cords of 10 to 100 ft 
 wall box.[^manual] Its output specification allows 2000 ft of cable from the console to
 the farthest display and up to six displays in parallel on one output. Display drivers can
 re-send the signal for longer runs.[^manual] A
-[dual phone-jack junction box](daktronics-dual-phone-jack-junction-box.md) with MAIN and
+[dual phone-jack junction box](../accessories/daktronics-dual-phone-jack-junction-box.md) with MAIN and
 AUXILIARY jacks lets one console drive a main and an auxiliary board together. A second console
 plugged into the AUXILIARY jack runs the auxiliary board on its own.[^manual]
 
-The [main clock switch](daktronics-main-clock-switch.md), a rocker with a horn button, plugs
-into J4. The [shot clock control](daktronics-shot-clock-control.md), a rocker with reset
+The [main clock switch](../accessories/daktronics-main-clock-switch.md), a rocker with a horn button, plugs
+into J4. The [shot clock control](../accessories/daktronics-shot-clock-control.md), a rocker with reset
 buttons, plugs into J7.[^manual] Both let a second official run a clock away from the
 console.[^manual] An [RC-200](../../diving/rc-200.md) base station plugged into either jack lets
 the RC-200 handheld do the same without a cable: on J4 its horn key sounds the main
@@ -382,8 +382,8 @@ a radio is fitted, output 1 also feeds the transmitter, so further wired boards 
 2.[^manual] Radio diagnostics arrived in version 4.0.9 of March 2014.[^revhist] Channel and
 broadcast-group setup and the radio tests are described on the Gen VI radio page.
 
-The console sends real-time data in Daktronics' [Enhanced RTD](../../../software/ertd.md) form
-for [Venus](../../../software/venus.md) display systems. An RTD offset separates the data of
+The console sends real-time data in Daktronics' [Enhanced RTD](../../../software/file-formats/ertd.md) form
+for [Venus](../../../software/display/venus.md) display systems. An RTD offset separates the data of
 several consoles feeding the same matrix display.[^manual] A computer on the J5 or J6 port can
 also use the console to load new firmware into some scoreboard drivers, from version 4.1.5
 (August 2015).[^bootload][^revhist] Daktronics says the console can run a ColorSmart board in red
@@ -429,10 +429,10 @@ This section lists the parts the manual names.
 - [All Sport 1600](all-sport-1600.md), [All Sport 3000](all-sport-3000.md) and
   [All Sport 5500](all-sport-5500.md): other All Sport consoles
 - [Gen VI radio](gen-vi-radio.md): the wireless link to the boards
-- [WP-2101](../scoreboard/wp-2101.md) and [WP-2102](../scoreboard/wp-2102.md): Daktronics water
+- [WP-2101](../../water-polo/scoreboard/wp-2101.md) and [WP-2102](../../water-polo/scoreboard/wp-2102.md): Daktronics water
   polo scoreboard and penalty module
 - [PC-2001](../pace-clock/pc-2001.md): a pace clock the console can drive
-- [All Sport Pro](../../../software/all-sport-pro.md): Daktronics' browser-based scoring software
+- [All Sport Pro](../../../software/display/all-sport-pro.md): Daktronics' browser-based scoring software
 - [Scoreboard control](index.md): the scoreboard control overview
 - [Daktronics](../../../vendors/daktronics.md): the manufacturer
 - [Equipment](../../index.md): the equipment reference

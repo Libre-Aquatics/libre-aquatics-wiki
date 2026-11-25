@@ -143,7 +143,7 @@ System 5 and System 6, each cabled to a judging interface box at the console.[^s
 With wireless judging, the interface box (WIO) is the only part cabled to the console, and each
 judge holds a battery-powered terminal (WJT).[^f941] In diving, the console's Diving program
 controls the interface; in synchronized swimming the interface is run from a Windows laptop
-with the CTS synchro program, which CTS calls Wireless Synchro or [SynchroMM](../../software/synchromm.md).[^f941][^synchro13]
+with the CTS synchro program, which CTS calls Wireless Synchro or [SynchroMM](../../software/diving-artistic-swimming/synchromm.md).[^f941][^synchro13]
 Scores can still be keyed in by hand at the console or laptop.[^f871b][^synchro13]
 
 At elite diving events CTS now supplies wired equipment instead. In a June 2015 release, CTS
@@ -356,7 +356,7 @@ This section lists the part numbers CTS documents.
 
 - [Colorado Time Systems judging terminals](judging-terminals.md): the wired terminals for the System 5 and System 6
 - [Colorado Time Systems Gen7 wired judging](gen7-wired-judging.md): the wired system that replaced it at elite events
-- [SynchroMM](../../software/synchromm.md): the synchro scoring program that runs the interface
+- [SynchroMM](../../software/diving-artistic-swimming/synchromm.md): the synchro scoring program that runs the interface
 - [Sky-Fi WA-1](../common/scoreboard-control/wa-1.md): the 900 MHz scoreboard adapter that shares its channels
 - [Diving equipment](index.md): the diving equipment overview
 - [Colorado Time Systems](../../vendors/colorado-time-systems.md): the manufacturer

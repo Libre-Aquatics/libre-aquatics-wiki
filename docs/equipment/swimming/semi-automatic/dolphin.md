@@ -349,9 +349,9 @@ level.[^f912]
 ## Meet-management software
 
 The Dolphin does not score a meet; it hands times to a program that
-does.[^f912] CTS names [Hy-Tek Meet Manager](../../../software/hy-tek-meet-manager.md),
-[SwimTopia Meet Maestro](../../../software/meet-maestro.md) and
-[Splash](../../../software/splash-meet-manager.md) in its current
+does.[^f912] CTS names [Hy-Tek Meet Manager](../../../software/meet-management/hy-tek-meet-manager.md),
+[SwimTopia Meet Maestro](../../../software/meet-management/meet-maestro.md) and
+[Splash](../../../software/meet-management/splash-meet-manager.md) in its current
 documentation, and refers operators to each vendor for the details.[^f912]
 
 Meet Manager is the longest-standing of the three and treats the Dolphin in two
@@ -483,9 +483,9 @@ case.[^flyer22]
   to a CTS numeric scoreboard
 - [Colorado Time Systems Pushbutton](pushbutton/cts.md) and
   [Pushbuttons](pushbutton/index.md): the wired alternative to a wireless stopwatch
-- [Hy-Tek Meet Manager](../../../software/hy-tek-meet-manager.md),
-  [SwimTopia Meet Maestro](../../../software/meet-maestro.md) and
-  [Splash](../../../software/splash-meet-manager.md): the meet-management programs that
+- [Hy-Tek Meet Manager](../../../software/meet-management/hy-tek-meet-manager.md),
+  [SwimTopia Meet Maestro](../../../software/meet-management/meet-maestro.md) and
+  [Splash](../../../software/meet-management/splash-meet-manager.md): the meet-management programs that
   read Dolphin result files
 - [Timers](../timers/index.md): the timing consoles the Dolphin backs up
 - [Colorado Time Systems](../../../vendors/colorado-time-systems.md): the manufacturer

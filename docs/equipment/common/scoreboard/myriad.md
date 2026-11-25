@@ -24,7 +24,7 @@ infobox:
   - label: Power
     value: 115 VAC ±10% at 2.5 A per module, or 230 VAC ±10% at 1.3 A, 50–60 Hz
   - label: Software
-    value: '[DisplayLink](software/displaylink.md)'
+    value: '[DisplayLink](software/display/displaylink.md)'
   - label: Introduced
     value: Announced January 1997
   - label: Status
@@ -142,7 +142,7 @@ The Myriad is a discontinued [Colorado Time Systems](../../../vendors/colorado-t
 full-matrix boards the company built in that generation.[^sw9701][^web02] Where the
 [Mercury16](mercury16.md) beside it lit each pixel in one color, the Myriad mixed red and
 green diodes in every pixel, which CTS said let the board render 256 shades.[^web02][^webmerc]
-A dedicated computer running [DisplayLink](../../../software/displaylink.md) composed
+A dedicated computer running [DisplayLink](../../../software/display/displaylink.md) composed
 what either line showed.[^f837]
 
 ## Role in the timing system
@@ -208,10 +208,10 @@ program neither scales nor centers an image that does not fit.[^f837]
 ## Software and options
 
 DisplayLink drove the board, and every Myriad was supplied with it.[^web02][^f837] The
-[DisplayLink](../../../software/displaylink.md) article covers the program itself. Beyond
+[DisplayLink](../../../software/display/displaylink.md) article covers the program itself. Beyond
 it, CTS sold four additions for a matrix display:[^web02]
 
-- [ScheduleLink](../../../software/schedulelink.md), for running advertisements and
+- [ScheduleLink](../../../software/display/schedulelink.md), for running advertisements and
   messages to a timetable
 - the [GameLink console](../scoreboard-control/gamelink-console.md), which let more than
   one person work on the score at once
@@ -279,8 +279,8 @@ from a technical document.
 ## See also
 
 - [Mercury16](mercury16.md): the single-color board sold beside it, and its manual partner
-- [DisplayLink](../../../software/displaylink.md): the program that composed what it showed
-- [ScheduleLink](../../../software/schedulelink.md): the scheduling add-on CTS sold for it
+- [DisplayLink](../../../software/display/displaylink.md): the program that composed what it showed
+- [ScheduleLink](../../../software/display/schedulelink.md): the scheduling add-on CTS sold for it
 - [HWPM 110 and HWPM 220](hwpm.md): the optional parts its manual names without explaining
 - [Scoreboards](index.md): the display overview, with the shared matrix architecture
 - [Colorado Time Systems](../../../vendors/colorado-time-systems.md): the manufacturer

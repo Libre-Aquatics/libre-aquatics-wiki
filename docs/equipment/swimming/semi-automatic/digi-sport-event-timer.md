@@ -28,7 +28,7 @@ Still to research: the manufacturer, how times are captured, and the file format
 
 This article is a stub. The DIGI Sport-Event-Timer is a semi-automatic timing system that writes
 one results file per heat, with one split for every two lengths, which the
-[EasyWk](../../../software/easywk.md) meet program imports.
+[EasyWk](../../../software/meet-management/easywk.md) meet program imports.
 
 See the [semi-automatic timing overview](index.md) for the shared background on button-based
 timing.

@@ -11,7 +11,7 @@ tags:
 
 <!--
 Research notes, SST scoreboard adapter. Surfaced 2026-11-03 while writing
-software/sst-timing-software.md.
+software/timing/sst-timing-software.md.
 
 Sources: SST Operation Manual, current edition, Addendum A, p. 73, and 2019 manual, p. 12. Earlier
 timers need a USB-to-serial adapter, which appears as a COM port and uses an FTDI driver. SST

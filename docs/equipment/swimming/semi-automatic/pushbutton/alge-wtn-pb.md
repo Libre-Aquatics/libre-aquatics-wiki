@@ -16,7 +16,7 @@ infobox:
   - label: Type
     value: 'Radio push button'
   - label: Connection
-    value: '[WTN](equipment/swimming/timers/alge-wtn.md) radio, 2.4 GHz'
+    value: '[WTN](equipment/swimming/accessories/alge-wtn.md) radio, 2.4 GHz'
   - label: Dimensions
     value: '185 × 50 × 45 mm'
   - label: Weight
@@ -55,7 +55,7 @@ Not established: introduction date beyond the 2014 firmware entry; waterproof ra
 -->
 
 This article is a stub. The `WTN-PB` is an [ALGE-Timing](../../../../vendors/alge-timing.md)
-push button with a built-in [WTN](../../timers/alge-wtn.md) radio, used for lane finishes in ALGE's
+push button with a built-in [WTN](../../accessories/alge-wtn.md) radio, used for lane finishes in ALGE's
 radio semi-automatic system and for sending false-start recalls and time-outs without a cable.
 
 See the [pushbuttons overview](index.md) for the shared background on push buttons.

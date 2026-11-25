@@ -173,7 +173,7 @@ software.[^manual]
 
 ## Testing and troubleshooting
 
-ALGE lists its [SWIM-SIM10](../timers/alge-swim-sim10.md) lane simulator as an accessory of the
+ALGE lists its [SWIM-SIM10](../accessories/alge-swim-sim10.md) lane simulator as an accessory of the
 SWT3.[^product] Firmware
 changes have also touched the terminal side: a 2015 TM-SWIM release reorganised how the timer polls
 the terminals and fixed an error in its two-edge impulse check.[^tms] Since late 2024 the terminals
@@ -207,7 +207,7 @@ Sources: TM-SWIM manual and product page.[^manual][^product]
 | Bus cable | `200-20`, reel `KT200Z10` | First terminal to the TM-SWIM |
 | Terminator | `SWT-END` | On the last terminal |
 | Cable sets | [`SWCBL8S`, `SWCBL10S`, `SWCBL10T`](alge-swim-cable-sets.md) | Terminal cabling for 8 or 10 lanes |
-| Simulator | [`SWIM-SIM10`](../timers/alge-swim-sim10.md) | Tests up to ten lanes |
+| Simulator | [`SWIM-SIM10`](../accessories/alge-swim-sim10.md) | Tests up to ten lanes |
 
 Sources: TM-SWIM manual, product page and cable-set page.[^manual][^product]
 

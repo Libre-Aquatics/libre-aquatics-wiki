@@ -194,7 +194,7 @@ converted without new deck boxes.[^tdpsheet]
 ## Connection to the timer
 
 At the lane, touchpads and pushbuttons use ordinary two-pin banana plugs.[^f870] CTS's speedlight
-relay platforms use cable [`R-015-027`](../timers/cts-r-015-027-cable.md), whose banana leg
+relay platforms use cable [`R-015-027`](../accessories/cts-r-015-027-cable.md), whose banana leg
 stacks into the button A jack.[^f968] The start system connects through the start jacks on an
 outside-lane plate or at the wall plate; CTS's 1997 start-system manual has the starter's timer
 lead plugged in at the deck plate on an in-deck pool.[^f503][^f870]
@@ -217,7 +217,7 @@ with alcohol on a cotton pipe cleaner, rinsed in fresh water and greased again. 
 lime-scale remover is kept as a last resort and is never to be used routinely.[^f897] The 2014
 touchpad manual repeats the 2011 routine.[^f147]
 
-A plate can be checked with CTS's [`TPM-D` test meter](../timers/cts-tpm-d-test-meter.md). With
+A plate can be checked with CTS's [`TPM-D` test meter](../accessories/cts-tpm-d-test-meter.md). With
 the timer connected and switched on, the meter goes into the plate's touchpad jack and then its
 button jack. A reading of 4.5–5 V is good, and anything lower points to the timer, the plate or
 a dirty connector. CTS says to clean the plate and test again before calling support.[^meter]
@@ -253,8 +253,8 @@ CTS's general warranty on deck plates was shorter: two years in 1997, and one ye
 This section lists the plate and the parts used with it.
 
 - `DP-7`, the plate.[^tdpsheet]
-- [`R-015-027`](../timers/cts-r-015-027-cable.md), the speedlight relay platform cable for DP-series plates.[^f968]
-- [`TPM-D`](../timers/cts-tpm-d-test-meter.md), the test meter used to check the plate.[^meter]
+- [`R-015-027`](../accessories/cts-r-015-027-cable.md), the speedlight relay platform cable for DP-series plates.[^f968]
+- [`TPM-D`](../accessories/cts-tpm-d-test-meter.md), the test meter used to check the plate.[^meter]
 - `TDP`, the [Titanium Deckplate](cts-titanium-deckplate.md) that replaces it.[^tdpsheet]
 
 ## See also

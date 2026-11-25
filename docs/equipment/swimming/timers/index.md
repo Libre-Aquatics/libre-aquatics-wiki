@@ -36,7 +36,7 @@ consoles of the 1990s; the lineage is covered in the OmniSport 2000 article's
 [history section](omnisport-2000.md#history-and-predecessors).
 
 Some systems move the console onto a laptop altogether. The
-[SST timing software](../../../software/sst-timing-software.md) from
+[SST timing software](../../../software/timing/sst-timing-software.md) from
 [Superior Swim Timing](../../../vendors/superior-swim-timing.md) runs the operator screen and
 scoreboards on a computer, while a USB [SST timer](sst-timer.md) box measures the times.
 
@@ -56,7 +56,7 @@ console of this kind.[^warules]
 ## Products
 
 This section catalogs the swim timing consoles made by Colorado Time Systems,
-Daktronics, Swiss Timing and ALGE-Timing.
+Daktronics, Swiss Timing and ALGE-Timing, followed by those of other makers.
 
 Gen7 ships in two consoles that share the same enclosure, software, and price-list
 accessories but differ in how they cable to the deck:
@@ -112,6 +112,33 @@ how they succeeded one another.
 | [SWC](alge-swc.md) | `SWC` | Controller of the SWIM 2000: lane terminals on start-side and turn-side buses | Up to 12 | Documented 2002; called old by ALGE |
 | [SWIM 2000](alge-swim-2000.md) | None published | RS485 buses of [SWT terminals](../deck-cabling/alge-swt.md) to the [SWC](alge-swc.md) | Up to 12 | Listed 2000; documented 2002; replaced by the TM-SWIM by 2007 |
 | [Timer S4](alge-timer-s4.md) | `S4` | [S4-SWIM lane box](../deck-cabling/alge-s4-swim.md) and [FIN1 adapters](../deck-cabling/alge-fin1.md) | 8 | Documented 1994–2006; FIS-homologated |
+
+The other ALGE timers covered here are hand-held or multi-sport timers and timing computers:
+
+| Product | Part number | Deck cabling | Lanes | Status |
+|---|---|---|---|---|
+| [Timy](alge-timy.md) | `TIMY3 WP-F`, `TIMY3 W-F`; earlier Timy2 and Timy | [MC8 push-button cable](../deck-cabling/alge-mc8.md) or WTN radio | Up to 8 | Timy3 sold for swimming in 2026 |
+| [Timer S3](alge-timer-s3.md) | Not published | Not documented here | Not documented here | Replaced by the Timer S4 |
+| [TdC 8000](alge-tdc-8000.md) | `TdC 8000` | Not documented here | Not documented here | Discontinued; dates not established |
+| [TdC 4000](alge-tdc-4000.md) | `TdC 4000` | Not documented here | Not documented here | Discontinued; dates not established |
+| [TdC 2000](alge-tdc-2000.md) | `TdC 2000` | Not documented here | Not documented here | Introduced 1978 or 1979; discontinued |
+| [Comet](alge-comet.md) | `Comet` | Not documented here | Not documented here | Discontinued; dates not established |
+
+The PowerTime timers are hand-held, and for swimming they run the
+[TOP-8](../../../software/timing/top-8.md) program:
+
+| Product | Part number | Deck cabling | Lanes | Status |
+|---|---|---|---|---|
+| [PowerTime II](powertime-ii.md) | `3361.900` | [Swimming harness](../deck-cabling/powertime-swimming-harness.md) of pushbutton boxes | Up to 8 | Dates not established |
+| [PowerTime](powertime.md) | Not published | [Swimming harness](../deck-cabling/powertime-swimming-harness.md) of pushbutton boxes | 8 | In service by 1999; succeeded by the PowerTime II |
+
+Timers from other makers:
+
+| Product | Part number | Deck cabling | Lanes | Status |
+|---|---|---|---|---|
+| [Kyroscope](kyroscope.md) | Not published | Not documented here | 4, 6 or 8 | Sold from 1969; last advertised 1982 |
+| [Tec-Timer](kyrotech-tec-timer.md) | Not published | Not documented here | 10 | Dates not established |
+| [ZES99](zes99.md) | Not published | Not documented here | Not documented here | Maker not established |
 
 Each article covers one console in full (its specifications, connections, and
 part-number variants) and how it differs from the others; this page is the shared

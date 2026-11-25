@@ -9,7 +9,7 @@ tags:
 
 <!--
 Research notes, Trycom Technology. Surfaced 2026-11-07 while building out
-equipment/swimming/timers/swiss-timing-int131.md.
+equipment/common/accessories/swiss-timing-int131.md.
 
 Sources: the TRP-C08H User's Manual (Rev 1.0, December 2005; held at
 sources/vendors/trycom/accessories/) gives Trycom Technology Co., Ltd in Yingge Township, Taipei,
@@ -22,7 +22,7 @@ the page exists because its converter is the basis of a Swiss Timing timing acce
 -->
 
 This article is a stub. Trycom Technology is a Taiwanese maker of industrial USB and serial
-converters whose [TRP-C08H](../equipment/swimming/timers/trycom-trp-c08h.md) is the base unit of the
-Swiss Timing [INT131](../equipment/swimming/timers/swiss-timing-int131.md) converter.
+converters whose [TRP-C08H](../equipment/common/accessories/trycom-trp-c08h.md) is the base unit of the
+Swiss Timing [INT131](../equipment/common/accessories/swiss-timing-int131.md) converter.
 
 See the [vendors overview](index.md) for the other companies this wiki covers.

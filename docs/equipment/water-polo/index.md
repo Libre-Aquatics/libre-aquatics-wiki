@@ -78,20 +78,25 @@ along both sides, 1 m wide and 70 cm above the water.[^fr]
 ## Articles
 
 [Water polo consoles](console/index.md), the controllers at the officials' table, and
-[water polo shot clocks](shot-clock/index.md), the deck displays and horn units they drive:
+[water polo shot clocks](shot-clock/index.md), the deck displays they drive, are listed here with
+the scoreboards and accessories made for the game:
 
-- [Calypso WPO console](console/calypso-wpo-console.md) and its
-  [team-name module](console/calypso-team-name-module.md), from Swiss Timing
-- [Swiss Timing water polo shot clocks](shot-clock/swiss-timing-shot-clocks.md), the
-  [Montreal shot clocks](shot-clock/montreal-shot-clocks.md) and the
-  [Coyote horn](shot-clock/coyote-horn.md)
+- [Calypso WPO console](console/calypso-wpo-console.md), from Swiss Timing
+- [Swiss Timing water polo shot clocks](shot-clock/swiss-timing-shot-clocks.md) and the
+  [Montreal shot clocks](shot-clock/montreal-shot-clocks.md)
+- [Water polo scoreboards](scoreboard/index.md): the Daktronics
+  [WP-2101](scoreboard/wp-2101.md), its [WP-2102](scoreboard/wp-2102.md) penalty module and the
+  portable [WP-2103](scoreboard/wp-2103.md)
+- [Water polo cables and accessories](accessories/index.md), including the console's
+  [team-name module](accessories/calypso-team-name-module.md) and the
+  [Coyote horn](accessories/coyote-horn.md)
 
 Multisport equipment that also serves water polo stays with the
 [common equipment](../common/index.md): Colorado Time Systems'
 [WTTC-1](../common/scoreboard-control/wttc-1.md) controller, its
 [deck clocks](../common/pace-clock/deck-clock.md) and
 [Pace Clock/Shot Clock](../common/pace-clock/pace-clock-shot-clock.md), and the
-scoreboards. Articles on individual goals and table equipment are still to be written. Water polo clocks and
+multisport [scoreboards](../common/scoreboard/index.md). Articles on individual goals and table equipment are still to be written. Water polo clocks and
 scoreboards are made by the same timing vendors that supply swimming, listed on the
 [Vendors](../../vendors/index.md) page.
 

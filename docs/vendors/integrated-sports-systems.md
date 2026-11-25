@@ -11,7 +11,7 @@ infobox:
   - label: Industry
     value: Scoring software for judged aquatic sports
   - label: Key products
-    value: ISS MMS Diving; [ISS MMS Artistic Swimming](software/iss-mms-artistic-swimming.md); [Coach Card](software/coach-card.md); [i-Judge](software/i-judge.md); [Display Results](software/display-results.md)
+    value: ISS MMS Diving; [ISS MMS Artistic Swimming](software/diving-artistic-swimming/iss-mms-artistic-swimming.md); [Coach Card](software/diving-artistic-swimming/coach-card.md); [i-Judge](software/diving-artistic-swimming/i-judge.md); [Display Results](software/diving-artistic-swimming/display-results.md)
   - label: Headquarters
     value: Not established
   - label: Website
@@ -49,7 +49,7 @@ company history, other sports.
 This article is a stub. Integrated Sports Systems (ISS) is a developer of scoring software for
 judged aquatic sports, whose diving and artistic swimming programs are used at USA Artistic
 Swimming and Canadian national events and are supplied to Swiss Timing as
-[DIV Scoring Manager](../software/div-scoring-manager.md) and
-[SWA Scoring Manager](../software/swa-scoring-manager.md).
+[DIV Scoring Manager](../software/diving-artistic-swimming/div-scoring-manager.md) and
+[SWA Scoring Manager](../software/diving-artistic-swimming/swa-scoring-manager.md).
 
 See the [vendors overview](index.md) for the other companies the wiki covers.

@@ -47,7 +47,7 @@ connectors, resolution and interface to the PC, when it was introduced, and who 
 This article is a stub. The DC 204 Sports Timer (`DC204`) is a unit sold by Dexstar
 Communications that connects two timing devices, such as a touchpad, a start system or a
 starting block, to a PC, whose free software then shows relay takeover margins or start reaction
-times on screen, and that [Display Results](../../../software/display-results.md) can use as a
+times on screen, and that [Display Results](../../../software/diving-artistic-swimming/display-results.md) can use as a
 remote routine clock in artistic swimming.
 
 See the [relay judging overview](index.md) for the shared background on takeover judging.

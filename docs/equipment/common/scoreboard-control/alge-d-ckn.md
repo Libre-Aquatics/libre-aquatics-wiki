@@ -16,7 +16,7 @@ infobox:
   - label: Type
     value: 'Scoreboard control terminal'
   - label: Connection
-    value: 'Cable to the scoreboard, or [WTN](equipment/swimming/timers/alge-wtn.md) radio'
+    value: 'Cable to the scoreboard, or [WTN](equipment/swimming/accessories/alge-wtn.md) radio'
   - label: Status
     value: 'Current'
 ---
@@ -60,7 +60,7 @@ Sources:
 
 This article is a stub. The `D-CKN` is an [ALGE-Timing](../../../vendors/alge-timing.md) keypad
 terminal that runs multisport scoreboards, including ALGE's water polo boards and shot clocks, by
-cable or over [WTN](../../swimming/timers/alge-wtn.md) radio, and it can also send playing time to a
+cable or over [WTN](../../swimming/accessories/alge-wtn.md) radio, and it can also send playing time to a
 [D-LINE](../scoreboard/alge-d-line.md) board.
 
 See the overview of [scoreboard controllers](index.md) for the shared background.

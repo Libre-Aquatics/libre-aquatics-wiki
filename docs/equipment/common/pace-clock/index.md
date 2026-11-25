@@ -190,12 +190,8 @@ been designed as a swimming pace clock.[^dak95]
 
 ## Products
 
-This section catalogs the pace clock hardware named in the articles on this wiki. The
-[pace clock controller](upc-c.md), the [Ultimate Pace Clock](ultimate-pace-clock.md), the
-[handheld segment timer](whc-2.md), the [Pace Clock/Shot Clock](pace-clock-shot-clock.md)
-line and the Daktronics [PC-2001](pc-2001.md) have had research passes of their own;
-the rest are stubs, written from what a manual says in
-passing.
+The pace clocks on this wiki are listed below. Each article covers its product, and this page is
+the shared overview they refer back to.
 
 | Product | Maker | Type | Status |
 |---|---|---|---|
@@ -221,11 +217,18 @@ passing.
 | [PC-2002](pc-2002.md) | Daktronics | Mains-powered wall-mounted indoor version of the PC-2001 | Documented 2003–2021 |
 | [TI-2022](ti-2022.md) | Daktronics | Portable LED timer on the PC-2001 cabinet, with general sports programs | Documented 2003–2023 |
 | [TI-2101](ti-2101.md) | Daktronics | Four-digit indoor timing display with 13 in digits, usable as a pace clock | Listed 2026 |
-| [Hy-Tek data cable](hy-tek-data-cable.md) | Daktronics | Serial cable for downloading Hy-Tek workouts to the PC-2001 and PC-2002 | Documented 2003–2023 |
 
 The [multisport portable scoreboard](../scoreboard/multisport-portable-scoreboard.md) is
 the third display a segment timer drives, and is filed with the scoreboards. The counting
 clock pro is not yet covered; it is attested only by its own user guide, F925.[^f925]
+
+### Related accessories
+
+Items listed under [common cables and accessories](../accessories/index.md):
+
+| Product | Maker | Type | Status |
+|---|---|---|---|
+| [Hy-Tek data cable](../accessories/hy-tek-data-cable.md) | Daktronics | Serial cable for downloading Hy-Tek workouts to the PC-2001 and PC-2002 | Documented 2003–2023 |
 
 ## See also
 

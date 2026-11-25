@@ -224,7 +224,7 @@ computer can connect to the Gen7 in four ways:
 
 - By USB directly to a port on the timer, where the computer sees it as a virtual serial
   (COM) port.
-- By USB to the Gen7 interface laptop, through CTS's [USB Connect](cts-usb-connect.md) coupler (part `USB2USB`),
+- By USB to the Gen7 interface laptop, through CTS's [USB Connect](../../common/accessories/cts-usb-connect.md) coupler (part `USB2USB`),
   which simulates a null-modem serial link over USB.
 - Over the network by file sharing, in which the meet-management computer and the Gen7
   laptop read and write a shared Windows folder, enabled as the meet-management
@@ -248,7 +248,7 @@ The fourth connection, the UDP link, feeds display data the other way, to the Ge
 operator's screen and the scoreboard. Since Gen7 Swimming v2023 the console can take
 swimmers' names from the meet-management program and show them on screen and on an LED
 video board. This removes the need for a direct link between the meet-management computer
-and the computer running [DisplayLink Plus](../../../software/displaylink-plus.md) (DL+),
+and the computer running [DisplayLink Plus](../../../software/display/displaylink-plus.md) (DL+),
 and requires DL+ v4.6.0 or
 later. The names can be pre-loaded from SCB files on a USB drive or sent live over the UDP
 connection. The live feed also carries team scores and complete event results, added in

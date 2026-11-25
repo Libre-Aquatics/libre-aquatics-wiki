@@ -168,7 +168,7 @@ data and power from a separate power and horn unit, which is cabled back to the 
 unit sounds when the possession time runs out.[^manual][^shot2014][^shot2023] Swiss Timing's
 [Quantum Aquatics](../../swimming/timers/quantum.md) and [ARES 21](../../swimming/timers/ares-21.md)
 timers can also drive Calypso boards, and the ARES had its own
-[water polo program](../../../software/ares-water-polo.md) and could run the same shot
+[water polo program](../../../software/timing/ares-water-polo.md) and could run the same shot
 clocks.[^calypso][^shot2014] The console does the job without a timing system behind it.
 
 ## Design and controls
@@ -273,7 +273,7 @@ and visiting teams. The manual gives its pinout but does not describe how it is 
 The console's examples show water polo layouts on six-line horizontal and ten-line vertical
 Calypso boards, and on a Piccolo. Each team's score, timeouts and up to three exclusion clocks
 are shown, plus the period and game time.[^manual] Team names need an optional team-name module,
-article [`3400.740`](calypso-team-name-module.md). The water polo version cannot send player
+article [`3400.740`](../accessories/calypso-team-name-module.md). The water polo version cannot send player
 names.[^manual] A test function sends a test pattern to the boards, though not every board type
 supports it.[^manual]
 
@@ -286,7 +286,7 @@ Shot clocks are supplied as kits of two or four with a power and horn unit, 30 m
 reels and a cable to the console.[^shot2014][^shot2023] Dealer AVK offers two shot-clock
 families with the console, the Calypso clocks and the larger
 [Montreal shot clocks](../shot-clock/montreal-shot-clocks.md), together with the
-[Coyote horn](../shot-clock/coyote-horn.md).[^avkstwp][^montreal]
+[Coyote horn](../accessories/coyote-horn.md).[^avkstwp][^montreal]
 
 ## Connections
 
@@ -306,7 +306,7 @@ The rear panel carries:[^manual]
 
 New firmware is loaded from a PC. The console connects to the PC's serial port, directly or
 through a USB adapter, with a straight 9-pin cable (Swiss Timing `9051.1307`).
-[FlashSimple](../../../software/flashsimple.md), a program Swiss Timing provides for download,
+[FlashSimple](../../../software/display/flashsimple.md), a program Swiss Timing provides for download,
 writes the file to the console's Renesas H8S/2134F microcontroller in about four
 minutes.[^manual] After an update the manual requires the operator to restore all sports to
 their factory settings, which erases any saved settings.[^manual] The firmware shown in the
@@ -339,11 +339,11 @@ and dry.[^manual]
 ## Part numbers and accessories
 
 - `3403.900`: Omega Calypso Waterpolo controller, per AVK.[^avkwpo]
-- `3400.740`: [team-name module](calypso-team-name-module.md), needed to send team names.[^manual]
+- `3400.740`: [team-name module](../accessories/calypso-team-name-module.md), needed to send team names.[^manual]
 - `9051.1307`: RS232 cable for firmware updates.[^manual]
 - `3403.950.CA`, `3403.951.CA`, `3403.790`: [Calypso water polo shot clocks](../shot-clock/swiss-timing-shot-clocks.md).[^shot2023][^avkshot]
 - `3435.904`: [Montreal shot clocks](../shot-clock/montreal-shot-clocks.md) with game clock.[^montreal]
-- `3435.900`: [Coyote horn](../shot-clock/coyote-horn.md).[^avkcoyote]
+- `3435.900`: [Coyote horn](../accessories/coyote-horn.md).[^avkcoyote]
 - `3500.900`: [Saturn 2](../../common/scoreboard/saturn-2.md) multisport controller, the hall-sports
   counterpart.[^avksat]
 

@@ -79,7 +79,7 @@ time of day and change a board's channel.[^f1004] The
 training side, storing workouts and playing them out onto a pace clock or a scoreboard, and
 is covered with the [pace clocks](../pace-clock/index.md).[^f901] The oldest of the group is the
 [GameLink console](gamelink-console.md), a keyboard for team-sport data that could feed a
-matrix display through [DisplayLink](../../../software/displaylink.md) or, with a standalone
+matrix display through [DisplayLink](../../../software/display/displaylink.md) or, with a standalone
 template loaded, drive the display on its own.[^te15]
 
 ## Video board controllers
@@ -108,17 +108,17 @@ than by who made it, so a NovaStar controller and a CTS adapter sit in the same 
 | [WA-2](wa-2.md) | Colorado Time Systems | Wireless scoreboard adapter | Superseded |
 | [WA-3](wa-3.md) | Colorado Time Systems | 2.4 GHz wireless scoreboard adapter | Current |
 | [Dolphin Scoreboard Adapter](dolphin-scoreboard-adapter.md) | Colorado Time Systems | Receiver linking a Dolphin stopwatch system to a numeric scoreboard | Current |
+| [WTN-DB](alge-wtn-db.md) | ALGE-Timing | Radio receiver that clips to an ALGE display board | Current |
+| [SST scoreboard adapter](sst-scoreboard-adapter.md) | Superior Swim Timing | USB-to-serial adapter for earlier SST timers | Named in the current SST manual |
+| [SST wireless adapter](sst-wireless-adapter.md) | Superior Swim Timing | Wireless adapter for Daktronics scoreboards | Listed 2026 |
 | [WTTC-1](wttc-1.md) | Colorado Time Systems | Tabletop controller for multisport boards and water polo | Current |
 | [D-CKN](alge-d-ckn.md) | ALGE-Timing | Keypad terminal for multisport and water polo boards, wired or radio | Current |
-| [Run-stop-reset units](rsr.md) | Colorado Time Systems | Hand switches for extra clock operators on the WTTC-1 | Current |
 | [WHC-1](whc-1.md) | Colorado Time Systems | Handheld controller for multisport boards | Documented |
 | [GameLink console](gamelink-console.md) | Colorado Time Systems | Keyboard console for team-sport data entry | Discontinued |
 | [All Sport 1600](all-sport-1600.md) | Daktronics | Scoreboard control console | Released 2000 |
 | [All Sport 3000](all-sport-3000.md) | Daktronics | Scoreboard control console | Discontinued |
 | [All Sport 5000](all-sport-5000.md) | Daktronics | Keyboard scoreboard console with sport inserts, including water polo | Released 2000 |
 | [All Sport 5500](all-sport-5500.md) | Daktronics | Keyboard console for ColorSmart scoreboards | Discontinued |
-| [Main clock start/stop/horn switch](daktronics-main-clock-switch.md) | Daktronics | Remote clock and horn switch for All Sport consoles | Documented |
-| [Shot clock control](daktronics-shot-clock-control.md) | Daktronics | Remote shot clock start/stop and reset switch | Documented |
 | [Gen VI radio](gen-vi-radio.md) | Daktronics | 2.4 GHz radio link from All Sport and OmniSport consoles to display receivers | Introduced 2011–2012 |
 | [MCTRL-300](mctrl-300.md) | NovaStar | LED video display controller | Shipped by CTS |
 | [MCTRL-600](mctrl-600.md) | NovaStar | LED video display controller | Shipped by CTS |
@@ -126,11 +126,21 @@ than by who made it, so a NovaStar controller and a CTS adapter sit in the same 
 | [VX4](vx4.md) | NovaStar | LED video display controller with built-in scaling | Shipped by CTS |
 | [MIC-VPU-01](mic-vpu-01.md) | Not established | Video processing unit | Shipped by CTS |
 
+### Related accessories
+
+Items listed under [common cables and accessories](../accessories/index.md):
+
+| Product | Maker | Type | Status |
+|---|---|---|---|
+| [Run-stop-reset units](../accessories/rsr.md) | Colorado Time Systems | Hand switches for extra clock operators on the WTTC-1 | Current |
+| [Main clock start/stop/horn switch](../accessories/daktronics-main-clock-switch.md) | Daktronics | Remote clock and horn switch for All Sport consoles | Documented |
+| [Shot clock control](../accessories/daktronics-shot-clock-control.md) | Daktronics | Remote shot clock start/stop and reset switch | Documented |
+
 ## See also
 
 - [Scoreboards](../scoreboard/index.md): the boards this hardware feeds
 - [Timers](../../swimming/timers/index.md): the consoles that are the usual data source
-- [DisplayLink Plus](../../../software/displaylink-plus.md): the software behind a video
+- [DisplayLink Plus](../../../software/display/displaylink-plus.md): the software behind a video
   board controller
 - [Common equipment](../index.md): the shared hardware section this belongs to
 - [Colorado Time Systems](../../../vendors/colorado-time-systems.md) and

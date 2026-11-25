@@ -36,6 +36,6 @@ Sources:
 
 This article is a stub. The IDCam is an [ALGE-Timing](../../../vendors/alge-timing.md)
 high-speed video system of up to 180 pictures a second, configured from
-[SwimTime](../../../software/swimtime.md) as a video backup.
+[SwimTime](../../../software/meet-management/swimtime.md) as a video backup.
 
 See the [photo finish overview](index.md) for the shared background on photo-finish equipment.

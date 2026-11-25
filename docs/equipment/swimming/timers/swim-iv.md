@@ -64,7 +64,7 @@ clause in two manuals for a different product.
 
 This article is a stub. The Swim IV is a Colorado Time Systems swim timing console that
 survives in the documentation of other products: the
-[DisplayLink](../../../software/displaylink.md) guides name it as a console whose scoreboard
+[DisplayLink](../../../software/display/displaylink.md) guides name it as a console whose scoreboard
 data a template could display, and two CTS pace clock guides name it as one that can be sent
 a workout, in both cases beside the [System 5](system-5.md) and [System 6](system-6.md).
 

@@ -35,8 +35,8 @@ copying them.
 | Gen7 Serial Timer underside and rating label | [Gen7 Serial Timer](../equipment/swimming/timers/gen7-serial.md) | Ethan Herstedt (original photograph) | CC BY-SA 4.0 |
 | Gen7 Serial Timer front panel, indicators dark | [Gen7 Serial Timer](../equipment/swimming/timers/gen7-serial.md) | Ethan Herstedt (original photograph) | CC BY-SA 4.0 |
 | Gen7 Serial Timer front panel, charging indicator lit | [Gen7 Serial Timer](../equipment/swimming/timers/gen7-serial.md) | Ethan Herstedt (original photograph) | CC BY-SA 4.0 |
-| DisplayLink Plus License Status and Activation window | [DisplayLink Plus](../software/displaylink-plus.md) | Colorado Time Systems (software interface); screenshot by Ethan Herstedt | Fair use, to document the software; not covered by CC BY-SA 4.0 |
-| DisplayLink Plus Product Not Activated prompt | [DisplayLink Plus](../software/displaylink-plus.md) | Colorado Time Systems (software interface); screenshot by Ethan Herstedt | Fair use, to document the software; not covered by CC BY-SA 4.0 |
+| DisplayLink Plus License Status and Activation window | [DisplayLink Plus](../software/display/displaylink-plus.md) | Colorado Time Systems (software interface); screenshot by Ethan Herstedt | Fair use, to document the software; not covered by CC BY-SA 4.0 |
+| DisplayLink Plus Product Not Activated prompt | [DisplayLink Plus](../software/display/displaylink-plus.md) | Colorado Time Systems (software interface); screenshot by Ethan Herstedt | Fair use, to document the software; not covered by CC BY-SA 4.0 |
 
 Any further non-original image will be listed here with its author, licence, and source
 URL.

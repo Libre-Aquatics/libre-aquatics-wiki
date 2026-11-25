@@ -11,7 +11,7 @@ infobox:
   - label: Industry
     value: Swimming meet-management software
   - label: Key products
-    value: '[SwimMeet Manager](software/swimmeet-manager.md)'
+    value: '[SwimMeet Manager](software/meet-management/swimmeet-manager.md)'
   - label: Status
     value: No current trace
   - label: Website
@@ -55,7 +55,7 @@ SwimMeet Manager compliance claim can be tested against a surviving file.
 
 This article is a stub. Hy-Point Software was an American publisher of swimming
 meet-management software, known chiefly from advertisements for its
-[SwimMeet Manager](../software/swimmeet-manager.md) program in the swimming press between
+[SwimMeet Manager](../software/meet-management/swimmeet-manager.md) program in the swimming press between
 2000 and 2001, which gave a northwest Indiana telephone number and no street address.
 
 It is a different company from [Hy-Tek](hy-tek.md), whose product names it closely

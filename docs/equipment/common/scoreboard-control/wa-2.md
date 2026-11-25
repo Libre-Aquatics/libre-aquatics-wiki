@@ -121,7 +121,7 @@ This section covers what the WA-2 connects and when a second unit is needed.
 
 F987 names three kinds of data source. A [System 6](../../swimming/timers/system-6.md) or
 another CTS timing console connects to the adapter by an R-DC cable. A laptop with
-[SynchroMM](../../../software/synchromm.md) or another CTS program on it connects by USB. CTS's
+[SynchroMM](../../../software/diving-artistic-swimming/synchromm.md) or another CTS program on it connects by USB. CTS's
 wireless controllers, the [WTTC-1](wttc-1.md) and [WHC-1](whc-1.md), carry their own radios
 and transmit without one.[^f987]
 
@@ -131,7 +131,7 @@ At the display end, the guide covers three cases:
   takes a second WA-2 on an R-DC4 cable. Further boards can be chained from the first with
   more R-DC4 cables.
 - A video board takes the second WA-2 at the computer running
-  [DisplayLink Plus](../../../software/displaylink-plus.md), plugged into a USB port.
+  [DisplayLink Plus](../../../software/display/displaylink-plus.md), plugged into a USB port.
 - A multisport board has its own receiver and needs no second adapter. CTS tells users not to
   cable one to it.[^f987]
 
@@ -215,11 +215,11 @@ one set above 7.[^f987][^f1045][^f1004]
 ## Firmware
 
 CTS updates the WA-2's firmware over USB with its
-[MultiSport Reprogrammer](../../../software/multisport-reprogrammer.md), which lists the unit
+[MultiSport Reprogrammer](../../../software/display/multisport-reprogrammer.md), which lists the unit
 as "WA2" followed by its firmware version. CTS's 2019 instructions for firmware 2.0.8 cover the
 WA-2 and WA-3 as a single target. That version lets an adapter at a cabled board show water
 polo data sent by a WTTC. A second CTS program, the
-[Wireless Polo Scoreboard Mapper](../../../software/wireless-polo-scoreboard-mapper.md),
+[Wireless Polo Scoreboard Mapper](../../../software/display/wireless-polo-scoreboard-mapper.md),
 writes a custom layout for an LED-R into the adapter, and its buttons are labelled
 Find WA-2 and Program WA-2.[^f1026]
 
@@ -297,7 +297,7 @@ This section lists the adapter's part number, its cables and dealer prices.
 - [WA-3](wa-3.md) and [Sky-Fi WA-1](wa-1.md): the adapters after and before it
 - [WTTC-1](wttc-1.md) and [WHC-1](whc-1.md): the wireless controllers that need no adapter to
   transmit
-- [SynchroMM](../../../software/synchromm.md): the CTS artistic swimming software it can carry
+- [SynchroMM](../../../software/diving-artistic-swimming/synchromm.md): the CTS artistic swimming software it can carry
 - [Scoreboard control](index.md): the scoreboard-control overview
 - [Colorado Time Systems](../../../vendors/colorado-time-systems.md): the manufacturer
 - [Equipment](../../index.md): the equipment reference

@@ -89,7 +89,7 @@ forms.[^mini]
 A matrix board replaces fixed digits with a grid of addressable pixels, so the same surface
 can show text in any arrangement, graphics and animation as well as timing data. CTS built
 this generation as the [Myriad](myriad.md) and [Mercury16](mercury16.md) lines, and drove
-them from a dedicated computer running [DisplayLink](../../../software/displaylink.md),
+them from a dedicated computer running [DisplayLink](../../../software/display/displaylink.md),
 which is where a board's content was composed.[^f853][^f837][^dl37]
 
 The construction is modular in both power and data. The viewable surface is an array of
@@ -137,11 +137,8 @@ its own guide on the company's manuals index; the Myriad and Mercury16 matrix di
 below are out of production and have no entry on that index, though CTS does still publish
 a troubleshooting page covering the two lines.[^manuals][^tshoot]
 
-This section catalogs the display hardware named in the articles on this wiki. The
-[LED-R](led-r.md) module, the [mini LED scoreboard](mini-scoreboard.md) and the
-[Otter](otter.md) boards and the [Myriad](myriad.md) have had research passes of their own;
-the rest are stubs, written from what a manual or catalogue says in passing while another
-article was being researched.
+The scoreboards on this wiki are listed below. Each article covers its product, and this page is
+the shared overview they refer back to.
 
 | Product | Maker | Type | Status |
 |---|---|---|---|
@@ -151,28 +148,41 @@ article was being researched.
 | [GAZ4](alge-gaz4.md) | ALGE-Timing | Numeric electromagnetic boards, 15, 25 or 45 cm digits | Documented 1997–2010; spare parts listed 2026 |
 | [D-LINE](alge-d-line.md) | ALGE-Timing | Numeric LED boards, 57–1500 mm digits, indoor and outdoor | Current; documented from 2004 |
 | [D-SAT](alge-d-sat.md) | ALGE-Timing | Fixed time-and-temperature LED board | Current |
+| [GAZc](alge-gazc.md) | ALGE-Timing | Numeric board for the Timer S4 | Discontinued; dates not established |
 | [Otter](otter.md) | Colorado Time Systems | Wireless LED numeric scoreboards for swimming, diving and water polo | Current |
 | [LED-R](led-r.md) | Colorado Time Systems | Single-line LED numeric scoreboard module | Current |
 | [LED-REX](led-rex.md) | Colorado Time Systems | LED retrofit for a light-reflective board | Attested 2011 |
 | [Mini LED scoreboard](mini-scoreboard.md) | Colorado Time Systems | Compact two-line numeric board, portable or fixed | Current; the 2026 datasheet lists portable models only |
-| [Mini scoreboard caddy](cad-mini.md) | Colorado Time Systems | Wheeled frame for four or five modules | Documented |
 | [Myriad](myriad.md) | Colorado Time Systems | Two-color LED matrix display, 256 shades | Announced 1997; discontinued |
 | [HWPM 110 and HWPM 220](hwpm.md) | Colorado Time Systems | Optional matrix-display parts, purpose unestablished | Named in the 2000 manual |
 | [Multisport portable scoreboard](multisport-portable-scoreboard.md) | Colorado Time Systems | Wheeled game-time and score board, `MS-` family | Attested 2015 |
 | [Mercury16](mercury16.md) | Colorado Time Systems | Indoor LED matrix display, with outdoor and Sun Series variants | Attested 1996; discontinued |
 | [4009](4009.md) | Colorado Time Systems | Light-reflective numeric scoreboard, 9 in sliding digits | Listed 2002; dropped from the 2026 installation guide |
 | [3009](3009.md) | Colorado Time Systems | Numeric scoreboard series named beside the 4009 | Named 1995 and 2004 |
+| [Databoard](kyrotech-databoard.md) | Kyrotech | Single-line display for the Tec-Timer | Advertised 1985 |
 | [Calypso](calypso.md) | Swiss Timing | Modular LED board of 1–10 lines, eight 24 cm white digits per line, with a 17-character team-name line | Current; datasheet 2015 |
 | [Piccolo](piccolo.md) | Swiss Timing | Indoor alphanumeric board, eight lines of twelve 10 cm characters | Documented 2015 |
+| [Galactica](galactica.md) | Swiss Timing | Alphanumeric scoreboard system for ARES 21 and Quantum Aquatics | Dates not established |
+| [GEMINI](gemini.md) | Swiss Timing | Modular LED board in 6-digit, 9-digit and alphanumeric versions | Discontinued; dates not established |
+| [Saturn 2](saturn-2.md) | Swiss Timing | Multisport LED scoreboard series for indoor hall sports | Dates not established |
 | [UNT4](unt4.md) | Omega Electronics | Multi-line board of the 1984 Games; now the name of a scoreboard protocol | Discontinued as a board |
+| [UNT6](unt6.md) | Omega Electronics | Numeric board driven by the original PowerTime | Dates not established |
 
 The adapters, controllers and video processors that feed these boards are listed on the
 [scoreboard control overview](../scoreboard-control/index.md).
 
+### Related accessories
+
+Items listed under [common cables and accessories](../accessories/index.md):
+
+| Product | Maker | Type | Status |
+|---|---|---|---|
+| [Mini scoreboard caddy](../accessories/cad-mini.md) | Colorado Time Systems | Wheeled frame for four or five modules | Documented |
+
 ## See also
 
-- [DisplayLink Plus](../../../software/displaylink-plus.md) and
-  [DisplayLink](../../../software/displaylink.md): the software that composes what a matrix
+- [DisplayLink Plus](../../../software/display/displaylink-plus.md) and
+  [DisplayLink](../../../software/display/displaylink.md): the software that composes what a matrix
   or video board shows
 - [Scoreboard control](../scoreboard-control/index.md): the adapters, controllers and video
   processors that feed a board

@@ -236,8 +236,8 @@ drivers take the 6-pin plug directly.[^manual] The same base station can share a
 console.[^gen6]
 
 For judging, the tabletop unit connects to the OmniSport 2000 with a
-[`W-1823`](w-1823-cable.md) cable.[^manual] The
-[remote start/stop kit](../common/scoreboard-control/rc-200-remote-start-stop-kit.md) uses its
+[`W-1823`](accessories/w-1823-cable.md) cable.[^manual] The
+[remote start/stop kit](../common/accessories/rc-200-remote-start-stop-kit.md) uses its
 own base station, `0A-1110-0069`, in an outdoor enclosure with a 25 ft cable to a junction box
 at the All Sport console. It is powered from an 18 V DC wall pack and must be in unobstructed view of
 the handheld.[^manual]
@@ -286,7 +286,7 @@ label, while one tennis riser gives `0A-1110-0068`.[^manual]
 - `0A-1110-0066`, tabletop base station kit.[^manual]
 - `0A-1110-0067` and `0A-1110-0068`, outdoor base station, as above.[^manual]
 - `0A-1110-0069`, remote start/stop base station, part of kit `0A-1110-0074`.[^manual]
-- [`W-1823`](w-1823-cable.md), cable from the tabletop unit to the OmniSport 2000.[^manual]
+- [`W-1823`](accessories/w-1823-cable.md), cable from the tabletop unit to the OmniSport 2000.[^manual]
 - `W-2913`, adapter from the 6-pin plug to a pre-2015 driver's 5-pin jack.[^manual]
 - `A-3430138`, wall pack, given as 18 V DC in the remote start/stop kit and as 12 V AC in a
   tennis kit list.[^manual]
@@ -294,9 +294,9 @@ label, while one tennis riser gives `0A-1110-0068`.[^manual]
 ## See also
 
 - [RC-200](rc-200.md): the handheld that talks to it
-- [RC-200 charging station](rc-200-charging-station.md): the charger for the handhelds
+- [RC-200 charging station](accessories/rc-200-charging-station.md): the charger for the handhelds
 - [RC-100](rc-100.md): the earlier 900 MHz system whose drawings it reuses
-- [Remote start/stop kit](../common/scoreboard-control/rc-200-remote-start-stop-kit.md): the kit
+- [Remote start/stop kit](../common/accessories/rc-200-remote-start-stop-kit.md): the kit
   built around its outdoor variant
 - [Wireless judging](wireless-judging.md): wireless judge consoles across makers
 - [Diving](index.md): the diving equipment overview

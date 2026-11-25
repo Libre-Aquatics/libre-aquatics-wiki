@@ -43,7 +43,7 @@ appeared; and whether TYM is the product name, the company name or both.
 -->
 
 This article is a stub. Take Your Mark, abbreviated TYM in Hy-Tek's documentation, is a
-swimming timing console that [Meet Manager](../software/hy-tek-meet-manager.md) reaches
+swimming timing console that [Meet Manager](../software/meet-management/hy-tek-meet-manager.md) reaches
 through a shared file rather than a cable, with race results landing directly in the
 program's database directory.
 

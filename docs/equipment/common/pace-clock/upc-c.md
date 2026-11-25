@@ -216,9 +216,9 @@ The physical path is the supplied RJ45 cable into the DB9-to-RJ45 converter and 
 serial port. The console is armed to receive by pressing ON, then EDIT MODE twice.
 Downloaded workouts are afterwards editable on the keypad like any other.[^f901]
 
-[Workout Manager](../../../software/hy-tek-workout-manager.md) was a program in its own
+[Workout Manager](../../../software/training/hy-tek-workout-manager.md) was a program in its own
 right when F901 was written. It is now a licensed option inside Hy-Tek's
-[Team Manager](../../../software/hy-tek-team-manager.md), reached from that program's own
+[Team Manager](../../../software/team-management/hy-tek-team-manager.md), reached from that program's own
 menu, which is why later documents credit the same download to Team Manager
 instead.[^hytekpc]
 

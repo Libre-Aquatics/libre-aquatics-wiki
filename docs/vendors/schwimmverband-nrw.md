@@ -10,7 +10,7 @@ infobox:
   - label: Industry
     value: Regional swimming association
   - label: Key products
-    value: '[DSV-Standard](software/dsv-standard.md) (originated)'
+    value: '[DSV-Standard](software/file-formats/dsv-standard.md) (originated)'
   - label: Headquarters
     value: Not established
 ---
@@ -36,6 +36,6 @@ Not established: when the WSV became the Schwimmverband NRW, its seat, and its w
 This article is a stub. The Schwimmverband Nordrhein-Westfalen, known until a renaming as the
 Westdeutscher Schwimm-Verband (WSV), is the regional swimming association for North
 Rhine-Westphalia within the German federation, and its data processing committee wrote the
-standard that became the [DSV-Standard](../software/dsv-standard.md).
+standard that became the [DSV-Standard](../software/file-formats/dsv-standard.md).
 
 See the [vendors overview](index.md) for the other organizations the wiki covers.

@@ -19,7 +19,7 @@ infobox:
   - label: Digits
     value: 'Red LED seven-segment, 57–1500 mm; 3–6 digits standard'
   - label: Connection
-    value: 'RS-232 and RS-485 on banana sockets; Amphenol socket for data and 12 V; [WTN](equipment/swimming/timers/alge-wtn.md) radio option'
+    value: 'RS-232 and RS-485 on banana sockets; Amphenol socket for data and 12 V; [WTN](equipment/swimming/accessories/alge-wtn.md) radio option'
   - label: Power
     value: 'Built-in mains supply, 100–240 V AC; or 10–12.5 V DC'
   - label: Introduced
@@ -245,7 +245,7 @@ This section covers the three swimming arrangements the documents describe. ALGE
 catalogue shows a D-LINE as the time board of both of its semi-automatic systems. In the cabled
 system a [Timy3](../../swimming/timers/alge-timy.md) takes one push button per lane on an
 [`MC8-S2`](../../swimming/deck-cabling/alge-mc8.md) cable, and in the radio system the buttons and the board connect over
-[WTN](../../swimming/timers/alge-wtn.md), with a WTN-DB receiver at the board.[^cat2026] ALGE's
+[WTN](../../swimming/accessories/alge-wtn.md), with a WTN-DB receiver at the board.[^cat2026] ALGE's
 2013 swimming catalogue showed a GAZ5 in the same role.[^cat2013]
 
 For lane or place boards, the Timy TrackTimer program can drive up to eight seven-digit GAZ or
@@ -263,7 +263,7 @@ its swimming format for up to eight ranking boards.[^manual]
 The RS-232 input defaults to 2400 baud with one stop bit, eight data bits and no parity, like ALGE's
 GAZ boards, and the board understands the same data formats from the Timer S4, TdC and Comet
 families.[^manual] A board comes with a data cable and a mains cable, and ALGE lists
-[cable reels](../../swimming/timers/alge-kt-cable-reels.md) among its accessories for longer
+[cable reels](../../swimming/accessories/alge-kt-cable-reels.md) among its accessories for longer
 runs.[^product] With
 a WTN-DB receiver on its Amphenol socket, a board takes data from a Timy3 or TdC 8001 by
 radio.[^cat2017][^manual]
@@ -303,10 +303,10 @@ Sources: current manual, 2021 leaflet and product page.[^manual][^leaflet21][^pr
 | Item | Part number | Notes |
 |---|---|---|
 | Display board | `D-LINEhhh-L-n-Ek` | Digit height, indoor or outdoor, digits, spacing |
-| Radio receiver | [`WTN-DB`](../../swimming/timers/alge-wtn.md) | Radio data input |
+| Radio receiver | [`WTN-DB`](../../swimming/accessories/alge-wtn.md) | Radio data input |
 | Push button | [`023-02`](../../swimming/semi-automatic/pushbutton/alge-023-02.md) | Stopwatch, countdown and counter |
-| Cable reels | [`KT300`, `KT500`](../../swimming/timers/alge-kt-cable-reels.md) | Data line extension |
-| Carrying bags | [`GTT15`, `GTT25`](../../swimming/timers/alge-gtt-carrying-bags.md) | Six-digit 150 and 250 mm boards |
+| Cable reels | [`KT300`, `KT500`](../../swimming/accessories/alge-kt-cable-reels.md) | Data line extension |
+| Carrying bags | [`GTT15`, `GTT25`](../accessories/alge-gtt-carrying-bags.md) | Six-digit 150 and 250 mm boards |
 
 Sources: product page, manual and 2017 catalogue.[^product][^manual][^cat2017]
 

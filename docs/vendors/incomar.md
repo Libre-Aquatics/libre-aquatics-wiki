@@ -74,6 +74,6 @@ the company among the five console makers its Meet Manager software would connec
 
 The magazines carry nothing at all after 1988, but the product outlived the coverage:
 Hy-Tek's current documentation still lists the Splash 1 among the timers
-[Meet Manager](../software/hy-tek-meet-manager.md) will talk to. See
-[The Interface](../software/the-interface.md) for the 1988 announcement and the
+[Meet Manager](../software/meet-management/hy-tek-meet-manager.md) will talk to. See
+[The Interface](../software/meet-management/the-interface.md) for the 1988 announcement and the
 [vendors](index.md) register for the companies this wiki covers.

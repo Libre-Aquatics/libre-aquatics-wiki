@@ -177,7 +177,7 @@ and for cleaning with nothing stronger than mild detergent or soapy water. It wa
 chloride cleaners, strong alcohol and solvents such as acetone, against storing heavy objects on
 the unit, and against using it after a hard drop without checking it.[^manual] The TM-SWIM manual's
 shorter entry says only to wipe it with a dry cloth.[^tmswim] ALGE sells a wheeled stainless-steel
-stand, the [CADDY BSA](../timers/alge-caddy-bsa.md), for storing and moving the units.[^product][^caddy]
+stand, the [CADDY BSA](../accessories/alge-caddy-bsa.md), for storing and moving the units.[^product][^caddy]
 
 ## Specifications
 
@@ -202,7 +202,7 @@ difference.[^web2021][^cat2026][^tmswim]
 | Item | Part number | Notes |
 |---|---|---|
 | Backstroke start aid | `BSA` | Delivered assembled, with a hex key |
-| Stand | [`CADDY BSA`](../timers/alge-caddy-bsa.md) | Wheeled stainless-steel stand for storage |
+| Stand | [`CADDY BSA`](../accessories/alge-caddy-bsa.md) | Wheeled stainless-steel stand for storage |
 | Starting platform | [`SO5`](../starting-blocks/alge-so5.md), [`SO4`](../starting-blocks/alge-so4.md) | Have the fixing screw already |
 
 Sources: BSA manual and product page.[^manual][^product]

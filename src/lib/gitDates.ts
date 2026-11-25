@@ -5,7 +5,19 @@ import { execFileSync } from 'node:child_process';
 // CI must check out with fetch-depth: 0 or every date becomes the build date.
 const cache = new Map<string, string>();
 
-/** ISO 8601 date of the file's last commit, or '' when git has none. */
+// Commits that only move pages and rewrite their links. They touch hundreds of
+// articles without changing what any of them says, so they do not count as an
+// update; otherwise one would fill the Recent changes page, the feed and the
+// Main Page. Matched by subject prefix.
+const STRUCTURAL_COMMIT = /^Reorganize wiki sections\b/;
+
+/**
+ * ISO 8601 date of the file's last commit, or '' when git has none. Structural
+ * commits are skipped (unless the file has no other), and `--follow` reaches
+ * the commits made under the file's earlier path. The subjects are filtered
+ * here rather than with `--invert-grep`, which would hide the rename itself
+ * from `--follow`.
+ */
 export function lastUpdatedISO(filePath: string | undefined): string {
   const key = filePath ?? '';
   const hit = cache.get(key);
@@ -14,9 +26,16 @@ export function lastUpdatedISO(filePath: string | undefined): string {
   let iso = '';
   if (filePath) {
     try {
-      iso = execFileSync('git', ['log', '-1', '--format=%cI', '--', filePath], {
-        encoding: 'utf8',
-      }).trim();
+      const commits = execFileSync(
+        'git',
+        ['log', '--follow', '--format=%cI%x09%s', '--', filePath],
+        { encoding: 'utf8' },
+      )
+        .split('\n')
+        .filter(Boolean)
+        .map((line) => line.split('\t'));
+      const content = commits.find(([, subject]) => !STRUCTURAL_COMMIT.test(subject ?? ''));
+      iso = (content ?? commits[0])?.[0] ?? '';
     } catch {
       iso = '';
     }

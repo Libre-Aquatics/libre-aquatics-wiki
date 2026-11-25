@@ -16,7 +16,7 @@ infobox:
   - label: Type
     value: 'Electronic starting device'
   - label: Connection
-    value: 'Fixed 2 m cable with DIN plug (`E-START`); [WTN](equipment/swimming/timers/alge-wtn.md) radio, 2.4 GHz (`E-START W`)'
+    value: 'Fixed 2 m cable with DIN plug (`E-START`); [WTN](equipment/swimming/accessories/alge-wtn.md) radio, 2.4 GHz (`E-START W`)'
   - label: Dimensions
     value: '265 × 150 × 35 mm (manuals, catalogues); 150 × 250 × 35 mm (system manual); 300 × 175 × 45 mm and 295 × 175 × 30 mm (product pages)'
   - label: Weight
@@ -128,7 +128,7 @@ system, including the rules on visual start signals.
 
 This section covers the two models and the dates found for them. ALGE writes the name both as
 `E-START` and as `e-Start`. The radio model carries a `W` suffix, as do other ALGE devices that use
-its [WTN](../timers/alge-wtn.md) radio network.[^manual][^product] The cabled model's declaration of
+its [WTN](../accessories/alge-wtn.md) radio network.[^manual][^product] The cabled model's declaration of
 conformity is dated 12 July 2014, the earliest date found for either model.[^manual] ALGE's
 athletics start-devices brochure of November 2015 lists both models.[^athl2015] The radio model's
 declaration is dated November 2016. It cites radio standards published in 2015, so it is probably
@@ -153,7 +153,7 @@ button that triggers the start.[^manual] ALGE rates both models for use from −
 The cabled model has no battery or switch. Its 2 m cable ends in a DIN plug, and the unit takes its
 power through that cable from the device it is plugged into.[^manual] The radio model adds a
 second LED for radio signal strength, a rotary team switch set with a small screwdriver, a
-charging socket for ALGE's [PS12A](../timers/alge-ps12a.md) power supply and a built-in
+charging socket for ALGE's [PS12A](../accessories/alge-ps12a.md) power supply and a built-in
 lithium-ion battery. It cannot be connected by cable.[^manualw][^productw]
 
 ALGE's documents give four sizes and several weights. The two manuals, the 2015 brochure and the
@@ -203,8 +203,8 @@ ALGE's 2026 aquatics catalogue draws the E-START in three swimming systems:[^cat
 
 | System | Start equipment shown |
 |---|---|
-| Fully automatic pool system | E-START on an SU3, with a [FLASH XL](alge-flash-xl.md), all connected to a TM-SWIM |
-| Open-water finish | E-START and SU3 with a [Timy](../timers/alge-timy.md) Timy3 WP, an [MC9](../timers/alge-mc9.md) and a [BANG2](alge-bang.md) speaker |
+| Fully automatic pool system | E-START on an SU3, with a [FLASH XL](../accessories/alge-flash-xl.md), all connected to a TM-SWIM |
+| Open-water finish | E-START and SU3 with a [Timy](../timers/alge-timy.md) Timy3 WP, an [MC9](../accessories/alge-mc9.md) and a [BANG2](../external-speaker/alge-bang.md) speaker |
 | Semi-automatic radio system | E-START W with a BANG2, a radio headset and a Timy3 WP |
 
 The catalogue says the flash allows more exact hand timing and lets swimmers with a hearing
@@ -278,16 +278,16 @@ This section lists the E-START's companion parts that have articles here.[^produ
 |---|---|---|
 | Electronic starting device, cable | `E-START` | This article |
 | Electronic starting device, radio | `E-START W` | This article |
-| Power supply and charger for `E-START W` | `PS12A` | [PS12A](../timers/alge-ps12a.md) |
+| Power supply and charger for `E-START W` | `PS12A` | [PS12A](../accessories/alge-ps12a.md) |
 | Start unit | `SU3` | [SU3](alge-su3.md) |
-| Speaker start system | `BANG2` | [BANG](alge-bang.md) |
+| Speaker start system | `BANG2` | [BANG](../external-speaker/alge-bang.md) |
 | Connection cable | `199-20` | [Swimming cable sets](../deck-cabling/alge-swim-cable-sets.md) |
-| Radio network | `WTN` | [WTN](../timers/alge-wtn.md) |
+| Radio network | `WTN` | [WTN](../accessories/alge-wtn.md) |
 
 ## See also
 
 - [SU3](alge-su3.md): the start unit the cabled model plugs into
-- [FLASH XL](alge-flash-xl.md) and [SM8 start microphone](alge-sm8.md): other ALGE start devices
+- [FLASH XL](../accessories/alge-flash-xl.md) and [SM8 start microphone](../accessories/alge-sm8.md): other ALGE start devices
 - [TM-SWIM](../timers/alge-tm-swim.md): ALGE's swimming timing console
 - [Start systems](index.md): the start-systems overview
 - [ALGE-Timing](../../../vendors/alge-timing.md): the manufacturer

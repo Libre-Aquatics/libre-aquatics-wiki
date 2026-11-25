@@ -38,7 +38,7 @@ Sources:
 -->
 
 This article is a stub. The UNT6 is an Omega numeric scoreboard that Omega Electronics'
-[TOP-8](../../../software/top-8.md) manual gives as an example of a board the original
+[TOP-8](../../../software/timing/top-8.md) manual gives as an example of a board the original
 [PowerTime](../../swimming/timers/powertime.md) drives in multiline mode, one line per lane.
 
 See the [scoreboard overview](index.md) for the shared background that applies to every

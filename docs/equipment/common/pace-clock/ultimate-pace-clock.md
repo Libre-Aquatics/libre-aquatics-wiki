@@ -196,7 +196,7 @@ The console is a hand-held keypad with an LCD that stores 50 workouts of up to 3
 set holding up to 15 subsets, and can run up to ten workouts at once on separate displays,
 selected with its SELECT SCBD key.[^f819] Sets can repeat, count down instead of up, or
 shorten their interval after each repeat, and workouts can be downloaded from Hy-Tek's
-[Workout Manager](../../../software/hy-tek-workout-manager.md).[^f819] It turns itself off
+[Workout Manager](../../../software/training/hy-tek-workout-manager.md).[^f819] It turns itself off
 after five minutes unused.[^f819] Its keys and operation are unchanged in the later
 [pace clock controller](upc-c.md) guide, which documents them in full.[^f901]
 

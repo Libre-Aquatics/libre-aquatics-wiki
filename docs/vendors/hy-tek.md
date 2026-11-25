@@ -13,7 +13,7 @@ infobox:
   - label: Industry
     value: Meet and team management software for swimming and track and field
   - label: Key products
-    value: '[Meet Manager](software/hy-tek-meet-manager.md), [Team Manager](software/hy-tek-team-manager.md), [Workout Manager](software/hy-tek-workout-manager.md)'
+    value: '[Meet Manager](software/meet-management/hy-tek-meet-manager.md), [Team Manager](software/team-management/hy-tek-team-manager.md), [Workout Manager](software/training/hy-tek-workout-manager.md)'
   - label: Owner
     value: '[The Active Network](vendors/active-network.md), since 2008'
   - label: Website
@@ -149,10 +149,10 @@ offers three boxes, Hy-Tek, other, or none.[^arch]
 
 The company first appears in the swimming press in June 1984, when Swimming World reported
 Hy-Tek, Ltd. as the publisher of a package called
-[Computerized Swim League](../software/computerized-swim-league.md), whose author is named
+[Computerized Swim League](../software/meet-management/computerized-swim-league.md), whose author is named
 as B. Thomas Taylor.[^sw8406] By October 1986 it was advertising
-[Meet Manager](../software/hy-tek-meet-manager.md) and
-[Team Manager](../software/hy-tek-team-manager.md) together.[^sw8610]
+[Meet Manager](../software/meet-management/hy-tek-meet-manager.md) and
+[Team Manager](../software/team-management/hy-tek-team-manager.md) together.[^sw8610]
 
 When the company began is not a settled question, and the reason is that Hy-Tek kept
 changing its own answer. Its About page said the firm had been in business since 1981 when
@@ -191,22 +191,22 @@ searching for either.
 
 ## Products
 
-- [Meet Manager](../software/hy-tek-meet-manager.md), for running a competition
-- [Team Manager](../software/hy-tek-team-manager.md), for a club's roster and entries
-- [Workout Manager](../software/hy-tek-workout-manager.md), for training sessions
-- [Commlink](../software/commlink.md) and [The Interface](../software/the-interface.md), the
+- [Meet Manager](../software/meet-management/hy-tek-meet-manager.md), for running a competition
+- [Team Manager](../software/team-management/hy-tek-team-manager.md), for a club's roster and entries
+- [Workout Manager](../software/training/hy-tek-workout-manager.md), for training sessions
+- [Commlink](../software/file-formats/commlink.md) and [The Interface](../software/meet-management/the-interface.md), the
   data-exchange and timing-console packages of the DOS era
-- [Business Manager](../software/hy-tek-business-manager.md), for club accounting
-- [Personal Swim Manager](../software/hy-tek-personal-swim-manager.md), sold to a swimmer
+- [Business Manager](../software/team-management/hy-tek-business-manager.md), for club accounting
+- [Personal Swim Manager](../software/training/hy-tek-personal-swim-manager.md), sold to a swimmer
   rather than to a club
-- [Team Manager Online](../software/hy-tek-team-manager-online.md), the web-hosted database
+- [Team Manager Online](../software/team-management/hy-tek-team-manager-online.md), the web-hosted database
   and entry service
-- [Team Registration](../software/hy-tek-team-registration.md) and
-  [Team Websites](../software/hy-tek-team-websites.md), the two current products beyond the
+- [Team Registration](../software/team-management/hy-tek-team-registration.md) and
+  [Team Websites](../software/team-management/hy-tek-team-websites.md), the two current products beyond the
   desktop pair
 
-The programs write Hy-Tek's own file formats, [HY3](../software/hy3.md),
-[CL2](../software/cl2.md) and [HYV](../software/hyv.md), none of which the company has
+The programs write Hy-Tek's own file formats, [HY3](../software/file-formats/hy3.md),
+[CL2](../software/file-formats/cl2.md) and [HYV](../software/file-formats/hyv.md), none of which the company has
 published a specification for.
 
 Hy-Tek sells equivalent meet and team programs for track and field, which are outside this
@@ -216,7 +216,7 @@ are recorded in this page's research notes and given no pages of their own.
 
 ## See also
 
-- [Meet Manager](../software/hy-tek-meet-manager.md): the program this wiki covers in full
+- [Meet Manager](../software/meet-management/hy-tek-meet-manager.md): the program this wiki covers in full
 - [The Active Network](active-network.md): the owner since 2008
 - [Software](../software/index.md): the software reference
 - [Vendors](index.md): the vendor register

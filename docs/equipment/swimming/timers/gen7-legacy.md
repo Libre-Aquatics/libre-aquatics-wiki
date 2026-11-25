@@ -189,7 +189,7 @@ returns; the console does the timing itself. The Legacy timer offers the same fo
 connections as the
 [Gen7 Serial Timer](gen7-serial.md#meet-management-software), where they are described
 in full: USB straight to a port on the timer, USB to the interface laptop through CTS's
-[`USB2USB`](cts-usb-connect.md) coupler, a shared Windows folder over the network, and a UDP link that carries
+[`USB2USB`](../../common/accessories/cts-usb-connect.md) coupler, a shared Windows folder over the network, and a UDP link that carries
 the swimmers' names to the console for the operator's screen and the scoreboard, along
 with team scores and full event results. The first three are interchangeable in what they exchange, so the
 choice among them comes down to what the meet-management computer can reach.[^f1058]
@@ -200,7 +200,7 @@ each race's touchpad, pushbutton, reaction, and split times, support SwimTopia l
 beta feature.[^swimtopia]
 
 One requirement is particular to this console. Name integration reaches
-[DisplayLink Plus](../../../software/displaylink-plus.md) over RS-485, so on the Legacy
+[DisplayLink Plus](../../../software/display/displaylink-plus.md) over RS-485, so on the Legacy
 timer it must run through one of the RS-485 scoreboard outputs rather than the RS-232
 legacy output, which does not support it.[^f1058]
 

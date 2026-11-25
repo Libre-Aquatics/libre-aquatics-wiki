@@ -291,19 +291,19 @@ The manuals list the timers it can follow. The 1998 list has the Timer S3 and S4
 [Comet](../../swimming/timers/alge-comet.md), among others; the 2010 list adds the
 [Timy](../../swimming/timers/alge-timy.md) and the
 [TdC 8000](../../swimming/timers/alge-tdc-8000.md).[^manual98][^manual10] From an S4 or TdC the
-link is [cable 010-10](../../swimming/timers/alge-cable-010.md), which can be extended with two-wire
-cable to about 1 km, for example on [KT300 or KT500 cable reels](../../swimming/timers/alge-kt-cable-reels.md).
+link is [cable 010-10](../accessories/alge-cable-010.md), which can be extended with two-wire
+cable to about 1 km, for example on [KT300 or KT500 cable reels](../../swimming/accessories/alge-kt-cable-reels.md).
 If the board stays blank, the manual says to turn the cable's plug at the timer through
 180°.[^manual98] A Comet or Timy can draw its power from the board through a three-wire
 cable.[^manual10] The Timy2 and Timy3 manuals in turn list a GAZ4 among the external supplies for
 the Timy.[^timy3]
 
 Two boards, such as a bib-and-rank board beside a time board, are joined with
-[cable 033](../../swimming/timers/alge-cable-033.md), and only one of them then needs a power
+[cable 033](../accessories/alge-cable-033.md), and only one of them then needs a power
 source.[^manual98] For a ranking board of up to ten lines, the manual adds a PC with ranking
-software, a connection box and one [NGAZ/R](../../swimming/timers/alge-ngaz-r.md) mains supply for
+software, a connection box and one [NGAZ/R](../accessories/alge-ngaz-r.md) mains supply for
 all the boards.[^manual98][^manual10] ALGE's
-[GAZ4Test](../../../software/alge-gaz4test.md) PC program also sends data to the boards.[^gaz4test]
+[GAZ4Test](../../../software/display/alge-gaz4test.md) PC program also sends data to the boards.[^gaz4test]
 
 ## Power
 
@@ -344,10 +344,10 @@ Sources: 1998 and 2010 manuals, 2003 leaflet.[^manual98][^manual10][^leaflet]
 | Display board | `GAZ4 nhh` | `n` digits, `hh` digit height; `S`, `SR` suffixes for SWIM 2000 swimming models |
 | Power pack | `PP4` | Built in on order; NiCd cells and charger |
 | Power supply | `PS4` | Built in on order; mains only |
-| Data cable | [`010-10`](../../swimming/timers/alge-cable-010.md) | From a Timer S4 or TdC |
-| Linking cable | [`033-01`](../../swimming/timers/alge-cable-033.md) | Joins two boards and shares power |
-| Mains supply | [`NGAZ/R`](../../swimming/timers/alge-ngaz-r.md) | Powers a set of boards |
-| Cable reels | [`KT300`, `KT500`](../../swimming/timers/alge-kt-cable-reels.md) | Data line extension |
+| Data cable | [`010-10`](../accessories/alge-cable-010.md) | From a Timer S4 or TdC |
+| Linking cable | [`033-01`](../accessories/alge-cable-033.md) | Joins two boards and shares power |
+| Mains supply | [`NGAZ/R`](../accessories/alge-ngaz-r.md) | Powers a set of boards |
+| Cable reels | [`KT300`, `KT500`](../../swimming/accessories/alge-kt-cable-reels.md) | Data line extension |
 | Hand switch | [`023-02`](../../swimming/semi-automatic/pushbutton/alge-023-02.md) | Clock and countdown control |
 | Spare boards | `GAZ4-CPUA`, `GAZ4-CPU`, `GAZ4-TRAFO` | Exchange and new processor boards; transformer |
 

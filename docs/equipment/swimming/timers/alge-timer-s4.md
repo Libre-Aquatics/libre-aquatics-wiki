@@ -26,7 +26,7 @@ infobox:
   - label: Weight
     value: '2.2 kg with batteries'
   - label: Power
-    value: 'Six C cells; [NLG4](equipment/swimming/timers/alge-nlg4.md) mains set or 12 V battery'
+    value: 'Six C cells; [NLG4](equipment/swimming/accessories/alge-nlg4.md) mains set or 12 V battery'
   - label: Status
     value: 'Not in ALGE catalogues as of 2026; FIS homologation valid to 2028'
   - label: Manual
@@ -191,8 +191,8 @@ FIN1 takes the touchpads and backup handswitches of two lanes.[^guide]
 
 The starter works from the SA1. One press of its handswitch starts the S4 and sounds up to four
 [LK1](../external-speaker/alge-lk1.md) horns, and a second press within five seconds sends the
-false-start signal.[^guide] [Q34 headsets](alge-q34.md) at the timer and at the SA1 let the starter
-and the timekeeper talk to each other. Results go to a [Printer P4](alge-p4.md) on the timer, to
+false-start signal.[^guide] [Q34 headsets](../accessories/alge-q34.md) at the timer and at the SA1 let the starter
+and the timekeeper talk to each other. Results go to a [Printer P4](../accessories/alge-p4.md) on the timer, to
 [GAZc](../../common/scoreboard/alge-gazc.md) display boards, and to a computer over RS232.[^guide]
 
 ## History and predecessors
@@ -238,7 +238,7 @@ when the timer is switched off.[^manual]
 
 The S4 runs on six C cells, either alkaline or NiCd. NiCd cells are needed when the P4 printer is
 fitted, and a coloured mark on the back of the case shows which type the charging circuit is set
-for. The [NLG4](alge-nlg4.md) mains set or an external 12 V battery can power the timer, with the
+for. The [NLG4](../accessories/alge-nlg4.md) mains set or an external 12 V battery can power the timer, with the
 internal cells as backup.[^manual] In the swimming system, the 1997 guide gives about four hours of
 operation for the whole system from the timer's own cells, and expects the S4 to run normally from
 a 12 V car battery or the NLG4.[^guide] The manual's battery figures, for ski-style use with
@@ -251,7 +251,7 @@ three DIN sockets for course A, B and C sensors, each also able to take the NLG4
 socket for power; sockets for the display board, the P4 printer and an RS232 computer link; a
 headset socket; a loudspeaker socket for a count-down horn; banana sockets for four of the
 channels; and the 25-pin socket that carries all 18 channels.[^manual] The display-board socket
-carries two data channels, and turning the [cable 010-10](alge-cable-010.md) plug over swaps which
+carries two data channels, and turning the [cable 010-10](../../common/accessories/alge-cable-010.md) plug over swaps which
 one reaches the board.[^manual]
 
 The 1997 guide shows three swimming layouts:[^guide]
@@ -350,11 +350,11 @@ This section lists the parts of the S4 swimming system that have articles here.[
 | Handswitch | `023-10` | [023-02 push button](../semi-automatic/pushbutton/alge-023-02.md) |
 | Start unit | `SA1` | [Start Acoustic SA1](../starter/alge-sa1.md) |
 | Start speaker | `LK1` | [LK1](../external-speaker/alge-lk1.md) |
-| Headset | `Q34` | [Q34 headset](alge-q34.md) |
-| Printer | `P4` | [Printer P4](alge-p4.md) |
-| Mains charging set | `NLG4` | [NLG4](alge-nlg4.md) |
+| Headset | `Q34` | [Q34 headset](../accessories/alge-q34.md) |
+| Printer | `P4` | [Printer P4](../accessories/alge-p4.md) |
+| Mains charging set | `NLG4` | [NLG4](../accessories/alge-nlg4.md) |
 | Display board | `GAZc` | [GAZc](../../common/scoreboard/alge-gazc.md) |
-| Display data cable | `010-10` | [Cable 010-10](alge-cable-010.md) |
+| Display data cable | `010-10` | [Cable 010-10](../../common/accessories/alge-cable-010.md) |
 | False start detector | `R1` | [R1](../relay-judging/alge-r1.md) |
 | Under-deck junction box | `SWIM-FIX` | [SWIM-FIX](../deck-cabling/alge-swim-fix.md) |
 

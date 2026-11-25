@@ -229,7 +229,7 @@ The manual's worked examples carry dates from February 1983 to April 1984, so th
 in use by early 1983.[^manual] Omega's United States agent at the time,
 [Sportyme](../../../vendors/sportyme.md) of Hatboro, Pennsylvania, advertised it in 1985
 alongside CSL swimming software, probably Hy-Tek's
-[Computerized Swim League](../../../software/computerized-swim-league.md).[^st8502] In the
+[Computerized Swim League](../../../software/meet-management/computerized-swim-league.md).[^st8502] In the
 same year Sportyme cut its prices and offered complete Omega systems of the type used at the Olympics from $4,995.[^sw8506] It also announced that FINA had given Omega
 permission to describe its 1984 Games swimming equipment, the OSM 6 included, as "FINA
 Approved".[^sw8511]
@@ -359,15 +359,15 @@ without backup times, for the current race or the one before it.[^manual]
 This section covers how results left the console for a computer.
 
 With the optional Data Handling Module, the OSM 6 sent its results to
-[Hy-Tek Meet Manager](../../../software/hy-tek-meet-manager.md). The operator could send the
+[Hy-Tek Meet Manager](../../../software/meet-management/hy-tek-meet-manager.md). The operator could send the
 race just finished, an earlier race, or individual splits.[^sw9108] Hy-Tek's
-[Interface](../../../software/the-interface.md) package listed the OSM6 among the consoles it
+[Interface](../../../software/meet-management/the-interface.md) package listed the OSM6 among the consoles it
 supported in 1991.[^sw9108] Hy-Tek's later guide specifies the connection: an OSM 6 Marc II with
-a [DH-1](dh-1.md) module, cabled from the data handling socket through a converter from 20 mA to RS-232, at 9600 baud, even parity, seven
+a [DH-1](../accessories/dh-1.md) module, cabled from the data handling socket through a converter from 20 mA to RS-232, at 9600 baud, even parity, seven
 data bits and one stop bit.[^hytek] The link is one way, so Meet Manager cannot test it as it
 does a two-way console.[^hytek]
 
-[Splash Meet Manager](../../../software/splash-meet-manager.md) also reads the OSM 6 over a
+[Splash Meet Manager](../../../software/meet-management/splash-meet-manager.md) also reads the OSM 6 over a
 serial port.[^splashfaq]
 
 ## The OSM6 protocol in later equipment
@@ -420,7 +420,7 @@ This section lists the numbers named in Omega's documents and the software guide
 | Wiring documents: battery, harness, start, board output, board cable, start out | `3085-506`, `3085-507`, `3085-508`, `3085-509`, `3085-510`, `3085-511`[^ds] |
 | Printer paper | Omega `9051-6002`; Bosch `RMP 8146-24V`; Silverno `890-2B`[^manual] |
 | Printer fuse | 1.5 A slow-blow, 5 × 20 mm[^manual] |
-| Data handling module | [DH-1](dh-1.md)[^hytek] |
+| Data handling module | [DH-1](../accessories/dh-1.md)[^hytek] |
 
 ## See also
 

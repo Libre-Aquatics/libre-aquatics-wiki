@@ -9,7 +9,7 @@ tags:
 
 <!--
 Research notes, MosChip Semiconductor. Surfaced 2026-11-17 while building out
-equipment/swimming/timers/trycom-trp-c08h.md.
+equipment/common/accessories/trycom-trp-c08h.md.
 
 Sources:
   - MosChip, MCS7840 datasheet, third-party mirror (https://elcodis.com/parts/6114923/mcs7840_p7.html),
@@ -35,6 +35,6 @@ Trycom never names the chip.
 
 This article is a stub. MosChip Semiconductor is an Indian designer of chips, including the
 MCS7840 USB-to-four-serial-port bridge that the later
-[Trycom TRP-C08H](../equipment/swimming/timers/trycom-trp-c08h.md) appears to use.
+[Trycom TRP-C08H](../equipment/common/accessories/trycom-trp-c08h.md) appears to use.
 
 See the [vendors overview](index.md) for the other companies this wiki covers.

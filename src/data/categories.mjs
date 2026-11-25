@@ -40,7 +40,7 @@ export const CATEGORY_PAGES = {
       '[touchpads](equipment/swimming/touchpad/index.md), ' +
       '[backstroke start devices](equipment/swimming/backstroke-start/index.md) and ' +
       '[relay take-off platforms](equipment/swimming/relay-judging/index.md), alongside start systems, the ' +
-      'meet and team programs clubs use, and the [file formats](software/sdif.md) those programs exchange.',
+      'meet and team programs clubs use, and the [file formats](software/file-formats/sdif.md) those programs exchange.',
   },
   Scoring: {
     seoTitle: 'Aquatics scoreboards and scoring displays',
@@ -74,10 +74,10 @@ export const CATEGORY_PAGES = {
     index: true,
     intro:
       'The Meet management category covers the programs that build, seed, run and score a swimming ' +
-      'competition, such as [Hy-Tek Meet Manager](software/hy-tek-meet-manager.md), and the file formats ' +
+      'competition, such as [Hy-Tek Meet Manager](software/meet-management/hy-tek-meet-manager.md), and the file formats ' +
       'they use to take in ' +
-      'entries and publish results, among them [SDIF](software/sdif.md), [HY3](software/hy3.md) and ' +
-      '[Lenex](software/lenex.md).',
+      'entries and publish results, among them [SDIF](software/file-formats/sdif.md), [HY3](software/file-formats/hy3.md) and ' +
+      '[Lenex](software/file-formats/lenex.md).',
   },
   Equipment: {
     seoTitle: 'Aquatics equipment articles',
@@ -98,7 +98,7 @@ export const CATEGORY_PAGES = {
     index: false,
     intro:
       "The Team management category covers the programs a club uses to keep its roster, its swimmers' results and best times, and " +
-      'its meet entries, such as [Hy-Tek Team Manager](software/hy-tek-team-manager.md).',
+      'its meet entries, such as [Hy-Tek Team Manager](software/team-management/hy-tek-team-manager.md).',
   },
   'Artistic swimming': {
     seoTitle: 'Artistic swimming display software',

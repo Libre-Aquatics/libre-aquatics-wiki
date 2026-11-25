@@ -12,6 +12,7 @@ import remarkWikiLinks from './src/plugins/remark-wiki-links.mjs';
 import { resolveNoindex } from './src/lib/stub.mjs';
 import { tagSlug } from './src/lib/tags.mjs';
 import { CATEGORY_PAGES, categoryPage } from './src/data/categories.mjs';
+import { REDIRECTS } from './src/data/redirects.mjs';
 
 // The Markdown file behind a published URL, or undefined for the routes that
 // are Astro pages rather than articles (Main Page, categories, search).
@@ -96,24 +97,8 @@ export default defineConfig({
   // as "on<a>Image credits</a>". `true` compresses without changing what
   // renders, which is what the templates here are written for.
   compressHTML: true,
-  // Pages that moved after the site went live: the pushbutton pages went
-  // under the semi-automatic category, and the Quantum harness and ODB10-SW
-  // pages went from timers to deck cabling, and the Swiss Timing water polo pages went
-  // from common to water polo, and the CTS vacuum pumps went from touchpads to timers
-  // (the Cables and Accessories nav section). These keep the published URLs
-  // working (static meta-refresh pages on GitHub Pages).
-  redirects: {
-    '/equipment/swimming/pushbutton/': '/equipment/swimming/semi-automatic/pushbutton/',
-    '/equipment/swimming/pushbutton/cts/': '/equipment/swimming/semi-automatic/pushbutton/cts/',
-    '/equipment/swimming/pushbutton/daktronics/': '/equipment/swimming/semi-automatic/pushbutton/daktronics/',
-    '/equipment/swimming/timers/quantum-mobile-harness/': '/equipment/swimming/deck-cabling/quantum-mobile-harness/',
-    '/equipment/swimming/timers/odb10-sw/': '/equipment/swimming/deck-cabling/odb10-sw/',
-    '/equipment/common/scoreboard-control/calypso-wpo-console/': '/equipment/water-polo/console/calypso-wpo-console/',
-    '/equipment/common/pace-clock/swiss-timing-shot-clocks/': '/equipment/water-polo/shot-clock/swiss-timing-shot-clocks/',
-    '/equipment/swimming/semi-automatic/dolphin-scoreboard-adapter/': '/equipment/common/scoreboard-control/dolphin-scoreboard-adapter/',
-    '/equipment/swimming/touchpad/cts-vp-1-vacuum-pump/': '/equipment/swimming/timers/cts-vp-1-vacuum-pump/',
-    '/equipment/swimming/touchpad/cts-vp-2-vacuum-pump/': '/equipment/swimming/timers/cts-vp-2-vacuum-pump/',
-  },
+  // Pages that moved after the site went live; see src/data/redirects.mjs.
+  redirects: REDIRECTS,
   integrations: [
     react(),
     pagefind(),

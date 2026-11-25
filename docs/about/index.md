@@ -39,8 +39,8 @@ The wiki is organized around the equipment and operations of running a competiti
 - [Equipment](../equipment/index.md), the catalog of hardware, grouped by role (timers,
   start systems, touchpads, pushbuttons, and more) and by discipline, with a
   [common equipment](../equipment/common/index.md) section for gear shared across sports.
-- [Meet management](../meet-management/index.md) and
-  [team management](../team-management/index.md), the operations of planning, seeding,
+- [Meet management](../software/meet-management/index.md) and
+  [team management](../software/team-management/index.md), the operations of planning, seeding,
   scoring, and publishing an event, and the [software](../software/index.md) built for
   them.
 - The [vendors](../vendors/index.md) that make the equipment.

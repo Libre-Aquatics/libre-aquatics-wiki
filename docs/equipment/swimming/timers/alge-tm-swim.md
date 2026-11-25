@@ -18,7 +18,7 @@ infobox:
   - label: Type
     value: Swim timing console, PC-operated
   - label: Software
-    value: '[SwimTime](software/swimtime.md)'
+    value: '[SwimTime](software/meet-management/swimtime.md)'
   - label: Lanes
     value: Up to 16 per side
   - label: Resolution
@@ -116,7 +116,7 @@ The TM-SWIM is the swim [timing console](index.md) made by
 [ALGE-Timing](../../../vendors/alge-timing.md) of Lustenau, Austria, which sells it under the
 name TimeManager.[^product][^manual] The unit collects lane impulses over two RS485 buses,
 holds the race data itself, generates the start tone, and connects by USB to a PC running
-[SwimTime](../../../software/swimtime.md). ALGE lists it for its 8-lane and 10-lane swimming
+[SwimTime](../../../software/meet-management/swimtime.md). ALGE lists it for its 8-lane and 10-lane swimming
 systems and gives it a capacity of 16 lanes at each end of the pool.[^sports][^cat2026]
 
 ## Role in the timing system
@@ -157,7 +157,7 @@ Splash Software added an ALGE SwimTime interface to its meet manager in April 20
 ALGE's earlier swimming products are known only in part. A 1997 guide describes a
 [Timer S4](alge-timer-s4.md) with an [S4-SWIM](../deck-cabling/alge-s4-swim.md) lane box that had
 eight outlets, fed by a separate 5-core cable to a finish adapter for each pair of lanes, with a
-[Start Acoustic SA1](../starter/alge-sa1.md) driving up to four horns.[^s4] [Hy-Tek Meet Manager](../../../software/hy-tek-meet-manager.md) and Splash also
+[Start Acoustic SA1](../starter/alge-sa1.md) driving up to four horns.[^s4] [Hy-Tek Meet Manager](../../../software/meet-management/hy-tek-meet-manager.md) and Splash also
 list an [ALGE SWIM 2000](alge-swim-2000.md).[^hytek][^howto] The current firmware page warns that
 the TM-SWIM firmware must not be loaded onto "the old SWC", and it calls the TM-SWIM the "new
 TimeManager".[^product] ALGE's 2002 SWIM 2000 brochure shows the [SWC](alge-swc.md) as that
@@ -165,7 +165,7 @@ system's controller, gathering impulses from lane terminals on start-side and tu
 lines.[^swim2000] No source found states that the SWIM 2000 replaced the S4.
 
 The accessories have changed around the console. The 2013 SWT2, [SU2](../starter/alge-su2.md) and P5 have become the SWT3,
-[SU3](../starter/alge-su3.md) and [P6-8](alge-p6-8.md), and ALGE warns against mixing the SWT3 with
+[SU3](../starter/alge-su3.md) and [P6-8](../accessories/alge-p6-8.md), and ALGE warns against mixing the SWT3 with
 older terminals on one system.[^swt3][^cat2013][^cat2026] Firmware 24.C1 of December 2024 added
 support for extended terminal hardware that reports a touchpad becoming low-resistance, and
 SwimTime 2.5.2.1 of February 2025 added a touchpad failure pre-warning for the SWT-DP.[^fwlog][^swimlog]
@@ -197,7 +197,7 @@ and an `SWT-END` terminator closes the chain.[^manual] See the
 [ALGE swimming cable sets](../deck-cabling/alge-swim-cable-sets.md) page for the lane sets.
 
 The start equipment hangs off a separate line. Cable `199-20` or the `KT199Z10` reel joins the
-console to the [SU3 start unit](../starter/alge-su3.md), the [FLASH XL](../starter/alge-flash-xl.md)
+console to the [SU3 start unit](../starter/alge-su3.md), the [FLASH XL](../accessories/alge-flash-xl.md)
 or both, and the SU3 takes all of its power over that cable.[^manual][^su3] An
 [E-START](../starter/alge-e-start.md) plugs into the SU3.[^su3] The 2013 and 2026 catalogues
 list two sockets for this line, and the manual's double-sided diagram shows a start unit at each
@@ -245,7 +245,7 @@ Monitoring settings raise warnings. Lap monitoring compares lap times against a 
 and time-difference monitoring compares touchpad and hand times against a preset 0.30 seconds; both
 are on by default. An optional setting, off by default, switches to the manual time when it is more
 than 0.500 seconds away from the pad time.[^manual] SwimTime's help describes that setting differently; see
-the [SwimTime](../../../software/swimtime.md#timing-settings) article. Times are always computed at full
+the [SwimTime](../../../software/meet-management/swimtime.md#timing-settings) article. Times are always computed at full
 precision and truncated to the output precision, which defaults to 1/100 second.[^manual] A
 Correct Start Time function exists, which the manual says the system does not need but the rules
 of World Aquatics, then FINA, require.[^manual]
@@ -255,7 +255,7 @@ The start tone is set in the advanced settings. The manual's screen shows a defa
 seconds and the text gives tenths of a second, and neither reading suits a start tone; the
 [start-systems overview](../starter/index.md#start-tones) compares the settings with field
 recordings. A simulator mode produces times without hardware and must be switched off for
-competition.[^manual] The separate [SWIM-SIM10](alge-swim-sim10.md) simulates ten lanes on both sides
+competition.[^manual] The separate [SWIM-SIM10](../accessories/alge-swim-sim10.md) simulates ten lanes on both sides
 at the hardware level.[^sim]
 
 Display settings cover ALGE [D-SW boards](../../common/scoreboard/alge-d-sw.md), by lane or by rank
@@ -265,23 +265,23 @@ boards through a USB-RS232 adapter, and it feeds [D-RTNM](../../common/scoreboar
 matrix boards and network displays.[^manual]
 
 The change log records program limits of 400 touches, from October 2016, and 25 km, from May
-2022.[^swimlog] The [SwimTime](../../../software/swimtime.md) article covers the program itself.
+2022.[^swimlog] The [SwimTime](../../../software/meet-management/swimtime.md) article covers the program itself.
 
 ## Meet-management software
 
 SwimTime exchanges data with meet-management programs by file or over a network share, and ALGE
 expects timing and meet management to run on different computers.[^cat2013][^manual]
 
-[Splash Meet Manager](../../../software/splash-meet-manager.md) and other
-[LENEX](../../../software/lenex.md) programs use the Splash tab of the network settings. The two
+[Splash Meet Manager](../../../software/meet-management/splash-meet-manager.md) and other
+[LENEX](../../../software/file-formats/lenex.md) programs use the Splash tab of the network settings. The two
 programs pass messages through `splash_send.txt` and `splash_receive.txt` in a shared exchange
 folder.[^splash] The operator sends the event structure from Splash, times the heat, ends it in
 SwimTime, and pulls the results back.[^quick]
 
-[Hy-Tek Meet Manager](../../../software/hy-tek-meet-manager.md) uses a separate tab, labelled Hy-Tek
+[Hy-Tek Meet Manager](../../../software/meet-management/hy-tek-meet-manager.md) uses a separate tab, labelled Hy-Tek
 Generic File Sharing, with options for importing the start list and writing results automatically
 and a choice of two exchange formats.[^manual] The label matches the
-[generic network file sharing](../../../software/generic-network-file-sharing.md) interface in
+[generic network file sharing](../../../software/file-formats/generic-network-file-sharing.md) interface in
 Meet Manager, whose documented option names the ALGE Timy rather than the TM-SWIM. SwimTime reads
 Hy-Tek's `generic.sch` schedule and, since April 2025, `.rec` record files.[^swimlog]
 
@@ -323,27 +323,27 @@ case, cable and flash drive; lane equipment is ordered separately.[^product][^sp
 | Lane terminal | `SWT3`, with `SWT-END` terminator | [SWT3 swim terminal](../deck-cabling/alge-swt3.md) |
 | Lane cable sets | `SWCBL8S`, `SWCBL10S`, `SWCBL10T`; `SWSPA8`, `SWSPA10` | [Cable sets](../deck-cabling/alge-swim-cable-sets.md) |
 | Touchpads | `TP2400C`, `TP1890C`, `TP2300C` | [TP touchpads](../touchpad/alge-tp-touchpads.md) |
-| Touchpad trolley | `CADDY X` | [CADDY X](../touchpad/alge-caddy-x.md) |
+| Touchpad trolley | `CADDY X` | [CADDY X](../accessories/alge-caddy-x.md) |
 | Push button | `023-02` | [023-02 push button](../semi-automatic/pushbutton/alge-023-02.md) |
 | Start unit | `SU3` | [SU3](../starter/alge-su3.md) |
 | Electronic start | `E-START` | [E-START](../starter/alge-e-start.md) |
-| Start microphone | `SM8` | [SM8](../starter/alge-sm8.md) |
-| Start flash | `FLASH XL` | [FLASH XL](../starter/alge-flash-xl.md) |
+| Start microphone | `SM8` | [SM8](../accessories/alge-sm8.md) |
+| Start flash | `FLASH XL` | [FLASH XL](../accessories/alge-flash-xl.md) |
 | Lane speakers | `SPA2`, `SPP2` | [SPA2 and SPP2](../external-speaker/alge-spa2-spp2.md) |
-| Headset | `HS4-1` | [HS4 headsets](alge-hs4-1.md) |
+| Headset | `HS4-1` | [HS4 headsets](../accessories/alge-hs4-1.md) |
 | Starting platforms | `SO5`, `SO4` | [SO5](../starting-blocks/alge-so5.md), [SO4](../starting-blocks/alge-so4.md) |
 | Relay take-off sensor | `SWR7`, `SWR7M` | [SWR7](../relay-judging/alge-swr7.md) |
 | Backstroke start aid | `BSA` | [BSA](../backstroke-start/alge-bsa.md) |
-| Protocol printer | `P6-8` | [P6-8](alge-p6-8.md) |
-| Simulator | `SWIM-SIM10` | [SWIM-SIM10](alge-swim-sim10.md) |
-| Transport box | `TN-SWIM` | [TN-SWIM](alge-tn-swim.md) |
+| Protocol printer | `P6-8` | [P6-8](../accessories/alge-p6-8.md) |
+| Simulator | `SWIM-SIM10` | [SWIM-SIM10](../accessories/alge-swim-sim10.md) |
+| Transport box | `TN-SWIM` | [TN-SWIM](../accessories/alge-tn-swim.md) |
 | Numeric display boards | `D-SW` family | [D-SW display boards](../../common/scoreboard/alge-d-sw.md) |
 
 In North America ALGE equipment is sold by ALGE-Swim USA and by [Nevco](../../../vendors/nevco.md).[^usa][^nevco]
 
 ## See also
 
-- [SwimTime](../../../software/swimtime.md): the PC software that operates the console
+- [SwimTime](../../../software/meet-management/swimtime.md): the PC software that operates the console
 - [Timer S4](alge-timer-s4.md), [SWIM 2000](alge-swim-2000.md) and [SWC](alge-swc.md): earlier ALGE swim timers
 - [Timy](alge-timy.md): the ALGE timer used for semi-automatic systems
 - [Quantum Aquatics](quantum.md) and [Gen7 Serial Timer](gen7-serial.md): other current consoles with lane bus wiring

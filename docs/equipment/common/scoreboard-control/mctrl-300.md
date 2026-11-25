@@ -54,7 +54,7 @@ firmware or NovaStar software version with it.
 
 This article is a stub. The MCTRL300, which Colorado Time Systems writes `MCTRL-300`, is a
 NovaStar LED display controller that CTS has shipped between a
-[DisplayLink Plus](../../../software/displaylink-plus.md) computer and an LED video board.
+[DisplayLink Plus](../../../software/display/displaylink-plus.md) computer and an LED video board.
 CTS groups it with the controllers that need a pass-through video capture device when the
 board's output is also being streamed.
 

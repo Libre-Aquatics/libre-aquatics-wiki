@@ -103,7 +103,7 @@ test('CSV: shape and formula guard', () => {
 
 test('CL2 checksum matches the worked example on the CL2 page', async () => {
   const { cl2ChecksumDigits } = await import('../src/lib/sdif/validate.mjs');
-  const page = readFileSync(new URL('../docs/software/cl2.md', import.meta.url), 'utf8');
+  const page = readFileSync(new URL('../docs/software/file-formats/cl2.md', import.meta.url), 'utf8');
   const line = page.split(/\r?\n/).find((l) => l.startsWith('A01V3') && l.length === 160);
   assert.ok(line, 'example A0 line not found on the CL2 page');
   assert.equal(line.slice(156), ' N42');

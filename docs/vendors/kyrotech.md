@@ -99,7 +99,7 @@ track, holding standard meet schedules in memory and driving its own line of per
 1982 to 1986.
 
 It is one of the five console makers Hy-Tek announced Meet Manager would connect to in
-1988 through [The Interface](../software/the-interface.md), and although the company
+1988 through [The Interface](../software/meet-management/the-interface.md), and although the company
 fades from the swimming press through the 1990s, its timer is still listed among the
-[swim timing consoles](../equipment/swimming/timers/index.md) that [Meet Manager](../software/hy-tek-meet-manager.md) supports today; see the
+[swim timing consoles](../equipment/swimming/timers/index.md) that [Meet Manager](../software/meet-management/hy-tek-meet-manager.md) supports today; see the
 [vendors](index.md) register for the companies this wiki covers.

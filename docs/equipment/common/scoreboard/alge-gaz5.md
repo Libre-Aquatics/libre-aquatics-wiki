@@ -221,13 +221,13 @@ lists the Timer S3 and S4, the Timy and Timy2, the
 [TdC 8000](../../swimming/timers/alge-tdc-8000.md) and TdC 8001, the
 [Comet](../../swimming/timers/alge-comet.md), and several photo-finish and video timers among its
 data sources, along with a PC.[^manual] From a Timer S4 the link is
-[cable 010-10](../../swimming/timers/alge-cable-010.md) or a two-wire equivalent, which can run
-about 1 km, for example on [KT cable reels](../../swimming/timers/alge-kt-cable-reels.md).[^manual]
-Boards are linked to each other with [cable 033](../../swimming/timers/alge-cable-033.md), and a
-ranking board takes one [NGAZ/R](../../swimming/timers/alge-ngaz-r.md) supply for all its
+[cable 010-10](../accessories/alge-cable-010.md) or a two-wire equivalent, which can run
+about 1 km, for example on [KT cable reels](../../swimming/accessories/alge-kt-cable-reels.md).[^manual]
+Boards are linked to each other with [cable 033](../accessories/alge-cable-033.md), and a
+ranking board takes one [NGAZ/R](../accessories/alge-ngaz-r.md) supply for all its
 boards.[^manual]
 
-A GAZ5 or D-LINE can be built with an integrated [WTN](../../swimming/timers/alge-wtn.md) radio
+A GAZ5 or D-LINE can be built with an integrated [WTN](../../swimming/accessories/alge-wtn.md) radio
 link, receiving data from a Timy3 or TdC 8001 through a WTN-DB receiver instead of a
 cable.[^cat2017]
 
@@ -271,10 +271,10 @@ Sources: manual, leaflet, 2017 catalogue and 2019 product page.[^manual][^leafle
 | Display board | `GAZ5 nhh` | `n` digits, `hh` digit height; `S` suffix for the swimming board |
 | Power pack | `PP5` | Built in on order; NiMH cells and charger |
 | Power supply | `PS5` | Built in on order; mains only |
-| Data cable | [`010-10`](../../swimming/timers/alge-cable-010.md) | From a Timer S4 |
-| Linking cable | [`033-01`](../../swimming/timers/alge-cable-033.md) | Joins two boards and shares power |
-| Radio receiver | [`WTN-DB`](../../swimming/timers/alge-wtn.md) | For boards with integrated WTN |
-| Carrying bags | [`GTT15`, `GTT25`](../../swimming/timers/alge-gtt-carrying-bags.md) | For six-digit 15 and 25 cm boards |
+| Data cable | [`010-10`](../accessories/alge-cable-010.md) | From a Timer S4 |
+| Linking cable | [`033-01`](../accessories/alge-cable-033.md) | Joins two boards and shares power |
+| Radio receiver | [`WTN-DB`](../../swimming/accessories/alge-wtn.md) | For boards with integrated WTN |
+| Carrying bags | [`GTT15`, `GTT25`](../accessories/alge-gtt-carrying-bags.md) | For six-digit 15 and 25 cm boards |
 | Spare parts | `PP5`, `PS5`, CPU board | Listed on ALGE's spare-parts page |
 
 Sources: manual, 2017 catalogue and spare-parts page.[^manual][^cat2017][^spares]

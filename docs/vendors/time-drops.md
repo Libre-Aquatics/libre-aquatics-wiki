@@ -55,7 +55,7 @@ replaces plunger buttons with small waterproof keyfob buttons reporting to a tab
 controller, for pools of up to twelve lanes.
 
 The system reports to several meet programs, including
-[Splash Meet Manager](../software/splash-meet-manager.md) and
-[Hy-Tek Meet Manager](../software/hy-tek-meet-manager.md); see the
+[Splash Meet Manager](../software/meet-management/splash-meet-manager.md) and
+[Hy-Tek Meet Manager](../software/meet-management/hy-tek-meet-manager.md); see the
 [semi-automatic timing overview](../equipment/swimming/semi-automatic/index.md) for that class
 of equipment and the [vendors](index.md) register for the companies this wiki covers.

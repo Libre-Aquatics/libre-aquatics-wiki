@@ -2,6 +2,7 @@
 // Previous/Next page links in nav reading order, rendered at the end of the
 // article column (ported from overrides/main.html). Renders nothing on the
 // Main Page or on pages outside the nav tree.
+import { getCollection } from 'astro:content';
 import { prevNext } from '../lib/navigation';
 
 interface Props {
@@ -9,6 +10,11 @@ interface Props {
 }
 const { currentId } = Astro.props;
 const { prev, next } = currentId === 'index' ? {} : prevNext(currentId);
+
+// The nav title can be short enough to need its vendor group for context
+// ("Pushbutton"), which these links do not show, so use the article's own.
+const titles = new Map((await getCollection('articles')).map((a) => [a.id, a.data.title]));
+const titleOf = (entry: { id: string; title: string }) => titles.get(entry.id) ?? entry.title;
 ---
 
 {
@@ -17,13 +23,13 @@ const { prev, next } = currentId === 'index' ? {} : prevNext(currentId);
       {prev && (
         <a href={prev.route} rel="prev" class="wiki-pagenav__link wiki-pagenav__link--prev">
           <span class="wiki-pagenav__direction">Previous</span>
-          <span class="wiki-pagenav__title">{prev.title}</span>
+          <span class="wiki-pagenav__title">{titleOf(prev)}</span>
         </a>
       )}
       {next && (
         <a href={next.route} rel="next" class="wiki-pagenav__link wiki-pagenav__link--next">
           <span class="wiki-pagenav__direction">Next</span>
-          <span class="wiki-pagenav__title">{next.title}</span>
+          <span class="wiki-pagenav__title">{titleOf(next)}</span>
         </a>
       )}
     </nav>

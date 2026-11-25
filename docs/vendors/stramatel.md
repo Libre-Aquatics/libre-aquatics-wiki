@@ -58,6 +58,6 @@ equipment, based in Le Cellier, whose swimming line is the Aquasport V timer wit
 software and Aquatouch
 [swimming touchpads](../equipment/swimming/touchpad/index.md).
 
-[Splash Meet Manager](../software/splash-meet-manager.md) exchanges start lists and results
+[Splash Meet Manager](../software/meet-management/splash-meet-manager.md) exchanges start lists and results
 with the Aquaswim software through files; see the [vendors](index.md) register for the
 companies this wiki covers.

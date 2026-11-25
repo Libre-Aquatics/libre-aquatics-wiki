@@ -34,7 +34,7 @@ What the sources say (read 2026-11-24):
   - ALGE-Swim USA Installation References (2026): 3.9 mm boards at Salem, Minneapolis and Harrison;
     5.7 mm, 10,000 nit outdoor board at St. Petersburg. Verified.
 Not established: location and founding date. American is inferred from its projects. See
-software/streamline.md for the software partner.
+software/display/streamline.md for the software partner.
 
 Sources:
   - https://jsprodisplays.com/
@@ -43,6 +43,6 @@ Sources:
 
 This article is a stub. JS PROdisplays is an American seller of LED scoreboards for swimming pools
 that also installs [ALGE-Timing](alge-timing.md) systems and works with
-[Streamline](../software/streamline.md) software.
+[Streamline](../software/display/streamline.md) software.
 
 See the [vendors](index.md) register for the companies this wiki covers.

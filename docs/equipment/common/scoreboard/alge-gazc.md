@@ -16,7 +16,7 @@ infobox:
   - label: Type
     value: 'Numeric LED display board'
   - label: Connection
-    value: '[Cable 010-10](equipment/swimming/timers/alge-cable-010.md) from the Timer S4; Amphenol power cable 033'
+    value: '[Cable 010-10](equipment/common/accessories/alge-cable-010.md) from the Timer S4; Amphenol power cable 033'
   - label: Status
     value: 'Discontinued; dates not established'
 ---

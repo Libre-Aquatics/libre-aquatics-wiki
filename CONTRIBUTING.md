@@ -10,8 +10,8 @@ most valuable thing the project can receive.
 - **Report an error.** Open an issue. A wrong part number, a superseded spec, or a
   model that never shipped is worth reporting even without a source; say what you
   know and how you know it.
-- **Fill a gap.** The diving, water polo, common-equipment, meet-management, and
-  team-management sections are structural outlines waiting for articles.
+- **Fill a gap.** Many pages are stubs, most of all in the software, accessories, and vendor
+  sections, and the diving and water polo sections are only partly written.
 - **Edit a page.** Every article is a Markdown file under `docs/`. Edit it on GitHub
   or in a clone and open a pull request.
 

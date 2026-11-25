@@ -414,6 +414,10 @@ refer back to.
 | [ALGE-Timing SO 2](alge-so2.md) | ALGE-Timing | None | Integrated sensor | Documented 2002–2007; discontinued |
 | [Colorado Block](colorado-block.md) | Paragon Aquatics and Colorado Time Systems | Track start platform | Relay platform, speaker, connection hub | See article |
 | [Fusion Starting Platform](fusion-starting-platform.md) | Spectrum Aquatics and Colorado Time Systems | See article | Built-in relay platform | See article |
+| [Paragon Quickset](paragon-quickset.md) | Paragon Aquatics | Not documented here | Not documented here | Introduced 1986; anchor `23302` current |
+| [Paragon Varsity](paragon-varsity.md) | Paragon Aquatics | Not documented here | Not documented here | Introduced 1990; catalogued 2015 |
+| [Paragon Track Start Competitor](track-start-competitor.md) | Paragon Aquatics | Track start top | Base of the Colorado Block | Catalogued 2015 |
+| [Paragon Track Start PLUS+](track-start-plus.md) | Paragon Aquatics | Add-on adjustable backplate | Not documented here | Catalogued 2015 |
 | [S.R. Smith Velocity](velocity.md) | S.R. Smith | Fold-away wedge | Compatible with CTS and Daktronics timing | Current |
 | [Swiss Timing OSB9](osb9.md) | Swiss Timing (Omega) | None | Relay contact | Discontinued by 2015 |
 | [Swiss Timing OSB11](osb11.md) | Swiss Timing (Omega) | Adjustable footrest | Optional RBD contact, in-block speaker | Current |

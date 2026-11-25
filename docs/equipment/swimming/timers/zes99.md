@@ -27,7 +27,7 @@ Still to research: the manufacturer, what the name stands for, and the file form
 -->
 
 This article is a stub. The ZES99 is a timing system used mainly at finswimming meets, which
-writes one text file per heat that the [EasyWk](../../../software/easywk.md) meet program can
+writes one text file per heat that the [EasyWk](../../../software/meet-management/easywk.md) meet program can
 import.
 
 See the [timers overview](index.md) for the shared background that applies to every timing

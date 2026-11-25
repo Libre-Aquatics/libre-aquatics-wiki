@@ -261,6 +261,8 @@ at the international meets it times.[^dak-compat][^swimswam]
 |---|---|---|---|
 | [ALGE-Timing SWR7](alge-swr7.md) | ALGE-Timing | Sensor plate on an existing platform | Current |
 | [ALGE-Timing SWR 2](alge-swr2.md) | ALGE-Timing | Sensor plate strapped to an existing platform | Catalogued 2002–2013; discontinued |
+| [ALGE-Timing SWR1](alge-swr1.md) | ALGE-Timing | Relay pad screwed onto an existing block | Named 2001; current status unclear |
+| [ALGE-Timing R1](alge-r1.md) | ALGE-Timing | False start detector; sensing not described | Drawn 1994; discontinued |
 | [Colorado Time Systems RJP](cts.md) | Colorado Time Systems | Mechanical, top and leading edge | Current |
 | [Daktronics RTOP](daktronics.md) | Daktronics | Capacitive | Current |
 | Omega relay take-off platform | Swiss Timing | Integrated with Omega starting blocks | Current |

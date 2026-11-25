@@ -13,9 +13,9 @@
 export const FEATURED: string[] = [
   'equipment/swimming/timers/gen7-serial.md',
   'equipment/swimming/starter/hs-200.md',
-  'software/sdif.md',
-  'software/lenex.md',
-  'software/hy-tek-meet-manager.md',
+  'software/file-formats/sdif.md',
+  'software/file-formats/lenex.md',
+  'software/meet-management/hy-tek-meet-manager.md',
   'equipment/swimming/touchpad/index.md',
   'equipment/swimming/starter/index.md',
   'vendors/hy-tek.md',
@@ -30,12 +30,12 @@ export const FEATURED: string[] = [
  */
 export const DID_YOU_KNOW: string[] = [
   'that the Daktronics [HS-200](equipment/swimming/starter/hs-200.md) closes one switch contact and opens another at the start, so its start pulse can drive consoles from more than one maker?',
-  'that version 3 of [SDIF](software/sdif.md) added the D3 record because a constructed swimmer ID runs to fourteen characters, two more than the older D0 record holds?',
+  'that version 3 of [SDIF](software/file-formats/sdif.md) added the D3 record because a constructed swimmer ID runs to fourteen characters, two more than the older D0 record holds?',
   'that The Active Network bought [Hy-Tek Sports Software](vendors/hy-tek.md) in 2008, but the old Hy-Tek web address kept its own site until 2018?',
   'that the [Gen7 Legacy Timer](equipment/swimming/timers/gen7-legacy.md) shares its case with the Gen7 Serial Timer, and the two consoles are told apart by their deck cabling?',
   'that the touch boards used at the 1964 Tokyo Olympic Games sensed a [finish](equipment/swimming/touchpad/index.md) pneumatically, and electronic sensing came later?',
   "that timekeepers start their watches on a [start system](equipment/swimming/starter/index.md)'s strobe rather than its horn, because the sound reaches a distant timekeeper late?",
-  'that a [Lenex](software/lenex.md) meet file is XML with a .lef extension, and is usually exchanged zipped as .lxf?',
+  'that a [Lenex](software/file-formats/lenex.md) meet file is XML with a .lef extension, and is usually exchanged zipped as .lxf?',
 ];
 
 /** How many hooks show at once; the window rotates weekly like the feature. */
@@ -89,19 +89,19 @@ export const PORTALS: Portal[] = [
     title: 'Meet and team software',
     blurb: 'Programs for running a meet and for managing a club.',
     href: 'software/index.md',
-    sections: ['meet-management/index.md', 'team-management/index.md'],
+    sections: ['software/meet-management/index.md', 'software/team-management/index.md'],
   },
   {
     title: 'File formats',
     blurb: 'The formats that carry entries and results between programs.',
-    href: 'software/index.md',
-    sections: ['Data Exchange'],
+    href: 'software/file-formats/index.md',
+    sections: ['software/file-formats/index.md'],
   },
   {
     title: 'Display software',
     blurb: 'Software that puts timing results on scoreboards and video boards.',
-    href: 'software/index.md',
-    sections: ['Display'],
+    href: 'software/display/index.md',
+    sections: ['software/display/index.md'],
   },
   {
     title: 'Tools',

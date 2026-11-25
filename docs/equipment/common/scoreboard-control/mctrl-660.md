@@ -48,7 +48,7 @@ the board is also being driven.
 
 This article is a stub. The MCTRL660, which Colorado Time Systems writes `MCTRL-660`, is a
 NovaStar LED display controller that CTS has shipped between a
-[DisplayLink Plus](../../../software/displaylink-plus.md) computer and an LED video board.
+[DisplayLink Plus](../../../software/display/displaylink-plus.md) computer and an LED video board.
 CTS groups it with the controllers whose own output can be captured for streaming without
 a pass-through capture device.
 

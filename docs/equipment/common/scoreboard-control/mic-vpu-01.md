@@ -48,7 +48,7 @@ CVC, CDC and VPU processors the help file names.
 -->
 
 This article is a stub. The MIC-VPU-01 is a video processing unit Colorado Time Systems
-has shipped between a [DisplayLink Plus](../../../software/displaylink-plus.md) computer
+has shipped between a [DisplayLink Plus](../../../software/display/displaylink-plus.md) computer
 and an LED video board, one of five controllers CTS lists as able to feed a live stream
 from its own video output. CTS groups it with the units that need a pass-through video
 capture device.

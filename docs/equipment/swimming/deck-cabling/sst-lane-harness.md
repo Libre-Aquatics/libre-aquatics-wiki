@@ -11,7 +11,7 @@ tags:
 
 <!--
 Research notes, SST lane harness. Surfaced 2026-11-03 while writing
-software/sst-timing-software.md.
+software/timing/sst-timing-software.md.
 
 Sources: superiorswimtiming.com pricing page, read 2026-11-03: waterproof harness 6-lane $950,
 8-lane shown as "$1,00.00" (a typo, probably $1,000), 10-lane $1,050; extensions 75 ft $245 and

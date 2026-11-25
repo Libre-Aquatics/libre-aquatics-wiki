@@ -42,7 +42,7 @@ All from sources/periodicals/:
     tape printers; 1-8 lane time scoreboards; alphanumeric team scoreboards; computer
     compatibility; drives all major scoreboards; "10 years of TecTimers in operation" (so first
     units about 1982, by Kyrotech's count). Sales (312) 472-9400, service (708) 272-5809.
-Hy-Tek: one of five consoles Meet Manager connected to in 1988 (see software/the-interface.md);
+Hy-Tek: one of five consoles Meet Manager connected to in 1988 (see software/meet-management/the-interface.md);
 the Meet Manager 8 user guide still lists a "Kyrotech Tech Timer", without event download
 (hytek.active.com/user_guides_html/swmm8/timingconsoleinterface.htm, checked September 2026).
 Spelling varies: Tec-Timer, TecTimer, Tech Timer.

@@ -185,7 +185,7 @@ alphabetic keyboard for typing names.[^f980]
 The rear panel has a power switch, scoreboard ports for a wired connection to boards and deck
 clocks, two round phone-plug inputs for run-stop-reset units, and two USB-B ports. One USB port
 takes power; the other can link to a computer running
-[DisplayLink Plus](../../../software/displaylink-plus.md) to feed a video board.[^f1071]
+[DisplayLink Plus](../../../software/display/displaylink-plus.md) to feed a video board.[^f1071]
 
 The controller runs on 5 V DC at up to 1 A, from the supplied power supply, a PC, or an external
 USB battery.[^ds24] CTS's own tests of three battery sizes give these times:[^f1071]
@@ -305,7 +305,7 @@ the WTTC-1 for its larger boards and the handheld controller for the smallest.[^
 
 ## Run-stop-reset units
 
-[Run-stop-reset units](rsr.md) let a second or third timekeeper work the clocks from a hand
+[Run-stop-reset units](../accessories/rsr.md) let a second or third timekeeper work the clocks from a hand
 switch plugged into one of the controller's two inputs. A single unit starts and stops the game
 clock with a black rocker switch and resets the shot clock with a blue button; while it is
 connected, the matching keys on the controller are inactive.[^f1071] With two units, the one on
@@ -365,13 +365,13 @@ This section lists the controller's part numbers and the accessories CTS sells f
   listed the WTTC-1 at $1,295.00, out of stock.[^sbcom]
 - `R-012-090-A`, water polo keyboard insert.[^ctswttc]
 - `R-420-021`, power bank.[^ctswttc]
-- `RSR-1` and `RSR-3`, [run-stop-reset units](rsr.md).[^f1071][^ctswttc]
+- `RSR-1` and `RSR-3`, [run-stop-reset units](../accessories/rsr.md).[^f1071][^ctswttc]
 - [WA-3](wa-3.md), needed only at a DisplayLink Plus computer, not at the controller.[^f1045]
 
 ## See also
 
 - [WHC-1](whc-1.md): the handheld controller for the same boards
-- [Run-stop-reset units](rsr.md): the hand switches that plug into the controller
+- [Run-stop-reset units](../accessories/rsr.md): the hand switches that plug into the controller
 - [WA-3](wa-3.md): the adapter that carries its data to a video board computer
 - [Deck clock](../pace-clock/deck-clock.md): the portable game and shot clock it drives
 - [Scoreboard control](index.md): the scoreboard-control overview

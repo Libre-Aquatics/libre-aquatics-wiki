@@ -109,7 +109,7 @@ site in 2004-2005 (Wayback index) and were not fetched. Periodical hits for "swi
 are unrelated (years, a retailer).
 
 Stubs created in this pass: alge-swt.md, alge-so2.md, alge-swr2.md, alge-gaz4.md, alge-p5.md,
-software/alge-swim-manager.md, vendors/split-second-timing.md.
+software/meet-management/alge-swim-manager.md, vendors/split-second-timing.md.
 -->
 
 The SWIM 2000 is a swimming timing system made by [ALGE-Timing](../../../vendors/alge-timing.md)
@@ -118,8 +118,8 @@ controller, which keeps the time and stores every impulse. [SWT](../deck-cabling
 lane terminals, chained on one bus cable at each end of the pool, report touchpads, push buttons
 and starting blocks to it.[^brochure][^webcomp] ALGE listed the system by October 2000 and
 documented it in a manual, a brochure and an architectural guideline in 2002.[^prod2000][^manual]
-[Hy-Tek Meet Manager](../../../software/hy-tek-meet-manager.md) and
-[Splash Meet Manager](../../../software/splash-meet-manager.md) both kept interfaces for it.[^hytek][^faq]
+[Hy-Tek Meet Manager](../../../software/meet-management/hy-tek-meet-manager.md) and
+[Splash Meet Manager](../../../software/meet-management/splash-meet-manager.md) both kept interfaces for it.[^hytek][^faq]
 
 ## Role in the timing system
 
@@ -138,7 +138,7 @@ either an [SO 2](../starting-blocks/alge-so2.md) starting block or an
 timing inputs at either end.[^brochure]
 
 The starter works from the [SU start unit](../starter/alge-su.md), which has a start button and a
-microphone for announcements over the lane speakers. A [Q34 headset](alge-q34.md) plugged into
+microphone for announcements over the lane speakers. A [Q34 headset](../accessories/alge-q34.md) plugged into
 the SU lets the starter talk to the system operator, and a switch chooses between the two
 uses.[^webcomp] The SWC has its own amplifier for the speaker line.[^web2001]
 
@@ -233,7 +233,7 @@ manual and brochure give Windows 95 to XP.[^web2001][^manual][^brochure]
 The package has separate programs, so timing can run on one PC while results are prepared on
 others over the network.[^brochure] It contains:[^manual]
 
-- Timing-Manager, the timing program used with ALGE's own [SWIM-Manager](../../../software/alge-swim-manager.md)
+- Timing-Manager, the timing program used with ALGE's own [SWIM-Manager](../../../software/meet-management/alge-swim-manager.md)
 - Simple-Timing, the same timing program for use with another company's results software, which
   can build a simple event list itself
 - SWIM-Manager, the meet-management program, with entries, seeding, heat sheets, results, entry
@@ -336,12 +336,12 @@ This section lists the system's components that have articles here.[^brochure][^
 | Starting block | `SO 2`, `SO 2-EX` (`SO1` on the 2001 page) | [SO 2](../starting-blocks/alge-so2.md) |
 | Relay take-off pad | `SWR 2` (`SWR1` or `SWD1` on the 2001 page) | [SWR 2](../relay-judging/alge-swr2.md) |
 | Start unit | `SU` (`SWSU` on the 2001 page) | [SU](../starter/alge-su.md) |
-| Headset | `Q34` | [Q34 headset](alge-q34.md) |
+| Headset | `Q34` | [Q34 headset](../accessories/alge-q34.md) |
 | Speakers | `SPA`, `SPP` | [SPA2 and SPP2](../external-speaker/alge-spa2-spp2.md) |
-| Printer | `P5` (`P4` on the 2001 page) | [Printer P5](alge-p5.md) |
+| Printer | `P5` (`P4` on the 2001 page) | [Printer P5](../accessories/alge-p5.md) |
 | Display board | `GAZ4` | [GAZ4](../../common/scoreboard/alge-gaz4.md) |
 | Cables | `200-xx`, `201-xx`, `202-xx`, `067-02` | [Swimming cable sets](../deck-cabling/alge-swim-cable-sets.md) |
-| Software | None | [SWIM-Manager](../../../software/alge-swim-manager.md) |
+| Software | None | [SWIM-Manager](../../../software/meet-management/alge-swim-manager.md) |
 
 ALGE's 2001 web pages use several part names that differ from those in its 2002
 documents, as the table notes. The 2001 page names the relay pad both `SWR1` and `SWD1`. No

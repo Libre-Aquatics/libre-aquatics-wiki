@@ -8,7 +8,7 @@ tags:
 ---
 
 <!--
-Research notes, FTDI. Surfaced 2026-11-03 while writing software/sst-timing-software.md.
+Research notes, FTDI. Surfaced 2026-11-03 while writing software/timing/sst-timing-software.md.
 
 Sources: SST Operation Manual, current edition, pp. 18 and 73, and the 2019 manual, pp. 11-12 and
 15. They link ftdichip.com for the USB-NMC-2.5m cable and for drivers used by SST's USB-to-serial
@@ -17,7 +17,7 @@ not an aquatics vendor; the page exists because its products appear in the timin
 -->
 
 This article is a stub. FTDI is an electronics company whose
-[USB-NMC-2.5m](../equipment/swimming/timers/usb-nmc-2-5m.md) cable and USB drivers are named in
+[USB-NMC-2.5m](../equipment/swimming/accessories/usb-nmc-2-5m.md) cable and USB drivers are named in
 Superior Swim Timing documentation.
 
 See the [vendors overview](index.md) for the other companies this wiki covers.

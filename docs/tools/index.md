@@ -25,12 +25,12 @@ are, with a link back to the article on the format it handles.
 
 ## Articles
 
-- [SDIF file reader](sdif-reader.md): opens an [SDIF](../software/sdif.md) `.sd3` or Hy-Tek
-  [CL2](../software/cl2.md) results file, or the `.zip` that Meet Manager exports, and shows
+- [SDIF file reader](sdif-reader.md): opens an [SDIF](../software/file-formats/sdif.md) `.sd3` or Hy-Tek
+  [CL2](../software/file-formats/cl2.md) results file, or the `.zip` that Meet Manager exports, and shows
   the meet results, every record field by field, a check against the version 3
   specification, and CSV exports
 
 ## See also
 
 - [Software](../software/index.md): the programs and file formats the tools work with
-- [Meet management](../meet-management/index.md): how results files are produced and used
+- [Meet management](../software/meet-management/index.md): how results files are produced and used

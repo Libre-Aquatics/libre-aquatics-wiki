@@ -9,7 +9,7 @@ infobox:
   - label: Industry
     value: Event registration and participation management software
   - label: Key products
-    value: '[Meet Manager](software/hy-tek-meet-manager.md), [Team Manager](software/hy-tek-team-manager.md), [Meet Mobile](software/meet-mobile.md)'
+    value: '[Meet Manager](software/meet-management/hy-tek-meet-manager.md), [Team Manager](software/team-management/hy-tek-team-manager.md), [Meet Mobile](software/live-results/meet-mobile.md)'
   - label: Website
     value: activenetwork.com
     href: 'https://www.activenetwork.com/'
@@ -67,7 +67,7 @@ performance software, administrative tracking, a web-based Team Manager Online a
 for Palm OS handhelds among what changed hands.[^active08] Active describes the Hy-Tek
 branded products as owned, copyrighted and supported by it.[^hytekabout]
 
-It also owns [Meet Mobile](../software/meet-mobile.md), the live-results application that
+It also owns [Meet Mobile](../software/live-results/meet-mobile.md), the live-results application that
 publishes what Meet Manager scores, which it acquired separately.[^meetmobile]
 
 Active makes no aquatics equipment and is not otherwise covered here.
@@ -75,8 +75,8 @@ Active makes no aquatics equipment and is not otherwise covered here.
 ## See also
 
 - [Hy-Tek Sports Software](hy-tek.md): the company it bought
-- [Meet Manager](../software/hy-tek-meet-manager.md): the program it now publishes
-- [Meet Mobile](../software/meet-mobile.md): the live-results application
+- [Meet Manager](../software/meet-management/hy-tek-meet-manager.md): the program it now publishes
+- [Meet Mobile](../software/live-results/meet-mobile.md): the live-results application
 - [Vendors](index.md): the vendor register
 
 ## References
