@@ -45,7 +45,7 @@ Sources:
 
 This article is a stub. The `TdC 4000` Timedata Computer is an
 [ALGE-Timing](../../../vendors/alge-timing.md) timing computer with a built-in printer, which ALGE
-presents as the second generation after its TdC 2000 of 1979 and which can drive
+presents as the second generation after its [TdC 2000](alge-tdc-2000.md) of 1979 and which can drive
 [GAZ4](../../common/scoreboard/alge-gaz4.md) display boards.
 
 See the [timers overview](index.md) for the shared background that applies to every timing

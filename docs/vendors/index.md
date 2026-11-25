@@ -65,8 +65,12 @@ touchpad accessory.
 | [Thrifty Timing](thrifty-timing.md) | Eau Claire, Wisconsin, United States | No equipment of its own; a 1970s dealer that first advertised the Kyroscope pace clock |
 | [The Woodchester Company](woodchester-company.md) | Mississauga, Ontario, Canada | No equipment of its own; the 1984 Canadian distributor of the Kyrotech AutoCoach |
 | [Incomar](incomar.md) | Utica, Michigan, United States | The Splash I pacing system of 1980, and a console Hy-Tek supported in 1988 |
-| [ALGE-Timing](alge-timing.md) | Lustenau, Austria | The TM-SWIM timing console, SWIM 2000 and Timy timers, and a semi-automatic swimming package |
-| [Nevco](nevco.md) | Not established | Aquatic timing and scoring systems built on ALGE-Timing equipment |
+| [ALGE-Timing](alge-timing.md) | Lustenau, Austria | The TM-SWIM timing console, SWIM 2000 and Timy timers, start units, touchpads, starting platforms and display boards |
+| [Microgate](microgate.md) | Bolzano, Italy | No equipment; the owner of ALGE-Timing |
+| [ALGE-Swim USA](alge-swim-usa.md) | Not established | No equipment of its own; sells ALGE-Timing systems in the United States and Canada |
+| [JS PROdisplays](js-prodisplays.md) | Not established | LED scoreboards supplied with ALGE-Timing systems |
+| [Microplus](microplus.md) | Marene, Italy | No equipment; data processing at the 2014 European swimming championships |
+| [Nevco](nevco.md) | Edwardsville, Illinois, United States | Aquatic timing and scoring systems built on ALGE-Timing equipment |
 | [Wylas Timing](wylas-timing.md) | Not established | A wireless timing system for six to ten lanes, with its own screen displays |
 | [Swimnerd](swimnerd.md) | Not established | A seller of pace clocks and timing equipment, including Superior Swim Timing products |
 | [FTDI](ftdi.md) | Not established | USB interface products named in Superior Swim Timing documentation |

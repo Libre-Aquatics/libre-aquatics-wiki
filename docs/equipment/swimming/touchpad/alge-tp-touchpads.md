@@ -44,8 +44,12 @@ the swimming pad TP1 instead; see alge-timer-s4.md. The 980 mm width has no mode
 result only, page not readable) names a TP1580C, and ALGE-Swim USA gives 74 x 24 in and 62 x 24 in,
 which roughly match TP1890C and that TP1580C. Those are not verified.
 
-Patent claim: ALGE's wording only. A search found no patent assigned to ALGE; an Espacenet applicant
-search is the next step. Manual 1.1 and pp7-13 have mounting drawings (TP-D140, TP-D140/40 + TP-L,
+Patent (2026-11-24): German patent DE 10 2014 116 528 B4, filed 12 November 2014, granted 14 December
+2023, assignee Alge-Timing GmbH, inventor Wolfgang Alge. A wall-side plate and a front unit with a
+sensor between them, both with through-flow openings. It fits the water-flow claim, but nothing read
+ties it to a named TP model. The Lustenau municipality's 70th-anniversary piece (about 2016) says a
+non-slip pad surfaced with lamellas had lately been developed with a firm in Berneck. The patent's
+claims still need reading in full. Manual 1.1 and pp7-13 have mounting drawings (TP-D140, TP-D140/40 + TP-L,
 TP-S, TP-T); TP-D140 is 140 x 50 x 50 mm, 171 g, TP-S 70 x 50 x 50 mm, 116 g, both M8. For mobile use
 a rope through holes in the top angle is enough. Care: silicone grease, weekly hand cleaning, tap
 water, 10 to 15 percent nitric solution for stains, no dosing or shock nearby.
@@ -59,6 +63,8 @@ Sources:
   - ALGE-Timing product page (alge-timing.com/en/product/2490/tp-d140, read 2026-11-04)
   - ALGE-Timing product page (alge-timing.com/en/product/2491/tp-s, read 2026-11-04)
   - ALGE-Swim USA modules and solutions pages (alge-swimusa.com, read 2026-11-04)
+  - German patent DE 10 2014 116 528 B4 (patents.google.com/patent/DE102014116528B4/en, read 2026-11-24)
+  - Marktgemeinde Lustenau, 70th-anniversary article (lustenau.at, read 2026-11-24)
 -->
 
 This article is a stub. The TP touchpads (`TP2400C`, `TP1890C`, `TP2300C`) are
