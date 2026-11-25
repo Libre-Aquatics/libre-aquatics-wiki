@@ -26,6 +26,13 @@ swimify.com say the program is approved for federation entry and statistics syst
 Sweden, Finland, Denmark, Norway, the Faroe Islands, Iceland, Slovenia, New Zealand, Romania
 and Canada; that list is the vendor's and was not read on the page itself.
 
+Renaming (read 2026-11-24): Swimify's notice on leaving LiveTiming.se says WinGrodan became Swimify, with
+WinGrodan 2 turning into Swimify Meet Manager, Timekeeping into Swimify Timekeeping and CIS into
+Swimify Announcer. The changelog announces it just after an entry created 2 April 2024; the exact
+release was not pinned down. swimify.com's timeline starts with Grodan for MS-DOS in 1988 (Grodan being
+Swedish for frog) and has further steps in 2002, 2018 and 2020. ALGE SwimTime imports WinGrodan text
+start lists (help file of version 2.5.4.1).
+
 Unverified: the company name and base (Swedish is inferred from the help centre's sv
 locale and the federation list, so the page does not state a country), and Erik Berglund's
 role beyond the Swimrankings credit.
@@ -37,8 +44,8 @@ Still to research: the company, its launch date, the live-results side of the pr
 and which federations actually mandate it.
 -->
 
-This article is a stub. Swimify Meet Manager is meet-management software for swimming,
-credited to Erik Berglund, that writes Lenex 3.0 result files from 2020 and also imports and
+This article is a stub. Swimify Meet Manager, formerly WinGrodan, is meet-management software
+for swimming, credited to Erik Berglund, that writes Lenex 3.0 result files from 2020 and also imports and
 exports Hy-Tek entry and result files.
 
 The Swimrankings wiki lists it among the programs that support [Lenex](lenex.md); see the

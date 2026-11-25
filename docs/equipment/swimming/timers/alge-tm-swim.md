@@ -106,7 +106,7 @@ Not stubbed, recorded here so the names are not lost: the semi-automatic tier's 
 training adapter, WTN wireless network, WTN-PB radio push button, WTN-DB receiver and MT1 mobile
 timing; the Start Judge SJ2 and TimeManager TM for other sports; the water polo D-CKN console and
 D-SC shot clocks; open water CM30/100 pads, MC9 and ASC3; SwimTrainer, PC Timer and Tracktimer Timy
-programs; PCD Multisport; JS Pro Displays (the USA partner for video boards); SV4 speech amplifiers.
+programs; SV4 speech amplifiers. PCD Multisport and JS PROdisplays now have pages.
 All are in the source tracker's products column.
 
 Still to research: introduction date, price, which US pools run it, and the Nevco arrangement.
@@ -145,13 +145,14 @@ different machines joined by a network switch.[^manual]
 
 ## History and predecessors
 
-The start of TM-SWIM production is not documented. The earliest dated document found that shows
-it is an ALGE catalogue whose file was made in September 2013, which presents the unit with the
-earlier SWT2 terminal, SU2 start unit and P5 printer. That catalogue says the TM-SWIM was the first
+The start of TM-SWIM production is not documented, but ALGE's website was offering the console by
+December 2007. That page explains that ALGE gave up the [SWC](alge-swc.md) for the new
+console chiefly to have USB built in.[^tm2007] A catalogue file of September 2013 presents the unit
+with the earlier SWT2 terminal, SU2 start unit and P5 printer. It says the TM-SWIM was the first
 timing device for swimming with a USB interface, a claim made by ALGE alone.[^cat2013] The firmware
 change log begins with version 14.21 of February 2014, and the SwimTime log begins in February 2013
 with a change of version numbering, so both have earlier history that is not published.[^fwlog][^swimlog]
-Splash Software added an ALGE SwimTime interface to its meet manager in April 2010.[^relnotes]
+Splash Software added an ALGE SwimTime interface to its meet manager in April 2010.[^splashrel]
 
 ALGE's earlier swimming products are known only in part. A 1997 guide describes a
 [Timer S4](alge-timer-s4.md) with an [S4-SWIM](../deck-cabling/alge-s4-swim.md) lane box that had
@@ -161,8 +162,7 @@ list an [ALGE SWIM 2000](alge-swim-2000.md).[^hytek][^howto] The current firmwar
 the TM-SWIM firmware must not be loaded onto "the old SWC", and it calls the TM-SWIM the "new
 TimeManager".[^product] ALGE's 2002 SWIM 2000 brochure shows the [SWC](alge-swc.md) as that
 system's controller, gathering impulses from lane terminals on start-side and turn-side bus
-lines.[^swim2000] No source found states that the SWIM 2000 replaced the S4, or that the TM-SWIM
-replaced the SWC directly.
+lines.[^swim2000] No source found states that the SWIM 2000 replaced the S4.
 
 The accessories have changed around the console. The 2013 SWT2, [SU2](../starter/alge-su2.md) and P5 have become the SWT3,
 [SU3](../starter/alge-su3.md) and [P6-8](alge-p6-8.md), and ALGE warns against mixing the SWT3 with
@@ -243,8 +243,9 @@ different values by pool:[^manual]
 
 Monitoring settings raise warnings. Lap monitoring compares lap times against a preset 10 seconds,
 and time-difference monitoring compares touchpad and hand times against a preset 0.30 seconds; both
-are on by default. An optional setting, off by default, replaces the touchpad time with the manual
-time when they differ by more than 0.500 seconds.[^manual] Times are always computed at full
+are on by default. An optional setting, off by default, switches to the manual time when it is more
+than 0.500 seconds away from the pad time.[^manual] SwimTime's help describes that setting differently; see
+the [SwimTime](../../../software/swimtime.md#timing-settings) article. Times are always computed at full
 precision and truncated to the output precision, which defaults to 1/100 second.[^manual] A
 Correct Start Time function exists, which the manual says the system does not need but the rules
 of World Aquatics, then FINA, require.[^manual]
@@ -263,7 +264,8 @@ and with reaction and relay times shown or hidden. SwimTime can also drive
 boards through a USB-RS232 adapter, and it feeds [D-RTNM](../../common/scoreboard/alge-d-rtnm.md)
 matrix boards and network displays.[^manual]
 
-The change log records program limits of 400 touches and 25 km, set in May 2022.[^swimlog]
+The change log records program limits of 400 touches, from October 2016, and 25 km, from May
+2022.[^swimlog] The [SwimTime](../../../software/swimtime.md) article covers the program itself.
 
 ## Meet-management software
 
@@ -366,7 +368,8 @@ In North America ALGE equipment is sold by ALGE-Swim USA and by [Nevco](../../..
 [^nevco]: [Nevco, Aquatic Facility Timing and Scoring Systems](https://nevco.com/products/aquatic-solutions).
 [^swim2000]: [ALGE, SWIM2000](https://www.splitsecond.com.au/brochures/swim2000-pe.pdf) (brochure, 2002; Split Second Timing copy).
 [^hytek]: [Hy-Tek, ALGE SWIM 2000](https://hytek.active.com/user_guides_html/swmm6/algeswim2000.htm) (Meet Manager guide).
-[^relnotes]: [Swim Wiki, Meet Manager: Release Notes](https://wiki.swimrankings.net/index.php/Meet_Manager:Release_Notes).
+[^splashrel]: [Splash Software, Release notes](https://web.archive.org/web/20100623045701/http://www.splash-software.ch/index.php?nav=,home,C) (build 7735; archived June 2010).
+[^tm2007]: [ALGE-Timing, TimeManager TM-SWIM](https://web.archive.org/web/20071219154804/http://www.alge-timing.com:80/alge/SWIM-TM-SWIM-E.html) (archived December 2007).
 [^howto]: [Splash Software, Meet Manager 11: How to Start](https://wiki.swimrankings.net/images/8/83/Meet_Manager_How-to-start.pdf) (GeoLogix AG, May 2010).
 [^splash]: [Swim Wiki, Meet Manager: Timing System ALGE SwimTime](https://wiki.swimrankings.net/index.php/Meet_Manager:Timing_System_ALGE_SwimTime).
 [^quick]: [ALGE-Timing, Splash Meet Manager quick start manual](https://alge-timing.com/downloads/userGuides/Splash%20Quickstart_E.pdf) (June 2025).

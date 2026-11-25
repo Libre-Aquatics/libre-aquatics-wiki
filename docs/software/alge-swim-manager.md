@@ -33,7 +33,8 @@ What the sources say:
     Dutch; separate PC recommended. Verified.
   - Split Second Timing, Swimming (splitsecond.com.au/swimming.htm): calls the package SWIMSOFT,
     Windows 95, 98 or NT 4.0. Whether SWIMSOFT is ALGE's name or the distributor's is not known.
-  - The successor package is SwimTime (see swimtime.md); succession inferred, not stated.
+  - SwimTime (see swimtime.md) also runs the SWC, by its help file of version 2.5.4.1, so it can stand in
+    for the Timing-Manager. That it replaced this package is still inferred, not stated.
 Not established: version numbers, release and withdrawal dates, whether the programs are still
 downloadable.
 
