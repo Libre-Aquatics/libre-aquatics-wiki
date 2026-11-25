@@ -156,7 +156,8 @@ following swimming equipment.
 
 ALGE holds a German patent on a swimming touch device, filed in November 2014 and granted in December
 2023, with Wolfgang Alge as inventor. A sensor sits between a front unit and a plate fixed to the pool
-edge, and openings in both let water drain through the device.[^patent]
+edge, and openings in both let water drain through the device.[^patent] The [TP touchpads](../equipment/swimming/touchpad/alge-tp-touchpads.md) article
+covers it.
 
 ## In swim timing
 

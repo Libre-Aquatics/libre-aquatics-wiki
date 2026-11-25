@@ -161,6 +161,7 @@ export const nav: NavNode[] = [
                 children: [
                   { title: 'TP Touchpads', page: 'equipment/swimming/touchpad/alge-tp-touchpads.md' },
                   { title: 'CADDY X', page: 'equipment/swimming/touchpad/alge-caddy-x.md' },
+                  { title: 'Touchpad Holders', page: 'equipment/swimming/touchpad/alge-touchpad-holders.md' },
                 ],
               },
               {
@@ -206,6 +207,7 @@ export const nav: NavNode[] = [
                   { title: 'S4-SWIM Lane Box', page: 'equipment/swimming/deck-cabling/alge-s4-swim.md' },
                   { title: 'FIN1 Finish Adapter', page: 'equipment/swimming/deck-cabling/alge-fin1.md' },
                   { title: 'Cable 078', page: 'equipment/swimming/deck-cabling/alge-cable-078.md' },
+                  { title: 'Cable 309-2.5', page: 'equipment/swimming/deck-cabling/alge-cable-309.md' },
                   { title: 'SWIM-FIX', page: 'equipment/swimming/deck-cabling/alge-swim-fix.md' },
                   { title: 'MC8 Push-Button Cable', page: 'equipment/swimming/deck-cabling/alge-mc8.md' },
                   { title: 'MC2-S Training Adapter', page: 'equipment/swimming/deck-cabling/alge-mc2-s.md' },

@@ -279,16 +279,17 @@ which are those made by
 [Colorado Time Systems](../../../vendors/colorado-time-systems.md) (CTS), Swiss Timing,
 Daktronics, Seiko and ALGE-Timing. The CTS panel is all-plastic and air-filled, with sensitivity set by
 internal air pressure; the Swiss Timing [OCP5](ocp5.md) hangs PVC slats on a stainless steel
-frame in front of tape-switch contact strips; and the Daktronics panel uses three conductive
+frame in front of tape-switch contact strips; the ALGE-Timing [TP touchpads](alge-tp-touchpads.md)
+use perforated PVC slats over four tape switches; and the Daktronics panel uses three conductive
 stainless-steel plates and reads a touch as a change in electrical charge. Seiko gives the
-panel material and dimensions of its plates but no sensing principle.[^datasheet][^watiming][^ocp5man][^seikojp]
+panel material and dimensions of its plates but no sensing principle.[^datasheet][^watiming][^ocp5man][^algecat][^seikojp]
 
 | Product | Model or prefix | Surface | Connector | Status |
 |---|---|---|---|---|
 | [AquaGrip touchpad](aquagrip.md) | `TP-…G` (gutter) / `TP-…GF` (flat-wall) | Patented AquaGrip non-slip texture | 10 ft cable, dual banana plug | Current |
 | [Standard touchpad](standard.md) | `TP-…` / `TP-…F` | Textured non-skid surface | 10 ft cable, dual banana plug | Discontinued |
 | [Multizone pads](multizone.md) | None published | Not published | Not published | Announced 2008; no evidence of production |
-| [TP touchpads](alge-tp-touchpads.md) | ALGE-Timing `TP2400C`, `TP1890C`, `TP2300C` | PVC lamellas on a stainless-steel casing; four tape switches | Banana plugs | Current |
+| [TP touchpads](alge-tp-touchpads.md) | ALGE-Timing `TP2400C`, `TP2300C`, `TP1890C`, `TP914C` | Perforated PVC slats in a stainless steel case; four tape switches | Banana plugs to an SWT3 terminal | Named by 1997; current |
 | [T-7000 series touchpad](t-7000.md) | Daktronics `T-7060`–`T-7096`, `FT-7150`–`FT-7240T` | Non-slip textured stainless steel; three conductive plates | Dual banana plug; OmniSport 2000 | Documented; also listed under Daktronics' discontinued-product resources |
 | [Seiko AQUA touch plate](seiko-aqua-touch-plate.md) | None published in Japanese; `TP-3000` on Seiko's older English pages | High-impact resin panel, 2,400 mm wide | Lane box per lane, then the `PT-9000` printing timer | Current |
 | [OCP5 touchpad](ocp5.md) | Swiss Timing `2924.000`–`2924.005` | Interlinked PVC slats on a stainless steel frame, four sizes | Dual banana plug to a Quantum harness module | Named by 1976; current |
@@ -306,7 +307,9 @@ alone.[^seikojp][^seikoff]
 
 The [AquaGrip touchpad](aquagrip.md) article covers the CTS panel in full and the
 [Standard touchpad](standard.md) article covers the discontinued surface it replaced, the
-[T-7000 series touchpad](t-7000.md) article covers the Daktronics stainless-plate pad,
+[T-7000 series touchpad](t-7000.md) article covers the Daktronics stainless-plate pad, the
+[OCP5 touchpad](ocp5.md) and [TP touchpads](alge-tp-touchpads.md) articles cover the Omega and
+ALGE-Timing slatted pads,
 and the [Seiko AQUA Touch Plate](seiko-aqua-touch-plate.md) and
 [Seiko Full-Frame Touch Plate](seiko-full-frame-touch-plate.md) articles cover the two
 Seiko plates; this page is the shared overview they refer back to.
@@ -323,6 +326,7 @@ Seiko plates; this page is the shared overview they refer back to.
 
 ## References
 
+[^algecat]: [ALGE-Timing, Aquatic Sports](https://alge-timing.com/downloads/leaflets/Swimming_KE.pdf) (catalogue, June 2026), pp. 8–9.
 [^ocp5man]: Swiss Timing, Touchpad OCP5 User's Manual (2924.510.02, version 3.1, February 2015).
 [^frules]: [World Aquatics, Facilities Rules 2021–2025](https://resources.fina.org/fina/document/2022/02/08/77c3058d-b549-4543-8524-ad51a857864e/210805-Facilities-Rules_clean.pdf), FR 2.1.1–2.1.2 and FR 2.2.1 (length), FR 2.3 (touch panels: FR 2.3.4; backup: FR 2.3.5).
 [^f147]: [Colorado Time Systems, Standard and AquaGrip Touchpads User Guide (F147)](https://spanish.coloradotime.com/manuals/touchpad-man.pdf).
